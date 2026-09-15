@@ -2,6 +2,9 @@
 
 > Research preview. Release shape decided 2026-09-07, locked. Published on Hugging Face under org `lingualeap` as the public face of this release.
 
+
+> Also on Hugging Face: [lingualeap/iddsi-open-siglip2-v0](https://huggingface.co/lingualeap/iddsi-open-siglip2-v0) (same release; the two PDFs live here on GitHub).
+
 ## What this is
 
 This release ships CODE plus EVAL RESULTS plus the flow-test grader plus a measured NEGATIVE FINDING. The model WEIGHTS and the harvested image DATASET are WITHHELD. Withholding is a deliberate, stated decision. It is a contribution, not an embarrassment.
