@@ -1,0 +1,9 @@
+1. PREP — Weigh 150 g fresh minced pork + 30 g salted-egg yolk together. Add 100 ml room-temperature water. Blend 45–60 s until smooth paste with no fibres. Press through the 4 mm sieve; discard residue. Stir in thickener at 1.5 g per 100 ml of sieved puree as the calibration starting point. Whisk 30 s, rest 60 s, re-whisk. Record actual thickener grams on the card. If sieve clogs with fibrous pork, stop: the per-level note "blend-thin" cannot be achieved, re-blend with an extra 20 ml water.
+
+2. IDDSI TEST — Fork drip: 4–6 slow drips per 10 s from fork tines, no continuous stream. Spoon tilt: flows as a single ribbon that levels in 1–2 s when spoon is tilted to 45°. Fork pressure: mound holds shape when fork pressed, then collapses and spreads under thumb. Syringe flow: draw 10 ml into the IDDSI syringe, release; 8–10 ml remains after 10 s (must fall within 8–10 ml band for L3).
+
+3. VISUAL QC — Smooth, glossy, pale-orange paste with no visible pork fibre or yolk lumps. Coats the spoon back in a thin even film. Mound from the fork press slowly relaxes to a flat puddle within 2 s.
+
+4. SHOTS — Capture: (a) saltedegg_steamed_pork_p_L3_take1.jpg — 45° hero, ruler + checkerboard in frame; (b) saltedegg_steamed_pork_p_L3_take2.jpg — top-down with checkerboard; (c) saltedegg_steamed_pork_p_L3_take3.jpg — fork-press close-up mid-press. Clip (d) saltedegg_steamed_pork_p_L3_take1.mp4 — 8–12 s fork-press then spoon-tilt. Clip (e) saltedegg_steamed_pork_p_L3_take2.mp4 — full IDDSI 10 ml syringe test, timer visible.
+
+5. FAIL MODES — (1) Syringe retains <8 ml → too thin; add 0.2 g thickener, rest, retest. (2) Syringe retains >10 ml or fork drip stops → too thick; whisk in 10 ml water, retest. (3) Visible fibres or yolk chunks breaking the 4 mm sieve → re-blend 20 s with 15 ml extra water, re-sieve. More than one failed retest → discard batch, re-weigh ingredients.

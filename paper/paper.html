@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="TODO: Author list (LinguaLeap Tech Limited and contributors)" />
+  <meta name="dcterms.date" content="2026-09-07" />
+  <meta name="keywords" content="IDDSI, dysphagia, texture-modified-food, food-texture-classification, computer-vision, open-dataset, flow-test" />
+  <title>IDDSI-Open v0: Code, Eval Results, and Smartphone Flow-Test Video Grader - Photo Classification Killed at Its Pre-registered Gates; Dataset and Weights Withheld</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">IDDSI-Open v0: Code, Eval Results, and Smartphone
+Flow-Test Video Grader - Photo Classification Killed at Its
+Pre-registered Gates; Dataset and Weights Withheld</h1>
+<p class="subtitle">Technical note - v0 research preview (release shape
+locked 2026-09-07)</p>
+<p class="author">TODO: Author list (LinguaLeap Tech Limited and
+contributors)</p>
+<p class="date">7 September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>IDDSI-Open v0 ships code plus eval results plus a deterministic
+computer-vision grader for the 10 mL / 10 s IDDSI Flow Test, plus a
+measured negative finding on photo classification. The model weights and
+the harvested image dataset are WITHHELD - a deliberate, stated
+decision. The dataset is withheld on licence grounds: of 587 unique
+events exactly 2 would ship cleanly (592 rows carry unverified
+open-images/openverse licences, 7 are CC BY-SA against the BY-NC-SA main
+release, 109 have unresolved redistribution status). The weights are
+withheld because the photo-classification head failed its pre-registered
+gates - wk1 weighted kappa &gt;= 0.70 (measured 0.42), wk2 macro-F1
+&gt;= 0.75 (measured 0.358) with dangerous under-classification at 33%
+against a &lt;= 5% gate - so the wk1 kill rule fired and
+photo-classification is dead as a product capability. The headline
+negative finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on
+only 22.6% of the same images - chance level for 5 classes - because
+middle IDDSI levels (L4/L5/L6) need absolute size/flow information a
+scale-free web photo does not carry; every label-derived metric is
+therefore measured against noise. A CORAL ordinal-decode bug that made
+interior levels unreachable was found and fixed (held-out n = 109:
+macro-F1 0.088 -&gt; 0.358, coverage 0.70 -&gt; 0.88, ECE 0.138 -&gt;
+0.091, temperature 2.83 -&gt; 0.93; weighted kappa flat at 0.42). The
+flow-test grader works: MAE 0.065 ml on a 100-video bench (L0-L4).
+Planned next step, not done: physically-tested desk specimens (60 base
+foods x 5 levels = 300, single-operator, protocol-following,
+test-filmed, with a filmed re-test subsample for intra-rater
+reliability). This is a research preview. Research demonstration for
+culinary education. Estimates visual similarity to IDDSI descriptors;
+does not perform official IDDSI tests, assess swallowing, determine
+suitability for any person, or decide whether food is safe to consume.
+The ambition was “the first publicly downloadable IDDSI-specific
+smartphone-food dataset and fine-tuned model released under explicit
+reuse licences, with physically tested Chinese/Cantonese soft-meal
+labels”; v0 does NOT meet it, and the ONE claim that stands is “the
+first open-source smartphone grader for the 10 ml IDDSI Flow Test”. We
+claim neither clinical validity nor any ability to determine swallowing
+safety from a photograph.</p>
+</div>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduction" id="toc-introduction">1.
+Introduction</a></li>
+<li><a href="#related-work" id="toc-related-work">2. Related
+work</a></li>
+<li><a href="#methods" id="toc-methods">3. Methods</a>
+<ul>
+<li><a href="#capture-protocol-and-reference-labels"
+id="toc-capture-protocol-and-reference-labels">3.1 Capture protocol and
+reference labels</a></li>
+<li><a href="#data-sources-and-provenance-controls"
+id="toc-data-sources-and-provenance-controls">3.2 Data sources and
+provenance controls</a></li>
+<li><a href="#level-compatibility-model"
+id="toc-level-compatibility-model">3.3 Level-compatibility
+model</a></li>
+<li><a href="#deterministic-flow-test-grader"
+id="toc-deterministic-flow-test-grader">3.4 Deterministic Flow Test
+grader</a></li>
+<li><a href="#evaluation-plan" id="toc-evaluation-plan">3.5 Evaluation
+plan</a></li>
+</ul></li>
+<li><a href="#generator-failure-case-study"
+id="toc-generator-failure-case-study">4. Generator failure case
+study</a></li>
+<li><a href="#regulatory-posture" id="toc-regulatory-posture">5.
+Regulatory posture</a></li>
+<li><a href="#limitations" id="toc-limitations">6. Limitations</a></li>
+<li><a href="#conclusion" id="toc-conclusion">7. Conclusion</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul>
+</nav>
+<!--
+W22 methods note (updated v0, release shape locked 2026-09-07; honest release
+card hf/model_README.md is the authority): classifier and flow-grader result
+cells now report the locked v0 numbers (CORAL decode fix, pre-registered
+gates, 22.6% inter-judge ceiling finding, flow MAE 0.065 ml on the 100-video
+bench). RD-SLP inter-rater baseline, subgroup analyses, and bootstrap CIs were
+not measured in v0. The 0/24 generator-QA pilot is the sole reported
+development-pilot outcome. Frozen boundary wording comes from the project's
+frozen source files (r5_prior.md, r5_reg.md, dataschema/README.md,
+dataschema/docs/CAPTURE_PROTOCOL.md, synth/README.md, crowd/README.md,
+harvest/README.md, RUNBOARD.md).
+-->
+<h1 id="introduction">1. Introduction</h1>
+<p>Dysphagia-safe food and liquid preparation depends on the IDDSI
+framework, whose levels are defined by physical tests (flow test, fork
+pressure, fork drip, spoon tilt), not by appearance. Existing automated
+approaches (Section 2) infer levels from images or video with accuracies
+ranging from 61.74% exact match (EdUHK, CEIV-115) to 96.5% controlled
+accuracy (ViscoCam), but none publishes a downloadable IDDSI-specific
+dataset plus fine-tuned weights under an explicit reuse licence, and
+none pairs smartphone media with physically tested labels for
+Chinese/Cantonese soft meals.</p>
+<p>IDDSI-Open v0 contributes:</p>
+<ol type="1">
+<li>a frozen capture protocol and event schema pairing guided smartphone
+media (45° plate photo + 8-12 s fork-press / spoon-tilt / fork-drip
+clips; liquid side-view 10 mL / 10 s syringe flow videos) with
+contemporaneous physical tests performed independently by a registered
+dietitian (RD) and a speech-language pathologist (SLP), with
+third-person adjudication of disagreements - shipped as code and
+protocol, not as a downloadable dataset;</li>
+<li>code and eval results for the photo-classification path (SigLIP-2
+CORAL head with calibrated abstention) - the model weights are WITHHELD
+because the head failed its pre-registered gates, and the harvested
+dataset is WITHHELD on licence grounds; the result is a measured
+negative finding, not a product capability;</li>
+<li>an open-source deterministic CV grader for the IDDSI Flow Test (10
+mL / 10 s), claiming “first open-source smartphone grader for the 10
+ml/10-second IDDSI Flow Test” - explicitly <strong>not</strong> “first
+video grader”;</li>
+<li>mandatory abstention: the system must answer “unclear - perform
+physical test” rather than guess.</li>
+</ol>
+<p><strong>Contribution claim (v0 truth; release shape locked 2026-09-07
+- the honest release card <code>hf/model_README.md</code> is the
+authority):</strong></p>
+<blockquote>
+<p>“The ambition was ‘the first publicly downloadable IDDSI-specific
+smartphone-food dataset and fine-tuned model released under explicit
+reuse licences, with physically tested Chinese/Cantonese soft-meal
+labels’; v0 does NOT meet it - the harvested dataset is withheld on
+licence grounds (of 587 unique events exactly 2 would ship cleanly; 592
+rows carry unverified open-images/openverse licences, 7 are CC BY-SA
+against the BY-NC-SA main release, 109 have unresolved redistribution
+status) and the model weights are withheld because the
+photo-classification head failed its pre-registered gates (wk1 weighted
+kappa &gt;= 0.70 measured 0.42; wk2 macro-F1 &gt;= 0.75 measured 0.358,
+with dangerous under-classification at 33% against a &lt;= 5% gate; the
+wk1 kill rule fired and photo-classification is dead as a product
+capability). The ONE claim that stands is ‘the first open-source
+smartphone grader for the 10 ml IDDSI Flow Test’.”</p>
+</blockquote>
+<p>We never claim: first IDDSI AI; first image classifier; first
+dataset/benchmark; clinically validated; diagnostic; medical-grade; or
+able to determine swallowing safety from a photograph (frozen
+never-claim list, r5_prior.md).</p>
+<h1 id="related-work">2. Related work</h1>
+<p>Five direct prior works frame the landscape (as stated in
+r5_prior.md):</p>
+<ul>
+<li><strong>ViscoCam (PolyU, 2021).</strong> Smartphone video plus
+motion sensing to classify three IDDSI liquid levels - 96.5% controlled
+accuracy, but only &gt;81% under extreme conditions <span
+class="citation" data-cites="viscocam">(<a href="#ref-viscocam"
+role="doc-biblioref"><em><span>ViscoCam</span></em> 2021</a>)</span>.
+Exposes neither dataset nor weights.</li>
+<li><strong>OptiTexture (HKUST).</strong> Combines RGB with a &lt;$20
+light-scattering sensor: 91.96% on 112 L3-L6 samples; its vision-only
+baseline was 69.64% <span class="citation" data-cites="optitexture">(<a
+href="#ref-optitexture" role="doc-biblioref">TODO TODO</a>)</span>.
+Exposes neither dataset nor weights.</li>
+<li><strong>EdUHK (Frontiers in Nutrition, 2026).</strong> Single-image
+Qwen pipeline achieved only 61.74% exact match on CEIV-115; open VLMs
+missed every liquid hazard <span class="citation"
+data-cites="eduhk_frontiers">(<a href="#ref-eduhk_frontiers"
+role="doc-biblioref"><span>“TODO”</span> 2026</a>)</span>. CEIV
+publishes examples, not the full machine-readable corpus.</li>
+<li><strong>Automated photogrammetric syringe test (2019).</strong>
+Automated video/photogrammetric measurement of the official syringe test
+appeared in 2019 <span class="citation" data-cites="syringe2019">(<a
+href="#ref-syringe2019" role="doc-biblioref"><em>TODO</em>
+2019</a>)</span>. (This is why we claim “first open-source smartphone
+grader for the 10 ml/10-second IDDSI Flow Test,” not “first video
+grader.”)</li>
+<li><strong>Safe Plate (Australia, proprietary).</strong> Advertises
+photo-and-video IDDSI verification <span class="citation"
+data-cites="safeplate">(<a href="#ref-safeplate"
+role="doc-biblioref"><em><span>Safe Plate</span></em>, n.d.</a>)</span>.
+Proprietary; no published dataset or weights.</li>
+</ul>
+<p>Also relevant context from r5_prior.md: the official IDDSI
+iOS/Android app is a descriptor/test-reference library, not a
+classifier; Viscgo hardware, CF-200N texture analysers, and
+menu-software vendors (MealSuite/Dietech; Kewpie/UDF, Pulmuone, Hyundai
+Green Food, apetito/winVitalis, Hormel/Lyons, SimplyThick) classify or
+test known products rather than infer an unknown plate. No independent
+mainland-Chinese plate-photo classifier was found. Open
+FoodSense/PlateInsight resources concern generic perceived texture, not
+IDDSI.</p>
+<h1 id="methods">3. Methods</h1>
+<p>This section specifies the frozen study design and the implementation
+as evaluated in v0. Classifier and flow-grader results are reported in
+Sections 3.3-3.5; v0 ships no downloadable dataset and no model
+weights.</p>
+<h2 id="capture-protocol-and-reference-labels">3.1 Capture protocol and
+reference labels</h2>
+<p>The unit of observation is one independently prepared recipe batch or
+one freshly prepared liquid test. Stills, clips, retakes, and extracted
+frames from that preparation remain attached to one
+<code>event_id</code>; they are not treated as independent samples.
+Kitchen staff or interns capture media with a native phone camera,
+filters and portrait effects disabled where possible. The kit includes a
+standard metal fork, spoon, timer, and a non-food-contact reference card
+carrying a verified 15 mm feature and the event ID. Liquid events use
+the study-approved 10 mL syringe with a 61.5 mm calibrated barrel. The
+food and liquid procedures follow the current official physical-test
+instructions <span class="citation" data-cites="iddsi_framework">(<a
+href="#ref-iddsi_framework" role="doc-biblioref">IDDSI
+2019</a>)</span>.</p>
+<p>Food events at declared L3-L7 include a whole-plate still from
+approximately 45 degrees and continuous 8-12 s guided clips. L3 and L4
+require spoon-tilt and fork-drip views; L5 requires spoon-tilt and
+fork-press; L6 and L7 require fork-press. The clip begins before utensil
+contact and continues through release, drip, deformation, or rebound.
+Fork-press capture includes thumbnail blanching as a repeatable visual
+endpoint, not as an inferred force measurement. The entire utensil,
+sample, and scale reference remain visible. Mixed-component meals
+require an explicit study decision and are not silently assigned a level
+from a single component.</p>
+<p>Liquid events at declared L0-L4 use one uninterrupted side-view Flow
+Test video. The full barrel, outlet, markings, and collection vessel are
+shown against a contrasting background; the syringe begins at exactly 10
+mL at the recorded serving temperature. Recording begins before release,
+retains a visible or audible release cue, keeps the syringe vertical and
+the meniscus visible, and continues for at least one second after the 10
+s reading. Wrong starting volume, uncertain release time, occlusion,
+camera movement, or an unreadable meniscus triggers a documented retake
+rather than an inferred result.</p>
+<p>Each capture session records recipe, batch, kitchen, phone, operator,
+declared level, cuisine, serving temperature, lighting, plate, consent,
+and protocol-deviation metadata. Faces, patient identifiers, staff
+names, medication, order slips, identifying speech, and geolocation
+metadata are excluded. Recipe, batch, and kitchen groups are
+prospectively separated across <code>train</code>, <code>val</code>, and
+locked <code>external_test</code> splits.</p>
+<p>For release-eligible real events, an RD and an SLP independently
+perform and record the applicable physical tests on the same batch at
+the same serving condition without seeing one another’s result. A
+qualified third reviewer adjudicates disagreements. Only a final numeric
+adjudicated level enters the physically tested release; unresolved,
+invalid, pending, or protocol-deviating events remain quarantined or
+excluded. Tests were performed by LinguaLeap and participating
+assessors; they are not IDDSI certification.</p>
+<h2 id="data-sources-and-provenance-controls">3.2 Data sources and
+provenance controls</h2>
+<p>The canonical interchange is <code>events.jsonl</code> plus a
+<code>media/</code> tree, with one event per row and safe relative media
+paths. The schema records source, split, recipe/batch/kitchen groups,
+capture conditions, consent and privacy checks, media hashes and roles,
+declared/weak/user levels, independent physical-test levels,
+adjudication, and release eligibility. Four source classes are kept
+distinct:</p>
+<ol type="1">
+<li><strong>Synthetic (<code>source="synthetic"</code>).</strong>
+Development-only photographs are prompted toward visible L3-L7
+descriptors for pipeline development and representation-aware
+pretraining. The prompt target is stored only as
+<code>level_declared</code>; all physical-test fields are null. Rows may
+enter <code>train</code> or <code>val</code>, never
+<code>external_test</code>, and cannot be counted as physical ground
+truth, achieved coverage, validation evidence, or a product claim.</li>
+<li><strong>Real-weak (<code>source="real-weak"</code>).</strong>
+Licence-eligible third-party food images support pipeline development.
+Physical-test fields remain null; model-derived weak labels, when
+present, remain explicitly weak. These rows are restricted to
+<code>train</code> and retain a mandatory attribution ledger.</li>
+<li><strong>Real-crowd (<code>source="real-crowd"</code>).</strong>
+<code>level_user</code> records a contributor’s statement, not a
+performed physical test. These events may support robustness or
+separately reported weak-supervision work, but they do not enter a
+physically tested benchmark. They remain release-ineligible while
+privacy screening is incomplete.</li>
+<li><strong>Real-tested (<code>source="real"</code>).</strong> Release
+eligibility requires the contemporaneous independent assessments and
+adjudication described in Section 3.1. Declared recipe levels, visual
+labels, synthetic targets, crowd statements, and model predictions are
+never substitutes.</li>
+</ol>
+<p>Counts by source, level, and split are as recorded in the shipped
+manifests; the harvested image dataset itself is WITHHELD in v0 on
+licence grounds and no downloadable dataset ships. Release-licence audit
+(v0): of 587 unique events exactly 2 would ship cleanly - 592 rows carry
+unverified open-images/openverse licences, 7 are CC BY-SA against the
+BY-NC-SA main release, and 109 have unresolved redistribution status.
+Code ships under Apache-2.0; model weights are withheld on safety-gate
+grounds (Section 3.3). The project is not the official IDDSI website and
+is not IDDSI-endorsed.</p>
+<h2 id="level-compatibility-model">3.3 Level-compatibility model</h2>
+<p>The primary still-image path uses
+<code>google/siglip2-base-patch16-224</code> as the encoder and a
+five-class ordinal head for L3-L7. The head implements monotone
+CORAL-style thresholds: a shared scalar projection and ordered learned
+cut-points are converted into a probability distribution over the five
+ordered levels. A <code>timm</code> ResNet-18 with the same ordinal head
+is the small-CNN baseline. The executable training configuration uses
+224-pixel inputs, class-balanced CORAL loss, dropout, weight decay,
+mixed precision, and gradient clipping. It first trains the head with
+the encoder frozen, then unfreezes the final encoder blocks; the frozen
+configuration specifies five independent seeds. v0 ships the training
+and evaluation code with its recorded results only; no model weights
+ship.</p>
+<p>Model selection, temperature calibration, and the confidence
+threshold are performed on validation data only. At inference, samples
+below the frozen threshold return
+<code>unclear - perform physical test</code>; an abstention is never
+silently converted to a level. Qwen3-VL-2B is reserved for grounded
+multilingual explanations and guided multi-frame reasoning. It receives
+the structured decision but cannot change it, and it is not the grading
+path. Explanation-adapter weights are withheld with the model
+weights.</p>
+<p>A CORAL ordinal-decode bug made the interior levels (L4/L5/L6)
+unreachable: argmax over sigmoid-difference class masses could never
+fire for interior classes (proven numerically from the checkpoint). It
+was fixed with the ordinal rank rule
+<code>level = #{k : P(y&gt;k) &gt; 0.5}</code>. Held-out results (n =
+109): macro-F1 0.088 -&gt; 0.358, coverage 0.70 -&gt; 0.88, ECE 0.138
+-&gt; 0.091, temperature 2.83 -&gt; 0.93; weighted kappa flat at 0.42.
+The pre-registered gates all failed: wk1 weighted kappa &gt;= 0.70
+(measured 0.42 - the kill rule FIRES, so photo-classification is dead as
+a product capability); wk2 macro-F1 &gt;= 0.75 (measured 0.358) with
+dangerous under-classification &lt;= 5% (measured 33%). The ceiling
+finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only 22.6%
+of the same images - chance level for 5 classes - because middle IDDSI
+levels (L4/L5/L6) need absolute size/flow information a scale-free web
+photo does not carry. Every label-derived metric above is therefore
+measured against noise.</p>
+<h2 id="deterministic-flow-test-grader">3.4 Deterministic Flow Test
+grader</h2>
+<p>The video grader is a deterministic OpenCV pipeline with no learned
+model, network call, or GPU dependency. Its implementation-specific
+calibrated mode places a high-contrast ID-1 rectangle (85.60 x 53.98 mm)
+in the syringe plane to estimate pixels per millimetre and verify the
+61.5 +/- 3.0 mm barrel. The grader detects paired barrel edges, checks
+verticality, rectifies the barrel, detects release from a nozzle change
+or the start of liquid motion, tracks the meniscus, and takes a robust
+reading at 10 s after release. Phone rotation metadata and non-ASCII
+input paths are handled during decoding.</p>
+<p>Residual volume maps to L0 below 1 mL, L1 from 1 to below 4 mL, L2
+from 4 to below 8 mL, L3 at 8 mL or above after visible flow, and L4
+when no detectable flow occurs. A reading within 0.5 mL of the 1, 4, or
+8 mL boundary abstains. The grader also abstains for a missing or
+unverifiable scale/syringe, excessive tilt, missing release,
+insufficient duration, low meniscus confidence, occlusion, or detected
+bubbles/lumps. It retains the numeric estimate and all quality checks
+for audit while suppressing the level. Fiducial-optional mode is
+explicitly marked uncalibrated and is not used for the planned
+calibrated evaluation.</p>
+<p>This contribution is described narrowly as the “first open-source
+smartphone grader for the 10 ml/10-second IDDSI Flow Test,” not the
+first video grader, because automated photogrammetric measurement of the
+syringe test appeared in 2019 <span class="citation"
+data-cites="syringe2019">(<a href="#ref-syringe2019"
+role="doc-biblioref"><em>TODO</em> 2019</a>)</span>. End-to-end
+performance (v0, the working deliverable): MAE 0.065 ml on a 100-video
+bench, grading L0-L4. A still photograph is never used to grade liquid
+flow.</p>
+<h2 id="evaluation-plan">3.5 Evaluation plan</h2>
+<p>Only <code>source="real"</code>, protocol-complete, adjudicated
+events in the locked <code>external_test</code> split contribute to the
+primary benchmark. Synthetic, real-weak, and real-crowd events are
+excluded or reported separately and are never cited as ground truth. The
+split is enforced at recipe, batch, and kitchen level. Calibration and
+abstention thresholds are frozen on validation data before external-test
+evaluation.</p>
+<p>For the L3-L7 model, the v0 report contains macro-F1 with abstentions
+counted as misses; quadratic-weighted kappa on covered events; coverage
+and abstention rate; dangerous-direction under-classification (a
+prediction below the physical-test level); expected calibration error
+and temperature; and the CORAL-decode before/after comparison (Section
+3.3). RD-versus-SLP raw agreement before adjudication would form the
+human inter-rater baseline but was not measured in v0; prespecified
+subgroup analyses and stratified bootstrap 95% confidence intervals are
+likewise not reported in v0.</p>
+<p>The Flow Test evaluation compares estimated residual volume with the
+recorded physical reading, reports mL mean absolute error and L0-L4
+agreement away from the predefined 1/4/8 mL boundaries, and separately
+reports boundary cases, abstentions, and technical failure reasons.
+Failure cases accompany held-out results. The project gates are
+prespecified in the runboard; failing a gate keeps the system at
+research-preview status rather than changing the metric or test set. In
+v0 the wk1 gate failed and the kill rule fired (Section 3.3):
+photo-classification is dead as a product capability, and only code,
+results, and the flow-test grader ship.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Observed metric (v0)</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CORAL fix, held-out n = 109: macro-F1</td>
+<td>0.088 -&gt; 0.358</td>
+</tr>
+<tr>
+<td>Coverage</td>
+<td>0.70 -&gt; 0.88</td>
+</tr>
+<tr>
+<td>ECE</td>
+<td>0.138 -&gt; 0.091</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>2.83 -&gt; 0.93</td>
+</tr>
+<tr>
+<td>Weighted kappa (covered events)</td>
+<td>0.42 (flat before/after fix; measured against label noise)</td>
+</tr>
+<tr>
+<td>Dangerous under-classification rate</td>
+<td>33% (gate: &lt;= 5% - FAILED)</td>
+</tr>
+<tr>
+<td>wk1 gate (weighted kappa &gt;= 0.70)</td>
+<td>FAILED - kill rule fired</td>
+</tr>
+<tr>
+<td>wk2 gate (macro-F1 &gt;= 0.75)</td>
+<td>FAILED (measured 0.358)</td>
+</tr>
+<tr>
+<td>Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B)</td>
+<td>22.6% (chance level for 5 classes - the ceiling finding)</td>
+</tr>
+<tr>
+<td>Flow residual-volume MAE (100-video bench, L0-L4)</td>
+<td>0.065 ml</td>
+</tr>
+<tr>
+<td>RD-SLP inter-rater baseline</td>
+<td>not measured in v0</td>
+</tr>
+<tr>
+<td>Stratified-bootstrap 95% CIs</td>
+<td>not reported in v0</td>
+</tr>
+<tr>
+<td>Prespecified subgroups</td>
+<td>not reported in v0</td>
+</tr>
+</tbody>
+</table>
+<h1 id="generator-failure-case-study">4. Generator failure case
+study</h1>
+<p>The first overnight synthetic-pipeline pilot on 1 September 2026
+accepted <strong>0 of 24</strong> candidate images. This was a
+generator-quality-control outcome, not a model or dataset evaluation
+result. Manual audit agreed with the local Qwen3-VL-2B consistency judge
+and identified three recurring prompt-to-image failures:</p>
+<ol type="1">
+<li><strong>Grain texture ignored.</strong> Images prompted as smooth
+L3/L4 masses retained visible whole rice grains or granular
+kernels.</li>
+<li><strong>Garnish added.</strong> The generator introduced sesame
+seeds, scallions, herbs, or other toppings whose untested texture
+contradicted the requested food presentation.</li>
+<li><strong>Camera-facet nouns rendered as objects.</strong> Terms
+intended to describe the capture style were interpreted literally,
+including a smartphone/device rendered in or on the food scene.</li>
+</ol>
+<p>The prompt-bank remedy was applied before further GPU work: per-level
+visual guidance was strengthened with explicit smoothness, particle,
+garnish, and separated-liquid constraints; the common negative prompt
+now excludes phones/devices, whole or visible rice grains, garnish, and
+related artefacts; and camera-profile facets explicitly state that no
+device is visible in the scene. These constraints target all three
+audited failure modes while preserving capture-style variation. No
+post-remedy acceptance rate or downstream benefit is claimed here; both
+are <strong>TBD</strong> pending a controlled rerun. The pilot
+reinforces the provenance rule that synthetic imagery is
+development-only and must be judged before use.</p>
+<h1 id="regulatory-posture">5. Regulatory posture</h1>
+<p>From r5_reg.md (frozen): as originally proposed (Snap-to-IDDSI), the
+system is probably Software as a Medical Device (SaMD), because it
+interprets an individual meal and recommends modification to mitigate a
+swallowing disorder; “Guidance only,” “not a diagnosis,” and
+“食品不能代替藥物” do not neutralize that intended medical purpose. Hong
+Kong: standalone medical-purpose software is SaMD under TR-007; MDACS
+listing generally voluntary. Mainland China: plausibly Class II,
+potentially Class III - obtain a formal classification determination
+before mainland release. EU: MDSW, Rule 11, Class IIa minimum, IIb
+arguable given choking/aspiration consequences. US: dysphagia-specific
+claims are not disease-unrelated “general wellness.”</p>
+<p>This technical note therefore describes an <strong>open
+research/quality-assurance benchmark</strong>, not a clinical or
+deployed safety classifier. Static RGB cannot directly measure flow,
+hardness, adhesiveness or cohesiveness; mandatory abstention and
+physical-test confirmation are essential (r5_prior.md, frozen
+verdict).</p>
+<p><strong>Frozen public-demo boundary wording (r5_reg.md):</strong></p>
+<blockquote>
+<p>“Research demonstration for culinary education. Estimates visual
+similarity to IDDSI descriptors; does not perform official IDDSI tests,
+assess swallowing, determine suitability for any person, or decide
+whether food is safe to consume.”</p>
+</blockquote>
+<p>A regulated version would require fixed intended use, formal
+classification, ISO 13485/14971, IEC 62304/62366, locked/versioned
+model, analytical and clinical validation, subgroup/external-site
+evidence, cybersecurity/privacy, human-factors work,
+adverse-event/post-market processes, and jurisdictional submission
+(r5_reg.md). This note does not describe such a version.</p>
+<h1 id="limitations">6. Limitations</h1>
+<ul>
+<li><strong>Photographs are not physical tests.</strong> Static RGB
+cannot directly measure flow, hardness, adhesiveness, or cohesiveness
+(frozen verdict, r5_prior.md). A “not diagnosis” disclaimer does not
+override intended purpose (r5_reg.md).</li>
+<li><strong>Labels are not clinical ground truth for safety.</strong>
+Tests were performed by LinguaLeap staff and participating assessors,
+not clinicians unaffiliated with the project, and they are not IDDSI
+certification (frozen wording, Section 3.1).</li>
+<li><strong>Weak/synthetic/crowd provenance classes</strong> support
+pipeline development only; they must not be cited as ground truth
+(frozen, Section 3.2).</li>
+<li><strong>Synthetic generation is not self-validating.</strong> The
+audited 0/24 pilot and its three failure modes are documented in Section
+4. The prompt remedy has not yet been evaluated; its effect is TBD.</li>
+<li><strong>Photo classification killed at its gates.</strong> The head
+failed every pre-registered gate (wk1 weighted kappa &gt;= 0.70 measured
+0.42 - kill rule fired; wk2 macro-F1 &gt;= 0.75 measured 0.358,
+dangerous under-classification 33% against a &lt;= 5% gate), and kappa
+0.42 is measured against label noise: two VLM judges agree on only 22.6%
+of the same images (chance level for 5 classes). Weights are withheld;
+photo-classification is dead as a product capability.</li>
+<li><strong>Population and cuisine coverage:</strong> unverified in v0.
+The planned remedy is physically-tested desk specimens (60 base foods x
+5 levels = 300, single-operator, protocol-following, test-filmed, with a
+filmed re-test subsample for intra-rater reliability) - planned, not
+done.</li>
+<li><strong>Flow grader scope:</strong> claims only the 10 mL / 10 s
+smartphone Flow Test grader (MAE 0.065 ml on the 100-video bench,
+L0-L4), not “first video grader” (2019 photogrammetric syringe
+measurement predates it).</li>
+<li><strong>What v0 reports and what it does not.</strong> Classifier
+results (CORAL fix, gates, 22.6% ceiling finding) and the flow-grader
+bench are reported in Sections 3.3-3.5. The RD-SLP inter-rater baseline,
+subgroup analyses, and bootstrap CIs were not measured in v0. The 0/24
+generator-QA pilot is not a model, dataset, or flow-grader
+evaluation.</li>
+</ul>
+<h1 id="conclusion">7. Conclusion</h1>
+<p>IDDSI-Open v0 ships code, eval results, and an open-source smartphone
+grader for the 10 mL / 10 s IDDSI Flow Test (MAE 0.065 ml on the
+100-video bench, L0-L4) - claiming only the narrow first stated in
+Section 1 (“the first open-source smartphone grader for the 10 ml IDDSI
+Flow Test”) and never clinical validity - plus a measured negative
+finding: photo-classification failed its pre-registered gates (weighted
+kappa 0.42 against a &gt;= 0.70 gate; macro-F1 0.358 against a &gt;=
+0.75 gate; dangerous under-classification 33% against a &lt;= 5% gate)
+measured against 22.6% inter-judge label noise, so the model weights and
+the harvested dataset are withheld and photo-classification is dead as a
+product capability. Held-out results, failure cases, and test videos
+accompany the repository. Planned next step, not done: physically-tested
+desk specimens (60 base foods x 5 levels = 300, single-operator,
+protocol-following, test-filmed, with a filmed re-test subsample for
+intra-rater reliability). Numeric conclusions: as reported in Sections
+3.3-3.5.</p>
+<h1 id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-iddsi_framework" class="csl-entry" role="listitem">
+IDDSI. 2019. <em>The <span>International Dysphagia Diet Standardisation
+Initiative</span> Framework: Detailed Definitions and Test Methods for
+Texture-Modified Foods and Liquids</em>. <a
+href="https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf"
+class="uri">Https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf</a>.
+</div>
+<div id="ref-safeplate" class="csl-entry" role="listitem">
+<em><span>Safe Plate</span></em>. n.d. <a
+href="https://www.safeplate.au/"
+class="uri">Https://www.safeplate.au/</a>.
+</div>
+<div id="ref-optitexture" class="csl-entry" role="listitem">
+TODO. TODO. <em><span>OptiTexture</span>: A Low-Cost Optical Deep
+Learning Solution for Objective Texture Assessment</em>. <a
+href="https://dl.acm.org/doi/10.1145/3810209"
+class="uri">Https://dl.acm.org/doi/10.1145/3810209</a>.
+</div>
+<div id="ref-syringe2019" class="csl-entry" role="listitem">
+<em>TODO: Exact Article Title</em>. 2019.
+</div>
+<div id="ref-eduhk_frontiers" class="csl-entry" role="listitem">
+<span>“TODO: Exact Article Title.”</span> 2026. <em>Frontiers in
+Nutrition</em>.
+</div>
+<div id="ref-viscocam" class="csl-entry" role="listitem">
+<em><span>ViscoCam</span>: Smartphone-Based Drink Viscosity Control
+Assistant</em>. 2021. <a
+href="https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/"
+class="uri">Https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/</a>.
+</div>
+</div>
+</body>
+</html>

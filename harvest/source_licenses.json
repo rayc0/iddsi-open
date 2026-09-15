@@ -1,0 +1,61 @@
+{
+  "policy_version": "2026-08-31",
+  "release_rule": "Fail closed. Download only assets with an explicit allowlisted redistribution licence and complete attribution; retain per-file provenance.",
+  "allowed_licence_families": [
+    "CC0 1.0",
+    "CC BY 2.0",
+    "CC BY 2.5",
+    "CC BY 3.0",
+    "CC BY 4.0",
+    "CC BY-SA 2.0",
+    "CC BY-SA 2.5",
+    "CC BY-SA 3.0",
+    "CC BY-SA 4.0"
+  ],
+  "sources": [
+    {
+      "id": "wikimedia",
+      "status": "eligible_per_asset",
+      "licence": "Per-file; restricted by this harvester to CC0 / CC BY / CC BY-SA",
+      "evidence_url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/licenses",
+      "api_url": "https://www.mediawiki.org/wiki/API:Imageinfo",
+      "conditions": "Creator, landing URL, licence name, and licence URL are mandatory. Public-domain tags other than explicit CC0 are excluded."
+    },
+    {
+      "id": "openverse",
+      "status": "discovery_only_pending_per_asset_verification",
+      "licence": "Discovery filter: CC0 or CC BY metadata only; authority remains the foreign source landing page",
+      "evidence_url": "https://api.openverse.org/v1/images/",
+      "conditions": "Every row records foreign_landing_url and the returned licence fields with verification_status=unverified. Exclude from release until the licence is verified on that landing page."
+    },
+    {
+      "id": "open-images",
+      "status": "discovery_only_pending_per_asset_verification",
+      "licence": "Images listed as CC BY 2.0; annotations CC BY 4.0",
+      "evidence_url": "https://storage.googleapis.com/openimages/web/factsfigures_v7.html#licenses",
+      "conditions": "Accept only metadata rows with CC BY 2.0, author, and original landing page. Record verification_status=unverified and exclude from release until that page is checked."
+    },
+    {
+      "id": "nutrition5k",
+      "status": "eligible_dataset_level",
+      "licence": "CC BY 4.0",
+      "evidence_url": "https://github.com/google-research-datasets/Nutrition5k#license--contact",
+      "conditions": "Retain dataset attribution and citation on every derived image row."
+    },
+    {
+      "id": "food101",
+      "status": "blocked_no_redistribution_grant",
+      "licence": "No dataset-wide image redistribution licence",
+      "evidence_url": "https://huggingface.co/datasets/ethz/food101#licensing-information",
+      "conditions": "ETH states that images belong to Foodspotting contributors and use beyond scientific fair use must be negotiated with each owner. No adapter downloads these files."
+    },
+    {
+      "id": "sababishraq/foodsense-dataset",
+      "status": "blocked_upstream_rights_conflict",
+      "licence": "HF card says CC BY 4.0; source images are Yelp Open Dataset",
+      "evidence_url": "https://huggingface.co/datasets/sababishraq/foodsense-dataset",
+      "upstream_evidence_url": "https://business.yelp.com/data/resources/open-dataset/",
+      "conditions": "The HF card does not document authority to relicense Yelp-origin photos under CC BY 4.0. Excluded pending written clarification or per-image rights."
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/LinguaLeap/iddsi-open/dataschema/schema/event.schema.json",
+  "title": "IDDSI-Open capture event",
+  "description": "One independent food-preparation or syringe-flow capture event. This schema records physical-test labels; it does not assert suitability or safety for any person.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "recipe_id",
+    "batch_id",
+    "kitchen_id",
+    "phone_id",
+    "captured_at",
+    "sample_kind",
+    "level_declared",
+    "level_tested_RD",
+    "level_tested_SLP",
+    "level_adjudicated",
+    "media_files",
+    "test_type",
+    "capture_conditions",
+    "ground_truth_record",
+    "notes",
+    "split",
+    "source",
+    "consent_recorded",
+    "contains_face"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,127}$"
+    },
+    "recipe_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+    },
+    "batch_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+    },
+    "kitchen_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+    },
+    "phone_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sample_kind": {
+      "enum": ["food", "liquid"]
+    },
+    "level_declared": {
+      "$ref": "#/$defs/nullable_level"
+    },
+    "level_tested_RD": {
+      "$ref": "#/$defs/nullable_level"
+    },
+    "level_tested_SLP": {
+      "$ref": "#/$defs/nullable_level"
+    },
+    "level_adjudicated": {
+      "$ref": "#/$defs/nullable_level"
+    },
+    "media_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/media_file"
+      }
+    },
+    "test_type": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "plate_photo",
+          "spoon_tilt",
+          "fork_drip",
+          "fork_press",
+          "syringe_flow"
+        ]
+      }
+    },
+    "capture_conditions": {
+      "$ref": "#/$defs/capture_conditions"
+    },
+    "ground_truth_record": {
+      "$ref": "#/$defs/ground_truth_record"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "split": {
+      "enum": ["train", "val", "external_test"]
+    },
+    "source": {
+      "enum": ["real", "synthetic"]
+    },
+    "consent_recorded": {
+      "type": "boolean"
+    },
+    "contains_face": {
+      "const": false
+    }
+  },
+  "$defs": {
+    "nullable_level": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 7
+    },
+    "media_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "media_type", "capture_role"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512,
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+        },
+        "media_type": {
+          "enum": ["image", "video"]
+        },
+        "capture_role": {
+          "enum": [
+            "plate_photo",
+            "spoon_tilt",
+            "fork_drip",
+            "fork_press",
+            "syringe_flow"
+          ]
+        },
+        "sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        }
+      }
+    },
+    "ground_truth_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rd_assessment_id",
+        "slp_assessment_id",
+        "adjudication_status",
+        "adjudicator_code",
+        "adjudication_notes"
+      ],
+      "properties": {
+        "rd_assessment_id": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+        },
+        "slp_assessment_id": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+        },
+        "adjudication_status": {
+          "enum": ["pending", "not_required", "adjudicated", "not_applicable"]
+        },
+        "adjudicator_code": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+        },
+        "adjudication_notes": {
+          "type": "string",
+          "maxLength": 2000
+        }
+      }
+    },
+    "capture_conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operator_id",
+        "lighting_category",
+        "lighting_notes",
+        "plate_category",
+        "plate_notes",
+        "serving_temperature_c",
+        "cuisine_tags"
+      ],
+      "properties": {
+        "operator_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+        },
+        "lighting_category": {
+          "enum": ["daylight", "overhead", "mixed", "low_light", "controlled", "other"]
+        },
+        "lighting_notes": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "plate_category": {
+          "enum": ["light_plain", "dark_plain", "patterned", "reflective", "bowl", "not_applicable", "other"]
+        },
+        "plate_notes": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "serving_temperature_c": {
+          "type": ["number", "null"]
+        },
+        "cuisine_tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{1,63}$"
+          }
+        }
+      }
+    }
+  }
+}

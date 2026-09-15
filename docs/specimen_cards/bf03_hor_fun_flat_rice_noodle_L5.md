@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g blanched hor fun on the scale. Chop across the noodles with a fork or knife until no piece exceeds 4 mm; sweep through a 4 mm sieve and discard any overs. Return choppings to the bowl, moisten with 30 ml warm broth from the pack, and mash with a fork until the mass clumps and a fork pressed into it squashes without springing back. Add more broth 5 ml at a time only if the mass looks dry; record the final broth volume. No blender is used. No thickener is added; L5 calibration starts at zero grams per 100 ml and the operator notes the actual on the sheet.
+
+2. IDDSI TEST — Fork pressure: press fork tines into the specimen until the thumbnail blanches white for ~5 s; pass when the piece squashes, does not spring back, and stays flattened. Spoon tilt: scoop a teaspoon, tilt 45 degrees; pass when the mass slides off in one clump, leaving little residue, with no separate thin liquid pooling. Fork drip: lift fork with specimen; pass when nothing drips through or off within 10 s. L3 syringe test is not required.
+
+3. VISUAL QC — Specimen sits in a soft mound that holds fork-tine imprints. Surface looks moist and glossy, never dry or chalky. No noodle strand longer than a rice grain visible.
+
+4. SHOTS — hor_fun_flat_rice_noodle_L5_take1.jpg: 45-degree hero, ruler and 15 mm checkerboard in frame. hor_fun_flat_rice_noodle_L5_take2.jpg: top-down, checkerboard only. hor_fun_flat_rice_noodle_L5_take3.jpg: fork-press close-up mid-press. hor_fun_flat_rice_noodle_L5_take1.mp4: 8-12 s fork-press and spoon-tilt clip. hor_fun_flat_rice_noodle_L5_take2.mp4: full IDDSI test sequence.
+
+5. FAIL MODES — Long strands reappear after mashing: re-chop and re-sieve. Specimen springs back under fork: add 5 ml broth and re-mash; if still elastic, restart with a finer chop. Thin broth pools on the plate: drain or fold back in; if it persists, re-make with less added liquid.

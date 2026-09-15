@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g steamed sweet potato flesh into the blender jar. Add 120 ml cool water. Blend 45 s on high, scraping down once. Pass through the 4 mm sieve; discard any fibrous residue (say so in notes if sieve pass is poor — re-blend 15 s). Measure the sieved volume. Add thickener at 3.0 g per 100 ml of puree as the calibration starting point; whisk in, rest 2 min, stir, re-measure viscosity. Record the actual grams used. Target pours but drips slowly off the fork.
+
+2. IDDSI TEST — Fork pressure: a 4 mm blob on the fork blanches the thumb pad white on full press but does not spread sideways; passes. Spoon tilt: a 5 ml spoonful sits in a mounded heap and slides slowly off a tilted spoon; no run, no drip-stream. Fork drip: 5-7 slow drips in 10 s when fork is lifted from the cup. Syringe flow test: fill to 10 ml, release; 8-10 ml remain after 10 s. All four must pass; if any fail, re-adjust thickener by 0.25 g/100 ml and retest.
+
+3. VISUAL QC — Sheen visible on the surface. No lumps, fibres, or orange flecks — colour is uniform deep orange. Coats the back of the spoon in an even, opaque film that does not run to the edge in under 2 s.
+
+4. SHOTS — steamed_sweet_potato_L3_take1.jpg hero 45° with 100 mm ruler and 15 mm checkerboard in frame, both flat and unobstructed. steamed_sweet_potato_L3_take2.jpg top-down on checkerboard, specimen pooled, no shadows. steamed_sweet_potato_L3_take3.jpg fork-press close-up mid-press, pad visible. steamed_sweet_potato_L3_take1.mp4 8-12 s fork-press then spoon-tilt. steamed_sweet_potato_L3_take2.mp4 IDDSI syringe test, timer visible.
+
+5. FAIL MODES — Too runny: drips in a stream or syringe drops below 8 ml — add thickener 0.25 g/100 ml, rest, retest. Too stiff: fork-pressure spreads sideways or syringe holds more than 10 ml — add 5 ml water, re-whisk, retest. Lumpy or fibrous: sieve fails to clear — re-blend 15 s, sieve again; if still failing, record and start over. One re-make permitted.

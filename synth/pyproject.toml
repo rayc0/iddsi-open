@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iddsi-open-synth"
+version = "0.1.0"
+description = "Development-only synthetic food imagery for IDDSI-Open"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10"]
+
+[project.optional-dependencies]
+models = [
+  "accelerate>=1.0",
+  "diffusers>=0.32",
+  "safetensors>=0.4",
+  "torch>=2.5",
+  "transformers>=4.57",
+]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["synth*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

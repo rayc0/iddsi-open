@@ -1,0 +1,1733 @@
+[
+  {
+    "event_id": "RW_nutrition5k_96af42ef8d9757464bf3",
+    "decision": "level_compatibility",
+    "confidence": 0.4012048840522766,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009412586688995361,
+      "L4": 0.05147832632064819,
+      "L5": 0.2174404263496399,
+      "L6": 0.4012048840522766,
+      "L7": 0.32046377658843994
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_b8861020e3e7e13de225",
+    "decision": "level_compatibility",
+    "confidence": 0.6711166501045227,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0021911263465881348,
+      "L4": 0.012572228908538818,
+      "L5": 0.0670744776725769,
+      "L6": 0.24704551696777344,
+      "L7": 0.6711166501045227
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_nutrition5k_b8a7aac604222ca317db",
+    "decision": "level_compatibility",
+    "confidence": 0.5616136789321899,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0034856200218200684,
+      "L4": 0.019826292991638184,
+      "L5": 0.10101163387298584,
+      "L6": 0.31406277418136597,
+      "L7": 0.5616136789321899
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_nutrition5k_db1859e7e37ec9f4260a",
+    "decision": "level_compatibility",
+    "confidence": 0.40502757135799206,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03880184888839722,
+      "L4": 0.17716717720031738,
+      "L5": 0.4050275683403015,
+      "L6": 0.27908891439437866,
+      "L7": 0.09991448372602463
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_nutrition5k_2c317e161cec8deeb467",
+    "decision": "unclear",
+    "confidence": 0.3642707784937659,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02564794011414051,
+      "L4": 0.12662215530872345,
+      "L5": 0.36427080631256104,
+      "L6": 0.33798930048942566,
+      "L7": 0.14546987414360046
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_nutrition5k_0dcf9f436aaf944686c7",
+    "decision": "level_compatibility",
+    "confidence": 0.3988438785248417,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0887632966041565,
+      "L4": 0.31052571535110474,
+      "L5": 0.3988438844680786,
+      "L6": 0.15788783133029938,
+      "L7": 0.04397928714752197
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_nutrition5k_cfb81709dd3d59336560",
+    "decision": "level_compatibility",
+    "confidence": 0.36506128311157227,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02581268548965454,
+      "L4": 0.12730729579925537,
+      "L5": 0.36506128311157227,
+      "L6": 0.3371635973453522,
+      "L7": 0.14465513825416565
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_nutrition5k_f4350f9fd34d6a2b1b42",
+    "decision": "level_compatibility",
+    "confidence": 0.36601635268306204,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.026014268398284912,
+      "L4": 0.12814420461654663,
+      "L5": 0.36601635813713074,
+      "L6": 0.33615535497665405,
+      "L7": 0.14366982877254486
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_nutrition5k_67f583e0f70bf31bf007",
+    "decision": "level_compatibility",
+    "confidence": 0.36957806899514895,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02679234743118286,
+      "L4": 0.13135474920272827,
+      "L5": 0.3695780634880066,
+      "L6": 0.3322892189025879,
+      "L7": 0.1399856060743332
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_nutrition5k_da435f37ad6807ec5e71",
+    "decision": "level_compatibility",
+    "confidence": 0.39558345668887285,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.013691484928131104,
+      "L4": 0.07283610105514526,
+      "L5": 0.2738569378852844,
+      "L6": 0.39558345079421997,
+      "L7": 0.24403201043605804
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_b3c50ff7a65b03c857b4",
+    "decision": "level_compatibility",
+    "confidence": 0.40180763602256775,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009854018688201904,
+      "L4": 0.053737521171569824,
+      "L5": 0.22412967681884766,
+      "L6": 0.40180763602256775,
+      "L7": 0.31047114729881287
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_4d5503b4965dfe1def20",
+    "decision": "unclear",
+    "confidence": 0.34790676832199097,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.004528641700744629,
+      "L4": 0.025579631328582764,
+      "L5": 0.12576067447662354,
+      "L6": 0.34790676832199097,
+      "L7": 0.4962242841720581
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_nutrition5k_8e68a80fd452f62af95f",
+    "decision": "unclear",
+    "confidence": 0.3512660264968872,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.004659891128540039,
+      "L4": 0.026297688484191895,
+      "L5": 0.12872451543807983,
+      "L6": 0.3512660264968872,
+      "L7": 0.489051878452301
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_nutrition5k_5960522cda927be220a9",
+    "decision": "level_compatibility",
+    "confidence": 0.9167705178260803,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.00040668249130249023,
+      "L4": 0.0023616552352905273,
+      "L5": 0.01347571611404419,
+      "L6": 0.06698542833328247,
+      "L7": 0.9167705178260803
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_nutrition5k_f794630ec6c2fe0bfe89",
+    "decision": "level_compatibility",
+    "confidence": 0.3857806978491053,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.016131460666656494,
+      "L4": 0.08449161052703857,
+      "L5": 0.2989543080329895,
+      "L6": 0.3857806921005249,
+      "L7": 0.21464191377162933
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_ef803e6dac05199d7ef6",
+    "decision": "level_compatibility",
+    "confidence": 0.40188825130462646,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.010867059230804443,
+      "L4": 0.058872997760772705,
+      "L5": 0.23866301774978638,
+      "L6": 0.40188825130462646,
+      "L7": 0.28970867395401
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_49ae8919214d24dbef35",
+    "decision": "level_compatibility",
+    "confidence": 0.8700770735740662,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.000668644905090332,
+      "L4": 0.0038765668869018555,
+      "L5": 0.021896004676818848,
+      "L6": 0.1034817099571228,
+      "L7": 0.8700770735740662
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_wikimedia_eab85188ac895b4c4ea4",
+    "decision": "level_compatibility",
+    "confidence": 0.40199050307273865,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.010115385055541992,
+      "L4": 0.05506867170333862,
+      "L5": 0.22798562049865723,
+      "L6": 0.40199050307273865,
+      "L7": 0.3048398196697235
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_nutrition5k_f934ca4f980c7bbe9ed2",
+    "decision": "level_compatibility",
+    "confidence": 0.6872965097427368,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0020346641540527344,
+      "L4": 0.011686503887176514,
+      "L5": 0.06270641088485718,
+      "L6": 0.23627591133117676,
+      "L7": 0.6872965097427368
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_nutrition5k_64718ba0edf481046bd4",
+    "decision": "unclear",
+    "confidence": 0.3613070249557495,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02108973264694214,
+      "L4": 0.1070781946182251,
+      "L5": 0.33834195137023926,
+      "L6": 0.3613070249557495,
+      "L7": 0.172183096408844
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_nutrition5k_3bb463fe14db7e13a0e6",
+    "decision": "level_compatibility",
+    "confidence": 0.8906469345092773,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0005498528480529785,
+      "L4": 0.003190338611602783,
+      "L5": 0.018103361129760742,
+      "L6": 0.08750951290130615,
+      "L7": 0.8906469345092773
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_open-images_7544216e40597117a5a2",
+    "decision": "unclear",
+    "confidence": 0.36356592178344727,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02065068483352661,
+      "L4": 0.10513585805892944,
+      "L5": 0.33538079261779785,
+      "L6": 0.36356592178344727,
+      "L7": 0.17526674270629883
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_9575d1b42b11d41c66e0",
+    "decision": "level_compatibility",
+    "confidence": 0.41836491538856113,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.05803120136260986,
+      "L4": 0.2379329800605774,
+      "L5": 0.41836491227149963,
+      "L6": 0.21786540746688843,
+      "L7": 0.06780549138784409
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_bea4cf9343432da1c862",
+    "decision": "level_compatibility",
+    "confidence": 0.3950864908113367,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.1487075239419937,
+      "L4": 0.39508652687072754,
+      "L5": 0.3326004147529602,
+      "L6": 0.09859474003314972,
+      "L7": 0.025010885670781136
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_open-images_9e9c9f85127a805232ed",
+    "decision": "level_compatibility",
+    "confidence": 0.415980878591395,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.06638604402542114,
+      "L4": 0.2603079676628113,
+      "L5": 0.41598087549209595,
+      "L6": 0.19804173707962036,
+      "L7": 0.05928336828947067
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_4f3ff18f5f63a6dc16e1",
+    "decision": "level_compatibility",
+    "confidence": 0.36922603845596313,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.019544005393981934,
+      "L4": 0.1001899242401123,
+      "L5": 0.32749879360198975,
+      "L6": 0.36922603845596313,
+      "L7": 0.18354123830795288
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_587ec2a2c1c26d3568c3",
+    "decision": "unclear",
+    "confidence": 0.35954925417900085,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.024702131748199463,
+      "L4": 0.12265878915786743,
+      "L5": 0.35954925417900085,
+      "L6": 0.34276267886161804,
+      "L7": 0.1503271460533142
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_d46f1aee57b4fb341262",
+    "decision": "level_compatibility",
+    "confidence": 0.40503853861271244,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03880798816680908,
+      "L4": 0.17718905210494995,
+      "L5": 0.4050385355949402,
+      "L6": 0.2790648639202118,
+      "L7": 0.09989955276250839
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_41f1601f9fd75c6abe02",
+    "decision": "level_compatibility",
+    "confidence": 0.40184104442596436,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009891033172607422,
+      "L4": 0.05392634868621826,
+      "L5": 0.22468066215515137,
+      "L6": 0.40184104442596436,
+      "L7": 0.3096609115600586
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_1cb684c5f207ae4c3a30",
+    "decision": "level_compatibility",
+    "confidence": 0.3993196248906795,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03595083951950073,
+      "L4": 0.16689687967300415,
+      "L5": 0.3993196189403534,
+      "L6": 0.29055917263031006,
+      "L7": 0.10727347433567047
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_d3e055478562225401ab",
+    "decision": "unclear",
+    "confidence": 0.36238980698276096,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.12227147817611694,
+      "L4": 0.36505794525146484,
+      "L5": 0.36238980293273926,
+      "L6": 0.1191156804561615,
+      "L7": 0.03116508200764656
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_6dd1a27f6fa98b7ab2d3",
+    "decision": "level_compatibility",
+    "confidence": 0.3831051347122362,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03021794557571411,
+      "L4": 0.14512354135513306,
+      "L5": 0.3831051290035248,
+      "L6": 0.31582367420196533,
+      "L7": 0.12572969496250153
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_14043b4439a6d19bc8ea",
+    "decision": "level_compatibility",
+    "confidence": 0.4062419533729553,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.08069205284118652,
+      "L4": 0.2938964366912842,
+      "L5": 0.4062419533729553,
+      "L6": 0.1705971211194992,
+      "L7": 0.04857243597507477
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_9ba66080172a0ef25c5a",
+    "decision": "level_compatibility",
+    "confidence": 0.39759713411331177,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.008272647857666016,
+      "L4": 0.04558277130126953,
+      "L5": 0.19908344745635986,
+      "L6": 0.39759713411331177,
+      "L7": 0.3494639992713928
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_3c3fe1ebdbbf2f0cbb2f",
+    "decision": "level_compatibility",
+    "confidence": 0.38322582840919495,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.030252695083618164,
+      "L4": 0.14526021480560303,
+      "L5": 0.38322582840919495,
+      "L6": 0.3156617283821106,
+      "L7": 0.12559953331947327
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_6ea1ffca7152579158f8",
+    "decision": "level_compatibility",
+    "confidence": 0.3996649384498596,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.012285828590393066,
+      "L4": 0.06595128774642944,
+      "L5": 0.25725460052490234,
+      "L6": 0.3996649384498596,
+      "L7": 0.2648433446884155
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_b5255d5bcf598b516f07",
+    "decision": "unclear",
+    "confidence": 0.36084994673728943,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.021178364753723145,
+      "L4": 0.10746961832046509,
+      "L5": 0.3389294743537903,
+      "L6": 0.36084994673728943,
+      "L7": 0.17157259583473206
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_4f73a7e96f7240139f7c",
+    "decision": "level_compatibility",
+    "confidence": 0.42417258419257203,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.1876211166381836,
+      "L4": 0.424172580242157,
+      "L5": 0.291812539100647,
+      "L6": 0.07736042886972427,
+      "L7": 0.01903332583606243
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_open-images_0f5afef5c6c9f8faf8c9",
+    "decision": "level_compatibility",
+    "confidence": 0.8237156271934509,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0009581446647644043,
+      "L4": 0.0055432915687561035,
+      "L5": 0.030965030193328857,
+      "L6": 0.1388179063796997,
+      "L7": 0.8237156271934509
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_open-images_9f282b2d4fb7616c6dc0",
+    "decision": "unclear",
+    "confidence": 0.3503499083273099,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02321648597717285,
+      "L4": 0.11633729934692383,
+      "L5": 0.3514704704284668,
+      "L6": 0.35034990310668945,
+      "L7": 0.15862582623958588
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_047a145ccac6b1e5c263",
+    "decision": "level_compatibility",
+    "confidence": 0.39742356538772583,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.00823599100112915,
+      "L4": 0.045391619205474854,
+      "L5": 0.1984660029411316,
+      "L6": 0.39742356538772583,
+      "L7": 0.3504828214645386
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_dbe428a9a2e5293172c8",
+    "decision": "level_compatibility",
+    "confidence": 0.4183844594777788,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.057755887508392334,
+      "L4": 0.2371576428413391,
+      "L5": 0.41838446259498596,
+      "L6": 0.21857678890228271,
+      "L7": 0.06812522560358047
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_e1677bf463abc77daf6a",
+    "decision": "level_compatibility",
+    "confidence": 0.37804675102233887,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.028836309909820557,
+      "L4": 0.13964080810546875,
+      "L5": 0.37804675102233887,
+      "L6": 0.32234910130500793,
+      "L7": 0.1311270296573639
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_93301555600e847cec44",
+    "decision": "level_compatibility",
+    "confidence": 0.38236889243125916,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.006391406059265137,
+      "L4": 0.03565633296966553,
+      "L5": 0.16498595476150513,
+      "L6": 0.38236889243125916,
+      "L7": 0.41059741377830505
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_620ae4f58ed900c07c6c",
+    "decision": "level_compatibility",
+    "confidence": 0.39696235056165385,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.013270020484924316,
+      "L4": 0.0707845687866211,
+      "L5": 0.2690556049346924,
+      "L6": 0.39696234464645386,
+      "L7": 0.24992744624614716
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_45b33192042f2c82df3e",
+    "decision": "level_compatibility",
+    "confidence": 0.38039213985789033,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.017290711402893066,
+      "L4": 0.089901864528656,
+      "L5": 0.3094308376312256,
+      "L6": 0.3803921341896057,
+      "L7": 0.20298443734645844
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_be35a933c4a3652b415e",
+    "decision": "level_compatibility",
+    "confidence": 0.39841400983312714,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.08920371532440186,
+      "L4": 0.3113890290260315,
+      "L5": 0.3984140157699585,
+      "L6": 0.1572418063879013,
+      "L7": 0.04375144839286804
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_4f5a0e9a0ae35d399673",
+    "decision": "level_compatibility",
+    "confidence": 0.4407171697316484,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.329867959022522,
+      "L4": 0.4407171607017517,
+      "L5": 0.18174952268600464,
+      "L6": 0.038644060492515564,
+      "L7": 0.009021276608109474
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_open-images_096023c30261c0df0b4a",
+    "decision": "level_compatibility",
+    "confidence": 0.3786982297897339,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01764237880706787,
+      "L4": 0.09152728319168091,
+      "L5": 0.31244295835494995,
+      "L6": 0.3786982297897339,
+      "L7": 0.19968914985656738
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_a17a0bdde1438904e3f1",
+    "decision": "level_compatibility",
+    "confidence": 0.39841315150260925,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.012777507305145264,
+      "L4": 0.0683736801147461,
+      "L5": 0.26325637102127075,
+      "L6": 0.39841315150260925,
+      "L7": 0.25717929005622864
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_10644543c4dd19db54c5",
+    "decision": "level_compatibility",
+    "confidence": 0.39400824904441833,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.014136254787445068,
+      "L4": 0.07498830556869507,
+      "L5": 0.27876609563827515,
+      "L6": 0.39400824904441833,
+      "L7": 0.23810109496116638
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_0100c69733f44fd04cf4",
+    "decision": "level_compatibility",
+    "confidence": 0.3718476648904035,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02731156349182129,
+      "L4": 0.13347989320755005,
+      "L5": 0.37184765934944153,
+      "L6": 0.3297334909439087,
+      "L7": 0.13762737810611725
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_efd3dd97c10861a81bc2",
+    "decision": "level_compatibility",
+    "confidence": 0.4058320235058351,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03926539793610573,
+      "L4": 0.17880375683307648,
+      "L5": 0.40583205223083496,
+      "L6": 0.2772904336452484,
+      "L7": 0.09880843013525009
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_243f5047277b87f4333d",
+    "decision": "level_compatibility",
+    "confidence": 0.4181364147503941,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.05981922149658203,
+      "L4": 0.24290800094604492,
+      "L5": 0.4181364178657532,
+      "L6": 0.2133409082889557,
+      "L7": 0.06579545885324478
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_760c127397a7135e7d7c",
+    "decision": "level_compatibility",
+    "confidence": 0.4013385772705078,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01139211654663086,
+      "L4": 0.061507225036621094,
+      "L5": 0.2457711100578308,
+      "L6": 0.4013385772705078,
+      "L7": 0.2799909710884094
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_cd0bb40ac50e316de636",
+    "decision": "level_compatibility",
+    "confidence": 0.3935611560700877,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.09403198957443237,
+      "L4": 0.32057100534439087,
+      "L5": 0.39356115460395813,
+      "L6": 0.15044882893562317,
+      "L7": 0.04138701781630516
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_cd9923c5add759e477a9",
+    "decision": "level_compatibility",
+    "confidence": 0.4173499050377004,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.051012638956308365,
+      "L4": 0.21735478937625885,
+      "L5": 0.4173499345779419,
+      "L6": 0.23733553290367126,
+      "L7": 0.0769471749663353
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_0cd44d63de94e42c30d6",
+    "decision": "level_compatibility",
+    "confidence": 0.418411523103714,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.057168662548065186,
+      "L4": 0.23549538850784302,
+      "L5": 0.418411523103714,
+      "L6": 0.22010767459869385,
+      "L7": 0.06881675124168396
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_66bf737ad4a9602fa246",
+    "decision": "level_compatibility",
+    "confidence": 0.400722861289978,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009179174900054932,
+      "L4": 0.050278663635253906,
+      "L5": 0.21381211280822754,
+      "L6": 0.400722861289978,
+      "L7": 0.3260071873664856
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_ea25fd4fdf2cabb6d8f8",
+    "decision": "level_compatibility",
+    "confidence": 0.3691964456695119,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.11628062278032303,
+      "L4": 0.3568122684955597,
+      "L5": 0.36919647455215454,
+      "L6": 0.12477655708789825,
+      "L7": 0.03293415531516075
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_66c20fd087b148485fd2",
+    "decision": "level_compatibility",
+    "confidence": 0.40733199856431784,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.07939249277114868,
+      "L4": 0.291070818901062,
+      "L5": 0.40733200311660767,
+      "L6": 0.1728101670742035,
+      "L7": 0.049394529312849045
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_f98bf8f194c861f31bc4",
+    "decision": "level_compatibility",
+    "confidence": 0.4156208305387137,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0477716326713562,
+      "L4": 0.2072567343711853,
+      "L5": 0.4156208336353302,
+      "L6": 0.24735379219055176,
+      "L7": 0.08199701458215714
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_655ac10739b127403655",
+    "decision": "level_compatibility",
+    "confidence": 0.4402542007652957,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.3321387767791748,
+      "L4": 0.44025421142578125,
+      "L5": 0.18040505051612854,
+      "L6": 0.03827192634344101,
+      "L7": 0.008930059149861336
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_open-images_fc7630a3180865f0acb8",
+    "decision": "level_compatibility",
+    "confidence": 0.4134397743129764,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.04508763551712036,
+      "L4": 0.19859182834625244,
+      "L5": 0.4134397804737091,
+      "L6": 0.25620192289352417,
+      "L7": 0.08667884767055511
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_a2385e71bfeb9f3ac59b",
+    "decision": "level_compatibility",
+    "confidence": 0.4013451635837555,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009493768215179443,
+      "L4": 0.05189478397369385,
+      "L5": 0.21868759393692017,
+      "L6": 0.4013451635837555,
+      "L7": 0.31857869029045105
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_c6bec47a053cd79cf231",
+    "decision": "level_compatibility",
+    "confidence": 0.40234923062958394,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.08507150411605835,
+      "L4": 0.3031121492385864,
+      "L5": 0.40234923362731934,
+      "L6": 0.16348963975906372,
+      "L7": 0.045977480709552765
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_8f0d2383121699a3866e",
+    "decision": "level_compatibility",
+    "confidence": 0.3916541039943695,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.007319927215576172,
+      "L4": 0.04058659076690674,
+      "L5": 0.1824466586112976,
+      "L6": 0.3916541039943695,
+      "L7": 0.37799271941185
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_b9a336b120207dbfdce7",
+    "decision": "level_compatibility",
+    "confidence": 0.4002106487751007,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.008978784084320068,
+      "L4": 0.04924511909484863,
+      "L5": 0.21064335107803345,
+      "L6": 0.4002106487751007,
+      "L7": 0.33092209696769714
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_a4c262b5e678b659f280",
+    "decision": "level_compatibility",
+    "confidence": 0.40368935165040676,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03806966543197632,
+      "L4": 0.174563467502594,
+      "L5": 0.40368935465812683,
+      "L6": 0.2819671332836151,
+      "L7": 0.10171038657426834
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_2e5ff56c3535058162e9",
+    "decision": "level_compatibility",
+    "confidence": 0.39080527424812317,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01496201753616333,
+      "L4": 0.07895117998123169,
+      "L5": 0.2874724864959717,
+      "L6": 0.39080527424812317,
+      "L7": 0.22780904173851013
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_3d7b0f4c3adf489b4f55",
+    "decision": "level_compatibility",
+    "confidence": 0.5286383715003463,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.5286383628845215,
+      "L4": 0.3557928800582886,
+      "L5": 0.09407306462526321,
+      "L6": 0.017516005784273148,
+      "L7": 0.003979670349508524
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 3
+  },
+  {
+    "event_id": "RW_open-images_4c5dd3ddc181cea67cb8",
+    "decision": "level_compatibility",
+    "confidence": 0.3654291873361291,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.025890052318572998,
+      "L4": 0.1276286244392395,
+      "L5": 0.36542919278144836,
+      "L6": 0.3367765545845032,
+      "L7": 0.14427559077739716
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_1cb0c011fb15b61b71e4",
+    "decision": "level_compatibility",
+    "confidence": 0.5307411551475525,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.003946423530578613,
+      "L4": 0.02237725257873535,
+      "L5": 0.11221092939376831,
+      "L6": 0.33072423934936523,
+      "L7": 0.5307411551475525
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_open-images_b90eb88302e91a82514c",
+    "decision": "level_compatibility",
+    "confidence": 0.3778157541706303,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.028776349499821663,
+      "L4": 0.13940097391605377,
+      "L5": 0.37781578302383423,
+      "L6": 0.3226357400417328,
+      "L7": 0.13137122988700867
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_6fc395602894f54b8722",
+    "decision": "level_compatibility",
+    "confidence": 0.6921387314796448,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0019891858100891113,
+      "L4": 0.011429131031036377,
+      "L5": 0.061427414417266846,
+      "L6": 0.2330155372619629,
+      "L7": 0.6921387314796448
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 7
+  },
+  {
+    "event_id": "RW_open-images_e48c585e0c89f19f2c06",
+    "decision": "unclear",
+    "confidence": 0.3603081703186035,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.024850010871887207,
+      "L4": 0.12328130006790161,
+      "L5": 0.3603081703186035,
+      "L6": 0.34201323986053467,
+      "L7": 0.149547278881073
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_open-images_1f350994985b5d15715f",
+    "decision": "level_compatibility",
+    "confidence": 0.4105191811527342,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.07532274723052979,
+      "L4": 0.2819405794143677,
+      "L5": 0.41051918268203735,
+      "L6": 0.18007515370845795,
+      "L7": 0.05214234068989754
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_4f0a1d09e27f78e74d9d",
+    "decision": "level_compatibility",
+    "confidence": 0.3843076825141907,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01645582914352417,
+      "L4": 0.0860133171081543,
+      "L5": 0.3019724488258362,
+      "L6": 0.3843076825141907,
+      "L7": 0.21125072240829468
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_f832ab81ecd8294f33fd",
+    "decision": "level_compatibility",
+    "confidence": 0.36786096739976154,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02641195058822632,
+      "L4": 0.1297888159751892,
+      "L5": 0.36786097288131714,
+      "L6": 0.33417439460754395,
+      "L7": 0.14176388084888458
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_24fd5d1045bb305c1571",
+    "decision": "level_compatibility",
+    "confidence": 0.41824099733114983,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.0591578483581543,
+      "L4": 0.2410799264907837,
+      "L5": 0.4182409942150116,
+      "L6": 0.21499541401863098,
+      "L7": 0.06652580946683884
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_2d4471e96adbeb1d547f",
+    "decision": "level_compatibility",
+    "confidence": 0.3992648422718048,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.008679568767547607,
+      "L4": 0.047697365283966064,
+      "L5": 0.2058214545249939,
+      "L6": 0.3992648422718048,
+      "L7": 0.3385367691516876
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_8508c37e1289823f1f3c",
+    "decision": "level_compatibility",
+    "confidence": 0.40885498891293076,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.16458547115325928,
+      "L4": 0.40885499119758606,
+      "L5": 0.3154044449329376,
+      "L6": 0.08891551941633224,
+      "L7": 0.022239578887820244
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_open-images_de8fbad3929e46780d34",
+    "decision": "level_compatibility",
+    "confidence": 0.4000583261247104,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03628414869308472,
+      "L4": 0.16811585426330566,
+      "L5": 0.4000583291053772,
+      "L6": 0.28918150067329407,
+      "L7": 0.10636017471551895
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_b027b814b5fd5315af7f",
+    "decision": "level_compatibility",
+    "confidence": 0.3975086138116454,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.09012371301651001,
+      "L4": 0.3131784200668335,
+      "L5": 0.3975086212158203,
+      "L6": 0.15590694546699524,
+      "L7": 0.043282318860292435
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_18f1106de5b9e845df11",
+    "decision": "level_compatibility",
+    "confidence": 0.38398730754852295,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.016525447368621826,
+      "L4": 0.08633953332901001,
+      "L5": 0.30261218547821045,
+      "L6": 0.38398730754852295,
+      "L7": 0.21053552627563477
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_open-images_e4dc19f04ce1e7212e95",
+    "decision": "level_compatibility",
+    "confidence": 0.3838084368691477,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03042161464691162,
+      "L4": 0.14592355489730835,
+      "L5": 0.383808434009552,
+      "L6": 0.3148759603500366,
+      "L7": 0.12497042864561081
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_open-images_2299051b47a5e9f36d8e",
+    "decision": "level_compatibility",
+    "confidence": 0.6658911469356497,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.665891170501709,
+      "L4": 0.2656150758266449,
+      "L5": 0.05628305673599243,
+      "L6": 0.009967404417693615,
+      "L7": 0.002243327908217907
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 3
+  },
+  {
+    "event_id": "RW_openverse_c1c1af11c6083c60ad9c",
+    "decision": "level_compatibility",
+    "confidence": 0.3883596716576766,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01554560661315918,
+      "L4": 0.08172619342803955,
+      "L5": 0.2933218479156494,
+      "L6": 0.3883596658706665,
+      "L7": 0.22104667127132416
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_openverse_1fd3b2095394d9e68c74",
+    "decision": "level_compatibility",
+    "confidence": 0.3851669132709503,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03082364797592163,
+      "L4": 0.14749741554260254,
+      "L5": 0.3851669132709503,
+      "L6": 0.3130152225494385,
+      "L7": 0.12349680066108704
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_08aabb8f1b9278d7aec5",
+    "decision": "level_compatibility",
+    "confidence": 0.39107558058374453,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.14463508129119873,
+      "L4": 0.39107558131217957,
+      "L5": 0.3371153771877289,
+      "L6": 0.10135719925165176,
+      "L7": 0.025816762819886208
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_openverse_cf3fe8e3ed8ee02b8687",
+    "decision": "level_compatibility",
+    "confidence": 0.4147352874279022,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.046570539474487305,
+      "L4": 0.20341342687606812,
+      "L5": 0.4147352874279022,
+      "L6": 0.2512493431568146,
+      "L7": 0.08403140306472778
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_48c15688d8835b0a7d15",
+    "decision": "level_compatibility",
+    "confidence": 0.3662639314869632,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02012479305267334,
+      "L4": 0.10279393196105957,
+      "L5": 0.3317108154296875,
+      "L6": 0.3662639260292053,
+      "L7": 0.17910651862621307
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_openverse_2760d868a34b7dc54e62",
+    "decision": "level_compatibility",
+    "confidence": 0.39640017780063946,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.09123707562685013,
+      "L4": 0.31531843543052673,
+      "L5": 0.39640021324157715,
+      "L6": 0.154317706823349,
+      "L7": 0.042726658284664154
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_952eb9e134c59be3ba50",
+    "decision": "level_compatibility",
+    "confidence": 0.3656737208366394,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.025941669940948486,
+      "L4": 0.1278427243232727,
+      "L5": 0.3656737208366394,
+      "L6": 0.33651843667030334,
+      "L7": 0.14402344822883606
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_6a1beb96c8386bb1ef97",
+    "decision": "unclear",
+    "confidence": 0.36073148250579834,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.02120143175125122,
+      "L4": 0.10757076740264893,
+      "L5": 0.33908116817474365,
+      "L6": 0.36073148250579834,
+      "L7": 0.17141515016555786
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_openverse_5deccf61a888b3a8ece6",
+    "decision": "unclear",
+    "confidence": 0.35650983452796936,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.024124979972839355,
+      "L4": 0.1202167272567749,
+      "L5": 0.35650983452796936,
+      "L6": 0.34569934010505676,
+      "L7": 0.15344911813735962
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_openverse_ab45d882f68e7a5b137b",
+    "decision": "level_compatibility",
+    "confidence": 0.37760251268145145,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.13229763507843018,
+      "L4": 0.3776025176048279,
+      "L5": 0.3509896397590637,
+      "L6": 0.11055916547775269,
+      "L7": 0.02855105511844158
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_openverse_a3c7d793c07c87872942",
+    "decision": "unclear",
+    "confidence": 0.3604970872402191,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.021246910095214844,
+      "L4": 0.10777115821838379,
+      "L5": 0.3393804430961609,
+      "L6": 0.3604970872402191,
+      "L7": 0.17110440135002136
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false
+  },
+  {
+    "event_id": "RW_openverse_ae163ab4887774b8088b",
+    "decision": "level_compatibility",
+    "confidence": 0.37502536177635193,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.005858242511749268,
+      "L4": 0.03279799222946167,
+      "L5": 0.1543598175048828,
+      "L6": 0.37502536177635193,
+      "L7": 0.4319585859775543
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_openverse_c207805ab0479cf6a623",
+    "decision": "level_compatibility",
+    "confidence": 0.41629016244303374,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.06570279598236084,
+      "L4": 0.2585594654083252,
+      "L5": 0.41629016399383545,
+      "L6": 0.19954347610473633,
+      "L7": 0.059904102236032486
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_9a596860c68ec8feb46d",
+    "decision": "level_compatibility",
+    "confidence": 0.37696123123168945,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.10938727855682373,
+      "L4": 0.3465735912322998,
+      "L5": 0.37696123123168945,
+      "L6": 0.13187791407108307,
+      "L7": 0.03519998490810394
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_f153b9211ef3405b89b5",
+    "decision": "level_compatibility",
+    "confidence": 0.4023704528808594,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03738999366760254,
+      "L4": 0.17212587594985962,
+      "L5": 0.4023704528808594,
+      "L6": 0.28468015789985657,
+      "L7": 0.1034335196018219
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_339627c71842a26a989c",
+    "decision": "level_compatibility",
+    "confidence": 0.4452143903400615,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.25507813692092896,
+      "L4": 0.4452143907546997,
+      "L5": 0.23258690536022186,
+      "L6": 0.05420318990945816,
+      "L7": 0.01291737798601389
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_wikimedia_acb1f3c46356f0b169e7",
+    "decision": "level_compatibility",
+    "confidence": 0.40029001235961914,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.009007573127746582,
+      "L4": 0.04939359426498413,
+      "L5": 0.211101233959198,
+      "L6": 0.40029001235961914,
+      "L7": 0.33020758628845215
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  },
+  {
+    "event_id": "RW_openverse_c202daac0fa99847b7f9",
+    "decision": "level_compatibility",
+    "confidence": 0.3994411170565916,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03600502014160156,
+      "L4": 0.16709548234939575,
+      "L5": 0.399441123008728,
+      "L6": 0.29033446311950684,
+      "L7": 0.10712392628192902
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_f989c431ae2554ef0a73",
+    "decision": "level_compatibility",
+    "confidence": 0.446027602465578,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.28851231932640076,
+      "L4": 0.44602763652801514,
+      "L5": 0.2081831395626068,
+      "L6": 0.04634714499115944,
+      "L7": 0.010929835960268974
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 4
+  },
+  {
+    "event_id": "RW_openverse_f4b7470df5b9868b2921",
+    "decision": "level_compatibility",
+    "confidence": 0.4073516458820674,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.040196895599365234,
+      "L4": 0.18206417560577393,
+      "L5": 0.40735164284706116,
+      "L6": 0.2737317681312561,
+      "L7": 0.09665551036596298
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_483870481e411aceaef6",
+    "decision": "level_compatibility",
+    "confidence": 0.40214258432388306,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.03727644681930542,
+      "L4": 0.1717166304588318,
+      "L5": 0.40214258432388306,
+      "L6": 0.285137414932251,
+      "L7": 0.10372692346572876
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 5
+  },
+  {
+    "event_id": "RW_openverse_84cdcc24663f0d595c69",
+    "decision": "level_compatibility",
+    "confidence": 0.3954578936100006,
+    "calibrated_threshold": 0.36494785003441793,
+    "level_probabilities": {
+      "L3": 0.01372826099395752,
+      "L4": 0.0730142593383789,
+      "L5": 0.2742680311203003,
+      "L6": 0.3954578936100006,
+      "L7": 0.24353155493736267
+    },
+    "interpretation": "visual_compatibility_only",
+    "synthetic": false,
+    "level": 6
+  }
+]

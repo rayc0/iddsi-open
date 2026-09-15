@@ -1,0 +1,48 @@
+experiment:
+  name: siglip2_coral
+  output_dir: ../runs
+  seeds: [17, 29, 43, 71, 101]
+
+data:
+  manifest: /path/to/physically_tested_manifest.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: google/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    # Phase 1 is a linear probe on frozen 768-d features. The 2026-09-06 run gave
+    # it 3 epochs x 11 batches = 33 steps at lr 3e-4, so the head never left its
+    # initialisation (first_bias moved 1.5000 -> 1.5002 over the whole run) and
+    # train_loss stalled at the trivial marginal baseline. The probe is cheap;
+    # give it enough steps to actually converge.
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026
+

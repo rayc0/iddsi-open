@@ -1,0 +1,452 @@
+[
+  {
+    "epoch": 1,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.6448721772322625,
+    "val_nll": 1.6380860805511475
+  },
+  {
+    "epoch": 2,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.5154000058130253,
+    "val_nll": 1.4989051818847656
+  },
+  {
+    "epoch": 3,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.4549214227433585,
+    "val_nll": 1.448891282081604
+  },
+  {
+    "epoch": 4,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.4283428089750325,
+    "val_nll": 1.4343425035476685
+  },
+  {
+    "epoch": 5,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.41968719505824925,
+    "val_nll": 1.4205331802368164
+  },
+  {
+    "epoch": 6,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.40935199703175595,
+    "val_nll": 1.4073344469070435
+  },
+  {
+    "epoch": 7,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.4002232193215493,
+    "val_nll": 1.3965259790420532
+  },
+  {
+    "epoch": 8,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3956940731753601,
+    "val_nll": 1.386210560798645
+  },
+  {
+    "epoch": 9,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.38765408784333916,
+    "val_nll": 1.3790960311889648
+  },
+  {
+    "epoch": 10,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3845187765688984,
+    "val_nll": 1.3739784955978394
+  },
+  {
+    "epoch": 11,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3765762671371179,
+    "val_nll": 1.3684264421463013
+  },
+  {
+    "epoch": 12,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.37483009622872243,
+    "val_nll": 1.3640104532241821
+  },
+  {
+    "epoch": 13,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3673007839296493,
+    "val_nll": 1.358939528465271
+  },
+  {
+    "epoch": 14,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3646485467264257,
+    "val_nll": 1.3536462783813477
+  },
+  {
+    "epoch": 15,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.36208077113321224,
+    "val_nll": 1.3482105731964111
+  },
+  {
+    "epoch": 16,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3570466820447723,
+    "val_nll": 1.3445643186569214
+  },
+  {
+    "epoch": 17,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.35293375586439496,
+    "val_nll": 1.3411259651184082
+  },
+  {
+    "epoch": 18,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3510120589674616,
+    "val_nll": 1.3381925821304321
+  },
+  {
+    "epoch": 19,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.34697586736796093,
+    "val_nll": 1.3338180780410767
+  },
+  {
+    "epoch": 20,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3487356215532572,
+    "val_nll": 1.3297755718231201
+  },
+  {
+    "epoch": 21,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.34140064800443826,
+    "val_nll": 1.3259581327438354
+  },
+  {
+    "epoch": 22,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3400050966651893,
+    "val_nll": 1.3222233057022095
+  },
+  {
+    "epoch": 23,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3371881060073712,
+    "val_nll": 1.3217887878417969
+  },
+  {
+    "epoch": 24,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3402611940550658,
+    "val_nll": 1.321227788925171
+  },
+  {
+    "epoch": 25,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3312061610031713,
+    "val_nll": 1.3203679323196411
+  },
+  {
+    "epoch": 26,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3284831250006436,
+    "val_nll": 1.318027377128601
+  },
+  {
+    "epoch": 27,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.32862175096032076,
+    "val_nll": 1.3182364702224731
+  },
+  {
+    "epoch": 28,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.32339332824104405,
+    "val_nll": 1.317121148109436
+  },
+  {
+    "epoch": 29,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3270098256187205,
+    "val_nll": 1.3160067796707153
+  },
+  {
+    "epoch": 30,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3198906053429001,
+    "val_nll": 1.315808653831482
+  },
+  {
+    "epoch": 31,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.32037268917253414,
+    "val_nll": 1.3142789602279663
+  },
+  {
+    "epoch": 32,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.31800817657102104,
+    "val_nll": 1.312060832977295
+  },
+  {
+    "epoch": 33,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3182831973385957,
+    "val_nll": 1.3106322288513184
+  },
+  {
+    "epoch": 34,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3179175548392571,
+    "val_nll": 1.3094907999038696
+  },
+  {
+    "epoch": 35,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.31615969502121394,
+    "val_nll": 1.308075189590454
+  },
+  {
+    "epoch": 36,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.31052896654679,
+    "val_nll": 1.3086133003234863
+  },
+  {
+    "epoch": 37,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.31337758441644215,
+    "val_nll": 1.3110495805740356
+  },
+  {
+    "epoch": 38,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3069343224990587,
+    "val_nll": 1.3105859756469727
+  },
+  {
+    "epoch": 39,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3085262382323025,
+    "val_nll": 1.3087910413742065
+  },
+  {
+    "epoch": 40,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.3094177050458873,
+    "val_nll": 1.3079192638397217
+  },
+  {
+    "epoch": 41,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.301539427663651,
+    "val_nll": 1.3074768781661987
+  },
+  {
+    "epoch": 42,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.30898511903417625,
+    "val_nll": 1.3052572011947632
+  },
+  {
+    "epoch": 43,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.30595889029327344,
+    "val_nll": 1.3035273551940918
+  },
+  {
+    "epoch": 44,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.30287335630209167,
+    "val_nll": 1.3025239706039429
+  },
+  {
+    "epoch": 45,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.29904949482233245,
+    "val_nll": 1.3017604351043701
+  },
+  {
+    "epoch": 46,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.302096982675096,
+    "val_nll": 1.3017022609710693
+  },
+  {
+    "epoch": 47,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.304167607444927,
+    "val_nll": 1.3016226291656494
+  },
+  {
+    "epoch": 48,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.29663541327956267,
+    "val_nll": 1.3015832901000977
+  },
+  {
+    "epoch": 49,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2973666549460288,
+    "val_nll": 1.3016232252120972
+  },
+  {
+    "epoch": 50,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.29646117427597746,
+    "val_nll": 1.3014346361160278
+  },
+  {
+    "epoch": 51,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.29837272174519264,
+    "val_nll": 1.3007582426071167
+  },
+  {
+    "epoch": 52,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2978482510597428,
+    "val_nll": 1.3004302978515625
+  },
+  {
+    "epoch": 53,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2953891343682822,
+    "val_nll": 1.300266981124878
+  },
+  {
+    "epoch": 54,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2921687562041487,
+    "val_nll": 1.2985588312149048
+  },
+  {
+    "epoch": 55,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2934167677639452,
+    "val_nll": 1.298723816871643
+  },
+  {
+    "epoch": 56,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.29000021901233064,
+    "val_nll": 1.296873927116394
+  },
+  {
+    "epoch": 57,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.28714619476371017,
+    "val_nll": 1.2974125146865845
+  },
+  {
+    "epoch": 58,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.28899332716421117,
+    "val_nll": 1.2971512079238892
+  },
+  {
+    "epoch": 59,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.28707889526899605,
+    "val_nll": 1.298932433128357
+  },
+  {
+    "epoch": 60,
+    "phase": "frozen_encoder_head",
+    "train_loss": 0.2872745530005613,
+    "val_nll": 1.2998992204666138
+  },
+  {
+    "epoch": 61,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.3136016684441479,
+    "val_nll": 1.3457585573196411
+  },
+  {
+    "epoch": 62,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.26886839872123275,
+    "val_nll": 1.3282140493392944
+  },
+  {
+    "epoch": 63,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.2198988702948108,
+    "val_nll": 1.3790602684020996
+  },
+  {
+    "epoch": 64,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.20176660932280535,
+    "val_nll": 1.3552792072296143
+  },
+  {
+    "epoch": 65,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.18492020447195673,
+    "val_nll": 1.4050860404968262
+  },
+  {
+    "epoch": 66,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17806321803046152,
+    "val_nll": 1.3840426206588745
+  },
+  {
+    "epoch": 67,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17343909096864105,
+    "val_nll": 1.3866735696792603
+  },
+  {
+    "epoch": 68,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17179809419289688,
+    "val_nll": 1.4561790227890015
+  },
+  {
+    "epoch": 69,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17782330604418656,
+    "val_nll": 1.4039523601531982
+  },
+  {
+    "epoch": 70,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17162122252894327,
+    "val_nll": 1.4863567352294922
+  },
+  {
+    "epoch": 71,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.1783473034577867,
+    "val_nll": 1.4125944375991821
+  },
+  {
+    "epoch": 72,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17135728146035248,
+    "val_nll": 1.4027060270309448
+  },
+  {
+    "epoch": 73,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.1674608850588828,
+    "val_nll": 1.37394380569458
+  },
+  {
+    "epoch": 74,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.17086000575975407,
+    "val_nll": 1.4101568460464478
+  },
+  {
+    "epoch": 75,
+    "phase": "unfreeze_last_two_blocks",
+    "train_loss": 0.16549298212937782,
+    "val_nll": 1.4105039834976196
+  }
+]

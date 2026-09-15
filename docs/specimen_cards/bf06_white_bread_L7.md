@@ -1,0 +1,9 @@
+1. PREP — Take the loaf as bought. Cut one slice straight from the sealed/just-opened loaf using the kitchen knife; do NOT toast, butter, soak, blend, sieve, or add thickener. Record the slice mass to 1 g on the digital scale; expect roughly 25–35 g for a standard sandwich slice. Place the slice flat on the capture board with the 100 mm ruler and 15 mm checkerboard in frame. No water, no blender, no sieve. The per-level note "slice as sold" is honoured: the reference specimen is the bread exactly as the bakery sells it.
+
+2. IDDSI TEST — L7 is proven by appearance plus fork pressure. Fork pressure: press the fork tines firmly into the slice; the bread must NOT pass through the slots, NOT smear, and the slice must retain its original shape on lift. Spoon tilt: slide the slice onto a spoon and tilt to 90°; the slice must NOT drip, flow, or fall off. Fork drip: lift the fork with a pierced piece and hold it level for 5 s — no drips, no strands. No syringe flow test applies at L7.
+
+3. VISUAL QC — Slice holds its full rectangular outline with intact crust edge. Crumb is matte, dry, and springy, not glossy or compressed. Fork tines leave a clean dent that rebounds partially; no paste, smear, or extrusion through the slots.
+
+4. SHOTS — Still 1: 45° hero of the slice on the board, ruler + checkerboard visible. Still 2: top-down flat lay with checkerboard only. Still 3: fork-press close-up mid-press showing tines indenting the crumb. Clip 1: 8–12 s fork-press then spoon-tilt sequence. Clip 2: full IDDSI test film, both methods. Files: white_bread_L7_take1.jpg / .mp4.
+
+5. FAIL MODES — Over-compression turning the crumb to a paste that extrudes through fork slots = fail, remake with a fresh slice and lighter press. Stale or very soft bread that slumps or drips from the tilted spoon = fail, remake from a fresh loaf. Adding any moisture or thickener = fail and remake from dry slice as sold.

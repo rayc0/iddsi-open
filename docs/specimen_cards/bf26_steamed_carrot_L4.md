@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g steamed carrot. Add 60 ml hot water, blend 45 s on high until smooth. Pass through the 4 mm sieve using the back of a spoon; discard fibrous residue. Return puree to blender, add 1.5 g thickener per 100 ml puree, blend 15 s. Rest 60 s, stir, retest. If too soft to mound on the spoon, add 0.5 g/100 ml increments, re-blend 10 s, rest 30 s, until the specimen sits above fork tines. Record actual final thickener mass g/100 ml on the data card.
+
+2. IDDSI TEST — Fork drip: turn fork tines-down; puree must sit as a cohesive mound above the tines, not drip through or fall. Fork pressure: press fork tines into the puree on a plate; puree should yield to pressure, flatten and smear under the fork, not return to original shape, and not flow through the gaps. Spoon tilt: scoop puree and tilt spoon; specimen must hold shape, slide off as a single mass, not run. L4 does not require the syringe flow test.
+
+3. VISUAL QC — Smooth, uniform orange surface with no fibre specks, no separate liquid pooling at the edges of the mound. The mound keeps clean edges where the fork or spoon lifted it.
+
+4. SHOTS — 3 stills: steamed_carrot_L4_take1.jpg hero at 45° with ruler and checkerboard in frame; steamed_carrot_L4_take2.jpg top-down with checkerboard only; steamed_carrot_L4_take3.jpg fork-press close-up mid-press. 2 clips (8-12 s, 1080p, 30 fps): steamed_carrot_L4_take1.mp4 fork-press and spoon-tilt sequence; steamed_carrot_L4_take2.mp4 full IDDSI test (drip, pressure, tilt).
+
+5. FAIL MODES — (a) Puree drips through fork tines or runs on spoon tilt — puree is too thin, too much water or not enough thickener, or insufficient rest time; remake and re-thicken in 0.5 g/100 ml steps. (b) Puree cracks or splits when pressed with fork — too thick, over-thickened or sieved too dry, re-blend with 5-10 ml hot water and retest. (c) Visible fibre specks or pale streaks — sieve pass incomplete, re-sieve and discard residue before thickener step.

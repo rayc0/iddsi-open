@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g thin wheat noodles. Boil in unsalted water until just tender, drain, and cool to ≈40 °C. Cut all pieces to ≤15 mm with kitchen shears on the cutting mat; discard any longer strands. Do not blend or sieve; the food list requires intact pieces. Do not add thickener; L6 needs no viscosity adjustment. Do not add water beyond residual surface moisture. Portion a 30 g specimen onto the capture plate.
+
+2. IDDSI TEST — Fork pressure: press the fork tines onto a piece until the thumbnail blanches white; on release the piece must squash flat and not recover its shape. Spoon tilt: a small mound on a spoon holds its form when the spoon is tilted to 45°—no flow, no drip. Fork drip: lift a loaded fork; nothing drips or runs through the tines before the fork-pressure test begins. Pass criterion for L6: piece squashes and does not recover its shape after fork pressure, plus mound holds on spoon tilt.
+
+3. VISUAL QC — (a) All visible noodle pieces clearly shorter than the 15 mm reference line on the ruler; no long strands. (b) Pieces show slight surface gloss but no pooling liquid on the plate. (c) Pieces deform cleanly under fork tine; they bend, they do not spring back.
+
+4. SHOTS — Capture 3 stills and 2 clips: (1) thin_wheat_noodles_L6_take1.jpg — 45° hero, ruler and 15 mm checkerboard in frame; (2) thin_wheat_noodles_L6_take2.jpg — top-down on checkerboard; (3) thin_wheat_noodles_L6_take3.jpg — fork-press close-up mid-press, thumbnail blanch visible. Clips: thin_wheat_noodles_L6_take1.mp4 — 8–12 s fork-press and spoon-tilt; thin_wheat_noodles_L6_take2.mp4 — full IDDSI test film.
+
+5. FAIL MODES — (1) Pieces >15 mm: re-cut to ≤15 mm, re-shoot. (2) Pieces spring back after fork pressure (under-cook): reboil 60–90 s, re-test; if still firm, re-make. (3) Free liquid pools on plate: drain and pat surface dry on paper towel, re-shoot; if persistent, re-make with shorter boil time.

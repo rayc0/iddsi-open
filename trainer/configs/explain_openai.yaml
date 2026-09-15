@@ -1,0 +1,8 @@
+explain:
+  backend: openai_compatible
+  model: local-qwen3-vl-2b
+  base_url: http://127.0.0.1:8000
+  api_key_env: OPENAI_API_KEY
+  timeout_seconds: 60
+  max_new_tokens: 300
+

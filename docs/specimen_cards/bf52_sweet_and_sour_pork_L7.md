@@ -1,0 +1,9 @@
+PREP — Place 200 g takeaway sweet and sour pork (pieces as served, sauce included) directly onto the capture surface. Do not blend. Do not sieve. Do not add water or thickener. This is a reference specimen; piece integrity and visible sauce coating are required. Record total specimen mass on the scale; pieces should retain their battered coating and glossy sauce.
+
+IDDSI TEST — Fork pressure test: press fork tines fully into a piece against the plate. The piece must NOT deform, smear, split, or flatten to less than half its original height under firm thumb pressure; it must remain a distinct solid piece. Spoon tilt test: attempt to pour/spoon a piece; it must not flow, drip, or run off the tilted spoon — pieces stay or slide whole. Fork drip test: lift a piece on fork tines; no continuous drip stream falls from fork between lifts. All three pass criteria must be met to confirm L7 Regular.
+
+VISUAL QC — (1) Distinct, individual battered pieces visible, not a blended mass. (2) Glossy red-orange sauce coats pieces but does not pool into a homogeneous puree. (3) Pieces hold shape when nudged with fork tines; coating remains attached.
+
+SHOTS — Stills: sweet_and_sour_pork_L7_take1.jpg hero (45°, ruler + 15 mm checkerboard in frame); sweet_and_sour_pork_L7_take1.jpg top-down (checkerboard only); sweet_and_sour_pork_L7_take1.jpg fork-press close-up mid-press. Clips: sweet_and_sour_pork_L7_take1.mp4 fork-press and spoon-tilt (8–12 s); sweet_and_sour_pork_L7_take1.mp4 IDDSI test film.
+
+FAIL MODES — (1) Pieces crush flat or smear under fork → not L7; re-make is not permitted — re-source a different specimen or fresh takeaway batch. (2) Sauce runs/drips continuously off fork → liquid component too thin; re-source. (3) Pieces stuck together as one mass → blend or processing occurred; re-source. No re-blending permitted for L7.

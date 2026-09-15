@@ -1,0 +1,106 @@
+% W12 note: entries built ONLY from what r5_prior.md actually states.
+% Missing/uncertain fields are TODO. Do not invent authors, years, DOIs, or venues.
+
+@misc{viscocam,
+  title       = {{ViscoCam}: Smartphone-based Drink Viscosity Control Assistant},
+  year        = {2021},
+  note        = {TODO: full author list, venue/number, DOI. Per r5_prior.md: PolyU; smartphone video plus motion sensing to classify three IDDSI liquid levels; 96.5\% controlled accuracy, only >81\% under extreme conditions; exposes neither dataset nor weights. URL: https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/},
+  howpublished= {\url{https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/}}
+}
+
+@misc{optitexture,
+  title       = {{OptiTexture}: A Low-cost Optical Deep Learning Solution for Objective Texture Assessment},
+  author      = {TODO},
+  year        = {TODO},
+  note        = {TODO: authors, year, venue, DOI. Per r5_prior.md: HKUST; combines RGB with a <\$20 light-scattering sensor; 91.96\% on 112 L3--L6 samples; vision-only baseline 69.64\%; exposes neither dataset nor weights. URLs: https://dl.acm.org/doi/10.1145/3810209 (ACM) and https://researchportal.hkust.edu.hk/en/publications/optitexture-a-low-cost-optical-deep-learning-solution-for-objecti/},
+  howpublished= {\url{https://dl.acm.org/doi/10.1145/3810209}}
+}
+
+@article{eduhk_frontiers,
+  title       = {TODO: exact article title},
+  journal     = {Frontiers in Nutrition},
+  year        = {2026},
+  note        = {TODO: authors, volume, pages, DOI. Per r5_prior.md: EdUHK single-image Qwen pipeline; 61.74\% exact match on CEIV-115; open VLMs missed every liquid hazard. URL: https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full},
+  howpublished= {\url{https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full}}
+}
+
+@article{syringe2019,
+  title       = {TODO: exact article title},
+  year        = {2019},
+  note        = {TODO: authors, journal, DOI. Per r5_prior.md: automated video/photogrammetric measurement of the official IDDSI syringe test, 2019. URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC6838027/},
+  howpublished= {\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC6838027/}}
+}
+
+@misc{safeplate,
+  title       = {{Safe Plate}},
+  note        = {TODO: company/author, year, product page date accessed. Per r5_prior.md: Australia's proprietary Safe Plate advertises photo-and-video IDDSI verification. Proprietary; no published dataset or weights. URL: https://www.safeplate.au/},
+  howpublished= {\url{https://www.safeplate.au/}}
+}
+
+% W36 additions (related_work.md + limitations.md). Entries built ONLY from
+% what r5_prior.md / r5_sol.md / r5_feas.md / r5_reg.md actually state.
+% Missing/uncertain fields are TODO. Do not invent authors, years, DOIs, venues.
+
+@misc{iddsi_framework,
+  title       = {The {International Dysphagia Diet Standardisation Initiative} Framework: Detailed Definitions and Test Methods for Texture-Modified Foods and Liquids},
+  author      = {{IDDSI}},
+  year        = {2019},
+  note        = {Testing-methods document (version 2, 31 July 2019) referenced by r5_feas.md and r5_sol.md: IDDSI levels are defined by physical tests (flow test, fork drip, spoon tilt, fork pressure), not appearance. TODO: the original 2017 IDDSI framework journal publication is NOT stated in r5_prior.md - full citation [CITATION TBD]. URL: https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf},
+  howpublished= {\url{https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf}}
+}
+
+@misc{iddsi_reliability,
+  title       = {TODO: inter-rater reliability study of IDDSI testing methods (spoon tilt / fork pressure)},
+  author      = {TODO},
+  year        = {TODO},
+  note        = {TODO: authors, year, journal, DOI. Per r5_sol.md: human agreement is weak for several IDDSI tests - reported kappa values are only 0.23--0.36 for spoon tilt/fork pressure characteristics. URL: https://doaj.org/article/51c4ce683add4c35b051eece3eab6d14},
+  howpublished= {\url{https://doaj.org/article/51c4ce683add4c35b051eece3eab6d14}}
+}
+
+@misc{iddsi_app,
+  title       = {{IDDSI} (official iOS/Android app)},
+  author      = {{IDDSI}},
+  year        = {TODO},
+  note        = {TODO: year, version. Per r5_prior.md: the official IDDSI iOS/Android app is a descriptor/test-reference library, not a classifier. URL: https://apps.apple.com/us/app/iddsi/id1145593063},
+  howpublished= {\url{https://apps.apple.com/us/app/iddsi/id1145593063}}
+}
+
+@misc{foodsense,
+  title       = {{FoodSense} dataset (generic perceived texture)},
+  author      = {TODO},
+  year        = {TODO},
+  note        = {TODO: authors, year, licence. Per r5_prior.md: open FoodSense/PlateInsight resources concern generic perceived texture, not IDDSI. URL: https://huggingface.co/datasets/sababishraq/foodsense-dataset},
+  howpublished= {\url{https://huggingface.co/datasets/sababishraq/foodsense-dataset}}
+}
+
+@misc{hk_tr007,
+  title       = {{Technical Reference TR-007}: Guidance on Software as a Medical Device},
+  author      = {{Medical Device Division, Department of Health, Hong Kong}},
+  year        = {2026},
+  note        = {Per r5_reg.md: standalone medical-purpose software is SaMD under TR-007; MDACS listing remains generally voluntary. TODO: confirm exact year/edition of the cited TR-007. URL: https://www.mdd.gov.hk/filemanager/common/mdacs/TR007E.pdf},
+  howpublished= {\url{https://www.mdd.gov.hk/filemanager/common/mdacs/TR007E.pdf}}
+}
+
+@misc{nmpa_class,
+  title        = {Classification Rules for Medical Devices and interpretation of AI-based medical device classification},
+  author       = {{State Administration for Market Regulation (SAMR), People's Republic of China}},
+  year         = {2023},
+  note         = {Per r5_reg.md: AI providing measurements/reference information is generally Class II; immature AI offering lesion judgments, medication guidance, or treatment planning is Class III. Patient-specific IDDSI grading with corrective action is plausibly Class II, potentially Class III - obtain formal classification determination before mainland release. URLs: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_24dbff6e15494c9cb112ea15ed158001.html and https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/zxwdzl68/743634809/index.html},
+  howpublished = {\url{https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_24dbff6e15494c9cb112ea15ed158001.html}}
+}
+
+@misc{mdcg2019_11,
+  title       = {{MDCG 2019-11 rev.1}: Qualification and Classification of Software - Guidance on Regulation (EU) 2017/745},
+  author      = {{Medical Device Coordination Group (MDCG), European Commission}},
+  year        = {TODO},
+  note        = {Per r5_reg.md: software informing diagnostic/therapeutic decisions is Class IIa minimum under Rule 11; IIb arguable given choking/aspiration consequences. TODO: confirm revision/year of the cited document. URL: https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf},
+  howpublished= {\url{https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf}}
+}
+
+@misc{fda_cds,
+  title       = {Clinical Decision Support Software - Guidance for Industry and Food and Drug Administration Staff},
+  author      = {{U.S. Food and Drug Administration (FDA)}},
+  year        = {TODO},
+  note        = {Per r5_reg.md: the non-device CDS exclusion primarily protects transparent recommendations to healthcare professionals, not caregiver/patient directives; dysphagia-specific claims are not disease-unrelated general wellness. TODO: year of the cited guidance. URL: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software},
+  howpublished= {\url{https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software}}
+}

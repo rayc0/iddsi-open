@@ -1,0 +1,8 @@
+Pillow>=10
+numpy>=1.24
+opencv-python-headless>=4.8
+torch>=2.1
+transformers>=4.57
+accelerate>=1.0
+# Optional stronger local OCR. Without it, OpenCV QR checks plus Qwen visual text checks still run.
+pytesseract>=0.3.10

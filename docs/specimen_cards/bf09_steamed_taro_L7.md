@@ -1,0 +1,9 @@
+1. PREP — Do not blend, sieve, or add liquid. Take a wedge of steamed taro as it comes from the steamer, approximately 50 g. Record the exact starting weight on the capture sheet. Cut or break one wedge into a piece roughly 30 mm × 30 mm × 20 mm for the fork-press test; keep a second wedge whole for the reference specimen. Confirm the taro is tender enough to cut cleanly with a fork — no further processing. No thickener. No sieve.
+
+2. IDDSI TEST — Fork pressure: place the taro piece on a flat plate, press the fork tines flat onto it until the tines blanch fully white. The taro must squash, change shape, and not return to its original form — it does not need to pass through the gaps. Fork drip: lift the fork; nothing drips or runs off. Spoon tilt: tilt a spoon holding a small portion 45 degrees; the piece sits on the spoon without flowing or dripping. L7 = soft, moldable, holds shape; not pourable, not sticky-pasty. No syringe test applies.
+
+3. VISUAL QC — Surface looks matte and slightly moist, not wet or glossy. Edges of the cut wedge are clean, no stringy fibers or pooling liquid around the piece. When squashed under the fork, the taro shows a smooth, even mash with no hard lumps or skin fragments.
+
+4. SHOTS — Still 1: 45-degree hero, whole wedge on plate, ruler and checkerboard in frame. Still 2: top-down of the same wedge, checkerboard only. Still 3: fork-press close-up mid-press, tines blanched, taro deforming. Clip 1: 8–12 s fork-press then spoon-tilt sequence. Clip 2: full IDDSI test film. Files: steamed_taro_L7_take1.jpg, steamed_taro_L7_take1.mp4, plus takes 2–3.
+
+5. FAIL MODES — Under-steamed taro resists fork pressure and stays springy — re-steam 3–5 min, do not blend. Over-wet wedge pools liquid on the plate — pat dry with paper, not pressed out; if taro is waterlogged, reject and re-steam a fresh wedge. Taro breaks into dry crumbs instead of squashing smoothly — record as borderline; re-make one batch before tagging L7.

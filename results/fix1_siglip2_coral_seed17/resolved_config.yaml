@@ -1,0 +1,43 @@
+experiment:
+  name: siglip2_coral
+  output_dir: /work/runs/fix1
+  seeds:
+  - 17
+data:
+  manifest: /work/data/manifest_20260906_222023.jsonl
+  image_size: 224
+  num_workers: 8
+  batch_size: 32
+  level_field: level
+  split_field: split
+  group_field: group_id
+  synthetic: false
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  dropout: 0.1
+  pretrained: true
+training:
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  amp: true
+  device: cuda
+  phases:
+  - name: frozen_encoder_head
+    epochs: 60
+    lr: 0.001
+    unfreeze_last_blocks: 0
+  - name: unfreeze_last_two_blocks
+    epochs: 15
+    lr: 2.0e-05
+    unfreeze_last_blocks: 2
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.3
+  temperature_min: 0.25
+  temperature_max: 4.0
+  temperature_steps: 81
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

@@ -1,0 +1,9 @@
+PREP — Weigh 200 g cooked wontons with 100 ml broth into the blender. Blend 45–60 s on high until fully smooth. Pass through the 4 mm sieve using a spatula; discard retained solids, re-blend any that fails to pass for another 20 s and re-sieve. The cooked broth alone will not reach L4 — you must add thickener. Add thickener at 1.0 g per 100 ml of total blended volume as the calibration starting point; record the actual grams used and the final texture. Stir, rest 2 min, stir again. Do NOT add extra water; thin liquid will cause L4 failure.
+
+IDDSI TEST — Fork pressure: press fork tines fully into the surface; the specimen must not flow through the gaps and must hold the imprint when the fork is lifted. Fork drip: hold fork horizontal over a plate for 5 s — the specimen must sit in a mound on top of the tines and not drip or flow. Spoon tilt: scoop, hold spoon horizontal 5 s — specimen must stay mounded, not slide off. No separate thin liquid must pool on the plate beneath the spoon or fork.
+
+VISUAL QC — Smooth, glossy mound with no lumps, noodle skins, or pork flecks visible. Single homogeneous colour, matte-to-sheen surface. Sits in a defined peak above fork tines or spoon rim, no spread.
+
+SHOTS — wonton_soup_small_wonton_L4_take1.jpg: hero 45° with ruler + 15 mm checkerboard, specimen mound centred. wonton_soup_small_wonton_L4_take2.jpg: top-down checkerboard full frame. wonton_soup_small_wonton_L4_take3.jpg: fork-press close-up mid-press, tines visible. wonton_soup_small_wonton_L4_take1.mp4: 8–12 s fork-press and spoon-tilt. wonton_soup_small_wonton_L4_take2.mp4: full IDDSI test sequence, audio optional.
+
+FAIL MODES — Visible lumps or skins after sieving → re-blend 20 s and re-sieve. Thin liquid pools under spoon or drips through fork → add 0.2 g thickener per 100 ml, rest 2 min, retest. Specimen flows off spoon before 5 s → same thickening correction; do not exceed 1.6 g/100 ml without re-calibrating.

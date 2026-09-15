@@ -1,0 +1,2571 @@
+{
+  "abstention_reasons": {
+    "bubbles_or_lumps_detected": 43,
+    "insufficient_duration": 1,
+    "meniscus_unclear": 10,
+    "near_level_boundary": 47,
+    "syringe_not_detected": 2,
+    "wrong_or_unverified_syringe": 33
+  },
+  "cases": [
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_000",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1000,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_001",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1001,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.217,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.283,
+      "case_id": "case_002",
+      "estimated_residual_ml": 0.717,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1002,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_003",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1003,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_004",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1004,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.217,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.283,
+      "case_id": "case_005",
+      "estimated_residual_ml": 0.717,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1005,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_006",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1006,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 9.223,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_007",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1007,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.217,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.283,
+      "case_id": "case_008",
+      "estimated_residual_ml": 0.717,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1008,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_009",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1009,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 9.223,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_010",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1010,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_011",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1011,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_012",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1012,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.274,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.226,
+      "case_id": "case_013",
+      "estimated_residual_ml": 0.774,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1013,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.217,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.283,
+      "case_id": "case_014",
+      "estimated_residual_ml": 0.717,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1014,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_015",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 0.5,
+        "seed": 1015,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.241,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.259,
+      "case_id": "case_016",
+      "estimated_residual_ml": 0.741,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 0.5,
+        "seed": 1016,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.217,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.283,
+      "case_id": "case_017",
+      "estimated_residual_ml": 0.717,
+      "ground_truth_level": "L0",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 0.5,
+        "seed": 1017,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_018",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1018,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.163,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 1.337,
+      "case_id": "case_019",
+      "estimated_residual_ml": 2.663,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1019,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.114,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.386,
+      "case_id": "case_020",
+      "estimated_residual_ml": 2.614,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1020,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_021",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1021,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.163,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.337,
+      "case_id": "case_022",
+      "estimated_residual_ml": 2.663,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1022,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.114,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.386,
+      "case_id": "case_023",
+      "estimated_residual_ml": 2.614,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1023,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_024",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1024,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 7.223,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_025",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1025,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.106,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.394,
+      "case_id": "case_026",
+      "estimated_residual_ml": 2.606,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1026,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_027",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1027,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 7.223,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_028",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1028,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": null,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "insufficient_duration"
+      ],
+      "boundary_distance_ml": null,
+      "case_id": "case_029",
+      "estimated_residual_ml": null,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1029,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_030",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1030,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_031",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1031,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.13,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.37,
+      "case_id": "case_032",
+      "estimated_residual_ml": 2.63,
+      "ground_truth_level": "L1",
+      "predicted_level": "L1",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1032,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_033",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 2.5,
+        "seed": 1033,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.138,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.362,
+      "case_id": "case_034",
+      "estimated_residual_ml": 2.638,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 2.5,
+        "seed": 1034,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.13,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.37,
+      "case_id": "case_035",
+      "estimated_residual_ml": 2.63,
+      "ground_truth_level": "L1",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 2.5,
+        "seed": 1035,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_036",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1036,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_037",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1037,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_038",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1038,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_039",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1039,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_040",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1040,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_041",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1041,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_042",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1042,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 5.473,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_043",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1043,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_044",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1044,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": null,
+      "abstention_reasons": [
+        "syringe_not_detected"
+      ],
+      "boundary_distance_ml": null,
+      "case_id": "case_045",
+      "estimated_residual_ml": null,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1045,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": null,
+      "abstention_reasons": [
+        "syringe_not_detected"
+      ],
+      "boundary_distance_ml": null,
+      "case_id": "case_046",
+      "estimated_residual_ml": null,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1046,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_047",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1047,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.107,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.357,
+      "case_id": "case_048",
+      "estimated_residual_ml": 4.357,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1048,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.107,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.357,
+      "case_id": "case_049",
+      "estimated_residual_ml": 4.357,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1049,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_050",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1050,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.107,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.357,
+      "case_id": "case_051",
+      "estimated_residual_ml": 4.357,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 4.25,
+        "seed": 1051,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.107,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.357,
+      "case_id": "case_052",
+      "estimated_residual_ml": 4.357,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 4.25,
+        "seed": 1052,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.082,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.332,
+      "case_id": "case_053",
+      "estimated_residual_ml": 4.332,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 4.25,
+        "seed": 1053,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.059,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.941,
+      "case_id": "case_054",
+      "estimated_residual_ml": 6.059,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1054,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.083,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 1.917,
+      "case_id": "case_055",
+      "estimated_residual_ml": 6.083,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1055,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.034,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.966,
+      "case_id": "case_056",
+      "estimated_residual_ml": 6.034,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1056,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.059,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.941,
+      "case_id": "case_057",
+      "estimated_residual_ml": 6.059,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1057,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.083,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.917,
+      "case_id": "case_058",
+      "estimated_residual_ml": 6.083,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1058,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.034,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.966,
+      "case_id": "case_059",
+      "estimated_residual_ml": 6.034,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1059,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.059,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.941,
+      "case_id": "case_060",
+      "estimated_residual_ml": 6.059,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1060,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 3.723,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_061",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1061,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.026,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.974,
+      "case_id": "case_062",
+      "estimated_residual_ml": 6.026,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1062,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.059,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.941,
+      "case_id": "case_063",
+      "estimated_residual_ml": 6.059,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1063,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 3.723,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_064",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1064,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.05,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.95,
+      "case_id": "case_065",
+      "estimated_residual_ml": 6.05,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1065,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.05,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.95,
+      "case_id": "case_066",
+      "estimated_residual_ml": 6.05,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1066,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.05,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 1.95,
+      "case_id": "case_067",
+      "estimated_residual_ml": 6.05,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1067,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.05,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 1.95,
+      "case_id": "case_068",
+      "estimated_residual_ml": 6.05,
+      "ground_truth_level": "L2",
+      "predicted_level": "L2",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1068,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.05,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.95,
+      "case_id": "case_069",
+      "estimated_residual_ml": 6.05,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 6.0,
+        "seed": 1069,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 3.723,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_070",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 6.0,
+        "seed": 1070,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.059,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.941,
+      "case_id": "case_071",
+      "estimated_residual_ml": 6.059,
+      "ground_truth_level": "L2",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 6.0,
+        "seed": 1071,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_072",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1072,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_073",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1073,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_074",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1074,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_075",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1075,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_076",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1076,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_077",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1077,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_078",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1078,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 1.323,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_079",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1079,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_080",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1080,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_081",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1081,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 1.323,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "meniscus_unclear",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 1.723,
+      "case_id": "case_082",
+      "estimated_residual_ml": 9.723,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1082,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_083",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1083,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_084",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1084,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_085",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1085,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_086",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1086,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_087",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 8.4,
+        "seed": 1087,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.004,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.396,
+      "case_id": "case_088",
+      "estimated_residual_ml": 8.396,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 8.4,
+        "seed": 1088,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.029,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected",
+        "near_level_boundary"
+      ],
+      "boundary_distance_ml": 0.371,
+      "case_id": "case_089",
+      "estimated_residual_ml": 8.371,
+      "ground_truth_level": "L3",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 8.4,
+        "seed": 1089,
+        "tilt_deg": 4.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "near_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_090",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": "L4",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 10.0,
+        "seed": 1090,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_091",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 10.0,
+        "seed": 1091,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_092",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": "L4",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 10.0,
+        "seed": 1092,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_093",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 10.0,
+        "seed": 1093,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe",
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_094",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 10.0,
+        "seed": 1094,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_095",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 10.0,
+        "seed": 1095,
+        "tilt_deg": 0.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_096",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": "L4",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 10.0,
+        "seed": 1096,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "wrong_or_unverified_syringe"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_097",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 0.75,
+        "residual_ml": 10.0,
+        "seed": 1097,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_098",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": "L4",
+      "spec": {
+        "bubbles": false,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.15,
+        "residual_ml": 10.0,
+        "seed": 1098,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "graded",
+      "volume_bucket": "far_from_boundary"
+    },
+    {
+      "absolute_error_ml": 0.0,
+      "abstention_reasons": [
+        "bubbles_or_lumps_detected"
+      ],
+      "boundary_distance_ml": 2.0,
+      "case_id": "case_099",
+      "estimated_residual_ml": 10.0,
+      "ground_truth_level": "L4",
+      "predicted_level": null,
+      "spec": {
+        "bubbles": true,
+        "fps": 8.0,
+        "height": 480,
+        "lighting_factor": 1.0,
+        "residual_ml": 10.0,
+        "seed": 1099,
+        "tilt_deg": 2.0,
+        "width": 640
+      },
+      "status": "abstain",
+      "volume_bucket": "far_from_boundary"
+    }
+  ],
+  "confusion_counts": [
+    {
+      "count": 18,
+      "ground_truth": "L0",
+      "predicted": "abstain"
+    },
+    {
+      "count": 6,
+      "ground_truth": "L1",
+      "predicted": "L1"
+    },
+    {
+      "count": 12,
+      "ground_truth": "L1",
+      "predicted": "abstain"
+    },
+    {
+      "count": 6,
+      "ground_truth": "L2",
+      "predicted": "L2"
+    },
+    {
+      "count": 30,
+      "ground_truth": "L2",
+      "predicted": "abstain"
+    },
+    {
+      "count": 18,
+      "ground_truth": "L3",
+      "predicted": "abstain"
+    },
+    {
+      "count": 4,
+      "ground_truth": "L4",
+      "predicted": "L4"
+    },
+    {
+      "count": 6,
+      "ground_truth": "L4",
+      "predicted": "abstain"
+    }
+  ],
+  "fixed_params": {
+    "fps": 8.0,
+    "height": 480,
+    "width": 640
+  },
+  "grid": {
+    "bubbles": [
+      false,
+      true
+    ],
+    "lighting_factor": [
+      1.0,
+      0.75,
+      1.15
+    ],
+    "residual_ml": [
+      0.5,
+      2.5,
+      4.25,
+      6.0,
+      8.4,
+      10.0
+    ],
+    "tilt_deg": [
+      0.0,
+      2.0,
+      4.0
+    ]
+  },
+  "n": 100,
+  "overall": {
+    "abstained": 84,
+    "abstention_rate": 0.84,
+    "graded": 16,
+    "mae_ml": 0.6224,
+    "mae_ml_graded_only": 0.0651,
+    "n": 100,
+    "n_with_residual_estimate": 97
+  },
+  "per_bucket": {
+    "bubbles": {
+      "False": {
+        "abstained": 35,
+        "abstention_rate": 0.6863,
+        "graded": 16,
+        "mae_ml": 0.6111,
+        "mae_ml_graded_only": 0.0651,
+        "n": 51,
+        "n_with_residual_estimate": 51
+      },
+      "True": {
+        "abstained": 49,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 0.6349,
+        "mae_ml_graded_only": null,
+        "n": 49,
+        "n_with_residual_estimate": 46
+      }
+    },
+    "lighting_factor": {
+      "0.75": {
+        "abstained": 33,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 1.6997,
+        "mae_ml_graded_only": null,
+        "n": 33,
+        "n_with_residual_estimate": 32
+      },
+      "1.0": {
+        "abstained": 26,
+        "abstention_rate": 0.7647,
+        "graded": 8,
+        "mae_ml": 0.0953,
+        "mae_ml_graded_only": 0.0728,
+        "n": 34,
+        "n_with_residual_estimate": 33
+      },
+      "1.15": {
+        "abstained": 25,
+        "abstention_rate": 0.7576,
+        "graded": 8,
+        "mae_ml": 0.0887,
+        "mae_ml_graded_only": 0.0575,
+        "n": 33,
+        "n_with_residual_estimate": 32
+      }
+    },
+    "residual_ml": {
+      "0.5": {
+        "abstained": 18,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 1.2342,
+        "mae_ml_graded_only": null,
+        "n": 18,
+        "n_with_residual_estimate": 18
+      },
+      "10.0": {
+        "abstained": 6,
+        "abstention_rate": 0.6,
+        "graded": 4,
+        "mae_ml": 0.0,
+        "mae_ml_graded_only": 0.0,
+        "n": 10,
+        "n_with_residual_estimate": 10
+      },
+      "2.5": {
+        "abstained": 12,
+        "abstention_rate": 0.6667,
+        "graded": 6,
+        "mae_ml": 0.9688,
+        "mae_ml_graded_only": 0.1273,
+        "n": 18,
+        "n_with_residual_estimate": 17
+      },
+      "4.25": {
+        "abstained": 18,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 0.4252,
+        "mae_ml_graded_only": null,
+        "n": 18,
+        "n_with_residual_estimate": 16
+      },
+      "6.0": {
+        "abstained": 12,
+        "abstention_rate": 0.6667,
+        "graded": 6,
+        "mae_ml": 0.6652,
+        "mae_ml_graded_only": 0.0463,
+        "n": 18,
+        "n_with_residual_estimate": 18
+      },
+      "8.4": {
+        "abstained": 18,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 0.1617,
+        "mae_ml_graded_only": null,
+        "n": 18,
+        "n_with_residual_estimate": 18
+      }
+    },
+    "tilt_deg": {
+      "0.0": {
+        "abstained": 30,
+        "abstention_rate": 0.8333,
+        "graded": 6,
+        "mae_ml": 0.0888,
+        "mae_ml_graded_only": 0.0575,
+        "n": 36,
+        "n_with_residual_estimate": 36
+      },
+      "2.0": {
+        "abstained": 28,
+        "abstention_rate": 0.8235,
+        "graded": 6,
+        "mae_ml": 1.6221,
+        "mae_ml_graded_only": 0.0548,
+        "n": 34,
+        "n_with_residual_estimate": 31
+      },
+      "4.0": {
+        "abstained": 26,
+        "abstention_rate": 0.8667,
+        "graded": 4,
+        "mae_ml": 0.2297,
+        "mae_ml_graded_only": 0.092,
+        "n": 30,
+        "n_with_residual_estimate": 30
+      }
+    },
+    "volume_bucket": {
+      "far_from_boundary": {
+        "abstained": 30,
+        "abstention_rate": 0.6522,
+        "graded": 16,
+        "mae_ml": 0.6321,
+        "mae_ml_graded_only": 0.0651,
+        "n": 46,
+        "n_with_residual_estimate": 45
+      },
+      "near_boundary": {
+        "abstained": 54,
+        "abstention_rate": 1.0,
+        "graded": 0,
+        "mae_ml": 0.614,
+        "mae_ml_graded_only": null,
+        "n": 54,
+        "n_with_residual_estimate": 52
+      }
+    }
+  },
+  "scope": "synthetic pipeline-development benchmark only; not real-video validation and not a safety benchmark",
+  "seed_rule": "case i uses grid combo i % len(grid) with SyntheticSpec seed 1000 + i"
+}

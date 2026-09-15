@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g of braised pork belly including braising liquor. Pick out any leaf-wrapped aromatics or whole spices and discard; keep soft connective tissue and fat. Pulse in the consumer blender for 6-8 s to a coarse mince. Press through the 4 mm sieve with the back of a fork; if more than ~10% stays behind, pulse the retained 10 g portion for 3 s and re-sieve. The soft braising liquor already present supplies moisture; do not add water. Add thickener at 0 g per 100 ml as the calibration starting point — record the actual grams on the card. Mash the sieved mince with the back of the fork until visually uniform.
+
+2. IDDSI TEST — Fork pressure: press the fork tines into a 15 mm mound on a flat plate; the mound must squash, the tines leave a clear imprint, and it must not recover its shape when the fork is removed. Spoon tilt: a heaped 5 ml spoonful must hold its shape on a spoon tilted to 45 degrees and must slide off slowly in one cohesive lump, not run. Fork drip: tilt a fork-load 30 degrees; nothing should drip through the tines.
+
+3. VISUAL QC — The mince on the fork looks wet and glossy, not dry or crumbly. Pieces are visibly separate grains no larger than a match head, sitting in a thin clinging sauce with no free puddle. No intact slabs of fat or skin are visible.
+
+4. SHOTS — Stills: 45-degree hero on the capture mat, 100 mm ruler and 15 mm checkerboard both in frame; top-down of the specimen with checkerboard under the plate; fork-press close-up at the moment tines indent the mound. Clips: 8-12 s of fork-press and spoon-tilt; the full IDDSI test film. Files: braised_pork_belly_L5_take1.jpg, braised_pork_belly_L5_take1.mp4.
+
+5. FAIL MODES — Fat or skin pieces left above 4 mm: re-sieve, not re-blend first, to avoid paste. Free thin liquid pools on the plate: drain briefly or thicken the retained liquor before re-mixing. Mound springs back after fork press: sieve finer and mash again; do not add water, which will worsen flow.

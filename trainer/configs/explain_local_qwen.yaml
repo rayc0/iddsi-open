@@ -1,0 +1,5 @@
+explain:
+  backend: local_qwen
+  model: Qwen/Qwen3-VL-2B-Instruct
+  max_new_tokens: 300
+

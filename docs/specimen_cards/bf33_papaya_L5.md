@@ -1,0 +1,9 @@
+1. PREP — Weigh 200 g ripe papaya flesh. Dice to ≤4 mm on the board using the 100 mm ruler as a guide. Do NOT blend: per-level note requires dice ≤4 mm with its juice, and blending would make the texture pasty rather than minced & moist. Press lightly with the fork to release juice; discard loose drippings so no separate thin liquid pools on the plate. If pieces fall outside 4 mm, re-dice. If juice runs freely, drain and re-mix with the pieces. No thickener. No water.
+
+2. IDDSI TEST — Fork-pressure test: press the fork tines flat against the specimen; particles squash, do not spring back, and remain cohesive on the fork head. Pass = full squash, no recovery, particles separate easily under fork pressure. Spoon-tilt test: tilt a heaped spoonful; specimen holds shape, slides off in one soft clump, not running, not stacked. Pass = cohesive slide, no liquid drips. Fork-drip test: lift forkful above plate for 5 s; no drops fall. Pass = zero drip. No syringe test for L5.
+
+3. VISUAL QC — On the fork: visible fine dice ≤4 mm, glossy and wet but not runny, pieces mat together as one mass. On the spoon: soft mound that flattens slightly under its own weight, juice sheens the surface, no free liquid in the plate well. Colour uniform bright orange.
+
+4. SHOTS — papaya_L5_take1.jpg ×3: hero 45° with 100 mm ruler and 15 mm checkerboard visible alongside specimen; top-down framed on checkerboard showing spread of dice; fork-press close-up mid-press showing squash. papaya_L5_take1.mp4 ×2: 8–12 s fork-press and spoon-tilt clip; IDDSI test film covering all three tests in sequence.
+
+5. FAIL MODES — Pieces >4 mm visible against ruler: re-dice. Free thin juice pools on plate: drain and re-combine. Specimen bounces back under fork pressure (too firm) or liquefies (over-pressed): discard and remake from fresh dice.

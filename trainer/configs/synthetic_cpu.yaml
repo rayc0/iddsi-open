@@ -1,0 +1,41 @@
+experiment:
+  name: synthetic_smoke
+  output_dir: ../runs
+  seeds: [17]
+
+data:
+  manifest: ../artifacts/synthetic/manifest.jsonl
+  image_size: 32
+  batch_size: 10
+  num_workers: 0
+  group_field: group_id
+  synthetic: true
+
+model:
+  kind: tiny_cnn
+  name: test-only
+  pretrained: false
+  dropout: 0.0
+
+training:
+  device: cpu
+  amp: false
+  class_balance_beta: 0.99
+  phases:
+    - name: test_head
+      epochs: 1
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: test_unfreeze
+      epochs: 1
+      lr: 0.0005
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 50
+  bootstrap_seed: 2026
+

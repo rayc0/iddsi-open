@@ -1,0 +1,9 @@
+PREP — Weigh 200 g of tomato egg stir-fry as served, straight from container to plate. No blender, no sieve, no thickener, no added water. L7 is the whole-food reference; processing would corrupt the specimen. Record actual weight on the scale readout. Specimen goes straight to capture.
+
+IDDSI TEST — Run two checks. Fork pressure: press fork tines into specimen with normal thumb pressure; food must compress, squash, or change shape, and must not return to original shape when pressure released. Spoon tilt: place spoon-load on plate and tilt to full vertical; the full portion must slide or fall off — it must not hold shape on the spoon, and must not stick. If either check shows the food holding its shape like a firm gel, that is a fail, not an L7 result.
+
+VISUAL QC — Whole tomato pieces, whole egg curds, and visible sauce/oil are all present. Fork lifts distinct chunks, not a paste. Spoon-tilt release leaves loose fragments on the plate, not a cohesive mound.
+
+SHOTS — Shoot before any test. Still 1: 45-degree hero, ruler and checkerboard in frame. Still 2: top-down, checkerboard only. Still 3: fork-press close-up mid-press, tines visibly indenting food. Clip 1: 8–12 s, fork-press then spoon-tilt in one take. Clip 2: full IDDSI test film, fork pressure and spoon tilt unbroken. Files: tomato_egg_stirfry_L7_take1.jpg, take2.jpg, take3.jpg, take1.mp4, take2.mp4.
+
+FAIL MODES — Sauce gelled too thick so pieces hold shape on tilt → reheat or use a wetter portion. Egg curds mashed to paste during handling → re-plate from container without pressing. Tomato pieces absent because of uneven serving → re-mix gently before re-weighing. Any fail means a fresh specimen, not a retest.

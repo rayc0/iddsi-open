@@ -1,0 +1,50 @@
+{
+  "layout_version": "1.0.0",
+  "format": "Apache Parquet",
+  "primary_table": "events.parquet",
+  "partitioned_layout": "events/split=<split>/source=<source>/part-*.parquet",
+  "partition_columns": ["split", "source"],
+  "one_row_per": "independent capture event",
+  "schema_source": "event.schema.json",
+  "arrow_fields": [
+    {"name": "schema_version", "type": "string", "nullable": false},
+    {"name": "event_id", "type": "string", "nullable": false},
+    {"name": "recipe_id", "type": "string", "nullable": false},
+    {"name": "batch_id", "type": "string", "nullable": false},
+    {"name": "kitchen_id", "type": "string", "nullable": false},
+    {"name": "phone_id", "type": "string", "nullable": false},
+    {"name": "captured_at", "type": "timestamp[ms, tz=UTC]", "nullable": false},
+    {"name": "sample_kind", "type": "string", "nullable": false},
+    {"name": "level_declared", "type": "int8", "nullable": true},
+    {"name": "level_tested_RD", "type": "int8", "nullable": true},
+    {"name": "level_tested_SLP", "type": "int8", "nullable": true},
+    {"name": "level_adjudicated", "type": "int8", "nullable": true},
+    {
+      "name": "media_files",
+      "type": "list<struct<path:string not null,media_type:string not null,capture_role:string not null,sha256:string,bytes:int64>>",
+      "nullable": false
+    },
+    {"name": "test_type", "type": "list<string>", "nullable": false},
+    {
+      "name": "capture_conditions",
+      "type": "struct<operator_id:string not null,lighting_category:string not null,lighting_notes:string not null,plate_category:string not null,plate_notes:string not null,serving_temperature_c:float32,cuisine_tags:list<string> not null>",
+      "nullable": false
+    },
+    {
+      "name": "ground_truth_record",
+      "type": "struct<rd_assessment_id:string,slp_assessment_id:string,adjudication_status:string not null,adjudicator_code:string,adjudication_notes:string not null>",
+      "nullable": false
+    },
+    {"name": "notes", "type": "string", "nullable": false},
+    {"name": "split", "type": "string", "nullable": false},
+    {"name": "source", "type": "string", "nullable": false},
+    {"name": "consent_recorded", "type": "bool", "nullable": false},
+    {"name": "contains_face", "type": "bool", "nullable": false}
+  ],
+  "rules": [
+    "Do not store raw bytes in Parquet; media_files.path is relative to the dataset root.",
+    "Use UTC timestamps in Parquet. JSONL date-times may retain their source offset.",
+    "Do not split one recipe_id, batch_id, or kitchen_id across train, val, and external_test.",
+    "Synthetic events are development-only and must not appear in external_test."
+  ]
+}
