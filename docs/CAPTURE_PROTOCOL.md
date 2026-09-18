@@ -16,11 +16,15 @@
 ## 1. Purpose and scope
 
 Web-harvested labels hit a measured data-quality ceiling: two VLM judges agree
-on only 22.6% of images (chance for 5 classes). This protocol replaces harvested
-opinion with physically tested specimens made at a desk: one person with a
-blender, a fork, a sieve and thickener turns one base food into all five levels
-(L3–L7) in about 10 minutes. 60 base foods x 5 levels = 300 specimens in about
-10 person-hours. No kitchen, no production staff, no clinicians.
+on only **31.0%** of images (n_pairs = 575, full tier-2 sample, regen
+2026-09-16; Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766 — still
+essentially chance for 5 classes), with a systematic tier-1 under-prediction
+bias toward the safe end (see `hf/model_README.md` and `hf/HAZARD_LOG.md`
+H-NOISE / H-UNDERPRED). This protocol replaces harvested opinion with
+physically tested specimens made at a desk: one person with a blender, a
+fork, a sieve and thickener turns one base food into all five levels (L3–L7)
+in about 10 minutes. 60 base foods x 5 levels = 300 specimens in about 10
+person-hours. No kitchen, no production staff, no clinicians.
 
 The output is the `real-tested` data lane: every label is backed by a filmed
 IDDSI test of that exact specimen, plus a filmed re-test subsample that measures

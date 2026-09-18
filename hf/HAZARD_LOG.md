@@ -20,12 +20,19 @@ This log is not a medical-device risk-management file. No severity, probability,
 - Fix: replaced with the ordinal rank rule `level = #{k : P(y>k) > 0.5}`. After fix, n=109 held out: macro-F1 0.358, coverage 0.88, ECE 0.091, temperature 0.93, all levels predicted. Before fix: macro-F1 0.088, coverage 0.70, ECE 0.138, temperature 2.83. Weighted kappa 0.42 flat in both, measured against noise.
 - Residual risk: label-derived metrics remain measured against label noise and mean nothing about real-world accuracy. Photo-classification stays killed under the wk1 kill rule. Weights stay withheld.
 
-## H-NOISE — label-noise ceiling from inter-judge disagreement
+## H-NOISE — label-noise ceiling from inter-judge disagreement (regen 2026-09-16)
 
-- Hazard: label-noise ceiling. Two VLM judges, Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2, agree on only 22.6% of the same images, which is chance level for 5 classes. Every label-derived metric is therefore measured against label noise and means nothing about real-world accuracy. Weighted kappa 0.42 is flat before and after the decode fix, measured against noise.
-- How found: inter-judge agreement measured on the same images across the two VLM tiers. The 22.6% agreement IS the headline negative finding.
+- Hazard: label-noise ceiling. Two VLM judges, Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2, agree on **31.0%** of the same images (n_pairs = 575, full tier-2 sample). This is only marginally above the ~20% chance level for 5 classes. Cohen's kappa is **κ_unweighted = 0.1062** and **κ_quadratic-weighted = 0.2766** (Landis-Koch: slight / fair at best). Every label-derived metric is therefore measured against label noise and means nothing about real-world accuracy. Weighted kappa 0.42 (the model-eval figure, not inter-judge) is flat before and after the decode fix, measured against this noise.
+- How found: inter-judge agreement measured on the same images across the two VLM tiers. The regen was performed on the full tier-2 sample (preliminary 22.6% in v0.0 was on a smaller subset). The full table is at `results/regen_20260916/inter_judge_20260916.md`; run provenance in `tier2_resume.log` / `agreement_chain.log` on the DGX box.
 - Fix: published as the negative finding with its cause stated plainly. Web photos without a physical scale fiducial cannot be weakly labelled for IDDSI texture levels, even by strong VLMs, because middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry. The remedy path is physically-tested desk specimens: 60 base foods x 5 levels = 300 specimens, one operator, protocol-following, test-filmed (docs/CAPTURE_PROTOCOL.md), with a filmed re-test subsample for intra-rater reliability. Labels will be single-operator physical tests, never clinician-validated.
 - Residual risk: all weak-labelled metrics stay non-claims for accuracy. No accuracy, safety, dietary, clinical, or patient claim may be built on them.
+
+## H-UNDERPRED — tier-1 systematically under-predicts difficulty (new in v0.1)
+
+- Hazard: directional bias in the label noise. The regen cross-tab on the full tier-2 sample (n=575) shows tier-1 (Qwen3-VL-2B) does not just disagree randomly with tier-2 — it **systematically under-predicts** difficulty, dragging interior classes (L4/L5/L6) toward the regular-food end (L7). Only L3 is reliably classified (11/12 correct). The bias direction is the same dangerous direction the wk2 gate already catches: predicting a SAFER texture than truth.
+- How found: cross-tab inspection of the regen agreement data. L4 calls (151) miss to L7 in 69 and to L6 in 28 (only 42 stay at L4); L5 (131) miss to L7 in 54 and to L6 in 42 (only 27 stay); L6 (155) collapse into L7 in 111 (only 30 stay). L7 (126) over-pull to L6 in 47 and to L5 in 6 (68 stay).
+- Fix: documented in the v0.1 release card under "Under-prediction finding". The directional bias strengthens the case for physically-tested desk specimens (H-NOISE remedy) and for the wk2 gate (H-L7SINK). No new code change ships; the disclosure IS the fix.
+- Residual risk: the directional bias means any weak-labelled training data carries systematic under-classification, on top of the random noise. The wk1 kill rule FIRES regardless. Weights stay withheld.
 
 ## H-LICENCE — licence fail-close incident on harvested rows
 
@@ -49,4 +56,4 @@ This log is not a medical-device risk-management file. No severity, probability,
 
 ## Change control
 
-No change to intended use, prohibited uses, output wording, label handling, training sources, threshold behaviour, checkpoint status, eval split, decode path, or public claim ships without review of the release card and this log. Wording changes cannot expand the release from research plus culinary-education use into person-specific, clinical, diagnostic, or safety use.
+v0.1 (2026-09-16 regen): the inter-judge agreement figure in H-NOISE is updated from the preliminary 22.6% to the regen 31.0% on n=575, with kappa (unweighted 0.1062, quadratic 0.2766) newly disclosed and the under-prediction finding added as a new section (H-UNDERPRED). Nothing else changes — intended use, prohibited uses, output wording, label handling, training sources, threshold behaviour, checkpoint status, eval split, decode path, or public claim. Wording changes cannot expand the release from research plus culinary-education use into person-specific, clinical, diagnostic, or safety use.

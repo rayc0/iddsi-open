@@ -3,12 +3,13 @@ W36 section file. Standalone expansion of paper.md Section 8 ("Limitations").
 Sources: r5_feas.md, r5_reg.md, r5_prior.md, r5_sol.md (frozen project
 sources) plus the audited 0/24 synthetic pilot (2026-09-01 Spark run;
 synth/synth/judge_prompts.py and ops/tests/fixtures/synth_pilot_night.log).
-Updated v0 (release shape locked 2026-09-07; honest release card
-hf/model_README.md is the authority): classifier results (CORAL fix, gates,
-22.6% ceiling finding) and the flow-grader bench (MAE 0.065 ml, 100 videos)
-are reported; RD-SLP baseline, subgroups, and CIs were not measured in v0.
-Citation keys refer to ../references.bib. W22 owns paper.md; this file is
-not yet included by it.
+Updated v0.1 (2026-09-16 regen; honest release card hf/model_README.md is the
+authority): classifier results (CORAL fix, gates, 31.0% exact agreement on
+n=575 with kappa unweighted 0.1062 / quadratic 0.2766, under-prediction
+finding) and the flow-grader bench (MAE 0.065 ml, 100 videos) are reported;
+RD-SLP baseline, subgroups, and CIs were not measured in v0. Citation keys
+refer to ../references.bib. W22 owns paper.md; this file is not yet
+included by it.
 -->
 
 # Limitations
@@ -34,16 +35,19 @@ the known dangerous zone for image-only inference (r5_feas.md, r5_sol.md).
 The project's evaluation plan therefore reports dangerous-direction FNR
 (under-classification: predicting a softer level than physically tested) as
 a first-class metric - v0 measured 33% against a <= 5% gate (FAILED) - and
-the system abstains rather than guess. The v0 classifier numbers, measured
+the system abstains rather than guess. The v0.1 classifier numbers, measured
 against label noise: a CORAL ordinal-decode bug made interior levels
 unreachable and was fixed (held-out n = 109: macro-F1 0.088 -> 0.358,
 coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature 2.83 -> 0.93;
 weighted kappa flat at 0.42); wk1 weighted kappa >= 0.70 measured 0.42, so
 the kill rule fired and photo-classification is dead as a product capability.
-The ceiling finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on
-only 22.6% of the same images - chance level for 5 classes - because middle
-levels need absolute size/flow information a scale-free web photo does not
-carry.
+The ceiling finding (regen 2026-09-16, n_pairs = 575, full tier-2 sample):
+two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only **31.0%** of the
+same images (Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766 -
+still essentially chance for 5 classes), with a systematic tier-1
+under-prediction bias dragging interior classes toward L7 (the dangerous
+direction). Middle levels need absolute size/flow information a scale-free
+web photo does not carry.
 
 ## Synthetic-first training has generator artefacts
 
@@ -139,13 +143,15 @@ grade liquid flow.
 
 ## What v0 reports and what it does not
 
-This is a research-preview technical note. v0 reports the classifier results
-(CORAL decode fix: macro-F1 0.088 -> 0.358, coverage 0.70 -> 0.88, ECE
-0.138 -> 0.091, temperature 2.83 -> 0.93, n = 109; weighted kappa 0.42;
+This is a research-preview technical note. v0.1 reports the classifier
+results (CORAL decode fix: macro-F1 0.088 -> 0.358, coverage 0.70 -> 0.88,
+ECE 0.138 -> 0.091, temperature 2.83 -> 0.93, n = 109; weighted kappa 0.42;
 dangerous under-classification 33%; wk1/wk2 gates failed, kill rule fired),
-the 22.6% inter-judge ceiling finding, and the flow-grader bench (MAE
-0.065 ml, 100 videos, L0-L4). The RD-SLP inter-rater baseline, subgroup
-analyses, and stratified-bootstrap 95% CIs were not measured in v0. v0 ships
-code, eval results, and the flow-test grader only: the harvested dataset is
-withheld on licence grounds (of 587 unique events exactly 2 would ship
-cleanly) and the model weights are withheld on safety-gate grounds.
+the **31.0%** inter-judge ceiling finding (n=575, kappa unweighted 0.1062,
+quadratic-weighted 0.2766, plus the new under-prediction finding), and the
+flow-grader bench (MAE 0.065 ml, 100 videos, L0-L4). The RD-SLP inter-rater
+baseline, subgroup analyses, and stratified-bootstrap 95% CIs were not
+measured in v0. v0 ships code, eval results, and the flow-test grader only:
+the harvested dataset is withheld on licence grounds (of 587 unique events
+exactly 2 would ship cleanly) and the model weights are withheld on
+safety-gate grounds.

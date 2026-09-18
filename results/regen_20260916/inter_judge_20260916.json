@@ -1,0 +1,6 @@
+{
+  "n_pairs": 575,
+  "exact_agreement": 0.3096,
+  "kappa_unweighted": 0.1062,
+  "kappa_quadratic": 0.2766
+}

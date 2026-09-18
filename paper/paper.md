@@ -18,10 +18,13 @@ abstract: |
   dangerous under-classification at 33% against a <= 5% gate - so the wk1 kill
   rule fired and photo-classification is dead as a product capability. The
   headline negative finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree
-  on only 22.6% of the same images - chance level for 5 classes - because
-  middle IDDSI levels (L4/L5/L6) need absolute size/flow information a
-  scale-free web photo does not carry; every label-derived metric is therefore
-  measured against noise. A CORAL ordinal-decode bug that made interior levels
+  on only **31.0%** of the same images (n_pairs = 575, full tier-2 sample,
+  regen 2026-09-16; Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766
+  - still essentially chance for 5 classes), with a systematic directional
+  bias toward under-predicting difficulty (Section 3.3) - because middle
+  IDDSI levels (L4/L5/L6) need absolute size/flow information a scale-free web
+  photo does not carry; every label-derived metric is therefore measured
+  against noise. A CORAL ordinal-decode bug that made interior levels
   unreachable was found and fixed (held-out n = 109: macro-F1 0.088 -> 0.358,
   coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature 2.83 -> 0.93;
   weighted kappa flat at 0.42). The flow-test grader works: MAE 0.065 ml on a
@@ -52,16 +55,17 @@ link-citations: true
 ---
 
 <!--
-W22 methods note (updated v0, release shape locked 2026-09-07; honest release
+W22 methods note (v0.1 regen 2026-09-16; honest release
 card hf/model_README.md is the authority): classifier and flow-grader result
 cells now report the locked v0 numbers (CORAL decode fix, pre-registered
-gates, 22.6% inter-judge ceiling finding, flow MAE 0.065 ml on the 100-video
-bench). RD-SLP inter-rater baseline, subgroup analyses, and bootstrap CIs were
-not measured in v0. The 0/24 generator-QA pilot is the sole reported
-development-pilot outcome. Frozen boundary wording comes from the project's
-frozen source files (r5_prior.md, r5_reg.md, dataschema/README.md,
-dataschema/docs/CAPTURE_PROTOCOL.md, synth/README.md, crowd/README.md,
-harvest/README.md, RUNBOARD.md).
+gates, 31.0% exact inter-judge agreement on n=575 with kappa unweighted
+0.1062 / quadratic 0.2766, under-prediction finding, flow MAE 0.065 ml on the
+100-video bench). RD-SLP inter-rater baseline, subgroup analyses, and
+bootstrap CIs were not measured in v0. The 0/24 generator-QA pilot is the
+sole reported development-pilot outcome. Frozen boundary wording comes from
+the project's frozen source files (r5_prior.md, r5_reg.md,
+dataschema/README.md, dataschema/docs/CAPTURE_PROTOCOL.md, synth/README.md,
+crowd/README.md, harvest/README.md, RUNBOARD.md).
 -->
 
 # 1. Introduction
@@ -269,11 +273,24 @@ temperature 2.83 -> 0.93; weighted kappa flat at 0.42. The pre-registered
 gates all failed: wk1 weighted kappa >= 0.70 (measured 0.42 - the kill rule
 FIRES, so photo-classification is dead as a product capability); wk2
 macro-F1 >= 0.75 (measured 0.358) with dangerous under-classification <= 5%
-(measured 33%). The ceiling finding: two VLM judges (Qwen3-VL-2B vs
-Qwen3-VL-8B) agree on only 22.6% of the same images - chance level for 5
-classes - because middle IDDSI levels (L4/L5/L6) need absolute size/flow
-information a scale-free web photo does not carry. Every label-derived metric
-above is therefore measured against noise.
+(measured 33%). The ceiling finding (regen 2026-09-16 on n_pairs = 575, full
+tier-2 sample): two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only
+**31.0%** of the same images (Cohen's kappa unweighted 0.1062, quadratic-weighted
+0.2766) - still essentially chance for 5 classes - because middle IDDSI levels
+(L4/L5/L6) need absolute size/flow information a scale-free web photo does not
+carry. Every label-derived metric above is therefore measured against noise.
+
+**Under-prediction finding (new in v0.1, not in v0.0).** The regen cross-tab on
+the full tier-2 sample (n = 575) reveals a systematic pattern the preliminary
+22.6% figure did not state: tier-1 systematically *under-predicts* difficulty.
+Only L3 is reliably classified (11/12 correct). The interior classes drag
+toward the regular-food end - L4 calls (151) miss to L7 in 69 and to L6 in 28;
+L5 calls (131) miss to L7 in 54 and to L6 in 42; L6 calls (155) collapse into
+L7 in 111; L7 calls (126) over-pull to L6 in 47. This is the *dangerous
+direction* (predicting a SAFER texture than truth), the same direction the wk2
+gate catches at 33% dangerous under-classification. Judges do not just
+disagree randomly; they share a directional bias toward the safe end. The
+remedy path is unchanged: physically-tested desk specimens.
 
 ## 3.4 Deterministic Flow Test grader
 
@@ -331,7 +348,7 @@ test set. In v0 the wk1 gate failed and the kill rule fired (Section 3.3):
 photo-classification is dead as a product capability, and only code, results,
 and the flow-test grader ship.
 
-| Observed metric (v0) | Value |
+| Observed metric (v0 / v0.1 regen) | Value |
 |---|---|
 | CORAL fix, held-out n = 109: macro-F1 | 0.088 -> 0.358 |
 | Coverage | 0.70 -> 0.88 |
@@ -341,7 +358,8 @@ and the flow-test grader ship.
 | Dangerous under-classification rate | 33% (gate: <= 5% - FAILED) |
 | wk1 gate (weighted kappa >= 0.70) | FAILED - kill rule fired |
 | wk2 gate (macro-F1 >= 0.75) | FAILED (measured 0.358) |
-| Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B) | 22.6% (chance level for 5 classes - the ceiling finding) |
+| Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B, n=575, v0.1 regen) | 31.0% exact; kappa unweighted 0.1062, quadratic 0.2766 (the ceiling finding) |
+| Under-prediction bias (v0.1 regen) | tier-1 systematically under-predicts L4-L6 toward L7; dangerous direction |
 | Flow residual-volume MAE (100-video bench, L0-L4) | 0.065 ml |
 | RD-SLP inter-rater baseline | not measured in v0 |
 | Stratified-bootstrap 95% CIs | not reported in v0 |
@@ -426,9 +444,10 @@ submission (r5_reg.md). This note does not describe such a version.
   pre-registered gate (wk1 weighted kappa >= 0.70 measured 0.42 - kill rule
   fired; wk2 macro-F1 >= 0.75 measured 0.358, dangerous under-classification
   33% against a <= 5% gate), and kappa 0.42 is measured against label noise:
-  two VLM judges agree on only 22.6% of the same images (chance level for 5
-  classes). Weights are withheld; photo-classification is dead as a product
-  capability.
+  two VLM judges agree on only **31.0%** of the same images (n=575, kappa
+  unweighted 0.1062, quadratic-weighted 0.2766 - still essentially chance for
+  5 classes), and tier-1 systematically under-predicts difficulty (Section 3.3).
+  Weights are withheld; photo-classification is dead as a product capability.
 - **Population and cuisine coverage:** unverified in v0. The planned remedy is
   physically-tested desk specimens (60 base foods x 5 levels = 300,
   single-operator, protocol-following, test-filmed, with a filmed re-test
@@ -437,10 +456,10 @@ submission (r5_reg.md). This note does not describe such a version.
   grader (MAE 0.065 ml on the 100-video bench, L0-L4), not "first video
   grader" (2019 photogrammetric syringe measurement predates it).
 - **What v0 reports and what it does not.** Classifier results (CORAL fix,
-  gates, 22.6% ceiling finding) and the flow-grader bench are reported in
-  Sections 3.3-3.5. The RD-SLP inter-rater baseline, subgroup analyses, and
-  bootstrap CIs were not measured in v0. The 0/24 generator-QA pilot is not a
-  model, dataset, or flow-grader evaluation.
+  gates, 31.0% ceiling finding + kappa + under-prediction) and the flow-grader
+  bench are reported in Sections 3.3-3.5. The RD-SLP inter-rater baseline,
+  subgroup analyses, and bootstrap CIs were not measured in v0. The 0/24
+  generator-QA pilot is not a model, dataset, or flow-grader evaluation.
 
 # 7. Conclusion
 
@@ -451,14 +470,15 @@ open-source smartphone grader for the 10 ml IDDSI Flow Test") and never
 clinical validity - plus a measured negative finding: photo-classification
 failed its pre-registered gates (weighted kappa 0.42 against a >= 0.70 gate;
 macro-F1 0.358 against a >= 0.75 gate; dangerous under-classification 33%
-against a <= 5% gate) measured against 22.6% inter-judge label noise, so the
-model weights and the harvested dataset are withheld and
-photo-classification is dead as a product capability. Held-out results,
-failure cases, and test videos accompany the repository. Planned next step,
-not done: physically-tested desk specimens (60 base foods x 5 levels = 300,
-single-operator, protocol-following, test-filmed, with a filmed re-test
-subsample for intra-rater reliability). Numeric conclusions: as reported in
-Sections 3.3-3.5.
+against a <= 5% gate) measured against **31.0%** inter-judge label noise on
+n=575 (kappa unweighted 0.1062, quadratic-weighted 0.2766, with a
+systematic tier-1 under-prediction bias - Section 3.3), so the model weights
+and the harvested dataset are withheld and photo-classification is dead as a
+product capability. Held-out results, failure cases, and test videos
+accompany the repository. Planned next step, not done: physically-tested
+desk specimens (60 base foods x 5 levels = 300, single-operator,
+protocol-following, test-filmed, with a filmed re-test subsample for
+intra-rater reliability). Numeric conclusions: as reported in Sections 3.3-3.5.
 
 # References
 

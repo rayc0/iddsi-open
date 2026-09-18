@@ -30,11 +30,30 @@ Harvest, then two-tier VLM weak labels, then a SigLIP-2 CORAL head, then calibra
 - Weak labels: two VLM judges, Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2.
 - Model: SigLIP-2 CORAL head with calibrated abstention. Abstention outputs `unclear — perform physical test` and never a verdict.
 
-## Headline negative finding
+## Headline negative finding (regen 2026-09-16 — supersedes the preliminary 22.6%)
 
-The two VLM judges agree on only 22.6% of the same images, which is chance level for 5 classes. THEREFORE every label-derived metric below is measured against label noise and means nothing about real-world accuracy.
+The two VLM judges (Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2) agree on **31.0%** of the same images (n_pairs = 575, full tier-2 sample). This is only marginally above the ~20% chance level for 5 classes. The chance-corrected agreement is also very low: Cohen's kappa is **κ_unweighted = 0.1062** and **κ_quadratic-weighted = 0.2766** (Landis-Koch: slight / fair at best). THEREFORE every label-derived metric below is measured against label noise and means nothing about real-world accuracy.
 
-This 22.6% inter-judge agreement IS the headline negative finding: web photos without a physical scale fiducial cannot be weakly labelled for IDDSI texture levels, even by strong VLMs, because middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry.
+This inter-judge agreement IS the headline negative finding: web photos without a physical scale fiducial cannot be weakly labelled for IDDSI texture levels, even by strong VLMs, because middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry. The new kappa disclosure was not in v0.0 because the preliminary 22.6% was measured on a smaller subset; the regen on the full tier-2 sample (n=575) is the publication-grade figure. Full table: `results/regen_20260916/inter_judge_20260916.md`.
+
+### Under-prediction finding (new in v0.1, not in v0.0)
+
+The cross-tab on the full sample reveals a systematic pattern the preliminary ceiling finding did not state: tier-1 **under-predicts** difficulty. Only L3 calls are reliable. The interior classes drift toward the regular-food end:
+
+| t1 \ t2 | L3 | L4 | L5 | L6 | L7 | (total) |
+|---|---:|---:|---:|---:|---:|---:|
+| L3 | 11 | 1 | 0 | 0 | 0 | 12 |
+| L4 | 4 | 42 | 8 | 28 | 69 | 151 |
+| L5 | 5 | 3 | 27 | 42 | 54 | 131 |
+| L6 | 3 | 8 | 3 | 30 | 111 | 155 |
+| L7 | 4 | 1 | 6 | 47 | 68 | 126 |
+
+- L4 calls (151): 69 mis-predict to L7, 28 mis-predict to L6 — only 42 stay at L4
+- L5 calls (131): 54 mis-predict to L7, 42 mis-predict to L6 — only 27 stay at L5
+- L6 calls (155): 111 mis-predict to L7 — only 30 stay at L6
+- L7 calls (126): 47 over-pull to L6, 6 over-pull to L5 — 68 stay at L7
+
+This is the **dangerous direction** — predicting a SAFER texture than truth (see H-L7SINK in `HAZARD_LOG.md`). The wk2 gate already catches it at 33% dangerous under-classification. The regen does not relax the headline: judges do not just disagree randomly — they share a directional bias toward the safe end.
 
 ## CORAL ordinal-decode bug and fix
 

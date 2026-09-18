@@ -55,11 +55,14 @@ Taken together, these results bracket the realistic accuracy of image-only
 IDDSI inference - from 61.74% exact match on HK-oriented images to 96.5% only
 in controlled liquid-only settings - and none of the three releases a
 downloadable IDDSI-specific dataset or trained weights under an explicit
-reuse licence. The v0 negative finding reframes this bracket from below: two
-VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only 22.6% of the same
-images - chance level for 5 classes - because middle IDDSI levels (L4/L5/L6)
-need absolute size/flow information a scale-free web photo does not carry, so
-label-derived accuracy numbers on such photos are measured against noise.
+reuse licence. The v0.1 negative finding reframes this bracket from below: two
+VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only **31.0%** of the same
+images (n_pairs = 575, full tier-2 sample, regen 2026-09-16; Cohen's kappa
+unweighted 0.1062, quadratic-weighted 0.2766 - still essentially chance for 5
+classes) with a systematic tier-1 under-prediction bias toward the safe end,
+because middle IDDSI levels (L4/L5/L6) need absolute size/flow information a
+scale-free web photo does not carry, so label-derived accuracy numbers on such
+photos are measured against noise.
 
 ## Meal-screening systems and product-side tools
 
