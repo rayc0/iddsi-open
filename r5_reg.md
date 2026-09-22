@@ -1,0 +1,21 @@
+## Regulatory verdict
+
+**As currently proposed, Snap-to-IDDSI is probably SaMD.** Although it does not diagnose dysphagia, it interprets an individual meal and recommends modification to mitigate a swallowing disorder. “Guidance only,” “not a diagnosis,” and “食品不能代替藥物” do not neutralize that intended medical purpose.
+
+- **Hong Kong:** Software intended for diagnosis, treatment, alleviation or support of a physiological process falls within the medical-device definition; standalone medical-purpose software is SaMD under TR-007. MDACS listing remains generally voluntary, although increasingly required for government procurement. A patient-meal verdict plus “thicken/blend/remove” likely “informs/drives clinical management.” [GN-00 definition](https://www.mdd.gov.hk/filemanager/common/mdacs/GN-00-E.pdf), [TR-007:2026](https://www.mdd.gov.hk/filemanager/common/mdacs/TR007E.pdf), [MDACS status](https://www.mdd.gov.hk/en/mdacs/mdis/index.html).
+
+- **Mainland China:** “Independent software” requires a medical purpose; classification follows intended purpose and risk. NMPA-derived policy treats AI providing only measurements/reference information generally as **Class II**, but immature AI offering lesion judgments, medication guidance or treatment planning as **Class III**. Patient-specific IDDSI grading with corrective action is therefore **at least plausibly Class II and potentially Class III**—obtain a formal classification determination before mainland release. [Classification Rules](https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_24dbff6e15494c9cb112ea15ed158001.html), [official AI classification explanation](https://yjj.beijing.gov.cn/yjj/ztzl48/ylqxjgfwzn/zxwdzl68/743634809/index.html).
+
+- **EU:** If intended for dysphagia management, it is MDSW. Rule 11 makes software informing diagnostic/therapeutic decisions **Class IIa minimum**, rising to IIb/III with potential serious harm. Choking/aspiration consequences make IIb arguable. [MDCG 2019-11 rev.1](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf).
+
+- **US:** Dysphagia-specific claims are not disease-unrelated “general wellness.” The non-device CDS exclusion primarily protects transparent recommendations to healthcare professionals, not caregiver/patient directives. [FDA wellness guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-wellness-policy-low-risk-devices), [CDS guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software).
+
+### Safer public-demo boundary
+
+Use: “Research demonstration for culinary education. Estimates visual similarity to IDDSI descriptors; does not perform official IDDSI tests, assess swallowing, determine suitability for any person, or decide whether food is safe to consume.”
+
+UX: no patient profile, diagnosis or prescribed level; no “safe/unsafe/pass”; output “unclear—perform physical test”; show uncertainty; teach test procedure rather than prescribe modifications. Keep “therapist robot” clinical claims off the demo page. Caregiver framing alone is insufficient.
+
+A regulated version needs fixed intended use, formal classification, ISO 13485/14971, IEC 62304/62366, locked/versioned model, analytical and clinical validation, subgroup/external-site evidence, cybersecurity/privacy, human-factors work, adverse-event/post-market processes, and jurisdictional submission.
+
+Finally, **do not claim “first IDDSI texture AI”**: [ViscoCam (2021)](https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/), [OptiTexture](https://researchportal.hkust.edu.hk/en/publications/optitexture-a-low-cost-optical-deep-learning-solution-for-objecti/), and [EdUHK’s 2026 image system](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full) predate it. Claim the narrower, verifiable contribution: an openly released, physically tested Hong Kong IDDSI dataset/model.

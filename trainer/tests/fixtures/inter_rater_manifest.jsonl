@@ -1,0 +1,12 @@
+{"event_id": "FIX_RATER_01", "level_declared": 4, "level_tested_RD": 3, "level_tested_SLP": 3, "level_adjudicated": 3, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_02", "level_declared": 4, "level_tested_RD": 3, "level_tested_SLP": 4, "level_adjudicated": 4, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_03", "level_declared": 5, "level_tested_RD": 4, "level_tested_SLP": 4, "level_adjudicated": 4, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_04", "level_declared": 5, "level_tested_RD": 5, "level_tested_SLP": 5, "level_adjudicated": 5, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_05", "level_declared": 6, "level_tested_RD": 5, "level_tested_SLP": 6, "level_adjudicated": 6, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_06", "level_declared": 6, "level_tested_RD": 6, "level_tested_SLP": 6, "level_adjudicated": 6, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_07", "level_declared": 7, "level_tested_RD": 7, "level_tested_SLP": 7, "level_adjudicated": 7, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_08", "level_declared": 5, "level_tested_RD": 4, "level_tested_SLP": 4, "level_adjudicated": 4, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_09", "level_declared": 4, "level_tested_RD": 4, "level_tested_SLP": null, "level_adjudicated": null, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_10", "level_declared": 5, "level_tested_RD": 5, "level_tested_SLP": null, "level_adjudicated": null, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_11", "level_declared": 6, "level_tested_RD": null, "level_tested_SLP": 6, "level_adjudicated": null, "split": "train", "source": "synthetic"}
+{"event_id": "FIX_RATER_12", "level_declared": 6, "level_tested_RD": null, "level_tested_SLP": null, "level_adjudicated": null, "split": "train", "source": "synthetic"}

@@ -1,0 +1,117 @@
+[
+  {
+    "attempt": 1,
+    "level_declared": 4,
+    "seed": 5458086803223554673,
+    "cue": null,
+    "judge": {
+      "accepted": false,
+      "backend": "transformers:Qwen/Qwen3-VL-2B-Instruct",
+      "descriptor_match_score": 0.0,
+      "visual_quality_score": 0.0,
+      "cue_consistency_score": null,
+      "observed_level": 3,
+      "contains_face": false,
+      "contains_text": false,
+      "reasons": [
+        "The mashed potato has a visible texture with small lumps and irregularities, inconsistent with a completely smooth and lump-free appearance as described in the target. The surface of the potato shows a non-uniform, slightly granular texture, and the presence of a smartphone and spoon suggests a staged image rather than a natural food presentation. The image contains a smartphone with a visible screen, which is not a typical utensil cue for a food photograph and may be a red herring or a misrepresentation of the scene.",
+        "descriptor score below threshold",
+        "visual quality score below threshold",
+        "observed level did not match declared prompt level"
+      ],
+      "raw_response": "```json\n{\n  \"descriptor_match_score\": 0.0,\n  \"visual_quality_score\": 0.0,\n  \"cue_consistency_score\": null,\n  \"observed_level\": 3,\n  \"contains_face\": false,\n  \"contains_text\": false,\n  \"reasons\": [\n    \"The mashed potato has a visible texture with small lumps and irregularities, inconsistent with a completely smooth and lump-free appearance as described in the target. The surface of the potato shows a non-uniform, slightly granular texture, and the presence of a smartphone and spoon suggests a staged image rather than a natural food presentation. The image contains a smartphone with a visible screen, which is not a typical utensil cue for a food photograph and may be a red herring or a misrepresentation of the scene.\"\n  ]\n}\n```",
+      "status": "scored"
+    }
+  },
+  {
+    "attempt": 2,
+    "level_declared": 4,
+    "seed": 8138582389074136246,
+    "cue": "a standard fork touching the puree in a frozen fork-drip cue",
+    "judge": {
+      "accepted": false,
+      "backend": "transformers:Qwen/Qwen3-VL-2B-Instruct",
+      "descriptor_match_score": 0.0,
+      "visual_quality_score": 0.0,
+      "cue_consistency_score": null,
+      "observed_level": null,
+      "contains_face": false,
+      "contains_text": false,
+      "reasons": [
+        "The image shows raw, chopped meat with visible texture and small pieces, not a smooth, lump-free puree as described. The meat is not uniformly smooth or cohesive, and there are no signs of a puree texture. The spoon in the image is not touching the puree, and there is no fork-drip cue. The image does not contain any prohibited elements such as faces or text.",
+        "descriptor score below threshold",
+        "visual quality score below threshold",
+        "cue score missing or below threshold",
+        "observed level was null"
+      ],
+      "raw_response": "```json\n{\n  \"descriptor_match_score\": 0.0,\n  \"visual_quality_score\": 0.0,\n  \"cue_consistency_score\": null,\n  \"observed_level\": null,\n  \"contains_face\": false,\n  \"contains_text\": false,\n  \"reasons\": [\n    \"The image shows raw, chopped meat with visible texture and small pieces, not a smooth, lump-free puree as described. The meat is not uniformly smooth or cohesive, and there are no signs of a puree texture. The spoon in the image is not touching the puree, and there is no fork-drip cue. The image does not contain any prohibited elements such as faces or text.\"\n  ]\n}\n```",
+      "status": "scored"
+    }
+  },
+  {
+    "attempt": 5,
+    "level_declared": 4,
+    "seed": 4934690804109248753,
+    "cue": null,
+    "judge": {
+      "accepted": false,
+      "backend": "transformers:Qwen/Qwen3-VL-2B-Instruct",
+      "descriptor_match_score": 0.0,
+      "visual_quality_score": 0.0,
+      "cue_consistency_score": null,
+      "observed_level": null,
+      "contains_face": false,
+      "contains_text": false,
+      "reasons": [
+        "The dish exhibits a textured, crumbly appearance with visible chunks and a coarse, uneven surface, which contradicts the target descriptor of a completely smooth and lump-free, thick and cohesive pureed filling. The visible texture suggests a coarse, possibly granular or fibrous consistency rather than a uniform puree.",
+        "descriptor score below threshold",
+        "visual quality score below threshold",
+        "observed level was null"
+      ],
+      "raw_response": "```json\n{\n  \"descriptor_match_score\": 0.0,\n  \"visual_quality_score\": 0.0,\n  \"cue_consistency_score\": null,\n  \"observed_level\": null,\n  \"contains_face\": false,\n  \"contains_text\": false,\n  \"reasons\": [\n    \"The dish exhibits a textured, crumbly appearance with visible chunks and a coarse, uneven surface, which contradicts the target descriptor of a completely smooth and lump-free, thick and cohesive pureed filling. The visible texture suggests a coarse, possibly granular or fibrous consistency rather than a uniform puree.\"\n  ]\n}\n```",
+      "status": "scored"
+    }
+  },
+  {
+    "attempt": 10,
+    "level_declared": 4,
+    "seed": 2090327830959157412,
+    "cue": "a standard fork touching the puree in a frozen fork-drip cue",
+    "judge": {
+      "accepted": false,
+      "backend": "transformers:Qwen/Qwen3-VL-2B-Instruct",
+      "descriptor_match_score": null,
+      "visual_quality_score": null,
+      "cue_consistency_score": null,
+      "observed_level": null,
+      "contains_face": null,
+      "contains_text": null,
+      "reasons": [
+        "Invalid judge response: judge response did not contain a JSON object"
+      ],
+      "raw_response": "```json\n{\n  \"descriptor_match_score\": 0.0,\n  \"visual_quality_score\": 0.0,\n  \"cue_consistency_score\": null,\n  \"observed_level\": 3,\n  \"contains_face\": false,\n  \"contains_text\": false,\n  \"reasons\": [\n    \"The dish appears to be a stewed pear, but the texture is not smooth and lump-free as described in the target. The puree has visible small, irregular lumps and a glossy surface that suggests a liquid or semi-liquid consistency, not a completely smooth and lump-free puree. The spoon is lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a portion, but the puree is not cohesive enough to hold a soft mound without being pourable. The image shows a spoon lifting a",
+      "status": "error"
+    }
+  },
+  {
+    "attempt": 14,
+    "level_declared": 4,
+    "seed": 8926208039422313301,
+    "cue": "a standard fork touching the puree in a frozen fork-drip cue",
+    "judge": {
+      "accepted": false,
+      "backend": "transformers:Qwen/Qwen3-VL-2B-Instruct",
+      "descriptor_match_score": null,
+      "visual_quality_score": null,
+      "cue_consistency_score": null,
+      "observed_level": null,
+      "contains_face": null,
+      "contains_text": null,
+      "reasons": [
+        "Invalid judge response: judge response did not contain a JSON object"
+      ],
+      "raw_response": "```json\n{\n  \"descriptor_match_score\": 0.0,\n  \"visual_quality_score\": 0.0,\n  \"cue_consistency_score\": null,\n  \"observed_level\": 3,\n  \"contains_face\": false,\n  \"contains_text\": false,\n  \"reasons\": [\n    \"The puree in the dish is not smooth and lump-free; it has visible texture and a liquid consistency with a slight sheen, but it is not a puree with a soft mound. The dish is a congee, which is a thick liquid, but the puree is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree. The image shows a thick, cohesive liquid with a soft mound, but it is not a puree",
+      "status": "error"
+    }
+  }
+]

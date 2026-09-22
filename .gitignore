@@ -1,0 +1,13 @@
+_*/
+tmp/
+_runs/
+_reports/
+*.pt
+*.npz
+__pycache__/
+.pytest_cache/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+data/

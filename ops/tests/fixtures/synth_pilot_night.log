@@ -1,0 +1,15 @@
+Couldn't connect to the Hub: Cannot reach https://hf-mirror.com/api/models/stabilityai/sdxl-turbo: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
+Will try to load from local cache.
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Token indices sequence length is longer than the specified maximum sequence length for this model (173 > 77). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "/work/repo/synth/synth/generate.py", line 372, in <module>
+    raise SystemExit(main())
+  File "/work/repo/synth/synth/generate.py", line 366, in main
+    summary = SyntheticGenerator(pipeline, _make_judge(args)).run(config)
+  File "/work/repo/synth/synth/generate.py", line 280, in run
+    raise RuntimeError(
+RuntimeError: Accepted only 0/24 candidates after 72 attempts; partial outputs and honest rejection logs remain in /work/data/synth_pilot_L4
+exit=1
