@@ -1,0 +1,64 @@
+### bf28_steamed_bitter_melon_L3  (level L3)
+PREP:
+Weigh 150 g steamed bitter melon on the scale. Add 100 ml cool water. Blend on high for 60 s until fully liquefied. Press through the 4 mm sieve; discard coarse residue. Weigh the sieved liquid and record the grams. Add thickener at 4 g per 100 ml of sieved liquid — this is the calibration starting point; record the actual grams used. Stir 30 s, rest 60 s, stir again 15 s. Re-weigh the final specimen. The thickener amount is the only knob; do not add more water.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip test: lift fork from the specimen, let it fall from the fork tines in 3-4 slow drips over 5-7 s — pass. Fork pressure: the tines leave a clear, full imprint when pressed lightly; no spring-back — pass. Spoon tilt: spoon at 30°, specimen slides off slowly in one mass, not in a stream — pass. Syringe flow test: fill the 10 ml syringe, start the timer; after 10 s the syringe holds 8-10 ml — pass. All four must pass. If any fails, remake (see FAIL MODES).
+
+VISUAL QC:
+On the fork: an even, glossy film that does not run; slow drips that round into teardrops. On the spoon: surface flattens and levels within 1 s, no pooling at the rim. Colour: uniform dull green, no white fibres or yellow seed specks.
+
+FAIL MODES:
+Too thin: drips run like water, syringe reads under 8 ml — add thickener in 0.5 g steps, rest 60 s, retest. Too thick: no drips, syringe holds above 10 ml — thin by adding water in 5 ml steps, record volume, retest. Fibre lumps, white strands, or visible seed particles — re-blend 30 s and re-sieve; if still visible, reject the batch.
+
+### bf28_steamed_bitter_melon_L4  (level L4)
+PREP:
+Weigh 200 g steamed bitter melon, chop into 2 cm pieces, add to blender with 80 ml water. Blend 45 s on high. Pass through 4 mm sieve; discard coarse residue. Return puree to blender, add 2 g thickener per 100 ml puree as the calibration starting point; blend 15 s. Re-weigh, record actual grams of thickener added. If puree flows through fork tines, add 0.5 g thickener per 100 ml and re-blend 10 s, then re-test. If puree will not drop from an inverted spoon, add 5 ml water and re-blend.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: press fork tines fully into the specimen on a flat plate; the tines leave a clear dent and the puree does not flow through the gaps. Pass = visible tine marks, no extrusion between tines. Spoon tilt: load a heaped teaspoon, tilt to 90 degrees over a plate; specimen sits in a mound, does not slide or drip. Pass = mound holds, zero drip in 5 s. Fork drip: lift fork with a heaped load; specimen sits as a mound above the tines, no drips fall within 10 s. Pass = mound stable, no drops. Syringe flow test is not required for L4.
+
+VISUAL QC:
+Mound on spoon holds a soft peak without slumping. Color is uniform pale green with no dark seed flecks. Surface is smooth, matte, no separate liquid pooling at the plate edge.
+
+FAIL MODES:
+Specimen flows through fork tines: too thin, add 0.5 g thickener per 100 ml and re-blend. Separate liquid pools on plate: seeds or water not fully incorporated, re-blend 20 s and re-sieve. Specimen cracks on spoon tilt: over-thickened, add 5 ml water per 100 ml and re-blend. Re-make from scratch after two failed corrections; log actual thickener mass and water volume used.
+
+### bf28_steamed_bitter_melon_L5  (level L5)
+PREP:
+Trim 200 g steamed bitter melon, discard seeds. Chop on board, then pulse in blender 5 s to break down. Pass through 4 mm sieve; discard coarse residue. Mash retained fraction with fork until uniformly minced. Add 15 ml water per 100 g minced portion to moisten; stir. Target particle size ≤ 4 mm throughout. L3 thickener calibration: not applicable at L5.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into specimen on plate; flesh must squash and not recover shape when fork is removed. Spoon tilt: tilt spoon 45 degrees; specimen must hold together without sliding or dripping. Fork drip: lift fork with specimen; no thin liquid should run through tines separately. L3 10 ml/10 s syringe flow test: not applicable.
+
+VISUAL QC:
+On fork: discrete moist particles all clearly ≤ 4 mm, no visible fiber strands longer than 4 mm. On spoon: cohesive mound that holds its shape when spoon is tilted, surface glistening but no pooled liquid at edges. Color uniform green-cream, no translucent liquid separating in the plate well.
+
+FAIL MODES:
+Particles exceed 4 mm after sieving: re-blend 2 s, re-sieve. Specimen appears dry or crumbly on spoon tilt: add 5 ml water per 100 g, stir, retest. Thin liquid pools on plate beside mound: drain on sieve 30 s, retest fork drip. Re-make from fresh portion if any failure persists after two corrections.
+
+### bf30_sweetcorn_kernels_L6  (level L6)
+PREP:
+Place 200 g sweetcorn kernels on the digital scale. Drain canned kernels; if frozen, thaw and pat dry with paper towel. The per-level note states "serve as-is, kernels ≤ 15 mm" — do not blend. No sieve needed. No thickener added. No water added. Confirm each kernel visually measures ≤ 15 mm against the 100 mm ruler; if any exceed 15 mm, halve or discard those pieces. Re-weigh 200 g onto the A4 capture kit surface.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test (L6 mandatory): press the fork tines firmly onto a single kernel with the thumbnail until the thumbnail blanches white. Pass: kernel squashes flat and does not return to original shape. Repeat on 3 kernels from different areas.  Spoon tilt (supporting): place 5 kernels on a spoon and tilt to 90°. Pass: pieces sit on the spoon, do not flow or drip off.  Fork drip (supporting): lift 5 kernels on fork tines and hold level for 5 seconds. Pass: no liquid drips through tines. Kernels are low-moisture; drip test confirms absence of free liquid.
+
+VISUAL QC:
+Kernels appear intact, glossy yellow, individual and countable on the fork. No slurry, no puree, no pooling liquid. Each kernel measures ≤ 15 mm against the 100 mm ruler in the frame.
+
+FAIL MODES:
+Kernel > 15 mm (fails L6 size rule): halve oversized pieces, re-measure, re-shoot. Kernel remains firm and rebounds under thumbnail (fails fork-pressure): this batch is undercooked or wrong variety — re-prep with longer heating, re-test. Free liquid pools on the spoon (fails drip test): drain longer or pat dry, re-shoot.
+
+### bf33_papaya_L7  (level L7)
+PREP:
+Start with 200 g fresh ripe papaya, peeled and seeded. Per the per-level note, cut into slices as normally served — no blending, no sieving, no thickener. No water or liquid added. The fruit's natural moisture is expected at L7; the operator records actual juice release onto the capture surface. Specimen must be at room temperature (20–24 °C) for testing.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+L7 is proven by behaviour, not flow. Fork pressure: the prongs must be able to pierce the slice and lift it cleanly with the fruit holding its shape — no squashing through the tines. Spoon tilt: a slice rests on an inverted spoon without sliding off under gravity. Fork drip: no liquid pours through the tines or drips continuously; a small amount of natural juice on the fork is acceptable, but no flow. No syringe test applies at L7.
+
+VISUAL QC:
+Slice holds a clean cut edge, not collapsed or fibrous-strewn. Colour is uniform ripe orange-red with no bruising. On the fork the slice sits flat across the tines without sagging between them.
+
+FAIL MODES:
+Slices too thin to support their own weight on the fork — re-cut to 15–20 mm thickness. Over-ripe fruit pools excessive juice (visible drip >1 s) — re-make with firmer ripe papaya and blot surface. Under-ripe fruit resists fork pierce and fractures rather than cuts — re-make with fully ripe fruit only.

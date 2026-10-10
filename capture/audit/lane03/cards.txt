@@ -1,0 +1,129 @@
+### bf03_hor_fun_flat_rice_noodle_L3  (level L3)
+PREP:
+Weigh 150 g hor fun, fresh pack, blanched. Chop into 2-3 cm pieces. Add 80 ml water. Blend on high 45 s; stop, scrape down, blend 30 s more. Press through the 4 mm sieve; discard residue. Stir in thickener at 1.5 g per 100 ml of sieved liquid — calibration starting point only, record the actual g used and final ml. Stir 30 s, rest 60 s, stir 10 s. Re-weigh and record total specimen mass.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift fork from specimen at 5 cm/s; liquid drips in a continuous slow stream through the tines, drops form but do not pour. Fork pressure: fork prongs leave a clear, persistent score on the surface under light thumb pressure; surface does not flow back. Spoon tilt: small mound on a tilted spoon barely shifts; thick, controlled slide. IDDSI flow test: fill 10 ml syringe, cut at 10 ml mark, release for 10 s; 8-10 ml remains. All four must pass.
+
+VISUAL QC:
+On spoon: smooth, glossy, no lumps, no noodle strands visible, thick coat that holds the spoon shape. On fork: a clean coat between tines, drips threadlike not watery. Color uniform off-white.
+
+FAIL MODES:
+Too runny: drips pour off fork, syringe reads under 8 ml — add 0.25 g thickener per 100 ml, rest, retest. Too thick: holds shape on tilted spoon, syringe reads over 10 ml — add 5 ml water, stir, retest. Lumpy or grainy: sieve left residue — re-blend 20 s and re-sieve, then re-thicken to spec.
+
+### bf35_soft_ripe_persimmon_L3  (level L3)
+PREP:
+Weigh 200 g peeled soft ripe persimmon flesh; discard skin and any firm core. Blend 25-35 s in consumer blender until fully smooth, scraping once. Do not sieve — the per-level note says blend-thin, so fibre is driven by blender time, not sieve. Measure puree volume; target 100 ml. Add thickener at the calibration starting point of 3.0 g per 100 ml, sprinkle while blending 5-10 s. Stir, rest 60 s, stir again. If the IDDSI flow test leaves less than 8 ml or more than 10 ml in the syringe after 10 s, adjust by 0.25 g per 100 ml increments and record the actual grams used. Re-test after every change.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: specimen flows slowly through fork tines in a continuous thin stream, not in dollops. Spoon tilt: spoonful sits in a mound and slides off slowly when tilted to 70-90 degrees, leaving a thick coating. Fork pressure: tines leave a clear, lasting line on the surface with no recovery. Syringe flow test: fill 10 ml, release, after 10 s 8-10 ml remains. All four must pass.
+
+VISUAL QC:
+Glossy, homogenous orange-tan surface on the spoon. No lumps, no skin specks, no liquid separation pooling at edges. Coats a fork evenly; no translucent thin patches.
+
+FAIL MODES:
+Runny: passes 10 ml leaving under 8 ml — add 0.25 g thickener per 100 ml and re-test. Too thick: drips in dollops or syringe retains over 10 ml — thin with 5 ml water per 100 ml and re-test. Grainy or stringy: blender time under 25 s — re-blend 10 s. Any single failure: re-make, do not patch.
+
+### bf03_hor_fun_flat_rice_noodle_L4  (level L4)
+PREP:
+Weigh 200 g blanched hor fun on the digital scale. Add 80 ml cool water. Blend in the consumer blender 45 s, stop, scrape down, blend another 30 s until smooth. Pass through the 4 mm sieve using the back of a spoon; discard any residue retained on the mesh. Return puree to the blender, add thickener at the calibration starting point of 2.0 g per 100 ml, blend 20 s to incorporate. Rest 60 s, then re-blend 10 s. If the mixture still flows through the fork tines, add thickener in 0.3 g per 100 ml increments, blending 10 s and resting 60 s between additions, until the mound holds. Record the final g per 100 ml on the run sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a forkful 5 cm above the plate; specimen must sit as a mound above the tines with no drip. Fork pressure: press the fork tines into the mound; surface must hold the imprint with no separation of thin liquid. Spoon tilt: scoop, tilt spoon to 45 degrees; specimen must stay seated, not slide off. All three must pass.
+
+VISUAL QC:
+Uniform pale off-white paste, glossy sheen, no visible noodle fragments or grains. Holds a sharp spoon edge and a clean fork-print ridge. No thin liquid pooling on the plate surface beside the mound.
+
+FAIL MODES:
+Specimen drips through fork tines — too thin, add thickener 0.3 g per 100 ml and retest. Visible noodle specks or grainy texture — re-blend 20 s and re-sieve through 4 mm. Thin liquid separates and pools on the plate — too wet, return to blender with extra thickener 0.3 g per 100 ml. Any single failure: discard, re-make from fresh 200 g batch, log the corrective addition.
+
+### bf35_soft_ripe_persimmon_L4  (level L4)
+PREP:
+Weigh 200 g ripe persimmon flesh (skin and stem removed). Add 20-40 ml water. Blend 45-60 s until smooth, scraping the jar once. Sieve through the 4 mm sieve using a fork to push the pulp through. If the puree flows below mound height on the spoon or sits below the fork tines during the fork-drip test, thicken: start at 1.0 g thickener per 100 ml puree, blend 10 s, re-test, and record the actual grams used. Per-level note "blend-hold": hold the target shape on the spoon without adding liquid back in. If sieving through 4 mm cannot remove the persimmon fibres to give a smooth mound-holding texture, state so in the notes; do not over-thin to force passage.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: the tines leave a clear, clean imprint that holds its shape on the puree surface; the surface does not close back up. Spoon tilt: a 5-8 ml scoop sits in a mound and slides off slowly when tilted, not as a pour. Fork drip: the puree sits as a mound above the tines and does not drip or run through the gaps. All three must pass.
+
+VISUAL QC:
+Mound on the spoon taller than it is wide, soft peak at the top. On the fork, puree clings across and between tines with no shine of free liquid around it. Uniform colour, no visible fibre strands, no standing juice pooling on the plate.
+
+FAIL MODES:
+Too thin: puree runs through fork tines or spreads flat on the spoon, re-add 0.2-0.5 g thickener per 100 ml and re-blend. Too thick: puree fractures or cracks on the spoon tilt, add 5 ml water per 100 ml and re-blend. Lumpy with fibres caught by the sieve: re-sieve or re-blend, and if fibres still remain note the failure; a single remake only.
+
+### bf03_hor_fun_flat_rice_noodle_L5  (level L5)
+PREP:
+Weigh 200 g blanched hor fun on the scale. Chop across the noodles with a fork or knife until no piece exceeds 4 mm; sweep through a 4 mm sieve and discard any overs. Return choppings to the bowl, moisten with 30 ml warm broth from the pack, and mash with a fork until the mass clumps and a fork pressed into it squashes without springing back. Add more broth 5 ml at a time only if the mass looks dry; record the final broth volume. No blender is used. No thickener is added; L5 calibration starts at zero grams per 100 ml and the operator notes the actual on the sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen until the thumbnail blanches white for ~5 s; pass when the piece squashes, does not spring back, and stays flattened. Spoon tilt: scoop a teaspoon, tilt 45 degrees; pass when the mass slides off in one clump, leaving little residue, with no separate thin liquid pooling. Fork drip: lift fork with specimen; pass when nothing drips through or off within 10 s. L3 syringe test is not required.
+
+VISUAL QC:
+Specimen sits in a soft mound that holds fork-tine imprints. Surface looks moist and glossy, never dry or chalky. No noodle strand longer than a rice grain visible.
+
+FAIL MODES:
+Long strands reappear after mashing: re-chop and re-sieve. Specimen springs back under fork: add 5 ml broth and re-mash; if still elastic, restart with a finer chop. Thin broth pools on the plate: drain or fold back in; if it persists, re-make with less added liquid.
+
+### bf35_soft_ripe_persimmon_L5  (level L5)
+PREP:
+Use 150 g ripe persimmon flesh, skin and stem removed. Fork-mash on a plate until smooth, pressing and dragging the tines through the flesh. Work in two halves; scrape both halves together between passes so no chunks hide at the seams. Sieve the mash through the 4 mm sieve using the back of a spoon; discard anything that will not pass. Press retained material once more; if residue still exceeds a pea-sized clump, sieve again. No blender, no added water, no thickener. Expected yield: roughly 130–140 g of uniform pulp at room temperature.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines flat into the specimen until the blanch shows through; the pulp must squashes and not spring back. Fork-drip test: lift the loaded fork; specimen must not drip or run through the gaps. Spoon-tilt test: load a teaspoon, tilt to vertical; the pulp holds together and slides as one lump, leaving only a moist film, no separate thin liquid. If any test drips or recovers its shape, re-mash and re-sieve.
+
+VISUAL QC:
+On the spoon: even orange pulp with no visible flecks larger than a pinhead, soft sheen but no pooling liquid at the spoon rim. On the fork: tissue fills the gaps between tines uniformly; the back of the fork reads as a solid colour with no white specks or strings.
+
+FAIL MODES:
+Visible lumps above 4 mm after sieving — re-mash and re-sieve the full batch, do not pick out specks. Free liquid pooling on the plate — drain briefly on paper; if it persists, the fruit is over-ripe and must be replaced with a firmer ripe specimen. Mash springs back under fork pressure — work it longer; if it still recovers, the fruit is under-ripe and unsuitable.
+
+### bf04_thin_wheat_noodles_L6  (level L6)
+PREP:
+Weigh 200 g thin wheat noodles. Boil in unsalted water until just tender, drain, and cool to ≈40 °C. Cut all pieces to ≤15 mm with kitchen shears on the cutting mat; discard any longer strands. Do not blend or sieve; the food list requires intact pieces. Do not add thickener; L6 needs no viscosity adjustment. Do not add water beyond residual surface moisture. Portion a 30 g specimen onto the capture plate.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines onto a piece until the thumbnail blanches white; on release the piece must squash flat and not recover its shape. Spoon tilt: a small mound on a spoon holds its form when the spoon is tilted to 45°—no flow, no drip. Fork drip: lift a loaded fork; nothing drips or runs through the tines before the fork-pressure test begins. Pass criterion for L6: piece squashes and does not recover its shape after fork pressure, plus mound holds on spoon tilt.
+
+VISUAL QC:
+(a) All visible noodle pieces clearly shorter than the 15 mm reference line on the ruler; no long strands. (b) Pieces show slight surface gloss but no pooling liquid on the plate. (c) Pieces deform cleanly under fork tine; they bend, they do not spring back.
+
+FAIL MODES:
+(1) Pieces >15 mm: re-cut to ≤15 mm, re-shoot. (2) Pieces spring back after fork pressure (under-cook): reboil 60–90 s, re-test; if still firm, re-make. (3) Free liquid pools on plate: drain and pat surface dry on paper towel, re-shoot; if persistent, re-make with shorter boil time.
+
+### bf37_apple_L6  (level L6)
+PREP:
+Weigh 300 g fresh apple, peeled, cored, cut into 20 mm cubes. Steam 8-10 minutes until fork enters with no resistance. Drain, spread on tray 2 minutes. Test one cube with fork-pressure: thumbnail blanches white, cube squashes and does not recover, piece breaks apart easily — if not, steam 2 more minutes. Dice by hand into pieces ≤ 15 mm on the 4 mm sieve card (no cube passes through the 15 mm square). Do not blend. No thickener, no water added. Steam only; do not boil to mush.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure (L6 test): press the fork tines against one piece on a flat plate until thumbnail blanches white. PASS: piece squashes, breaks, does not return to original shape. Spoon tilt: place 5-7 pieces on a spoon, tilt to 90 degrees against the plate. PASS: all pieces slide or fall off together; none holds its shape as a sticky bolus. Fork drip: lift 3 pieces on fork tines, hold horizontal 5 seconds. PASS: no liquid drips from the pieces. (No syringe test — L6, not L3.)
+
+VISUAL QC:
+Pieces are pale cream-yellow, matte, slightly translucent at edges, no dry core, no free liquid pooling on the plate. Edges are soft, not sharp; a light press with the back of a spoon leaves a clear dent. Pieces hold their cube shape on the fork but break cleanly with one nip — not stringy, not fibrous.
+
+FAIL MODES:
+Pieces > 15 mm or with sharp edges — re-dice, do not re-steam. Centre still firm (under-steamed) — re-steam 2 minutes, retest. Pieces turn to puree or free juice runs (over-steamed) — discard, start over; do not blend to recover.
+
+### bf04_thin_wheat_noodles_L7  (level L7)
+PREP:
+Boil 60 g dry thin wheat noodles (or 150 g fresh) in 1 L unsalted water until just tender to the bite. Drain, shake off surface moisture for 30 s, portion 30 g onto the fork and plate. Do not blend, do not sieve, do not add thickener. Target is whole noodles as normally served; no processing is permitted at L7.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines fully into the specimen; noodles compress/deform and change colour at the bite mark, and do not return to shape when fork is withdrawn. Pass = clear bite mark visible, noodle holds together, no recovery. Spoon tilt: spoon a small portion and tilt to 45 degrees; noodles slide off in a bolus and fall. Pass = full slide in 1-2 s. Fork drip: lift forkful clear of plate; no continuous drip from noodles between fork and plate. Pass = no drip.
+
+VISUAL QC:
+- Noodles are distinct, firm strands, ~2 mm diameter, pale yellow, no clumping or mash. - Bite mark on fork shows dented, lighter-coloured core; strand does not spring back. - Loose strands lift cleanly off plate; no liquid pooling.
+
+FAIL MODES:
+1. Overcooked: noodles squash fully under fork with no spring, pass fork pressure by mashing — re-cook a fresh batch to 1 min less. 2. Sauce or oil film present: noodles slide off spoon without bite test, dripping observed — drain 60 s longer, blot, re-shoot. 3. Strands stuck together in a clump: cannot isolate a single forkful — re-portion with tongs, reject clump, re-shoot.  Re-make rule: any single fail = discard specimen, re-cook, re-shoot full set; do not patch a take.
+
+### bf40_seedless_grapes_L7  (level L7)
+PREP:
+Use grapes as purchased. Select 8-10 whole seedless grapes, ~150 g total. Rinse, pat dry. Do NOT blend, sieve, chop, or add thickener or water. Per the per-level note ("whole as bought"), the reference specimen is the intact fruit exactly as served. Lay specimens on the capture board with 15 mm checkerboard and 100 mm ruler in frame; each grape must be whole, skin intact, stem scar dry.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+1. Fork pressure: press tines into the side of a grape until thumbnail blanches white. The grape must split, fragment, or burst — it must NOT return to its original shape when pressure is released. Pass = clear rupture under fork. 2. Fork drip: lift the ruptured grape on the fork; no continuous drip or flow off the tines. Pass = grape stays on fork, nothing drips. 3. Spoon tilt: place a whole grape on a spoon and tilt to ~45°. It must remain on the spoon. Pass = grape sits firmly, does not slide or roll off. No L3 syringe test applies at L7.
+
+VISUAL QC:
+- Skin smooth, taut, intact bloom, no splits or leaks. - Shape round to oval, uniform colour, no juice pooling under fruit on the board. - When pressed on fork, grape visibly bursts and releases a single wet bolus — not a flowing liquid trail.
+
+FAIL MODES:
+- Skin splits before pressure applied (over-ripe, bruised) → re-make with a fresh batch from pack. - Grape rolls off tilted spoon (wet, oily, or undersized) → re-make; select larger, drier specimens. - Pulp flows or drips continuously after fork press (over-ripe, liquefying) → re-make; specimen must rupture, not run.

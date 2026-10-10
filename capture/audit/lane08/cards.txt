@@ -1,0 +1,129 @@
+### bf08_steamed_sweet_potato_L3  (level L3)
+PREP:
+Weigh 200 g steamed sweet potato flesh into the blender jar. Add 120 ml cool water. Blend 45 s on high, scraping down once. Pass through the 4 mm sieve; discard any fibrous residue (say so in notes if sieve pass is poor — re-blend 15 s). Measure the sieved volume. Add thickener at 3.0 g per 100 ml of puree as the calibration starting point; whisk in, rest 2 min, stir, re-measure viscosity. Record the actual grams used. Target pours but drips slowly off the fork.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: a 4 mm blob on the fork blanches the thumb pad white on full press but does not spread sideways; passes. Spoon tilt: a 5 ml spoonful sits in a mounded heap and slides slowly off a tilted spoon; no run, no drip-stream. Fork drip: 5-7 slow drips in 10 s when fork is lifted from the cup. Syringe flow test: fill to 10 ml, release; 8-10 ml remain after 10 s. All four must pass; if any fail, re-adjust thickener by 0.25 g/100 ml and retest.
+
+VISUAL QC:
+Sheen visible on the surface. No lumps, fibres, or orange flecks — colour is uniform deep orange. Coats the back of the spoon in an even, opaque film that does not run to the edge in under 2 s.
+
+FAIL MODES:
+Too runny: drips in a stream or syringe drops below 8 ml — add thickener 0.25 g/100 ml, rest, retest. Too stiff: fork-pressure spreads sideways or syringe holds more than 10 ml — add 5 ml water, re-whisk, retest. Lumpy or fibrous: sieve fails to clear — re-blend 15 s, sieve again; if still failing, record and start over. One re-make permitted.
+
+### bf40_seedless_grapes_L3  (level L3)
+PREP:
+Weigh 150 g fresh seedless grapes on the digital scale. Add 60 ml water — grapes alone will not blend to a pourable fluid. Blend 45 s on high; stop, scrape down, blend 30 s more. Press through the 4 mm sieve with the back of a spoon; discard pulp and skins retained. Measure the sieved volume. Per-level note says blend-thin, so start calibration at 1.5 g thickener per 100 ml of sieved liquid. Stir 30 s, rest 60 s, re-stir 15 s. This is the starting point; record the actual grams used.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork vertical; liquid drips slowly in individual drops through the tines, not a continuous stream. Fork pressure: press fork tines flat into the specimen on a plate; when lifted, a small soft mound holds shape, tines leave a clear imprint that does not level out. Spoon tilt: spoon tilted 45 degrees holds its shape on the spoon without sliding off. Syringe flow test: fill the 10 ml IDDSI syringe, release for 10 s; pass when 8-10 ml remains in the syringe.
+
+VISUAL QC:
+On the fork: glossy, even purple-tan liquid, no visible skin fragments or seeds, slow drip from tines. On the spoon: holds a mound at tilt, surface smooth and homogenous, no separation of liquid pooling at the rim.
+
+FAIL MODES:
+Too thin: flows as a continuous stream through fork; re-add thickener in 0.2 g per 100 ml steps. Too thick: drops will not drip from fork; add water 5 ml at a time and re-stir. Grainy or seedy: sieve was skipped or pressed too hard; discard and re-sieve — never serve with retained solids.
+
+### bf08_steamed_sweet_potato_L4  (level L4)
+PREP:
+Weigh 300 g steamed sweet potato flesh on the digital scale. Load into the consumer blender; blend 25-30 s, scrape down, blend another 15-20 s until glossy. Pass through the 4 mm sieve with a spatula, discarding residue; re-weigh puree. Add water back at roughly 1 ml per 5 g puree lost to fibre to restore mouthfeel — record exact ml. L4 requires no thickener; if the puree slumps below the spoon-tilt line, dust 0.3 g thickener per 100 ml puree, blend 5 s, re-test, and log the actual figure used. Re-weigh final specimen.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a fork-tine-full 5 cm above the surface — puree must mound and drop as a single piece, not drip continuously. Fork pressure: press tines into a 1.5 cm mound on a flat plate; puree should flatten and leave a clear dent, not split or run. Spoon tilt: scoop, tilt spoon 45° — puree holds in the bowl, slides as one clump, no separate liquid pools. All three must pass.
+
+VISUAL QC:
+Uniform deep orange, no fibre streaks or dark specks; matte-sheen surface, not glossy or weeping; clings to the spoon without tailing.
+
+FAIL MODES:
+Weeping thin liquid onto the plate — under-blended or over-watered; re-blend 10 s, sieve again. Puree runs through the fork tines — too thin; add 0.3 g thickener per 100 ml, re-test. Lumpy with visible fibre — under-sieved; re-sieve or blend longer.
+
+### bf41_plain_yogurt_L4  (level L4)
+PREP:
+Scoop 150 g plain yogurt from the chilled tub into the blender jar. Blend 20 s on high, scraping the wall once at 10 s if needed. Do not add water, milk, or thickener — the per-level note says serve as-is; yogurt is already the calibration starting point. Do not sieve: it is already smooth and sieving will thin it. If a small amount of whey has pooled on top, pour it off first and re-weigh to 150 g before blending.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press the fork tines flat into the specimen; the surface must blanch clearly white but the yogurt must not ooze up between or through the tines, and the fork must lift clean with very little residue. Spoon tilt test: scoop a heaped spoonful and tilt the spoon to a steep angle; the specimen must sit in a firm mound and not slide off or run off the edge. Fork drip test: lift the fork with a small mound on it and hold it above the plate for 5 s; the mound must sit proud of the tines, not drip, not run. No separate thin liquid should pool on the plate.
+
+VISUAL QC:
+Specimen looks matte, glossy-soft, with no grain or lumps. It holds the imprint of the fork tines with a clean white dent and springs back slowly. No whey ring around the spoon.
+
+FAIL MODES:
+Whey separation on standing → fail; re-make from a fresh tub and re-shoot within 60 s. Specimen drips through fork tines or runs off the spoon → fail; the yogurt is too thin — re-blend only; do not add thickener unless a full re-shot still fails, then add 0.5 g per 100 ml and re-record. Grainy or curdled texture → fail; blend 10 s longer, re-sieve only if blending alone does not smooth it.
+
+### bf08_steamed_sweet_potato_L5  (level L5)
+PREP:
+Weigh 250 g steamed sweet potato flesh on the scale. Hand-mash with a fork to coarse crumb. Pulse in the consumer blender for 5-8 s to reduce lumps. Press the mash through the 4 mm sieve with the back of a spoon; discard retained fibre. Weigh the sieved mash; sprinkle thickener at 0.5 g per 100 g mash, folding in. Add 10-15 ml hot water per 100 g until the mash coheres when pressed but still looks moist. Hold for 60 s before testing. Record actual grams of thickener and water used on the data sheet. Do not blend to a smooth purée; the per-level note requires visible particles up to 4 mm.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test (L5 required): press the fork tines into the specimen on a flat plate; the sample must squash, the tines leave a clear imprint, and the material must not spring back. Spoon-tilt test (L5 required): load a heaped teaspoon and tilt to 45°; the specimen must sit in a cohesive pile and not slide, drip, or fall off. Confirm with the fork-drip test: lift a forkful 5 cm above the plate; no thin liquid drips from the mash. No flow test required at L5.
+
+VISUAL QC:
+Coarse crumbs clearly visible through the sieve holes; surface glistens with moisture but no free liquid pools around the mound on the plate; the pile holds its shape when the fork is withdrawn, leaving distinct tine marks.
+
+FAIL MODES:
+(a) Over-blended to a smooth purée — fails fork-pressure, recovers like paste; remake, pulse only 5-8 s and sieve. (b) Too dry, crumbs do not cohere, fall off the tilted spoon — add 5 ml water per 100 g and rest 60 s before re-testing. (c) Excess liquid pools on the plate, indicates L4 or lower — fold in 0.2 g thickener per 100 g, rest, re-test.
+
+### bf40_seedless_grapes_L5  (level L5)
+PREP:
+Wash 150 g seedless grapes; discard any with skin breaks. Pulse in consumer blender 6-8 s until skins split and pulp releases, leaving no whole grapes. Do not sieve; per-level note allows juice, sieving would remove required moisture. Press through 4 mm sieve only to confirm no fragment exceeds 4 mm; return any oversize pieces to blender for a further 2 s pulse. Target final specimen weight 140-160 g including juice. Mash with a fork until uniformly coarse; texture should hold together when pressed but release juice on the fork. Do not add water, milk, or thickener; grapes supply their own moisture at this level.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines into a 1 cm heap on a plate. Specimen must squash, change shape, and not spring back. Spoon tilt: a teaspoon of specimen slides off easily when tilted; it must not form a firm ball that holds shape. Fork drip: lift fork from the cup; specimen should sit as a soft mass on the tines, not drip thin free liquid, and should slide off gradually as a single lump. All three must pass; any spring-back, any free thin drip, or any dry crumbly ball means re-make.
+
+VISUAL QC:
+Coarse minced pulp on fork, clearly wet and glossy from grape juice. Visible fragments all under 4 mm; no skins still cupping a seed cavity. Specimen mounds softly on the spoon and slowly settles, not runny.
+
+FAIL MODES:
+Too wet: blended beyond 10 s releases excess free juice that drips off the fork; drain briefly or pulse shorter. Too dry: skins remain intact and the mass crumbles under fork pressure instead of squashing cleanly; re-blend and stir in retained juice. Too chunky: fragments above 4 mm remain after sieve check; re-pulse oversize and re-sieve. Any single failure triggers a re-make from the same 150 g starting weight.
+
+### bf10_steamed_pumpkin_L6  (level L6)
+PREP:
+Cube steamed pumpkin flesh into 15 mm squares on the checkerboard grid; reject any cube that exceeds 15 mm in any axis. Weigh 150 g of in-spec cubes on the scale. No blender, no sieve, no thickener, no added water. Fork-pressure-check three random cubes against the thumbnail blanch criterion before shooting; if any cube does not blanch, re-steam the batch for 60 s and recube.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines onto a cube with thumbnail-grade force; the cube must squash and not recover, and the thumbnail must blanch white. Spoon tilt: a single cube on a spoon must not flow, slide, or drip when the spoon is tilted to 45 degrees. Fork drip: lift the fork with a cube on it; no liquid must drip through the tines within 10 s. All three are required to pass. (No syringe test; L6 does not use it.)
+
+VISUAL QC:
+Cube holds a clean 15 mm edge with no crumble halo on the plate. Surface looks moist but not wet; no free liquid pools next to the cube. Pressing the fork leaves a visible mash without splatter.
+
+FAIL MODES:
+Cube exceeds 15 mm after cutting → recube, do not shoot. Cube rebounds after fork press (under-steamed) → re-steam 60 s, recube, recheck. Cube smears to liquid (over-steamed to puree) → discard batch, start over with a firmer pumpkin.
+
+### bf44_mango_pudding_L6  (level L6)
+PREP:
+Weigh 150 g chilled mango pudding on the scale. Scoop from the cup, discard any loose liquid. On a clean plate, cut the gel into cubes using a kitchen knife and a ruler as a guide; trim any piece larger than 15 mm so every cube measures ≤ 15 mm on its longest side. Do not blend. Do not sieve. Do not add thickener. Per-level note requires cubes ≤ 15 mm; do not attempt fork-mash only. If any cube exceeds 15 mm after cutting, re-trim before testing.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines into one cube until the thumbnail blanches white. Pass: the cube squashes, does not spring back, and breaks apart; the thumbnail clearly whitens. Spoon tilt: lift a cube on a standard spoon and tilt until the spoon is vertical. Pass: the cube slides off easily with little or no residue, or falls off completely. Fork drip is not applicable to a solid L6 specimen; confirm the cube holds its shape when lifted clear of the plate. Record pass/fail for both tests on the sheet.
+
+VISUAL QC:
+Cube edges are clean-cut, no ragged gelatin strands. Cube holds a defined rectangular block shape on the fork, not a slumped puddle. Surface shows uniform mango-yellow with no free liquid pooling on the plate beneath the cube.
+
+FAIL MODES:
+Cube larger than 15 mm: re-cut and re-measure with the ruler before re-testing. Cube springs back under fork pressure: cup was insufficiently set, set a fresh cup longer and re-cut. Free liquid pools under the cube: drain the cup briefly on paper towel, then re-cut. Re-make from a new cup after two consecutive fails.
+
+### bf10_steamed_pumpkin_L7  (level L7)
+PREP:
+Open capture kit. Confirm 100 mm ruler and 15 mm checkerboard are clean and within frame guides. Zero the digital scale with the empty specimen plate. Weigh out a representative wedge of steamed pumpkin, 80–120 g, as normally served; do not blend, do not sieve, do not add water or thickener. The per-level note directs a wedge as steamed, so preserve skin and flesh geometry intact. Place the wedge on the white plate, set the ruler along the lower edge and the checkerboard in the upper corner. Calibration starting point: none — this is an unprocessed reference specimen, so the only recorded value is the starting mass of the wedge before any handling.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Run the fork-pressure test and the spoon-tilt test only. Fork pressure: press the tines of a standard dinner fork fully into the specimen until the tines bend; the specimen must not break apart, drip, or lose more than negligible residue — it must hold its shape under thumb pressure equivalent to ~17 kPa. Spoon tilt: scoop a portion onto a spoon and tilt to 90°; the specimen must slide or fall off without flowing, dripping, or pouring. Both tests pass only if the wedge behaves as a solid cohesive mass that resists fork cleavage and does not flow from the spoon.
+
+VISUAL QC:
+On the fork: intact wedge geometry, matte orange flesh, defined skin edge, no liquid pooling at the plate. On the spoon: portion holds its mound shape, no sheen of free liquid, skin side visible and intact. Color uniform steamed-orange, no grey or raw patches.
+
+FAIL MODES:
+Over-steamed wedge collapses to mash under fork — fails L7; re-make with shorter steam and re-shoot. Free liquid weeps onto plate — fails L7; pat surface dry with paper towel, re-shoot, record observation. Fork splits wedge cleanly into crumbs — fails L7; re-make with a less-cooked wedge and re-shoot. Each fail requires a new take number.
+
+### bf56_wonton_soup_small_wonton_L7  (level L7)
+PREP:
+Cook the wonton soup per pack instructions — boil 500 ml water, add 200 g frozen wontons, simmer 4-5 min until floating, add seasoning/soup sachet. Serve one portion: ladle 250-300 g total (broth + wontons) into the capture bowl. Do NOT blend, sieve, or thicken. The per-level note says "wontons in soup as served" — this IS the whole-food reference specimen. Place 4-5 wontons in broth, keeping skin intact. Record actual served mass on the scale log.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+- Fork pressure test: press fork tines into one wonton with normal thumb pressure. Wonton skin should resist, compress slightly, then spring back. Pass = no full squish-through, shape recovers when fork lifts. Soup itself is liquid — that is expected at L7; the L7 claim applies to the wonton solids. - Spoon tilt test: scoop one wonton plus 5 ml broth, tilt spoon at 90 degrees. Wonton stays on spoon; broth pours. Pass = solid component does not slide off. - Fork drip test: lift fork with broth only. Broth drips continuously in a thin stream. Pass = continuous drip confirms liquid soup component, consistent with L7 food-in-liquid.
+
+VISUAL QC:
+- Wonton skin smooth and intact, no tears or starch bloom. - Broth clear to lightly cloudy, golden, no lumps. - Wontons hold a rounded dumpling shape, not collapsed or split.
+
+FAIL MODES:
+- Wontons split during cooking → solids no longer hold shape; re-make with shorter simmer. - Skin ruptures under fork thumb pressure → overcooked; re-make and reduce cook time by 1 min. - Broth over-reduced and syrupy instead of fluid → re-make with full water volume; L7 requires the liquid component to actually drip.

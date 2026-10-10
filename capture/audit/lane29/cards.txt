@@ -1,0 +1,64 @@
+### bf29_steamed_eggplant_L3  (level L3)
+PREP:
+Weigh 200 g steamed eggplant. Add 80 ml water. Blend 60 s on high. Pass through the 4 mm sieve; discard retained skins/seeds — re-blend is impossible if residue exceeds ~10% of mass, re-steam a fresh piece. Weigh puree, then add thickener at 1.5 g per 100 ml of puree as the calibration starting point; the actual grams used are recorded. Stir 30 s, rest 90 s, stir 10 s. Pour — must flow but drip slowly through fork tines.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: when fork is lifted, puree drips continuously through tines in ≤10 s, not a single sheet. Fork pressure: a thumbnail-sized portion spread on a flat spoon blanches the spoon fully white when pressed with the fork base. Spoon tilt: a 5 ml scoop on a spoon tilts 30° and slides off without holding shape. Syringe flow: fill the IDDSI 10 ml syringe, cap, hold 10 s; 8–10 ml must remain. All four must pass.
+
+VISUAL QC:
+Glossy, smooth, uniform mauve-grey film coating the spoon; no flecks, fibres, or seed specks. Coats the back of the spoon evenly without running. Falls from the fork in a slow, continuous, ribbon-like drip, not drops and not a sheet.
+
+FAIL MODES:
+Too thin: runs through tines in a sheet, <8 ml retained. Too thick: piles under fork, holds shape on tilt, >10 ml retained. Grainy: visible fibre or seed specks post-sieve. Re-make: re-blend 15 s and re-sieve; if texture off, add thickener in 0.25 g per 100 ml increments and re-test. Do not re-record until all four IDDSI tests pass.
+
+### bf29_steamed_eggplant_L4  (level L4)
+PREP:
+Weigh 200 g steamed eggplant (skin removed, seeded if needed). Place in consumer blender with 40 ml water. Blend 30-45 s until uniform. Press through 4 mm sieve; discard residue. Weigh puree. Add thickener at the calibration starting point of 3 g per 100 ml of puree; record the actual grams used. Stir 20 s, rest 60 s. If fork-drip test fails, add 0.5 g thickener per 100 ml and re-rest. Per-level note is blend-hold, so no sieving or shaping step is required beyond pressing out fibers.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: press fork tines into the specimen until the tines blanch; puree leaves a clear imprint, no spring-back. Pass = clean impression, holds shape. Fork drip: lift fork with a loaded mound; puree sits in a mound above the tines for 10 s with zero drip. Pass = zero drip in 10 s. Spoon tilt: scoop, level the edge, tilt spoon to 45 degrees; specimen must not slide, pour, or drip. Pass = sticks to spoon, no flow. Syringe test is NOT required at L4.
+
+VISUAL QC:
+Surface is matte and even, no free liquid pooling around the mound. Color is uniform grey-violet, no dark skin flecks or seed specks. Mound on the fork keeps its peaked shape; the spoon-tilted sample stays put.
+
+FAIL MODES:
+Too thin: drips through fork tines or runs off spoon — add 0.5 g thickener per 100 ml, rest 60 s, retest. Too thick / crumbly: cracks or breaks on fork press, loses sheen — add 5 ml water per 100 ml, stir, retest. Visible skin or seed specks after sieving: re-blend 15 s and re-sieve; do not skip the sieve.
+
+### bf29_steamed_eggplant_L5  (level L5)
+PREP:
+Weigh 250 g freshly steamed eggplant (skin on, tender). If any piece exceeds 4 mm, mash with a fork on a plate; if mash remains uneven, pulse in the blender 5–10 s only — do not purée. Press the mash through a 4 mm sieve, discarding what does not pass; re-mash the retained coarse fraction and sieve once more. Add no water, no oil, no thin liquid, no thickener (thickener is not used at L5; this is the L3 calibration field only — leave blank). Target yield: about 200 g of soft mash with no particle larger than 4 mm and no separate liquid pooling on the plate.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines of a fork into a heaped teaspoon of specimen on a flat white plate with firm thumb pressure until the thumbnail blanches; the mash must squash completely and stay squashed — no spring-back, no original shape recovered. Fork drip test: lift the fork with a heaped sample; no thin liquid must drip through or run off the tines within 10 s. Spoon tilt test: place a heaped teaspoon on the spoon and tilt it to almost vertical; the specimen must sit in a pile and not slide off or run. All three must pass.
+
+VISUAL QC:
+On the fork: damp, soft clumps the size of coarse minced meat, no shiny wet film, no droplets falling between tines. On the spoon: holds a heaped mound when tilted; surface looks matte-moist, not glossy. On the white plate under the specimen: no free liquid ring spreading around the mash.
+
+FAIL MODES:
+(a) Any particle exceeding 4 mm after sieving: re-mash the retained fraction and sieve again; if it still will not pass, the batch is too fibrous — discard and start with a softer eggplant. (b) Free thin liquid pools on the plate or drips from the fork: the eggplant was over-steamed or watered; drain on a paper towel for 2 min, then re-test. (c) Specimen springs back under fork pressure: it is under-processed — pulse-blend 3–5 s and sieve once more before re-testing.
+
+### bf31_banana_L6  (level L6)
+PREP:
+Weigh 200 g ripe banana flesh on the scale. With a fork, mash on a board until no lumps exceed 8 mm. Pass the mash once through the 4 mm sieve using the back of a spoon; discard retained fibre. Spread the sieved mash, roll flat to 8 mm thickness with a straight edge, then cut with a knife and ruler into slices and cubes measuring exactly 8 x 8 x 8 mm and 15 x 15 x 8 mm pieces. Target pieces must not exceed 15 mm in any dimension per the per-level note. Hold finished pieces on a plate under a damp paper towel until capture. No blender, no thickener, no added liquid.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: place one 15 mm cube under the fork tines; press with the thumb on the fork until the thumbnail blanches white. Pass criterion: the piece squashes, deforms, and does not return to its original shape; it does not spring back. Spoon-tilt test: load five pieces on a spoon and tilt to 45 degrees; pass criterion is no pieces slide off or fall. Fork-drip test is not required at L6.
+
+VISUAL QC:
+Pieces hold a clean-cut edge without smearing. Colour is uniform pale yellow with no browned flecks. Mash reads smooth and moist, not dry or gummy, when touched with a fork tip.
+
+FAIL MODES:
+Pieces above 15 mm: re-cut and re-weigh. Mash too wet and slumps on the spoon tilt: pat dry on absorbent paper, re-cut. Mash too firm and resists fork pressure: re-mash with 5 ml water per 100 g, re-sieve, re-cut. Record any remake in the log.
+
+### bf34_dragon_fruit_L7  (level L7)
+PREP:
+Place 200 g fresh ripe dragon fruit on the A4 capture mat. Per the per-level note, slice as cut: produce four transverse rounds ~15 mm thick using a kitchen knife; do not blend, do not sieve, do not thicken. Weigh each round on the digital scale; record mass to 0.1 g. Set one round aside as the reference specimen, untouched. Keep two rounds for fork and spoon tests, one round for the press close-up.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the tines firmly onto a round until the thumbnail blanches white. The piece must not squish, flatten, smear, or fall apart under full pressure. Pass = shape and structure visibly retained. Spoon tilt: lift a round on a spoon and tilt to a steep angle, then invert. Pass = the round sits on the spoon, does not pour, does not slide or drip off, and remains in one piece. No fork drip test needed at L7. No syringe flow test at L7.
+
+VISUAL QC:
+On the fork: clean cut edges, vivid magenta flesh with small black seeds evenly distributed, no juice pooling on the mat, flesh holds the fork tine shape without sagging. On the spoon: round sits as a coherent disc, surface matte-to-slightly-glossy, no free liquid film under the piece.
+
+FAIL MODES:
+Over-ripeness: flesh turns to mush or weeps pink juice on the mat — fails L7. Use a firmer fruit and re-make. Damaged skin or bruised flesh causing collapse on first press — discard, re-make with fresh rounds. Excess free liquid pooling around the piece reads as L6 — blot, re-shoot, re-grade.

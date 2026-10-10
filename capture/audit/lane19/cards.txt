@@ -1,0 +1,116 @@
+### bf19_steamed_shrimp_peeled_L3  (level L3)
+PREP:
+Weigh 150 g steamed peeled shrimp on the scale. Add to blender with 80 ml cool water. Blend on high for 45 seconds. Pass through the 4 mm sieve using the back of a spoon; discard any retained solids. Weigh the sieved puree and add thickener at 3.0 g per 100 ml as the calibration starting point (record the actual grams used; per-level note requires blend-thin, so adjust downward by 0.2 g increments if the mixture is too stiff). Stir 30 seconds, rest 2 minutes, stir again. Re-weigh final specimen and note total volume in ml.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: pressing the fork against a white plate leaves a clear pattern; the groove does not close. Spoon tilt: the specimen slides slowly off a tilted spoon, not a runny pour. Fork drip: drips slowly in continuous blobs through the tines, not a steady stream. Syringe flow test: fill to 10 ml, release; after 10 seconds, 8-10 ml remains in the syringe. All four must pass.
+
+VISUAL QC:
+Surface is smooth, glossy, and uniform pink-white with no visible shrimp chunks or fiber specks. Coats the spoon back in an even layer without dripping off the edge. Holds a soft mound on a flat plate for 2-3 seconds before slowly spreading.
+
+FAIL MODES:
+Too thick: syringe retains more than 10 ml; remake with 0.2 g less thickener. Grainy texture from incomplete blending: re-blend 15 seconds and re-sieve. Syneresis or weeping on standing: discard and remake with a slightly higher thickener dose.
+
+### bf51_curry_fish_balls_L3  (level L3)
+PREP:
+Weigh 250 g curry fish balls plus sauce into the blender jar. Blend 45 s on high, scraping the jar wall once at 25 s. Sieve through the 4 mm sieve using the back of a spoon; discard coarse residue. Measure the blended volume in ml. Add thickener at 2.0 g per 100 ml of blend as the calibration starting point; whisk 15 s, rest 60 s, whisk 5 s. If the blend reads under 8 ml in the syringe after 10 s, add 0.3 g thickener per 100 ml and retest. Record the final grams per 100 ml on the card. The food list note is blend-thin, so sieving and thinning with thickener are required. Do not thin with water.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: tilt a fork with a heaped teaspoon of specimen; drips slowly in 4 to 6 discrete drops over 10 s. Fork pressure: the white of the prong shows through the specimen with light pressure and the surface returns flat when pressure is released. Spoon tilt: a teaspoonful slides off when the spoon is tilted, leaving a thin coating. Syringe flow test: 10 ml specimen in the IDDSI syringe, 10 s release; 8 to 10 ml remains. All four must pass.
+
+VISUAL QC:
+Specimen is smooth, glossy, uniform orange-brown, with no visible fish ball pieces, herbs, or oil pooling. On the spoon it mounds then levels in under 1 s. A lifted fork leaves a thin continuous trail that drops, not pours.
+
+FAIL MODES:
+Specimen runs off the spoon like a drink; the syringe empties below 8 ml; sieve residue contains intact fish ball chunks. Re-make from step 1, adjusting thickener in 0.3 g per 100 ml increments and re-sieving. A second failure of the syringe band means the batch is out of spec; re-blend fresh material.
+
+### bf19_steamed_shrimp_peeled_L4  (level L4)
+PREP:
+Weigh 120 g steamed peeled shrimp on the scale. Add 60 ml hot water (just off boil). Blend on high for 45-60 s until completely smooth, scraping the bowl once at 30 s. Sieve once through the 4 mm sieve, pressing with the back of a spoon; discard retained solids. Add 1.5 g thickener per 100 ml of puree as the calibration starting point; stir in, rest 2 min, re-stir. Record the actual grams used. Target mass ~170-180 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: mound holds shape; pressing with fork base leaves a clean indent that does not close, no separation of liquid. Pass = indent clearly visible, puree stays mounded. Spoon tilt: a standard spoon tilted 45 degrees holds the puree on the bowl without sliding. Pass = zero flow off the spoon. Fork drip: lift fork vertically through the puree; puree sits in a mound above the tines and does not drip or run between prongs. Pass = mound intact, tines not visible through liquid.
+
+VISUAL QC:
+Uniform pale pink-cream color with no visible shrimp flecks or shell specks. Matte, glossy surface with no free liquid pooling on the plate. Smooth, spreadable but holds peaks when scooped.
+
+FAIL MODES:
+Grainy texture with shrimp specks after sieving = re-blend 15 s and re-sieve. Puree flows through fork tines or runs off spoon = add 0.3-0.5 g thickener per 100 ml, rest 2 min, retest. Separate liquid pooling on plate = blend longer or drain excess water before thickening.
+
+### bf53_mapo_tofu_L4  (level L4)
+PREP:
+Weigh 250 g of mapo tofu (sauce and curds together) into the blender jar. Add 40 ml of water. Blend on high for 45-60 seconds until completely smooth. Pass through the 4 mm sieve using the back of a spoon; discard any residue retained. Return the sieved puree to the blender. Add thickener at 2.0 g per 100 ml of puree (this is the calibration starting point; record the actual grams used). Blend 15 seconds to incorporate. Let stand 2 minutes. Re-weigh and record final specimen mass.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: lift a forkful; the puree must sit in a clear mound above the tines with no drip falling in 5 seconds. Fork pressure test: press the fork prongs into the specimen on a flat plate; the puree should yield and leave a clear indentation without running back to fill it. Spoon tilt test: a spoonful must hold its shape when the spoon is tilted to 45 degrees; no flow over the edge. All three must pass.
+
+VISUAL QC:
+Surface is glossy and uniform with no visible oil pools or tofu flecks. Color is even brick-red throughout with no white streaks. A forkful holds a soft peak that slumps only slightly; no liquid separates at the edge of the mound.
+
+FAIL MODES:
+Puree is too thin and flows through fork tines: add thickener in 0.5 g per 100 ml increments and retest. Visible oil or thin liquid pools on the surface: re-blend with an extra 15 seconds and sieve again. Grainy texture from unblended tofu curds: re-blend 30 seconds and re-sieve. Any failure means re-make from the 250 g starting weight; do not patch.
+
+### bf19_steamed_shrimp_peeled_L5  (level L5)
+PREP:
+Weigh 200 g steamed peeled shrimp onto the plate. Mash with the fork until no piece exceeds 4 mm; pick out and measure the largest particle against the 100 mm ruler or push the mash through the 4 mm sieve, discarding anything retained. Do not blend — blending releases thin liquid and collapses the L5 particle structure, and the per-level note requires minced ≤ 4 mm, not puréed. Moisten with 30 ml warm water per 100 g mash and stir until the mash holds together but no free liquid pools on the plate. Add 0 g thickener at this level; thickener is the L3 calibration starting point only — record the actual grams used (0 g for L5). Target final specimen ≈ 230 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines into the specimen until the thumbnail blanches; the mash must squash and not spring back, and the slots between tines must hold material without it running through. Spoon-tilt test: a heaped spoon tilted to 45° must hold its shape — no slide, no drip. Fork-drip test: lifting the fork, nothing must drip continuously through the tines. All three must pass to confirm L5.
+
+VISUAL QC:
+On the fork: a soft, cohesive mound sitting in the tine gaps with a glossy moist sheen, never wet or weeping. On the spoon: a soft peak that slumps only when tilted past 45°. No orange pooling liquid around the mash on the plate.
+
+FAIL MODES:
+Over-blending produces a smooth purée that flows through fork slots — fail, re-mash a new batch from intact shrimp. Insufficient mashing leaves particles > 4 mm; sieve and remove oversize or re-mash. Excess water creates a separate thin layer on the plate — drain briefly and re-test; if persistent, re-make with 20 ml water per 100 g.
+
+### bf56_wonton_soup_small_wonton_L5  (level L5)
+PREP:
+Weigh 250 g cooked wonton + broth as the starting portion. Separate wontons from broth. Chop wontons with a fork until pieces measure ≤4 mm on the ruler. If pieces cling or ball, pulse in the consumer blender 2–3 s and re-check particle size against the 4 mm sieve. Sieve chopped mass through the 4 mm sieve; reject any retained lumps. Return the sieved mince to the broth. Mash the combined mass thoroughly with the fork until no separate thin liquid pools on the plate; broth coats the mince uniformly. Do not add thickener unless spoon tilt or fork drip shows free liquid; if free liquid appears, add thickener at 1 g/100 ml of free liquid as the calibration starting point and record the actual mass used. Per-level note: chop ≤4 mm with broth is achievable with fork + brief blender pulse; no sieving failures expected.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen until thumbnail blanches; the specimen must squash and not recover when fork is lifted. Spoon tilt: a heaped teaspoon tilted to 90° must hold its shape with no flow off the spoon. Fork drip: lifting fork at 20 cm above the plate, no more than a slow drip falls in 10 s; continuous pour = fail.
+
+VISUAL QC:
+Mince visible as distinct ≤4 mm flecks across the spoon surface. Broth coats particles with a glossy sheen, no pooled clear liquid. Specimen mounds on the fork and holds its shape as a single cohesive mass, not a slurry.
+
+FAIL MODES:
+Particles exceed 4 mm after chopping; re-pulse blender and re-sieve. Thin broth separates and pools on the plate; add thickener 1 g/100 ml increments, remix, retest. Specimen flows off spoon at tilt or drips continuously from fork; re-mash longer and re-add thickener before re-shooting. Two consecutive fails on any single criterion = re-cook a fresh 250 g portion.
+
+### bf21_blanched_choy_sum_L6  (level L6)
+PREP:
+Weigh 200 g blanched choy sum stems only. Stack leaves; discard or reserve off-spec. Cut stems across the grain into 15 mm pieces — do not exceed 15 mm in any dimension. Blanch 90 s in rolling water, drain, pat dry on a clean cloth. No blender, no sieve, no thickener, no added liquid for this level. Confirm each piece sits flat under a ruler; any oversize piece is trimmed.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines against one piece until thumbnail blanches white. The piece must squash, hold the pressed shape, and not spring back. Pass = full squash with zero recovery across 3 pieces tested. Fork-drip test: lift 4 pieces on fork tines; no liquid must drip through the tines within 10 s. Spoon-tilt test is not the gate for L6 but confirm any soft residue on the spoon stays cohesive and does not flow.
+
+VISUAL QC:
+Pieces sit cleanly on the fork tines without sagging through gaps. Cut faces show compact, uniform green-white flesh with no fibrous strings. Pressed piece retains a clean thumbprint edge and stays as one mass.
+
+FAIL MODES:
+Any piece over 15 mm — re-trim, re-shoot. Fibrous strands that resist fork-pressure squash — re-cut thinner, re-blanch 30 s. Piece springs back after press — downgrade to L7 or re-cut against grain. Re-make before re-shooting; never edit around a fail.
+
+### bf60_lor_mai_gai_glutinous_ri_L6  (level L6)
+PREP:
+Weigh 200 g takeaway or steamed-then-defrosted lor mai gai. Separate filling from rice. Hand-chop filling to pieces ≤15 mm; chop the sticky rice mass to pieces ≤15 mm — do not blend, do not sieve; the per-level note requires chopped pieces, not a puree. Combine chopped filling and rice in a bowl. Record actual masses of filling and rice on the run sheet. If the mix looks dry and sheds loose rice grains, stir in 5–10 ml hot water per 100 g mix to re-bind; record ml added. No thickener required for L6; if a test shows runnier behaviour, note it and treat as a fail, not a re-thicken.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines onto a representative piece until thumbnail blanches white. Pass = piece squashes, does not recover its shape when fork is removed. Spoon tilt: place a spoonful on a spoon and tilt to near-vertical; pieces should sit in cohesion without sliding off as liquid. Fork drip: lift fork with a speared piece; pass = no continuous drip from the piece for 10 s. Repeat each test on three pieces from different zones of the batch.
+
+VISUAL QC:
+On the fork, pieces should be irregular chunks no larger than the 15 mm square on the checkerboard, with visible chicken, mushroom, and rice grains. Rice should look clumped-into-pieces, not glossy-wet or soupy. On the spoon, the mass should hold a soft heap, not slump flat.
+
+FAIL MODES:
+Piece exceeds 15 mm after chopping — re-chop, do not proceed. Piece recovers shape after fork pressure — recheck batch, likely under-steamed; re-steam 3 min and retest. Rice sheds whole grains or mix weeps liquid — re-bind with 5 ml hot water per 100 g, retest; if still wet, treat as failed batch.
+
+### bf24_braised_winter_melon_L7  (level L7)
+PREP:
+Weigh 200 g of braised winter melon with skin and seeds removed, cut as served. Do not blend. Do not sieve. Do not add thickener or water. Spoon the chunks onto a plate, keeping the braising glaze that clings to the pieces. Target specimen is whole food as normally served. If chunks arrived mashed or pureed, stop and re-prep from fresh braised melon.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press a fork onto a chunk until the thumbnail blanches white, then release. The chunk must not fully flatten, smear, or push between the tines; it must return toward its original shape or hold a clear dent. Spoon tilt test: lift a chunk on a spoon and tilt to a steep angle. It must not slide or drip off under its own weight. Fork drip test is not applicable at L7; the chunk must not drip through the tines. If any chunk squashes flat like puree, the specimen fails L7.
+
+VISUAL QC:
+Chunks keep their cube or wedge outline, not smeared or fibrous. Surface is glossy from the braising glaze, not watery or soupy. A fork lifts a discrete piece, not a slumping mass.
+
+FAIL MODES:
+Chunk mashes to puree under fork pressure — re-prep from fresh, less-cooked braised melon and keep larger pieces. Excess thin braising liquid pools on the plate and drips from the spoon — drain the chunks briefly on the capture plate and re-shoot. Pieces so soft they split between the tines — re-cook shorter next time so chunks hold shape.

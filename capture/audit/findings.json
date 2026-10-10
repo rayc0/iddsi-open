@@ -1,0 +1,1194 @@
+[
+  {
+    "card": "bf01_steamed_white_rice_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "An operator whose syringe reads <2 ml will match it to the card's \"Too thick\" branch and stir in 5\u201310 ml water, so the specimen can never reach the 8\u201310 ml window.\n    (ACHIEVABLE basis: \"mix thickene",
+    "contradiction": "The fail-mode branch is inverted. \"Too thick (mound stands, <2 ml in syringe, slow drip stalls): stir in 5\u201310 ml water, re-test\" \u2014 but the card's own pass window is \"Pass = 8\u201310 ml remaining in syringe (i.e., 0\u20132 ml flowed out)\", so <2 ml remaining means ~8 ml flowed out: the specimen is far too THI"
+  },
+  {
+    "card": "bf33_papaya_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "The operator carries the sieving habit over from the L4/L5 cards and passes the papaya through the 4 mm sieve, directly against \"do not sieve \u2014 sieving a blend-thin fruit strips the fibres that carry ",
+    "contradiction": "none material (\"Too stiff: \u2026 syringe reads over 10 ml\" is unachievable in a 10 ml barrel, but the remedy direction \u2014 add water \u2014 is correct)."
+  },
+  {
+    "card": "bf01_steamed_white_rice_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "With a starch-based thickener the operator starts at \"2.5 g thickener per 100 ml of puree\" where 4\u20138 g/100 ml is needed, and the only correction offered is a 5 g/100 ml jump, so the specimen oscillate",
+    "contradiction": "none structural; the fail mode is mis-worded \u2014 \"thin it by blending in 5 g thickener per 100 ml increments\" prescribes thickening for a thin specimen (right action, wrong verb)."
+  },
+  {
+    "card": "bf33_papaya_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"Target final mass approximately 300 g\" against an input of 250 g + 60 ml (\u2248310 g before sieving) leaves the operator guessing both how much residue to discard and therefore what \"per 100 ml\" means, s",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf01_steamed_white_rice_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator reads \"discard anything that will not pass or re-blend small residue for 5 s and re-sieve\" as a free choice, so one keeps ~180 g of mash and another ~150 g, and because the thickener is d",
+    "contradiction": "\"Blend 20\u201325 s until coarse, sticky, with visible granules. Stop and check; rice must still feel granular, not pur\u00e9ed\" is immediately followed by \"Pass the blended rice through the 4 mm sieve using the back of a spoon\" \u2014 pressing the blend through the sieve with a spoon back is itself the pur\u00e9eing a"
+  },
+  {
+    "card": "bf33_papaya_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"Press lightly with the fork to release juice; discard loose drippings\" is the only unquantified manipulation on the card, and papaya yields juice readily \u2014 press firmly and the dice liquefy into a pu",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf01_steamed_white_rice_L6",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Because \"\u226415 mm\" is met by the raw grains, the operator stops pressing early (or over-presses into the smear the fail mode warns about), and the L6/L5 boundary is decided by feel rather than by the ru",
+    "contradiction": "The stated stopping condition is already satisfied before any work is done \u2014 \"press grains\u2026 until soft pieces measure \u226415 mm\" is true of unpressed cooked rice grains (~6\u20138 mm), yet VISUAL QC demands \"Grains are no longer intact\" and \"Pieces are roughly pea-sized\", so the prep's endpoint and its own "
+  },
+  {
+    "card": "bf35_soft_ripe_persimmon_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The operator sieves the persimmon through the 4 mm sieve (guaranteeing \u22644 mm = L5) and then signs off the L6 label from test lines that are pre-written \"\u2014 PASS\", so nobody ever holds a piece against t",
+    "contradiction": "\"Pass through the 4 mm sieve, pressing gently with the back of a spoon to express soft pulp\" cannot coexist with \"Confirm pieces \u226415 mm; this matches the per-level note that spoon pieces must be \u226415 mm\" \u2014 a 4 mm sieve caps every particle at 4 mm, so the \u226415 mm confirmation is vacuous and the VISUAL "
+  },
+  {
+    "card": "bf01_steamed_white_rice_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "The operator applies a spoon-tilt pass criterion at L7 \u2014 \"tilt the spoon to a near-vertical angle\u2026 no individual grains roll off\" \u2014 that loose cooked grains cannot meet, so a correct L7 is failed and ",
+    "contradiction": "none internal. (External conflict: the task defines L7 as \"pieces 15 mm or more\" while protocol \u00a72 defines L7 as \"Food as bought and normally served\" and the food list gives BF01 L7 = \"as-is\"; individual cooked rice grains are ~6\u20138 mm, so the two authorities disagree for this specimen.)"
+  },
+  {
+    "card": "bf38_watermelon_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "\"Fork drip test: lift the fork; nothing drips or runs through the tines\" is a Level 3/Level 4 test with no hold time specified, applied to a food whose own fail mode concedes \"Specimen weeps free juic",
+    "contradiction": "\"Cut a 50 mm \u00d7 50 mm \u00d7 25 mm specimen from the flesh with a clean knife\" and \"Record mass on the scale (target ~80 g)\" cannot both be satisfied \u2014 50 \u00d7 50 \u00d7 25 mm is 62.5 cm\u00b3, \u224859\u201363 g of watermelon, roughly 25% short of the stated target, so the size spec and the mass spec disagree."
+  },
+  {
+    "card": "bf05_cooked_instant_oats_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "the operator treats the \"rest 60 s, re-blend 5 s\" as optional and signs off on the last thickener step without re-running the syringe, so a batch that is really L4 is labeled L3.",
+    "contradiction": "none material. (Minor: \"Too thick: ... Re-make adding 5 ml water\" vs. \"Grainy or weeping: ... over-thinned with water. Re-make from scratch; do not patch.\" \u2014 the too-thick remedy produces the state the other fail mode says must be discarded.)"
+  },
+  {
+    "card": "bf37_apple_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "the operator weighs grams but doses per 100 ml without ever measuring volume, so two operators get different thickener masses from the same 200 g apple and the specimen lands at a different L3/L4 boun",
+    "contradiction": "\"drips in a slow continuous stream within 10 s. Pass if flow is steady\" (fork drip) vs. \"slides off slowly as a cohesive dollop. Pass if it leaves in one slow pour, not in chunks, not in a drip trail\" (spoon tilt) \u2014 the fork-drip pass state is a continuous stream, which off a 45\u00b0 spoon is the \"drip "
+  },
+  {
+    "card": "bf05_cooked_instant_oats_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "the operator presses the 30 g sieve portion through, reads the material that passes as \"grains pass \u2192 under-blended\", and re-blends an already-correct L4 until it thins toward L3 \u2014 while an operator w",
+    "contradiction": "\"Sieve a 30 g portion through the 4 mm sieve \u2014 at L4 target, zero grains should pass and the mass on the sieve should hold as a cohesive mound; if grains do pass, blend an extra 15 s and re-test.\" \u2014 a correctly liquidised L4 pur\u00e9e passes a 4 mm sieve, so the \"cohesive mound retained\" reading rejects"
+  },
+  {
+    "card": "bf37_apple_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "the operator adds thickener in open-ended 0.5 g steps with no ceiling and no volume measurement, walks the pur\u00e9e past L4 into a paste that cracks, then \"fixes\" it with 5 ml water \u2014 the state the too-w",
+    "contradiction": "none material. (Minor: \"All four must pass for L4\" counts only three tests plus the pooling criterion folded into the spoon-tilt sentence \u2014 \"Spoon tilt: ... No separate thin liquid should pool on the plate next to the spoon\" \u2014 so the fourth item is not identifiable.)"
+  },
+  {
+    "card": "bf05_cooked_instant_oats_L5",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "the operator delivers a wet, flowing oat mash as L5, and the card's only remedy \u2014 \"add 0.5 g thickener per 100 ml\" \u2014 binds the free water into a gel and destroys the \"visibly distinct soft flakes\" tha",
+    "contradiction": "header \"(level L5; applicable tests: 4 mm sieve as gauge, spoon tilt (fork pressure supporting))\" and FAIL MODES \"then re-sieve check against the 4 mm grid\" vs. PREP \"Do not sieve \u2014 sieving removes the flake pieces that define L5 for oats\"; and the IDDSI TEST block contains no sieve test at all whil"
+  },
+  {
+    "card": "bf37_apple_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "with no defined \"first pass\", an operator eyeballs the mash, skips the conditional sieve, and ships 6-8 mm apple chunks as L5 minced-and-moist.",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf07_mantou_steamed_bun_L6",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"until core reaches ambient feel\" is read as \"steam until the inside is cool\", so the operator pulls cold dense mantou, every cube springs back under the fork, and a good batch is failed on a criteri",
+    "contradiction": "\"steamed per pack instructions until core reaches ambient feel\" vs. the pass criterion \"Pass = cube squashes, does not recover its shape when fork is removed, and does not spring back\" and the fail mode \"Cube springs back fully under fork pressure (under-cooked or too dense) \u2014 re-steam 2 min\" \u2014 read"
+  },
+  {
+    "card": "bf39_orange_segments_peeled_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "the operator presses a good 15 mm orange piece, sees juice squeeze out, discards it and re-cuts smaller \u2014 repeated until the pieces drop below 8 mm and the batch silently be",
+    "contradiction": "\"No thickener, no water, no liquid added \u2014 L6 specimen is served moist only as the fruit's own juice\" vs. \"Pass when the piece squashes, does not spring back, and spreads cleanly without releasing free liquid\" and FAIL MODES \"leaks free juice \u2014 re-cut smaller, discard the wet batch\"; plus header \"(l"
+  },
+  {
+    "card": "bf07_mantou_steamed_bun_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "the operator steams \"until soft\" (the prep's only doneness word), the bun dents under the fork, and the prescribed fix \u2014 re-steam 2-3 minutes \u2014 makes it softer and more compressible, so the bat",
+    "contradiction": "\"Steam per pack instructions until heated through and soft\" vs. \"The specimen must not compress, squash, or change shape; the fork should lift clean. Pass = specimen returns to original shape and shows no fingernail-depth indentation\"; and the only remedy for a dent is more steaming \u2014 \"fork leaves a"
+  },
+  {
+    "card": "bf52_sweet_and_sour_pork_L7",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "with no prep, no test and no QC, an operator improvises a sauce-thickened, shredded or bite-sized sweet-and-sour pork and whatever lands on the plate is recorded as ground-truth L7.",
+    "contradiction": "the card declares a level with nothing behind it \u2014 \"PREP: (MISSING)\", \"IDDSI TEST: (MISSING)\", \"VISUAL QC: (MISSING)\", \"FAIL MODES: (MISSING)\" \u2014 so the L7 fork-pressure test that does apply is absent and there is no procedure to audit."
+  },
+  {
+    "card": "bf08_steamed_sweet_potato_L3",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf40_seedless_grapes_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "The operat",
+    "contradiction": "\"Spoon tilt: spoon tilted 45 degrees holds its shape on the spoon without sliding off\" vs \"Syringe flow test: \u2026 pass when 8-10 ml remains in the syringe\" \u2014 mutually exclusive, and both vs the PREP's own \"blend-thin\" target."
+  },
+  {
+    "card": "bf08_steamed_sweet_potato_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator will chase \"mound and drop as a single piece\", over-thicken the pur\u00e9e, and file an L5 specimen as L4 (or reject a correct L4).",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf41_plain_yogurt_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf08_steamed_sweet_potato_L5",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "\"Press the mash through the 4 mm sieve with the back of a spoon; discard retained fibre\" vs \"Coarse crumbs clearly visible through the sieve holes\" (VISUAL QC) \u2014 the sieve"
+  },
+  {
+    "card": "bf40_seedless_grapes_L5",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "The operator will accept a grape mash tha",
+    "contradiction": "\"Spoon tilt: a teaspoon of specimen slides off easily when tilted\" (IDDSI TEST) vs \"texture should hold together when pressed\" (PREP) and \"Specimen mounds softly on the spoon and slowly settles, not runny\" (VISUAL QC)."
+  },
+  {
+    "card": "bf10_steamed_pumpkin_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "\"reject any cube that exceeds 15 mm in any axis\" is the only size rule on the card, so the operator will dice the pumpkin as small as the gr",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf44_mango_pudding_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The operator wi",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf10_steamed_pumpkin_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"press the tines of a standard dinner fork fully into the specimen until the tines bend; the specimen must not break apart, drip, or lose more than negligible residue\" \u2014 maximal force and no break"
+  },
+  {
+    "card": "bf56_wonton_soup_small_wonton_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf09_steamed_taro_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "The operator chases the fork-pressure \"indent that does not flow back within 5 s\" and keeps adding thickener past the 8\u201310 ml syringe window, so an L4 specimen is labelled L3.",
+    "contradiction": "header \"applicable tests: spoon tilt, fork drip, 10 ml syringe flow test\" (three) vs IDDSI TEST \"All four must pass\" \u2014 fork pressure is added and is not an L3 test. Its criterion is L4-shaped: \"leaves a clear indent that does not flow back within 5 s\" cannot be met by a specimen that also satisfies "
+  },
+  {
+    "card": "bf41_plain_yogurt_L3",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The operator weighs the literal 30 g of thickener into 175 g of yogurt and water, producing a stiff gel that leaves the full 10 ml in the syringe, then \"corrects\" it with \"5 ml water per 100 ml\" and o",
+    "contradiction": "\"30 g thickener (1.2 g per 100 ml starting calibration)\" \u2014 irreconcilable by ~14\u00d7; and IDDSI TEST \"9-12 drips per 10 s\" vs VISUAL QC \"Drips as continuous ribbons, not droplets\" \u2014 discrete counted droplets vs a continuous stream."
+  },
+  {
+    "card": "bf09_steamed_taro_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"if residue still >5% by volume, the batch fails, re-prep\" \u2014 with no way to measure the volume of wet fibrous residue on a sieve, one operator scraps the batch and the next one passes it.",
+    "contradiction": "none \u2014 \"Do NOT add thickener at this stage\" is explicitly conditioned by \"If the mound slumps after sieving\"."
+  },
+  {
+    "card": "bf43_baked_egg_custard_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"place a heaped spoonful on a flat plate, tilt plate to 45 degrees\" \u2014 the spoon slides on the tilted plate and its angle to gravity is undefined, so two operators run two different spoon-tilt angles a",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf09_steamed_taro_L5",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The operator presses the whole batch through the 4 mm sieve and photographs a smooth \u22644 mm pur\u00e9e as L5, so every L5 image in the set is really L4.",
+    "contradiction": "header \"applicable tests: 4 mm sieve as gauge\" vs PREP \"Press through 4 mm sieve\" and FAIL MODES \"re-sieve entire batch\" \u2014 here the sieve is a production step, not a gauge; and that 4 mm gauge contradicts VISUAL QC \"no visible lumps above 2-3 mm\"."
+  },
+  {
+    "card": "bf43_baked_egg_custard_L5",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "The operator sieves the fork-mashed curds, sees the \"glossy puree, no visible curds\" the card calls a failure, and discards good L5 mash \u2014 or, if they pass it, labels a smooth pur\u00e9e as L5.",
+    "contradiction": "PREP \"Press through the 4 mm sieve\" (which yields a glossy, curd-free pur\u00e9e) vs FAIL MODES \"Over-blended: glossy puree, no visible curds, fails fork-pressure (recovers). Remake by hand-mash, do not re-blend\" \u2014 the prep produces the card's own definition of a failed batch. Test-set defect: it asserts"
+  },
+  {
+    "card": "bf11_steamed_fish_fillet_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "With no 8 mm minimum, the operator flakes the fillet down to 3\u20135 mm shreds that still read \"under 15 mm against the 100 mm ruler\", so an L5 specimen is labelled L6.",
+    "contradiction": "header \"applicable tests: fork pressure only\" vs IDDSI TEST listing \"Spoon-tilt\u2026 Fork-drip: no liquid should drip through the tines; pass is zero drip\" and then, in the same block, \"L6 requires size plus fork-pressure evidence only\" \u2014 the block disagrees with itself and with the header; spoon tilt a"
+  },
+  {
+    "card": "bf48_coconut_jelly_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "Cubes are only bounded above (\"\u226415 mm on all sides\"), so a batch of 5 mm cubes passes the stated check and is labelled L6.",
+    "contradiction": "header \"applicable tests: fork pressure only (100 mm ruler in frame for the sizing check)\" vs IDDSI TEST \"- Fork drip test: lift five cubes on the fork; no liquid should drip through the tines. Pass: no drip within 10 s.\" Fork drip is not an L6-applicable test. (The card correctly skips spoon tilt: "
+  },
+  {
+    "card": "bf11_steamed_fish_fillet_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "\"Take one steamed fish fillet as it comes out of the steamer\" with no steam time or thickness spec \u2014 one operator's fillet resists the fork while another's is over-steamed and collapses, which the car",
+    "contradiction": "header \"applicable tests: fork pressure only\" vs IDDSI TEST \"Spoon tilt test: lift a forkful and tip it over a white plate\u2026 Fork drip test: hold a loaded fork over the plate for 5 seconds. Zero drip.\" Both are listed as tests to run; neither applies at L7, and both are ill-defined for a fillet the c"
+  },
+  {
+    "card": "bf57_braised_beef_brisket_noo_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The operator fork-presses the 3 mm noodle strand (the brisket was reserved for stills), it squashes and passes between the tines, and they \"re-make, shorten cook\" \u2014 replacing a normally cooked L7 nood",
+    "contradiction": "the fork-pressure test is run on \"a noodle strand\" while the brisket chunk \u2014 the only piece that can resist a fork \u2014 is \"reserve[d]\u2026 for stills\", and the criterion \"food must not fully compress, ooze, or pass between tines\" is one a \u22483 mm cooked noodle cannot meet, as the FAIL MODES concede (\"Noodle"
+  },
+  {
+    "card": "bf10_steamed_pumpkin_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf42_unsweetened_soy_milk_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf10_steamed_pumpkin_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"add 5 g thickener per 100 ml of pur\u00e9e\" \u2014 the starting dose the card's own fail mode immediately halves (\"Rubbery \u2014 fork leaves no mark: discard, re-blend fresh batch, halve thickener to 2.5 g per 100",
+    "contradiction": "none"
+  },
+  {
+    "card": "bf44_mango_pudding_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"Do NOT add water, milk, or thickener\" vs \"if it does not hold on a fork, the operator records the actual grams of thickener added p"
+  },
+  {
+    "card": "bf10_steamed_pumpkin_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf44_mango_pudding_L5",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf12_steamed_minced_pork_patt_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header \"applicable tests: fork pressure only (100"
+  },
+  {
+    "card": "bf13_steamed_chicken_thigh_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf58_tomato_egg_stirfry_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "the card ships with \"(MISSING)\" in every section, so an operator improvises a tomato-egg stir-fry \u2014 a soft, moist, easily broken dish that normally lands at L5\u2013L6 \u2014 and labels the result L7.",
+    "contradiction": "none \u2014 the card contains no content that can conflict."
+  },
+  {
+    "card": "bf11_steamed_fish_fillet_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "PREP \"If flow test fails, add 0.3 g thickener per 100 ml and repeat\" vs"
+  },
+  {
+    "card": "bf43_baked_egg_custard_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf11_steamed_fish_fillet_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf45_black_sesame_paste_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "An operator who obeys \"Do not add ... thickener\" literally has no fix for a",
+    "contradiction": "PREP \"Do not add water, milk, or thickener \u2014 the per-level note says serve\n      as-is if the paste holds shape with no separate thin liquid\" versus FAIL MODES \"Paste runs"
+  },
+  {
+    "card": "bf11_steamed_fish_fillet_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf47_tofu_fa_tofu_pudding_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"Pulse-blend 8-10 s until curds break to roughly pea size\" versus \"Sieve once"
+  },
+  {
+    "card": "bf13_steamed_chicken_thigh_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "An operator handed a card whose PREP, IDDSI TEST, VISUAL QC and FAIL MODES are",
+    "contradiction": "the header promises \"(100 mm ruler in frame for the sizing check)\" while all"
+  },
+  {
+    "card": "bf52_sweet_and_sour_pork_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf15_hardboiled_egg_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf59_steamed_chicken_with_mus_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "PREP \"keep sauce that"
+  },
+  {
+    "card": "bf12_steamed_minced_pork_patt_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "Chasing \"All four must pass\" the operator adds thickener until \"the tines leave a clear, holding imprint\u2026 paste does not recover\" \u2014 an L4 test on an L3 card \u2014 and either over-thickens past the syringe",
+    "contradiction": "Header declares \"applicable tests: spoon tilt, fork drip, 10 ml syringe flow test\" (three), but IDDSI TEST adds a fourth and closes \"All four must pass\": \"Fork pressure: tines leave a clear, holding imprint when pressed; paste does not recover.\" That is the L4 criterion (compare bf12_L4: \"must not f"
+  },
+  {
+    "card": "bf44_mango_pudding_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "The only permitted correction for over-thickness is \"blend in 5 ml water\", which fixes the syringe but makes \"holds the pressed shape, no recovery\" unreachable \u2014 the operator cycles thickener/water an",
+    "contradiction": "Header \"applicable tests: spoon tilt, fork drip, 10 ml syringe flow test\" vs IDDSI TEST \"Fork pressure: full thumb-press blanches nail bed, pudding deforms and holds the pressed shape, no recovery\u2026 All four must pass.\" Fork pressure is not an L3 test and \"holds the pressed shape, no recovery\" is an "
+  },
+  {
+    "card": "bf12_steamed_minced_pork_patt_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Following the weep fail-mode literally, the operator adds 0.25 g per 100 ml (half the base dose) at a step that has no thickener in it, and re-labels a weeping L4 as pass.",
+    "contradiction": "FAIL MODES \"remake adding 0.25 g thickener per 100 ml in step 1\" \u2014 step 1 is \"Weigh 150 g steamed minced pork patty into blender. Add 40 ml warm water\", which contains no thickener, and 0.25 g is half the 0.5 g base dose in the step that does add it."
+  },
+  {
+    "card": "bf46_smooth_red_bean_paste_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Because every adjustment is forbidden, an operator whose pack arrives too soft can only \"reject\u2026 re-make with a different pack\" with no criterion for choosing one, and ends up labelling whichever pack",
+    "contradiction": "none (minor: FAIL MODE C calls spoon-slump \"(L5/Drink territory)\"; a paste that slumps off a tilted spoon is L3, not L5.)"
+  },
+  {
+    "card": "bf12_steamed_minced_pork_patt_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The card tells the operator fork-drip and fork-pressure must pass while spoon-tilt is merely \"supportive\" \u2014 the exact inverse of the protocol \u2014 so a specimen failing the applicable spoon-tilt test is ",
+    "contradiction": "Header \"applicable tests: 4 mm sieve as gauge, spoon tilt (fork pressure supporting)\" vs IDDSI TEST \"L5 needs fork-drip and fork-pressure pass; spoon-tilt is supportive. All three must pass.\" \u2014 the protocol hierarchy is inverted, and fork drip (not an L5 test) is made mandatory."
+  },
+  {
+    "card": "bf48_coconut_jelly_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator keeps crushing and re-sieving until the smear reads as \"a continuous film, not crumbs\" and hands back an L4 paste labelled L5.",
+    "contradiction": "VISUAL QC \"A pressed smear reads as a continuous film, not crumbs\" is an L4 smoothness criterion, conflicting with the L5 target (\"lumps about 4 mm\") and with the card's own minced-and-moist prep."
+  },
+  {
+    "card": "bf14_steamed_egg_custard_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "Nothing on the card forbids cutting 5\u20136 mm cubes, so an operator who cuts small passes every stated criterion and files an L5 specimen as L6 ground truth.",
+    "contradiction": "Header promises \"the 100 mm ruler in frame for the sizing check\", but PREP, IDDSI TEST and VISUAL QC never mention a 100 mm ruler \u2014 they use an unspecified \"15 mm checkerboard\" throughout (\"against the 15 mm checkerboard\", \"\u2264 15 mm against the checkerboard\")."
+  },
+  {
+    "card": "bf53_mapo_tofu_L6",
+    "achievable": "no",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Following the prep as written yields a loose \u22644 mm saucy mass \u2014 L5 at best \u2014 which the operator then passes against the card's own fork-pressure wording and files as L6.",
+    "contradiction": "The 4 mm sieve pass is contradicted inside the same PREP by \"Spoon-cut any lumps that remain larger than 15 mm\u2026 until all pieces measure \u2264 15 mm against the 100 mm ruler\" and by VISUAL QC \"a soft, irregular cube roughly 10\u201315 mm\" \u2014 neither is possible once everything has passed a 4 mm mesh. Also VIS"
+  },
+  {
+    "card": "bf17_firm_tofu_L7",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "The only soft spot is \"press the square tines of a standard fork fully into the slice until the tines bend\" \u2014 a standard fork will not bend on firm tofu, so the operator either stops short of the spec",
+    "contradiction": "none"
+  },
+  {
+    "card": "bf60_lor_mai_gai_glutinous_ri_L7",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator presses an unpinned-thickness 200 g parcel and records pass/fail on whether the fork \"fully cuts through\" \u2014 a thin parcel fails and a thick one passes for geometric rea",
+    "contradiction": "IDDSI TEST: \"The specimen must hold shape, the tines must leave a clear, persistent indentation, and the fork must not fully cut through the rice mass in one press \u2014 this confirms solid-food criteria and rules out L5/L6 spreadability.\" A persistent thumb indentation is itself spreadability, so the c"
+  },
+  {
+    "card": "bf13_steamed_chicken_thigh_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"after 10 s the syringe retains 8-10 ml\" vs \"Syringe reads below 7 ml after 10 s (too thick): whisk in 5 ml water\" \u2014 under the card's own \"retains\" reading a low residual means MORE flowed out, i.e. too THIN, so the water remedy inverts the fix;"
+  },
+  {
+    "card": "bf45_black_sesame_paste_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "\"If drip from fork prongs is faster than 1 drop per second, add thickener\" vs \"Fork drip: \u2026 first drop within 1-2 s\" and VISUAL QC \"4-5 thin continuous strands at 1-2 per second\" \u2014 the PREP stop rule (\u22641 drop/s) is stricter than the card's own pass criterion (1-2 drops/s), so the loop cannot termina"
+  },
+  {
+    "card": "bf13_steamed_chicken_thigh_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "the thickener is dosed \"per 100 ml pur\u00e9e\" while the card only ever weighs the pur\u00e9e in grams and gives no density, so two operators can dose 0.6 g (on the 60 ml of added water) or ~2.5 g (on the whole",
+    "contradiction": "minor and not label-affecting \u2014 \"cooled to \u226440 \u00b0C\" is voided by the next clause \"Add to consumer blender with 60 ml hot water (\u224870 \u00b0C)\", so the temperature control is gone before any test runs."
+  },
+  {
+    "card": "bf47_tofu_fa_tofu_pudding_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "an operator who hits the under-blended fail mode will follow \"do not exceed 8 s total\" on a batch that already had 8-10 s, with no rule telling them whether to under-blend a lumpy specimen into L4 or ",
+    "contradiction": "\"Pulse-blend 8\u201310 s only\" vs \"only 5 s pulse\" vs \"do not exceed 8 s total\" \u2014 both remedies contradict the prep's own window."
+  },
+  {
+    "card": "bf13_steamed_chicken_thigh_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header \"(fork pressure supporting)\" vs test body \"Fork pressure: \u2026 PASS \u2014\"; and PREP \"Rub a tablespoon of the mince across the 4 mm sieve \u2014 it should p"
+  },
+  {
+    "card": "bf49_doubleskin_milk_L5",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "the card's deciding gate is a test the protocol does not recognise for",
+    "contradiction": "header \"(fork pressure supporting)\" vs \"Fork-pressure test (defines L5)\"."
+  },
+  {
+    "card": "bf15_hardboiled_egg_L6",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "nothing on the card stops an operator chopping to 5 mm, and the ruler check repeats only \"<=15 mm\", so a sub-8 mm batch is captured, labelled L6 and becomes training data for L5.",
+    "contradiction": "\"Chop on board with knife into pieces <=15 mm per the level note\" \u2014 the level note it cites specifies 8-15 mm, so the card quotes a range and enforces half of it."
+  },
+  {
+    "card": "bf54_saltedegg_steamed_pork_p_L6",
+    "achievable": "no",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"press each piece through the 4 mm sieve so no dimension exceeds 15 mm\" vs the L6 definition \"lumps 8-15 mm\" and the header's \"100 mm ruler in frame for the sizing check\"; and the test's \"press thumbnail on a 15 mm piece for 5 s\" cannot be run because the prep guarantees no 15 mm piece exists. FAIL "
+  },
+  {
+    "card": "bf18_braised_pork_belly_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "a slice cut to the prep's 15 mm low end that slumps under its own weight fails the card's own \"failing toward L6\" check, and the only instru",
+    "contradiction": "PREP \"cut a representative slice about 30 mm \u00d7 40 mm \u00d7 15-20 mm thick\" vs FAIL MODES \"remake with a thicker cut from the centre of the pack\" \u2014 the remedy prescribes a cut outside the prep's own specified range."
+  },
+  {
+    "card": "bf14_steamed_egg_custard_L3",
+    "achievable": "no",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Every section after the header is \"(MISSING)\", so the operator improvises an egg custard from memory and labels whatever comes out of the steamer as L3.\n  (TEST_SET_CORRECT=yes only because the declar",
+    "contradiction": "none inside the card, but the id is not unique in the batch: \"bf14_steamed_egg_custard\" is reused at L4 (line 27) and at L5 (line 53), so one specimen_id maps to three different ground-truth levels."
+  },
+  {
+    "card": "bf46_smooth_red_bean_paste_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The dose flip from \"per 100 ml of sieved paste\" to \"per 100 g paste\" makes the same 130 g batch take either 1.5 g or ~1.95 g thickener, so two operators land ~30% apart in thickness and the thicker on",
+    "contradiction": "(1) \"Calibrate to L3 starting at 1.5 g thickener per 100 ml of sieved paste: stir in 1.5 g thickener per 100 g paste\" \u2014 the dose base flips ml\u2192g inside one sentence, with no density given to convert. (2) \"Fork pressure: the tines leave a clear dent that holds shape; paste does not recover when fork "
+  },
+  {
+    "card": "bf14_steamed_egg_custard_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The spoon-tilt gate \"must hold on the spoon without sliding or pouring off\" at 90\u00b0 inversion is stiffer than L4 (which flows off the spoon slowly), so the fail mode \"Too runny after blending\u2026 re-make ",
+    "contradiction": "\"Specimen must hold on the spoon without sliding or pouring off\" (IDDSI TEST, at 90\u00b0 inversion) vs \"A scooped portion drops cleanly off the spoon as one mass, leaving a thin, even film behind\" (VISUAL QC) \u2014 the test forbids exactly what the QC describes. Also note the same bf14_steamed_egg_custard i"
+  },
+  {
+    "card": "bf48_coconut_jelly_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The thickener dose is \"per 100 ml of puree\" while the puree is only ever weighed in grams, so the operator either invents a density or eyeballs a jug volume and the dose base is a guess.",
+    "contradiction": "The corrective steps use three incompatible bases for one batch: \"add 0.5 g thickener per 100 ml of puree\", \"Re-weigh the sieved puree\" (grams only), and \"add 10 ml pack syrup per 150 g batch\" \u2014 the puree's volume is never measured anywhere in the procedure."
+  },
+  {
+    "card": "bf14_steamed_egg_custard_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"Target retained mass: at least 180 g\" read as sieve-catch sends the operator re-mashing a 4 mm custard forever, while the recovered-mass reading produces a completely different specimen \u2014 and nothing",
+    "contradiction": "\"Sieve the mash through the 4 mm sieve only as a verification pass \u2014 anything retained goes back through the fork. Target retained mass: at least 180 g.\" \u2014 \"retained\" means \"caught by the sieve\" in the first clause (which the card drives to zero) and something like \"recovered\" in the second; the two"
+  },
+  {
+    "card": "bf51_curry_fish_balls_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"Chop with knife until largest piece is \u2264 4 mm\" with no ruler and with sieving explicitly banned (\"Do not sieve \u2014 sauce carries solids and sieving would strip them\"), so the 4 mm limit is an unaided e",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf16_silken_tofu_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "\"cubes \u226415 mm\" bounds the size from above only, so an operator who cuts 5 mm cubes photographs a clean, compliant-looking L6 label on what is really an L5 specimen.\n  (TEST_SET_CORRECT=no: L6 is \"fork",
+    "contradiction": "none internal."
+  },
+  {
+    "card": "bf55_yangzhou_fried_rice_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "Fried-rice grains are commonly 5-8 mm, and the card both forbids size reduction and gives no ruler, so an undersized batch yields an L5 specimen recorded under an L6 label with nothing on the card to ",
+    "contradiction": "\"no further size reduction is required, so do NOT blend or sieve\" vs \"If grains look >15 mm or any piece resists thumbnail pressure, stop and re-make with a new portion cut smaller before continuing\" vs the fail mode \"Hard grains or chewy meat >15 mm not squashing under thumbnail \u2192 re-make by discar"
+  },
+  {
+    "card": "bf19_steamed_shrimp_peeled_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "The pass criterion \"must compress, change shape, and not return to original form\" rewards a soft, over-steamed shrimp while the fail mode \"Over-steaming causes mushy texture that smears and drips\u2026 fai",
+    "contradiction": "(1) \"L7 requires the fork-pressure test only; flow and syringe tests do not apply\" vs, in the same section, \"Fork drip / spoon tilt: lift shrimp on fork and tilt over the plate\u2026 Pass = no drip, no flow\" and \"If any sample spreads, drips, or flows off the utensil, specimen is not L7.\" (2) \"The shrimp"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf52_sweet_and_sour_pork_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header lists only \"spoon tilt, fork drip, 10 ml syringe flow test\" but the test block asserts \"Fork pressure test: press the fork tines into the surface; the surface must flatten and a clear pattern must remain p"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "PREP tolerates residue as merely incomplete \u2014 \"state this step is incomplete if residue exceeds ~15 % of input\" \u2014 while VISUAL QC deman"
+  },
+  {
+    "card": "bf54_saltedegg_steamed_pork_p_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "FAIL MODES \"Specimen flows through fork tines (too"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: 4 mm sieve as gauge, spoon tilt (fork pressure supporting)\" but the test block adds \"Fork drip: lift fork from specimen; nothing drips through tines. Pass.\" \u2014 \u00a75.3 scopes fork-drip to L3/L4 and SPECIMEN_SCHEMA sets `tests.fork_drip` \"null except L3/L4\"; the sanctioned "
+  },
+  {
+    "card": "bf22_blanched_bok_choy_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: fork pressure only (100 mm ruler in frame for the sizing check)\" but the test block requires three passes \u2014 \"Spoon-tilt test (secondary) ... Fork-drip test: lift forkful of pieces. Pass = pieces sit on the tines without dripping liquid\" \u2014 and \u00a75.2/\u00a75.3 scope those to L"
+  },
+  {
+    "card": "bf25_stewed_hairy_gourd_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: fork pressure only\" but the test block requires three passes \u2014 \"Spoon tilt: tilt a dessert spoon 45 degrees; pass if the chunk sits on the spoon without flowing or dripping off. Fork drip: lift forkful 15 cm above plate; pass if no liquid runs off between fork tines\" \u2014"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf52_sweet_and_sour_pork_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header lists only \"spoon tilt, fork drip, 10 ml syringe flow test\" but the test block asserts \"Fork pressure test: press the fork tines into the surface; the surface must flatten and a clear pattern must remain pressed in"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "PREP tolerates residue as merely incomplete \u2014 \"state this step is incomplete if residue exceeds ~15 % of input\" \u2014 while VISUAL QC demands"
+  },
+  {
+    "card": "bf54_saltedegg_steamed_pork_p_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "FAIL MODES \"Specimen flows through fork tines (too thin) \u2192 r"
+  },
+  {
+    "card": "bf20_steamed_spare_ribs_black_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: 4 mm sieve as gauge, spoon tilt (fork pressure supporting)\" but the test block adds \"Fork drip: lift fork from specimen; nothing drips through tines. Pass.\" \u2014 \u00a75.3 scopes fork-drip to L3/L4 and SPECIMEN_SCHEMA sets `tests.fork_drip` \"null except L3/L4\"; the sanctioned "
+  },
+  {
+    "card": "bf22_blanched_bok_choy_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: fork pressure only (100 mm ruler in frame for the sizing check)\" but the test block requires three passes \u2014 \"Spoon-tilt test (secondary) ... Fork-drip test: lift forkful of pieces. Pass = pieces sit on the tines without dripping liquid\" \u2014 and \u00a75.2/\u00a75.3 scope those to L"
+  },
+  {
+    "card": "bf25_stewed_hairy_gourd_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header says \"applicable tests: fork pressure only\" but the test block requires three passes \u2014 \"Spoon tilt: tilt a dessert spoon 45 degrees; pass if the chunk sits on the spoon without flowing or dripping off. Fork drip: lift forkful 15 cm above plate; pass if no liquid runs off between fork tines\" \u2014"
+  },
+  {
+    "card": "bf21_blanched_choy_sum_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf53_mapo_tofu_L3",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf21_blanched_choy_sum_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "PREP \"if fibres remain stringy after one sieve pass, the spec fails and must be re-made, not re-blended\" vs FAIL MODE"
+  },
+  {
+    "card": "bf55_yangzhou_fried_rice_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf21_blanched_choy_sum_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "PREP \"Pass the choppe"
+  },
+  {
+    "card": "bf58_tomato_egg_stirfry_L5",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf23_blanched_water_spinach_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf26_steamed_carrot_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "\"Fork drip: lift a baton on fork tines and hol",
+    "contradiction": "Header \"(level L7; applicable tests: fork pressure only)\" vs \"All three must pass to confirm L7.\""
+  },
+  {
+    "card": "bf25_stewed_hairy_gourd_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf57_braised_beef_brisket_noo_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf25_stewed_hairy_gourd_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"Do NOT add thickener \u2014 hairy gourd puree already holds at L4.\" vs \"If the puree sits below the fork-tine line on the fork-drip test, remix with a 0.5\u20131 g thickener per 100 ml increment (calibratio"
+  },
+  {
+    "card": "bf59_steamed_chicken_with_mus_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"Do not add more water after sieving \u2014 re-blend is the only recovery step.\" \u2014 there is no recovery path at all if the batch comes out too stiff, so the operator re-makes from scratch, and the paired f",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf25_stewed_hairy_gourd_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf27_braised_lotus_root_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf30_sweetcorn_kernels_L7",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf26_steamed_carrot_L3",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "(a) PREP \"Adjust with small extra thickener (0.1-0.2 g)\" vs FAIL MODES \"Runny like a drink: too little thickener, add 0.2 g per 100 ml\" \u2014 at the ~180-250 ml puree this card makes, that is 0.4-0.5 g, i.e. 2-3x the PREP step. (b) Syringe pass \"pass if 8-10 ml remains in the syringe\" vs fail trigger \"H"
+  },
+  {
+    "card": "bf58_tomato_egg_stirfry_L3",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "(a) pass criterion \"holds its shape on the fork, then drips slowly through the tines in dollops\" vs fail mode \"Too thick, mounds on the fork\" \u2014 the required pass state is the named fail trigger. (b) \"flow test ends above 10 ml\" is unmeasurable: the syringe is filled \"to the 10 ml mark\", so it cannot"
+  },
+  {
+    "card": "bf26_steamed_carrot_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator doses \"1.5 g thickener per 100 ml puree\" against a puree volume the card never asks them to measure.",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf60_lor_mai_gai_glutinous_ri_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator adds thickener until",
+    "contradiction": "\"Spoon tilt test: scoop puree, tilt spoon 90 deg; specimen holds shape, slides off as one lump or not at all\" is unfalsifiable and contradicts the card's own VISUAL QC \"Spoon: drops cleanly as a soft lump leaving spoon near-empty\"; combined with a FAIL MODES list containing only too-thin, too-coarse"
+  },
+  {
+    "card": "bf26_steamed_carrot_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "\"Press through a 4 mm sieve using the back of a spoon\" is meant to catch oversize but in practice grinds the whole mash finer than 4 mm, drifting the specimen toward L4 while the",
+    "contradiction": "the header declares \"(level L5; applicable tests: 4 mm sieve as gauge, spoon tilt (fork pressure supporting))\" but the IDDSI TEST section requires \"All three must pass\" \u2014 fork pressure promoted from supporting to mandatory, and fork drip added, which is not in the L5 set. Both are satisfiable by a c"
+  },
+  {
+    "card": "bf28_steamed_bitter_melon_L6",
+    "achievable": "no",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "the header says \"(level L6; applicable tests: fork pressure only (100 mm ruler in frame for the sizing check))\" but the IDDSI TEST section also makes \"Spoon-tilt test\" and \"Fork-drip test\" pass criteria; and the fork test presses \"one 15 mm piece\" while the PREP permits any piece up to 15 mm, so the"
+  },
+  {
+    "card": "bf31_banana_L7",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "The operator follows \"per the per-level note\", which does not exist on the card, so ripeness and size are improvised and the card's only test (\"little effort\") is passed trivially by any soft banana \u2014",
+    "contradiction": "the fork-pressure criterion demands the piece \"break, cleave, or squish apart with little effort\", while L7 is defined as \"pieces 15 mm or more, require real chewing\" \u2014 and the FAIL MODES treat a firmer banana that \"resists the fork\" as \"a different texture class\", i.e. the card penalises exactly th"
+  },
+  {
+    "card": "bf27_braised_lotus_root_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf59_steamed_chicken_with_mus_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf27_braised_lotus_root_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf27_braised_lotus_root_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf29_steamed_eggplant_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf32_ripe_mango_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "the pass criterion \"The piece must squash, break, or crumble under the pressure\" is L6 behaviour, while the level is defined as \"require real chewing\" \u2014 and"
+  },
+  {
+    "card": "bf28_steamed_bitter_melon_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf28_steamed_bitter_melon_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"If puree will not drop from an inverted spoon, add 5 ml water and re-blend\" (PREP) vs the card's own pass criterion \"tilt to 90 degrees over a plate; specimen sits in a mound, does not slide or drip. Pass = mound holds, zero drip in 5 s\" \u2014 not dropping from an inverted spoon *is* the pass, so this "
+  },
+  {
+    "card": "bf28_steamed_bitter_melon_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"Mash retained fraction with fork until uniformly minced\" \u2014 with no speed and no defined end point, fork-",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf30_sweetcorn_kernels_L6",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"re-prep with longer heating\" (FAIL MODES) vs a PREP that contains no heating step at"
+  },
+  {
+    "card": "bf33_papaya_L7",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "\"cut into slices as normally served\" \u2014 slice thickness is never specified in PREP, so one operator produces 5 mm slabs that sag between the tines and another produces 15\u201320 mm slabs, and both are labe",
+    "contradiction": "none."
+  },
+  {
+    "card": "bf29_steamed_eggplant_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "header lists three applicable tests vs."
+  },
+  {
+    "card": "bf29_steamed_eggplant_L4",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "yes",
+    "risk": "An operator reads \"no sieving or shaping step is required\" and skips the sieve, leaving skin and seed flecks in a specimen that must contain no lumps at all.",
+    "contradiction": "\"Per-level note is blend-hold, so no sieving or shaping step is required beyond pressing out fibers\" vs. \"Press through 4 mm sieve; discard residue\" in the same PREP, and vs. FAIL MODES \"re-blend 15 s and re-sieve; do not skip the sieve.\""
+  },
+  {
+    "card": "bf29_steamed_eggplant_L5",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "An operator who fails the mandatory",
+    "contradiction": "header \"(fork pressure supporting)\" vs. body \"All three must pass.\""
+  },
+  {
+    "card": "bf31_banana_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf34_dragon_fruit_L7",
+    "achievable": "uncertain",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"tilt to a steep angle, then invert. Pass = the round sits on the spoon, does not pour, does not slide or drip off\" \u2014 a literal inversion makes the stated pass criterion physically impossible; header \"fork pressure only\" vs"
+  },
+  {
+    "card": "bf30_sweetcorn_kernels_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "An operator will keep adding thickener until the fork leaves \"a clear imprint\" and silently push the batch out of L3 into L4.",
+    "contradiction": "The card's own note says \"Per-level note 'blend-thin' applies: thin to pour, not to chew,\" yet it asserts a solid-food fork-pressure pass criterion \u2014 \"leaves a clear imprint without crumb splitting \u2014 pass\" \u2014 on a specimen that has been sieved smooth and has no crumb."
+  },
+  {
+    "card": "bf30_sweetcorn_kernels_L4",
+    "achievable": "uncertain",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "Two operators each guess the puree volume, dose the thickener differently, and label the same recipe L3 and L5.",
+    "contradiction": "none"
+  },
+  {
+    "card": "bf30_sweetcorn_kernels_L5",
+    "achievable": "yes",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "An operator will add \"1 g per 100 ml\" of thickener to a solid that has no 100 ml, a",
+    "contradiction": "VISUAL QC accepts \"leaves a wet trail, no puddle around the mound\" while the TEST demands \"no thin liquid should separate when the specimen sits on a plate for 1 minute\" \u2014 the same free liquid is normal in one section and a remake trigger (\"Pooling thin liquid appears on the plate\") in another, with"
+  },
+  {
+    "card": "bf32_ripe_mango_L6",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "An operator will drain the juice to pass \"pieces must not drip through or fall\" and then fail their own VISUAL QC requiring \"a shallow pool of their own juice,\" discarding a good L6 specimen.",
+    "contradiction": "VISUAL QC requires \"On the spoon: pieces sit in a shallow pool of their own juice,\" while the IDDSI TEST requires \"Spoon tilt: tilt a spoon holding 4\u20135 pieces; pieces stay without sliding off\" and \"Fork drip: lift a loaded fork; pieces must not drip through or fall\" \u2014 a specimen sitting in its own j"
+  },
+  {
+    "card": "bf35_soft_ripe_persimmon_L7",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "An operator will run the non-applicable spoon tilt on ripe persimmon flesh, find it clings to the spoon, and discard a perfectly good L7 specimen.",
+    "contradiction": "VISUAL QC requires \"No free liquid pools on the plate\" while FAIL MODES state \"Overripe or bruised fruit: free liquid runs across the plate; that is acceptable texture but document the weeping\" \u2014 the identical observation is a QC failure in one section and explicitly acceptable in the other."
+  },
+  {
+    "card": "bf31_banana_L3",
+    "achievable": "yes",
+    "test_set_correct": "no",
+    "parameters_present": "yes",
+    "risk": "",
+    "contradiction": "\"after 10 s, 8-10 ml rem"
+  },
+  {
+    "card": "bf31_banana_L4",
+    "achievable": "no",
+    "test_set_correct": "yes",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": "\"add 0.0 g thickener for this L4 calibration starting point\" vs. \"Runny: puree flows through fork tines or drips in threads \u2014 re-blend 5 s a"
+  },
+  {
+    "card": "bf31_banana_L5",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf33_papaya_L6",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  },
+  {
+    "card": "bf36_pear_L7",
+    "achievable": "no",
+    "test_set_correct": "no",
+    "parameters_present": "no",
+    "risk": "",
+    "contradiction": ""
+  }
+]

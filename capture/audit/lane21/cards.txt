@@ -1,0 +1,103 @@
+### bf21_blanched_choy_sum_L3  (level L3)
+PREP:
+Weigh 200 g blanched choy sum stems and leaves. Blend with 120 ml water for 45 s, scrape, blend 30 s more. Pass through the 4 mm sieve; discard fibre that will not pass (the per-level note requires blend-thin, so a coarse sieve pass is not optional). Weigh the sieved puree. Add thickener at 2.0 g per 100 ml of puree — this is the calibration starting point only; record the actual grams used so the ratio is reproducible. Stir with the fork 30 s, rest 2 min, stir again. The spec must pour in a slow ribbon, drip through the fork tines in a continuous thin stream, and read 8-10 ml in the IDDSI syringe at 10 s. If any check fails, add thickener in 0.5 g per 100 ml increments, rest 2 min, retest.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: the tines leave a clear, persistent line in the surface and the puree does not regain shape when the fork is lifted — pass. Spoon tilt: the puree flows off the tilted spoon in a slow, continuous ribbon within 4 s — pass. Fork drip: a thin, continuous drip falls through the tine gaps; no sitting blob — pass. Syringe flow test (Level 3 specific): fill the 10 ml syringe, release, wait 10 s; 8-10 ml remain in the barrel — pass.
+
+VISUAL QC:
+Surface holds a fork-tine imprint for at least 3 s. Tilting the spoon produces a smooth ribbon that breaks at about 3-4 cm, not a splat. Colour is uniform pale green with no visible fibre flecks after sieving.
+
+FAIL MODES:
+Runny — too thin for Level 3, drips through syringe leaving under 8 ml: remake, add 0.5 g thickener per 100 ml, retest. Sticky / gummy — holds shape on the spoon or blocks the syringe above 10 ml: thin by whisking in 5 ml water per 100 ml puree, retest. Stringy — visible fibre strands after sieving: re-blend 20 s and re-sieve; if strands persist, the specimen fails and must be remade from fresh.
+
+### bf53_mapo_tofu_L3  (level L3)
+PREP:
+Weigh 250 g mapo tofu (sauce + curds) into blender. Blend 45 s on high, scraping halfway. Pass through 4 mm sieve; discard coarse solids (perian, scallion skins, charred bits). Stir in thickener at 0.8 g per 100 ml of puree as the calibration starting point; record actual grams on the bench sheet. If still too runny after 1 min rest, add 0.2 g increments up to 1.2 g/100 ml. Target flow leaves 8–10 ml in syringe at 10 s. Record thickener mass used.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork horizontally above bowl; liquid drips slowly through tines in a continuous but sluggish stream. Pass = steady slow drip, no pour, no drop sitting on the tine. Fork pressure: press fork tines flat into specimen until blanch shows; sample holds shape, does not return to liquid, fills tine spaces. Pass = clean impression, no separation. Spoon tilt: tilt a heaped spoon 30°; specimen slides slowly but does not run off. Pass = slow slump, stays on spoon. IDDSI flow test: fill 10 ml syringe, release 10 s; pass = 8–10 ml remaining.
+
+VISUAL QC:
+Matte, uniform rust-red surface; no oil pooling, no visible tofu cubes, no chili flake specks. Coats spoon back without dripping when lifted. Fork tines leave a clean, defined track when dragged.
+
+FAIL MODES:
+Too thin (<8 ml remaining): drip runs off spoon; sieve did not remove solids — re-sieve, add 0.2 g thickener per 100 ml, retest. Too thick (>10 ml remaining): mass sits on fork, breaks instead of flowing — thin with 10 ml hot water per 100 g, re-blend 15 s, retest. Grainy / specks visible: blender underworked or sieve skipped — re-blend full 45 s and re-sieve before re-thickening.
+
+### bf21_blanched_choy_sum_L4  (level L4)
+PREP:
+Weigh 200 g blanched choy sum stems and leaves on the digital scale. Cut into 2 cm pieces. Add to consumer blender with 60 ml cool water; blend 45 s on high. Pass through the 4 mm sieve using a spoon; discard fibrous residue retained on mesh. Return sieved puree to blender; blend 30 s more. Transfer to a bowl. Mix in thickener at 2.0 g per 100 ml of puree (calibration starting point — record the actual mass used on the run sheet). Stir with fork 20 s, rest 60 s, stir 10 s. The mixture must hold its shape on a spoon without spreading. Note: sieving is mandatory; choy sum fibres cannot be softened to L4 by blending alone — if fibres remain stringy after one sieve pass, the spec fails and must be re-made, not re-blended.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press fork tines into the mound until the tines blanch; surface must hold the impression with no surrounding liquid pooling. Pass: clean imprint, no flow. Spoon tilt test: load a spoon, tilt 45 degrees over a plate; specimen must sit, not slide or drip. Pass: stays on spoon or drops as one piece. Fork drip test: lift forkful 5 cm above plate; puree must sit in a mound on the tines, not drip through. Pass: no continuous drip within 10 s. L4 requires no separate thin liquid; a small bead on the spoon is acceptable, a puddle is not.
+
+VISUAL QC:
+On the fork: matte, even green, no visible fibre strands, no water weeping. On the spoon: rounded mound, edges hold sharp, slight gloss only at the very peak.
+
+FAIL MODES:
+1. Stringy fibres visible after sieve — re-make with longer blend and second sieve pass. 2. Specimen flows through fork tines — too wet; whisk in 0.5 g thickener, rest 60 s, retest. 3. Specimen cracks or crumbles on spoon tilt — too thick; whisk in 5 ml water per 100 g and retest.
+
+### bf55_yangzhou_fried_rice_L4  (level L4)
+PREP:
+Weigh 150 g Yangzhou fried rice (confirm mixed-grain and ingredient distribution at purchase; record any large visible piece counts as outliers). Add 60–80 ml warm stock (start at 60 ml; add 10 ml increments if the blend stalls). Blend in the consumer blender on high for 45–60 s until a uniform coarse puree forms; scrape the wall, then blend a further 20 s. Pass through the 4 mm sieve using the back of a spoon; discard residue that will not pass and note the discard mass. Return the sieved puree to the blender and thicken to the L4 calibration starting point: add thickener at 1.5 g per 100 ml of puree, blend 15 s, rest 60 s, then re-test. Record the actual thickener mass used. Target final mass 200–220 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a forkful 15 cm above the plate; the puree must sit in a mound above the tines and not drip continuously through. Fork pressure: press the fork tines into the mound; the surface must blanch clearly but the puree must not flow through the slots. Spoon tilt: a 5 ml spoonful on a tilted plate must hold its shape and not slide off in under 10 s. No separate thin liquid should pool around the mound.
+
+VISUAL QC:
+Uniform pale-tan colour with no visible whole rice grains, peas, egg flecks, or carrot shards. Smooth, slightly glossy surface with no weeping liquid at the edges of the mound. Coats the back of a spoon without running.
+
+FAIL MODES:
+Grainy texture with visible rice or vegetable fragments: re-blend 20 s and re-sieve; if residue exceeds 15% of input, re-make from 150 g fresh. Weeping liquid pooling around the mound: too thin — add thickener in 0.5 g per 100 ml increments, rest 60 s, retest. Slides off the tilted spoon or flows through fork tines: over-thickened or under-thickened — discard and re-make; partial dilution will not rescue L4 texture.
+
+### bf21_blanched_choy_sum_L5  (level L5)
+PREP:
+Start with 300 g blanched choy sum, drained, patted dry on a clean cloth. Chop the stems and leaves together with a knife until the largest pieces are no more than 4 mm; discard any stalk core that resists chopping. Pass the chopped mass through the 4 mm sieve, pressing gently with the back of a spoon; reject anything that will not pass. Weigh the sieved material and mound it on the cutting board. Press and smear with a fork in a circular motion for 60–90 seconds until it holds together as a coarse mash with visible flecks but no whole leaves. Sprinkle 3 g thickener per 100 g of mash, fold in with the fork, rest 60 seconds, then re-mash briefly. Add 10–15 ml warm water only if the mash is crumbly; the final mix must feel moist but not wet, and must show no separate thin liquid. Record actual thickener grams and water ml on the card.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the tines flat onto the mash for 5 seconds; the mash must squash, the surface must blanch pale, and it must not spring back when the fork is lifted. Spoon tilt: a teaspoon-sized portion must hold its shape on the spoon when tilted to 45 degrees without sliding or dripping. Fork drip: lift a loaded fork; nothing should drip through the tines in 3 seconds. All three must pass; if any fails, re-mash or re-thicken, do not film.
+
+VISUAL QC:
+On the fork: cohesive clump, no loose bits falling, surface shows fine green flecks with no whole leaf blades. On the spoon: holds a rounded mound, slight sheen from moisture, no pooling liquid at the rim.
+
+FAIL MODES:
+Mash too wet: a watery halo forms on the plate; add 1 g thickener per 100 g, rest, re-mash, re-film. Pieces too coarse: stalks remain visible above 4 mm; re-chop and re-sieve, do not patch with extra water. Mash too dry and crumbly: fork-pressure leaves clean tine marks without squashing; add 5 ml water and 0.5 g thickener, re-mash, re-test.
+
+### bf58_tomato_egg_stirfry_L5  (level L5)
+PREP:
+Cook or buy 300 g of tomato egg stir-fry. Remove any whole dried chilies or large aromatics. Pulse in consumer blender 4-6 s only — no longer, to keep visible bits, not a purée. Press through a 4 mm sieve, pushing soft solids through with the back of a spoon and reserving any seeds or skins that stay behind. The per-level note permits the juices; do not drain them. Weigh the sieved portion on the digital scale. Target yield ≈ 250-270 g. If the result is too wet and pools thin liquid on the plate, mix in thickener 1.0 g per 100 ml of free liquid, stir, rest 60 s, re-check. Record starting grams, blender seconds, thickener grams used, final grams.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the mound until the thumbnail blanches; the food must squash and stay squashed — no recovery. Fork drip: lift fork; nothing drips through the tines. Spoon tilt: tilt a teaspoon of the food; the mound holds its shape and slides as a cohesive lump, does not run. Thin-liquid absence: tilt the plate; no separate liquid pools at the edge.
+
+VISUAL QC:
+Mound on spoon holds a soft peak without slumping. Flecks of yellow egg and red tomato skin visible, every piece smaller than a grain of rice. Surface glistens but no liquid collects on the plate rim.
+
+FAIL MODES:
+Egg pieces larger than 4 mm after sieving → return to blender for 1-2 s pulse and re-sieve. Free tomato juice pools on the plate → add thickener 0.5 g per 100 ml, rest, retest. Mound cracks instead of squashing (too dry) → fold in 5-10 ml warm water and retest.
+
+### bf23_blanched_water_spinach_L6  (level L6)
+PREP:
+Weigh 200 g blanched water spinach (tender stems and leaves only — discard fibrous stem cores; the per-level note restricts L6 to tender parts ≤15 mm). Pat dry on a clean cloth. On the cutting board, align leaves, slice across the grain into strips ≤15 mm wide, then cross-cut into pieces ≤15 mm in the longest dimension. Do not blend; do not sieve. Do not add thickener or water — L6 is a soft-solid specimen, not a liquid, so no calibration gram count applies. Confirm the cut size against the 15 mm checkerboard squares before proceeding.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: place a piece on a flat plate, press the flat of a standard fork down until your thumbnail blanches white. The piece must squash, smear, and not return to its original shape. Pass = squash with no recovery. Fork drip test is not applicable (no liquid). Spoon tilt test is not applicable (solid specimen, not a puree).
+
+VISUAL QC:
+On the fork: pieces are uniformly dark green, glossy, and visibly wet but not dripping. On the plate: pieces hold their cut geometry yet yield visibly under fork pressure without springing back. No fibrous white cores should be visible on any cut face.
+
+FAIL MODES:
+Fibrous stem cores included (does not squash cleanly under fork). Pieces exceed 15 mm after cutting (re-trim before plating). Pieces spring back after pressure (re-blanch 60 s, re-cut). Re-make rule: discard batch, return to PREP, re-cut from tender leaves only.
+
+### bf26_steamed_carrot_L7  (level L7)
+PREP:
+Use 250 g fresh peeled carrot, steamed soft in a steamer basket 18–20 min until a fork pierces it with no resistance. Cut into batons ≈50 mm long × 15 mm cross-section, matching how the food is normally served. Do not blend, do not sieve, do not add thickener, do not add water. This is the L7 reference specimen. Plate three batons for the test, one baton for each still, one baton for each clip.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the baton until the blanched nail whitens. The carrot must compress, mash, and break apart under the fork — it must not return to its original shape. Spoon tilt: lift a broken piece on a standard teaspoon and tilt; the piece stays on the spoon, it does not flow or drip. Fork drip: lift a baton on fork tines and hold over the plate; no liquid runs through or drips off. All three must pass to confirm L7.
+
+VISUAL QC:
+Muted orange surface, slight sheen from steaming, no pooled liquid on the plate. Edges of batons are rounded from cooking, not sharp. Surface breaks into coarse granules, not paste, under fork press.
+
+FAIL MODES:
+Baton still firm or springs back under fork — under-cooked, re-steam 4 min and re-shoot. Water pools on plate — drain batons on paper towel 30 s before plating. Carrot collapses to puree on fork — over-cooked, discard batch and start with a fresh carrot and 2 min less steam.

@@ -1,0 +1,64 @@
+### bf32_ripe_mango_L3  (level L3)
+PREP:
+Weigh 250 g peeled ripe mango flesh. Add 60 ml water. Blend 45 s on high until smooth. Pass through the 4 mm sieve; discard fibrous residue; you should obtain roughly 280 ml of purée. Transfer to a cup on the digital scale and tare. Add thickener at 3 g per 100 ml of purée (≈8.4 g for 280 ml) as the calibration starting point. Whisk 20 s, rest 2 min, re-whisk 10 s. If the flow test shows less than 8 ml retained, add thickener in 0.5 g increments and retest. The per-level note "blend-thin" applies: sieve first, then thicken; do not skip the sieve.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: spoon 5 ml, tip a fork; the drop falls in a continuous thin stream over 4-6 s, not a single drop. Fork pressure: press fork tines flat into the surface for 5 s; the surface blanches but the fork does not sink through, and the specimen does not run between tines. Spoon tilt: tilt a heaped spoon 45°; the specimen slides slowly and pools rather than pouring. Syringe flow test (the L3 gate): draw 10 ml into the IDDSI syringe, start the timer, release; after 10 s, 8-10 ml remains in the syringe barrel. Record actual grams used and actual retained volume on the data sheet.
+
+VISUAL QC:
+Glossy, uniform yellow with no visible fibre or seed flecks. Coats a spoon in a thin even layer that holds its shape briefly then settles. Holds a fork-drip pattern for a second before merging back into the bulk.
+
+FAIL MODES:
+Runny: retained volume below 8 ml; add 0.5 g thickener per 100 ml, rest 2 min, retest. Too thick: retained above 10 ml or fork holds its print without blanching; whisk in 5 ml water and retest. Lumpy / flecked: sieve was skipped or blender under-run; discard and re-blend 60 s then sieve. Any fail triggers a full remake; partial fixes are not logged.
+
+### bf32_ripe_mango_L4  (level L4)
+PREP:
+Peel ripe mango, remove pit. Weigh 250 g flesh, add 40 ml water. Blend 45 s on high until smooth. Pass through 4 mm sieve using the back of a spoon; discard fiber. Return puree to blender, blend 10 s to re-homogenize after sieving. Add thickener at 0 g per 100 ml starting point (calibration baseline); record actual grams added to reach L4 hold. No further dilution.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press fork tines into the specimen; puree must mound and not drip between tines under gravity; a clear tine outline should hold. Spoon tilt test: load a heaped spoon; surface stays mounded at a 20–30 degree tilt; no thin tail runs off. Fork drip test: lift fork; specimen sits in a mound above the tines and does not flow through gaps; no separate thin liquid pools on the plate. (Syringe flow test is for L3; not required here.)
+
+VISUAL QC:
+Specimen on fork: uniform bright yellow, no visible fiber or seed flecks, matte sheen, clean tine outline visible beneath the mound. Specimen on spoon: smooth, glossy, mounded surface that holds its peak. No free liquid ring around the mound.
+
+FAIL MODES:
+Specimen drips through fork tines or flows on tilt — too thin; re-make adding thickener in 0.5 g per 100 ml increments and re-test. Visible fiber streaks or seed specks after sieving — sieve was rushed; re-pass and re-blend. White starch haze or gummy mouthfeel — over-thickened; re-make from baseline and step up in 0.25 g per 100 ml increments. If any re-make is required, re-shoot all five media items before logging the specimen as L4.
+
+### bf32_ripe_mango_L5  (level L5)
+PREP:
+Weigh 200 g ripe mango flesh on the digital scale; reserve natural juice. Pulse in the consumer blender 6-8 s only — do not purée to smooth. Transfer to bowl, mash firmly with fork 30 s to break fibres; keep dice <=4 mm. Pass mash through the 4 mm sieve using the fork back; discard any coarse strands that will not pass. Weigh back; record retained mass. Re-incorporate the reserved juice; stir to uniform moistness. No thickener added; no water added. Target final 180-200 g. This step is impossible if the sieve yields <120 g — then the mango is too fibrous for L5 and must be reported as off-spec.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+S — Fork pressure: place fork tines down on 1.5 cm mound; press thumb on bowl until thumbnail blanches; the specimen must squash, leave clear tine marks, and not spring back. Spoon tilt: load 5 ml onto spoon; tilt 45°; specimen must sit in a cohesive pile, not slide or run. Fork drip: lift fork with sample; no thin liquid must drip through tines within 10 s. No separate thin liquid visible pooling on plate. All three must pass.
+
+VISUAL QC:
+On fork: moist bright orange-yellow particles clearly visible, all <=4 mm, tines print into the sample without resistance. On spoon: holds a peaked mound at tilt, glossy surface, no free juice pooling at the rim.
+
+FAIL MODES:
+(a) Blender run too long creates a smooth purée — fails fork pressure (springs back) and shows thin liquid; re-make by re-dicing fresh flesh, do not re-blend. (b) Sieve step skipped leaves >4 mm strands — fails particle size and pressure test; re-mash and re-sieve. (c) Juice drained off leaves dry crumb — fails spoon tilt (slides off); re-incorporate reserved juice or discard batch and start over.
+
+### bf34_dragon_fruit_L6  (level L6)
+PREP:
+Start with 150 g fresh ripe dragon fruit flesh, scooped from skin, no black seeds knocked loose. Cut into cubes against a 15 mm checkerboard grid; reject any cube >15 mm. Do NOT blend — the per-level note requires dice, not puree. Do NOT sieve. Do NOT add thickener or water. Working yield: ~140 g usable dice; discard ~10 g trim and seed-loss.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press thumbnail into one cube on the fork tines. Pass = thumbnail blanches white, the cube squashes flat, and it does NOT spring back when pressure is released. Spoon-tilt test: place three cubes on a spoon and tilt to 45°. Pass = cubes sit on the spoon without sliding off or falling; small moisture is acceptable. Fork-drip test: lift loaded fork vertically. Pass = no liquid runs or drips from the cubes. (No syringe test — L3 only.)
+
+VISUAL QC:
+Look for: (1) cubes measure ≤15 mm on every edge against the ruler; (2) flesh colour is uniform pink/magenta with visible black seed dots, no bruising or translucency; (3) cube holds its shape when lifted on the fork — if it slumps or smears, it is too wet/overripe and must be re-made with a firmer fruit.
+
+FAIL MODES:
+(1) Cube exceeds 15 mm — re-dice smaller, do not press on. (2) Overripe fruit smears under fork-pressure instead of squashing cleanly — swap to a firmer dragon fruit and re-cut. (3) Excess free liquid pools on the plate from bruised flesh — pat cubes dry on paper; if liquid persists, re-make with drier flesh.
+
+### bf37_apple_L7  (level L7)
+PREP:
+Take a fresh apple. Core and slice into 8 wedges, skin on, about 15-20 mm thick at the widest point, matching how an apple is normally eaten. Steam 4-6 minutes until just tender when pierced with a fork but still holding shape. Drain on a paper towel for 60 seconds. Do not blend, do not sieve, do not add thickener, do not add liquid. Working amount: 150-200 g steamed wedges. Serve at eating temperature. This is the reference specimen for L7 Regular.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: Press a standard dinner fork onto a wedge on a flat plate with normal thumb pressure for 10 seconds. Pass if the wedge flattens, cracks, or breaks apart but does not pass through the slots. Spoon tilt test: Pick up a wedge on a spoon and tilt until the spoon is near vertical. Pass if the wedge slides off or stays on the spoon without oozing through the tines. Fork drip test is not applicable at L7; record as N/A.
+
+VISUAL QC:
+Wedge holds its shape with no puree or juice pooling on the plate. Skin intact, edges defined, steam-moist surface but not wet or dripping. Fork tines leave a clean dent without the wedge collapsing into mush.
+
+FAIL MODES:
+Over-steamed wedge turns to mush and passes through fork slots: re-make with 60 seconds less steam. Apple variety too soft (e.g., overripe McIntosh): re-make with firmer variety such as Granny Smith or Pink Lady. Sauce or juice pools on plate from under-draining: re-make with a full 90-second drain.

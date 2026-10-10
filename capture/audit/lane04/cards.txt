@@ -1,0 +1,129 @@
+### bf04_thin_wheat_noodles_L3  (level L3)
+PREP:
+Weigh 250 g cooked thin wheat noodles on the digital scale. Blend with 180 ml room-temperature water on high for 45-60 s until fully smooth. Pass through the 4 mm sieve; press residue with the back of a spoon and discard what remains. For each 100 ml of sieved liquid, add 1.5 g thickener as the calibration starting point; the operator must record the actual grams used to hit target. Stir 30 s, rest 60 s, stir 10 s. Re-weigh and record final mass. Per-level note says blend-thin: confirm the blend is fully smooth before sieving; if strands remain, re-blend 20 s.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift fork from specimen; liquid drips slowly in a continuous thin stream through the tines, not in dollops. Fork press: tines leave a clear, shallow impression on the surface with no flow back into the groove. Spoon tilt: spoon holds its shape when tilted to 45 degrees, then slides off in one mass within 1-2 s, not as a free pour. Syringe flow test: fill the 10 ml syringe, release for 10 s; 8-10 ml must remain in the barrel. All four must pass before capture.
+
+VISUAL QC:
+Surface looks glossy and homogenous with no noodle strands, lumps, or bubbles. Coats the spoon back in an even film about 1-2 mm thick. Holds a soft mound on the fork without running through the tines between lifts.
+
+FAIL MODES:
+Too runny: drip is a free stream or syringe leaves under 6 ml; add 0.2 g thickener per 100 ml, rest, retest. Too thick: fork drag is heavy or spoon does not slide; blend in 10 ml water per 100 ml and retest. Visible strands on sieve or in QC: re-blend 20 s and re-sieve; if still present, discard and remake.
+
+### bf36_pear_L3  (level L3)
+PREP:
+Weigh 200 g of fresh pear, peeled and cored. Steam until soft, 8–10 min. Transfer to blender, add 80 ml water, blend 30–45 s until smooth. Pass through the 4 mm sieve; press and discard any fibrous residue that will not pass — note this on the card, do not force it. Weigh the sieved purée; for L3 add thickener at the calibration starting point of 2.0 g per 100 ml purée, then stir 20–30 s and re-weigh. Add more thickener in 0.2 g increments per 100 ml only if the flow test fails; record the final grams used per 100 ml on the data sheet.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift fork 4–5 cm; liquid drips slowly in a continuous thin stream, not in drops. Fork pressure: tines leave clear, persistent lines on the surface when pressed lightly. Spoon tilt: spoon held at 30°; specimen flows off in a steady ribbon, not a lump, not a pour. Syringe flow test: fill the 10 ml syringe, cut the tip as specified; after 10 s, 8–10 ml remains. Pass = 8–10 ml retained.
+
+VISUAL QC:
+On the fork: thin even coating, drips in a slow continuous thread. On the spoon: smooth, glossy, no lumps or fibres, holds a soft mound that slumps when tilted. No free liquid pooling on the plate.
+
+FAIL MODES:
+Too thin: drips in drops from fork, <8 ml retained in syringe. Re-make, add 0.2 g thickener per 100 ml, retest. Too thick: holds shape on spoon tilt, >10 ml retained. Re-make, thin with 5–10 ml water, retest. Fibrous residue not sieved: catches in fork drip or syringe tip. Re-blend finer, re-sieve fully, retest.
+
+### bf04_thin_wheat_noodles_L4  (level L4)
+PREP:
+Cook 80 g thin wheat noodles in boiling water until fully tender, drain, and cool to room temperature. Weigh 100 g cooked noodles into the blender, add 30 ml water, and blend 45–60 s, scraping the lid and jar once. Pass through the 4 mm sieve; discard any residue and weigh what passed. In a small bowl, stir thickener into the blended mass at 2 g per 100 ml (calibration starting point — record the actual grams used and final texture). Let rest 2 min, then stir. Reject if any separate thin liquid pools or the mass flows through fork tines. If it flows, add 0.5 g thickener per 100 ml, stir, rest 2 min, retest. If it crumbles, add 5 ml water and re-blend 10 s.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork-drip: lift a fork tines-down through the specimen; the mass must sit in a mound above the tines with no drip or flow for 10 s. Spoon-tilt: scoop, then tilt the spoon 45°; the specimen must hold its shape and not slide off. Fork-pressure: press the fork tines flat into the specimen; the surface should show a clear thumbprint imprint with no separate liquid squeezing out. All three must pass.
+
+VISUAL QC:
+Specimen mounds cleanly on the spoon with a smooth, glossy surface and no visible noodle strands or lumps. No thin liquid pools around the base on the plate. Fork tines come out coated but the mass stays heaped above, not dripping.
+
+FAIL MODES:
+Too runny: flows through tines or forms a puddle — add 0.5 g thickener per 100 ml, rest 2 min, retest. Too stiff: cracks or crumbles on the spoon — add 5 ml water, re-blend 10 s, retest. Visible strands or grit: re-blend 30 s and re-sieve; if still present, re-make from a new cooked batch. Two failed re-makes: discard and start over with a fresh 80 g cook.
+
+### bf36_pear_L4  (level L4)
+PREP:
+Steam fresh pear until fork-tender. Weigh 200 g cooked flesh. Add 40 ml water. Blend 45-60 s on high until smooth. Pass through 4 mm sieve; discard fibrous residue. Re-weigh puree. If puree reads below L4 on fork drip, add thickener at 1.0 g per 100 ml as the calibration starting point; record actual grams used. Stir, rest 2 min, re-test. No second sieving, no added sugar.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a fork loaded with ~5 ml puree; puree sits as a coherent mound above the tines, does not drip or run through gaps. Pass if mound holds 5 s. Fork pressure: press fork tines into puree on a flat plate; puree yields to pressure, shows clear tine marks, but does not run back into the grooves. Pass if tine marks remain visible after the fork lifts. Spoon tilt: load a spoon, tilt to 90 degrees over a plate; puree clings, slides only as a single mass, no pour. Pass if mass stays cohesive. No separate thin liquid pools around the mound. No syringe test at L4.
+
+VISUAL QC:
+Surface is matte-glossy, uniform, with no visible fibre flecks or water separation. Colour is even cream to pale beige from end to end. Spoon retains a clean rounded heap; fork tines come up coated but the spaces between tines remain filled by puree, not empty.
+
+FAIL MODES:
+Puree too wet: runs through fork tines or pools liquid on plate. Re-make: add thickener in 0.5 g per 100 ml steps, rest 2 min, retest. Puree too stiff: cracks on the spoon, falls off in chunks. Re-make: blend in 5 ml water, retest; do not exceed 60 ml total added water. Visible fibre or skin specks: re-sieve once; if still present, re-blend 15 s and re-sieve.
+
+### bf04_thin_wheat_noodles_L5  (level L5)
+PREP:
+Weigh 200 g cooked thin wheat noodles onto the plate. Chop across the bundle with a fork until strands measure ≤4 mm. Add 60 ml warm broth per the per-level note and mash with the fork until cohesive and moist; no separate thin liquid should pool. Do not blend — noodles become a paste and lose L5 texture. Do not add thickener. If strands stay longer than 4 mm after chopping, do not proceed; re-chop. Record final mass.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen until the thumbnail blanches white. Specimen must squash, not spring back, and must not recover its shape when the fork lifts. Spoon tilt: scoop 4 ml onto a spoon and tilt 45°. Specimen must hold together and fall off in one mass, not drip, not slide. Fork drip: lift a forkful 5 cm above the plate; no thin liquid must run off continuously. Reject if drips form a steady stream.
+
+VISUAL QC:
+Visible particles no larger than a 4 mm checkerboard square. Surface glistens but no free broth in the plate well. Fork tines leave a clean impression that stays.
+
+FAIL MODES:
+Strands longer than 4 mm: re-chop, do not re-sieve. Dry, crumbly mass lacking cohesion: add 10 ml broth, re-mash, retest. Thin broth pooling on plate: drain briefly on the sieve, then retest fork-drip. Two failed re-makes: discard batch, note on capture sheet.
+
+### bf36_pear_L5  (level L5)
+PREP:
+Weigh 200 g fresh pear, peeled and cored. Steam 8-10 min until fork-soft. Drain. Transfer to a bowl; mash thoroughly with a fork for 60-90 s until no lumps exceed coarse crumbs. Pass the mash through the 4 mm sieve, pressing with the back of the spoon; discard retained fibres. Re-weigh; target 180-200 g yield. If the mash looks wet or releases pooling liquid, blend 5-10 s to homogenise, then re-sieve. Do not add water, milk, or juice. Thickener is not required at L5; keep thickener sealed and record 0 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines into a heaped teaspoonful until the tines blanch white, about 5 s. Specimen must squash and not recover its shape when the fork is removed; the tines leave a clear imprint. Spoon-tilt test: scoop a teaspoonful and tilt the spoon 30 degrees; specimen should hold together in one bolus, not slide or drip. Fork-drip test: lift a forkful 5 cm above the plate; nothing should drip through or off the tines. No separate thin liquid should pool on the plate after 60 s. No syringe flow test at L5.
+
+VISUAL QC:
+On the fork: cohesive lumps no larger than 4 mm, surface glistens but no liquid falls when held. On the spoon: one mound that keeps its shape when tilted, no run-off. On the plate: thin film only, no free juice.
+
+FAIL MODES:
+Lumps above 4 mm after sieving: re-mash and re-sieve; do not proceed. Visible thin liquid pooling on the plate or dripping from fork: drain 30 s on the sieve, then re-test. Specimen recovers shape after fork press or slides off the tilted spoon: too firm or too dry; add 5 g hot water per 100 g, mash again, and re-test.
+
+### bf06_white_bread_L6  (level L6)
+PREP:
+Weigh 200 g of white bread, crusts removed, crumb only. Cut the crumb into cubes no larger than 15 mm using the ruler as a guide. Discard any cube that exceeds 15 mm. Place cubes in a bowl and add 30 ml water per 100 g bread; stir and rest 2 minutes so the bread softens. Do not blend; do not sieve; no thickener is used at L6. Fork-mash lightly only if a cube still feels firm at the edges.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the thumb nail into a cube until the nail blanches white. The cube must squash and stay squashed — no recovery. Fork drip test is not required at L6 but record the cube holds its shape with no drip from the fork prongs. Spoon tilt is not required at L6. L3 syringe flow does not apply.
+
+VISUAL QC:
+Cubes sit on the fork tines as distinct soft pieces, not a paste. Surface looks moist, slightly springy when touched, no dry crust visible. Size of every cube reads 15 mm or smaller against the ruler.
+
+FAIL MODES:
+Cubes over 15 mm — re-cut and re-check against ruler. Crust left on — re-pick, crust off only. Cube springs back after thumbnail press — add 5 ml water per 100 g, rest 1 minute, retest; if still firm, discard and remake.
+
+### bf38_watermelon_L6  (level L6)
+PREP:
+Cut 250 g seedless watermelon flesh into 25 mm slabs, discard rind. Pulse in consumer blender 4 s, stop, scrape, pulse 3 s more — stop at coarse chop with visible chunks, do not purée. Press through the 4 mm sieve with the back of a spoon; discard pulp and excess juice that drains through. Dice the sieve-retained solids to ≤15 mm cubes (≤15 mm in every dimension). Measure 200 g of diced pieces into the capture bowl. No thickener, no added liquid — L6 calibration point is the as-cut, as-diced specimen.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure: press fork tines fully into one piece against a white plate. Pass criterion — thumbnail blanches white on the fork tine, the piece squashes flat, and it does not spring back when the fork lifts. Fork-drip: lift five pieces on fork tines, hold 5 s above plate. Pass criterion — no juice drips off the fork. Spoon-tilt: load five pieces on spoon, tilt to 90°. Pass criterion — pieces sit on the spoon without sliding or falling. No L3 syringe test applies.
+
+VISUAL QC:
+On the fork: discrete cubes with sharp 15 mm edges, bright red, moist but not pooling liquid. On the spoon at 90°: pieces hold position, a thin juice sheen — no puddle on the plate. On the plate after fork-press: flat red smear, no intact cube remains.
+
+FAIL MODES:
+Over-blended to purée: fails fork-pressure, passes through sieve as liquid — re-dice from a new slab, pulse only twice. Pieces >15 mm: fails the dice rule — re-cut all pieces to ≤15 mm and re-check with ruler. Excess free juice pooling on plate: indicates sieve was skipped — return solids to sieve, press again, drain 30 s.
+
+### bf06_white_bread_L7  (level L7)
+PREP:
+Take the loaf as bought. Cut one slice straight from the sealed/just-opened loaf using the kitchen knife; do NOT toast, butter, soak, blend, sieve, or add thickener. Record the slice mass to 1 g on the digital scale; expect roughly 25–35 g for a standard sandwich slice. Place the slice flat on the capture board with the 100 mm ruler and 15 mm checkerboard in frame. No water, no blender, no sieve. The per-level note "slice as sold" is honoured: the reference specimen is the bread exactly as the bakery sells it.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+L7 is proven by appearance plus fork pressure. Fork pressure: press the fork tines firmly into the slice; the bread must NOT pass through the slots, NOT smear, and the slice must retain its original shape on lift. Spoon tilt: slide the slice onto a spoon and tilt to 90°; the slice must NOT drip, flow, or fall off. Fork drip: lift the fork with a pierced piece and hold it level for 5 s — no drips, no strands. No syringe flow test applies at L7.
+
+VISUAL QC:
+Slice holds its full rectangular outline with intact crust edge. Crumb is matte, dry, and springy, not glossy or compressed. Fork tines leave a clean dent that rebounds partially; no paste, smear, or extrusion through the slots.
+
+FAIL MODES:
+Over-compression turning the crumb to a paste that extrudes through fork slots = fail, remake with a fresh slice and lighter press. Stale or very soft bread that slumps or drips from the tilted spoon = fail, remake from a fresh loaf. Adding any moisture or thickener = fail and remake from dry slice as sold.
+
+### bf51_curry_fish_balls_L7  (level L7)
+PREP:
+Place the curry fish balls and sauce onto the digital scale. Record the starting mass in grams as served; do not drain or blend. The per-level note states balls with sauce as served — the whole dish is the specimen, so no blender, sieve, thickener, or added water/liquid is used. Transfer the intact balls with their sauce onto the capture tray on the A4 kit, keeping balls whole and spaced so the 15 mm checkerboard and 100 mm ruler stay visible at frame edge. Confirm mass again before the first shot.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the tines firmly into a ball until the thumbnail blanches white. The ball must not fully compress, squash, or change shape so the fork slides out clean — it should dent then recover. Spoon tilt: lift a ball on a standard spoon and tilt 45 degrees; it must sit on the spoon without flowing off, dripping, or sliding. Fork drip: hold a fork with a ball clear of the plate for 10 seconds; no continuous drip, stream, or drop from the ball or clinging sauce. All three confirm L7 Regular. No syringe flow test applies at this level.
+
+VISUAL QC:
+Ball keeps its rounded, intact shape on the fork. Sauce clings as a thin coating, not pooling or running off. Surface shows a clean fork-dent that springs back, no smear, no mashed interior visible.
+
+FAIL MODES:
+Sauce is thin enough that the fork drip test produces a continuous drip — L7 fails, remake is not possible since the dish is served as bought; record the failure and reshoot. Ball splits or mashes fully under fork pressure, losing its shape — specimen invalid, re-record with a firmer ball from the batch. Salt crust or sauce pooling obscures the checkerboard pattern in the hero shot — blot gently with the fork tip and re-shoot.

@@ -1,0 +1,64 @@
+### bf31_banana_L3  (level L3)
+PREP:
+Peel ripe banana; weigh 120 g. Add 60 ml water. Blend 25-30 s on high until smooth and pourable (per-level note: blend-thin). Sieve through the 4 mm sieve into a bowl; press with the back of a spoon; discard fibre. Weigh the sieved puree and the bowl to get volume by difference (1 g ≈ 1 ml). Add thickener at the calibration starting point of 3.0 g per 100 ml of puree. Stir with a fork for 30 s, rest 2 min, stir 15 s. Operator records the actual grams used on the data sheet. If it will not pour off the spoon, add 5 ml water and re-stir; if it drips freely through the fork, add 0.2 g thickener and re-stir. Total target: about 180 g finished specimen.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip test: tilt a fork loaded with specimen; liquid drips in a slow, continuous stream, not a steady pour and not a single dollop. Pass = slow continuous drip. Fork pressure test: press fork tines flat against the specimen surface; surface yields easily, tines leave a clear print, specimen does not hold the tine shape when the fork is lifted. Pass = clear print, no standing shape. Spoon tilt test: a spoon held at 45° releases most of its load in a slow ribbon; a thin coating remains. Pass = slow ribbon, thin residual. IDDSI flow test: fill the syringe to 10 ml; after 10 s, 8-10 ml remains. Pass = 8-10 ml retained.
+
+VISUAL QC:
+Specimen on the fork: glossy, smooth, no visible fibre lumps; drips off the lower tines before the upper ones clear. On the spoon: fluid surface levels flat when the spoon stops moving, with no peaks or splits. Colour uniform pale cream, no brown specks.
+
+FAIL MODES:
+Too thin: drip test runs as a steady pour, syringe leaves under 8 ml; add 0.2 g thickener per 100 ml, stir, rest 2 min, re-test. Too thick: fork drips as a single dollop or not at all, syringe leaves over 10 ml; whisk in 5 ml water, re-test. Visible fibre on the fork after drip: sieve was skipped or rushed; re-sieve and re-thicken, do not patch the existing batch.
+
+### bf31_banana_L4  (level L4)
+PREP:
+Weigh 150 g peeled ripe banana on the scale. Cut into 2 cm coins. Add to blender with 60 ml water. Blend 25 s on high, stop, scrape down, blend 20 s more. Pass through the 4 mm sieve using the back of a spoon; discard fibrous residue. Return puree to blender, add 0.0 g thickener for this L4 calibration starting point, blend 10 s to homogenize. The operator records the actual thickener mass used and any extra water on the capture sheet. Total volume target: roughly 200 ml.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press fork tines into the specimen until the tines blanch white. The puree must hold the indentation clearly with no surface recovery for several seconds — a clean dent, not a slow slump. Spoon tilt test: load a heaped teaspoon, tilt to 90 degrees. The specimen must sit in a mound with zero flow off the spoon. Fork drip test: lift a forkful 5 cm above the surface. The mass must sit in a mound above the tines with no drip or thread. No separate thin liquid may pool on the surface of the specimen at any time.
+
+VISUAL QC:
+Surface shows a soft satin sheen, not glossy or wet. Color is uniform pale cream, no brown flecks, no seed specks, no fiber strings. The mound on the spoon holds clean edges with no slumping shoulders.
+
+FAIL MODES:
+Runny: puree flows through fork tines or drips in threads — re-blend 5 s and add thickener in 0.5 g increments until the fork-drip test holds a mound. Lumpy: visible fiber or seed specks remain after sieving — re-pass through the 4 mm sieve, do not push through with force. Thin liquid pooling on top after standing 30 s — drain off, re-blend briefly; if it recurs, the banana was under-ripe, swap batch and restart.
+
+### bf31_banana_L5  (level L5)
+PREP:
+Weigh 150 g peeled ripe banana on the digital scale. Mash thoroughly with a fork against the bowl wall for 60-90 seconds until uniform. Press the mash through the 4 mm sieve using the back of the fork; discard any fibrous strands retained. Return the sieved mash to the bowl and fold briefly to redistribute moisture. Do not blend, do not add liquid, do not add thickener. Confirm final mass on the scale; record.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines of the fork into a heaped spoonful of mash until the tines blanch, then withdraw. Pass = the slot fully collapses, the mash squashes easily, and does not recover its shape when the fork is lifted. Spoon tilt test: scoop a teaspoon, tilt to 90 degrees over the bowl. Pass = the specimen sits in a clump and slides off slowly as one mass; no thin liquid drips. Fork drip test: lift a loaded fork and hold level. Pass = no drip runs off within 5 seconds. All three must pass.
+
+VISUAL QC:
+Specimen holds a soft mound on the spoon with rounded edges, shows a slight sheen from natural moisture, and contains no visible lumps above 4 mm. The colour is uniform pale yellow with no white fibrous threads.
+
+FAIL MODES:
+(1) Lumps or fibrous strands exceed 4 mm — re-sieve the entire batch; if strands persist, re-mash then re-sieve. (2) Specimen recovers shape after fork press (too firm) — fold in 5 g water per 100 g, re-test. (3) Thin liquid pools or drips — drain on a paper towel 30 seconds, re-test; if still wet, the banana is overripe and a fresh fruit must be used.
+
+### bf33_papaya_L6  (level L6)
+PREP:
+Select a ripe papaya, peel, halve, and scoop out seeds. Dice the flesh on a clean board, then pass pieces through a 4 mm sieve to catch fragments above 15 mm; re-dice any oversize bits until the whole batch passes. You need 200 g of sieved pieces for the specimen plate. Do not blend — pureeing destroys the L6 bite-sized texture. Do not add thickener; L6 is solid pieces, not a thickened liquid. Do not add water.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the flat of a fork onto one piece until your thumbnail blanches white, hold 10 s, then lift. Pass = piece squashes and does not recover its shape. Spoon-tilt test: rest five pieces on a metal spoon and tilt to a 45-degree angle for 10 s. Pass = all pieces sit on the spoon, no slide, no drip. Fork-drip test is not used at L6. No syringe flow test at L6.
+
+VISUAL QC:
+Pieces on the fork should look moist and glossy with sharp 15 mm edges visible against the ruler. Surface should hold its shape when lifted — no weeping juice pooling on the spoon. Color uniform pale orange, no translucent mush at the cut faces.
+
+FAIL MODES:
+Pieces recover after fork press — too firm, re-test a riper section or discard. Pieces smear or crush to paste — overripe or blended, restart with a firmer fruit. Pieces larger than 15 mm — re-dice and re-sieve before capture.
+
+### bf36_pear_L7  (level L7)
+PREP:
+Select a firm, ripe pear. Rinse, dry, and place on a clean board. Cut into 8 wedges; core each wedge by removing the seeds and central stem fibres with a paring knife. Cut wedges lengthwise into slices approximately 8–10 mm thick. Weigh out 80–120 g of slices as the reference specimen. Do not blend, do not sieve, do not add thickener, do not add water. Serve slices whole on a white plate as normally presented. Record the actual mass in grams on the capture sheet. The per-level note states fresh slices as regular, so processing is not required and would invalidate the L7 specimen.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: Press the tines of a fork flat onto a slice with normal thumb pressure. The slice must not compress, squish, or change shape; it must retain its full original form. Spoon tilt: Slide a slice onto a metal spoon and tilt the spoon to a 45-degree angle. The slice must remain on the spoon with no sliding or flow. Fork drip: Lift a pierced slice above the plate; no liquid, puree, or particles must drip from the fork. All three tests must pass for L7 confirmation.
+
+VISUAL QC:
+Slices hold their shape on the fork with sharp, intact edges. Flesh surface looks matte and fibrous, never glossy or wet. No pooling liquid visible on the plate beneath the slices.
+
+FAIL MODES:
+Slices are too ripe or over-steamed and compress under fork pressure: remake with a firmer pear. Cut pieces are too thin and bend under fork pressure: remake at 8–10 mm thickness. Juice pools on the plate from bruising or warming: pat slices dry before capture and re-shoot.

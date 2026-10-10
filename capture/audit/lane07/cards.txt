@@ -1,0 +1,129 @@
+### bf07_mantou_steamed_bun_L3  (level L3)
+PREP:
+Weigh 120 g defrosted mantou (no crust if present). Cut into 2 cm cubes. Add to blender with 80 ml cool water. Blend 45-60 s, scraping once, until smooth. Pass through 4 mm sieve using the back of a spoon; discard any residue that will not pass. Weigh the sieved purée into the capture bowl. Add thickener at the calibration starting point of 2.5 g per 100 ml of purée; whisk to a uniform lump-free consistency. Record the actual grams used. Adjust with small thickener pinches (±0.2 g) until the specimen drips slowly through fork tines.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip test: hold fork loaded with specimen; correct L3 drips slowly in a continuous thin stream, not a single drop and not a pour. Spoon tilt test: specimen holds its shape on a tilted spoon, mounds, then slowly sloughs; it must not run off. Fork pressure test: when fork presses on specimen surface, the tines leave a clear imprint that does not fill in quickly. IDDSI flow test (mandatory for L3): fill 10 ml syringe, cut nozzle; after 10 s the syringe must retain 8-10 ml. Pass band is 8-10 ml retained. Record retained ml.
+
+VISUAL QC:
+Surface looks glossy and uniform, no white lumps or fibrous streaks. Holds a soft mound on the spoon without flattening or weeping. Drips from the fork tines are continuous, thin, and slow — one drip roughly every second, not a thread.
+
+FAIL MODES:
+Too runny: retained volume under 8 ml — add 0.2 g thickener, re-whisk, retest. Too thick: over 10 ml retained or no drip from fork — add 5 ml water, re-blend briefly, re-sieve, retest. Grainy or lumpy after sieving: re-blend 15 s and re-sieve; if residue still exceeds roughly 10% by volume, re-make from a fresh 120 g portion.
+
+### bf39_orange_segments_peeled_L3  (level L3)
+PREP:
+Weigh 200 g fresh peeled orange segments on the digital scale. Add 80 ml water. Blend in the consumer blender for 45 s until smooth. Press through the 4 mm sieve; discard pulp and seeds retained. Weigh the strained purée back on the scale. Add thickener at 4.5 g per 100 ml of purée as the calibration starting point; record the actual grams used. Stir with a fork for 30 s, rest 2 min, re-stir 15 s. If the drip through fork tines is faster than the L3 window, add thickener 0.5 g at a time, rest, and re-stir until the flow window is hit. Record final purée mass, thickener mass, and total volume used.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift a forkful 5 cm over a plate; the purée should drip slowly through the tines, not run in a continuous stream. Fork pressure: pressing the fork tines into 1.5 cm of purée on a spoon leaves a clear pattern that does not flow back together. Spoon tilt: tilting a spoonful 45 degrees shows the purée moves as a single bolus, not liquid. Syringe flow test: fill the 10 ml IDDSI syringe, release, wait 10 s; 8-10 ml should remain in the syringe. All four must pass.
+
+VISUAL QC:
+On the spoon: a soft, glossy mound with no free liquid pooling at the edge. On the fork: a slow, thick drip once every 1-2 seconds, no splatter. Homogeneous orange colour with no visible pulp specks or seeds.
+
+FAIL MODES:
+Too runny: drip is continuous or syringe reads under 8 ml — add 0.5 g thickener per 100 ml and re-test. Too thick: no drip or syringe reads over 10 ml — thin with 5 ml water, rest, re-test. Visible pulp or seeds in final purée — re-sieve before adding more thickener; do not re-blend after thickener is added, as blending breaks the thickened matrix.
+
+### bf07_mantou_steamed_bun_L4  (level L4)
+PREP:
+Weigh 150 g steamed mantou, torn into ~2 cm pieces. Add 90 ml room-temperature water. Blend 60 s on high, scrape down, blend 60 s more. Sieve once through the 4 mm sieve using the back of a spoon; discard residue if any lump remains larger than a pea. Return puree to blender, add 2.0 g thickener per 100 ml of puree (calibration starting point — record actual grams used). Blend 20 s to incorporate. Rest 2 min, stir, retest. Hold warm is not required; test at ~20–25 °C.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: mound the puree on the fork tines and lift; it must sit in a mound above the tines and not drip continuously through. Fork pressure test: press the fork tines into the mound until the blanched nail shows white through the puree; the surface must not separate, no thin liquid must pool. Spoon tilt test: scoop a heaped teaspoon, tilt the spoon 45°; the specimen must hold its shape and slide off as a single mass, not flow. L4 does not use the 10 ml/10 s syringe flow test (L3 only).
+
+VISUAL QC:
+Surface is matte and uniform, no visible lumps or bun-fibre specks. Color is even off-white, no dark streaks from crust. Holds a clean ridge when the fork is dragged across the top; does not level out.
+
+FAIL MODES:
+Specimen flows through fork tines or drips in a continuous thread → under-thickened, add 0.5 g thickener per 100 ml and re-blend. Thin liquid separates on the plate after pressure → too wet, return to blender with extra 0.3 g thickener per 100 ml. Lumps >4 mm remain after sieving, or puree cracks when the fork lifts → blend longer and sieve again before re-testing; do not proceed to media.
+
+### bf40_seedless_grapes_L4  (level L4)
+PREP:
+Weigh 250 g fresh seedless grapes. Rinse, destem, halve. Add to consumer blender with 40 ml water. Blend 45 s on high. Pass through the 4 mm sieve; discard skins. Return pulp to blender, blend 20 s. Re-weigh puree. Add thickener at 1.5 g per 100 ml of puree as the calibration starting point; record the actual grams used. Stir 15 s, rest 60 s. If fork-drip test fails (see below), add 0.3 g thickener per 100 ml and repeat rest.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork-drip: load fork, lift 10 cm above surface. Pass = puree sits in a mound above the tines for ≥10 s, does not drip or flow between tines. Fork pressure: press fork tines flat into specimen on a plate; puree yields to pressure, thumb blanch visible through tines, then holds the pressed shape without spreading. Spoon tilt: scoop, then tilt spoon 90°. Pass = specimen stays mounded, no thin liquid separates, none falls off. No 10 ml/10 s syringe test (L3 only).
+
+VISUAL QC:
+Surface is uniform pale green-grey, glossy, no visible skin fragments, no free liquid pooling at plate edge. On fork tines: a cohesive mound, not a thin film. On spoon: rounds off the edges, holds a clean heap when tilted.
+
+FAIL MODES:
+1. Mound flattens within 5 s on spoon tilt or liquid seeps from puree → too thin; add 0.3 g thickener per 100 ml, rest 60 s, re-test. Limit two thickener additions; if still failing, re-blend with 20 ml less water and re-test. 2. Visible skin specks or fibrous strings after sieve → sieve again through 4 mm before adding thickener. 3. Puree weeps thin green liquid onto plate within 30 s → over-blended or under-thickened; re-blend 10 s, add 0.3 g thickener per 100 ml, re-test.
+
+### bf07_mantou_steamed_bun_L5  (level L5)
+PREP:
+Take 200 g thawed mantou. Cut into ~2 cm cubes. Place in blender; add 60 ml water. Blend 10 s. Pass through the 4 mm sieve using the back of a spoon; discard retained lumps. Weigh sieved mash. Add water 10 ml at a time until the mash holds its shape on a spoon but a light shake flows, staying within L5 — do not exceed 100 ml total added water. Stir in 1.0 g thickener per 100 ml of mash and rest 60 s. Re-mash with a fork until uniform.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test (L5 proof): press fork tines into the specimen on a plate until the thumbnail blanches white. Specimen must squash and not spring back. Pass = visible deformation, no recovery. Spoon tilt test: load 5 ml onto a spoon, tilt to full vertical. Specimen must stay on the spoon without sliding or dripping. Pass = zero drop in 10 s. Fork drip test (absence-of-thin-liquid proof): lift fork holding 5 ml above plate for 10 s. Pass = no drip falls. No syringe test required for L5.
+
+VISUAL QC:
+Mash sits in a soft mound, not a puddle; gloss on the surface but no free liquid pooling around it; tiny pale flecks visible at the sieve grain, all clearly under 4 mm against the ruler.
+
+FAIL MODES:
+Too dry: mash cracks on the spoon tilt; add 5 ml water and re-rest. Too wet: free liquid pools or drips from fork; fold in 0.5 g thickener and rest 60 s. Lumps >4 mm: re-sieve before filming.
+
+### bf39_orange_segments_peeled_L5  (level L5)
+PREP:
+Start with 200 g fresh peeled orange segments on the digital scale. Pull the segments apart by hand and discard any pith, seeds, or hard membrane. Coarsely chop on a board using a chef's knife until pieces are visually no larger than ~10 mm; the per-level note allows chop ≤4 mm with juice retained, so chop finer, working through until every piece is ≤4 mm. Do NOT blend: blending destroys the fibrous segment structure and produces a puree that fails L5. Do NOT sieve. Do NOT add thickener; L5 must hold its own juice. Keep all released juice in the bowl and fold it back through the chopped mass with a fork so the surface glistens but no thin liquid pools. Target final specimen mass 180–200 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test (primary for L5): press the fork tines into the specimen on a flat plate until the thumbnail blanches white. The mass must squash, change shape, and not spring back; crumbs between tines are acceptable. Spoon-tilt test: a small mound on a spoon must hold its shape when the spoon is tilted to 45°, then slide off in one piece when fully inverted. Fork-drip test: lifting the fork, no thin orange liquid should run off separately — only the moist mass should travel with the fork. Pass = all three.
+
+VISUAL QC:
+On the fork: discrete moist particles ≤4 mm, none fibrous or whole-segment shaped; surface glistens, no puddle of juice on the plate. Colour uniform pale orange; no visible white pith strands. On the spoon: holds a rounded mound without slumping.
+
+FAIL MODES:
+(a) Any visible piece >4 mm — re-chop that piece, do not re-process the whole bowl. (b) Juice pools on the plate (thin liquid separates) — fold juice back through; if it still pools, the segment membranes were over-broken, re-make from 200 g fresh. (c) Mass springs back under fork or slumps off the spoon — specimen is too dry or too intact; re-chop finer and re-test. Two failed re-makes: stop and log as material unsuitable for L5.
+
+### bf09_steamed_taro_L6  (level L6)
+PREP:
+Start with 250 g steamed taro. Cut into 15 mm cubes with a knife and ruler check; reject any cube above 15 mm. Do not blend. Do not sieve. Do not add thickener or liquid — L6 pieces must hold shape under fork pressure, and liquid would mask the failure mode we are capturing. Do not mash, rice, or pulse. Keep cubes whole. Portion 8–10 cubes (≈60–80 g) onto the fork for the press test; keep remainder on plate for hero and top-down stills. If any cube exceeds 15 mm after cutting, re-trim before capture.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the tines into a cube with the thumb until the thumbnail blanches white. Pass: cube squashes, breaks apart, does not return to original shape. Cube must break under thumbnail pressure, not just dent. Size check: all cubes measure ≤15 mm on the ruler — any cube above is a fail. Spoon tilt is not the gate test for L6 but perform it on a single cube to confirm the piece does not flow; it should sit and slide, not pour. Fork drip is not applicable — pieces do not drip.
+
+VISUAL QC:
+Cube edges are soft, slightly rounded, no crisp raw-looking corners. Surface looks moist but not wet or pooled with liquid. Colour is even pale lavender-grey with no dark firm core visible at the cut face. Cube compresses visibly under fork with no spring-back.
+
+FAIL MODES:
+Cube exceeds 15 mm — re-trim and reshoot. Cube springs back under thumbnail — pieces under-steamed, re-steam 5 min and reshoot. Cube crumbles to paste before pressure — over-steamed, cut from a fresh batch at 12 min steam.
+
+### bf43_baked_egg_custard_L6  (level L6)
+PREP:
+Open chilled cups; scoop 200 g of set custard into blender jug. Pulse 3–4 s only, just to break the set gel into a coarse paste. Do not over-blend — L6 pieces must remain distinct, not puréed. Press the paste through the 4 mm sieve using the back of a spoon; discard what stays behind. Return sieved paste to jug. The per-level note requires cubes ≤15 mm; do not sieve finer. Using the fork-press method, cut the paste on a board into 15 mm × 15 mm × 15 mm cubes with a dinner knife. Record actual sieve-pass weight (g) on the capture sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press a cube flat with the fork tines for 5 s. Pass if thumbnail blanches white, the cube squashes, and it does not recover shape when fork is lifted. Spoon tilt: no flow off a tilted spoon (L6 holds shape). Fork drip: nothing drips through the tines when the cube is lifted. L6 = holds shape + squashes under fork; reject if it spreads, runs, or fully recovers.
+
+VISUAL QC:
+Cube keeps clean 15 mm edges with slightly rounded corners from cutting; pale yellow, moist but not glossy with free liquid; no separate water pooling on the plate around the cube.
+
+FAIL MODES:
+Over-blended into smooth purée = L4/E1, remake and pulse only 2 s. Cube splits or crumbles under fork instead of squashing cleanly = too dry, remake with 5 ml water per 100 g blended before sieving. Free liquid weeps around cube on plate = too wet, drain 30 s on sieve before plating. Any fail = new take number, log the change.
+
+### bf09_steamed_taro_L7  (level L7)
+PREP:
+Do not blend, sieve, or add liquid. Take a wedge of steamed taro as it comes from the steamer, approximately 50 g. Record the exact starting weight on the capture sheet. Cut or break one wedge into a piece roughly 30 mm × 30 mm × 20 mm for the fork-press test; keep a second wedge whole for the reference specimen. Confirm the taro is tender enough to cut cleanly with a fork — no further processing. No thickener. No sieve.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: place the taro piece on a flat plate, press the fork tines flat onto it until the tines blanch fully white. The taro must squash, change shape, and not return to its original form — it does not need to pass through the gaps. Fork drip: lift the fork; nothing drips or runs off. Spoon tilt: tilt a spoon holding a small portion 45 degrees; the piece sits on the spoon without flowing or dripping. L7 = soft, moldable, holds shape; not pourable, not sticky-pasty. No syringe test applies.
+
+VISUAL QC:
+Surface looks matte and slightly moist, not wet or glossy. Edges of the cut wedge are clean, no stringy fibers or pooling liquid around the piece. When squashed under the fork, the taro shows a smooth, even mash with no hard lumps or skin fragments.
+
+FAIL MODES:
+Under-steamed taro resists fork pressure and stays springy — re-steam 3–5 min, do not blend. Over-wet wedge pools liquid on the plate — pat dry with paper, not pressed out; if taro is waterlogged, reject and re-steam a fresh wedge. Taro breaks into dry crumbs instead of squashing smoothly — record as borderline; re-make one batch before tagging L7.
+
+### bf55_yangzhou_fried_rice_L7  (level L7)
+PREP:
+Take a 150 g portion of the takeaway Yangzhou fried rice as bought. Do not blend. Do not sieve. Do not add water or thickener — L7 is the food as normally served. Weigh the portion on the digital scale and record the actual mass. Transfer the specimen to a white plate in the A4 capture kit. Confirm the mix contains visible rice grains, egg, and vegetable/protein pieces typical of Yangzhou fried rice.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork onto the specimen until the tines blanch; the specimen must hold its shape with no separation of liquid and no flow through the gaps. Fork drip: lift the fork; no drip or runny residue falls from the tines — the fork lifts cleanly. Spoon tilt: scoop a portion and tilt the spoon; the specimen must stay on the spoon without sliding off. All three must pass. No syringe flow test applies at L7.
+
+VISUAL QC:
+On the fork: distinct individual rice grains and ingredient pieces remain visible and separate, not mashed together. On the spoon: the portion holds a defined mound when tilted, with a moist but not glossy or pooling surface. Grains retain their shape and colour.
+
+FAIL MODES:
+Specimen is wet enough that oil or sauce pools on the plate or drips from the fork — fails fork drip. Grains are overcooked and collapse to a paste under fork pressure — fails fork pressure. Pieces slide off the tilted spoon — fails spoon tilt. If any test fails, remake with a drier portion from the container and retest.

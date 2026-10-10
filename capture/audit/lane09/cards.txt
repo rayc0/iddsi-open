@@ -1,0 +1,129 @@
+### bf09_steamed_taro_L3  (level L3)
+PREP:
+Weigh 250 g steamed taro into the blender jar. Add 80 ml water. Blend on high for 45 s, stopping to scrape the walls once. Sieve once through the 4 mm sieve; discard residue. Measure the volume of sieved purée (target ~300 ml). Stir in thickener at 1.5 g per 100 ml as the calibration starting point; record the actual grams used. Stir for 30 s, rest 60 s, stir 10 s. If it does not drip slowly through fork tines, add 0.2 g thickener per 100 ml and re-stir; record the final figure. Sieving is mandatory; coarser taro fibres will collapse the syringe reading.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork vertically 50 mm above an empty spoon; correct specimen flows in slow drips, not a stream and not a lump drop. Spoon tilt: tilt a heaped teaspoon 30°; specimen slides off slowly in a single ribbon, leaves a thin film. Fork pressure: light thumb press on a fork-prick of specimen on the spoon leaves a clear indent that does not flow back within 5 s. Flow test: fill the 10 ml syringe, release for 10 s; pass when 8-10 ml remains. All four must pass.
+
+VISUAL QC:
+Surface is glossy and smooth, no visible fibre or specks. Hangs from the fork tines as a continuous curtain, no break-up. Coats the back of the spoon evenly, masking the metal.
+
+FAIL MODES:
+Too runny: drip streams off fork, <8 ml remains in syringe — add 0.2 g thickener per 100 ml, rest, retest. Too thick: drops as a lump, leaves >10 ml in syringe — whisk in 5 ml water per 100 ml, retest. Lumpy after blending: sieve failed — re-sieve or re-blend; do not photograph.
+
+### bf41_plain_yogurt_L3  (level L3)
+PREP:
+Weigh 150 g plain yogurt into a cup. Add 25 ml water and 30 g thickener (1.2 g per 100 ml starting calibration). Blend 30 s on low. Press through the 4 mm sieve with the back of a spoon; discard residue. Rest 2 min, stir 5 s. Record actual grams per 100 ml on the card. Per-level note: thinning with liquid + thickener applied to hit the flow window.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: 9-12 drips per 10 s when fork is lifted. Fork pressure: thumbnail blanches under fork tines with light pressure, food keeps shape. Spoon tilt: holds a mound on spoon tilted 30 degrees, does not slide off. Flow test: fill syringe to 10 ml, release 10 s; 8-10 ml remains. All four must pass.
+
+VISUAL QC:
+Smooth, glossy, uniform surface, no lumps or grain. Coats spoon back without running. Drips as continuous ribbons, not droplets.
+
+FAIL MODES:
+Runny, falls through sieve fast, less than 8 ml in syringe: too thin, add 5 g thickener per 100 ml, re-blend 15 s, re-test. Holds shape on spoon, syringe reads over 10 ml: too thick, add 5 ml water per 100 ml, re-blend, re-test. Grainy or streaked: under-blended or under-hydrated thickener, blend 15 s and rest 3 min, re-test.
+
+### bf09_steamed_taro_L4  (level L4)
+PREP:
+Peel and steam 300 g fresh taro until fork-tender (~20 min). Cube into ~2 cm pieces, add 60 ml warm water. Blend in the consumer blender on high for 45-60 s until smooth. Stop and scrape the wall at 30 s if needed. Sieve once through the 4 mm sieve using the back of a spoon; discard fibrous residue retained on the sieve. The target consistency is a soft mound, not a pourable puree. Do NOT add thickener at this stage — L4 taro holds shape from its own starch. If the mound slumps after sieving, work in 0.5 g thickener per 100 ml of puree, blend 10 s, and re-test.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: mound on the fork sits in a clear pile above the tines, does not drip or run through gaps — pass. Fork pressure: pressing the fork tines into the specimen leaves a clear indentation that does not bounce back fully; the surface cracks slightly — pass. Spoon tilt: a heaped spoonful holds its shape when the spoon is tilted 45 degrees and does not slide off in under 10 s — pass. Fork-tine gap check: no puree flows through the 4 mm tine gaps when the loaded fork is lifted and held 5 s — pass.
+
+VISUAL QC:
+Matte surface, no wet sheen. Uniform pale lavender-grey colour with no purple flecks. A peak stays where the spoon drops it.
+
+FAIL MODES:
+Too wet: puree flows through fork gaps or drips — re-blend 10 s; if still wet, add 0.5 g thickener per 100 ml and re-test. Too stiff: fork cracks the mound cleanly with no give — add 10 ml water per 200 g, blend 10 s. Lumpy: purple fibre strands visible — re-sieve; if residue still >5% by volume, the batch fails, re-prep.
+
+### bf43_baked_egg_custard_L4  (level L4)
+PREP:
+Weigh 200 g of chilled baked egg custard into the blender cup. Blend 25-30 s on high until completely smooth with no curds or lumps visible. Pass through the 4 mm sieve using the back of a spoon; discard any residue retained on the mesh. Return sieved puree to the cup. If the puree flows through fork tines or loses mound shape on the spoon, add thickener 1.0 g per 100 ml of puree, stir 15 s, re-test. Record the actual grams added. Do not add water or milk; the custard's own moisture is the calibration starting point. Re-chill 5 min before testing.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: scoop puree, turn fork tines down for 10 s — puree must mound and sit above the tines, not drip or flow through. Fork pressure test: press fork tines into the surface until the thumb blanches; surface must retain a clear indentation with no surrounding liquid pooling. Spoon tilt test: place a heaped spoonful on a flat plate, tilt plate to 45 degrees — puree must hold shape and not slide, run, or drip. All three must pass to confirm L4.
+
+VISUAL QC:
+Uniform pale yellow, glossy, no visible curds or browned skin fragments. Coats the spoon thickly without dripping off the edge. Mound on fork tines holds a clean peak for 10 s without slumping.
+
+FAIL MODES:
+Puree flows through fork tines or drips in 10 s tilt — add thickener 0.5 g per 100 ml, stir, re-test. Surface weeps thin yellow liquid under fork pressure — blend a further 15 s, sieve again, re-chill. Lumpy or grainy texture after sieving — discard and start with a fresh 200 g cup; do not re-blend a failed batch.
+
+### bf09_steamed_taro_L5  (level L5)
+PREP:
+Weigh 250 g steamed taro. Place in bowl, mash thoroughly with fork until uniform. Press through 4 mm sieve using the back of a spoon, discarding any fibrous strands that will not pass; note this material resists fine mincing and the sieve does the particle-size work. Re-weigh sieved mash, target 200 g. Add 20 ml warm water and 2 g thickener, stir to incorporate; record actual water and thickener used. Rest 60 s, stir again. If any piece fails fork-pressure test, re-mash.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure (L5 evidence): press fork tines into specimen on a flat plate with firm pressure; specimen must squash and not recover shape. Pass = no spring-back, edges flatten. Fork drip: lift fork; no thin liquid must run off or drip from tines. Pass = zero drip in 10 s. Spoon tilt: load teaspoon, tilt to 45 degrees; specimen must sit in cohesive lump, not flow or slide off. Pass = mound holds shape, falls only if shaken.
+
+VISUAL QC:
+On fork tines: uniformly tan-purple paste with no visible lumps above 2-3 mm, slight surface sheen from added moisture. On spoon: cohesive rounded mound that holds its peak after the tilt. No free liquid pooling at the rim of the plate.
+
+FAIL MODES:
+Fibrous strands left intact: re-sieve entire batch, do not spot-pick. Too dry, specimen cracks under fork instead of squashing: add 5 ml water at a time, re-test, cap at 40 ml total. Too wet, free liquid pools or drips from fork: sprinkle 0.5 g thickener, rest 60 s, re-test. Any fail after two remakes, discard batch and record.
+
+### bf43_baked_egg_custard_L5  (level L5)
+PREP:
+Weigh 120 g of chilled baked egg custard into a bowl. MASH with a fork against the side of the bowl until the largest visible curds are <=4 mm. Press through the 4 mm sieve; discard anything that will not pass — report retained mass. Stir in 5–10 ml water one teaspoon at a time only if the mash is dry; stop the moment it holds together when pressed. Do NOT blend: blending destroys curd structure. Do NOT add thickener — L5 is calibrated from this fork-mash starting point. Record actual water ml (0–10) on the card.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the mash flat with the fork tines; it must SQUASH and NOT recover its shape when the fork is lifted. Fork drip: hold a forkful over the empty bowl for 10 s — no thin drip or run-off may fall. Spoon tilt: tilt a spoonful 45°; the mass must sit in a pile, not slide, flow, or pour. No syringe test at L5.
+
+VISUAL QC:
+On the fork: soft, lumpy, glossy curds, no pooled liquid in the cup of the tines. On the spoon: holds a mounded heap, surface slightly wet not watery, no milky runoff at the rim.
+
+FAIL MODES:
+Over-blended: glossy puree, no visible curds, fails fork-pressure (recovers). Remake by hand-mash, do not re-blend. Too wet: milky liquid pools, drips from fork in <10 s. Remake: drain on sieve 60 s, re-test. Dry/lumpy: >4 mm hard curds will not pass sieve. Remake: discard, start over, add water more generously.
+
+### bf11_steamed_fish_fillet_L6  (level L6)
+PREP:
+Weigh 200 g steamed fish fillet. Flake against the grain into pieces no larger than 15 mm using fork and knife; do not blend — blending turns fish to paste and is incompatible with L6. Inspect every flake for bones; discard any piece containing bone. Hold pieces on a plate, do not sieve, do not add thickener, do not add water. Record starting mass on the scale log. Forks and spoon must be dry.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure: press fork tines onto a piece on a flat plate until thumbnail blanches white. Pass when the piece squashes, does not spring back, and breaks apart rather than recovering shape. Spoon-tilt: lift a heaped spoonful and tilt until vertical; pass when pieces sit in a pile on the spoon and slide off together, not as a single cohesive bolus that pours continuously. Fork-drip: no liquid should drip through the tines; pass is zero drip. Skip the syringe flow test — that is L3 only. L6 requires size plus fork-pressure evidence only.
+
+VISUAL QC:
+Flake surface shows clear muscle layers, not a uniform paste. Pieces each measure under 15 mm against the 100 mm ruler. Pile holds shape on the spoon with visible gaps between pieces; no pooling liquid on the plate.
+
+FAIL MODES:
+Pieces exceed 15 mm — re-flake and re-measure. Fillet is over-steamed to a wet mash, so fork leaves liquid on plate — re-make with a shorter steam and pat pieces dry. A bone is found during QC — discard that piece and any from same fillet section; re-flake remaining muscle.
+
+### bf48_coconut_jelly_L6  (level L6)
+PREP:
+- Weigh 200 g of chilled coconut jelly directly from the pack. - Cut into cubes on a clean board with a chef's knife. Trim so every cube is ≤15 mm on all sides; discard any piece over 15 mm or with a hard skin. - Do NOT blend. Blending would destroy the cube structure and is incompatible with L6. - Do NOT sieve. Cubes must remain intact. - Do NOT add thickener or liquid. L6 calibration starts dry. - Record final specimen mass and the number of cubes produced.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+- Fork pressure: press the fork tines firmly onto one cube against a white plate until the thumbnail blanches white. Pass: cube squashes, does not spring back, does not return to original shape when fork is removed. If it bounces back, re-test on a fresh cube; if it still recovers, re-make with a colder pack. - Fork drip test: lift five cubes on the fork; no liquid should drip through the tines. Pass: no drip within 10 s. - Spoon tilt is not required for L6; skip it.
+
+VISUAL QC:
+- Cubes hold their shape on the fork, glossy and translucent, edges clean and ≤15 mm. - Surface looks moist but no free liquid pools on the plate. - Pressed cube leaves a visible flattened dent that stays.
+
+FAIL MODES:
+- Cubes >15 mm: re-cut and re-measure; re-shoot only. - Cube recovers shape after fork pressure (rubbery gel): chill the pack 30 min longer, then re-cut and re-test. - Liquid weeps onto plate: drain cubes on paper towel 30 s, blot gently, re-shoot.
+
+### bf11_steamed_fish_fillet_L7  (level L7)
+PREP:
+Take one steamed fish fillet as it comes out of the steamer. Record starting mass on the digital scale (typical 120-180 g). Do not blend. Do not sieve. Do not add thickener, water, or any liquid. Do not mash, flake, or press the flesh. Place the whole fillet onto the white capture plate. This is the reference specimen for L7 — what the diner actually sees and cuts with a fork. Handle once, on the plate, before tests.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines of a standard metal fork fully into the thickest part of the fillet. The fillet must resist the press; the fork should NOT cut all the way through cleanly with light thumb pressure. White flakes separating from the muscle along natural layers are acceptable; the piece should hold its shape and not smear between thumb and fork.  Spoon tilt test: lift a forkful and tip it over a white plate. The piece must slide off in one mass or sit firmly on the spoon — no continuous drip, no flow, no sauce-like pour.  Fork drip test: hold a loaded fork over the plate for 5 seconds. Zero drip. A single droplet of surface moisture is acceptable; steady dripping is not.
+
+VISUAL QC:
+Fillet holds an intact, recognisable shape on the plate. Visible natural flake lines along the muscle, no pooling liquid around it. Fork lifts a defined portion, not a smear.
+
+FAIL MODES:
+Fillet is over-steamed and collapses under fork pressure — that is L6, not L7; re-steam a shorter time.  Fillet releases free liquid that drips continuously from the fork — L6 or L5; drain on paper, retest, if still dripping re-make with a drier fillet.  Fillet has been blended, flaked, or sauced — wrong specimen; re-make from a fresh steamed fillet with no processing.
+
+### bf57_braised_beef_brisket_noo_L7  (level L7)
+PREP:
+Weigh 220 g braised beef brisket noodles as served; do not blend, sieve, or add water/liquid. Pick out and reserve 1 whole noodle strand and 1 chunk of brisket (≈2 cm) on a separate plate for stills. Spread remaining portion flat on the capture mat so a checkerboard square and 100 mm ruler are visible at the same time. If strands clump, separate gently with the fork tines only — no cutting.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into a noodle strand until the tines blanch white; food must not fully compress, ooze, or pass between tines. Hold the loaded fork vertically for 5 s — the piece must not flow or drip off (fork drip test). Spoon tilt: lift a heaped teaspoon of brisket+broth and tilt the spoon to almost vertical; the chunk must sit on the spoon, not slide off as liquid. Pass = piece holds shape and stays on utensil under its own weight; if broth runs and the piece drops, re-make.
+
+VISUAL QC:
+On the fork: noodle strand ≈3 mm thick, smooth cylindrical surface, no sauce pooling between tines. On the spoon: a single intact brisket block sitting in a thin broth film, not a pool. Broth should coat, not submerge.
+
+FAIL MODES:
+Broth thinned so brisket slides off the spoon — re-make, request thicker broth. Noodles overcooked, mash with fork tines — re-make, shorten cook or pick firmer pieces. Portion stirred into a soup — re-make, plate solids + thin broth separately. Re-make allowed once; second fail, re-source.

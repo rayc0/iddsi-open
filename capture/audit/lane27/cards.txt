@@ -1,0 +1,77 @@
+### bf27_braised_lotus_root_L3  (level L3)
+PREP:
+Weigh 200 g braised lotus root. Add to blender with 100 ml cool water; blend 45 s until smooth. Pass through the 4 mm sieve once to remove fibrous strands; discard residue. Measure 200 ml of sieved puree. Add 3 g thickener per 100 ml (6 g total) — this is the L3 calibration starting point; record the actual grams used. Stir in with a fork for 30 s, rest 2 min, stir again. If the puree runs off a spoon, add 0.5 g thickener per 100 ml increments up to a max of 5 g/100 ml; if it sits in a mound that holds shape, dilute with 5 ml water and retest. Per-level note: blend-thin is feasible — sieve the fibres out, then thin with thickener and water to a pourable consistency.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip test: spoon a small mound onto the fork tines; the specimen should drip slowly through the gaps in 1-2 drips, not pour and not sit as a solid lump. Fork pressure test: press fork tines into the specimen on a plate; the tines leave a clear, persistent impression but the specimen does not recover shape. Pass. Spoon tilt test: tilt a heaped spoon; the specimen flows off in a slow ribbon that leaves a thin coating on the spoon. Pass. Syringe flow test: fill the 10 ml IDDSI syringe to the 10 ml mark, release for 10 s; pass when 8-10 ml remains in the syringe (i.e., 0-2 ml flows out).
+
+VISUAL QC:
+On the fork: smooth pale beige coating that drips in a slow continuous thread, no visible fibrous strands. On the spoon at rest: a glossy pool that slowly levels but does not run flat instantly, no lumps, no separation of liquid ring around the edge.
+
+FAIL MODES:
+Too runny: pours cleanly through fork tines, syringe empties below 8 ml. Re-make: add 0.5 g thickener per 100 ml and retest. Too thick: mounds on fork without dripping, syringe retains more than 10 ml. Re-make: add 5 ml water, stir, retest. Fibrous strands blocking drip: visible threads between fork tines. Re-make: re-sieve through 4 mm and increase initial water to 120 ml, then re-thicken.
+
+### bf59_steamed_chicken_with_mus_L3  (level L3)
+PREP:
+Weigh 150 g steamed chicken with mushrooms, place in blender. Blend 45 s, stop, scrape sides, blend 30 s more. Sieve once through the 4 mm sieve; discard residue. Add 60 ml water, blend 15 s. Measure volume of puree. Add thickener at 1.5 g per 100 ml of puree as the calibration starting point; sprinkle, blend 10 s, rest 60 s, re-blend 5 s. Record actual grams used. Target: coats spoon, pours in a slow ribbon.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: spoon puree, let it fall from fork tines; passes if it drips slowly in continuous blobs, does not run in a thin stream. Spoon tilt: tilt a spoon holding 5 ml; passes if puree slides off slowly, does not pour. Fork pressure: press fork tines into puree and lift; passes if tines leave clear indent, puree mounds without running. Syringe flow test: fill 10 ml syringe, release, read at 10 s; passes if 8-10 ml remains in barrel.
+
+VISUAL QC:
+Smooth, glossy surface with no visible mushroom or chicken flecks after sieving. Holds a soft peak when mounded on spoon, then settles slowly. Color uniform pale beige, no separation of liquid around edges.
+
+FAIL MODES:
+Puree too thin, drips through fork in a steady stream, or syringe reads below 8 ml — add 0.3 g thickener per 100 ml, re-blend, re-test. Visible solids or fibers post-sieve — re-blend 20 s, re-sieve. Puree too stiff, mounds hold sharp peak, syringe reads above 10 ml — add 5 ml water per 100 ml, re-blend, re-test. Two failed re-makes: discard, restart prep, record new starting weight.
+
+### bf27_braised_lotus_root_L4  (level L4)
+PREP:
+Take 150 g braised lotus root. Cut into 2 cm pieces, add 40 ml hot water. Blend 45 s, rest 15 s, blend 30 s until a coarse slurry forms. Pass through the 4 mm sieve using the back of a spoon; discard any fibrous residue that will not pass. Return sieved pulp to the blender, blend 20 s to a uniform smooth paste. Calibrate from L3 starting point: 1.5 g thickener per 100 ml paste, stirred in with a fork and rested 60 s. If the fork-drip mound collapses below the tines, add 0.2 g thickener per 100 ml and re-test. Record the final grams per 100 ml on the data sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: a 5–7 mm mound sits cleanly on the tines and does not flow through or drip continuously. Fork pressure: tines pressed into the mound leave a clear indentation; the mound does not split into separate liquid and solid, and pieces do not fall below. Spoon tilt: a spoon holding the specimen tilted 45° holds the full mound with no slide or run-off. No separate thin liquid pools on the plate surface.
+
+VISUAL QC:
+Surface is glossy-smooth with no visible fibre or speckle. Colour is uniform deep beige-pink across the mound. Mound edges hold a rounded dome with no weeping liquid ring at the base.
+
+FAIL MODES:
+Mound flows through fork tines → re-sieve and add 0.2 g thickener per 100 ml. Visible fibres or speckle remain → re-blend 20 s and re-sieve. Liquid pools around the mound on the plate → discard, re-blend with 10 ml less water and recalibrate thickener.
+
+### bf27_braised_lotus_root_L5  (level L5)
+PREP:
+Start with 200 g braised lotus root. Press each slice flat with the back of a fork against the chopping board, then chop across into strips no wider than 4 mm, then cross-chop into pieces ≤4 mm. Do not blend; blending turns the soft, fibrous flesh into a uniform puree that masks the L5 minced texture. Transfer chopped material to a bowl and moisten with 30-40 ml of reserved braising liquor so no separate thin liquid pools on the surface. Hold back 1-2 slices intact for the fork-pressure test. No sieve, no thickener, no calibration row needed.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork drip: lift 4-5 pieces on the fork tines; they cluster together, almost no liquid drips off. Fork pressure: press fork tines into a single piece until the thumbnail blanches white; the piece squashes and does not spring back. Spoon tilt: tilt a spoonful 30 degrees; the full sample slides off as one cohesive mass, not as separate drips. The intact-slice fork test should give a clean squash with no recovery. All three pass = L5 confirmed.
+
+VISUAL QC:
+On the fork: individual minced pieces are just visible, no smeared puree. On the spoon: surface looks moist and glossy, not dry or weeping. Pieces hold together when tilted, not falling apart into crumbs.
+
+FAIL MODES:
+Too dry: pieces look pale and pull apart when tilted; re-moisten with 5-10 ml braising liquor and re-shoot. Too wet: thin liquor pools on the surface; drain off excess and re-test drip. Pieces too large: any piece over 4 mm; re-chop finer and re-shoot. Re-make from fresh 200 g if all three fail.
+
+### bf29_steamed_eggplant_L6  (level L6)
+PREP:
+Start with 200 g steamed eggplant flesh, peel discarded. Place in blender; pulse 5-8 s only — just enough to break large chunks into rough pieces, do not purée. Pass through the 4 mm sieve once; discard any coarse strings or seeds that do not pass. Spoon-cut on a clean board into pieces no larger than 15 mm in any dimension. Measure 250 g of cut pieces. No thickener, no added liquid — L6 is the calibration starting point; record actual moisture if visible pooling. Hold at serving temperature.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines into a piece until thumbnail blanches white. Pass = piece squashes and does not return to shape. Fork-drip test: lift fork with a loaded piece; no liquid should drip through the tines within 10 s. Spoon-tilt test: place 3-4 pieces on a spoon and tilt to 45°; pieces must sit in a pile and not flow, run, or drip off. No syringe test at L6.
+
+VISUAL QC:
+Pieces hold a soft, moist but matte surface — no free liquid pooling on the plate or spoon. Color stays uniform purple-grey flesh with no stringy fibers pulling away. Pieces compress visibly under light fork pressure without springing back.
+
+FAIL MODES:
+Over-blended to a purée or paste — fails fork-pressure and spoon-tilt, re-make with shorter pulse. Pieces left larger than 15 mm after spoon-cut — re-cut, do not re-blend. Excess free water pooling on the plate — drain on sieve 30 s, do not squeeze.
+
+### bf32_ripe_mango_L7  (level L7)
+PREP:
+Select one ripe mango. Cut two cheeks from the pit, then slice each cheek into pieces roughly the size served at the table (about 2-3 cm wedges, skin off if normally served skin-off). Do not blend. Do not sieve. Do not add thickener. Weigh 150 g of cut pieces onto the plate. No water or liquid added. The food is served as the reference specimen, unchanged.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: Press the tines firmly onto one piece with the fork held flat. The piece must squash, break, or crumble under the pressure — it must not return to its original shape when the fork is lifted. Pass = clear deformation or breakage under thumb-level pressure, no recovery. Spoon tilt test: Place several pieces on a spoon and tilt to 45 degrees. Pieces slide or fall off; liquid (if any) pours freely. Pass = pieces do not hold shape on the spoon. Fork drip test: Lift a piece on the fork tines. It does not drip through the tines or form a continuous flow. Pass = no drip, no flow between tines. No syringe test applies at L7.
+
+VISUAL QC:
+Pieces hold individual shape on the plate, do not mound or stick together. Surface shows visible fruit fiber and juice sheen under the checkerboard. Color is uniform ripe-mango yellow-orange with no grey or brown bruising on the test piece.
+
+FAIL MODES:
+Piece is too firm and resists fork pressure — re-cut smaller or replace with a riper specimen, retake all shots. Piece is overripe and collapses to puree under light pressure — reject specimen, use a firmer ripe one. Pieces stick together in a mound (behaves as L6) — separate pieces, do not add thickener, retest.

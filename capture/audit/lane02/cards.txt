@@ -1,0 +1,129 @@
+### bf02_plain_congee_L3  (level L3)
+PREP:
+Weigh 250 g takeaway or chilled plain congee into the blender jar. Add 50 ml water. Blend 45 s on high, scraping the wall once at 20 s. Sieve through the 4 mm sieve using the back of a spoon, discarding any coarse residue that will not pass. Return the sieved liquid to a clean jug and weigh it. Add thickener at 1.0 g per 100 ml of sieved liquid as the calibration starting point; whisk in with a fork for 30 s, rest 2 min, re-whisk 15 s. If flow is too fast, add thickener in 0.2 g per 100 ml increments up to a ceiling of 1.8 g per 100 ml. Record the final grams used. The PER-LEVEL NOTE is blend-thin, and that step is performed.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift a fork from the specimen; the liquid drips slowly in continuous thin streams through the tines. Pass if drips fall steadily but not in a single sheet. Fork pressure: pressing the fork tines into 5 ml on a flat plate leaves a clear print that does not fill back in within 5 s. Pass if the print holds. Spoon tilt: a heaped spoon tilted to 45 degrees slides off in 2-4 s, not instantly and not in one lump. Pass at 2-4 s. Syringe flow: fill the IDDSI 10 ml syringe to 10 ml, release, wait 10 s; pass if 8-10 ml remains in the barrel.
+
+VISUAL QC:
+On the fork: glossy, fully smooth, no grains or rice skins catching the tines. On the spoon: coats the bowl in an even layer with no bare streaks. In the jug: flows like warm honey when tipped; pours in a continuous ribbon that stacks briefly before settling.
+
+FAIL MODES:
+Too runny, drips in a continuous sheet through fork or leaves under 8 ml in syringe: add thickener in 0.2 g per 100 ml steps to a maximum of 1.8 g per 100 ml, rest 2 min, retest. Too thick, holds shape on spoon tilt or leaves more than 10 ml: dilute with 10 ml water, re-blend 15 s, retest. Grainy with visible rice skins, fails the smooth visual: re-blend 30 s and re-sieve; if it still fails, discard and re-make with a finer sieve pass or start a fresh batch. Any specimen failing two consecutive tests is discarded.
+
+### bf34_dragon_fruit_L3  (level L3)
+PREP:
+Weigh 200 g ripe dragon fruit flesh (no skin). Add 80 ml water. Blend 25 s on high until smooth. Sieve through 4 mm once; discard fibrous residue. Add thickener at 2.0 g per 100 ml of sieved volume as the calibration starting point; record actual grams used. Stir 20 s, rest 2 min, stir 5 s. If the mix runs off the spoon, add 0.2 g thickener per 100 ml and re-stir; record final value.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork over bowl for 10 s; drips slowly and continuously through tines — passes if it does not pour in a single stream and does not sit as a lump. Fork pressure: press fork tines into specimen on a plate for 5 s; surface m dents clearly, no full separation, specimen does not spring back. Spoon tilt: tilt a loaded spoon; specimen slides off slowly in one cohesive dollop, leaves a thin even coating. Syringe flow: fill 10 ml IDDSI syringe, release, wait 10 s; leaves 8-10 ml in the syringe. All four must pass.
+
+VISUAL QC:
+Even magenta-pink, no skin flecks or fibre. Smooth glossy surface that mounds then slowly levels on the spoon. Coats the spoon back without running off the rim.
+
+FAIL MODES:
+Too thin: drips in a steady stream off fork, syringe reads under 8 ml — add 0.2 g thickener per 100 ml, rest 2 min, re-test. Too thick: piles and holds shape, leaves over 10 ml — whisk in 5 ml water per 100 ml, re-test. Fibre lumps: visible specks, sieve catches residue — re-blend 10 s and re-sieve. Max one re-make; second fail = discard and note cause.
+
+### bf02_plain_congee_L4  (level L4)
+PREP:
+Weigh 250 g thick-style takeaway or chilled plain congee into the blender cup. Add 60 ml hot water to loosen the chilled starch matrix. Blend on high for 45 seconds, stopping once to scrape the wall. Press through the 4 mm sieve with the back of a spoon; discard retained solids and lumps — the per-level note "blend-hold" confirms sieving is required. Return puree to the cup and rest 30 seconds so the starch relaxes. If the mound flattens on the spoon, stir in thickener at 1.0 g per 100 ml as the calibration starting point; record the actual grams used and the resulting appearance.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: a single fork pressed into the surface leaves a clear, clean-edged indent that holds its shape when the fork is lifted. Spoon tilt: a loaded spoon held at 45 degrees keeps the full mound on the bowl with no slide or drip. Fork drip: lifting a fork dipped 2 cm deep and held vertically over the plate, the puree sits as a cohesive mound above the tines — none flows through, none drips in 5 seconds. No separate thin liquid pools around the specimen.
+
+VISUAL QC:
+Surface reads matte and even, not glossy or watery. A spoonful mounds and peaks rather than spreading. No grains, skin flecks, or ginger shreds visible against the fork tines.
+
+FAIL MODES:
+Specimen flows through the tines or pools thin liquid — re-blend 15 seconds, rest, re-test. Specimen cracks or falls off the spoon in a chunk — add water 10 ml, blend 10 seconds, re-test. Lumps or skin remain after sieving — re-sieve; do not proceed.
+
+### bf34_dragon_fruit_L4  (level L4)
+PREP:
+Weigh 250 g fresh ripe dragon fruit flesh on the digital scale. Cube into 2 cm pieces. Add to the consumer blender with 50 ml water. Blend 45 s on high, stop, scrape down, blend 30 s more. Pass through the 4 mm sieve using the back of a spoon; discard fibrous residue and seeds that do not pass. Weigh the sieved puree. Per 100 ml puree, add 1.0 g thickener as the calibration starting point — record the actual grams used. Stir with a fork for 30 s, rest 2 min, stir 10 s. If the mound collapses, add 0.2 g thickener per 100 ml, rest 2 min, and re-test. Do not exceed 2.0 g per 100 ml; if L4 is not reached, re-make with longer sieve work and re-blend rather than over-thickening.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press the fork tines into the mound on a flat plate; the surface must hold a clear indentation without the mound splitting or liquid bleeding — pass if the print stays. Spoon tilt test: load 5 ml onto a spoon and tilt to 45 degrees; the specimen must sit in a mound and not flow or drip off — pass if it stays piled. Fork drip test: lift the fork; the specimen must sit in a mound above the tines, not drip continuously through them — pass if zero drips in 10 s. No separate thin liquid must pool on the plate.
+
+VISUAL QC:
+On the fork: a soft, glossy magenta mound with no visible seed flecks or white pulp chunks and a clean indentation under the tines. On the spoon: a rounded dome that holds its peak when tilted. On the plate: matte surface, no watery halo around the base of the mound.
+
+FAIL MODES:
+Fail 1: watery pink liquid pools on the plate within 30 s of plating — puree was under-thickened or not rested; re-make and add 0.2 g thickener per 100 ml. Fail 2: mound slumps flat on spoon tilt — too much water or insufficient rest; re-make with 30 ml water instead of 50 ml. Fail 3: visible seed specks or fibrous strands on the surface — sieve was skipped or rushed; re-blend and re-sieve, do not over-thicken to hide it. Maximum two re-makes per take; on the third failure, swap fruit batch and restart.
+
+### bf02_plain_congee_L5  (level L5)
+PREP:
+Weigh 200 g of thick congee onto the digital scale. Do not blend — thick congee with soft grains must be read for particle size, not pulverised. Press the congee through a 4 mm sieve with the back of a fork; discard what stays on the mesh. Re-weigh the sieved portion. Add thickener at 0 g per 100 ml as the calibration starting point — record the actual grams used. Stir with the fork until streaks disappear. The per-level note requires soft grains ≤4 mm; sieving achieves this. No water added. Stop if the congee weeps thin liquid — that is a fail, remake from a drier pack.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: place a 15 mm mound on the plate, press the fork tines until the thumbnail blanches white. The mound must squash, the surface must not spring back, and the grains must stay ≤4 mm. Pass = squash with no recovery. Spoon tilt test: load 4 ml on the spoon, tilt to 90°. The congee must hold its shape and slide off slowly as a cohesive mass, not pour. Fork drip test: lift fork from the bowl — the congee should sit in the mound, not drip through the tines. The L3 10 ml/10 s syringe flow test does not apply at L5; do not run it.
+
+VISUAL QC:
+On the fork: moist sheen, soft rice grains visible, no free liquid pooling in the tine gaps. On the spoon: holds a rounded mound, surface matte not glossy, grains ≤4 mm. No separate thin liquid on the plate.
+
+FAIL MODES:
+Grains >4 mm after sieving — re-sieve or reject the pack. Thin liquid weeps on the plate — remake from a thicker pack, no water. Specimen recovers shape after fork press — too stiff, loosen with 5 ml hot water and retest.
+
+### bf34_dragon_fruit_L5  (level L5)
+PREP:
+Weigh 150 g peeled dragon fruit flesh on the scale. Place in the blender; pulse 6–8 s only — stop while seeds are still visibly whole. Do NOT sieve; the 4 mm sieve is not used because the per-level note states tiny seeds pass through and must be recorded, not removed. Dice the pulsed pulp with a knife to <=4 mm, keeping its own juice. Mash firmly with a fork until uniformly coarse and visibly moist. Do not add water. Do not add thickener. Log the juice volume released (ml) and confirm no separate thin liquid pools on the plate.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen; it must squash and NOT spring back when pressure is released. Spoon tilt: tilt a heaped spoon to 45°; specimen must hold together with no drip, no run. Fork drip: lift fork and hold over plate 5 s; zero drops falling. Particle check: lift and inspect — visible bits must all measure <=4 mm against the ruler.
+
+VISUAL QC:
+Coarse, glossy pink pulp with fine black seed specks evenly distributed. Clings to fork tines as a single mass. No free juice pooling under the mound on the plate.
+
+FAIL MODES:
+Over-blended → smooth puree with ruptured seeds: fails fork-pressure (squirts) and particle check; re-make and pulse shorter. Under-processed → chunks >4 mm: fails particle check; re-dice finer, do not re-blend. Standing >10 min releases thin liquid: fails spoon-tilt and fork drip; re-mash and re-shoot immediately.
+
+### bf03_hor_fun_flat_rice_noodle_L6  (level L6)
+PREP:
+Weigh 200 g blanched hor fun sheets on the scale. Stack sheets, cut across the width into strips, then cross-cut into pieces no larger than 15 mm. Confirm each piece measures ≤15 mm against the 100 mm ruler. Do not blend; do not sieve; do not add thickener. No liquid is added. The L3 calibration thickener row does not apply to this L6 specimen — record "N/A" in that column. Pieces must remain visually separate, not mashed into a paste.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test — press the fork tines into a piece until the thumbnail blanches white. Pass: the piece squashes, does not spring back, and can be mashed with easy pressure between fork and bowl. Spoon-tilt test — place a heaped teaspoon on the plate and tilt to 90 degrees. Pass: the piece sits in a pile and slides/plops off with little or no flow; it does not pour. Fork-drip test — lift a piece on the fork and hold over a white plate for 10 seconds. Pass: minimal drip, no continuous flow, no tail. All three must pass.
+
+VISUAL QC:
+Pieces on the fork should appear as distinct flat soft strips, not clumped or sticky. Surface should look moist and pliable, not dry-cracked or gummy. On the spoon-tilt, the mound should hold shape briefly before sliding; it must not level out to a smooth liquid layer.
+
+FAIL MODES:
+Pieces exceed 15 mm — re-cut smaller. Pieces feel rubbery or spring back under fork pressure — discard, source is too firm, re-blanch or remake. Pieces clump into a sticky mass with no separation — overworked, discard and re-cut fresh. Any single failure → full re-make.
+
+### bf36_pear_L6  (level L6)
+PREP:
+Weigh 200 g fresh pear. Steam until fork-tip enters with no resistance (~6 min). Cool 60 s. Cube to ≤15 mm on the board; trim any seed-side fibers. Confirm each piece against the 100 mm ruler. Do NOT blend and do NOT sieve — L6 requires discrete soft pieces, not a puree. Do NOT add thickener; thickener is irrelevant at L6. Reserve 50 g of steam water only if a piece looks dry, then drain.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: place one piece flat on a plate, press the fork tines down with the pad of the thumb until thumbnail blanches white. Pass: the piece squashes, cracks, and does not recover its shape. Spoon-tilt test (optional sanity): a soft piece on a spoon does not slide off when tilted to 45°. Fork-drip test is N/A at L6 (no puree flow). Syringe flow test is N/A at L6.
+
+VISUAL QC:
+Pieces are glossy, moist, and translucent at the edges. Color is uniform off-white, no browned skins. Each piece holds a clean cube shape with rounded, not ragged, corners. Surface sheen signals steam doneness, not dryness.
+
+FAIL MODES:
+Pieces >15 mm — re-trim, re-shoot. Piece springs back under thumb — under-steamed; re-steam 2 min and re-test. Piece crumbles to mush before press — over-steamed; re-cut from a fresher batch and shorten steam. Two consecutive fails on the same batch: discard and start over.
+
+### bf03_hor_fun_flat_rice_noodle_L7  (level L7)
+PREP:
+Use hor fun as packed; do not blend, do not sieve, do not add thickener or water. Weigh 150 g of blanched sheets straight from the pack onto the capture plate. Keep the noodle mass intact — tear only at natural seams if the bundle exceeds the ruler field. Respect the per-level note: whole sheets as served, reference specimen, no processing.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the noodle stack until the tines blanch white; the sheets must compress fully and recover their shape when the fork is lifted. Spoon tilt: a heaped teaspoon holds its shape on a level spoon — no flow, no slump. Fork drip: lift the fork clear of the plate; zero drip from the tines or sheet edges. The noodle must look and behave as a solid food that is easy to bite and manipulate, with no separation of liquid or sheet fragments.
+
+VISUAL QC:
+Sheets lay flat, smooth, glossy, and continuous, with no frayed edges or broken fragments. The stack holds its geometry under the fork. Color is uniform pale off-white with no translucent or mushy patches.
+
+FAIL MODES:
+Sheets fragmenting into short strips or releasing starch water means over-handling or over-blanched stock — reject, re-blanch a fresh pack. Sheets that bend but fail to flatten on the spoon indicate undercooked texture — reject, re-cook to pack instructions. Any drip from the fork indicates excess surface moisture — drain 30 s on the sieve and re-test; if drip persists, re-make.
+
+### bf39_orange_segments_peeled_L7  (level L7)
+PREP:
+Remove any pith, seeds, or membrane; keep segments whole. Do NOT blend, sieve, or add thickener or water — L7 requires the food as normally served. Weigh 200 g of intact segments on the digital scale for the capture tray. This is a reference specimen, not a calibration sample, so no thickener grams per 100 ml apply. Set aside one whole segment aside for the fork-press close-up.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines of the fork fully into one segment on a flat plate with enough force to blanch the fingernail. The segment must NOT deform, mash, or break apart; it must return to its original shape when the fork is withdrawn. Spoon tilt test: place a segment on a spoon and tilt to 90 degrees. The segment must NOT slide, drip, or run off. Fork drip test: lift a segment on fork tines and hold for 5 seconds — no liquid must drip through the tines. Syringe flow test is N/A at L7.
+
+VISUAL QC:
+Segment holds a defined curved, glossy orange shape with visible juice vesicles on the surface. No white pith, membrane, or seed attached. No liquid pooling on the plate beneath the specimen.
+
+FAIL MODES:
+Segments break, crush, or weep juice under fork pressure — fails L7; re-make, select firmer fruit. Visible pith, membrane, or seeds remain — fails cleanliness; re-make and trim more carefully. Liquid pools on plate beneath specimen — fails fork drip; pat segments dry with paper towel before reshooting, do not re-make unless fruit itself is overripe.

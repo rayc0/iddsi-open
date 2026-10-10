@@ -1,0 +1,116 @@
+### bf16_silken_tofu_L3  (level L3)
+PREP:
+Weigh 150 g silken tofu. Add 90 ml water. Blend 25 s on high until pourable. Sieve once through the 4 mm sieve; press solids through with the back of a spoon, discard coarse residue retained on the mesh. Weigh blended yield, then thicken to the L3 calibration starting point of 1.5 g thickener per 100 ml blended liquid. Whisk in the powder with a fork, rest 90 s, stir 10 s. Re-weigh and record the actual thickener grams per 100 ml used on the capture sheet before filming.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: tilt a fork from a loaded spoon; liquid must drip in slow, continuous drops through the tines, not run in a stream. Spoon tilt: a teaspoon tilts and the specimen flows off in a steady ribbon, not a pour, not a slide. Fork pressure: the fork prong leaves a clear, clean imprint on the surface under light thumb pressure with no surface rupture or separation. Syringe flow test: fill the IDDSI 10 ml syringe to the 10 ml mark, release, wait 10 s; 8-10 ml must remain in the barrel. Any value below 8 ml means re-thicken; above 10 ml means it is too thin.
+
+VISUAL QC:
+Specimen on the spoon is glossy, uniform off-white, with no visible curds, lumps, or whey pooling. On the fork it clings as a smooth continuous film that releases as one slow drip when tilted. No grain, no streaks, no free liquid running off ahead of the body.
+
+FAIL MODES:
+Too runny: passes the fork as a stream or leaves under 8 ml in the syringe; add 0.1 g thickener per 100 ml, rest 60 s, retest. Too thick: clings to the spoon without dripping or blocks the syringe above 10 ml; blend in 5 ml water, retest. Grainy or curdled: sieve step skipped or over-blended; discard and remake.
+
+### bf48_coconut_jelly_L3  (level L3)
+PREP:
+Weigh 250 g chilled coconut jelly straight from the pack into the blender jar. Blend 20 s on high until fully smooth with no lumps. Sieve through the 4 mm mesh into a bowl; discard residue. Measure the sieved volume, then thin to pourable consistency by whisking in thickener at 2.0 g per 100 ml of sieved sample — this is the calibration starting point; record the actual grams used and the final volume. Add 20–40 ml water only if the blend is too stiff to pour after thickener. Stir 30 s, rest 60 s, stir again. Final specimen must drip slowly through fork tines, not run.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: sample drips in a slow, continuous thin stream through the tines, not a fast pour and not a solid blob. Spoon tilt: a small mound on the spoon spreads only slightly when tilted to 45°, holds shape. Fork pressure: the tines leave a clear, soft imprint that does not fill back in immediately. Flow test: fill the 10 ml syringe to the 10 ml mark with no air gap; after 10 s the syringe must retain 8–10 ml (i.e. 0–2 ml has dripped). All four pass = L3 confirmed.
+
+VISUAL QC:
+On the fork: smooth, glossy, no grains or jelly chunks catching the light. On the spoon: a soft mound that flattens at its base within 2 s of settling, no clear liquid pooling around it. Colour uniform off-white throughout, no streaks.
+
+FAIL MODES:
+Too runny: passes the tines in a fast pour and the syringe empties past 2 ml — add 0.5 g thickener per 100 ml, rest 60 s, re-test. Too thick: sits on the fork without dripping and the syringe retains the full 10 ml — whisk in 5–10 ml water, re-test. Grainy: visible jelly strands after sieving — re-blend 10 s and re-sieve; if strands persist, the food cannot meet L3 and must be re-recorded as a failed specimen.
+
+### bf16_silken_tofu_L4  (level L4)
+PREP:
+Weigh 200 g silken tofu directly into the blender jar. Add 30 ml water. Blend 10 s on high; stop, scrape the walls with a fork, blend a further 10 s. Hold the lid for the full cycle. Sieve the blend once through the 4 mm sieve using the back of a fork — discard any retained solids or note them. The per-level note says "brief blend, blend-hold", so do not over-process: target is smooth but cohesive, not aerated or glossy-runny. No thickener is specified by the food list for L4; this is the calibration starting point. Record the actual gram weight on the capture sheet. Do not add ice, salt, oil, or acid. Keep the specimen covered until shot 1 to prevent surface skin.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a loaded fork (tines loaded across the full width) 5 cm above the plate. Specimen must sit as a mound above the tines and fall off in a single clump within 10 s — no thin tail, no drip through gaps. Fork pressure: press the fork tines flat into the mound; the specimen must yield to clear thumb pressure (1-2 mm) and not return to shape, and must not run between tines. Spoon tilt: a level 5 ml spoon heaped and tilted 45° must hold its shape with no flow, no drip from the spoon lip, no separate thin liquid pooling on the plate.
+
+VISUAL QC:
+Surface is matte-smooth, no visible tofu curds, no weeping liquid ring on the plate after the spoon tilt. Mound on the fork retains defined edges and a flat top. One uniform off-white colour throughout.
+
+FAIL MODES:
+Over-blended: glossy, aerated, flows through fork tines — discard, re-make with 5 s less total blend. Under-blended: visible curds caught on the 4 mm sieve — discard, re-make with 10 s more total blend after scraping. Added water too high: thin tail on fork drip or liquid pools on plate — discard, re-make with 10 ml less water. Any fail = full re-make, do not patch.
+
+### bf50_peanut_paste_L4  (level L4)
+PREP:
+Open one ready-to-eat pack of peanut paste into the blender jar. Record starting mass on the scale (target 300 g). Blend 20-30 s on high until completely smooth with no seed or skin grit. Do NOT add water or milk - thinning will push the specimen below L4. Do NOT add thickener - the pack should already hold shape. The per-level note says serve as-is; sieving is not required if the blend is smooth. Press a small spoon-load against white paper: if no oil ring spreads and no solids remain, proceed to IDDSI tests.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: load a fork, lift it, and hold level for 5 s. Pass = the paste sits as a coherent mound on top of the tines, does not drip or fall through. Fork pressure test: press the flat of the fork into a spoonful on a plate. Pass = the paste deforms but does not separate liquid, holds a clean dent when the fork lifts, and does not run to fill the dent within 5 s. Spoon tilt test: scoop, tilt spoon to 90 degrees. Pass = the paste stays on the spoon, no flow. All three must pass.
+
+VISUAL QC:
+Surface should be matte-smooth with no glossy oil pooling on top. Color uniform tan, no flecks of unblended peanut skin. Mound on the fork should hold its peak when lifted - if the peak slumps flat within 2 s, it is too thin.
+
+FAIL MODES:
+Fail 1 - oil separates and pools on top or leaves a ring on paper: re-blend 10 s; if it persists, reject and re-make from a fresh pack. Fail 2 - paste flows through fork tines or drips within 5 s: it is below L4; do NOT add water to rescue, reject and re-make. Fail 3 - visible seed or skin grit after blending: blend a further 15 s, then re-check; if still gritty, sieve through the 4 mm sieve and re-test.
+
+### bf16_silken_tofu_L5  (level L5)
+PREP:
+Weigh 250 g silken tofu onto the scale. Tip onto a clean plate; mash thoroughly with a fork until uniform — no whole curds remain. Press the mash through the 4 mm sieve using the back of the fork or a spatula, discarding anything that will not pass; re-mash any retained lumps and sieve again. The target is soft particles ≤ 4 mm with surface moisture, no pooling liquid. No blender is required and none should be used — the food list notes spoon-break to curds ≤ 4 mm, which the fork-and-sieve sequence delivers. No thickener is added; no water is added.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines flat into the specimen for one second. The specimen must squash, and the tine marks must remain — no elastic recovery. Fork-drip test: lift a forkful 5 cm above the plate; nothing should drip or run through the slots. Spoon-tilt test: tilt a spoonful slowly past vertical; the full portion must slide off together, not pour, drip, or fall as separate liquid. All three must pass to confirm L5.
+
+VISUAL QC:
+On the fork, the specimen should hold its shape as a coherent lump with a glossy, moist sheen — not wet, not dry, not crumbly. On the spoon, it should mound as one piece that slides off together. No free liquid should pool on the plate.
+
+FAIL MODES:
+Particles exceed 4 mm after sieving — re-mash and re-sieve. Free thin liquid pools on the plate — drain briefly on absorbent paper, do not add thickener. Specimen recovers shape after fork press — specimen is too firm, discard and remake from a fresh block using gentler mashing.
+
+### bf53_mapo_tofu_L5  (level L5)
+PREP:
+Weigh 200 g chilled mapo tofu into the blender. Pulse 6 s, scrape, pulse 4 s — stop while soft tofu chunks remain visible. Do not fully purée; the per-level note requires visible particles. Press the mash through a 4 mm sieve using the back of a fork, discarding residue retained on the mesh. The passing mass should weigh 150–170 g; record the actual. The natural oil-chilli sauce released by the tofu provides moisture — do NOT add water or thin liquid. No thickener required at L5. Confirm particle size by visual check against the 100 mm ruler: every lump must sit inside a 4 mm window.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines into the specimen until the thumbnail blanches white. The specimen must squash, change shape, and not spring back. Spoon-tilt test: lift 4 ml on a spoon; tilt 45°; the mass must hold together and slide as one piece, not flow or drip. Fork-drip test: lift forkful 50 mm above plate; the specimen must sit cohesive on the tines with no drip. If any of the three fails, re-mash and re-sieve.
+
+VISUAL QC:
+Mash holds a fork-pressed ridge without collapsing. Surface shows 2–3 mm tofu flecks evenly coated in red oil sauce, glossy not pooling. No free red oil pooling around the mound on the plate.
+
+FAIL MODES:
+Over-blended purée with zero particles — re-add 20 g chopped firm tofu, stir. Free red oil pooling on the plate — drain 30 s on the sieve, re-test. Specimen springs back under fork pressure — pulse 2 s more, re-sieve.
+
+### bf18_braised_pork_belly_L6  (level L6)
+PREP:
+Start with 400 g braised pork belly, both lean and fat present. Dice to ≤15 mm pieces on the cutting board using the 100 mm ruler to gauge. Mix lean and fat evenly into each piece. Do not blend — the L6 spec requires intact soft pieces, not a puree. Do not sieve. Do not add water or thickener; L6 is the as-eaten texture. If the pack arrives in large slabs, dice before portioning the 400 g. Weigh the diced 400 g on the digital scale into the capture dish.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test is the primary L6 check. Press the fork tines flat onto a single piece sitting on a plate. The piece must squash, the thumbnail pressed under the fork must blanch white, and the piece must not return to its original shape when the fork is lifted. Repeat on three pieces, mixing lean and fat samples. Spoon tilt: a piece lifted on the spoon and tilted should hold its shape and not drip or fall. Fork drip: lifting a piece on the fork should show no continuous drip through the tines. Pass only if all three pieces squash and do not recover.
+
+VISUAL QC:
+Pieces are glossy brown with visible alternating lean and fat layers, edges clearly diced not torn. Each piece sits as a distinct cube on the fork tines, not mashed. Surface sheen from the braise is intact, no separate liquid pooling at the bottom of the dish.
+
+FAIL MODES:
+Piece exceeds 15 mm when checked against the checkerboard — re-dice finer. Piece springs back after fork pressure — pieces are too firm, re-dice from a more tender cut or extend braise time on a fresh 400 g batch. Fat layer runs liquid when pressed — pat pieces briefly on absorbent paper, do not reheat.
+
+### bf57_braised_beef_brisket_noo_L6  (level L6)
+PREP:
+Weigh out 200 g of braised beef brisket noodles onto the capture tray. Using the fork, separate the noodles and brisket; cut noodles with the fork edge and dice brisket pieces so every dimension is ≤15 mm — discard any piece that exceeds 15 mm, do not blend and do not sieve (sieving would destroy the noodle form required for L6). No thickener, no added water. Specimen is taken as served from the takeaway container.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: place one diced brisket piece on a flat plate, press the fork tines flat until the thumbnail blanches white. Pass = piece squashes, does not recover its shape, and the fork edge does not fully cut through it. Spoon-tilt test (noodle strand): load a noodle strand on the spoon and tilt; the strand must sit cohesively and slide off in one motion, not flow, drip, or run. Fork-drip test: lift a forkful; little to no liquid drips through the tines before the fork-pressure test is performed. All three must pass to confirm L6.
+
+VISUAL QC:
+— Noodle strands visibly cut to short lengths ≤15 mm; no long strands hanging off the fork. — Brisket dice uniform, roughly cube-shaped, no piece visibly larger than the 15 mm squares on the checkerboard beside the specimen. — Surface glistening but no pooled liquid on the tray.
+
+FAIL MODES:
+Noodle strands left longer than 15 mm after cutting — re-cut, do not re-plate. Brisket piece resists the fork-press and springs back, indicating under-cook or wrong cut size — re-cut smaller and retest. Pooled broth on the tray causing fork-drip fail — drain briefly on absorbent paper and re-shoot.
+
+### bf21_blanched_choy_sum_L7  (level L7)
+PREP:
+Use whole blanched choy sum stalks as served, no cutting, no blending, no sieving, no thickener, no added liquid. Working mass 80–120 g per specimen; record actual mass on the scale. Keep stems intact so the fork-press lands on the natural stalk cross-section. Do not reprocess — L7 requires the food as normally served, and the per-level note explicitly keeps stalks as blanched.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press a standard fork flat onto a stalk with thumb pressure equal to pressing your thumbnail to blanch white. Pass when the stalk flattens, splits, or breaks; it must not return to its original shape. Spoon tilt: scoop a stalk and tilt the spoon 45 degrees; pass if the piece sits on the spoon without flowing or dripping. Fork drip: lift a stalk from the liquid and hold over a fork; pass when no liquid runs through the fork prongs in drips. No syringe test at L7.
+
+VISUAL QC:
+Stalk sits flat on the fork tines without sagging. Cut end shows distinct fibrous rings under bright light. Surface holds a slight natural sheen from blanching, not a pooled sauce film.
+
+FAIL MODES:
+Stalk bends but springs back — under-blanched, too elastic, re-blanch 20 s and retest. Stalk crushes to mush — over-blanched, discard and use a fresher bundle. Liquid pools and drips continuously through the fork — reassess as L6 or below, re-classify, do not label L7.

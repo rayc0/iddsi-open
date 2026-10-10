@@ -1,0 +1,116 @@
+### bf13_steamed_chicken_thigh_L3  (level L3)
+PREP:
+Weigh 150 g steamed chicken thigh (skin and visible fat removed). Add 100 ml cool water. Blend on high for 45 s; stop, scrape down, blend 30 s more. Sieve once through the 4 mm sieve; discard residue. Whisk in 2.0 g thickener per 100 ml of liquidised puree as the calibration starting point; record the actual mass used. Stir 30 s, rest 60 s. Stir again; if the puree runs off the spoon, add 0.2 g thickener per 100 ml and rest 30 s. Repeat up to twice. The per-level note instructs blend-thinning; coarse mince or chop is not appropriate for L3.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: a fork pressed fully into the surface leaves a clear pattern that does not rebound; the slot between tines is filled, no chunks remain. Spoon tilt: a level spoon held tilted to 45 degrees flows in a steady, slow ribbon, not a pour and not a pile. Fork drip: when lifted, 3-5 slow drips fall in 10 s, none dropping as a stream. Syringe flow test: after 10 s the syringe retains 8-10 ml; 7-11 ml is acceptable, record the actual.
+
+VISUAL QC:
+Uniform pale beige puree with no visible fibres or fat specks; smooth sheen on the spoon; surface settles flat within 2 s when spooned; clings to the fork tines as a thin, even coating.
+
+FAIL MODES:
+Syringe reads below 7 ml after 10 s (too thick): whisk in 5 ml water, rest 30 s, retest. Visible fibres or fat specks in the puree: re-sieve; if still present, re-blend 20 s and re-sieve. Syringe reads above 11 ml after 10 s (too thin): add 0.2 g thickener per 100 ml, rest 30 s, retest. After any re-make, re-run all four IDDSI checks and re-shoot the affected media.
+
+### bf45_black_sesame_paste_L3  (level L3)
+PREP:
+Weigh 150 g ready-to-eat black sesame paste into the blender jar. Add 120 ml cool water. Blend on high for 45 s, scraping down at 20 s. Pass through the 4 mm sieve using the back of a spoon; discard residue weighing more than 8 g. Weigh the sieved liquid; add thickener at 2.0 g per 100 ml as the calibration starting point (record actual grams used). Whisk by hand 30 s, rest 60 s, whisk 15 s. If drip from fork prongs is faster than 1 drop per second, add thickener 0.2 g per 100 ml, rest 60 s, retest. Record final liquid mass and water added.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: held vertically, liquid drips in slow, continuous strands, not a steady stream; first drop within 1-2 s. Spoon tilt: spoon at 45 degrees, sample flows off in 2-4 s, leaves a thin coating. Fork pressure: prongs leave a clear, persistent line that does not refill. Syringe flow: fill 10 ml, release, at 10 s residual reads 8-10 ml; pass window 7-10 ml. All four must pass before capture.
+
+VISUAL QC:
+On the spoon: matte jet-black, glossy but not pooling, one slow drip forming and falling. On the fork: 4-5 thin continuous strands at 1-2 per second, no run-off between prongs. No grainy specks, no separated oil sheen, no lumps catching on sieve residue.
+
+FAIL MODES:
+Too runny: threads off fork in a continuous stream and syringe reads under 7 ml; re-thicken in 0.2 g per 100 ml steps, max three attempts, then discard batch. Too thick: drops do not fall or syringe holds over 10 ml; whisk in 5 ml water, rest 60 s, retest, max twice. Gritty after sieving: residue over 8 g or visible specks on spoon; re-blend 20 s with extra 10 ml water and re-sieve once.
+
+### bf13_steamed_chicken_thigh_L4  (level L4)
+PREP:
+Weigh 250 g steamed chicken thigh (skin removed, boneless, cooled to ≤40 °C). Add to consumer blender with 60 ml hot water (≈70 °C). Blend on high for 90 s, scrape jar walls, blend 60 s more. Pass purée through a 4 mm sieve using the back of a spoon; discard any fibrous residue that does not pass — note retained mass. Weigh sieved purée. Add thickener at 1.0 g per 100 ml purée as the calibration starting point; whisk in, rest 2 min, re-stir 10 s. If fork-drip test shows flow below the tines, add 0.2 g/100 ml increments up to 1.8 g/100 ml and re-test. Record final thickener rate (g/100 ml) and final specimen mass (g).
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: press fork tines into the specimen on a flat plate with normal thumb force for 5 s. Pass — tines leave a clear, persistent impression and the surface does not rebound fully; sample does not squeeze between tines. Spoon tilt: load a dessert spoon, tilt to 90°. Pass — specimen sits in a cohesive mound, does not slide, pour, or drip. Fork drip: lift a forkful 10 cm above the plate, hold 5 s. Pass — sample mounds above the tines, zero drip.
+
+VISUAL QC:
+Matte, uniform pale beige surface; no pink fibres, no separated broth pooling at plate edge; spoon mound holds a defined peak without slumping.
+
+FAIL MODES:
+Too thin — slides off spoon or drips through tines: add 0.2 g/100 ml thickener, rest 2 min, re-test. Too stiff — cracks on the plate or surface fractures under fork: thin with 10 ml hot water, re-blend 30 s, re-test. Visible fibres or pooled liquid: re-sieve and discard residue before judging.
+
+### bf47_tofu_fa_tofu_pudding_L4  (level L4)
+PREP:
+Weigh 200 g tofu fa plus its syrup into the blender cup. Pulse-blend 8–10 s only; the per-level note is brief blend, blend-hold, so stop the moment the surface turns glossy and stop before it loosens. Do not sieve — a 4 mm sieve will shear the curd into a pourable liquid and is incompatible with L4. Do not add water, milk, or extra syrup; do not add thickener. Hold the cup still for 60 s before pouring so the structure recovers. Spoon onto a white plate, mounding, for testing and capture.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift a loaded fork; the specimen must sit in a cohesive mound above the tines with no drip or tail for 10 s. Fork pressure: press the fork tines into the mound; the surface must dent cleanly with no thin liquid pooling around the prongs. Spoon tilt: tilt a heaped spoonful 45°; the specimen must stay on the spoon, no slide, no run. No fork prongs should show through the specimen when lifted (L4 holds shape).
+
+VISUAL QC:
+Glossy, smooth, jiggle-stable surface; soft sheen, no matte dryness and no wet syrup halo. Mound keeps its peaks from the spoon. No curd lumps, no separated clear syrup around the base.
+
+FAIL MODES:
+Over-blended → specimen flows through fork tines; discard, re-make with a fresh 200 g tub and only 5 s pulse. Under-blended → visible curds or lumps; add one 2 s pulse, do not exceed 8 s total. Syrup separated → drain off free liquid, blot, re-test; if it still drips, re-make.
+
+### bf13_steamed_chicken_thigh_L5  (level L5)
+PREP:
+Steam 180 g fresh chicken thigh until just cooked through. Strip and discard skin, bone, and visible fat. Place 120 g cooked meat in the blender; add 40 ml warm broth from the steaming pot. Pulse 6–8 s, scrape down, pulse 4 s more. Stop and check: meat should be coarse mince, not purée. Rub a tablespoon of the mince across the 4 mm sieve — it should pass with thumb pressure; any stringy bits remain in the sieve and are discarded. Transfer to a bowl, fold through 2 ml more warm broth with the fork to bring to moist, cohesive mince (not wet, not dry). No thickener required. Record final mass; final portion served for test: ~80 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen until the tines blanch, hold 5 s. PASS — specimen squashes, does not spring back, thumb leaves a clear print; particles stay ≤4 mm. Fork drip: hold loaded fork clear of the cup for 10 s. PASS — no drip falls; mince holds together on tines. Spoon tilt: scoop a teaspoonful, tilt spoon to ~45°. PASS — mince sits in a cohesive lump; it slides only if pushed, does not flow. No separate thin liquid pools.
+
+VISUAL QC:
+Mince on fork shows distinct granules, not a paste, all visibly under 4 mm. Surface glistens but no free broth pools on the spoon. A light thumb-print stays indented.
+
+FAIL MODES:
+Mince still strings or shreds when sieved — re-pulse 2–3 s and re-sieve; if still fibrous, downgrade to L6 or re-cook longer before mincing. Specimen weeps free liquid into the cup — drain on sieve 30 s, re-fold with less broth. Specimen balls up dry on the fork — fold in 2–3 ml warm broth and retest. Any re-make requires a fresh take number.
+
+### bf49_doubleskin_milk_L5  (level L5)
+PREP:
+Weigh 150 g of fresh double-skin milk from the cup. Do NOT blend — the per-level note requires spoon-broken curds, not a smooth puree. Press the cup contents with the back of a fork against the bowl side, working in small scoops until the largest curd pieces are at most 4 mm. Pass the whole batch through the 4 mm sieve to catch oversize curds; discard what does not pass. Check on the fork: a curd pressed by the fork base must squash flat and stay flat when the fork is lifted (no spring-back). If it springs back, keep breaking. No water, no milk, no thickener is added. Record the actual starting weight, the time spent breaking, and the sieve reject weight.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test (defines L5): press the fork tines into a curd pile on the plate. The curd must squash, the thumb blanches, and when pressure is released the curd stays flat — no recovery, no elastic bounce. Spoon-tilt test: a spoonful, when tilted to 45°, holds together and slides as a clump; no thin liquid pours off. Fork-drip test: a forkful held over the plate releases pieces only by gravity — no dripping stream of liquid. No 10 ml syringe flow test is required for L5.
+
+VISUAL QC:
+On the fork: matte, off-white curds in distinct pieces, no shiny liquid pool between them, no skin film. On the spoon: mound holds its shape, surface slightly wet but not glossy, no milk weeping into the spoon well.
+
+FAIL MODES:
+Curd rebounds when fork is lifted → over-sized or gummy curds; re-break and re-sieve, do not accept. Free thin milk pools on the plate or drips from the fork → set is too loose or curd was over-worked; do not add thickener to mask it, remake from a fresh cup. Glossy skin films the surface → skin not broken through; scrape and re-mash before shooting.
+
+### bf15_hardboiled_egg_L6  (level L6)
+PREP:
+Weigh 200 g peeled hard-boiled egg (white and yolk). Chop on board with knife into pieces <=15 mm per the level note. Do not blend — the list note says chop, not puree. Do not sieve. Do not add water or thickener. Record actual mass of chopped specimen in g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines onto a piece until thumbnail blanches white. Pass — piece squashes and does not return to shape; it breaks apart, not springs back. Spoon tilt: skip — L6 is not spoonable, so tilt is not the deciding test. Fork drip: skip — L6 pieces do not drip. Run fork-pressure as the primary test.
+
+VISUAL QC:
+Pieces are irregular, soft-looking, yellow-cream, with visible yolk and white mixed. Hold a piece on the fork — it visibly deforms under its own weight and when pressed. No liquid weeps from the piece. All pieces measure <=15 mm when checked against the 100 mm ruler.
+
+FAIL MODES:
+Pieces over 15 mm — re-chop. Egg rubbery and springs back under fork — egg overcooked, start again with a freshly boiled egg. Pieces crumble to powder rather than squash — egg undercooked, re-boil.
+
+### bf54_saltedegg_steamed_pork_p_L6  (level L6)
+PREP:
+Weigh 250 g fresh minced pork and one salted egg (≈55 g) on the digital scale; separate yolk from white, mash yolk with fork, finely chop white. Combine pork, yolk mash, chopped white, and 30 ml water; mix by hand until sticky. Shape into a flat patty ≈20 mm thick and steam 12 min until just cooked through. Cool 5 min. Portion a 100 g specimen and crumble by hand into pieces; press each piece through the 4 mm sieve so no dimension exceeds 15 mm. Discard any fragment that will not pass — re-cut larger bits and re-sieve. Do NOT blend. Do NOT add thickener; L6 needs no flow control. Record total mass of sieved specimen on the capture card. Re-weigh and record final yield in grams.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press thumbnail on a 15 mm piece for 5 s — pass if thumbnail blanches white, piece squashes flat, and does not recover its shape when pressure is released. Spoon-tilt test: place 8-10 pieces on a spoon and tilt 45° — pass if pieces sit stably without sliding off (slight stick is allowed). Fork-drip test: lift 4-5 pieces on a fork over the plate — pass if no liquid runs through or drips from the fork tines. No syringe test at L6.
+
+VISUAL QC:
+Pieces on the fork should look moist and pale gold from the salted egg, with no pink pork showing, and should hold their crumbles without slumping when the fork is held level. Pieces on the spoon should rest in a loose mound, not a slurry, and a quick tap should not produce liquid pooling under them.
+
+FAIL MODES:
+Pieces exceed 15 mm after crumbing — re-cut and re-sieve. Patty is too wet and pools liquid on the spoon — drain on paper towel 30 s, re-weigh, re-film. Meat is undercooked and springs back under fork-pressure — re-steam 3 min, cool, re-test. Two consecutive failures: re-make from a fresh 100 g portion.
+
+### bf18_braised_pork_belly_L7  (level L7)
+PREP:
+Weigh 200 g of braised pork belly straight from the pack at room temperature per the per-level note. Keep slices as braised — do NOT blend, do NOT sieve, do NOT add water or thickener. This is the reference specimen: the food as normally served. If the pack is in one large piece, cut a representative slice about 30 mm × 40 mm × 15-20 mm thick. Record starting mass and the cut dimensions on the sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press a standard metal fork down on the slice until the tines blanch, then lift. Pass = slice can be cut or squashed into smaller pieces; it does not return to shape, it does not drip, and the tines leave a clear full-thickness mark. Spoon tilt: tilt a spoon with a piece of slice on it to about 45 degrees. Pass = the piece stays on the spoon with little to no flow, or falls as a discrete lump, not a pour. Fork drip: hold fork with slice over a plate for 5 s. Pass = nothing drips through or off. No syringe flow test at L7.
+
+VISUAL QC:
+Slice holds its cuboidal braised shape with visible skin, fat, and lean layers; glossy dark sauce coats but does not pool excessively on the fork. A second look should show no soft collapse when the fork lifts the piece — if it slumps, it is failing toward L6.
+
+FAIL MODES:
+Slice spreads or collapses under fork pressure → remake from a new pack and re-shoot. Sauce runs through the fork tines before 5 s → dab with a paper towel before re-test and re-shoot. Tines fail to mark or slice bounces back → slice is too firm/dry for L7; remake with a thicker cut from the centre of the pack.

@@ -1,0 +1,64 @@
+### bf30_sweetcorn_kernels_L3  (level L3)
+PREP:
+Weigh 200 g sweetcorn kernels (drained canned or thawed frozen, heated). Add 100 ml hot water. Blend 60 s. Pass through 4 mm sieve; press to express liquid; discard fibrous residue. Measure sieved liquid: top up with hot water to 200 ml total. Add 2.0 g thickener per 100 ml (calibration starting point; record actual mass). Stir 30 s, rest 2 min, stir 15 s. Per-level note "blend-thin" applies: thin to pour, not to chew.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: fork lifted 2 cm; liquid drips in slow, continuous threads through the tines within 10 s — pass. Fork pressure: pressing fork tines into 5 mm of specimen on a flat surface leaves a clear imprint without crumb splitting — pass. Spoon tilt: specimen on spoon holds its shape when tilted 45°, does not run off — pass. IDDSI flow test: fill 10 ml syringe, release; 8–10 ml remains in the syringe after 10 s — pass. Reject if < 6 ml (too thin) or > 11 ml (too thick).
+
+VISUAL QC:
+On the fork: a smooth, glossy coat clings between tines with no kernels or yellow flecks visible. On the spoon: surface is flat and level, no pooling of free liquid. Colour uniform pale yellow, no graininess or streaks.
+
+FAIL MODES:
+(1) Visible specks or yellow flecks after sieving: re-blend 15 s and re-sieve. (2) Syringe residual < 6 ml: thickener too low; add 0.5 g thickener per 100 ml, stir, rest, retest. (3) Residual > 11 ml: over-thickened; discard and remake with reduced thickener.
+
+### bf30_sweetcorn_kernels_L4  (level L4)
+PREP:
+Weigh 150 g canned or frozen sweetcorn kernels, drained. Add to consumer blender with 60 ml water. Blend 45 s on high, then pass through the 4 mm sieve to remove skins and fibrous hulls per the per-level note; discard the sieve residue. Return the sieved puree to the blender and blend a further 30 s until smooth. Transfer puree to a small bowl. Add thickener at the L3 calibration starting point of 2.0 g per 100 ml, stir vigorously 15 s, rest 60 s, stir 5 s. If flow fails, add 0.2 g thickener per 100 ml increments, stir, rest, re-test; if too stiff, add 1 ml water. Record the actual grams of thickener per 100 ml and total water used on the run sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press fork tines into the specimen on a flat white plate. Specimen must compress and leave a clear full tine-pattern indentation with no surface recovery for several seconds. Pass = clean impression holds. Spoon tilt test: scoop 5 ml onto a teaspoon, tilt to 90 degrees. Specimen must sit in a mound on the spoon, not pour or drip. Pass = holds mound without sliding. Fork drip test: lift fork from the bowl; specimen sits in a mound above the tines and does not flow or drip through the gaps. Pass = mound stays, tines visible underneath.
+
+VISUAL QC:
+Uniform yellow colour, no visible yellow flecks, skins, or fibrous threads. Smooth glossy surface that mounds on the fork rather than coating it thinly. Holds its own shape on the spoon without pooling liquid at the edges.
+
+FAIL MODES:
+Too thin, flows through fork tines or drips off spoon: add 0.2 g thickener per 100 ml, rest 60 s, re-test; re-shoot if remake. Visible skins or fibrous strands after sieving: re-blend and re-sieve; one pass only, do not push residue through. Grainy texture with visible yellow flecks: blend a further 15-20 s and re-test; if still grainy, remake.
+
+### bf30_sweetcorn_kernels_L5  (level L5)
+PREP:
+Weigh 150 g canned or frozen sweetcorn, drained. Pulse in the consumer blender for 5-8 s — do not purée; aim for chopped kernels under 4 mm. Pass through the 4 mm sieve; discard overs. Return fines to a bowl, add 15 ml water per 100 g solids, and mash firmly with a fork for 30 s until cohesive and visibly moist with no pooled liquid. If it sits wet, stir in thickener 1 g per 100 ml as the calibration starting point, then record the actual grams used. Fork must pass pressure test before filming.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the fork tines into the specimen until the tines blanch fully white; on release the flesh stays compressed and does not spring back — pass. Spoon tilt: a loaded spoon held at 90 degrees holds the specimen for 10 s without sliding off — pass. No fork drip test applies (L5, not L3); no thin liquid should separate when the specimen sits on a plate for 1 minute.
+
+VISUAL QC:
+On the fork: granular but cohesive mass, no whole kernel slipping off, surface sheen from added water. On the spoon: holds a rounded heap without slumping. On the plate: leaves a wet trail, no puddle around the mound.
+
+FAIL MODES:
+Whole kernels survive blending above 4 mm — re-pulse and re-sieve. Specimen slides off the spoon at 90° — add thickener in 1 g per 100 ml steps and re-mash. Pooling thin liquid appears on the plate — blend in extra thickener 0.5 g per 100 ml until cohesive; re-shoot from step 2.
+
+### bf32_ripe_mango_L6  (level L6)
+PREP:
+Dice 200 g ripe mango flesh on a clean board into 8–12 mm cubes. Confirm no piece exceeds 15 mm by visual check against the 100 mm ruler; reject any oversized cube. Do not blend, sieve, or thicken. Ripe mango at L6 needs no liquid, no gum, and no mechanical breakdown. State in notes: per-level note caps pieces at 15 mm — dicing only.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure: press the tines flat onto a piece with the thumb until the thumbnail blanches white. Pass if the piece squashes, does not spring back, and the thumbnail clearly whitens. Fork drip: lift a loaded fork; pieces must not drip through or fall. Spoon tilt: tilt a spoon holding 4–5 pieces; pieces stay without sliding off.
+
+VISUAL QC:
+On the fork: cubes hold shape but glisten with fibrous moisture; surface looks soft, not rubbery. On the spoon: pieces sit in a shallow pool of their own juice, edges rounded, no intact skin strips. Color is uniform mango yellow-orange with no green.
+
+FAIL MODES:
+Pieces over 15 mm: re-dice smaller. Under-ripe fruit springs back under thumb: re-make with riper mango or discard. Excess juice pools and drips through fork tines: drain 30 s on the sieve, re-shoot.
+
+### bf35_soft_ripe_persimmon_L7  (level L7)
+PREP:
+Select a fully ripe, unbruised persimmon. Record start mass on the digital scale; target 150–200 g for the reference specimen. Wash, pat dry. Do not peel. Cut the fruit in half along the equator with a clean knife. Keep both halves intact; do not blend, do not sieve, do not add thickener, do not add liquid. The specimen is the halved fruit as normally served. Confirm the per-level note: halves as cut is the correct reference form. Set aside one half for the test, one half for plating.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines of a standard metal fork into the cut face of the persimmon half with normal thumb pressure until the thumbnail blanches white. The flesh must collapse, split, or flatten and not return to shape when the fork is removed. Spoon tilt test: scoop a 4–5 ml portion of flesh onto a teaspoon and tilt the spoon to a 30–40 degree angle; the portion must slide off easily without sticking, clinging, or forming a cohesive bolus that holds shape on the spoon. Fork drip test is not diagnostic at L7; skip. No syringe flow test at this level.
+
+VISUAL QC:
+Cut face shows soft, glossy, translucent orange-red flesh with no white fibrous strands holding shape. Fork tines enter the flesh with no spring-back. Spoon-tilted portion slides as a soft mass, not as a molded lump. No free liquid pools on the plate.
+
+FAIL MODES:
+Under-ripe fruit: flesh resists fork pressure or springs back; discard and remake with a fully ripe specimen. Overripe or bruised fruit: free liquid runs across the plate; that is acceptable texture but document the weeping. If any test is ambiguous, retake with the second half and discard the first.

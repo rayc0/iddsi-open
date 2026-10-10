@@ -1,0 +1,103 @@
+### bf22_blanched_bok_choy_L3  (level L3)
+PREP:
+Weigh 150 g blanched bok choy (drained). Add 60 ml water. Blend 45 s on high; stop, scrape down, blend 30 s more. Pass through the 4 mm sieve; press with the back of a spoon to extract purée, discard coarse fibre. Measure 200 ml purée. Add thickener at the calibration starting point of 2.0 g per 100 ml (record actual mass used). Stir 30 s, rest 60 s, stir 15 s. Re-weigh total specimen and record.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: lift fork tines 5 cm; purée drips slowly in a thick continuous ribbon, falls in ≤3 drops over 10 s. Pass = ribbon + ≤3 drops. Fork pressure: press fork tines fully into specimen; tines leave a clear impression and purée does not flow back to level. Pass = clear imprint retained. Spoon tilt: spoon a heaped teaspoon, tilt to 45°; specimen slides slowly off in one cohesive mound, not a pour. Pass = slides as a mound. IDDSI flow test: fill 10 ml syringe, cap tip, invert, release after 10 s. Pass = 8-10 ml remaining (i.e. only 1-2 ml flowed out).
+
+VISUAL QC:
+Uniform pale-green purée, no visible leaf fragments or fibre. Coats the back of a spoon in an even, opaque layer with no run-through. Hangs from fork tines as a continuous ribbon before falling. No free liquid pooling at the rim of the container.
+
+FAIL MODES:
+Too runny: re-add thickener in 0.2 g/100 ml increments, retest. Too thick / does not drip from fork: thin with water in 5 ml steps, retest. Visible fibre after sieving: re-blend 20 s and re-sieve; if fibre persists, L3 is not achievable for this batch — re-make with a finer sieve or switch food.
+
+### bf54_saltedegg_steamed_pork_p_L3  (level L3)
+PREP:
+Weigh 150 g fresh minced pork + 30 g salted-egg yolk together. Add 100 ml room-temperature water. Blend 45–60 s until smooth paste with no fibres. Press through the 4 mm sieve; discard residue. Stir in thickener at 1.5 g per 100 ml of sieved puree as the calibration starting point. Whisk 30 s, rest 60 s, re-whisk. Record actual thickener grams on the card. If sieve clogs with fibrous pork, stop: the per-level note "blend-thin" cannot be achieved, re-blend with an extra 20 ml water.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: 4–6 slow drips per 10 s from fork tines, no continuous stream. Spoon tilt: flows as a single ribbon that levels in 1–2 s when spoon is tilted to 45°. Fork pressure: mound holds shape when fork pressed, then collapses and spreads under thumb. Syringe flow: draw 10 ml into the IDDSI syringe, release; 8–10 ml remains after 10 s (must fall within 8–10 ml band for L3).
+
+VISUAL QC:
+Smooth, glossy, pale-orange paste with no visible pork fibre or yolk lumps. Coats the spoon back in a thin even film. Mound from the fork press slowly relaxes to a flat puddle within 2 s.
+
+FAIL MODES:
+(1) Syringe retains <8 ml → too thin; add 0.2 g thickener, rest, retest. (2) Syringe retains >10 ml or fork drip stops → too thick; whisk in 10 ml water, retest. (3) Visible fibres or yolk chunks breaking the 4 mm sieve → re-blend 20 s with 15 ml extra water, re-sieve. More than one failed retest → discard batch, re-weigh ingredients.
+
+### bf22_blanched_bok_choy_L4  (level L4)
+PREP:
+Weigh 200 g blanched bok choy (drained). Add 60 ml warm water. Blend 45 s on high; scrape down; blend 30 s more. Pass through the 4 mm sieve using the back of a spoon; discard fibrous residue. Return purée to blender with 2.0 g thickener per 100 ml as the calibration starting point; record the actual mass used. Blend 20 s, rest 60 s, blend 10 s. Adjust: +0.5 g thickener per 100 ml if it flows through fork tines; -0.3 g per 100 ml if it cracks on the spoon. Re-blend 15 s after any adjustment.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: a 4 mm-wide mound holds its shape when the fork presses to 1 cm above the plate without squashing flat. Pass criterion: clean edges, no liquid bleed. Spoon tilt: a 4 ml scoop on a 1 cm spoon sits and slowly slides only 1-2 cm before stopping. Pass criterion: mounded, not liquid, not stiff. Fork drip: mound rests above tines with no drip in 10 s. Pass criterion: no drop falls; gloss only on tine surface.
+
+VISUAL QC:
+Matte sheen, uniform pale-green, no leaf flecks or fibres. Mound holds sharp ridges from fork tines. No puddle forming around the base on the white plate.
+
+FAIL MODES:
+Visible green fibres or seed specks → re-sieve and re-blend. Mound slumps below tine tops within 5 s → add 0.5 g thickener per 100 ml, re-blend, re-test. Liquid ring forms at base → too wet, re-blend with extra 0.3 g thickener per 100 ml. Re-make from raw if any two tests still fail after two adjustments.
+
+### bf56_wonton_soup_small_wonton_L4  (level L4)
+PREP:
+
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+
+
+VISUAL QC:
+
+
+FAIL MODES:
+
+
+### bf22_blanched_bok_choy_L5  (level L5)
+PREP:
+Weigh 200 g blanched bok choy on the scale. Pat dry briefly with paper towel, then chop finely with a chef's knife on a board, aiming for pieces under 4 mm in every dimension. The per-level note permits water moistening; add 20 ml warm water and mash with a fork until the mass is cohesive, no separate thin liquid pools on the board, and no piece exceeds 4 mm when checked against the 4 mm sieve. Sieve a small scoop to confirm; if any fragment sits on top of the mesh, rec chop that portion and re-mash. Do not blend — the per-level note calls for fork-mash, not puree, and a consumer blender would over-process this leaf into a pourable fluid. No thickener; L5 does not calibrate thickener, so do not add any.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the flat of the fork into a heaped teaspoon of specimen with firm thumb pressure until the thumbnail blanches white. The specimen must squash, the fork tines leave a clear imprint, and the food must NOT spring back when the fork is lifted. Spoon-tilt test: tilt a teaspoon 45 degrees; the specimen should hold together as one mass and slide off slowly in a single clump, not flow, drip, or run. Fork-drip test: lift a loaded fork; no thin liquid should drip through the tines within 10 seconds.
+
+VISUAL QC:
+On the fork: a coarse, granular mash with visible green flecks, glistening with moisture but not glossy or soupy. On the spoon: holds a peaked mound without slumping; no standing liquid in the spoon bowl. Color stays bok-choy green-white, not pale yellow-green from over-blanching.
+
+FAIL MODES:
+Specimen recovers shape after fork press → too dry or chopped too coarse; re-mash with 5 ml water per 100 g and re-check against the 4 mm sieve. Thin liquid pools on the board or drips off the fork → over-moistened; drain on paper towel and re-mash. Pieces exceed 4 mm → rec chop those fragments, do not blend.
+
+### bf59_steamed_chicken_with_mus_L5  (level L5)
+PREP:
+Start with 200 g of steamed chicken with mushrooms, keeping the cooking juices that accompany the dish. Strip any visible bone, skin, or gristle. Mince finely with a clean knife, then work the mince through the juices with a fork until the pieces are uniform. Pulse briefly in the consumer blender for 5-8 seconds only; the goal is to bring the particles to the 4 mm ceiling, not to puree. Press the mash through a 4 mm sieve, discarding anything retained above. Stir in 2-5 ml of the reserved juices per 100 g of mash to keep it moist; no thin liquid should pool on the surface. No thickener is required at L5; if the mash releases free liquid on standing, blot, do not add thickener.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the fork tines flat against the mash; the specimen must squash and the slots must be clearly visible through it. Release pressure; the mash must not spring back. Spoon tilt test: a teaspoon of the mash must hold its shape on the spoon when tilted, not flow or drip off. Fork drip test: lift the fork; no thin liquid should drip through or run off the tines within 10 seconds.
+
+VISUAL QC:
+On the fork: cohesive clump with no loose drips, individual mince grains still visible but all smaller than a rice grain. On the spoon: a soft mound that holds its shape when tilted, surface glistening but no pooling liquid at the rim.
+
+FAIL MODES:
+Particles above 4 mm after sieving: re-mince and re-sieve. Free thin liquid pools on the plate: blot and re-test, do not add thickener. Mash recovers shape after fork pressure: more fork work, then re-test.
+
+### bf24_braised_winter_melon_L6  (level L6)
+PREP:
+Dice braised winter melon into cubes ≤15 mm per side. Do not blend. Do not sieve. Do not add thickener; this is L6, not L3, so no liquid calibration is required. Weigh 200 g of diced pieces on the digital scale as the working specimen. Confirm no skin, fibrous core, or seed clusters remain — winter melon flesh must be uniformly soft through to the centre of each cube.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the tines of a fork against a single cube until the thumbnail blanches white. Pass criterion: the cube squashes fully and does not return to its original shape; it breaks apart easily. Spoon-tilt test: place a cube on a spoon and tilt to 45°. Pass criterion: the piece slides/rolls off readily — it must not sit as a solid lump. Fork-drip test: lift a fork-load of cubes; pass criterion: pieces sit proud on the tines, nothing pours through the gaps as liquid.
+
+VISUAL QC:
+Cubes on the fork appear translucent-ivory with a slight gloss, no opaque white core. Edges look soft-rounded rather than sharp-cut. Surface yields visibly under the fork tines before pressure is even applied.
+
+FAIL MODES:
+Cubes exceed 15 mm — re-dice smaller. Centre of cube is firm or opaque — winter melon was under-braised; re-braise until fully soft. Pieces hold shape on spoon-tilt with no squash on fork-press — texture is closer to L7; re-cook at lower temperature longer.
+
+### bf27_braised_lotus_root_L7  (level L7)
+PREP:
+Use the braised lotus root as purchased. Do not blend, sieve, or thin. Per the food list, handle as slices as braised. Select one intact slice ~15 mm thick, ~40-50 g, as the reference specimen. Place on the A4 capture mat. Record actual specimen mass on the data sheet. No thickener, no water, no processing of any kind.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press fork tines into the slice until thumbnail blanches white. The slice must compress, deform, or break apart under this pressure — it must not return to its original shape. Spoon tilt test: lift a portion on a spoon and tilt to 90 degrees; the piece must fall off easily with no flowing liquid and no sticky residue pulling back toward the spoon. Fork drip test: hold a loaded fork over a plate; no continuous drip should run through the tines. Pass criterion for L7: food can be cut, mashed, or broken apart with pressure from a standard fork or spoon, and holds its shape on the plate while sitting in its own sauce.
+
+VISUAL QC:
+Slice keeps its round, holed lotus-root cross-section with visible cavities. Color is deep mahogany-brown, surface glossy from braise. A light pool of sauce sits around the slice but does not flood the plate. Edges of any break show fibrous, cooked-through texture — no pale raw core.
+
+FAIL MODES:
+Slice too firm to deform under fork pressure: re-pick a thinner slice from the same batch. Slice collapses into puree under pressure: re-pick and confirm the sample is sliced, not mashed. Excess thin sauce runs through fork tines: drain briefly on paper, re-plate, re-shoot.

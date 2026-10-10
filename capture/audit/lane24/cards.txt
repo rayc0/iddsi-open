@@ -1,0 +1,90 @@
+### bf24_braised_winter_melon_L3  (level L3)
+PREP:
+Weigh 200 g braised winter melon onto the scale. Add 60 ml water. Blend on high for 45 s until fully broken down. Pass through the 4 mm sieve; discard residue. Return puree to the blender cup. Add thickener at 1.5 g per 100 ml of puree as the calibration starting point; blend 10 s to incorporate. Pour into the capture bowl. Record the actual thickener mass used per 100 ml before adding. Reject the batch if total added thickener drifts outside 1.2-1.8 g per 100 ml without re-sieving.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork vertically; liquid should not flow in a continuous stream, drop slowly in 2-4 s drips. Pass: drips every 2 s or slower, no steady stream. Fork pressure: press fork tines flat into surface; if tines leave a clear imprint and surface does not return to level, reject as too thick for L3; accept only if surface barely retains a faint mark. Spoon tilt: spoon should pour readily off the tilted edge but not run; pass if it slides in a thick ribbon, not a thin stream. Syringe flow: fill 10 ml IDDSI syringe, release for 10 s. Pass: 8-10 ml remaining in barrel. Outside that range, re-adjust and re-record.
+
+VISUAL QC:
+Surface sheen even, no visible fibres or melon skin flecks. Coats back of spoon with thin film. Fork tines show pale, translucent coating when lifted.
+
+FAIL MODES:
+Too thin: drips in a steady stream, syringe drops below 8 ml. Re-make by sieving again and adding 0.2 g thickener per 100 ml, re-test. Too thick: spoon piles, fork holds shape. Re-make by diluting with 10 ml water and re-sieving, never add more thickener without re-sieving. Fibrous: visible strings on fork lift or sieve residue. Reject; re-blend 30 s and re-sieve before adjusting thickness.
+
+### bf56_wonton_soup_small_wonton_L3  (level L3)
+PREP:
+Weigh 200 g cooked wontons plus 200 ml of their cooking liquid into the blender jar. Blend on high for 30 s, scraping down once, then blend a further 15 s. Press the puree through the 4 mm sieve using the back of a spoon; discard the firmer residue (skins, filling fibre). Measure the sieved volume. Add thickener at 3.0 g per 100 ml of puree as the calibration starting point; whisk in with a fork, rest 60 s, stir, re-measure volume. Top up with hot water 10 ml at a time only if the puree is thicker than the flow-test target. Record the actual grams of thickener used and the final volume on the card.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: puree should drip in slow, continuous, thread-like strands through the tines, not run as a thin stream and not sit in a mound. Spoon tilt: a 5 ml scoop on the spoon should hold its shape and only flow off when the spoon is tilted nearly vertical. Fork pressure: pressing the fork tines into 5 ml on a flat plate leaves a clear imprint with the puree slowly filling the depression; it does not level instantly. IDDSI flow test: fill the syringe to the 10 ml mark, release, after 10 s read the remaining volume — pass = 8–10 ml remaining in the syringe.
+
+VISUAL QC:
+Smooth, glossy, even beige surface and no visible wonton skin or filling flecks after sieving. Coats the spoon back without running. Drips from the fork in slow ribbons, not drops, not a stream.
+
+FAIL MODES:
+Too runny (syringe < 8 ml, drips as stream): whisk in extra thickener 0.5 g per 100 ml and re-test. Too stiff (syringe > 10 ml, sits in mound, fork leaves no drip): thin with 5–10 ml hot water and re-test. Lumpy with skin or filling flecks visible: re-blend 15 s and pass through the 4 mm sieve again before re-thickening.
+
+### bf24_braised_winter_melon_L4  (level L4)
+PREP:
+Weigh 200 g braised winter melon including its cooking liquid. Tip into the blender; blend 45-60 s until fully smooth. Sieve through the 4 mm sieve using the back of a spoon; discard fibrous residue. Return puree to the blender, add 2 g thickener per 100 ml of puree (record actual grams used on the data sheet). Blend 20 s, rest 60 s, blend 10 s more so the thickener is fully hydrated. Do not add water. The starting mass and final mass are recorded for yield.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press the fork tines flat into the surface; the prongs leave a clear, clean imprint and the puree holds the dent without running back together. Fork drip test: lift the fork; the puree sits as a mound sitting on top of the tines, not flowing through or dripping in a thin stream. Spoon tilt test: scoop a heaped spoonful and tilt to a steep angle; the mound must sit on the spoon without sliding off, no separate thin liquid pools on the plate. Level 4 confirmation: all three must pass; the fork-drip mound above the tines is the deciding cue.
+
+VISUAL QC:
+Surface is glossy, uniform, off-white to pale jade with no fibre specks. A spoon drawn through it leaves a slow-filling groove that holds its outline for several seconds. A fork lifted from the surface carries a soft peak that sits proud of the tines.
+
+FAIL MODES:
+Too thin: puree flows through fork tines or liquid pools on tilt — add 0.5 g thickener per 100 ml, reblend, rest 60 s, retest. Too thick / gummy: puree cracks or balls under fork pressure — thin with 5-10 ml of the original braising liquid, reblend, retest. Lumpy or fibrous: residue visible after sieving — re-sieve the full batch, do not patch; if fibre persists, re-blend an extra 30 s and sieve again. Re-make from the recorded base recipe; do not adjust blind.
+
+### bf58_tomato_egg_stirfry_L4  (level L4)
+PREP:
+Port 350 g tomato egg stir-fry into blender; add 60 ml warm water. Blend on high for 45 s. Press 200 g of the blend through the 4 mm sieve using the back of a spoon; discard any seeds or skin that do not pass through. Return sieved blend to blender. Add thickener at 2.0 g per 100 ml of blend (calibration starting point — record actual grams used). Blend 15 s to incorporate. Let rest 2 min, then stir once. Do not add extra water after sieving.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: scoop a heaped forkful and hold level over a white plate for 10 s. Pass criterion: the entire mound sits on top of and between the tines with zero drip falling from the fork. Fork pressure: press the flat of the fork tines into the specimen until the thumbnail blanches white (approx. 17 N). Pass criterion: the indent holds clean, no liquid pools, no extrusion of thin liquid around the tines. Spoon tilt: place 5 ml on a spoon and tilt to a steep angle. Pass criterion: the specimen stays in a cohesive mound without sliding off. Do not perform the syringe flow test for L4.
+
+VISUAL QC:
+Uniform glossy orange-pink color with no visible egg white chunks, no tomato skin flecks, no free red liquid pooling at the rim of the spoon. Surface should look smooth and slightly matte, holding a soft peak when scooped.
+
+FAIL MODES:
+(a) Blend still separates a watery red layer on standing: under-blended or under-thickened; re-blend 10 s and add 0.3 g thickener per 100 ml, retest. (b) Specimen flows through fork tines or drips within 10 s: too thin; add thickener incrementally and retest. (c) Lumpy texture with visible white egg threads after sieving: blend an additional 20 s, re-sieve. Two failed attempts at the same fault → log as reject and re-cook a fresh portion.
+
+### bf24_braised_winter_melon_L5  (level L5)
+PREP:
+Weigh 200 g of braised winter melon, drained of braising liquid. Reserve the liquid in a small cup; you will use a few ml only if needed. Press the melon through a 4 mm sieve using the back of a spoon, working in small batches; discard any fibrous bits that will not pass. Mash the sieved pulp with a fork until uniform. Check particle size: spread a teaspoon on the checkerboard A4 sheet and confirm no piece exceeds one small square (~4 mm). If the mash looks dry, fold in 5–10 ml of the reserved braising liquid a teaspoon at a time; do not add so much that free liquid pools. Do not blend — blending destroys the L5 particle structure. Do not add thickener; L5 does not require it, and any added gum will hide the real texture. The blender is unused for this specimen.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines into a heaped teaspoon of specimen on a flat plate until the blanching shows white under the nail, then lift. Pass: the mash squashes flat, does not spring back, the tines leave a clean print. Fork drip: lift a forkful 10 cm above the plate and hold 5 s. Pass: only soft dollops may drop; no free liquid runs through the tines. Spoon tilt: tilt a heaped teaspoon 45°. Pass: the specimen holds its shape and slides as a cohesive mass; it does not pour. Skip the syringe flow test — that is for L3 only.
+
+VISUAL QC:
+On the fork: a moist, lumpy mash with visible flecks no bigger than a grain of coarse pepper; clings to the tines without dripping. On the spoon: a soft mound that holds its peak for several seconds, surface slightly glossy from the braising liquid, no puddle forming at the base.
+
+FAIL MODES:
+Particles larger than 4 mm because the sieve was skipped or pressed too lightly — re-sieve the batch. Specimen too wet, with thin liquid pooling on the plate — drain longer, then fold in pulp only, no extra liquid; if still failing, re-make from a drier portion of the braise. Specimen too stiff and crumbly because too much fibrous flesh was retained — discard stringy bits during sieving and fold in a teaspoon of reserved liquid at a time until the fork-pressure test passes.
+
+### bf26_steamed_carrot_L6  (level L6)
+PREP:
+Dice steamed carrot into 15 mm cubes (measure with 100 mm ruler; reject any cube that exceeds 15 mm on any edge). Transfer 200 g of diced carrot to the blender. Add 40 ml water. Pulse 6 seconds total in 2-second bursts; stop and inspect between bursts. Pass through the 4 mm sieve using the back of a spoon; press firmly so soft material passes. Weigh the sieved mash. Record starting weight, blended weight, and any material retained on the sieve. Do NOT add thickener; L6 requires visible pieces, not a flow-controlled bolus. Dice retention is acceptable only if pieces meet the fork-pressure test below.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into a representative piece on a flat plate until thumbnail blanches white. Pass: piece squashes and does not return to original shape. Size check: 10 of 10 random pieces must measure ≤15 mm with the ruler. Spoon tilt: sample must sit in a stable mound on the spoon; minor spread acceptable, no liquid pool. Fork drip: lift fork; nothing should drip through tines. Reject if any piece remains firm or springs back, or if purée is sticky enough to require a 10 ml/10 s syringe flow test.
+
+VISUAL QC:
+Soft 15 mm dice visible, not puréed. Pieces hold shape on fork tines without sliding off. Light orange, moist surface, no separated liquid pooling on the plate.
+
+FAIL MODES:
+Pieces exceed 15 mm after dicing: re-dice and re-weigh. Pieces spring back under fork pressure: re-steam 3 minutes, re-test. Excess water pools on plate: drain 30 seconds on paper, re-shoot, do not blot pieces.
+
+### bf29_steamed_eggplant_L7  (level L7)
+PREP:
+Weigh out 200 g steamed eggplant as served (no cooking added). Do not blend, do not sieve, do not add thickener, do not add water. Cut into strips roughly 5 cm long × 1.5 cm wide as steamed per spec. Use these strips as the reference specimen.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press a strip flat with the fork tines; the strip flattens easily and does not recover its shape when the fork is lifted — pass. Spoon tilt test: the strip sits on the spoon without sliding off when tilted; minimal spread, no flowing — pass. Fork drip test: no liquid drips through the tines between fork lifts — pass. Adult-sized bite ≈ 1.5 cm cube is chewed normally without effort — pass.
+
+VISUAL QC:
+Strip holds its cut shape on the fork, surface looks tender-firm not mushy, no pooled liquid pools around the strip. Colour uniform cooked-eggplant purple-tan, no raw patches.
+
+FAIL MODES:
+Strip smears or collapses fully under the fork → too soft, remake with a firmer batch. Liquid pools on the plate or drips from fork → not drained properly, pat strips dry and retest. Strip recovers shape after fork lift → under-steamed, steam a fresh batch 2–3 min longer.

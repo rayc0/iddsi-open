@@ -1,0 +1,57 @@
+You are auditing physical specimen cards for a dysphagia texture study.
+An operator will cook these exactly as written, at a bench, for ~9 hours. A wrong
+card therefore becomes a wrong GROUND-TRUTH label that silently trains a model
+incorrectly. Your job is to catch errors BEFORE a human burns a day on them.
+
+The file cards.txt contains several specimen cards. Each has a target IDDSI level
+(L3-L7), a PREP procedure, the IDDSI TEST criteria, a VISUAL QC description, and
+FAIL MODES.
+
+IDDSI definitions you are checking against:
+  L3 liquidised / smooth   -- no lumps at all, flows freely from the spoon.
+  L4 thickly liquidised    -- no lumps, but markedly thicker, holds a soft shape.
+  L5 minced and moist      -- lumps ~4 mm, mashable with a fork, holds together
+                              loosely, moist.
+  L6 soft bite-sized       -- lumps ~8-15 mm, fork needs real effort, cut pieces.
+  L7 regular               -- pieces >=15 mm that require real chewing.
+
+Applicable tests, by level:
+  L3 : fork drip, plus the 10 ml syringe flow test (8-10 ml left at t=10 s)
+  L4 : fork pressure, spoon tilt, fork drip
+  L5 : fork pressure, spoon tilt
+  L6 : fork pressure, spoon tilt
+  L7 : fork pressure, spoon tilt
+
+FOR EACH CARD report, using the specimen_id as the key:
+
+  ACHIEVABLE: yes | no | uncertain -- would following this PREP actually produce
+    the stated level, as written? Quote the specific step that decides it.
+  TEST_SET_CORRECT: yes | no -- are the applicable tests the right ones for this
+    level, and does the card avoid asserting tests that do not apply at this level
+    (for example a 10 ml syringe flow test on an L5, or a "no lumps" criterion on
+    an L5 or above)?
+  PARAMETERS_PRESENT: yes | no -- list any measurement the card asks for but does
+    not pin down (grams, ml, seconds, sieve mm, particle size) that would let two
+    operators produce materially different results.
+  CONTRADICTIONS: <any internal conflict: the prep implies a different level than
+    the target, the QC describes a texture the target level should not have, the
+    fail-mode remedy would push it into an adjacent level, or so on>
+  SINGLE_WORST_RISK: <the one sentence an operator would most likely get wrong>
+
+Be concrete and quote. A card that is fine must be reported as fine -- do not
+manufacture findings. Do NOT rewrite the card; report the defect and the minimal
+correction.
+
+Output format, no preamble:
+CARDS: one block per card, exactly:
+  <specimen_id> | ACHIEVABLE=<yes|no|uncertain> | TEST_SET_CORRECT=<yes|no> |
+    PARAMETERS_PRESENT=<yes|no>
+    CONTRADICTIONS: <none, or the conflict quoted>
+    SINGLE_WORST_RISK: <one sentence>
+SUMMARY: <n cards>, <n not achievable>, <n wrong test set>, <n missing parameters>
+NEEDS_HUMAN_JUDGEMENT: <cards where you are genuinely uncertain, and why>
+VERDICT: SUPPORTED | REFUTED | INSUFFICIENT
+
+
+---
+CARD-AUDIT BATCH lane07 of 32 (nonce e3c5b855). Audit every card in cards.txt.

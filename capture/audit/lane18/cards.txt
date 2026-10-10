@@ -1,0 +1,116 @@
+### bf18_braised_pork_belly_L3  (level L3)
+PREP:
+Weigh 200 g braised pork belly including a 1:1 ratio of its cooking sauce and any soft fat. Add 80–100 ml warm water in 20 ml splashes until the pack loosens. Blend on high for 45–60 s, scraping the jar wall at 30 s, until a coarse slurry forms. Push through the 4 mm sieve using the back of a spoon; discard any skin or sinew that refuses to pass. Weigh the sieved purée, then stir in thickener at 2.0 g per 100 ml as the calibration starting point. Whisk for 20 s, rest 60 s, stir again. If it does not drip slowly through the fork tines, add 0.3 g thickener per 100 ml and re-test; record the actual grams used. The 4 mm sieve step is the floor; finer is fine, coarser is a fail.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: continuous slow drip, no continuous stream, drops ≈1 cm long. Fork pressure with the flat of a tine: the surface blanches but no liquid pools around the prong. Spoon tilt: 5–10 mm slump in 3 s, holds a soft mound. Syringe flow: draw 10 ml, release, 8–10 ml remains at 10 s. All four must pass.
+
+VISUAL QC:
+Glossy even brown, no visible meat fibre, skin flecks, or fat beads. Coats the spoon back without running. Holds a shallow pour line on the plate for several seconds.
+
+FAIL MODES:
+Thickener under-dosing gives a runny stream through the fork tines and <6 ml syringe residue. Over-dosing gives a stiff mound, no drip, and ≥10 ml residue. Visible meat fibre or skin after sieving. Re-make once with adjusted thickener or by re-blending; second fail, swap the pack.
+
+### bf50_peanut_paste_L3  (level L3)
+PREP:
+Weigh 200 g peanut paste into blender. Add 80 ml water. Blend 30 s until smooth. Pass through 4 mm sieve using the back of a spoon; discard residue. Measure sieved volume. Add thickener at 3 g per 100 ml of sieved volume as the calibration starting point; whisk briskly for 20 s, rest 60 s, then whisk 10 s more. Record the actual thickener mass and final volume on the card. If the 10 ml/10 s syringe leaves less than 8 ml, add 0.5 g thickener per 100 ml and re-whisk. If it leaves more than 10 ml, add 5 ml water per 100 ml and re-whisk. Target pour: continuous ribbon that breaks within 1-2 cm of the surface.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork clear of cup; liquid should drip slowly in thick strands, not run as a steady stream. Spoon tilt: spoon at 45 degrees; specimen slides off slowly, not in one quick sheet. Fork pressure: pressed flat, the surface shows clear tine marks with no spring-back; thumb-blanket lift holds shape only briefly. Syringe flow test: fill 10 ml, release 10 s; pass = 8-10 ml remaining in the syringe barrel. All four must pass.
+
+VISUAL QC:
+Uniform tan, glossy, no oil pooling on the surface. No visible peanut grit on fork tines after drip. Coats the spoon back evenly with no bare metal showing.
+
+FAIL MODES:
+Too thick, leaves more than 10 ml in syringe or sits in a mound on the fork: thin with 5 ml water per 100 ml, re-whisk, re-test. Too thin, runs through fork tines and leaves less than 8 ml: add 0.5 g thickener per 100 ml, re-whisk, rest 60 s, re-test. Gritty or oily with visible separation: re-blend and re-sieve before judging. Re-make from scratch after two failed corrections.
+
+### bf18_braised_pork_belly_L4  (level L4)
+PREP:
+Weigh 200 g braised pork belly with its cooking liquor. Load into the consumer blender. Blend 45 s; stop, scrape the wall, blend 15 s more. Press the pulp through the 4 mm sieve with the back of a spoon; discard any skin or fat that will not pass. Return the sieved puree to the blender, add 40 ml of the reserved liquor, blend 10 s. Spoon a 1 g mound of thickener over the surface, fold in, rest 60 s. If the mound slumps under its own weight, add another 0.5 g thickener per 100 ml and re-fold. Record the final grams-per-100 ml used.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: the four tines leave a clear dent that holds its shape; no puree squeezes up between the tines. Spoon tilt: a heaped teaspoon stays on the spoon when tilted to 45 degrees; it does not slide off in under 10 s. Fork drip: lift the fork; the puree sits as a mound above the tines, nothing drips through the gaps within 10 s. All three must pass.
+
+VISUAL QC:
+Surface is glossy and uniform, no visible meat fibre or fat fleck. Colour is even brown from edge to centre. Mound on the spoon holds a soft peak; on the fork it clings as one lump with clean tine marks.
+
+FAIL MODES:
+Puree flows through the fork gaps → blend another 15 s, sieve again, rest 10 min before retesting. Mound slumps on the spoon tilt → whisk in 0.5 g thickener per 100 ml and re-fold. Grainy texture with visible fibre → re-sieve, do not add water. Any fail: discard, remake from 200 g, record the corrective step.
+
+### bf52_sweet_and_sour_pork_L4  (level L4)
+PREP:
+Weigh 200 g sweet and sour pork (meat + sauce) straight from the takeaway container into the blender cup. Add 60 ml water. Blend on high for 45-60 s until fully smooth, scraping the wall once at 30 s. Sieve through the 4 mm sieve using the back of a spoon; discard any residue. Weigh the sieved puree. Add thickener at the calibration starting point of 3 g per 100 ml of puree; whisk in, then rest 60 s and stir. If it slumps off the spoon, add 0.5 g/100 ml increments, rest 30 s between each, until it holds a clean mound. Record the final grams/100 ml used. Per-level note respected: blend with sauce, blend-hold.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: scoop a heaped teaspoonful, press the flat of the fork down once. Pass = puree holds its shape, leaves a clear fork-tine print, does not ooze back through the tines. Fork drip test: lift a fork-load 20 cm above the plate. Pass = sits as a mound above the tines, zero drip for 10 s. Spoon tilt test: load a dessert spoon and tilt to 45 degrees. Pass = puree stays on the spoon, no slide, no run-off. Repeat all three after 2 min rest; pass = identical result.
+
+VISUAL QC:
+Glossy uniform orange-red surface, no visible meat fibre, no pool of clear sauce around the mound on the plate. Fork tines leave a sharp imprint that does not fill in within 5 s.
+
+FAIL MODES:
+A) Sauce separates from meat during blending, leaving thin orange liquid at the rim — fix by blending an extra 20 s and adding 1 g/100 ml thickener; re-test. B) Puree flows through fork tines (too thin) — step thickener up by 0.5 g/100 ml, rest, re-shoot all frames. C) Puree cracks or tears when fork-pressed (too stiff) — thin with 5 ml water, re-blend 10 s, re-test. Re-make rule: any FAIL means discard the batch and start fresh; do not re-shoot a failed specimen.
+
+### bf18_braised_pork_belly_L5  (level L5)
+PREP:
+Weigh 200 g of braised pork belly including braising liquor. Pick out any leaf-wrapped aromatics or whole spices and discard; keep soft connective tissue and fat. Pulse in the consumer blender for 6-8 s to a coarse mince. Press through the 4 mm sieve with the back of a fork; if more than ~10% stays behind, pulse the retained 10 g portion for 3 s and re-sieve. The soft braising liquor already present supplies moisture; do not add water. Add thickener at 0 g per 100 ml as the calibration starting point — record the actual grams on the card. Mash the sieved mince with the back of the fork until visually uniform.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines into a 15 mm mound on a flat plate; the mound must squash, the tines leave a clear imprint, and it must not recover its shape when the fork is removed. Spoon tilt: a heaped 5 ml spoonful must hold its shape on a spoon tilted to 45 degrees and must slide off slowly in one cohesive lump, not run. Fork drip: tilt a fork-load 30 degrees; nothing should drip through the tines.
+
+VISUAL QC:
+The mince on the fork looks wet and glossy, not dry or crumbly. Pieces are visibly separate grains no larger than a match head, sitting in a thin clinging sauce with no free puddle. No intact slabs of fat or skin are visible.
+
+FAIL MODES:
+Fat or skin pieces left above 4 mm: re-sieve, not re-blend first, to avoid paste. Free thin liquid pools on the plate: drain briefly or thicken the retained liquor before re-mixing. Mound springs back after fork press: sieve finer and mash again; do not add water, which will worsen flow.
+
+### bf55_yangzhou_fried_rice_L5  (level L5)
+PREP:
+Weigh 200 g of takeaway Yangzhou fried rice; discard large garnishes. Pulse in consumer blender 8–10 s — short bursts to chop, not purée. Tip onto the 4 mm sieve; press and discard what does not pass, noting retained mass. Return the passing portion to a bowl, drizzle 25–30 ml warm stock, and mash with a fork until evenly moist and sticky. Fork-mash 30–40 s, scraping the bowl, until no piece exceeds 4 mm. If the mix feels loose, sprinkle 0.5 g thickener per 100 ml of added stock, stir, rest 60 s, re-test. Record the final grams of thickener used per 100 ml. Target: cohesive mince that holds a fork-load but releases a thin sheen when pressed — no pooling liquid in the bowl.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the fork tines flat onto a heaped spoonful until the thumbnail blanches; the mass must squash and stay squashed, no recovery. Spoon tilt: a level spoonful must slide off a tilted spoon only with a deliberate shake; it must not run. Fork drip: hold a loaded fork over an empty bowl — no drips fall within 10 s. A separate liquid pool must not form around the mound.
+
+VISUAL QC:
+On the fork: a cohesive lump, glints of moisture, no whole grains, peas, or shrimp fragments visible above ~4 mm. On the spoon: mound holds its peak 1–2 s before slumping, glossy not runny. Bowl shows a moist film, never a puddle.
+
+FAIL MODES:
+Too wet — stock pools; remedy: fold in 0.5 g thickener per 100 ml, rest, retest. Too dry / crumbly — particles won't cohere and fall through fork drip test; remedy: add 5 ml stock, re-mash. Visible pieces above 4 mm after mashing — sieve was skipped or blender under-pulsed; re-pulse 3 s and re-sieve. Any failure: discard, remake from 200 g, note the deviation.
+
+### bf20_steamed_spare_ribs_black_L6  (level L6)
+PREP:
+Weigh 200 g steamed ribs. Strip meat off bone; discard bone and gristle per per-level note. Hand-dice meat on board to cubes ≤15 mm; target 8-12 mm pieces. Do not blend and do not sieve — dicing is required at L6. No thickener and no added liquid: this specimen is calibrated dry on the meat; operator records actual final weight (g) and piece count from a 10 g scoop. If a piece measures >15 mm on the ruler, re-dice; if bone fragment is found, re-pick.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test only: press fork tines onto a piece on the plate until thumbnail blanches white. Pass when the piece squashes, does not spring back, and splits rather than rebounds. Repeat on the largest piece in the sample; if the largest passes, the batch passes. Spoon tilt is not the deciding test here but confirm a scoop sits as a moist pile, not a dry crumble or a runny pool. Fork drip is not applicable at L6 — record "N/A, L6".
+
+VISUAL QC:
+Pieces should be glossy dark-brown, wet but not pooling sauce, with visible fibrous flake at the cut face. They should hold shape on the fork without sliding off, and a pressed piece should leave a clear wet thumb-mark on the plate. No dry crumb edges, no bone shards, no whole-peppercorn-sized lumps >15 mm.
+
+FAIL MODES:
+Piece >15 mm on ruler → re-dice and re-shoot. Bone or gristle fleck spotted → re-pick entire batch, discard, re-shoot. Piece springs back under fork → meat undercooked or over-diced to mince; re-steam a fresh portion and re-dice.
+
+### bf59_steamed_chicken_with_mus_L6  (level L6)
+PREP:
+Dice steamed chicken into cubes ≤15 mm. Cut mushrooms into pieces ≤15 mm. Combine 200 g diced chicken with 60 g mushroom pieces. Do NOT blend. Do NOT sieve. Do NOT add thickener. Do NOT add water. Target specimen mass per capture tray: 150 g. If the chicken shreds rather than dices cleanly, the texture is wrong for L6 and must be re-cooked with a firmer piece.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into a piece until thumbnail blanches white. The piece must squash completely and not spring back. Recovery after lift = fail. Spoon tilt: no specimen should fall, drip, or slide off a tilted spoon held at 90°. Fork drip: lift a piece on fork tines — it must sit solidly, no drip, no slump within 10 seconds.
+
+VISUAL QC:
+On the fork: discrete cubes under 15 mm, edges still defined, surface moist but no pooled liquid. On the spoon: holds a stable mound at a tilt; sheen is gravy, not free liquid. Pieces show visible white meat fibers and mushroom slice rings, not a paste.
+
+FAIL MODES:
+(a) Pieces exceed 15 mm or are uneven — re-dice, do not blend. (b) Chicken shreds into fibers that spring back under fork — protein overcooked or wrong cut; re-cook with a firmer breast portion and re-dice. (c) Pooled liquid on the tray — drain on a sieve for 30 s, then re-weigh to 150 g. Any fail: discard batch and start a new 200 g prep.
+
+### bf23_blanched_water_spinach_L7  (level L7)
+PREP:
+Weigh 60 g blanched water spinach stalks + leaves as served. Do NOT blend, sieve, or add thickener — L7 reference specimen is whole food. If any processing step is suggested, refuse it; the per-level note states stalks are taken as blanched.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines fully into a stalk bundle; the food must flatten, squish, and not return to shape when fork is removed. Spoon tilt: place stalks on a spoon and tilt to ~45°; food must slide/fall off easily with negligible residue. Fork drip: lift stalks on fork; pieces may fall but no continuous liquid stream. All three must pass to confirm L7 Regular.
+
+VISUAL QC:
+On the fork: stalk pieces hold shape, appear moist but not glossy-wet, matte green surface, no pooled liquid in spoon well. On the spoon: pile sits up, leaves drape naturally, no sheen indicating free sauce or oil pooling.
+
+FAIL MODES:
+Pooling liquid in spoon — stalks are waterlogged from blanching; pat dry on paper towel, re-plate, re-test. Stalks snap rather than squish — over-blanched or too thin; re-blanch fresh batch 30 s only. Fork drip shows continuous stream — residual cooking water; drain 60 s and pat dry before re-shoot.

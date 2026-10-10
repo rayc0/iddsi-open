@@ -1,0 +1,129 @@
+### bf01_steamed_white_rice_L3  (level L3)
+PREP:
+Weigh 200 g cooked white rice into blender. Add 100 ml water. Blend 60 s on high, scraping once at 30 s. Pass through 4 mm sieve; discard residue. Reweigh blended base. For the IDDSI Level 3 liquidised target, mix thickener at the calibration starting point of 3.0 g per 100 ml — operator records the actual grams used. Whisk into the sieved base, rest 2 min, re-whisk 5 s. Re-weigh final specimen and record.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+- Fork drip: liquid pours/drips slowly in a thin continuous stream through tine gaps. Pass = slow drip, not a solid lump falling. - Fork pressure: tines leave clear indentation with no separate particles. Pass = single smooth mass. - Spoon tilt: spoon holds its shape when tilted; does not run off the edge. Pass = cohesive but spreadable. - 10 ml / 10 s syringe flow test: fill to 10 ml, release 10 s. Pass = 8–10 ml remaining in syringe (i.e., 0–2 ml flowed out).
+
+VISUAL QC:
+On fork: smooth glossy coating, single colour, no whole grains or white flecks. On spoon: mound holds peak briefly then levels; surface matte-sheen, no free liquid pooling. When spoon tilts, mass slides as one and leaves a slow-travelling trail.
+
+FAIL MODES:
+- Too thin (runs off spoon, <8 ml in syringe): add 0.5 g thickener per 100 ml, re-mix, re-test. - Too thick (mound stands, <2 ml in syringe, slow drip stalls): stir in 5–10 ml water, re-test. - Visible grains or flecks after sieve: re-blend 30 s and re-sieve. Re-make if any test still fails after two corrections.
+
+### bf33_papaya_L3  (level L3)
+PREP:
+Weigh 200 g ripe papaya flesh. Blend in consumer blender 30 s on high until smooth; do not sieve — sieving a blend-thin fruit strips the fibres that carry the L3 body. The specimen must pour, so thin with water: add 40 ml water and blend 5 s more. Pour into a cup and weigh total. Calculate thickener at 1.0 g per 100 ml of specimen as the calibration starting point; record the actual grams used. Sprinkle the thickener on the surface, rest 30 s for hydration, then stir 20 s with the fork until homogenous. Wait 2 min before testing. If the mix runs off the spoon like juice, add 0.2 g thickener per 100 ml, stir, rest 1 min, retest. Up to three additions; beyond that, re-make.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: press the fork tines into 10 ml of specimen; surface must yield to light pressure with the tines leaving a clear, persistent imprint. Spoon tilt: a 5 ml spoonful on the spoon must hold its shape when the spoon is tilted to 45 degrees; it should slide off slowly as a single cohesive blob, not run. Fork drip: lift the fork; the specimen drips continuously but slowly in a thick ribbon through the tines — it must not pour in a stream nor sit solid on the fork. Syringe flow: fill the 10 ml IDDSI syringe, release, start timer. After 10 s, 8–10 ml must remain in the barrel. Above 10 ml = too thick, below 8 ml = too thin.
+
+VISUAL QC:
+1. Glossy uniform orange surface with no free liquid pooling around the cup edge. 2. On the fork, it mounds then settles slowly into a soft peak that holds shape. 3. No fruit fibre strands, lumps, or unblended pulp visible.
+
+FAIL MODES:
+Too runny: drips through fork in a thin stream and syringe reads under 8 ml — add 0.2 g thickener per 100 ml, rest 1 min, retest once. Too stiff: holds shape on tilted spoon and syringe reads over 10 ml — whisk in 5 ml water per 100 ml, rest 1 min, retest once. Grainy or fibrous: blender time was too short — re-blend the batch 15 s on high before any thickener adjustment. If still grainy after one re-blend, discard and re-make from fresh fruit.
+
+### bf01_steamed_white_rice_L4  (level L4)
+PREP:
+Weigh 200 g cooked white rice into the blender jar. Add 100 ml water. Blend 60 s on high. Stop, scrape the jar wall with a spatula, blend a further 30 s. Sieve through the 4 mm sieve, pressing with the spatula so all puree passes; discard residue. Return puree to blender, add 2.5 g thickener per 100 ml of puree (calibration starting point — record the actual grams used). Blend 20 s to incorporate, rest 60 s, blend 10 s. The food list note says "blend-hold": there is no cooking or steeping step that fits this specimen, so none is recorded.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: the tines leave a clear, full-depth imprint that holds when the fork is lifted; the mound does not rebound or drip. Spoon tilt: a level spoonful holds its shape on a tilted spoon, no flow over the edge. Fork drip: a forkful held over the plate sits as a mound above the tines; nothing drips in 5 s. The L3 10 ml/10 s syringe flow test is not the L4 criterion and is not used here.
+
+VISUAL QC:
+Uniform off-white colour, no visible rice grains. Smooth, glossy surface with no separated liquid pooling around the mound. Holds a clean peak when spooned.
+
+FAIL MODES:
+Mound spreads or slumps on the tilted spoon, or puree drips through the fork tines → thin it by blending in 5 g thickener per 100 ml increments and re-test. Liquid pools around the mound after resting → blend a further 20 s and rest 90 s before re-test. Grainy texture or rice specks visible after sieving → re-blend 30 s and re-sieve. Maximum two re-makes per take; if still failing, discard the batch and record the outcome.
+
+### bf33_papaya_L4  (level L4)
+PREP:
+Weigh 250 g ripe papaya flesh, peel and dice. Add to consumer blender with 60 ml water; blend 45 s. Pass through 4 mm sieve; discard coarse residue. Return puree to blender, add 2.0 g thickener per 100 ml as the calibration starting point; record the actual grams used. Blend 20 s, rest 60 s, blend 10 s. Target final mass approximately 300 g.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip: lift fork; puree must sit in a mound above the tines, not drip through. Pass = no drip in 10 s. Fork pressure: press fork tines into specimen on a flat plate; puree must flatten and hold, not run back through gaps. Pass = clean tine spacing, no flow. Spoon tilt: scoop, tilt spoon 45°. Pass = specimen stays on spoon, no sliding off.
+
+VISUAL QC:
+Surface glossy and uniform, no pulp specks or liquid ring on the plate. Color even orange-pink, no streaks. Holds a soft peak when mounded with the fork.
+
+FAIL MODES:
+Too thin: puree flows through fork tines or drips in 10 s; re-blend and add 0.5 g thickener per 100 ml, retest. Too thick: specimen cracks or holds tine imprint without spreading; re-blend with 10-15 ml water, retest. Visible liquid pooling around mound: under-thickened or over-blended; sieve again and add thickener in 0.5 g per 100 ml steps.
+
+### bf01_steamed_white_rice_L5  (level L5)
+PREP:
+Weigh 150 g cooked white rice into the blender bowl. Add 45 ml warm water. Blend 20–25 s until coarse, sticky, with visible granules. Stop and check; rice must still feel granular, not puréed. Pass the blended rice through the 4 mm sieve using the back of a spoon; discard anything that will not pass or re-blend small residue for 5 s and re-sieve. Weigh the sieved mash. Stir in thickener at 1.0 g per 100 ml of mash (record actual g used) to bind free moisture and reach minced & moist cohesion. Target final specimen ≈ 150–180 g. Warm 10 s before plating.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines flat into the specimen until thumbnail blanches through the food; the rice must squash, not spring back, and must not return to shape. Pass = full squash, no recovery. Spoon tilt: scoop heaped, tilt spoon 45°; the mass must hold together and slide off in one clump, not flow or drip. Pass = cohesive clump, no run-off. Fork drip: lift forkful 5 cm above plate; no thin liquid must drip within 10 s. Pass = zero drips.
+
+VISUAL QC:
+Grainy texture visible but every particle ≤ 4 mm; uniform moist sheen, no shiny free liquid pooling on the plate; holds a fork-pressed indentation without crumbling.
+
+FAIL MODES:
+Over-blended to a sticky paste that drips through sieve — discard, re-start with 150 g fresh rice. Under-mashed with whole grains > 4 mm remaining on sieve — re-blend residue and re-sieve; do not just dilute. Wet run-off on plate means thickener under-dosed — add 0.2 g thickener per 100 ml, re-mix, re-test within 10 min; beyond that, re-make.
+
+### bf33_papaya_L5  (level L5)
+PREP:
+Weigh 200 g ripe papaya flesh. Dice to ≤4 mm on the board using the 100 mm ruler as a guide. Do NOT blend: per-level note requires dice ≤4 mm with its juice, and blending would make the texture pasty rather than minced & moist. Press lightly with the fork to release juice; discard loose drippings so no separate thin liquid pools on the plate. If pieces fall outside 4 mm, re-dice. If juice runs freely, drain and re-mix with the pieces. No thickener. No water.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines flat against the specimen; particles squash, do not spring back, and remain cohesive on the fork head. Pass = full squash, no recovery, particles separate easily under fork pressure. Spoon-tilt test: tilt a heaped spoonful; specimen holds shape, slides off in one soft clump, not running, not stacked. Pass = cohesive slide, no liquid drips. Fork-drip test: lift forkful above plate for 5 s; no drops fall. Pass = zero drip. No syringe test for L5.
+
+VISUAL QC:
+On the fork: visible fine dice ≤4 mm, glossy and wet but not runny, pieces mat together as one mass. On the spoon: soft mound that flattens slightly under its own weight, juice sheens the surface, no free liquid in the plate well. Colour uniform bright orange.
+
+FAIL MODES:
+Pieces >4 mm visible against ruler: re-dice. Free thin juice pools on plate: drain and re-combine. Specimen bounces back under fork pressure (too firm) or liquefies (over-pressed): discard and remake from fresh dice.
+
+### bf01_steamed_white_rice_L6  (level L6)
+PREP:
+Measure 200 g of cooked white rice onto the scale. Working in small batches on a clean plate, press grains against the plate wall with the back of a fork until soft pieces measure ≤15 mm by eye and against the 100 mm ruler. Do not blend — blending destroys the bite-sized texture L6 requires. Do not sieve — grains will pass but the result is rice paste, not L6. Do not add thickener — L6 takes no liquid modification. Record the as-prepared mass on the capture sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: place one pressed piece on a flat plate, press the thumb until the nail blanches white. Pass if the piece squashes, does not spring back, and remains as distinct soft pieces ≤15 mm. Spoon tilt: scoop one piece and tilt the spoon 45°; pass if the piece slides off without flowing or dripping. Fork drip: lift a loaded fork; pass if no rice drips through the tines. L3 syringe flow test does not apply at L6.
+
+VISUAL QC:
+Grains are no longer intact; each piece holds its shape but looks matte and yielding, not glossy or sticky. Pieces are roughly pea-sized, separable, and the pile on the fork sits in a heap, not a smear. No whole grains visible against the ruler.
+
+FAIL MODES:
+Whole grains visible — pieces exceed 15 mm or did not yield to thumbnail; re-press in smaller batches. Pieces rebound after press — rice undercooked or under-pressed; discard and remake from a softer cooked batch. Pieces smear into a paste — over-pressed; reduce fork pressure and aim for soft chunks, not crush.
+
+### bf35_soft_ripe_persimmon_L6  (level L6)
+PREP:
+Stage the fully ripe persimmon; expect soft flesh, no firm core. Peel, discard skin and stem, quarter by hand. Place 150 g flesh into the blender; pulse 10-15 s to break down, not purée. Pass through the 4 mm sieve, pressing gently with the back of a spoon to express soft pulp; discard any fibrous strands or seeds that remain. Confirm pieces ≤15 mm; this matches the per-level note that spoon pieces must be ≤15 mm. Do not add water, milk, or liquid — extra moisture pushes the specimen toward L5. Do not add thickener — L6 does not require thickener; adding it would push the specimen toward L4/L5 and is incompatible with the level. Calibrate scale to zero before weighing specimen for capture.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press thumbnail into a 10 mm piece on a flat plate; thumbnail blanches white, piece squashes flat, and does not recover its original form when pressure is released — PASS. Spoon-tilt test: scoop a piece on a spoon and tilt to 45°; piece slides off easily with minimal liquid separation — PASS. Fork-drip test: lift a forkful from the specimen pile; no continuous drip falls through the tines in 5 s — PASS. The 10 ml/10 s syringe flow test does not apply to L6 and should not be run.
+
+VISUAL QC:
+Pieces hold a soft, rounded shape on the spoon without pooling as sauce. Color is uniform deep orange throughout the pile, no pale fibrous lumps. Surface looks moist but not glossy-wet; nothing runs off the spoon edge when level.
+
+FAIL MODES:
+Underripe fruit: pieces stay springy and recover after fork-pressure — re-make with fully ripe persimmon only. Over-blended: specimen turns to purée and flows through the 10 mm fork gaps — re-make with shorter pulses, do not sieve to a paste. Liquid pooling on the plate after the test: moisture has separated — re-make without adding liquid and sieve again.
+
+### bf01_steamed_white_rice_L7  (level L7)
+PREP:
+Portion 50 g cooked white rice directly from the serving container onto the centre of the plate. Do not blend, do not sieve, do not add thickener, do not add liquid. Whole grains only, as normally served. This is the reference specimen; processing is not applicable. Record the actual served mass on the data sheet before capture.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the tines into the rice mound with the flat of the fork until the thumbnail blanches white. The grains must compress, hold their shape, and not return to the original contour when the fork is removed. Pass criterion: full white blanch, grains stay pressed flat. Spoon tilt test: scoop a heaped teaspoonful and tilt the spoon to a near-vertical angle. Pass criterion: rice sits on the spoon, slides only as a mass or not at all; no individual grains roll off. Fork drip test is not required for L7. L3 syringe flow is not required for L7.
+
+VISUAL QC:
+Grains distinct, glossy, non-glutinous surface. Mound holds the pile shape from the serving scoop with no spreading at the base. No pooling liquid at the plate contact; no steam fogging the lens.
+
+FAIL MODES:
+Grains too wet, pooling liquid on the plate, spoon tilt shows individual grains rolling. Grains overcooked to a paste, fork test smears instead of holding. Re-make from fresh cooked batch, re-shoot all frames.
+
+### bf38_watermelon_L7  (level L7)
+PREP:
+Place the whole de-seeded wedge on the board. Cut a 50 mm × 50 mm × 25 mm specimen from the flesh with a clean knife; do not crush or trim beyond removing rind and any white pith. Record mass on the scale (target ~80 g). Do not blend, do not sieve, do not add water, do not add thickener. The wedge-as-cut note is respected: the specimen is taken from a freshly cut surface, not reconstructed. L3 calibration does not apply at L7; record zero added thickener and zero added liquid.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the fork tines flat onto the specimen with normal thumb force; the flesh must crush, flake, or split cleanly and not return to its original shape when the fork is lifted. Fork drip test: lift the fork; nothing drips or runs through the tines. Spoon tilt test: a spoonful must fall off the tilted spoon with no residual film; this is a confirmation only and must not be relied on alone. No syringe flow test at L7.
+
+VISUAL QC:
+On the fork: bright red flesh with visible juice on the surface but no free liquid pooling; tines leave a clean impression that does not spring back. On the spoon: a single soft mound that holds its shape briefly then releases. Specimen edges are sharp-cut, not ragged or pulped.
+
+FAIL MODES:
+(a) Specimen weeps free juice that pools on the plate or drips from the fork: re-cut from a drier interior face, do not blot. (b) Flesh is pulped or shredded by knife work, giving a puree appearance: re-cut a fresh specimen with one clean stroke. (c) Rind or white pith left attached, altering bite behaviour: trim and re-cut.

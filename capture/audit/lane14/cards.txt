@@ -1,0 +1,116 @@
+### bf14_steamed_egg_custard_L3  (level L3)
+PREP:
+
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+
+
+VISUAL QC:
+
+
+FAIL MODES:
+
+
+### bf46_smooth_red_bean_paste_L3  (level L3)
+PREP:
+Weigh 200 g ready-to-eat red bean paste into the blender cup. Add 80 ml water and blend 45 s until fully smooth. Pass through the 4 mm sieve using the back of a spoon; discard retained skins/fibres; weigh the sieved paste. Calibrate to L3 starting at 1.5 g thickener per 100 ml of sieved paste: stir in 1.5 g thickener per 100 g paste, rest 2 min, stir again. Record the actual thickener mass used on the bench sheet. Target: fluid enough to pour in a slow ribbon, thick enough that drips are slow off the fork. If under-thick, add 0.2 g thickener per 100 g increments and rest; if over-thick, stir in 5 ml water at a time. Do not sieve after adding thickener.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork pressure: the tines leave a clear dent that holds shape; paste does not recover when fork is lifted. Fork drip: 3-4 slow drips in 10 s, not a stream, not a single drop. Spoon tilt: paste flows off a tilted spoon in a thick ribbon, not a continuous pour, not a lump that drops whole. IDDSI flow test: fill to 10 ml, release; 8-10 ml remains after 10 s. All four must pass.
+
+VISUAL QC:
+Glossy uniform dark brown-red, no visible bean skins or fibres, no separated liquid pooling at the rim. Coats the back of a spoon smoothly without running into a thin film. Holds a soft peak for about 2 s then flattens.
+
+FAIL MODES:
+Flow test under 5 ml remaining: too thin, add 0.2 g thickener per 100 g and retest. Visible skins, grainy spoon coat, or material retained on the 4 mm sieve: blender time too short or sieve skipped; re-blend 30 s and re-sieve before adding thickener, then re-run all four tests. Two consecutive failures on the same root cause: re-make from 200 g paste.
+
+### bf14_steamed_egg_custard_L4  (level L4)
+PREP:
+Crack 2 large eggs (~100 g) into a measuring jug. Add 150 ml room-temperature water and whisk until fully combined with no visible streaks. Pour through the 4 mm sieve into a heatproof bowl to remove any chalazae or unbroken yolk membrane. Steam covered for 12–15 minutes until just set; cool to room temperature. Weigh out 200 g of the set custard, transfer to the consumer blender, and blend on high for 45–60 seconds until completely smooth with no grain. Do NOT add thickener — egg custard at this ratio sets to L4 directly after blending. Record final specimen mass on the data sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press the fork tines into the specimen on a flat white plate with normal thumb pressure. Specimen must compress and leave a clear dent, but must not ooze liquid through the tines or run between the prongs. Fork drip test: lift the fork with a loaded mound. The specimen must sit as a cohesive mound above the tines for the full 8 s hold; zero drip. Spoon tilt test: scoop a heaped teaspoon, invert the spoon 90° over the plate. Specimen must hold on the spoon without sliding or pouring off. All three must pass.
+
+VISUAL QC:
+Surface is glossy and uniform pale yellow with zero white streaks or grain. The mound on the fork has clean, defined edges with no slump. A scooped portion drops cleanly off the spoon as one mass, leaving a thin, even film behind — no separation of clear liquid.
+
+FAIL MODES:
+Too runny after blending: egg-to-water ratio was off or steam was insufficient — re-make with 1.5 eggs per 100 ml water and re-steam. Grainy or streaky texture: blender under-cycled or sieve skipped — re-blend 30 s and re-sieve. Visible liquid pools on the plate after spoon tilt: custard was over-steamed and syneresis occurred — discard batch and start fresh.
+
+### bf48_coconut_jelly_L4  (level L4)
+PREP:
+Weigh 150 g chilled coconut jelly straight from the pack into the blender cup. Add 30 ml of the pack syrup that ships with it (shake the pack first so the syrup is uniform). Blend 25 s on high, stop, scrape the wall, blend 20 s more. The result should read as a smooth, opaque white puree. Pour through the 4 mm sieve using a spoon back; press and discard any fibrous bits that will not pass. Target solids caught in the sieve: under 5 g. Re-weigh the sieved puree; if it flows off the spoon in a ribbon or settles below the spoon rim as a puddle, add 0.5 g thickener per 100 ml of puree, hand-whisk 10 s, rest 60 s, re-test. Record the actual thickener dose on the card.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: lift a fork loaded with puree 15 cm above the plate; the mound must sit on top of the tines with no drips. Pass = zero drip in 10 s. Fork pressure test: press the fork tines flat into the puree on a plate; the surface must blanch white around the tines but the puree must not squeeze through to leave separate liquid. Pass = no thin liquid weeps out. Spoon tilt test: load a heaped teaspoon, tilt to 45 degrees; the puree must hold its shape on the spoon without sliding off. Pass = holds for 5 s.
+
+VISUAL QC:
+On the spoon: a soft, glossy mound that drops cleanly when tipped, no pooled liquid at the base. On the fork tines: a coherent cap that sits proud, not a glossy coat. On the plate after fork press: a clean dent, no watery ring around it.
+
+FAIL MODES:
+Too thin: puree drips through fork or flows on spoon tilt → add 0.5 g thickener per 100 ml, rest 60 s, re-test. Too thick: puree cracks on the spoon or resists fork press → add 10 ml pack syrup per 150 g batch, re-blend 15 s, re-test. Grainy: sieve catches over 5 g fibre → re-blend 15 s and re-sieve.
+
+### bf14_steamed_egg_custard_L5  (level L5)
+PREP:
+Weigh 200 g steamed set custard onto the plate. Press firmly with the back of a fork until the curd collapses; mash through the curd, not through the sieve, working the liquor back in as you go. Re-mash until no lump exceeds 4 mm when checked against the ruler. Sieve the mash through the 4 mm sieve only as a verification pass — anything retained goes back through the fork. Target retained mass: at least 180 g. The per-level note ("spoon-mash to curds <= 4 mm with its liquor") is followed; do not blend. Do not add water. Do not add thickener at L5 — start here, thicken only if the spoon-tilt fails and a re-make is logged.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines flat into the specimen until the blanch shows; the custard must squash and not recover when the fork is lifted. Fork-drip test: lift fork from the specimen — no thin liquid drips continuously off the tines. Spoon-tilt test: scoop a teaspoonful, tilt spoon to about 45°; the mass slides off in one soft bolus, it does not run and does not hold shape on the spoon. No syringe test at L5.
+
+VISUAL QC:
+On the fork: a soft, glossy yellow curd with no dry crumbs and no pooling liquid around the mound. On the spoon: a single coherent quenelle that wobbles, not a pourable sauce. Particle size visibly under 4 mm against the ruler.
+
+FAIL MODES:
+Wet, soupy mash that pools thin liquid on the plate — under-mashed or over-steamed original; re-mash and rest 30 s, re-shoot. Visible lumps above 4 mm; sieve again and re-mash, re-shoot. Custard holds shape on the tilted spoon like a gelatin set; discard, re-cook a softer custard and start prep again.
+
+### bf51_curry_fish_balls_L5  (level L5)
+PREP:
+Weigh 200 g cooked curry fish balls with sauce. Chop with knife until largest piece is ≤ 4 mm; reject any piece that will not reduce. Mash thoroughly with a fork so sauce coats every fragment. Add sauce only if dry; do not add water. Do not blend — blending destroys the required particle texture. Do not sieve — sauce carries solids and sieving would strip them. No thickener — L5 must show visible particles and must not be a paste. Record actual chop time, final mash consistency, and sauce volume on the capture sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press fork tines into a 15 mm portion on a flat plate until thumbnail blanches; sample must squash and not recover its shape when fork is removed. Spoon tilt test: tilt a spoon holding ~5 mm of sample; sample must sit in a cohesive mound and must not slide off or drip. Fork drip test: lift sample on fork; no thin liquid should run off the bulk. No syringe flow test — that is an L3 calibration tool only.
+
+VISUAL QC:
+Coarse minced texture with clearly visible flecks of fish and sauce specks, no whole balls, no pooling liquid at the plate edge, soft sheen indicating moist but not runny.
+
+FAIL MODES:
+Visible thin liquid pooling — remake by draining excess sauce, no water added. Particles > 4 mm — recook batch, chop finer, recheck. Dry, crumbly mash that will not hold on spoon — add 5 ml sauce at a time, remash.
+
+### bf16_silken_tofu_L6  (level L6)
+PREP:
+Drain liquid from the chilled box. Place 400 g silken tofu on a board and cut with a knife into cubes ≤15 mm. Do NOT blend; the per-level note requires intact pieces. Do NOT sieve. Do NOT add thickener; L6 is unthickened. Do NOT add water.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press the flat of a fork down on one cube until the thumbnail blanches white. Pass if the cube squashes, does not spring back, and breaks apart easily. Spoon tilt test: pile 5–6 cubes on a spoon and tilt until vertical. Pass if the pieces sit in a pile and slide or fall off; do not require a cohesive bolus. Fork drip test: lift a forkful of cubes; pass if pieces sit in the fork bowl with no liquid streaming off. Skip the syringe flow test; it is L3 only.
+
+VISUAL QC:
+Cubes hold a clean, sharp cut edge with rounded corners. Surface is glossy and wet, not torn or smeared. Pieces separate on the spoon; no paste or smear between them.
+
+FAIL MODES:
+Cubes cut >15 mm: re-trim and reshoot. Pieces smear or lose shape under the fork instead of squashing cleanly: tofu is too wet — pat cubes dry with paper towel and reshoot. Pieces spring back when pressed: tofu too firm — set aside and replace with a softer block from a fresh box.
+
+### bf55_yangzhou_fried_rice_L6  (level L6)
+PREP:
+Weigh 250 g Yangzhou fried rice straight from the takeaway container. Confirm rice grains and any dice are already ≤15 mm; the per-level note states no further size reduction is required, so do NOT blend or sieve. Scoop a 30 g mixed-flavour portion onto the plate; keep rice, egg, and any diced vegetables in the same proportions as bought. Do not add water or thickener. If grains look >15 mm or any piece resists thumbnail pressure, stop and re-make with a new portion cut smaller before continuing.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press the fork tines firmly onto a rice cluster until the thumbnail blanches white; the cluster must squash, change shape, and not recover. Spoon-tilt test: lift a spoonful; pieces should sit in a pile and slide as a clump, with little or no liquid pouring off the spoon. Fork-drip test: lift a forkful over the plate; food should sit on the fork with minimal flow through the tines. L6 is passed when the fork-pressure criterion is met and no flow tests behave like L5 or thinner.
+
+VISUAL QC:
+On the fork: a mixed mound where rice grains are clearly visible but clumped, egg pieces soft yellow, vegetables as small colour specks, all ≤15 mm. On the spoon: the scoop holds its shape, a small amount of oil sheen only, no loose liquid pool. Grains should not appear glossy-wet nor separated and dry.
+
+FAIL MODES:
+Hard grains or chewy meat >15 mm not squashing under thumbnail → re-make by discarding oversized pieces and re-weighing 30 g. Excess oil pooling or watery sauce → drain on absorbent paper and re-test. Dry, crumbly mound falling off fork → discard; L6 fried rice must clump.
+
+### bf19_steamed_shrimp_peeled_L7  (level L7)
+PREP:
+Steam peeled shrimp per usual household method until just opaque and firm; do not overcook. Cool briefly on the plate. Weigh 200 g of steamed shrimp as the starting specimen. Do NOT blend. Do NOT sieve. Do NOT add thickener or liquid. Specimen is the whole cooked shrimp as served. Per-level note "whole as steamed" applies: the food is presented intact, identical to the reference.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into a shrimp on the plate until thumbnail blanches white. The shrimp must compress, change shape, and not return to original form. Pass = clear deformation, no spring-back. Fork drip / spoon tilt: lift shrimp on fork and tilt over the plate; tilt a spoonful. Pass = no drip, no flow; shrimp holds on the utensil. L7 requires the fork-pressure test only; flow and syringe tests do not apply. If any sample spreads, drips, or flows off the utensil, specimen is not L7.
+
+VISUAL QC:
+Whole peeled shrimp body, intact C-shape, no breakage at the bend. Surface matte-dry, no pooled liquid on plate. Colour opaque pink-white with light surface moisture only. Check the fork: shrimp sits across the tine gap without falling through.
+
+FAIL MODES:
+Over-steaming causes mushy texture that smears and drips on the spoon tilt — fails L7; re-steam a fresh batch to just opaque. Under-steaming leaves rubbery shrimp that springs back fully under fork pressure — fails L7; re-steam briefly. Pooled cooking liquid on plate makes the specimen drip from the fork — pat shrimp dry with paper towel before shooting; do not re-cook.

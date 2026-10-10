@@ -1,0 +1,129 @@
+### bf12_steamed_minced_pork_patt_L3  (level L3)
+PREP:
+Weigh 200 g steamed minced pork patty on the digital scale. Tip into consumer blender. Blend 45 s, scraping down at 25 s if needed, until a smooth paste with no visible fibre. Sieve through the 4 mm sieve using the back of a spoon; discard any residue that will not pass. Weigh paste, note volume in ml. Add thickener at 2.0 g per 100 ml of paste as the calibration starting point; record the actual grams used. Stir with the fork 30 s, rest 60 s. If paste sits too stiff for a slow drip, add water 5 ml at a time up to 15 ml total and re-stir. Target: pours in a continuous thick ribbon, drips slowly through fork tines, IDDSI syringe shows 8–10 ml remaining at 10 s.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork horizontal 50 mm above plate; paste should drip in slow, отдельный drips, not a stream. Fork pressure: tines leave a clear, holding imprint when pressed; paste does not recover. Spoon tilt: a teaspoonful sits in a cohesive mound, slides off slowly when tilted 30 degrees, not runny. Syringe flow: fill 10 ml, release; 8–10 ml remains at 10 s. All four must pass.
+
+VISUAL QC:
+On fork: glossy, uniform, no meat fibre or fat specks, clings in a thick ribbon. On spoon: holds shape, slow slide, no separation of liquid. Surface matte-smooth, single colour, no air pockets.
+
+FAIL MODES:
+Drips too fast: under-thickened, add 0.5 g thickener per 100 ml, rest 60 s, retest. Holds shape on spoon but will not drip from fork: over-thickened, add 5 ml water, re-stir, retest. Lumps or fibre visible after blending: re-blend 15 s, re-sieve, retest. Re-make from scratch if paste splits or fat pools after 2 min rest.
+
+### bf44_mango_pudding_L3  (level L3)
+PREP:
+Weigh 120 g of chilled mango pudding into the blender jar. Blend 20-25 s on high until completely smooth and pourable. Do not sieve — the gel matrix will clog the 4 mm mesh and stall. Add 1.5 g thickener per 100 ml of pudding (1.8 g total); this is the calibration starting point, record the actual grams used. Stir 30 s with the fork, rest 60 s, stir 10 s. Target: pours in a slow ribbon, drips slowly through fork tines. Add water only if flow test reads above 10 ml; record any added ml.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: pudding drops slowly in thick drips through tines, not a steady stream. Fork pressure: full thumb-press blanches nail bed, pudding deforms and holds the pressed shape, no recovery. Spoon tilt: spoon at 45°, pudding slides off in 2-4 s as one mass, not a quick pour. Syringe flow test: fill to 10 ml, release 10 s, remaining volume 8-10 ml. All four must pass.
+
+VISUAL QC:
+On fork tines: glossy, uniform, opaque orange-yellow, no gel lumps or fruit fibre strands. On spoon: holds a soft peak 3-4 s before slumping, surface smooth with no syneresis beads. In flow test syringe: no separation, no air pockets.
+
+FAIL MODES:
+Too thin: reads under 8 ml in syringe, drips through fork in a stream — add 0.3 g thickener, rest 60 s, retest. Too thick: reads above 10 ml, holds stiff peak on spoon — blend in 5 ml water, retest. Lumpy or weeping: blending time too short or pudding over-thinned with water — discard and remake; do not re-blend a failed batch.
+
+### bf12_steamed_minced_pork_patt_L4  (level L4)
+PREP:
+Weigh 150 g steamed minced pork patty into blender. Add 40 ml warm water. Blend 25 s, stop, scrape, blend 20 s more. Pass through 4 mm sieve using the back of a spoon; discard coarse residue. Return puree to blender, add 0.5 g thickener per 100 ml of puree, blend 10 s to incorporate. Let rest 60 s. Record final weight and actual thickener mass on the data sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure test: press fork tines into the specimen on a flat plate. The tines must leave a clear, defined groove; the puree must not spring back, must not flow to refill the gap, and must not drip continuously through the slots. Fork drip test: lift fork with a standard mounded load. Specimen must sit in a mound above the tines; nothing must drip or flow through within 10 s. Spoon tilt test: a level teaspoonful must hold its shape when the spoon is tilted to 45 degrees; no flow, no drip. No separate thin liquid may be visible pooling on the plate under the specimen.
+
+VISUAL QC:
+Surface is smooth and matte, with no visible meat fibre, no crust fragments, no liquid sheen. Colour is uniform pale grey-brown from edge to centre. Specimen mounds cleanly on the spoon and peaks on the fork without slumping.
+
+FAIL MODES:
+Specimen weeps thin liquid onto the plate: under-blended or over-thinned, remake adding 0.25 g thickener per 100 ml in step 1. Specimen flows through fork tines or slumps off the spoon: insufficient thickener, remake with an extra 0.5 g per 100 ml. Specimen shows fibres or grain after sieving: blend longer before sieving, do not push residue through.
+
+### bf46_smooth_red_bean_paste_L4  (level L4)
+PREP:
+Weigh 200 g ready-to-eat red bean paste into blender jar. Blend 20 s on high to remove lumps. Pass through 4 mm sieve using spatula, pressing gently; discard retained skins/seeds. Weigh back; record actual yield. Do not add water, milk, or thin liquid — the per-level note specifies serve-as-is if shape holds with no thin liquid. Do not add thickener; L4 for this food is calibrated from the as-packaged paste, and the operator records the actual gram yield only. If a thin serum separates on standing, decant and discard it before capture.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork drip test: scoop a heaped teaspoon, hold fork tines down over a white plate for 10 s. PASS — paste sits as a mound above the tines; nothing drips. Fork pressure test: press fork tines into the mound on the spoon until thumbnail blanches white. PASS — mound deforms but does not separate, no thin liquid weeps at the edges, no residue left in the tine gaps. Spoon tilt test: draw spoon across the paste then tilt to 90°. PASS — paste holds a soft peak and does not flow off. Skip the syringe flow test; it applies to L3 only.
+
+VISUAL QC:
+Glossy, uniform deep-red-brown surface with zero visible bean skins or grits. Paste mounds cleanly on the spoon with straight edges and no slumping. Tines of the fork remain clean after the drip test; no serum pools on the plate.
+
+FAIL MODES:
+A. Thin serum pools on the plate during drip test → reject; decant again, re-test; if it recurs, reject the batch. B. Visible skins, grits, or bean fragments in the mound → reject; re-sieve or re-blend 10 s and sieve again. C. Paste flows through fork tines or slumps off the tilted spoon (L5/Drink territory) → reject; do not rescue by adding thickener, re-make with a different pack.
+
+### bf12_steamed_minced_pork_patt_L5  (level L5)
+PREP:
+Weigh 150 g seasoned minced pork onto the scale. Steam until just cooked through, ~8-10 min; cool 2 min. Empty into a bowl, juices included. Chop with the fork against the bowl wall until no piece visibly exceeds 4 mm. Press the mass through the 4 mm sieve using the back of a spoon; discard what stays on mesh and note the retained mass. If dry to the eye, fold in 5-10 ml of the reserved steaming liquid. Do not blend. No thickener for L5.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen on a flat plate; it must squash, the tines leave a clear dent, and the surface does not rebound when the fork lifts. Spoon tilt: a heaped teaspoon tilts to 45°; specimen holds shape, no flow, no drip. Fork drip: lift fork with a loaded scoop and hold 5 s above the plate; nothing drops. L5 needs fork-drip and fork-pressure pass; spoon-tilt is supportive. All three must pass.
+
+VISUAL QC:
+On the fork: cohesive clump that sits as one lump with no crumbs falling off. On the spoon: mound holds its peak, surface slightly glossy from juices, no separate liquid pooling on the plate. Color is uniform pale grey-brown with no pink pork visible, confirming the chop reached every particle.
+
+FAIL MODES:
+Visible particle >4 mm after sieving: re-chop that portion and re-sieve. Specimen rebounds under fork pressure (under-steamed or too firm): re-steam 3 min and retest. Dry, crumbly mass: fold in another 5 ml cooking liquid; if still dry, the batch is too lean, re-form with 10% added liquid and re-shoot.
+
+### bf48_coconut_jelly_L5  (level L5)
+PREP:
+Weigh 200 g chilled coconut jelly directly from the pack. Chop roughly with a knife on a white plate. Crush with the back of a fork, pressing firmly against the plate, scraping and re-pressing until no lumps larger than 4 mm remain. If blending, pulse 3–5 s only; stop and re-check with the sieve. Sieve through the 4 mm sieve to catch any oversized particles; discard what fails to pass. Pass criterion: nothing retained above the mesh. If the pack liquid runs thin and pools, fold in thickener 0.5 g per 100 ml of expressed liquid and stir until homogeneous. Record actual thickener mass and any added water/ml on the card.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press the tines into a heaped spoonful until the thumbnail blanches white. Pass: the specimen squashes flat and does not spring back when the fork is removed. Spoon tilt: scoop, then tilt the spoon 45 degrees. Pass: specimen sits in a mound, holds shape, and does not slide or drip as a continuous pour; a small tongue of paste may slump but no separate thin liquid flows. Confirm particle size visually against the 4 mm sieve reference.
+
+VISUAL QC:
+Even pale white to translucent paste. No reflective pools of free liquid in the plate. A pressed smear reads as a continuous film, not crumbs.
+
+FAIL MODES:
+Clear liquid separates — re-mix or add thickener and re-sieve. Visible shards above 4 mm — re-crush, re-sieve, discard oversized. Springy, recovers shape on fork test — over-blended; re-chop manually, do not re-blend.
+
+### bf14_steamed_egg_custard_L6  (level L6)
+PREP:
+Weigh 200 g of steamed egg custard on the scale. Cut the set custard into cubes ≤ 15 mm with the fork or a knife against the 15 mm checkerboard. Do NOT blend — pureeing destroys the piece identity required for L6. Do NOT sieve. Do NOT add thickener. Do NOT add water; the custard already holds its moisture. Record the starting mass.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: place one cube under the fork tines. Press with the thumb until the thumbnail blanches white, holding 1 second. Pass criterion: the cube squashes, deforms, and does not spring back to shape. Spoon tilt: scoop one cube onto the spoon and tilt 45 degrees over the capture mat. Pass criterion: the piece sits full on the spoon, does not slide off, does not drip liquid. Fork drip: lift a cube on the fork and hold 5 seconds above the mat. Pass criterion: the piece holds on the fork with no drip and no fall.
+
+VISUAL QC:
+Cube edges are clean and ≤ 15 mm against the checkerboard. Surface is pale yellow, smooth, and glossy with no pooled water on the mat. When pressed, the cube visibly flattens under the thumbnail and stays flattened.
+
+FAIL MODES:
+Cubes exceed 15 mm: re-cut smaller and re-shoot before any other test. Cube springs back after fork press, holding shape like a sponge: the egg set is too firm or under-steamed; re-make with a wetter ratio (more water per egg) and re-test. Liquid pools on the mat from a cube: custard is under-set and weeping; re-make and drain before capture.
+
+### bf53_mapo_tofu_L6  (level L6)
+PREP:
+Weigh 200 g takeaway mapo tofu (sauce + curds). Decant into consumer blender; blend 10 s to break tofu curds into smaller pieces while keeping visible solids. Pour through 4 mm sieve over a bowl; press solids through with the back of a spoon so only soft curds and sauce pass; discard any firm skin or coarse chili solids caught on the mesh. Return sieved mass to the blender, add 60 ml warm water, blend 5 s to loosen to a spoonable consistency. Spoon-cut any lumps that remain larger than 15 mm with the edge of a spoon until all pieces measure ≤ 15 mm against the 100 mm ruler. Do not add thickener — this is L6, not L3. Record final mass on the scale for the log.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines onto a piece until thumbnail blanches white. Piece must squash, change shape, and not spring back when fork is removed. Spoon-tilt test: a spoonful must hold its shape on the spoon and only fall off when the spoon is tilted fully sideways, not on a slight tilt. Fork-drip test: a piece resting on the fork must not drip or run through the tines continuously. All three must pass.
+
+VISUAL QC:
+On the fork: a soft, irregular cube roughly 10–15 mm, surface glossy with chili oil, edges rounded not ragged. On the spoon: a cohesive mound that slides slowly when tilted, sauce pooling slightly at the base. No runny liquid pooling separately on the plate.
+
+FAIL MODES:
+Pieces exceed 15 mm after cutting → re-cut smaller. Mixture is too fluid and runs through fork tines or drips on slight spoon tilt → re-blend with less water and re-test. Mixture is too stiff to squash under fork → add 10 ml water, re-blend, re-test.
+
+### bf17_firm_tofu_L7  (level L7)
+PREP:
+1. Remove tofu from pack, drain packing liquid, pat block dry with paper towel. 2. Starting amount: 200 g whole block, kept intact. Do NOT blend, do NOT sieve, do NOT add thickener or water. Reference specimen for L7 must be the food as normally served. 3. Per the per-level note ("block/slice as served"), cut a single 30 mm × 30 mm × 15 mm slice on the capture board with the 100 mm ruler for scale. Record actual cut dimensions on the data sheet. 4. Keep remaining block chilled for re-takes if needed.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+- Fork pressure: press the square tines of a standard fork fully into the slice until the tines bend. The slice must NOT break apart, mash, crumble, or pass through the tine gaps. Pass = specimen remains as one cohesive piece under full thumb pressure. - Spoon tilt: tilt a standard spoon 45°. The slice must NOT slide, drip liquid, or fall off. Pass = specimen stays on the spoon. - Fork drip: lift fork with slice clear of the plate for 10 s. Pass = no drips, no liquid runs. - Syringe flow test: NOT applicable (L7 only). State "N/A" on sheet.
+
+VISUAL QC:
+- Slice holds a clean, sharp rectangular edge with no crumbling at corners. - Surface shows smooth, intact skin with no split layers or weeping liquid pooling on the plate. - Block retains original pale ivory colour; no translucent mushy zones at cut faces.
+
+FAIL MODES:
+- Slice smears, splits, or crumbs under fork thumb pressure → under-cooked/soft batch; re-make with a firmer chilled pack and re-record actual supplier code. - Visible liquid pools on plate from cut faces → excess syneresis; drain longer, pat drier, re-cut slice. - Slice bends without breaking and tines sink in fully → L6 not L7; re-make from a denser block, document on sheet.
+
+### bf60_lor_mai_gai_glutinous_ri_L7  (level L7)
+PREP:
+Weigh 200 g of the steamed Lor mai gai parcel as served (rice, chicken, and any visible leaf/outer wrap removed to expose the rice mass). Do not blend. Do not sieve. Do not add thickener or liquid — L7 is the whole-food reference; the parcel-as-steamed note applies. Keep the specimen warm under a lid until testing (≤10 min).
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press a standard metal fork flat onto the surface with steady thumb pressure. The specimen must hold shape, the tines must leave a clear, persistent indentation, and the fork must not fully cut through the rice mass in one press — this confirms solid-food criteria and rules out L5/L6 spreadability. Spoon tilt test: scoop a forkful onto a spoon and tilt the spoon to a steep angle; the sample must not slide, drip, or flow off. Fork drip test: lift the fork with a loaded forkful and hold for 5 s — no continuous drip stream; only a few grains may detach. No syringe flow test (L3 only).
+
+VISUAL QC:
+Rice grains are distinct and bound only by stickiness, not by sauce pooling. Surface looks matte, not glossy with free liquid. Fork tines leave visible imprints; rice does not smear or ooze between the tines.
+
+FAIL MODES:
+Free liquid pools at the parcel base → specimen reads L6 or wetter, not L7; remake with a fresh parcel and dab surface with paper before testing. Rice mass fully crushes through the fork in one press → too soft, possibly under-steamed or over-sauced; remake with a fresh parcel, longer steam. Grains slide off the spoon on tilt → insufficient sticky binding; remake and re-steam a new parcel.

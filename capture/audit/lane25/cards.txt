@@ -1,0 +1,90 @@
+### bf25_stewed_hairy_gourd_L3  (level L3)
+PREP:
+Weigh 250 g stewed hairy gourd (including liquor) on the digital scale. Blend 30-45 s until fully smooth. Sieve once through the 4 mm sieve, pressing with the back of a spoon; discard retained fibre. Add the calibration starting point of 3.0 g thickener per 100 ml of sieved puree, stirring to fully disperse. The per-level note permits blend-thinning, so add 50 ml water to bring the puree to pouring consistency, then re-stir. Record the actual thickener mass used. The specimen must pour in a steady stream from the cup.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip test: tilt the fork; the puree drips slowly in a continuous, thick ribbon, not a thin stream. Fork pressure test: pressing the fork against the cup leaves a clear pattern that does not recover; the puree does not flow back into the grooves. Spoon tilt test: a spoonful holds shape when the spoon is tilted, then drops off as one cohesive lump. IDDSI syringe flow test: fill the 10 ml syringe, release for 10 s; 8-10 ml must remain in the syringe. All four must pass.
+
+VISUAL QC:
+Even pale-green puree with no visible fibre. Smooth, glossy surface, no liquid separating around the edges. Coats the back of the spoon in a thin, even layer.
+
+FAIL MODES:
+Thin and runny like a drink: sieve was skipped or thickener under-dosed; re-make and add 0.5 g thickener per 100 ml. Lumpy with visible fibre: blend time too short; re-blend 20 s and re-sieve. Liquid pools around puree on the spoon: water added before thickener, or under-gelled; re-make from scratch.
+
+### bf57_braised_beef_brisket_noo_L3  (level L3)
+PREP:
+Weigh 200 g braised beef brisket noodles into blender cup. Add 80 ml warm water and 6.0 g thickener (calibration starting point — record the actual mass used). Blend on high for 45 s, stopping to scrape down once. Add another 40 ml warm water and 2.0 g thickener; blend 30 s. Push through a 4 mm sieve with the back of a spoon; discard any fibres or noodle clumps that will not pass (per-level note: blend-thin — sieving is required because brisket sinew and noodle skins will not break down fully). Stir, rest 2 min. If the slurry pours in a slow ribbon and drips in 1-2 drops per second off the fork tines, proceed; if it runs or sits in a lump, adjust in 1.0 g thickener steps up to a maximum of 12.0 g total before re-blending 15 s.
+
+IDDSI TEST (applicable: fork_drip, flow_ml_remaining):
+Fork drip: hold fork vertically over plate — slurry drips in slow, individual drops through the tines, not a stream. Fork pressure: press fork tines into 15 mm of slurry on a spoon — tines leave a clear outline that does not fill back in; slurry does not hold the fork up. Spoon tilt: tilt a heaped spoon 30° — slurry flows off slowly as one mass, not a fast pour and not a solid lump. Syringe flow (10 ml / 10 s): draw 10 ml, release, 8-10 ml remaining at 10 s — that is the pass band; under 6 ml = too thin, over 11 ml = too thick.
+
+VISUAL QC:
+Uniform brown, no visible noodle strands, no meat shreds, no skin pieces. Coats the back of the spoon in an even, glossy film. Flows off the spoon as a slow continuous ribbon that breaks after 1-2 cm.
+
+FAIL MODES:
+Too thin (<6 ml remaining) — runoff, no coating on spoon: whisk in 1.0 g thickener, rest 1 min, re-test. Too thick (>11 ml remaining), lumpy, catches on sieve: whisk in 10 ml warm water, blend 15 s, re-test. Visible solids after sieving — do not pick them out; re-blend 20 s with extra 20 ml water, re-sieve; max one re-make, then re-weigh and start fresh.
+
+### bf25_stewed_hairy_gourd_L4  (level L4)
+PREP:
+Weigh 300 g stewed hairy gourd (skin + seeds removed, cooked soft). Add 60 ml hot water. Blend 45–60 s on high until fully smooth, scraping sides once. Pass through the 4 mm sieve using the back of a spoon; discard fibrous residue. Do NOT add thickener — hairy gourd puree already holds at L4. If the puree sits below the fork-tine line on the fork-drip test, remix with a 0.5–1 g thickener per 100 ml increment (calibration starting point only; record actual grams on the run sheet).
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: press fork tines into the specimen on a flat plate; white shows briefly through the puree and the puree does not recover fully — passes L4. Fork drip: scoop puree, turn fork tines down over a plate; the puree sits in a mound above the tines and does not flow or drip through — passes L4. Spoon tilt: tilt a heaped spoon; puree holds shape and does not slide off — passes L4. No separate thin liquid should pool on the plate. (10 ml syringe flow test is not required for L4.)
+
+VISUAL QC:
+Uniform pale green-beige color with no visible fiber strands or skin flecks. Surface matte and slightly glossy, not wet or shiny. Holds a clean ridge when drawn with the fork tines.
+
+FAIL MODES:
+Too runny: puree flows through fork tines or pools liquid on plate — re-blend 15 s, re-sieve, or step thickener up by 0.5 g/100 ml and re-test. Too stiff: puree cracks or crumbles on the spoon instead of holding soft ridges — loosen with a 5 ml water splash and re-blend 10 s. Visible fiber or skin specks caught in sieve residue — re-sieve or discard batch; do not submit a coarse specimen as L4.
+
+### bf59_steamed_chicken_with_mus_L4  (level L4)
+PREP:
+Weigh 250 g cooked chicken+mushroom mixture. Add 60 ml hot water. Blend 90 s on high, scrape bowl, blend 60 s more. Sieve once through 4 mm; discard residue. Target yield about 300 ml puree. Thickener: start at 2.0 g per 100 ml puree (calibration point — record actual on the scorecard). Whisk thickener into warm puree, rest 2 min, stir, re-weigh. If the fork-drip test (below) is not yet passed, add 0.5 g/100 ml increments, rest, re-test. Do not add more water after sieving — re-blend is the only recovery step.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt, fork_drip):
+Fork pressure: press fork tines into the specimen on a plate until the tines blanch. The puree must hold the indentation without liquid pooling around the print. Pass. Spoon tilt: scoop, tilt spoon 45°. Specimen must sit in a mound, not slide or drip. Pass. Fork drip: lift fork with a heaped sample; specimen must sit in a mound above the tines, not drip through in 5 s. Pass. No separate thin liquid film may be visible in the bowl.
+
+VISUAL QC:
+Surface is matte, no shine or watery ring at the bowl edge. No visible mushroom fibres, skin flecks, or seed specks. Holds a clean spoon-shaped mound when scooped; tip does not slump.
+
+FAIL MODES:
+Puree flows through fork tines or levels on the plate → under-thick; add 0.5 g/100 ml thickener, rest 2 min, re-test, re-shoot take1. Loose liquid pools around the mound → over-blended with excess water; re-blend thicker batch, do not dilute. Visible fibres or mushroom skin after sieving → sieve discard too coarse; re-sieve one pass, re-shoot take2 only.
+
+### bf25_stewed_hairy_gourd_L5  (level L5)
+PREP:
+Weigh 300 g stewed hairy gourd (skin and seeds removed). Place in blender; blend 8-10 s until coarse. Transfer to tray and mash firmly with fork until no lumps exceed 4 mm. Press all material through the 4 mm sieve using the back of a spoon; discard residue that will not pass. Return sieved mash to bowl and fold gently to redistribute moisture; if the mash sits in a loose pool, add thickener at 1.0 g per 100 ml of mash and stir to combine. Record final grams and any thickener added on the capture sheet.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure: press fork tines into the specimen on a flat spoon until the thumbnail blanches white; the mash must squash, hold the depressed shape, and not spring back. Spoon tilt: tilt a heaped spoonful 45 degrees; specimen stays as a cohesive mass with no run-off or drip. Fork drip: lift fork clear of the bowl and hold 5 s; nothing drips through or falls from the tines. Particle check: lift a 5 g scoop and confirm no piece exceeds 4 mm against the ruler.
+
+VISUAL QC:
+Surface looks uniformly wet and glossy with fine specks only. No skin threads, no free liquid pooling at the bowl edge. Particles are rice-sized or smaller, evenly distributed.
+
+FAIL MODES:
+Stringy fibres or skin remain and refuse to pass the sieve; re-blend 3 s and re-mash. Mash weeps thin liquid on standing; add thickener 0.5 g per 100 ml and rest 60 s before re-testing. Mash holds shape on tilt but springs back under fork; it is L4 or L6, not L5 — thin with 5-10 ml warm water and re-sieve to <=4 mm, restart.
+
+### bf27_braised_lotus_root_L6  (level L6)
+PREP:
+Weigh 200 g braised lotus root. Confirm soft pieces already dice ≤15 mm; do not blend — blending breaks fibres and shifts the specimen out of L6. Skip sieve (not applicable, already bite-sized). No thickener (L6, not L3). Reserve 30 ml of the braising liquid in case a 2-second re-steam is needed to soften any firmer core. Keep liquid separate until after tests.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork-pressure test: press fork tines into a piece until thumbnail blanches white. PASS if the piece squashes, does not spring back, and flattens cleanly. Spoon-tilt test: lift a piece on a spoon; PASS if the piece holds shape on the spoon and slides off only when tilted or shaken, never pouring. Fork-drip test: pass through a 4 mm sieve. PASS if nothing flows through, only soft residue smears under the tines. Record fork-pressure video as the IDDSI test film.
+
+VISUAL QC:
+Check on the fork: (1) piece collapses fully under thumb without splitting into hard shards, (2) cut face looks moist, fibrous, uniformly translucent-pink with no white firm core, (3) surface glistens but no free liquid pools on the spoon. In seconds: a quick thumb-press should leave a permanent flat dent.
+
+FAIL MODES:
+(1) Piece springs back or core stays white → not soft; re-steam 60 s and retest. (2) Fragmenting into small shards on press → too fibrous; not L6, discard and remake from softer batch. (3) Free liquid runs through sieve → too wet; dab, then retest. Any fail: remake, do not patch.
+
+### bf30_sweetcorn_kernels_L7  (level L7)
+PREP:
+Weigh 150 g sweetcorn kernels straight from the tin or heated from frozen; drain off packing liquid, blot 10 s on paper towel. Do not blend. Do not sieve. Do not add water or thickener. Each kernel must remain whole, separate, and not crushed during handling. Specimen is calibration starting point; operator records actual mass weighed.
+
+IDDSI TEST (applicable: fork_pressure, spoon_tilt):
+Fork pressure test: press fork tines fully into the pile of kernels with thumb pressure until thumbnail blanches white. Specimen passes L7 only if every kernel flattens, splits, or smashes apart — no kernel remains hard, rounded, or bounces back. Spoon tilt test: tilt a heaped teaspoon of kernels 45 degrees over a white plate. Specimen passes if 5 or fewer kernels slide off the spoon and zero stay mounded; the rest tumble free as discrete pieces. Fork drip test does not apply at L7.
+
+VISUAL QC:
+On the fork: kernels show flat, crushed, split faces with maize starch exposed; no whole round kernel survives. On the spoon at tilt: loose, dry, individual pieces; no clumping, no slick glaze, no sauce film binding them. On the plate: kernels sit as separate fragments, not a paste.
+
+FAIL MODES:
+Any kernel stays whole and hard after full fork pressure: re-make with fresh kernels; reheat to steaming, re-drain, re-blot. Kernels clump or hold shape on spoon tilt because residual syrup is binding them: re-drain, rinse briefly under cold water, re-blot fully before reshooting. Pile looks mashed or creamy rather than discrete fragments: operator over-pressed during prep; re-make, do not crush with fork before the test shot.
