@@ -1,0 +1,58 @@
+experiment:
+  name: siglip2_v02_judgelabels
+  output_dir: /work/runs/v02
+  seeds: [17, 29, 43, 71, 101]
+
+data:
+  # v0.2 manifest: 684 unique events (20 exact duplicate event_ids removed across
+  # harvest_d1 ∩ harvest_d1b ∩ realweak_pilot), stratified 70/15/15 on level with
+  # seed 20260918 so all three splits contain all five levels.
+  # The v0.1 config pointed at /path/to/physically_tested_manifest.jsonl — a
+  # placeholder for the desk-specimen set that has never been collected (A385).
+  # This manifest is the harvested public-image set labelled by ONE judge
+  # (Qwen3-VL-8B-Instruct, prompt iddsi-visual-descriptors-v2-scale-anchored),
+  # confidence_tier2 constant 0.95. It is a judge-label ceiling, not ground truth.
+  manifest: /work/data/manifest_v02.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # NOTE: vacuous — every event has its own group
+  synthetic: false
+
+model:
+  kind: siglip2
+  # Local path, not the HF id: the container has no usable huggingface.co
+  # egress (DNS poisoned; HF_ENDPOINT is the mirror only). Matches
+  # data/siglip2_fix1.yaml, which trained from /work/models_local.
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    # Unchanged from v0.1's fix1 recipe: 60 epochs of frozen-encoder linear probe
+    # (the 2026-09-06 run gave it only 33 steps and the head never moved), then
+    # 15 epochs unfreezing the last two blocks at 2e-5.
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  # v0.1 landed here: under_fnr 0.2857 at coverage 0.899, target_met FALSE.
+  # The gate is wk2 FNR <= 5%. Any v0.2 claim must be judged on THIS number.
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

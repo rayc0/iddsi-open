@@ -55,6 +55,47 @@ The cross-tab on the full sample reveals a systematic pattern the preliminary ce
 
 This is the **dangerous direction** — predicting a SAFER texture than truth (see H-L7SINK in `HAZARD_LOG.md`). The wk2 gate already catches it at 33% dangerous under-classification. The regen does not relax the headline: judges do not just disagree randomly — they share a directional bias toward the safe end.
 
+## v0.2 — retrained on a corrected manifest (2026-10-10)
+
+Same code, corrected data. The v0.1 label set contained 20 duplicate `event_id`
+values across corpora and no working group key, so v0.2 trains on **684 unique
+events** (704 minus the 20 duplicates), split **stratified on level 70/15/15,
+seed 20260918**, so all five levels appear in every split. The `group_id` leak
+control in the old manifest is vacuous — see H-GROUP.
+
+Five seeds, held-out test n=102 each. Full per-seed files in
+`results/v02_judgelabels/`; corrected metrics in `results/v02_judgelabels/honest_metrics.json`.
+
+| metric | v0.1 | v0.2 (5 seeds, range) | direction |
+|---|---|---|---|
+| macro-F1 (as published) | 0.358 | 0.284 – 0.320 | **regressed** |
+| macro-F1 (abstention scored as a class) | not computed | 0.237 – 0.267 | — |
+| weighted kappa (covered) | 0.4227 | 0.455 – 0.539 | up, but see H-KAPPACOV |
+| weighted kappa (all rows) | not computed | 0.405 – 0.457 | — |
+| dangerous under-classification (covered) | 0.333 | 0.039 – 0.133 | down, but see below |
+| coverage | 0.881 | 0.500 – 0.618 | **collapsed** |
+| calibration gate (FNR <= 0.05) | FALSE | 1 of 5 seeds | still failing |
+
+**What actually happened.** v0.2 does not classify better; it declines more.
+Each seed makes 28–36 dangerous under-calls across 102 test events but *answers*
+wrongly on only 2–8 of them — the abstention intercepts roughly 85% of the
+model's own dangerous calls. That is why covered under-classification falls.
+Read that as a property of the abstention policy, not of the classifier: the
+metric cannot see an abstention at all (H-ABSTBLIND), and v0.1's 0.333 was
+measured at coverage 0.881 while v0.2's is measured at ~0.55, so **the two
+figures are not the same measurement**.
+
+**Gates.** wk1 (kappa >= 0.70) fires on all five seeds — best 0.539. wk2
+(FNR <= 0.05) is met on 1 of 5 (seed 29, 0.0488). The wk1 kill rule therefore
+still fires and the weights remain withheld under the 2026-09-07 decision.
+Nothing in v0.2 reopens it.
+
+**What must not be read from this.** v0.2 is not clinically validated, not
+deployable, and not a safety product. Every figure above is measured against
+the 31.0% inter-judge label noise (H-NOISE), on a split with no working leakage
+guarantee (H-GROUP). Coverage is the number that carries the safety line here:
+it is computed on all N and is not acceptance-gated.
+
 ## CORAL ordinal-decode bug and fix
 
 A CORAL ordinal-decode bug made levels L4/L5/L6 unreachable. Argmax over sigmoid-difference class masses could never fire for interior classes. This was proven numerically from the checkpoint. Fixed with the ordinal rank rule:

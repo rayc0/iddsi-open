@@ -1,0 +1,12 @@
+{
+  "temperature": 1.6245047927124712,
+  "validation_nll": 1.2335257010501173,
+  "threshold": 0.21640288829803467,
+  "coverage": 0.7087378640776699,
+  "under_fnr": 0.1095890410958904,
+  "error_rate": 0.3972602739726027,
+  "target_under_fnr": 0.05,
+  "minimum_coverage": 0.7,
+  "target_met": false,
+  "selection_reason": "gate not met; least under-classification risk among candidates meeting minimum coverage"
+}

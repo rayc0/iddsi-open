@@ -11,3 +11,15 @@ __pycache__/
 *.png
 *.mp4
 data/
+
+# --- 2026-10-10 leak remediation (v0.2 release) ---
+# These 12 files were being published to the PUBLIC repo by the daily-sync
+# commit (46730c9, 2026-09-22), which pushed the working tree rather than the
+# staged release bytes. They carry personal identity, a Tailscale IP, internal
+# paths, cross-venture references and unpublished drafts. Untracked (files kept
+# on disk); ops/scan_release_leaks.sh BLOCKs on all three categories.
+RUNBOARD.md
+r5_*.md
+drafts/
+docs/ARCHITECTURE.md
+docs/RUNBOOK.md
