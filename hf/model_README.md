@@ -290,6 +290,75 @@ cannot say whether Qwen carried a family bias or the newer families share one.
 The 300-specimen protocol remains the only route to ground truth and has never
 been run.
 
+## v0.6 — the gate outcome depends on the yardstick, not the model
+
+**This is the most important result in the project, and it is a negative one
+about our own reporting.**
+
+### We could not fail the gates reliably
+
+We measured three models against two label sets. The same models that failed
+every gate we had published also pass it, on a different yardstick:
+
+| model (5 seeds each) | vs v0.5 consensus | vs v0.7 consensus | wk1 κ≥0.70 |
+|---|---|---|---|
+| v0.4 | 0/5 pass (κ 0.540–0.566) | **5/5 pass** (κ 0.736–0.808) | flips |
+| v0.5 | 0/5 pass (κ 0.498–0.547) | **5/5 pass** (κ 0.704–0.795) | flips |
+| v0.7 | 0/5 pass (κ 0.475–0.506) | **5/5 pass** (κ 0.838–0.860) | flips |
+
+**Nothing about the models changed between those two columns — only the labels
+they were scored against.** Five versions of "we have not met the gate" were
+therefore partly an artefact of measuring against a label set we ourselves had
+built and then improved. A reviewer is entitled to discount every performance
+claim we have made to date, including this one.
+
+### v0.7 on its own labels, stated with the caveat attached
+
+| metric | v0.7, 5 seeds, held-out n=108 |
+|---|---|
+| weighted kappa, covered (the wk1 quantity) | **0.838 – 0.860** |
+| weighted kappa, all rows | 0.793 – 0.825 |
+| exact match | **0.694 – 0.741** |
+| MAE in IDDSI levels | **0.380 – 0.444** |
+| under-classification, all-N | 0.093 – 0.130 |
+
+For context, the strongest published single-image result uses **clinically
+verified** labels (115 images, 8 levels) and reports 61.74% exact match and MAE
+0.809 — https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full
+(He, Mung, Kam & Chan, *Frontiers in Nutrition*, 2026-06-29). Our numbers are
+better than that on both. **That comparison should be discounted, not celebrated:**
+our labels and our model share a source, so an unknown share of the agreement is
+circular, and ours are machine labels, not clinician-verified.
+
+The one thing that is not circular: **v0.4 and v0.5 never saw the v0.7 labels,
+and they score 0.736–0.808 and 0.704–0.795 against them.** Models trained on
+three different label sets all agree more with the v0.7 labels than with the
+v0.5 ones. That is evidence the labels improved, not evidence they are correct.
+
+### What changed in v0.7
+
+A coverage-closure run gave a second independent judgement to the 314 events that
+previously had only one, so **337 of the 532 cleaned events now carry two genuine
+independent judgements** (251 unanimous, 86 split) instead of an unverifiable
+single call. Cross-family agreement is stable and reproducible at **~74.5%**
+(251/337 = 74.5%, and 166/223 = 74.4% on the earlier subset).
+
+Two attempts to improve training this way are recorded because they failed:
+dropping every disputed event kept only 31% of the corpus and destroyed the middle
+classes (L4 66→7, L5 65→4, L6 72→5); weighting by agreement produced a replication
+factor of 1 for every event, because agreement is all-or-nothing inside a level
+rather than graded. v0.7 therefore changes only the **labels**, with the training
+recipe byte-identical to every prior version.
+
+### What this does not establish
+
+No number here is a claim about real-world accuracy. Two independent model
+families agree on an IDDSI level from a photograph about three times in four, the
+"is there food" question is reliable (96.7% cross-family) while the level is not,
+and **the physically-tested protocol — 300 specimens, ~10 hours, already fully
+specified — remains the only route to ground truth and has never been run.** Until
+it is, every gate result here is conditional on a yardstick we built ourselves.
+
 ## CORAL ordinal-decode bug and fix
 
 A CORAL ordinal-decode bug made levels L4/L5/L6 unreachable. Argmax over sigmoid-difference class masses could never fire for interior classes. This was proven numerically from the checkpoint. Fixed with the ordinal rank rule:

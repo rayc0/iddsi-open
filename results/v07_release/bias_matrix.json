@@ -1,0 +1,18 @@
+{
+  "v0.3 (trained: Qwen tier-2)": {
+    "v0.5 consensus": 0.3602269127679655,
+    "v0.7 consensus (full coverage)": 0.17344521021166864
+  },
+  "v0.4 (trained: partial consensus)": {
+    "v0.5 consensus": 0.5539955518893709,
+    "v0.7 consensus (full coverage)": 0.7045783785502729
+  },
+  "v0.5 (trained: cleaned consensus)": {
+    "v0.5 consensus": 0.5188912565999125,
+    "v0.7 consensus (full coverage)": 0.6712585329292282
+  },
+  "v0.7 (trained: full-coverage consensus)": {
+    "v0.5 consensus": 0.4871828762900834,
+    "v0.7 consensus (full coverage)": 0.8127250349118708
+  }
+}

@@ -203,6 +203,29 @@ This log is not a medical-device risk-management file. No severity, probability,
   Two correlated wrong families can agree with each other. Distinguishing
   "inconsistent" from "incorrect" requires a physically-measured anchor, which
   does not exist. Consensus is a lower-variance label set, not a correct one.
+## H-YARDSTICK — the gate outcome is a property of the label set, not of the model
+
+- Hazard: the same three model versions that failed every published gate also
+  pass it, measured against a different label set. Against the v0.5 consensus all
+  three fail wk1 (0/5 seeds each). Against the v0.7 full-coverage consensus all
+  three pass (v0.4 kappa 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860).
+  **Nothing about the models changed between those columns** -- only the yardstick.
+  Five releases of "we have not met the gate" were therefore partly an artefact
+  of measuring against a label set we built and then improved.
+- How found: by scoring every model against every label set (`results/v07_release/
+  bias_matrix.json`) after noticing that each model scored best on the labels it
+  had trained on. That is the signature of circular measurement.
+- Fix: none available in software. The gate quantity is well-defined; the label
+  set it is measured against is not independent of the models. The only
+  non-circular yardstick is physically-measured ground truth, which does not exist.
+- Residual risk: every performance claim this project has made, including v0.7's,
+  is conditional on a yardstick we built ourselves. A reviewer should discount all
+  of them equally. The one non-circular observation is that models trained on three
+  DIFFERENT label sets all agree more with the v0.7 labels (0.70-0.86) than with
+  the v0.5 ones (0.48-0.57) -- which is evidence the labels improved, and is not
+  evidence they are correct. Note also that H-KAPPACOV (kappa is coverage-filtered)
+  and H-QWENBIAS (agreement is consistency, not correctness) both apply here and
+  both compound this one.
 
 ## Retained boundary hazards
 

@@ -1,0 +1,12 @@
+{
+  "temperature": 1.7411011265922485,
+  "validation_nll": 0.780752783748437,
+  "threshold": 0.5189002752304077,
+  "coverage": 0.7545454545454545,
+  "under_fnr": 0.04819277108433735,
+  "error_rate": 0.14457831325301204,
+  "target_under_fnr": 0.05,
+  "minimum_coverage": 0.7,
+  "target_met": true,
+  "selection_reason": "highest coverage satisfying the configured validation under-classification gate"
+}
