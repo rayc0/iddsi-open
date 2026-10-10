@@ -1,0 +1,52 @@
+experiment:
+  name: siglip2_v03_groupdisjoint
+  output_dir: /work/runs/v03
+  seeds: [17, 29, 43, 71, 101]
+
+data:
+  # v0.3 manifest: 684 events in 650 groups, split BY GROUP so no near-duplicate
+  # image can appear on both sides of a split boundary. This is the fix for the
+  # leakage measured in v0.2: perceptual dedup (dHash<=6 AND pHash<=8) found 55
+  # near-duplicate pairs that event_id never caught, forming 7 genuine visual
+  # families, and 4 of those spanned train/test/val simultaneously in the v0.2
+  # row-wise split. Groups come from the connected component of the near-duplicate
+  # graph unioned with the source corpus, so provenance never splits a family.
+  manifest: /work/data/manifest_v03.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # now MEANINGFUL: 650 groups over 684 rows
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    # Unchanged from the v0.2 recipe so the split is the ONLY variable changed.
+    # Any difference in the numbers is therefore attributable to the split fix,
+    # not to a different schedule.
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

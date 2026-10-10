@@ -1,0 +1,67 @@
+{
+  "101": {
+    "n": 142,
+    "coverage": 0.7183098591549296,
+    "macro_f1_published": 0.25276607130911766,
+    "macro_f1_with_abstention_class": 0.21063839275759802,
+    "fnr_covered": 0.14705882352941177,
+    "kappa_covered": 0.5895149010224059,
+    "kappa_overall": 0.49312008933912976,
+    "under_calls_total": 32,
+    "under_calls_answered_wrong": 15,
+    "under_calls_caught": 17,
+    "target_met": false
+  },
+  "17": {
+    "n": 142,
+    "coverage": 0.6197183098591549,
+    "macro_f1_published": 0.28461105103661877,
+    "macro_f1_with_abstention_class": 0.23717587586384895,
+    "fnr_covered": 0.09090909090909091,
+    "kappa_covered": 0.5958174533372422,
+    "kappa_overall": 0.4646825396825397,
+    "under_calls_total": 40,
+    "under_calls_answered_wrong": 8,
+    "under_calls_caught": 32,
+    "target_met": false
+  },
+  "29": {
+    "n": 142,
+    "coverage": 0.704225352112676,
+    "macro_f1_published": 0.3004476703039879,
+    "macro_f1_with_abstention_class": 0.2503730585866566,
+    "fnr_covered": 0.08,
+    "kappa_covered": 0.6198704103671706,
+    "kappa_overall": 0.5263830637108049,
+    "under_calls_total": 25,
+    "under_calls_answered_wrong": 8,
+    "under_calls_caught": 17,
+    "target_met": false
+  },
+  "43": {
+    "n": 142,
+    "coverage": 0.6971830985915493,
+    "macro_f1_published": 0.28750334333858363,
+    "macro_f1_with_abstention_class": 0.2395861194488197,
+    "fnr_covered": 0.06060606060606061,
+    "kappa_covered": 0.5552782630396805,
+    "kappa_overall": 0.49191927313660855,
+    "under_calls_total": 27,
+    "under_calls_answered_wrong": 6,
+    "under_calls_caught": 21,
+    "target_met": false
+  },
+  "71": {
+    "n": 142,
+    "coverage": 0.7605633802816901,
+    "macro_f1_published": 0.3159090909090909,
+    "macro_f1_with_abstention_class": 0.26325757575757575,
+    "fnr_covered": 0.12962962962962962,
+    "kappa_covered": 0.5842026825633383,
+    "kappa_overall": 0.5148063781321185,
+    "under_calls_total": 31,
+    "under_calls_answered_wrong": 14,
+    "under_calls_caught": 17,
+    "target_met": false
+  }
+}
