@@ -96,6 +96,200 @@ the 31.0% inter-judge label noise (H-NOISE), on a split with no working leakage
 guarantee (H-GROUP). Coverage is the number that carries the safety line here:
 it is computed on all N and is not acceptance-gated.
 
+## v0.3 — leakage-fixed retrain (2026-10-11)
+
+**What changed: the evaluation split was contaminated and is now not.** Nothing
+else about the recipe moved, so every number difference is attributable to the
+split fix alone.
+
+Perceptual deduplication (dHash ≤ 6 **and** pHash ≤ 8) over all 684 images found
+**55 near-duplicate pairs that `event_id` never caught**, forming **7 genuine
+visual families**. In the v0.2 row-wise split, **4 of those families spanned
+train, val and test simultaneously** — so v0.2's held-out set contained images
+effectively present in training. Source: `results/v03_groupdisjoint/dedup_report.json`.
+
+v0.3 assigns **whole groups** to splits (650 groups over 684 rows) and asserts
+group-disjointness and per-level coverage rather than assuming them; both
+assertions pass. The test set grew 102 → 142 events, so intervals tighten.
+
+### Results — 5 seeds, held-out n=142 each
+
+| metric | v0.2 (contaminated) | v0.3 (group-disjoint) |
+|---|---|---|
+| **AUGRC** (joint risk, lower better; 0.5 = random) | not computed | **0.242 – 0.296** |
+| macro-F1 as published | 0.284 – 0.320 | 0.253 – 0.316 |
+| macro-F1, abstention scored as a class | 0.237 – 0.267 | 0.211 – 0.263 |
+| weighted kappa (covered) | 0.455 – 0.539 | **0.555 – 0.620** |
+| weighted kappa (all rows) | 0.405 – 0.457 | **0.465 – 0.526** |
+| under-classification rate, **all-N** (both sides of the fraction) | not computed | **0.176 – 0.282** |
+| under-classification rate (covered only) | 0.039 – 0.133 | 0.061 – 0.147 |
+| coverage | 0.500 – 0.618 | **0.620 – 0.761** |
+| MAE in IDDSI levels | not computed | **0.655 – 0.761** |
+| wk1 (κ ≥ 0.70) | 0/5 | **0/5** (best 0.620) |
+| wk2 calibration gate | 1/5 | **0/5** |
+
+Per-seed files in `results/v03_groupdisjoint/`; AUGRC and the corrected all-N
+rate in `selective_metrics.json`.
+
+### We fixed the metric we said was broken
+
+v0.2 disclosed **H-ABSTBLIND**: `dangerous_underclassification_rate_all` gates its
+numerator on acceptance while dividing by all N, so an abstained
+under-classification is never counted and abstaining more drives it toward zero.
+v0.3 publishes the correctly-named **all-N rate (0.176–0.282)**, and adds **AUGRC**
+— the joint, unconditional selective risk integrated over thresholds
+(Traub et al., NeurIPS 2024, https://arxiv.org/abs/2407.01032). AUGRC cannot be
+gamed by abstaining, because coverage sits inside the integrand. All five seeds
+land well below the 0.5 random reference, so the model beats random at *every*
+threshold rather than only at one chosen operating point.
+
+### Where this sits against published work
+
+The strongest published single-image result uses **physically rheology-verified
+labels from certified clinicians** and a 14-model sweep: **61.74% exact match**
+for its chosen Qwen pipeline and **70.43%** for GPT4.1, with **FNR 9.2%** and
+**MAE 0.809** over IDDSI levels 0–7 on 115 images —
+https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full
+(He, Mung, Kam & Chan, *Frontiers in Nutrition*, 2026-06-29; title: "Multimodal
+LLM-driven IoT digital healthcare platform for intelligent dysphagia dietary
+monitoring").
+
+Our covered FNR (0.061–0.147) is in the same range as their 9.2%, and our MAE
+(0.655–0.761) is lower than their 0.809 — **but that comparison flatters us**, for
+two reasons stated plainly: their task spans 8 levels and ours 5, and **our test
+labels are themselves only 31%-consistent**, so a low MAE partly measures
+agreement with noisy targets rather than accuracy. Treat it as context, not a win.
+
+### Gates, and a challenge we are disclosing rather than hiding
+
+The wk1 gate stays **κ ≥ 0.70**, unchanged. It fires on every v0.3 seed.
+
+We are aware this gate is contested for our task type: Delgado & Tibau (2019),
+"Why Cohen's Kappa should be avoided as a performance measure in ordinal
+classification", *Pattern Recognition* 105:107192
+(https://www.sciencedirect.com/science/article/abs/pii/S0167865518313413), argues
+precisely against using Cohen's kappa as an ordinal model-selection metric. We
+are **not** changing a pre-registered gate after seeing results, because doing so
+would make every number in this release indefensible. We report the objection and
+leave the gate standing.
+
+### Labels are still the ceiling, and more machine labelling will not fix it
+
+A third labeller from an architecturally **independent** model family
+(step-5-preview, unrelated to Qwen) was run blind over 32 stratified images. It
+agreed with the Qwen-8B tier-2 labeller on **40.0%** — no better than the two
+Qwen sizes agree with each other (**42.9%** on the same sample). But **100% of
+its disagreements with Qwen-8B were exactly ±1 IDDSI level** (19 of 19), and
+**78.6%** of items had at least two of three labellers agreeing.
+
+This is corroborated by the literature: a panel of 9 frontier LLMs from 7 families
+reaches an effective independence of only **24.2%** and its best single judge
+matches or beats the full ensemble
+(https://ar5iv.arxiv.org/html/2605.29800), and Dawid–Skene-family label models
+require **three to five** annotators before their likelihood is identifiable at
+all (https://arxiv.org/pdf/1712.04577). We have two correlated labellers, which
+is below that threshold.
+
+**Conclusion: the label noise is irreducible from photographs.** L3/L4 is a
+viscosity boundary and L4/L5 is an absolute-particle-size boundary; neither is
+recoverable from a still image. Only the physically-tested route (300 desk
+specimens) produces ground truth, and it has never been run.
+
+## v0.5 — consensus labels, measured on a clean test set (2026-10-11)
+
+**Two findings, one of which finally justifies the multi-labeller work and one of
+which is a cost we did not expect.**
+
+### Finding 1 — the Qwen family was the outlier, not the photographs
+
+The v0.2/v0.3 labels came from two sizes of one model family. A third labeller
+from an **architecturally independent** family (`step-5-preview`, unrelated to
+Qwen) and a fourth (`MiniMax-M3.1f`) re-labelled the corpus blind.
+
+```
+Qwen-2B vs Qwen-8B   30.9% exact    68.8% within ±1 level
+Step-5  vs Qwen-8B   47.1% exact    73.2% within ±1 level
+Step-5  vs MM-3.1f   74.7% exact
+```
+
+Two unrelated families agree with each other at 74.7% while each agrees with
+Qwen-8B at only 31–47%. On the ±1 scale that matters for an ordinal texture
+scale, Step-5 agrees with Qwen-8B (73.2%) *better* than Qwen-2B does with its own
+sibling (68.8%). Consensus labelling redistributes the classes substantially:
+L6 172→87, L4 64→96, L5 47→75.
+
+**This is the release model.** Trained on 4-way consensus labels, evaluated on
+the clean test set below:
+
+| metric (5 seeds, held-out n=108) | value |
+|---|---|
+| exact match | **0.444 – 0.546** |
+| weighted kappa (all rows) | **0.540 – 0.566** |
+| AUGRC (joint risk; 0.5 = random) | 0.339 – 0.397 |
+| MAE in IDDSI levels | **0.722 – 0.778** |
+| coverage | 0.732 – 0.845 |
+| under-classification, all-N | 0.162 – 0.296 |
+
+Against the **identical 108 events**, the model trained on the old Qwen tier-2
+labels scores exact 0.370–0.454, kappa 0.315–0.399, MAE 0.907–1.019. Consensus
+labels are worth roughly **+0.12 kappa and −0.19 levels of MAE** on the same
+ground truth. That is a real improvement, not the scoring artefact an earlier
+comparison of ours suggested.
+
+### Finding 2 — ~30% of the corpus was never usable
+
+A labelability sweep judged all 684 events with both families:
+
+```
+cross-family agreement, IS-THERE-FOOD   96.7%   (493/510)
+cross-family agreement, LEVELLABLE      85.5%
+unusable on either test                 152 of 684 = 29.8%
+```
+
+The binary judgement is answered almost perfectly by independent families; the
+5-level judgement never is. 152 events — empty vessels, diagrams, no discernible
+food mass — are unusable, and **every number published up to v0.4 was measured
+with them in the test set**. All v0.5 numbers above are on the **cleaned** test
+set of 108 events (`results/v05_release/unusable_event_ids.txt`).
+
+Note what this says about label quality: the questions we *can* verify are
+answered reliably; the 5-level question is not. That is the honest shape of the
+problem.
+
+### Finding 3 — cleaning the corpus costs performance
+
+Training on the cleaned 532 rather than 684 is more defensible and measurably
+worse, because the removals fall disproportionately on the hard middle levels
+(L4 96→66, L5 75→65, L7 400→305):
+
+| model, identical cleaned test set | exact | kappa | MAE |
+|---|---|---|---|
+| consensus labels, 400 train rows (**released**) | 0.444–0.546 | 0.540–0.566 | 0.722–0.778 |
+| consensus labels, 314 train rows (cleaned corpus) | 0.426–0.500 | 0.498–0.547 | 0.778–0.870 |
+
+We release the 400-row model and publish the cleaned-corpus run beside it rather
+than quietly dropping it. The direction of the next data effort is therefore
+**not** "delete more" — it is "acquire more mid-level labels", which is what the
+physically-tested specimen protocol is for.
+
+### Gates
+
+**Unchanged and still failing.** wk1 (κ ≥ 0.70) does not pass on any seed;
+best 0.566. The calibration gate is not met. The weights stay withheld under the
+2026-09-07 decision. The κ-based gate remains contested by Delgado & Tibau (2019),
+*Pattern Recognition* 105:107192
+(https://www.sciencedirect.com/science/article/abs/pii/S0167865518313413); we
+disclose the objection rather than re-register the gate after seeing results.
+
+### Still no ground truth
+
+Consensus is a *more consistent* label set (74.7% cross-family vs 30.9%
+within-family), which is why it trains a better model. It is **not** evidence
+that the labels are *correct*. Without a physically-measured anchor we still
+cannot say whether Qwen carried a family bias or the newer families share one.
+The 300-specimen protocol remains the only route to ground truth and has never
+been run.
+
 ## CORAL ordinal-decode bug and fix
 
 A CORAL ordinal-decode bug made levels L4/L5/L6 unreachable. Argmax over sigmoid-difference class masses could never fire for interior classes. This was proven numerically from the checkpoint. Fixed with the ordinal rank rule:

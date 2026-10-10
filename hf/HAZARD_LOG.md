@@ -76,6 +76,134 @@ This log is not a medical-device risk-management file. No severity, probability,
 - Fix: `group_id` must be a property of the capture, assigned once at capture time and carried through to the manifest, coarser than the event: dish or base-food identity (several photographs and several levels of the same food), capture session or physical specimen, and source page or licence parent, so an event and its visual relatives share a group. The 20 duplicated `event_id` values must be resolved to a surrogate primary key first — the current key cannot carry a grouping. The 129 NULL-`level_tier1` rows need an explicit rule (drop from supervised training, or train with tier-2 provenance marked as such) rather than passing as two-tier labelled. Two assertions gate every split from then on: group cardinality greater than one for the intended unit, and group-disjointness between training and held-out. Re-splitting re-randomises the eval, so no figure published in this release carries over — a corrected split is a new eval run, not a re-read of the current ones.
 - Residual risk: until the split is group-disjoint on a real grouping, every metric in this log — including the ones that fired the gates — is measured on an eval set with no provenance guarantee against leakage from training, and the v0.2 seed spread (macro-F1 0.284–0.320, kappa 0.455–0.539) is seed variance on a single split, so it cannot separate split effect from seed effect. Read the gate failures as optimistic, not clean. The negative finding and the wk1 kill stand regardless: they run against the model, so a leakage correction cannot reverse them. Weights stay withheld (`HAZARD_LOG.md:21`). No severity, probability, or acceptability finding is made here (`HAZARD_LOG.md:5`).
 
+## H-LEAK — the v0.2 evaluation split was contaminated; measured, not assumed
+
+- Hazard: v0.2's held-out split was row-wise stratified on level, so it carried
+  no leakage guarantee. Perceptual deduplication over all 684 images (dHash ≤ 6
+  **and** pHash ≤ 8) found **55 near-duplicate pairs that `event_id` never
+  caught**, forming **7 genuine visual families**, and **4 of those families
+  spanned train, val and test simultaneously**. v0.2's reported macro-F1, kappa
+  and coverage were therefore measured on an eval set containing images
+  effectively present in training. Source: `results/v03_groupdisjoint/dedup_report.json`.
+- How found: by running the dedup, not by a lane verdict. The 20 duplicate
+  `event_id` values were already known and already removed; these 55 are a
+  different failure — the same photograph re-encoded or re-cropped under a
+  different identifier, which byte-hashing cannot see and `event_id` cannot
+  express. The grouped union also shows the original `group_id` was not merely
+  weak but vacuous: 650 groups over 684 rows, versus 544 groups over 544 rows
+  (every group a single event) in v0.2.
+- Fix: shipped in v0.3. Groups are the connected components of the
+  near-duplicate graph unioned with the source corpus; whole groups are assigned
+  to splits; the splitter **asserts** group-disjointness and per-level coverage
+  and fails loudly rather than assuming them. Both assertions pass.
+- Residual risk: dHash ≤ 6 with a pHash ≤ 8 confirmation is a conservative
+  threshold, so visually-similar-but-not-identical images (the same dish shot
+  twice) may still sit in different groups. v0.3's numbers are therefore
+  *better* than v0.2's but not certified clean. The wk1 gate still fires on all
+  five v0.3 seeds and the weights stay withheld, so this changes the honesty of
+  the numbers, not the release decision.
+
+## H-AUGRC — the abstention-blind metric is now measured the right way, not just disclosed
+
+- Hazard: H-ABSTBLIND established that `dangerous_underclassification_rate_all`
+  gates its numerator on acceptance while dividing by all N, so abstention
+  deletes errors from the count. v0.2 disclosed it; v0.3 **fixes the
+  measurement**.
+- Fix: v0.3 publishes the correctly-named **all-N under-classification rate**
+  (both sides of the fraction over the full test set): **0.176 – 0.282** across
+  five seeds, against the covered-only figure of 0.061 – 0.147 that would be
+  quoted if the defect went unfixed. It also adds **AUGRC** — joint selective
+  risk integrated over thresholds (Traub, Bungert, Lüth, Baumgartner,
+  Maier-Hein & Jäger, NeurIPS 2024, https://arxiv.org/abs/2407.01032) — which
+  cannot be driven down by abstaining because coverage sits inside the
+  integrand. Measured: **0.242 – 0.295**, every seed well below the 0.5 random
+  reference. Source: `results/v03_groupdisjoint/selective_metrics.json`.
+- Residual risk: AUGRC is computed post hoc from stored probabilities, not by
+  `trainer/eval/metrics.py`, so the library metric and the published metric are
+  still two code paths and can drift. The honest statement is that v0.3's
+  selective-risk numbers come from a documented second implementation.
+
+## H-GATE — the wk1 gate is contested by the ordinal-classification literature, and is deliberately not changed
+
+- Hazard: the wk1 gate is weighted Cohen's kappa ≥ 0.70 on a five-level ordinal
+  problem. Delgado & Tibau (2019), "Why Cohen's Kappa should be avoided as a
+  performance measure in ordinal classification", *Pattern Recognition*
+  105:107192, https://www.sciencedirect.com/science/article/abs/pii/S0167865518313413,
+  argues the metric ranks ordinal models wrongly under class imbalance — which
+  is exactly our condition (L7 is 54% of the label set).
+- Decision: **the gate is NOT changed.** Re-registering a pre-registered gate
+  after seeing results would make every number in this release indefensible, so
+  the objection is disclosed in the release card and the gate stands as written.
+- Residual risk: a reviewer may reasonably read our gate failures as a metric
+  artifact rather than a model failure. We consider that acceptable: the gates
+  fail, we keep weights withheld, and we state plainly that the gate itself is
+  disputed. Changing it would be worse.
+
+## H-LABELCEIL — SUPERSEDED by H-QWENBIAS; kept because the reversal is the lesson
+
+- Original finding (2026-10-11, n=30 pilot): a third labeller from an
+  independent family agreed with the Qwen-8B tier-2 labeller on **40.0%** — no
+  better than the two Qwen sizes agreed with each other (**42.9%**) on the same
+  sample. Read then: "a third labeller does not help; the ceiling is physical."
+- **That conclusion was wrong, and it was wrong because the sample was too
+  small.** Re-run over **650 events**, Step-5 vs Qwen-8B is **47.1%** against
+  Qwen-2B vs Qwen-8B at **30.9%**. A 16-point gap that a 30-image pilot rendered
+  invisible. The two unrelated families also agree with each other at 74.7%.
+- Superseded by **H-QWENBIAS**, which carries the full evidence and the fix
+  (4-way consensus training, worth about +0.12 kappa on identical ground truth).
+- Why this entry stays: **a null result from an underpowered sample is not a
+  result.** We nearly published "more labellers cannot help" and were about to
+  stop spending on relabelling on the strength of 30 images. Pilot-scale
+  agreement measurements on this task need an order of magnitude more data
+  before they can be quoted, in either direction. The claims that survive the
+  small sample are the ones about *coarse* judgement (is there food: 96.7%
+  cross-family) rather than fine ordinal judgement.
+- Residual risk: none from this entry — it makes no claim of its own. The live
+  risk is the opposite one: that the 74.7% cross-family figure is read as
+  evidence of correctness. It is evidence of consistency only. See H-QWENBIAS.
+
+## H-UNUSABLE — ~30% of the corpus was never labelable, and every earlier number was measured with it
+
+- Hazard: a labelability sweep judged all 684 events with two independent model
+  families. They agree **96.7% on "is there food"** and **85.5% on "is it
+  levellable"**, but **152 events (29.8%)** fail at least one test -- empty
+  vessels, diagrams, no discernible food mass. Those 152 sat in the held-out
+  split of v0.1 through v0.4, so every published metric was computed partly
+  against images that cannot carry an IDDSI level at all. Source:
+  `results/v05_release/unusable_event_ids.txt` and `labelability_sweep.json`.
+- How found: by running the sweep with 32 step-5-preview lanes and 5 MiniMax
+  vision workers over the whole corpus on the DGX, not by a lane verdict. The
+  asymmetry is the finding: the *binary* judgement is near-perfectly reliable
+  across independent families, while the *5-level* judgement is not (74.7% best
+  cross-family, 30.9% within-Qwen). We can verify what is in the frame; we cannot
+  reliably verify what level it is.
+- Fix: v0.5 reports every metric on the **cleaned** 108-event test set. The
+  152 unusable events are listed and excluded.
+- Residual risk: removing them also removes training signal, because the
+  removals fall on the hard middle levels (L4 96->66, L5 75->65, L7 400->305).
+  A model trained on the cleaned 532 scores *worse* than the released model on
+  the identical test set (exact 0.426-0.500 vs 0.444-0.546, kappa 0.498-0.547 vs
+  0.540-0.566). We publish both runs. The next data effort is therefore **more
+  mid-level labels, not more deletions**.
+
+## H-QWENBIAS — two independent labellers agree with each other far better than with Qwen
+
+- Hazard: every label before v0.4 came from Qwen3-VL-2B and Qwen3-VL-8B, two
+  sizes of ONE family. Re-labelling blind with two unrelated families gives:
+  Qwen-2B vs Qwen-8B **30.9%** exact (68.8% within +/-1), Step-5 vs Qwen-8B
+  **47.1%** (73.2% within +/-1), and Step-5 vs MiniMax-M3.1f **74.7%**. The two
+  unrelated families agree with each other at more than twice the rate either
+  agrees with Qwen. Qwen-8B is also *less* consistent with its own smaller
+  sibling than a foreign family is with it.
+- Fix: v0.5 trains on 4-way consensus (Qwen-2B, Qwen-8B, Step-5, MiniMax-M3.1f).
+  Measured on identical ground truth this is worth about **+0.12 kappa** and
+  **-0.19 levels of MAE** over training on the Qwen tier-2 labels.
+- Residual risk, and it is the important one: this shows the Qwen labels are
+  **inconsistent with independent judgements**, not that they are **wrong**.
+  Two correlated wrong families can agree with each other. Distinguishing
+  "inconsistent" from "incorrect" requires a physically-measured anchor, which
+  does not exist. Consensus is a lower-variance label set, not a correct one.
+
 ## Retained boundary hazards
 
 - H-PHOTO: a still photograph treated as a physical measurement. Control: release scope states plainly that middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry. Physical-test confirmation stays external to the release.
@@ -87,3 +215,5 @@ This log is not a medical-device risk-management file. No severity, probability,
 v0.1 (2026-09-16 regen): the inter-judge agreement figure in H-NOISE is updated from the preliminary 22.6% to the regen 31.0% on n=575, with kappa (unweighted 0.1062, quadratic 0.2766) newly disclosed and the under-prediction finding added as a new section (H-UNDERPRED). Nothing else changes — intended use, prohibited uses, output wording, label handling, training sources, threshold behaviour, checkpoint status, eval split, decode path, or public claim. Wording changes cannot expand the release from research plus culinary-education use into person-specific, clinical, diagnostic, or safety use.
 
 v0.2 (2026-10-10): four metric-and-split hazards added after a 30-lane audit of the eval code and a 5-seed retrain on a corrected manifest (684 unique events, stratified 70/15/15). H-ABSTBLIND, H-MACROF1 and H-KAPPACOV are defects in `trainer/eval/metrics.py` verified by reading the code; H-GROUP is a defect in the split configuration. No v0.1 or v0.2 figure changes sign under the corrected definitions. The wk1 kill rule still fires on every v0.2 seed (weighted kappa 0.455-0.539 against the >= 0.70 gate) and the weights stay withheld under the 2026-09-07 decision.
+
+v0.3 (2026-10-11): four hazards added. H-LEAK records that the v0.2 split was measured to be contaminated (4 visual families spanned train/val/test) and is now fixed and asserted; H-AUGRC records that the H-ABSTBLIND defect is now measured correctly (all-N rate 0.176-0.282, AUGRC 0.242-0.295) rather than only disclosed; H-GATE records that the wk1 gate is disputed by the ordinal literature and is deliberately left unchanged; H-LABELCEIL records that a third independent labeller does not improve agreement (40.0% vs 42.9%), so the ceiling is physical, not algorithmic. The wk1 gate still fires on all five v0.3 seeds and the weights stay withheld.

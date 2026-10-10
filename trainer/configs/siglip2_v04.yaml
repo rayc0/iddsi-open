@@ -1,0 +1,69 @@
+experiment:
+  name: siglip2_v04_consensus
+  output_dir: /work/runs/v04
+  seeds: [17, 29, 43, 71, 101]
+
+data:
+  # v0.4: CONSENSUS labels on the v0.3 group-disjoint split.
+  #
+  # The split (image_path, group_id, split, source_corpus) is inherited VERBATIM
+  # from manifest_v03.jsonl. The ONLY difference from the v0.3 run is the label
+  # set, so any change in the numbers is attributable to consensus labelling and
+  # nothing else.
+  #
+  # Labels are majority vote across whichever labellers exist per event:
+  #   Qwen3-VL-2B (tier-1), Qwen3-VL-8B (tier-2),
+  #   step-5-preview (independent family, 650 events),
+  #   MiniMax-M3.1f (independent family, 273 events).
+  # 559 of 684 rows (81.7%) carry a >=2 majority; the rest keep their most-voted
+  # single label and are flagged with consensus_votes = 1 so they can be excluded
+  # later without re-deriving anything.
+  #
+  # Measured cross-family agreement is much higher than within-family:
+  #   Qwen-2B vs Qwen-8B  30.9% exact  (68.8% within +/-1 level)
+  #   Step-5  vs Qwen-8B  47.1% exact  (73.2% within +/-1 level)
+  #   Step-5  vs MM-3.1f  74.7% exact
+  # Consensus shifts the label distribution materially: L6 172 -> 87, L4 64 -> 96,
+  # L5 47 -> 75. The Qwen-8B tier-2 labels were collapsing the middle classes.
+  #
+  # HONEST LIMIT: cross-family consistency makes consensus a less NOISY training
+  # signal. It is NOT evidence that consensus is more CORRECT. Without a
+  # physically-measured anchor we cannot tell whether Qwen carries a family bias
+  # or the two new families share one.
+  manifest: /work/data/manifest_v04_consensus.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # inherited from v0.3: 650 groups over 684 rows
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  # Identical to v0.3. Held fixed on purpose.
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026
