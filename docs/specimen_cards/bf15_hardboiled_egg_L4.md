@@ -1,5 +1,5 @@
 1. PREP
-Weigh 100 g hard-boiled egg (yolk + white, no shell) into the blender. Add 60 ml water. Blend 45 s, scrape, blend 30 s. Push through the 4 mm sieve using the back of a spoon; discard residue. Weigh the sieved puree. Add thickener at 0 g per 100 ml as the calibration starting point; record the actual grams used. Stir in, rest 2 min, stir again. If the spoon-tilt test below is failed, add thickener in 0.5 g increments, rest 2 min between each, and re-test. Note: a hard-boiled egg cannot reach L4 by blending alone because the yolk is lipid-rich and the white is protein-firm; thickener is required to suppress thin-liquid separation.
+Weigh 100 g hard-boiled egg (yolk + white, no shell) into the blender. Add 60 ml water. Blend 45 s, scrape, blend 30 s. Push through the 4 mm sieve using the back of a spoon; discard residue. Weigh the sieved puree. Add thickener at 0 g per 100 g sieved puree as the calibration starting point; record the actual grams used. Stir in, rest 2 min, stir again. If the spoon-tilt test below is failed, add thickener in 0.5 g increments per 100 g sieved puree, rest 2 min between each, and re-test. Note: a hard-boiled egg cannot reach L4 by blending alone because the yolk is lipid-rich and the white is protein-firm; thickener is required to suppress thin-liquid separation.
 
 2. IDDSI TEST
 Fork pressure test: press the fork tines fully into the puree; the tines must leave a clear, clean impression that does not fill back in, and the puree must not flow through the slots between the tines. Pass = visible tine marks retained and no extrusion through the gaps.
@@ -17,6 +17,6 @@ hardboiled_egg_L4_take1.mp4 — 8–12 s clip: fork-press then spoon-tilt in one
 hardboiled_egg_L4_take2.mp4 — IDDSI test film, full fork pressure, fork drip, spoon tilt sequence.
 
 5. FAIL MODES
-Thin yellow liquid pools on the plate within 30 s: yolk has broken; discard, add 0.5 g thickener per 100 ml, re-test.
-Puree is grainy or shows white specks: blend inadequate or sieve skimmed; discard, blend another 30 s and re-sieve fully.
-Mound slumps off the spoon before vertical tilt: under-thickened; add 0.5 g thickener, rest 2 min, re-test.
+Thin yellow liquid pools on the plate within 30 s: yolk has broken — keep the batch, do not discard it. Drain the pooled liquid off the plate, add 0.5 g thickener per 100 g sieved puree, rest 2 min, and re-test with spoon tilt and fork drip.
+Puree is grainy or shows white specks: blend inadequate or sieve skimped — keep the batch, do not discard it. Blend the same puree another 30 s, then re-sieve fully through the 4 mm sieve, and re-test.
+Mound slumps off the spoon before vertical tilt: under-thickened; add 0.5 g thickener per 100 g sieved puree, rest 2 min, re-test. Never thin the specimen with water at this stage.

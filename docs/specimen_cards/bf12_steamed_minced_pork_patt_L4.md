@@ -1,5 +1,5 @@
 1. PREP
-Weigh 150 g steamed minced pork patty into blender. Add 40 ml warm water. Blend 25 s, stop, scrape, blend 20 s more. Pass through 4 mm sieve using the back of a spoon; discard coarse residue. Return puree to blender, add 0.5 g thickener per 100 ml of puree, blend 10 s to incorporate. Let rest 60 s. Record final weight and actual thickener mass on the data sheet.
+Weigh 150 g steamed minced pork patty into blender. Add 40 ml warm water. Blend 25 s, stop, scrape, blend 20 s more. Pass through 4 mm sieve using the back of a spoon; discard coarse residue. Return puree to blender, add 0.5 g thickener per 100 ml of puree (≈0.95 g for the ≈190 ml recovered from 150 g patty + 40 ml water; confirm against the recorded final weight), blend 10 s to incorporate. Let rest 60 s. Record final weight and actual thickener mass on the data sheet.
 
 2. IDDSI TEST
 Fork pressure test: press fork tines into the specimen on a flat plate. The tines must leave a clear, defined groove; the puree must not spring back, must not flow to refill the gap, and must not drip continuously through the slots.
@@ -21,6 +21,6 @@ Clip 2: IDDSI test film, full fork-drip and spoon-tilt sequence.
 Naming: steamed_minced_pork_patt_L4_take1.jpg / .mp4.
 
 5. FAIL MODES
-Specimen weeps thin liquid onto the plate: under-blended or over-thinned, remake adding 0.25 g thickener per 100 ml in step 1.
-Specimen flows through fork tines or slumps off the spoon: insufficient thickener, remake with an extra 0.5 g per 100 ml.
+Specimen weeps thin liquid onto the plate: under-blended or over-thinned — remake, holding step 1 to 40 ml warm water (never more) and adding the full base dose of 0.5 g thickener per 100 ml of puree at the post-sieve step (not the 0.25 g half dose, and not step 1, which contains no thickener); blend 10 s and rest 60 s before retesting.
+Specimen flows through fork tines or slumps off the spoon: insufficient thickener — remake at 1.0 g thickener per 100 ml of puree (base 0.5 g plus an extra 0.5 g).
 Specimen shows fibres or grain after sieving: blend longer before sieving, do not push residue through.
