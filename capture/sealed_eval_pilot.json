@@ -1,0 +1,37 @@
+[
+  {
+    "specimen_id": "bf08_steamed_sweet_potato_L3",
+    "base_food_id": "bf08",
+    "level": 3,
+    "family": "vegetable_or_legume",
+    "role": "EVALUATION_SEALED"
+  },
+  {
+    "specimen_id": "bf10_steamed_pumpkin_L4",
+    "base_food_id": "bf10",
+    "level": 4,
+    "family": "vegetable_or_legume",
+    "role": "EVALUATION_SEALED"
+  },
+  {
+    "specimen_id": "bf11_steamed_fish_fillet_L5",
+    "base_food_id": "bf11",
+    "level": 5,
+    "family": "protein_or_dairy",
+    "role": "EVALUATION_SEALED"
+  },
+  {
+    "specimen_id": "bf13_steamed_chicken_thigh_L6",
+    "base_food_id": "bf13",
+    "level": 6,
+    "family": "protein_or_dairy",
+    "role": "EVALUATION_SEALED"
+  },
+  {
+    "specimen_id": "bf15_hardboiled_egg_L7",
+    "base_food_id": "bf15",
+    "level": 7,
+    "family": "protein_or_dairy",
+    "role": "EVALUATION_SEALED"
+  }
+]

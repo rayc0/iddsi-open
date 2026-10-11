@@ -1,0 +1,465 @@
+{
+  "name": "SEALED-EVAL-SET-v1",
+  "created": "2026-10-10",
+  "purpose": "Physical measurement used ONLY to evaluate. Never train on it.",
+  "operator_blind_to_model_predictions": true,
+  "label_from_observed_tests_not_intended_level": true,
+  "retain_failures": true,
+  "n_base_foods": 12,
+  "specimens": [
+    {
+      "specimen_id": "bf01_steamed_white_rice_L3",
+      "base_food_id": "bf01",
+      "level": 3,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf01_steamed_white_rice_L4",
+      "base_food_id": "bf01",
+      "level": 4,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf01_steamed_white_rice_L5",
+      "base_food_id": "bf01",
+      "level": 5,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf01_steamed_white_rice_L6",
+      "base_food_id": "bf01",
+      "level": 6,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf01_steamed_white_rice_L7",
+      "base_food_id": "bf01",
+      "level": 7,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf03_hor_fun_flat_rice_noodle_L3",
+      "base_food_id": "bf03",
+      "level": 3,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf03_hor_fun_flat_rice_noodle_L4",
+      "base_food_id": "bf03",
+      "level": 4,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf03_hor_fun_flat_rice_noodle_L5",
+      "base_food_id": "bf03",
+      "level": 5,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf03_hor_fun_flat_rice_noodle_L6",
+      "base_food_id": "bf03",
+      "level": 6,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf03_hor_fun_flat_rice_noodle_L7",
+      "base_food_id": "bf03",
+      "level": 7,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf04_thin_wheat_noodles_L3",
+      "base_food_id": "bf04",
+      "level": 3,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf04_thin_wheat_noodles_L4",
+      "base_food_id": "bf04",
+      "level": 4,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf04_thin_wheat_noodles_L5",
+      "base_food_id": "bf04",
+      "level": 5,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf04_thin_wheat_noodles_L6",
+      "base_food_id": "bf04",
+      "level": 6,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf04_thin_wheat_noodles_L7",
+      "base_food_id": "bf04",
+      "level": 7,
+      "family": "starch",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf08_steamed_sweet_potato_L3",
+      "base_food_id": "bf08",
+      "level": 3,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf08_steamed_sweet_potato_L4",
+      "base_food_id": "bf08",
+      "level": 4,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf08_steamed_sweet_potato_L5",
+      "base_food_id": "bf08",
+      "level": 5,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf08_steamed_sweet_potato_L6",
+      "base_food_id": "bf08",
+      "level": 6,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf08_steamed_sweet_potato_L7",
+      "base_food_id": "bf08",
+      "level": 7,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf10_steamed_pumpkin_L3",
+      "base_food_id": "bf10",
+      "level": 3,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf10_steamed_pumpkin_L4",
+      "base_food_id": "bf10",
+      "level": 4,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf10_steamed_pumpkin_L5",
+      "base_food_id": "bf10",
+      "level": 5,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf10_steamed_pumpkin_L6",
+      "base_food_id": "bf10",
+      "level": 6,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf10_steamed_pumpkin_L7",
+      "base_food_id": "bf10",
+      "level": 7,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf11_steamed_fish_fillet_L3",
+      "base_food_id": "bf11",
+      "level": 3,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf11_steamed_fish_fillet_L4",
+      "base_food_id": "bf11",
+      "level": 4,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf11_steamed_fish_fillet_L5",
+      "base_food_id": "bf11",
+      "level": 5,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf11_steamed_fish_fillet_L6",
+      "base_food_id": "bf11",
+      "level": 6,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf11_steamed_fish_fillet_L7",
+      "base_food_id": "bf11",
+      "level": 7,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf13_steamed_chicken_thigh_L3",
+      "base_food_id": "bf13",
+      "level": 3,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf13_steamed_chicken_thigh_L4",
+      "base_food_id": "bf13",
+      "level": 4,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf13_steamed_chicken_thigh_L5",
+      "base_food_id": "bf13",
+      "level": 5,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf13_steamed_chicken_thigh_L6",
+      "base_food_id": "bf13",
+      "level": 6,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf13_steamed_chicken_thigh_L7",
+      "base_food_id": "bf13",
+      "level": 7,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf15_hardboiled_egg_L3",
+      "base_food_id": "bf15",
+      "level": 3,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf15_hardboiled_egg_L4",
+      "base_food_id": "bf15",
+      "level": 4,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf15_hardboiled_egg_L5",
+      "base_food_id": "bf15",
+      "level": 5,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf15_hardboiled_egg_L6",
+      "base_food_id": "bf15",
+      "level": 6,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf15_hardboiled_egg_L7",
+      "base_food_id": "bf15",
+      "level": 7,
+      "family": "protein_or_dairy",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf17_firm_tofu_L3",
+      "base_food_id": "bf17",
+      "level": 3,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf17_firm_tofu_L4",
+      "base_food_id": "bf17",
+      "level": 4,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf17_firm_tofu_L5",
+      "base_food_id": "bf17",
+      "level": 5,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf17_firm_tofu_L6",
+      "base_food_id": "bf17",
+      "level": 6,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf17_firm_tofu_L7",
+      "base_food_id": "bf17",
+      "level": 7,
+      "family": "vegetable_or_legume",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf24_braised_winter_melon_L3",
+      "base_food_id": "bf24",
+      "level": 3,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf24_braised_winter_melon_L4",
+      "base_food_id": "bf24",
+      "level": 4,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf24_braised_winter_melon_L5",
+      "base_food_id": "bf24",
+      "level": 5,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf24_braised_winter_melon_L6",
+      "base_food_id": "bf24",
+      "level": 6,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf24_braised_winter_melon_L7",
+      "base_food_id": "bf24",
+      "level": 7,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf25_stewed_hairy_gourd_L3",
+      "base_food_id": "bf25",
+      "level": 3,
+      "family": "cohesive_mixture",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf25_stewed_hairy_gourd_L4",
+      "base_food_id": "bf25",
+      "level": 4,
+      "family": "cohesive_mixture",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf25_stewed_hairy_gourd_L5",
+      "base_food_id": "bf25",
+      "level": 5,
+      "family": "cohesive_mixture",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf25_stewed_hairy_gourd_L6",
+      "base_food_id": "bf25",
+      "level": 6,
+      "family": "cohesive_mixture",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf25_stewed_hairy_gourd_L7",
+      "base_food_id": "bf25",
+      "level": 7,
+      "family": "cohesive_mixture",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf28_steamed_bitter_melon_L3",
+      "base_food_id": "bf28",
+      "level": 3,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf28_steamed_bitter_melon_L4",
+      "base_food_id": "bf28",
+      "level": 4,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf28_steamed_bitter_melon_L5",
+      "base_food_id": "bf28",
+      "level": 5,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf28_steamed_bitter_melon_L6",
+      "base_food_id": "bf28",
+      "level": 6,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    },
+    {
+      "specimen_id": "bf28_steamed_bitter_melon_L7",
+      "base_food_id": "bf28",
+      "level": 7,
+      "family": "fruit",
+      "role": "EVALUATION_SEALED"
+    }
+  ],
+  "contrasts": {
+    "n_target": 12,
+    "definition": "visually similar preparations that are physically different; probes whether the photograph carries the defining information",
+    "status": "TO BE SPECIFIED"
+  },
+  "repeats": {
+    "n_target": 12,
+    "definition": "same food and level, independently prepared again; exposes preparation and measurement variability",
+    "status": "TO BE SPECIFIED"
+  },
+  "budget_hours": {
+    "pilot": 1.0,
+    "main": 4.5,
+    "contrasts": 1.5,
+    "repeats": 1.0,
+    "cleanup": 1.0,
+    "total": 9.0
+  },
+  "recording_rules": [
+    "photograph the untouched serving BEFORE destructive tests",
+    "record applicable test results, temperature, timing, particle measurements",
+    "record short test video for pressure, tilt and flow",
+    "keep recipe identifiers, labels and apparatus out of classifier images",
+    "an intended L5 preparation that tests as L4 is an L4 result"
+  ],
+  "evaluation_plan": [
+    "old-label student",
+    "consensus-label student",
+    "each labeller individually",
+    "majority-class baseline",
+    "food-identity baseline",
+    "report exact accuracy, per-class recall, MAE, full confusion matrix, quadratic kappa, with paired uncertainty clustered by base food",
+    "note: 5 training seeds measure training variability, they do NOT multiply the number of independently tested foods"
+  ]
+}
