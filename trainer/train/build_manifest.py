@@ -76,8 +76,15 @@ def stratified_group_split(
     """Assign whole group keys to train/val/test, stratified by level.
 
     Groups are bucketed by their majority level and dealt out per bucket, so a
-    level with only a handful of groups still reaches val and test instead of
-    landing entirely in train by luck of the shuffle.
+    level with only a couple of groups still reaches ``val`` — which is where
+    temperature calibration and the dangerous under-classification gate run —
+    instead of landing entirely in ``train`` by luck of the shuffle. Buckets
+    with three or more groups also reach ``test`` and always keep at least one
+    group in ``train``.
+
+    Groups with no labelled record at all carry no level signal, so they cannot
+    be stratified; they are assigned to ``train`` rather than crashing the build
+    on ``Counter([]).most_common(1)[0]``.
     """
     if not 0.0 < val_fraction < 1.0 or not 0.0 < test_fraction < 1.0:
         raise ValueError("val_fraction and test_fraction must be in (0, 1)")
@@ -89,12 +96,20 @@ def stratified_group_split(
         groups.setdefault(record.group_key, []).append(index)
 
     by_level: dict[int, list[tuple[str, str, str]]] = collections.defaultdict(list)
+    unlabelled: list[tuple[str, str, str]] = []
     for key, indices in groups.items():
         levels = [records[i].label for i in indices if records[i].label is not None]
+        if not levels:
+            unlabelled.append(key)
+            continue
         majority = collections.Counter(levels).most_common(1)[0][0]
         by_level[majority].append(key)
 
     assignment: dict[int, str] = {}
+    for key in unlabelled:
+        for index in groups[key]:
+            assignment[index] = "train"
+
     rng = random.Random(seed)
     for level in sorted(by_level):
         keys = sorted(by_level[level])
@@ -102,11 +117,16 @@ def stratified_group_split(
         n = len(keys)
         n_test = round(n * test_fraction)
         n_val = round(n * val_fraction)
-        # With very few groups, guarantee val/test get one before train does.
+        # A level with only two groups used to be dealt entirely into train,
+        # leaving it invisible to validation calibration and to the
+        # under-classification gate. Guarantee it reaches val from n >= 2 and
+        # test from n >= 3, without ever emptying train.
+        if n >= 2:
+            n_val = max(1, n_val)
         if n >= 3:
             n_test = max(1, n_test)
-            n_val = max(1, n_val)
-        if n_test + n_val >= n:
+        if n >= 3 and n_test + n_val >= n:
+            # Buckets that can spare a group keep at least one in train.
             n_test = min(n_test, max(0, n - 2))
             n_val = min(n_val, max(0, n - 1 - n_test))
         for position, key in enumerate(keys):

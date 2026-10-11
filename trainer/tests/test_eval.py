@@ -24,3 +24,27 @@ def test_calibration_and_metrics_include_unclear_and_intervals():
     assert "SYNTHETIC DATA" in report
     assert "unclear" in report
 
+
+def test_report_states_the_label_set_for_its_kappa():
+    labels = np.tile(np.arange(5), 3)
+    logits = np.full((15, 5), -2.0)
+    logits[np.arange(15), labels] = 2.0
+    temperature, _ = fit_temperature(logits, labels, steps=9)
+    probabilities = softmax(logits / temperature)
+    selection = calibrate_abstention_threshold(probabilities, labels, 0.2, 0.4)
+    result = evaluate_predictions(
+        probabilities, labels, selection["threshold"], bootstrap_samples=20, bootstrap_seed=4
+    )
+    labelled = render_markdown_report(
+        result, title="Test", synthetic=False, label_set="v0.7 full-coverage consensus"
+    )
+    assert "H-YARDSTICK" in labelled
+    assert "v0.7 full-coverage consensus" in labelled
+    assert "0.838-0.860" in labelled
+    # An unlabelled report must not read as a kappa with no yardstick attached.
+    unlabelled = render_markdown_report(result, title="Test", synthetic=False)
+    assert "NOT STATED by the caller" in unlabelled
+    assert "H-YARDSTICK" in unlabelled
+    # The population disclosure must survive alongside the label-set disclosure.
+    assert "non-abstained (covered) events" in labelled
+

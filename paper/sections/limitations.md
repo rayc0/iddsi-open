@@ -7,7 +7,13 @@ Updated v0.1 (2026-09-16 regen; honest release card hf/model_README.md is the
 authority): classifier results (CORAL fix, gates, 31.0% exact agreement on
 n=575 with kappa unweighted 0.1062 / quadratic 0.2766, under-prediction
 finding) and the flow-grader bench (MAE 0.065 ml, 100 videos) are reported;
-RD-SLP baseline, subgroups, and CIs were not measured in v0. Citation keys
+RD-SLP baseline, subgroups, and CIs were not measured in v0. Label set for
+those kappas (H-YARDSTICK): 0.1062 / 0.2766 is agreement between the two VLM
+judges who produced the label set, so it characterises the yardstick itself;
+the model kappas in this file were measured against the Qwen tier-2 judge
+labels, and the v0.4/v0.5 numbers against the v0.5 consensus (both fail
+wk1>=0.70), while the same models measured against the v0.7 full-coverage
+consensus pass it (v0.7: 0.838-0.860). Citation keys
 refer to ../references.bib. W22 owns paper.md; this file is not yet
 included by it.
 -->
@@ -25,7 +31,10 @@ chewing demand, and deformation. Level 7 Regular versus Easy-to-Chew must
 also be distinguished, and Regular itself has no texture restriction. Flow
 tests therefore need video or syringe physics, not stills - and even the
 physical tests have weak human inter-rater agreement (kappa 0.23-0.36 for
-spoon-tilt/fork-pressure characteristics [@iddsi_reliability]), so
+spoon-tilt/fork-pressure characteristics [@iddsi_reliability]; label set for
+that kappa (H-YARDSTICK): human raters scoring the official IDDSI physical
+tests, a different label set from any model label set in this project, and not
+a model scored against one), so
 single-rater "ground truth" labels are themselves noisy.
 
 ## Known dangerous zone: L4/L5/L6 confusions
@@ -41,6 +50,16 @@ unreachable and was fixed (held-out n = 109: macro-F1 0.088 -> 0.358,
 coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature 2.83 -> 0.93;
 weighted kappa flat at 0.42); wk1 weighted kappa >= 0.70 measured 0.42, so
 the kill rule fired and photo-classification is dead as a product capability.
+Label set for these kappas (H-YARDSTICK): the model's 0.42 was measured
+against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured
+against the v0.5 consensus; the models fail the wk1>=0.70 gate on both of those
+label sets, and the same models measured against the v0.7 full-coverage
+consensus pass it (v0.7: 0.838-0.860). The 0.1062 / 0.2766 figures below are
+agreement between the two VLM judges who produced the label set, so they
+characterise the yardstick itself rather than a model scored against one. The
+0.23-0.36 figures in the previous paragraph are the published physical-test
+literature's own inter-rater agreement on a different label set again, not this
+project's model.
 The ceiling finding (regen 2026-09-16, n_pairs = 575, full tier-2 sample):
 two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only **31.0%** of the
 same images (Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766 -
@@ -149,7 +168,14 @@ ECE 0.138 -> 0.091, temperature 2.83 -> 0.93, n = 109; weighted kappa 0.42;
 dangerous under-classification 33%; wk1/wk2 gates failed, kill rule fired),
 the **31.0%** inter-judge ceiling finding (n=575, kappa unweighted 0.1062,
 quadratic-weighted 0.2766, plus the new under-prediction finding), and the
-flow-grader bench (MAE 0.065 ml, 100 videos, L0-L4). The RD-SLP inter-rater
+flow-grader bench (MAE 0.065 ml, 100 videos, L0-L4). Label set for those kappas
+(H-YARDSTICK): the model's 0.42 was measured against the Qwen tier-2 judge
+labels, and the v0.4/v0.5 numbers were measured against the v0.5 consensus; the
+models fail the wk1>=0.70 gate on both of those label sets, and the same models
+measured against the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
+The 0.1062 / 0.2766 figures are agreement between the two VLM judges who
+produced the label set, so they characterise the yardstick itself rather than a
+model scored against one. The RD-SLP inter-rater
 baseline, subgroup analyses, and stratified-bootstrap 95% CIs were not
 measured in v0. v0 ships code, eval results, and the flow-test grader only:
 the harvested dataset is withheld on licence grounds (of 587 unique events

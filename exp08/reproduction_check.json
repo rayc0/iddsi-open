@@ -1,0 +1,47 @@
+{
+  "seed17": {
+    "temperature": 1.6817928305074292,
+    "n_test": 108,
+    "event_ids_identical": true,
+    "labels_identical": true,
+    "max_abs_diff_calibrated": 0.0009350492598438065,
+    "mean_abs_diff_calibrated": 6.702485853058962e-05,
+    "argmax_disagreements": 0
+  },
+  "seed29": {
+    "temperature": 1.7411011265922485,
+    "n_test": 108,
+    "event_ids_identical": true,
+    "labels_identical": true,
+    "max_abs_diff_calibrated": 0.0009438285903815569,
+    "mean_abs_diff_calibrated": 6.281882564311805e-05,
+    "argmax_disagreements": 0
+  },
+  "seed43": {
+    "temperature": 1.6245047927124712,
+    "n_test": 108,
+    "event_ids_identical": true,
+    "labels_identical": true,
+    "max_abs_diff_calibrated": 0.0007058467447595418,
+    "mean_abs_diff_calibrated": 6.650099661457224e-05,
+    "argmax_disagreements": 0
+  },
+  "seed71": {
+    "temperature": 1.7411011265922485,
+    "n_test": 108,
+    "event_ids_identical": true,
+    "labels_identical": true,
+    "max_abs_diff_calibrated": 0.0007523538806046837,
+    "mean_abs_diff_calibrated": 6.30914553680676e-05,
+    "argmax_disagreements": 0
+  },
+  "seed101": {
+    "temperature": 1.7411011265922485,
+    "n_test": 108,
+    "event_ids_identical": true,
+    "labels_identical": true,
+    "max_abs_diff_calibrated": 0.000693980384786963,
+    "mean_abs_diff_calibrated": 6.237777318678218e-05,
+    "argmax_disagreements": 0
+  }
+}

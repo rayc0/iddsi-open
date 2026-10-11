@@ -1,0 +1,5 @@
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 10113.08it/s]
+loaded /work/runs/v07/siglip2_v07_fullcoverage_seed17/best.pt epoch=70 val_nll=0.8551945090293884
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed17_val_raw.npz n=110 label_counts=[14, 8, 6, 9, 73]
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed17_test_raw.npz n=108 label_counts=[10, 11, 7, 10, 70]

@@ -1,0 +1,133 @@
+{
+ "control_max_abs_diff": 2.220446049250313e-16,
+ "per_yardstick": {
+  "v0.5 consensus": {
+   "v0.4": {
+    "n_seeds": 5,
+    "min": 0.5403556771545828,
+    "max": 0.5994694960212201,
+    "mean": 0.5660618699647498,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     142
+    ]
+   },
+   "v0.5": {
+    "n_seeds": 5,
+    "min": 0.5370972509606857,
+    "max": 0.6137175422402377,
+    "mean": 0.5682779356247385,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.7": {
+    "n_seeds": 5,
+    "min": 0.4912966946997849,
+    "max": 0.5547147846332945,
+    "mean": 0.5178942003033394,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     108
+    ]
+   }
+  },
+  "v0.7 full-coverage consensus": {
+   "v0.4": {
+    "n_seeds": 5,
+    "min": 0.7363591197358039,
+    "max": 0.8076776310768526,
+    "mean": 0.7582912175928009,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.5": {
+    "n_seeds": 5,
+    "min": 0.7036372294055162,
+    "max": 0.7952602369881506,
+    "mean": 0.7383503617764697,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.7": {
+    "n_seeds": 5,
+    "min": 0.8375451263537906,
+    "max": 0.86040655450531,
+    "mean": 0.849764293040011,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   }
+  },
+  "v0.5 consensus (108-event common split)": {
+   "v0.4": {
+    "n_seeds": 5,
+    "min": 0.5732949357308421,
+    "max": 0.6052872860635697,
+    "mean": 0.5852299248436832,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.5": {
+    "n_seeds": 5,
+    "min": 0.5370972509606857,
+    "max": 0.6137175422402377,
+    "mean": 0.5682779356247385,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.7": {
+    "n_seeds": 5,
+    "min": 0.4912966946997849,
+    "max": 0.5547147846332945,
+    "mean": 0.5178942003033394,
+    "seeds_passing_wk1_0.70": 0,
+    "n_events_per_seed": [
+     108
+    ]
+   }
+  },
+  "v0.7 full-coverage consensus (108-event common split)": {
+   "v0.4": {
+    "n_seeds": 5,
+    "min": 0.7363591197358039,
+    "max": 0.8076776310768526,
+    "mean": 0.7582912175928009,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.5": {
+    "n_seeds": 5,
+    "min": 0.7036372294055162,
+    "max": 0.7952602369881506,
+    "mean": 0.7383503617764697,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   },
+   "v0.7": {
+    "n_seeds": 5,
+    "min": 0.8375451263537906,
+    "max": 0.86040655450531,
+    "mean": 0.849764293040011,
+    "seeds_passing_wk1_0.70": 5,
+    "n_events_per_seed": [
+     108
+    ]
+   }
+  }
+ }
+}

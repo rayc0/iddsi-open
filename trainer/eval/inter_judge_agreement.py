@@ -23,9 +23,14 @@ LEVELS = [3, 4, 5, 6, 7]
 def _level(v):
     try:
         i = int(v)
-        return i if i in LEVELS else None
     except (TypeError, ValueError):
         return None
+    # int(6.9) is 6, which would silently join a published crosstab as a
+    # neighbouring level. A float that is not a whole number is a data error,
+    # not a level: reject it instead of truncating it into one.
+    if isinstance(v, float) and not v.is_integer():
+        return None
+    return i if i in LEVELS else None
 
 
 def load_pairs(root: Path) -> list[tuple[str, int, int]]:

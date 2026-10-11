@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "IDDSI-Open: an open-source smartphone grader for the 10 mL / 10 s IDDSI Flow Test, and a negative result on photo classification for IDDSI texture levels"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+    affiliation: "LinguaLeap Tech Limited"
+  - name: "IDDSI-Open contributors"
+repository-code: "https://github.com/rayc0/iddsi-open"
+url: "https://github.com/rayc0/iddsi-open"
+abstract: >-
+  IDDSI-Open ships an open-source deterministic computer-vision grader for the
+  10 mL / 10 second IDDSI syringe Flow Test, together with code and recorded
+  evaluation results for a SigLIP-2 CORAL ordinal photo-classification head for
+  IDDSI texture levels L3-L7. The photo-classification head failed its
+  pre-registered gates and the model weights and harvested image dataset are
+  withheld as a deliberate, stated decision. The headline result is negative:
+  two large vision-language model judges agree on only 31.0% of the same images
+  (n_pairs = 575; Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766),
+  because middle IDDSI levels require absolute size and flow information a
+  scale-free photograph does not carry. A later version showed that the gate
+  outcome depends on which label set the models are scored against, so every
+  performance figure is conditional on a yardstick the project built itself.
+  This is a research preview for culinary education. It does not perform
+  official IDDSI tests, assess swallowing, determine suitability for any person,
+  or decide whether food is safe to consume.
+keywords:
+  - IDDSI
+  - dysphagia
+  - texture-modified food
+  - flow test
+  - ordinal classification
+  - calibrated abstention
+  - negative result
+license: Apache-2.0
+version: 0.7.0
+date-released: "2026-10-12"

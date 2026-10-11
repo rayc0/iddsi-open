@@ -1,0 +1,21 @@
+cells compared: 30; max abs diff between the two implementations: 2.220e-16
+
+Gate verdict, wk1 = quadratic weighted kappa on covered rows, gate >= 0.70
+
+| yardstick | model | n events/seed | seeds | wk1 range | seeds passing | verdict |
+| --- | --- | --- | --- | --- | --- | --- |
+| v0.5 consensus | v0.4 | 142 | 5 | 0.5404 - 0.5995 | 0/5 | FAIL |
+| v0.5 consensus | v0.5 | 108 | 5 | 0.5371 - 0.6137 | 0/5 | FAIL |
+| v0.5 consensus | v0.7 | 108 | 5 | 0.4913 - 0.5547 | 0/5 | FAIL |
+| v0.5 consensus (108-event common split) | v0.4 | 108 | 5 | 0.5733 - 0.6053 | 0/5 | FAIL |
+| v0.5 consensus (108-event common split) | v0.5 | 108 | 5 | 0.5371 - 0.6137 | 0/5 | FAIL |
+| v0.5 consensus (108-event common split) | v0.7 | 108 | 5 | 0.4913 - 0.5547 | 0/5 | FAIL |
+| v0.7 full-coverage consensus | v0.4 | 108 | 5 | 0.7364 - 0.8077 | 5/5 | PASS |
+| v0.7 full-coverage consensus | v0.5 | 108 | 5 | 0.7036 - 0.7953 | 5/5 | PASS |
+| v0.7 full-coverage consensus | v0.7 | 108 | 5 | 0.8375 - 0.8604 | 5/5 | PASS |
+| v0.7 full-coverage consensus (108-event common split) | v0.4 | 108 | 5 | 0.7364 - 0.8077 | 5/5 | PASS |
+| v0.7 full-coverage consensus (108-event common split) | v0.5 | 108 | 5 | 0.7036 - 0.7953 | 5/5 | PASS |
+| v0.7 full-coverage consensus (108-event common split) | v0.7 | 108 | 5 | 0.8375 - 0.8604 | 5/5 | PASS |
+
+published claim 'all three fail against v0.5 labels'   : CONFIRMED
+published claim 'all three pass against v0.7 labels'   : CONFIRMED

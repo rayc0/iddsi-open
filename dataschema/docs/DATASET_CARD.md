@@ -73,7 +73,7 @@ TBD — add measured representation gaps, label uncertainty, failure cases, and 
 
 ## Evaluation and claims
 
-TBD — insert only locked, reproducible results: per-level confusion, macro-F1, weighted kappa, dangerous-direction under-classification, calibration/risk-coverage, abstention, flow residual-volume error/non-boundary agreement, 95% confidence intervals, and failures. Do not compare scores across non-equivalent private datasets.
+TBD — insert only locked, reproducible results: per-level confusion, macro-F1, weighted kappa, dangerous-direction under-classification, calibration/risk-coverage, abstention, flow residual-volume error/non-boundary agreement, 95% confidence intervals, and failures. Do not compare scores across non-equivalent private datasets. Every weighted kappa inserted here must name the label set it was measured against (H-YARDSTICK): the v0.4/v0.5 numbers were measured against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7 full-coverage consensus pass (v0.7: 0.838-0.860). A kappa without its label set is not a publishable number.
 
 Permitted dated claim, only after verifying the stated artifacts and prior-art search:
 

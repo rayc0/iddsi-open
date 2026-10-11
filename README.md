@@ -26,6 +26,8 @@ Harvest, then two-tier VLM weak labels, then a SigLIP-2 CORAL head, then calibra
 
 The two VLM judges (Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2) agree on **31.0%** of the same images (n_pairs = 575), which is only marginally above the ~20% chance level for 5 classes. The chance-corrected agreement is very low: Cohen's kappa κ_unweighted = 0.1062 and κ_quadratic-weighted = 0.2766 (Landis-Koch: slight / fair at best). THEREFORE every label-derived metric below is measured against label noise and means nothing about real-world accuracy.
 
+**Label set for this kappa (H-YARDSTICK):** κ 0.1062 / 0.2766 is agreement *between the two VLM judges who produced the label set* — it characterises the yardstick itself, not a model measured against one. For contrast, the v0.4/v0.5 model numbers were measured against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7 full-coverage consensus pass (v0.7: 0.838-0.860).
+
 This 31.0% inter-judge agreement IS the headline negative finding: web photos without a physical scale fiducial cannot be weakly labelled for IDDSI texture levels, even by strong VLMs, because middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry.
 
 Two caveats on that figure. It is measured over the 575 events where a tier-1 judgement exists; **129 of 704 rows carry a null tier-1 and are excluded**, and those rows are disproportionately non-agreeing, so 31.0% is optimistic. It is also agreement between two sizes of the same model family, not between independent judges. (Supersedes the preliminary 22.6% figure, which was computed over a smaller sample and should not be cited.)
@@ -45,11 +47,15 @@ level = #{k : P(y>k) > 0.5}
 
 Weighted kappa 0.42 flat in both, measured against noise.
 
+**Label set for this kappa (H-YARDSTICK):** the 0.42 was measured against the **Qwen tier-2 judge labels** (the pre-consensus weak label set of that run) and fails the wk1>=0.70 gate on that yardstick. The same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860).
+
 ## Pre-registered gates and which fired
 
 - wk1: weighted kappa >=0.70, else kill photo-classification.
 - wk2: external macro-F1 >=0.75 plus dangerous under-classification <=5% at <=30% abstention.
 - Observed dangerous under-classification is 33%.
+
+**Label set for the wk1 gate (H-YARDSTICK):** the v0.4/v0.5 numbers were measured against the **v0.5 consensus** and fail the wk1>=0.70 gate; the same models measured against the **v0.7 full-coverage consensus** pass (v0.7: 0.838-0.860). The gate itself is unchanged — the annotation says which yardstick produced each verdict. Full detail: H-YARDSTICK in `hf/HAZARD_LOG.md`.
 
 The model fails all of them. The wk1 kill rule FIRES. Photo-classification is killed as a product capability. This is why only code and results ship.
 

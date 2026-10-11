@@ -2,7 +2,11 @@
 
 The first trained model (2026-09-06) scored weighted kappa 0.419 and a 30.3%
 dangerous under-classification rate while emitting ONLY L3, L7 and abstain on a
-balanced L4-L7 test set that contained no L3 at all. The cause was not the data
+balanced L4-L7 test set that contained no L3 at all. (Label set for that kappa,
+H-YARDSTICK: the Qwen tier-2 judge labels of that run, on which it fails the
+wk1>=0.70 gate; the same checkpoints measured against the v0.7 full-coverage
+consensus pass it, v0.7: 0.838-0.860. The number is quoted here only to date the
+decode bug, not as a model-quality claim.) The cause was not the data
 and not the head: `coral_logits_to_probs` builds interior classes as differences
 of adjacent sigmoids, so with the default cut-point spacing every interior class
 was capped near 0.17 while both tail classes reached ~0.26. Decoding by argmax

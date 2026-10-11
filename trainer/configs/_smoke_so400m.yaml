@@ -1,0 +1,38 @@
+experiment:
+  name: smoke_so400m
+  output_dir: /work/lane_runs/exp07_backbone/_smoke_so400m
+  seeds: [17]
+
+data:
+  manifest: /work/data/manifest_v07_weighted.jsonl
+  image_size: 384
+  batch_size: 8
+  num_workers: 4
+  group_field: group_id
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: google/siglip2-so400m-patch14-384
+  pretrained: true
+  dropout: 0.1
+
+training:
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    - name: frozen_encoder_head
+      epochs: 1
+      lr: 0.001
+      unfreeze_last_blocks: 0
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 50
+  bootstrap_seed: 2026

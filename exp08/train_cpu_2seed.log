@@ -1,0 +1,8 @@
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 4030.06it/s]
+{epoch: 1, phase: frozen_encoder_head, train_loss: 0.6935981922088914, val_nll: 2.4817256927490234}
+{epoch: 2, phase: frozen_encoder_head, train_loss: 0.6153729474468596, val_nll: 2.210719347000122}
+{epoch: 3, phase: frozen_encoder_head, train_loss: 0.5631725643850436, val_nll: 2.0506908893585205}
+{epoch: 4, phase: frozen_encoder_head, train_loss: 0.5275924501905016, val_nll: 1.946831464767456}
+{epoch: 5, phase: frozen_encoder_head, train_loss: 0.4867977659413769, val_nll: 1.8628944158554077}
+{epoch: 6, phase: frozen_encoder_head, train_loss: 0.4617085853579697, val_nll: 1.79621160030365}

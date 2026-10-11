@@ -56,7 +56,7 @@ Static RGB does not directly measure flow, hardness, adhesiveness, cohesiveness,
 
 ## Evaluation and claims
 
-[INSERT ONLY LOCKED, REPRODUCIBLE RESULTS: per-level confusion, macro-F1, weighted kappa, dangerous-direction under-classification, calibration/risk-coverage, abstention, flow residual-volume error/non-boundary agreement, 95% confidence intervals, and failures. Do not compare scores across non-equivalent private datasets.]
+[INSERT ONLY LOCKED, REPRODUCIBLE RESULTS: per-level confusion, macro-F1, weighted kappa, dangerous-direction under-classification, calibration/risk-coverage, abstention, flow residual-volume error/non-boundary agreement, 95% confidence intervals, and failures. Do not compare scores across non-equivalent private datasets. Every weighted kappa must name the label set it was measured against (H-YARDSTICK).]
 
 Permitted dated claim, only after verifying the stated artifacts and prior-art search:
 

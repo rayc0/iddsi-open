@@ -1,0 +1,74 @@
+experiment:
+  name: smoke
+  # Lane exp02_schedule, control arm: the SHIPPED v0.7 schedule, run by the
+  # unmodified trainer (`python -m train.cli`) on the v0.7 full-coverage
+  # consensus, seeds [17, 101] only. Nothing here differs from
+  # trainer/configs/siglip2_v07.yaml except the seed list and output_dir.
+  output_dir: /work/lane_runs/exp02_schedule/_smoke
+  seeds: [17]
+
+data:
+  # v0.7: consensus derived from FULL labeller coverage.
+  #
+  # A coverage-closure run gave a second independent judgement to the 314 events
+  # that previously carried only one, so 337 of the 532 cleaned events now have
+  # two genuine independent judgements (251 unanimous, 86 split) instead of an
+  # unverifiable single call. 195 events still have a single judgement and are
+  # kept at weight 1: we have no evidence about their reliability, so they are
+  # neither promoted nor punished.
+  #
+  # Cross-family agreement is stable and reproducible at ~74.5%: 251/337 = 74.5%
+  # on the doubled sample, and 166/223 = 74.4% on the subset that was already
+  # doubled. Two independent model families agree on an IDDSI level from a web
+  # photograph about three times in four.
+  #
+  # Agreement weighting was tried and ABANDONED ON EVIDENCE: normalising
+  # agreement within each level produced a replication factor of 1 for every
+  # event, because agreement is effectively all-or-nothing inside a level rather
+  # than graded. The manifest carries the agreement fields for provenance but
+  # applies no replication. The improvement here is the labels themselves.
+  #
+  # Split is inherited verbatim from v0.3 (group-disjoint, asserted), so v0.7 is
+  # comparable with v0.4/v0.5 on the same held-out events.
+  manifest: /work/data/manifest_v07_weighted.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # 650 groups over 684 rows, asserted group-disjoint
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  # Identical to every prior version. Only the labels differ.
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  # Control arm: the shipped constant learning rate per phase. train/engine.py
+  # has no LR scheduler at all, so "shipped schedule" == constant LR for the
+  # whole of each phase, no warmup, no decay.
+  scheduler:
+    type: constant
+  phases:
+    - name: frozen_encoder_head
+      epochs: 1
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 1
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

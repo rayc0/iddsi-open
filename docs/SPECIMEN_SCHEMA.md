@@ -134,7 +134,10 @@ events map as follows:
 2. **Re-test rows NEVER enter train.** Any event with `retest_of` non-null is
    excluded from all training splits. Re-test rows exist only for the
    intra-rater reliability analysis (Cohen's kappa, per
-   `docs/CAPTURE_PROTOCOL.md` Section 9) and as held-out reference.
+   `docs/CAPTURE_PROTOCOL.md` Section 9 — label set: the single-operator
+   physical-test labels scored against that operator's own re-test, which is
+   not comparable to any model kappa measured against the v0.5 or v0.7
+   consensus label sets, see H-YARDSTICK) and as held-out reference.
 3. **FAIL rows NEVER enter train.** Events with `tests.pass = false` are kept
    for audit and for the reliability denominator where applicable, but are
    excluded from training and validation.

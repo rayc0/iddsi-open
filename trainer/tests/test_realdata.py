@@ -209,3 +209,101 @@ def test_augmentation_toggle_runs_on_cpu(
     assert tensor.dtype == torch.float32
     assert tensor.device.type == "cpu"
     assert torch.isfinite(tensor).all()
+
+
+# ---------------------------------------------------------------------------
+# Transform dispatch
+# ---------------------------------------------------------------------------
+
+
+class _RecordingTransform:
+    """Records how the dataset calls the transform."""
+
+    def __init__(self) -> None:
+        self.calls: list[dict[str, object]] = []
+
+    def __call__(self, image: Image.Image, seed: int = 0) -> torch.Tensor:
+        self.calls.append({"seed": seed})
+        return torch.zeros(3, 4, 4)
+
+
+class _SeedlessTransform:
+    """A transform with the older single-argument signature."""
+
+    def __init__(self) -> None:
+        self.calls = 0
+
+    def __call__(self, image: Image.Image) -> torch.Tensor:
+        self.calls += 1
+        return torch.ones(3, 4, 4)
+
+
+def _three_records(source_dirs: tuple[Path, Path]) -> list:
+    synthetic, _ = source_dirs
+    return load_events(synthetic)[:3]
+
+
+def test_dataset_passes_a_distinct_seed_per_sample(
+    source_dirs: tuple[Path, Path],
+) -> None:
+    """Per-(epoch, index) seeding is what makes augmentation reproducible."""
+    records = _three_records(source_dirs)
+    transform = _RecordingTransform()
+    dataset = EventsDataset(records, transform=transform, seed=10)  # type: ignore[arg-type]
+    for index in range(3):
+        dataset[index]
+    assert [call["seed"] for call in transform.calls] == [10, 11, 12]
+
+
+def test_dataset_calls_a_seedless_transform_without_the_seed(
+    source_dirs: tuple[Path, Path],
+) -> None:
+    """Transforms that take only an image must not be handed a seed kwarg."""
+    records = _three_records(source_dirs)
+    transform = _SeedlessTransform()
+    dataset = EventsDataset(records, transform=transform, seed=3)  # type: ignore[arg-type]
+    for index in range(3):
+        assert torch.equal(dataset[index]["pixel_values"], torch.ones(3, 4, 4))
+    assert transform.calls == 3
+
+
+def test_a_type_error_inside_the_transform_is_not_swallowed(
+    source_dirs: tuple[Path, Path],
+) -> None:
+    """A real defect must surface, not silently degrade every sample to seed 0.
+
+    The dataset used to sniff the transform signature with
+    ``try: transform(image, seed=...) except TypeError: transform(image)``.
+    A transform that *does* accept ``seed`` but raises ``TypeError`` from its own
+    body was therefore retried without the seed: no error anywhere, and every
+    sample silently augmented with the default seed.
+    """
+
+    class BrokenButSeeded(SeededAugment):
+        def __call__(self, image: Image.Image, seed: int = 0) -> torch.Tensor:
+            if seed == 5:
+                raise TypeError("genuine defect that only fires at seed 5")
+            return super().__call__(image, seed=seed)
+
+    dataset = EventsDataset(
+        _three_records(source_dirs),
+        transform=BrokenButSeeded(AugmentConfig(image_size=8), enabled=True),
+        seed=5,
+    )
+    with pytest.raises(TypeError, match="genuine defect"):
+        dataset[0]
+
+
+def test_augmentation_is_reproducible_for_a_fixed_seed(
+    source_dirs: tuple[Path, Path],
+) -> None:
+    """Same (image, seed) -> same tensor, across dataset instances."""
+    synthetic, _ = source_dirs
+    records = load_events(synthetic)
+    transform = SeededAugment(AugmentConfig(image_size=16, blur_p=1.0), enabled=True)
+    first = EventsDataset(records, transform=transform, seed=23)[0]["pixel_values"]
+    second = EventsDataset(records, transform=transform, seed=23)[0]["pixel_values"]
+    assert torch.equal(first, second)
+    # A different seed must be able to produce a different tensor.
+    other = EventsDataset(records, transform=transform, seed=99)[0]["pixel_values"]
+    assert not torch.equal(first, other)

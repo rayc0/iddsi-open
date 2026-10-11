@@ -113,7 +113,13 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
     rows = load_manifest(cfg["data"]["manifest"])
     validate_manifest(rows, cfg["data"]["level_field"], cfg["data"]["split_field"], cfg["data"]["group_field"])
     model_cfg = cfg["model"]
-    train_transform = build_transform(model_cfg["kind"], model_cfg["name"], int(cfg["data"]["image_size"]), True)
+    # Augmentation is a train-only concern. The val/test transforms are built
+    # with no augment_config at all so a config can never leak augmentation
+    # into the splits the reported metrics are computed on.
+    train_augment = cfg["data"].get("augment")
+    train_transform = build_transform(
+        model_cfg["kind"], model_cfg["name"], int(cfg["data"]["image_size"]), True, train_augment
+    )
     eval_transform = build_transform(model_cfg["kind"], model_cfg["name"], int(cfg["data"]["image_size"]), False)
     dataset_args = {"level_field": cfg["data"]["level_field"], "split_field": cfg["data"]["split_field"]}
     train_data = ManifestImageDataset(rows, "train", train_transform, **dataset_args)
@@ -131,7 +137,8 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
         model_cfg["kind"], model_cfg["name"], float(model_cfg["dropout"]), bool(model_cfg["pretrained"])
     ).to(device)
     loss_fn = ClassBalancedCoralLoss(
-        effective_number_weights(train_data.labels, float(cfg["training"]["class_balance_beta"]))
+        effective_number_weights(train_data.labels, float(cfg["training"]["class_balance_beta"])),
+        float(cfg["training"].get("label_smoothing", 0.0)),
     ).to(device)
     amp = bool(cfg["training"]["amp"]) and device.type == "cuda"
     best_nll = math.inf

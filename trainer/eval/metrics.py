@@ -130,15 +130,40 @@ def evaluate_predictions(
         raise ValueError("probabilities must have shape [N, 5]")
     if not np.isfinite(probabilities).all() or np.any(probabilities < 0):
         raise ValueError("probabilities must be finite and non-negative")
-    probabilities = probabilities / probabilities.sum(axis=1, keepdims=True)
+    # A label outside 0..4 has no row in the confusion matrix below, so it would
+    # vanish from every count while `n` still claims it: a silent denominator
+    # mismatch. Reject it here instead of reporting a matrix that does not sum
+    # to the number of evaluated events.
+    if labels.size and (labels.min() < 0 or labels.max() > 4):
+        bad = sorted({int(v) for v in labels if not 0 <= int(v) <= 4})
+        raise ValueError(
+            f"labels must be zero-based level indices 0..4 (L3..L7); "
+            f"found out-of-range values {bad} in {labels.size} events"
+        )
+    row_sums = probabilities.sum(axis=1, keepdims=True)
+    if not np.isfinite(row_sums).all() or np.any(row_sums <= 0):
+        # a row of zeros would silently decode to L3 once normalised
+        raise ValueError("every probability row must sum to a positive value")
+    probabilities = probabilities / row_sums
     raw_predictions, confidence = coral_decode(probabilities)
     predictions = np.where(confidence >= threshold, raw_predictions, -1)
     matrix = confusion_matrix(labels, predictions, labels=[0, 1, 2, 3, 4, -1])
     point = _point_metrics(probabilities, labels, threshold, ece_bins)
+    # The rank-rule decode BEFORE abstention.  Without it the published
+    # confusion matrix cannot distinguish "the decode never produced L5" from
+    # "every L5 decode fell below the threshold" — the H-CORAL symptom and its
+    # abstention-gate twin look identical in the artifact.
+    interior = (raw_predictions >= 1) & (raw_predictions <= 3)
     return {
         "n": int(len(labels)),
         "threshold": float(threshold),
         "metrics": point,
+        "decoded_level_counts_pre_abstention": {
+            f"L{int(LEVELS[index])}": int((raw_predictions == index).sum()) for index in range(5)
+        },
+        "interior_decodes_total": int(interior.sum()),
+        "interior_decodes_accepted": int((interior & (confidence >= threshold)).sum()),
+        "interior_levels_reachable": bool((interior & (confidence >= threshold)).any()),
         "confidence_intervals_95": _bootstrap_ci(
             probabilities, labels, threshold, ece_bins, bootstrap_samples, bootstrap_seed
         ),

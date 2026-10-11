@@ -16,7 +16,12 @@ abstract: |
   photo-classification head failed its pre-registered gates - wk1 weighted
   kappa >= 0.70 (measured 0.42), wk2 macro-F1 >= 0.75 (measured 0.358) with
   dangerous under-classification at 33% against a <= 5% gate - so the wk1 kill
-  rule fired and photo-classification is dead as a product capability. The
+  rule fired and photo-classification is dead as a product capability.
+  Label set for that kappa (H-YARDSTICK): the 0.42 was measured against the
+  Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured against
+  the v0.5 consensus; on both of those label sets the models fail the
+  wk1>=0.70 gate. The same models measured against the v0.7 full-coverage
+  consensus pass it (v0.7: 0.838-0.860). The
   headline negative finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree
   on only **31.0%** of the same images (n_pairs = 575, full tier-2 sample,
   regen 2026-09-16; Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766
@@ -24,7 +29,10 @@ abstract: |
   bias toward under-predicting difficulty (Section 3.3) - because middle
   IDDSI levels (L4/L5/L6) need absolute size/flow information a scale-free web
   photo does not carry; every label-derived metric is therefore measured
-  against noise. A CORAL ordinal-decode bug that made interior levels
+  against noise. Label set for those inter-judge kappas (H-YARDSTICK): they are
+  agreement between the two VLM judges who produced the label set, so they
+  characterise the yardstick itself rather than a model scored against one.
+  A CORAL ordinal-decode bug that made interior levels
   unreachable was found and fixed (held-out n = 109: macro-F1 0.088 -> 0.358,
   coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature 2.83 -> 0.93;
   weighted kappa flat at 0.42). The flow-test grader works: MAE 0.065 ml on a
@@ -60,7 +68,13 @@ card hf/model_README.md is the authority): classifier and flow-grader result
 cells now report the locked v0 numbers (CORAL decode fix, pre-registered
 gates, 31.0% exact inter-judge agreement on n=575 with kappa unweighted
 0.1062 / quadratic 0.2766, under-prediction finding, flow MAE 0.065 ml on the
-100-video bench). RD-SLP inter-rater baseline, subgroup analyses, and
+100-video bench). Label set for those inter-judge kappas (H-YARDSTICK): they are
+agreement between the two VLM judges who produced the label set, so they
+characterise the yardstick itself; the model kappas in this note were measured
+against the Qwen tier-2 judge labels and the v0.4/v0.5 numbers against the v0.5
+consensus (both fail wk1>=0.70), while the same models measured against the
+v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
+RD-SLP inter-rater baseline, subgroup analyses, and
 bootstrap CIs were not measured in v0. The 0/24 generator-QA pilot is the
 sole reported development-pilot outcome. Frozen boundary wording comes from
 the project's frozen source files (r5_prior.md, r5_reg.md,
@@ -112,7 +126,11 @@ release card `hf/model_README.md` is the authority):**
 > pre-registered gates (wk1 weighted kappa >= 0.70 measured 0.42; wk2
 > macro-F1 >= 0.75 measured 0.358, with dangerous under-classification at 33%
 > against a <= 5% gate; the wk1 kill rule fired and photo-classification is
-> dead as a product capability). The ONE claim that stands is 'the first
+> dead as a product capability). Label set for that kappa (H-YARDSTICK): the
+> 0.42 was measured against the Qwen tier-2 judge labels, and the v0.4/v0.5
+> numbers were measured against the v0.5 consensus; the models fail the
+> wk1>=0.70 gate on both of those label sets. The same models measured against
+> the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860). The ONE claim that stands is 'the first
 > open-source smartphone grader for the 10 ml IDDSI Flow Test'."
 
 We never claim: first IDDSI AI; first image classifier; first
@@ -280,6 +298,15 @@ tier-2 sample): two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only
 (L4/L5/L6) need absolute size/flow information a scale-free web photo does not
 carry. Every label-derived metric above is therefore measured against noise.
 
+**Label set for every kappa above (H-YARDSTICK).** The 0.42 was measured
+against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured
+against the v0.5 consensus; the models fail the wk1>=0.70 gate on both of those
+label sets. The same models measured against the v0.7 full-coverage consensus
+pass it (v0.7: 0.838-0.860). The inter-judge kappas 0.1062 / 0.2766 are
+agreement between the two VLM judges who produced the label set, so they
+characterise the yardstick itself rather than a model scored against one. The
+wk2 33% failure does not depend on the yardstick and stands on every reading.
+
 **Under-prediction finding (new in v0.1, not in v0.0).** The regen cross-tab on
 the full tier-2 sample (n = 575) reveals a systematic pattern the preliminary
 22.6% figure did not state: tier-1 systematically *under-predicts* difficulty.
@@ -330,7 +357,9 @@ kitchen level. Calibration and abstention thresholds are frozen on
 validation data before external-test evaluation.
 
 For the L3-L7 model, the v0 report contains macro-F1 with abstentions counted
-as misses; quadratic-weighted kappa on covered events; coverage and
+as misses; quadratic-weighted kappa on covered events (read with its label set
+attached and with its coverage - H-KAPPACOV and H-YARDSTICK both apply to that
+number); coverage and
 abstention rate; dangerous-direction under-classification (a prediction below
 the physical-test level); expected calibration error and temperature; and the
 CORAL-decode before/after comparison (Section 3.3). RD-versus-SLP raw
@@ -354,11 +383,11 @@ and the flow-test grader ship.
 | Coverage | 0.70 -> 0.88 |
 | ECE | 0.138 -> 0.091 |
 | Temperature | 2.83 -> 0.93 |
-| Weighted kappa (covered events) | 0.42 (flat before/after fix; measured against label noise) |
+| Weighted kappa (covered events) | 0.42 (flat before/after fix; label set: Qwen tier-2 judge labels - see H-YARDSTICK) |
 | Dangerous under-classification rate | 33% (gate: <= 5% - FAILED) |
-| wk1 gate (weighted kappa >= 0.70) | FAILED - kill rule fired |
+| wk1 gate (weighted kappa >= 0.70) | FAILED on the Qwen tier-2 judge labels; the same models PASS on the v0.7 full-coverage consensus (v0.7: 0.838-0.860) |
 | wk2 gate (macro-F1 >= 0.75) | FAILED (measured 0.358) |
-| Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B, n=575, v0.1 regen) | 31.0% exact; kappa unweighted 0.1062, quadratic 0.2766 (the ceiling finding) |
+| Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B, n=575, v0.1 regen) | 31.0% exact; kappa unweighted 0.1062, quadratic 0.2766 (agreement between the two judges who produced the label set - the yardstick itself, not a model scored against one) |
 | Under-prediction bias (v0.1 regen) | tier-1 systematically under-predicts L4-L6 toward L7; dangerous direction |
 | Flow residual-volume MAE (100-video bench, L0-L4) | 0.065 ml |
 | RD-SLP inter-rater baseline | not measured in v0 |
@@ -448,6 +477,13 @@ submission (r5_reg.md). This note does not describe such a version.
   unweighted 0.1062, quadratic-weighted 0.2766 - still essentially chance for
   5 classes), and tier-1 systematically under-predicts difficulty (Section 3.3).
   Weights are withheld; photo-classification is dead as a product capability.
+  Label set for these kappas (H-YARDSTICK): the model's 0.42 was measured
+  against the Qwen tier-2 judge labels and the v0.4/v0.5 numbers against the
+  v0.5 consensus; the models fail the wk1>=0.70 gate on both of those label
+  sets. The same models measured against the v0.7 full-coverage consensus pass
+  it (v0.7: 0.838-0.860). The 0.1062 / 0.2766 inter-judge kappas are agreement
+  between the two judges who produced the label set, so they characterise the
+  yardstick itself rather than a model scored against one.
 - **Population and cuisine coverage:** unverified in v0. The planned remedy is
   physically-tested desk specimens (60 base foods x 5 levels = 300,
   single-operator, protocol-following, test-filmed, with a filmed re-test
@@ -474,7 +510,11 @@ against a <= 5% gate) measured against **31.0%** inter-judge label noise on
 n=575 (kappa unweighted 0.1062, quadratic-weighted 0.2766, with a
 systematic tier-1 under-prediction bias - Section 3.3), so the model weights
 and the harvested dataset are withheld and photo-classification is dead as a
-product capability. Held-out results, failure cases, and test videos
+product capability. Label set for these kappas (H-YARDSTICK): the model's 0.42
+was measured against the Qwen tier-2 judge labels and the v0.4/v0.5 numbers
+against the v0.5 consensus; the models fail the wk1>=0.70 gate on both of those
+label sets, and the same models measured against the v0.7 full-coverage
+consensus pass it (v0.7: 0.838-0.860). Held-out results, failure cases, and test videos
 accompany the repository. Planned next step, not done: physically-tested
 desk specimens (60 base foods x 5 levels = 300, single-operator,
 protocol-following, test-filmed, with a filmed re-test subsample for

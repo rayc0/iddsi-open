@@ -1,0 +1,20 @@
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 9314.01it/s]
+loaded /work/runs/v07/siglip2_v07_fullcoverage_seed29/best.pt epoch=69 val_nll=0.8728821277618408
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed29_val_raw.npz n=110 label_counts=[14, 8, 6, 9, 73]
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed29_test_raw.npz n=108 label_counts=[10, 11, 7, 10, 70]
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 8923.78it/s]
+loaded /work/runs/v07/siglip2_v07_fullcoverage_seed43/best.pt epoch=74 val_nll=0.850300669670105
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed43_val_raw.npz n=110 label_counts=[14, 8, 6, 9, 73]
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed43_test_raw.npz n=108 label_counts=[10, 11, 7, 10, 70]
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 9444.99it/s]
+loaded /work/runs/v07/siglip2_v07_fullcoverage_seed71/best.pt epoch=70 val_nll=0.8766710162162781
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed71_val_raw.npz n=110 label_counts=[14, 8, 6, 9, 73]
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed71_test_raw.npz n=108 label_counts=[10, 11, 7, 10, 70]
+The image processor of type `Siglip2ImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. 
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 9178.97it/s]
+loaded /work/runs/v07/siglip2_v07_fullcoverage_seed101/best.pt epoch=74 val_nll=0.8758741021156311
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed101_val_raw.npz n=110 label_counts=[14, 8, 6, 9, 73]
+wrote /work/lanes/exp08_ensemble/exp08/raw/v07_seed101_test_raw.npz n=108 label_counts=[10, 11, 7, 10, 70]

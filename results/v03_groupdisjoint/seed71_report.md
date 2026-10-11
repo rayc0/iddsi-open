@@ -8,6 +8,10 @@
 - Confidence threshold calibrated on validation data: 0.2231
 - Abstentions are represented as `unclear`; they are counted as misses in macro-F1.
 - Weighted kappa and dangerous-direction FNR are computed on non-abstained (covered) events.
+- Label set for every kappa in this report (H-YARDSTICK): Qwen tier-2 judge labels (v0.3, group-disjoint split). A weighted kappa is not
+  interpretable without the label set it was measured against: the same checkpoints fail the
+  wk1>=0.70 gate on the v0.5 consensus and pass it on the v0.7 full-coverage consensus
+  (v0.7: 0.838-0.860). Population and coverage are unchanged by this note.
 - Dangerous direction means predicting a lower numeric IDDSI level than the physical-test label.
 
 ## Metrics

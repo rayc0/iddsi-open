@@ -48,6 +48,65 @@ def coral_decode(probabilities: "np.ndarray") -> tuple["np.ndarray", "np.ndarray
     return predictions, confidence
 
 
+def coral_interior_mass_ceiling(
+    probabilities: "np.ndarray", *, tolerance: float = 1e-2
+) -> "float | None":
+    """Largest class mass any interior level (L4/L5/L6) can ever reach.
+
+    An interior class is a *difference of two adjacent sigmoids* whose logits
+    are ``gap`` apart, so its mass is bounded by ``tanh(gap / 4)`` — the
+    supremum of ``sigmoid(x) - sigmoid(x - gap)`` over ``x``, attained at
+    ``x = gap / 2``.  The two tail classes carry no such bound.  This is the
+    same ceiling that made ``argmax`` blind to L4/L5/L6; it still bounds how
+    confident the model is allowed to *look* on an interior level, so anything
+    that thresholds on class mass — the abstention gate — has to know it.  A
+    threshold above this ceiling makes every interior decode abstain, which
+    reproduces the H-CORAL symptom through the abstention gate instead of
+    through argmax.
+
+    ``gap`` is recovered from the probabilities alone, because that is all a
+    threshold selector is given: ``survival[:, j] = 1 - cumsum(probs)[:, j]``
+    is ``sigmoid((s + b_j) / T)``, so ``logit(survival[:, j]) -
+    logit(survival[:, j+1])`` is the *temperature-scaled* gap and is identical
+    in every row — the shared score ``s`` cancels.  The median over rows is
+    used so a single saturated row cannot move it.
+
+    Returns ``None`` when the rows do not share one gap vector, i.e. when
+    ``probabilities`` is not a CORAL reconstruction (a softmax matrix, say)
+    and the bound does not apply.
+    """
+    probs = np.asarray(probabilities, dtype=np.float64)
+    if probs.ndim != 2 or probs.shape[1] < 3 or len(probs) < 2:
+        return None
+    probs = probs / probs.sum(axis=1, keepdims=True).clip(1e-12)
+    survival = 1.0 - np.cumsum(probs, axis=1)[:, :-1]
+    if not np.isfinite(survival).all():
+        return None
+    clipped = survival.clip(1e-12, 1.0 - 1e-12)
+    logged = np.log(clipped) - np.log1p(-clipped)
+    differences = logged[:, :-1] - logged[:, 1:]
+    # A logit is only well conditioned away from 0 and 1; the float32
+    # probabilities the head emits have already lost the tail digits there.
+    # Each gap is therefore estimated from the rows that condition *that* gap,
+    # and only when every such row agrees is the matrix accepted as CORAL.
+    well_conditioned = (survival > 1e-3) & (survival < 1.0 - 1e-3)
+    gaps = np.empty(differences.shape[1], dtype=np.float64)
+    for index in range(differences.shape[1]):
+        usable = (
+            np.isfinite(differences[:, index])
+            & well_conditioned[:, index]
+            & well_conditioned[:, index + 1]
+        )
+        if usable.sum() < 2:
+            return None
+        column = differences[usable, index]
+        gap = float(np.median(column))
+        if gap <= 0.0 or np.ptp(column) / max(abs(gap), 1e-9) > tolerance:
+            return None  # not a CORAL reconstruction: the gaps are not shared
+        gaps[index] = gap
+    return float(np.tanh(gaps.min() / 4.0))
+
+
 class OrderedCoralHead(nn.Module):
     """CORAL-style shared projection with strictly ordered learned cut-points."""
 
@@ -58,6 +117,9 @@ class OrderedCoralHead(nn.Module):
         self.first_bias = nn.Parameter(torch.tensor(1.5))
         # softplus(0)=0.693 gave interior classes a ~0.17 probability ceiling.
         # softplus(1.5)=1.70 lifts it to ~0.40 so every level is reachable.
+        # The ceiling is tanh(gap/4) — see coral_interior_mass_ceiling.  It
+        # bounds not only argmax but also any confidence threshold applied to
+        # class mass, so it is reported and enforced downstream.
         self.bias_gaps_raw = nn.Parameter(torch.full((num_classes - 2,), 1.5))
 
     def forward(self, features: torch.Tensor) -> torch.Tensor:

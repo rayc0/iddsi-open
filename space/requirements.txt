@@ -1,0 +1,19 @@
+# Runtime dependencies for the IDDSI-Open Hugging Face Space.
+#
+# Versions are the ones this Space was built and exercised against inside the
+# iddsi-train container (torch 2.7.0a0, transformers 5.3.0, python 3.12.3).
+# gradio is pinned because the Space calls build_demo() at import time and a
+# missing UI would turn the app into a blank page rather than a loud failure.
+gradio==5.23.2
+
+# Inference stack. torch is installed by the Space base image; the pin here is
+# a floor, not an override, and is satisfied by the CUDA build in the container.
+torch>=2.7.0
+transformers>=5.3.0
+
+# Image decode for uploaded photos (Gradio already pulls this in; declared
+# explicitly because core.py imports it directly).
+pillow>=11.1.0
+
+# numpy is used by the CORAL rank-rule decoder in space/core.py.
+numpy>=1.26

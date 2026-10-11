@@ -38,6 +38,7 @@ splits; ``validate_no_group_leak`` additionally verifies that any pre-assigned
 from __future__ import annotations
 
 import hashlib
+import inspect
 import json
 import random
 from dataclasses import dataclass, field
@@ -387,6 +388,34 @@ class SeededAugment:
 # ---------------------------------------------------------------------------
 
 
+def _call_transform(
+    transform: Callable[..., torch.Tensor | dict[str, torch.Tensor]],
+    image: Image.Image,
+    seed: int,
+) -> torch.Tensor | dict[str, torch.Tensor]:
+    """Call ``transform`` with a per-sample seed when it accepts one.
+
+    The signature is inspected rather than sniffed by catching ``TypeError``:
+    a transform that *does* take ``seed`` but raises ``TypeError`` from inside
+    its own body used to be retried without the seed, so every sample silently
+    fell back to the default seed and per-(epoch, index) augmentation diversity
+    was lost with no error anywhere. A transform that cannot be introspected is
+    called with the image alone, matching the previous behaviour.
+    """
+
+    try:
+        parameters = inspect.signature(transform).parameters
+    except (TypeError, ValueError):
+        return transform(image)
+    seed_parameter = parameters.get("seed")
+    if seed_parameter is not None and seed_parameter.kind in (
+        inspect.Parameter.POSITIONAL_OR_KEYWORD,
+        inspect.Parameter.KEYWORD_ONLY,
+    ):
+        return transform(image, seed=seed)
+    return transform(image)
+
+
 class EventsDataset(Dataset[dict[str, Any]]):
     """Torch dataset over dataschema events.
 
@@ -449,10 +478,7 @@ class EventsDataset(Dataset[dict[str, Any]]):
     def __getitem__(self, index: int) -> dict[str, Any]:
         record = self.records[index]
         with Image.open(record.image_path) as image:
-            try:
-                transformed = self.transform(image, seed=self.seed + index)
-            except TypeError:
-                transformed = self.transform(image)
+            transformed = _call_transform(self.transform, image, self.seed + index)
         model_inputs = transformed if isinstance(transformed, dict) else {"pixel_values": transformed}
         return {
             **model_inputs,

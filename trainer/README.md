@@ -55,6 +55,8 @@ python -m eval.cli \
 
 The report includes a per-level confusion matrix with an `unclear` column, abstention-aware macro-F1, quadratic weighted kappa on covered events, dangerous-direction under-classification FNR, ECE, coverage, a risk–coverage curve, and stratified bootstrap confidence intervals. Metric denominators are stated in the report.
 
+Every weighted kappa a report emits must carry the label set it was measured against, because a kappa is not interpretable without it (H-YARDSTICK). Pass `label_set=` to `render_markdown_report` / `write_markdown_report` and the report states it beside the kappa; if it is omitted the report says so explicitly rather than leaving the label set implicit. For reference: the v0.4/v0.5 numbers were measured against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7 full-coverage consensus pass (v0.7: 0.838-0.860).
+
 For a human inter-rater comparison, pass a CSV with `event_id,rater_a_level,rater_b_level` using `--human-ratings`. Event IDs are matched to the prediction file's physical-test labels. The hook reports inter-rater agreement and each photo-only rater against the physical label separately; it does not relabel the model test set or portray agreement as safety.
 
 ## Synthetic CPU smoke run

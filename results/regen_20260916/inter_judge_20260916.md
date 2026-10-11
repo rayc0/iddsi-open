@@ -8,6 +8,14 @@ Re-measured on the full tier-2 sample after the 2026-09-16 resume. Replaces the 
 - Cohen's kappa (unweighted): **0.1062**
 - Cohen's kappa (quadratic-weighted): **0.2766**
 
+**Label set for these kappas (H-YARDSTICK).** These are agreement *between the two VLM judges who
+produced the label set*, not a model scored against a label set, so they characterise the yardstick
+itself and have no "which label set" answer of their own. For contrast, every model kappa measured
+against a label set this project built is yardstick-dependent: the v0.4/v0.5 numbers were measured
+against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7
+full-coverage consensus pass (v0.7: 0.838-0.860). A low inter-judge kappa is therefore a statement
+about the label set, not about any model.
+
 Cross-tab (rows = tier-1 level, cols = tier-2 level):
 
 | t1\t2 | L3 | L4 | L5 | L6 | L7 |

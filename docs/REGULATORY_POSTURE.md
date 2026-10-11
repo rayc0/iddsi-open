@@ -20,7 +20,7 @@ The following block is the **frozen honest-claims wording** for the IDDSI-Open r
 
 Honest claims for v0 (release shape locked 2026-09-07; the honest release card `hf/model_README.md` is the authority). The old dataset-plus-model first is DEAD and must not be used:
 
-> The ambition was "the first publicly downloadable IDDSI-specific smartphone-food dataset and fine-tuned model released under explicit reuse licences, with physically tested Chinese/Cantonese soft-meal labels"; v0 does NOT meet it - the harvested dataset is withheld on licence grounds (of 587 unique events exactly 2 would ship cleanly; 592 rows carry unverified open-images/openverse licences, 7 are CC BY-SA against the BY-NC-SA main release, 109 have unresolved redistribution status) and the model weights are withheld because the photo-classification head failed its pre-registered gates (wk1 weighted kappa >= 0.70 measured 0.42; wk2 macro-F1 >= 0.75 measured 0.358, with dangerous under-classification at 33% against a <= 5% gate; the wk1 kill rule fired and photo-classification is dead as a product capability).
+> The ambition was "the first publicly downloadable IDDSI-specific smartphone-food dataset and fine-tuned model released under explicit reuse licences, with physically tested Chinese/Cantonese soft-meal labels"; v0 does NOT meet it - the harvested dataset is withheld on licence grounds (of 587 unique events exactly 2 would ship cleanly; 592 rows carry unverified open-images/openverse licences, 7 are CC BY-SA against the BY-NC-SA main release, 109 have unresolved redistribution status) and the model weights are withheld because the photo-classification head failed its pre-registered gates (wk1 weighted kappa >= 0.70 measured 0.42; wk2 macro-F1 >= 0.75 measured 0.358, with dangerous under-classification at 33% against a <= 5% gate; the wk1 kill rule fired and photo-classification is dead as a product capability). Label set for that kappa (H-YARDSTICK): the 0.42 was measured against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured against the v0.5 consensus; the models fail the wk1>=0.70 gate on both of those label sets, and the same models measured against the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
 
 The ONE claim that stands in v0:
 
@@ -129,7 +129,7 @@ The current research preview does **not** satisfy these requirements and must no
 
 v0 誠實聲明（發佈形態於 2026-09-07 鎖定；以誠實發佈卡 `hf/model_README.md` 為準）。舊的數據集加模型之「首個」聲明已失效，不得使用：
 
-> 原定目標是「首個公開可下載、專為 IDDSI 而設的智能手機食物數據集及微調模型，以明確的重用許可發佈，並附有經物理測試的中式／粵式軟餐標籤」；v0 並未達到——收穫數據集因授權原因被扣留（587 個獨立事件中僅 2 個可乾淨發佈；592 行帶有未驗證的 open-images／openverse 授權，7 個為 CC BY-SA 與 BY-NC-SA 主授權衝突，109 個重新分發狀態未解決），模型權重因照片分類頭未通過預先註冊的門檻而被扣留（wk1 加權 κ ≥ 0.70，實測 0.42；wk2 宏平均 F1 ≥ 0.75，實測 0.358，危險低估率 33%，門檻為 ≤ 5%；wk1 終止規則已觸發，照片分類作為產品能力已終止）。
+> 原定目標是「首個公開可下載、專為 IDDSI 而設的智能手機食物數據集及微調模型，以明確的重用許可發佈，並附有經物理測試的中式／粵式軟餐標籤」；v0 並未達到——收穫數據集因授權原因被扣留（587 個獨立事件中僅 2 個可乾淨發佈；592 行帶有未驗證的 open-images／openverse 授權，7 個為 CC BY-SA 與 BY-NC-SA 主授權衝突，109 個重新分發狀態未解決），模型權重因照片分類頭未通過預先註冊的門檻而被扣留（wk1 加權 κ ≥ 0.70，實測 0.42；wk2 宏平均 F1 ≥ 0.75，實測 0.358，危險低估率 33%，門檻為 ≤ 5%；wk1 終止規則已觸發，照片分類作為產品能力已終止）。此 κ 的標籤集（H-YARDSTICK）：0.42 是針對 Qwen tier-2 評審標籤量度，v0.4/v0.5 的數字是針對 v0.5 共識標籤集量度；在這兩個標籤集上模型均未通過 wk1 ≥ 0.70 門檻，而同一批模型針對 v0.7 全覆蓋共識標籤集量度則通過（v0.7：0.838–0.860）。
 
 v0 中仍成立的聲明：
 

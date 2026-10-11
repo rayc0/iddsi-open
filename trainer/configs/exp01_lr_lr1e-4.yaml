@@ -1,0 +1,54 @@
+experiment:
+  name: siglip2_v07_lr_1e-4
+  output_dir: /work/lane_runs/exp01_lr/lr_1e-4
+  # Lane exp01_lr, VARIANT = learning rate. 2 seeds only (speed); the v0.7
+  # reference is 5 seeds [17,29,43,71,101] and we keep 17 and 101 so this run
+  # is a strict subset of the reference seeds and therefore directly comparable.
+  seeds: [17, 101]
+
+data:
+  # IDENTICAL to configs/siglip2_v07.yaml. v0.7 full-coverage consensus manifest,
+  # same split, same image size, same batch size, same workers.
+  manifest: /work/data/manifest_v07_weighted.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # 650 groups over 684 rows, asserted group-disjoint
+  synthetic: false
+
+model:
+  # IDENTICAL to v0.7.
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  # IDENTICAL to v0.7 EXCEPT the learning rate. Everything else is verbatim:
+  # same device/amp/weight_decay/class_balance_beta/gradient_clip_norm, same
+  # phase names, same epoch counts (60 then 15), same unfreeze schedule.
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    # v0.7's encoder lr (phase 2, last-two-blocks unfrozen) is 0.00002.
+    # THIS VARIANT sets the encoder lr to 1e-4 and scales the head lr 10x from it.
+    # Only these two numbers differ from siglip2_v07.yaml.
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001         # head lr = 10 x encoder lr
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.0001        # encoder lr
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

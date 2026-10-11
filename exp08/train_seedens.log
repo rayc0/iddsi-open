@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/work/lanes/exp08_ensemble/trainer/train/cli.py", line 19, in <module>
+    main()
+  File "/work/lanes/exp08_ensemble/trainer/train/cli.py", line 14, in main
+    summaries = run_experiment(load_config(args.config))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/lanes/exp08_ensemble/trainer/train/engine.py", line 236, in run_experiment
+    summaries = [run_seed(cfg, int(seed)) for seed in cfg["experiment"]["seeds"]]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/lanes/exp08_ensemble/trainer/train/engine.py", line 106, in run_seed
+    device = resolve_device(str(cfg["training"]["device"]))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/lanes/exp08_ensemble/trainer/train/utils.py", line 26, in resolve_device
+    raise RuntimeError("CUDA was requested but is unavailable; set training.device: cpu for a CPU run")
+RuntimeError: CUDA was requested but is unavailable; set training.device: cpu for a CPU run

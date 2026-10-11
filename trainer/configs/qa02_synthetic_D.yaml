@@ -1,0 +1,47 @@
+# qa02_determinism lane — synthetic CPU fixture, repeat A.
+#
+# Byte-for-byte copy of trainer/configs/synthetic_cpu.yaml with one change:
+# experiment.output_dir points at this lane's run directory so the two
+# repeats land in different trees and can be compared.  The seed list is
+# deliberately left at the upstream value [17]: both repeats must use the
+# SAME seed.
+experiment:
+  name: synthetic_smoke
+  output_dir: /work/lane_runs/qa02_determinism/synthetic_D
+  seeds: [29]
+
+data:
+  manifest: /work/lanes/qa02_determinism/trainer/artifacts/synthetic/manifest.jsonl
+  image_size: 32
+  batch_size: 10
+  num_workers: 0
+  group_field: group_id
+  synthetic: true
+
+model:
+  kind: tiny_cnn
+  name: test-only
+  pretrained: false
+  dropout: 0.0
+
+training:
+  device: cpu
+  amp: false
+  class_balance_beta: 0.99
+  phases:
+    - name: test_head
+      epochs: 1
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: test_unfreeze
+      epochs: 1
+      lr: 0.0005
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 50
+  bootstrap_seed: 2026

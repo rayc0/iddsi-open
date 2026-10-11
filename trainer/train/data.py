@@ -10,6 +10,7 @@ import torch
 from PIL import Image
 from torch.utils.data import Dataset
 
+from .augment import PhotometricAugment, from_mapping as photometric_from_mapping
 from .model import LEVELS
 
 
@@ -64,46 +65,123 @@ def validate_manifest(
 
 
 class BasicImageTransform:
+    """Resize + normalise, with the v0.7 train-time horizontal flip.
+
+    ``photometric``, when given, replaces that flip with the stronger
+    config-driven pipeline in :mod:`train.augment`. It runs before the resize so
+    the crop is a genuine random resized crop rather than a crop of a
+    already-downscaled image.
+    """
+
     def __init__(
         self,
         image_size: int,
         augment: bool = False,
         mean: tuple[float, float, float] = (0.5, 0.5, 0.5),
         std: tuple[float, float, float] = (0.5, 0.5, 0.5),
+        photometric: PhotometricAugment | None = None,
     ):
         self.image_size = image_size
         self.augment = augment
         self.mean = torch.tensor(mean, dtype=torch.float32)[:, None, None]
         self.std = torch.tensor(std, dtype=torch.float32)[:, None, None]
+        self.photometric = photometric
 
     def __call__(self, image: Image.Image) -> torch.Tensor:
-        image = image.convert("RGB").resize((self.image_size, self.image_size), Image.Resampling.BICUBIC)
-        if self.augment and bool(torch.rand(()) < 0.5):
-            image = image.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+        image = image.convert("RGB")
+        if self.photometric is not None:
+            # Augment at native resolution, then resize: a real random resized
+            # crop rather than a crop of an already-downscaled image.
+            image = self.photometric(image)
+            image = image.resize((self.image_size, self.image_size), Image.Resampling.BICUBIC)
+        else:
+            # v0.7 order, kept verbatim (resize, then flip): PIL's bicubic
+            # resize does not commute exactly with a horizontal flip, so
+            # reordering these would silently move the baseline.
+            image = image.resize((self.image_size, self.image_size), Image.Resampling.BICUBIC)
+            if self.augment and bool(torch.rand(()) < 0.5):
+                image = image.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
         array = np.asarray(image, dtype=np.float32) / 255.0
         tensor = torch.from_numpy(array).permute(2, 0, 1)
         return (tensor - self.mean) / self.std
 
 
+def _siglip2_native_size(processor: Any) -> int | None:
+    """Side length the processor's own config resolves to, if it declares one.
+
+    ``Siglip2ImageProcessor`` in recent transformers exposes ``size = None`` and
+    derives its grid from ``patch_size`` and ``max_num_patches`` instead, so the
+    declared size has to be recovered from the patch budget.
+    """
+    size = getattr(processor, "size", None)
+    if isinstance(size, dict):
+        for key in ("shortest_edge", "height", "width", "longest_edge"):
+            if key in size:
+                try:
+                    return int(size[key])
+                except (TypeError, ValueError):
+                    continue
+    elif isinstance(size, (int, float)):
+        return int(size)
+    max_patches = getattr(processor, "max_num_patches", None)
+    patch_size = getattr(processor, "patch_size", None)
+    if max_patches and patch_size:
+        grid = int(round(float(max_patches) ** 0.5))
+        if grid * grid == int(max_patches):
+            return grid * int(patch_size)
+    return None
+
+
 def build_transform(
-    kind: str, model_name: str, image_size: int, augment: bool
+    kind: str,
+    model_name: str,
+    image_size: int,
+    augment: bool,
+    augment_config: dict | None = None,
 ) -> Callable[[Image.Image], torch.Tensor | dict[str, torch.Tensor]]:
+    """Build the transform for one split.
+
+    ``augment`` selects the split (train) and ``augment_config`` the strength.
+    With ``augment_config`` absent the behaviour is exactly the v0.7 recipe: a
+    random horizontal flip at p=0.5 and nothing else. ``augment=False`` (val and
+    test) never augments, whatever the config says.
+    """
+    photometric = photometric_from_mapping(augment_config) if augment else None
     if kind != "siglip2":
         if kind == "resnet18":
             return BasicImageTransform(
-                image_size, augment, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)
+                image_size, augment, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225),
+                photometric=photometric,
             )
-        return BasicImageTransform(image_size, augment)
+        return BasicImageTransform(image_size, augment, photometric=photometric)
     try:
         from transformers import AutoImageProcessor
     except ImportError as exc:
         raise ImportError("SigLIP-2 preprocessing requires `pip install -e '.[models]'`") from exc
     processor = AutoImageProcessor.from_pretrained(model_name)
+    native_size = _siglip2_native_size(processor)
+    # The SigLIP-2 processor pins its own patch grid, so `image_size` was
+    # previously ignored on this path: 224 and 384 produced byte-identical
+    # tensors (196 tokens, a 14x14 grid). Override the target size and the
+    # patch budget only when the caller asks for a non-native resolution, so
+    # the shipped 224 run stays bit-for-bit unchanged.
+    size_override: dict[str, Any] = {}
+    if image_size and native_size and int(image_size) != native_size:
+        patch_size = int(getattr(processor, "patch_size", 16) or 16)
+        grid = int(image_size) // patch_size
+        if grid * patch_size != int(image_size):
+            raise ValueError(
+                f"image_size {image_size} is not a multiple of the SigLIP-2 patch size {patch_size}"
+            )
+        size_override = {"size": {"height": int(image_size), "width": int(image_size)}, "max_num_patches": grid * grid}
 
     def transform(image: Image.Image) -> dict[str, torch.Tensor]:
-        if augment and bool(torch.rand(()) < 0.5):
+        image = image.convert("RGB")
+        if photometric is not None:
+            image = photometric(image)
+        elif augment and bool(torch.rand(()) < 0.5):
             image = image.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
-        processed = processor(images=image.convert("RGB"), return_tensors="pt")
+        processed = processor(images=image.convert("RGB"), return_tensors="pt", **size_override)
         # SigLIP-2 processors may supply masks/spatial shapes in addition to pixels.
         return {
             key: value[0]

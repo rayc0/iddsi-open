@@ -1,0 +1,35 @@
+{
+  "denominators": {
+    "n_test": 108,
+    "n_val": 110,
+    "n_seeds": 5
+  },
+  "pairwise_decoded_agreement_mean": 0.9203703703703703,
+  "pairwise_decoded_agreement_min_max": [
+    0.8981481481481481,
+    0.9629629629629629
+  ],
+  "pairwise_probability_cosine_mean": 0.9968018378201696,
+  "events_all_five_seeds_agree": 92,
+  "events_all_five_seeds_agree_frac": 0.8518518518518519,
+  "decoded_level_spread_hist": [
+    92,
+    16,
+    0,
+    0,
+    0
+  ],
+  "decoded_level_spread_mean": 0.14814814814814814,
+  "hard_majority_vote": {
+    "threshold": 0.2302131579940419,
+    "coverage": 0.8148148148148148,
+    "weighted_kappa_covered": 0.8494413407821229,
+    "dangerous_underclassification_fnr_covered": 0.045454545454545456
+  },
+  "abstention_overlap": {
+    "ensemble_covers": 87,
+    "covered_by_all_five_singles": 82,
+    "ensemble_covers_but_no_single_does": 0,
+    "all_singles_cover_but_ensemble_does_not": 0
+  }
+}

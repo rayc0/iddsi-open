@@ -20,7 +20,10 @@ on only **31.0%** of images (n_pairs = 575, full tier-2 sample, regen
 2026-09-16; Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766 — still
 essentially chance for 5 classes), with a systematic tier-1 under-prediction
 bias toward the safe end (see `hf/model_README.md` and `hf/HAZARD_LOG.md`
-H-NOISE / H-UNDERPRED). This protocol replaces harvested opinion with
+H-NOISE / H-UNDERPRED). Label set for those kappas (H-YARDSTICK): they are
+agreement between the two VLM judges who produced the label set, so they
+characterise the yardstick itself rather than a model scored against one. This
+protocol replaces harvested opinion with
 physically tested specimens made at a desk: one person with a blender, a
 fork, a sieve and thickener turns one base food into all five levels (L3–L7)
 in about 10 minutes. 60 base foods x 5 levels = 300 specimens in about 10
@@ -215,6 +218,12 @@ mandatory:
    second-make level, 5 x 5 table) over the subsample. Target: kappa >= 0.6.
    Publish the value whatever it is; a value below target is reported as a
    limitation of the release, and no labels are rewritten to raise it.
+   Label set for this kappa (H-YARDSTICK): the single-operator physical-test
+   labels this protocol produces, scored against that operator's own re-test —
+   a different label set from the v0.5 consensus or the v0.7 full-coverage
+   consensus, so it is not comparable to any model kappa in the release card.
+   It is the first label set in this project that is not built by a model, which
+   is why it is the only candidate for a non-circular yardstick.
 6. Re-test rows (every event with `retest_of` set) NEVER enter training splits
    (see `docs/SPECIMEN_SCHEMA.md`). They exist only for the reliability
    analysis and as held-out reference.
