@@ -242,6 +242,54 @@ Measured status on the v0.7 manifest (2026-10-12, `HGROUP_VERIFICATION.md`, numb
   evidence they are correct. Note also that H-KAPPACOV (kappa is coverage-filtered)
   and H-QWENBIAS (agreement is consistency, not correctness) both apply here and
   both compound this one.
+- Audit addendum (lane an01_yardstick, 2026-10-12, nonce c9c3968f18cb): an
+  independent re-derivation from the per-event prediction files **confirms both
+  halves of this hazard and could not refute it** -- v0.4 0.5404-0.5995, v0.5
+  0.5371-0.6137 and v0.7 0.4913-0.5547 (0/5 seeds each) against the v0.5 labels,
+  and v0.4 0.7364-0.8077, v0.5 0.7036-0.7953, v0.7 0.8375-0.8604 (5/5 seeds each)
+  against the v0.7 labels, matching the ranges quoted above to the digit. Full
+  table, denominators and the reproduction scripts are in
+  `results/yardstick_audit/` (`tools/yardstick_audit.py`,
+  `tools/yardstick_audit_sklearn_check.py`, `tools/yardstick_audit_compare.py`).
+  The audit also found one defect in the *evidence*, not in the claim: see
+  H-YARDEVID below. Nothing in the original entry is retracted.
+
+## H-YARDEVID — the file H-YARDSTICK cites as its evidence is not the gate metric
+
+- Hazard: H-YARDSTICK says it was found "by scoring every model against every
+  label set (`results/v07_release/bias_matrix.json`)". That file does not contain
+  wk1. All six of its cells are the mean over 5 seeds of quadratic weighted kappa
+  over **all** held-out rows with the model's raw pre-abstention CORAL prediction
+  -- abstentions included in the denominator -- not the coverage-filtered kappa
+  the gate uses. Reproduced cell-for-cell in
+  `results/yardstick_audit/bias_matrix_identification.json`: v0.4/v0.5-labels
+  0.553996, v0.4/v0.7-labels 0.704578, v0.5/v0.5-labels 0.518891, v0.5/v0.7-labels
+  0.671259, v0.7/v0.5-labels 0.487183, v0.7/v0.7-labels 0.812725.
+- Why it matters: read as the gate metric -- which is what a reader will assume a
+  file cited as gate evidence holds -- `bias_matrix.json` **refutes** the sentence
+  it is attached to. Its v0.7-labels column has v0.5 at 0.671259, below the 0.70
+  gate, i.e. 0/5 rather than 5/5. The sentence itself is correct on wk1 (5/5 seeds
+  each, reproduced above), but the number that would let a reviewer check it is
+  not in any committed JSON: `results/v07_release/head_to_head2.json` likewise
+  holds kappa over all rows, and it is scored against the **v0.5** labels on the
+  108 events common to all three models, not against the v0.7 labels its
+  directory and the v0.7 commit message imply. Only v0.7's own wk1
+  (0.8375-0.8604) is committed, in `results/v07_release/v07_seed*_metrics.json`.
+- Fix: publish the cross-yardstick table on wk1 with its denominators stated, and
+  name the quantity in `bias_matrix.json` and `head_to_head2.json` in the file or
+  beside it. Until then a reviewer cannot check the H-YARDSTICK numbers from the
+  repository alone. `results/yardstick_audit/per_seed.json` is that table.
+- Residual risk: this compounds H-YARDSTICK rather than replacing it, and it
+  extends it. The residual-risk sentence in H-YARDSTICK quotes "0.70-0.86" against
+  the v0.7 labels and "0.48-0.57" against the v0.5 ones. Measured on the 108
+  events common to all three models, `0.70-0.86` is **wk1** against the v0.7
+  labels (0.7036-0.8604) while `0.48-0.57` is **kappa over all rows** against the
+  v0.5 labels (0.4753-0.5662): the two halves of one sentence are different
+  metrics. The direction of the finding survives on either metric alone -- wk1
+  0.70-0.86 vs 0.49-0.61, all rows 0.65-0.83 vs 0.48-0.57 -- but the ranges are
+  not the same quantity and must not be quoted together. A hazard whose evidence
+  file holds a different metric than the hazard's own sentence is the same class
+  of defect as H-KAPPACOV: the number and the claim drift apart quietly.
 
 ## Retained boundary hazards
 
@@ -258,3 +306,4 @@ v0.2 (2026-10-10): four metric-and-split hazards added after a 30-lane audit of 
 v0.3 (2026-10-11): four hazards added. H-LEAK records that the v0.2 split was measured to be contaminated (4 visual families spanned train/val/test) and is now fixed and asserted; H-AUGRC records that the H-ABSTBLIND defect is now measured correctly (all-N rate 0.176-0.282, AUGRC 0.242-0.295) rather than only disclosed; H-GATE records that the wk1 gate is disputed by the ordinal literature and is deliberately left unchanged; H-LABELCEIL records that a third independent labeller does not improve agreement (40.0% vs 42.9%), so the ceiling is physical, not algorithmic. The wk1 gate still fires on all five v0.3 seeds and the weights stay withheld.
 
 v0.7 group-disjointness audit (2026-10-12): H-GROUP's literal claim is measured on the shipped v0.7 manifest and HOLDS — 501 groups over 532 rows, no `group_id` in more than one split, `event_id` unique, and no near-duplicate image pair (dHash ≤ 6 AND pHash ≤ 8, recomputed from 532 JPEGs over 141,246 pairs), byte duplicate, source page, Nutrition5k dish id or recipe id crosses a split boundary. The hazard is not closed: 495 of 501 groups are singletons, so the configured control still separates almost nothing, and 6 food names sit on both sides of the split with 6 same-level cross-split pairs (2 test-vs-train), because the group key is the near-duplicate connected component rather than the dish. Three manifest defects are newly recorded and none silenced: `group_size` stale for 3 groups / 18 rows, 12 duplicated event rows in `realweak_pilot/events.jsonl` (one conflicting on `level_weak`), and a recorded `phash` that is not reproducible from the stored JPEGs (4 of 532 exact). A gate now runs the check: `trainer/tests/test_group_disjointness_v07.py`, 6 tests, 43 passing in the trainer suite. No figure changes sign, no gate is weakened, and the weights stay withheld.
+v0.4-audit (2026-10-12, lane an01_yardstick, nonce c9c3968f18cb): H-YARDSTICK independently re-derived from the per-event prediction files and CONFIRMED on both halves — against the v0.5 consensus all three models fail wk1 (v0.4 0.5404-0.5995 on its own 142-event split, 0.5733-0.6053 on the 108 events common to all three; v0.5 0.5371-0.6137; v0.7 0.4913-0.5547; 0/5 seeds each), and against the v0.7 full-coverage consensus all three pass (v0.4 0.7364-0.8077, v0.5 0.7036-0.7953, v0.7 0.8375-0.8604; 5/5 seeds each). The published ranges reproduce to the digit. One hazard added, H-YARDEVID, recording that the file H-YARDSTICK cites as its evidence (`results/v07_release/bias_matrix.json`) holds kappa over all rows including abstentions rather than the gate metric wk1, and that `head_to_head2.json` is scored against the v0.5 labels rather than the v0.7 ones; it also records that H-YARDSTICK's residual-risk sentence quotes wk1 on one side and all-rows kappa on the other. No figure in any prior entry changes sign, no gate is weakened, and the weights stay withheld. Reproduction: `tools/yardstick_audit.py`, `tools/yardstick_audit_sklearn_check.py`, `tools/yardstick_audit_compare.py`, `tools/tests/test_yardstick_audit.py`, outputs in `results/yardstick_audit/`.

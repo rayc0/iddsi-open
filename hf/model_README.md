@@ -36,6 +36,8 @@ The two VLM judges (Qwen3-VL-2B tier-1 vs Qwen3-VL-8B tier-2) agree on **31.0%**
 
 This inter-judge agreement IS the headline negative finding: web photos without a physical scale fiducial cannot be weakly labelled for IDDSI texture levels, even by strong VLMs, because middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry. The new kappa disclosure was not in v0.0 because the preliminary 22.6% was measured on a smaller subset; the regen on the full tier-2 sample (n=575) is the publication-grade figure. Full table: `results/regen_20260916/inter_judge_20260916.md`.
 
+**Label set for this kappa (H-YARDSTICK).** This κ is agreement *between the two VLM judges who produced the label set*, not a model scored against a label set — it characterises the yardstick itself, so it has no "which label set" answer of its own. For contrast, every model kappa published in this card is measured against a label set we built: the v0.4/v0.5 numbers were measured against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7 full-coverage consensus pass (v0.7: 0.838-0.860).
+
 ### Under-prediction finding (new in v0.1, not in v0.0)
 
 The cross-tab on the full sample reveals a systematic pattern the preliminary ceiling finding did not state: tier-1 **under-predicts** difficulty. Only L3 calls are reliable. The interior classes drift toward the regular-food end:
@@ -76,6 +78,8 @@ Five seeds, held-out test n=102 each. Full per-seed files in
 | coverage | 0.881 | 0.500 – 0.618 | **collapsed** |
 | calibration gate (FNR <= 0.05) | FALSE | 1 of 5 seeds | still failing |
 
+**Label set for this kappa (H-YARDSTICK).** The v0.1 and v0.2 kappas above were measured against the **Qwen tier-2 judge labels** — the two-size, one-family weak labels, not a consensus label set. On that yardstick both fail the pre-registered wk1 gate (weighted kappa >= 0.70); the same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860). The gate outcome here is therefore a property of the label set as much as of the model.
+
 **What actually happened.** v0.2 does not classify better; it declines more.
 Each seed makes 28–36 dangerous under-calls across 102 test events but *answers*
 wrongly on only 2–8 of them — the abstention intercepts roughly 85% of the
@@ -85,7 +89,8 @@ metric cannot see an abstention at all (H-ABSTBLIND), and v0.1's 0.333 was
 measured at coverage 0.881 while v0.2's is measured at ~0.55, so **the two
 figures are not the same measurement**.
 
-**Gates.** wk1 (kappa >= 0.70) fires on all five seeds — best 0.539. wk2
+**Gates.** wk1 (kappa >= 0.70) fires on all five seeds — best 0.539 (label set:
+Qwen tier-2 judge labels; see the H-YARDSTICK note above). wk2
 (FNR <= 0.05) is met on 1 of 5 (seed 29, 0.0488). The wk1 kill rule therefore
 still fires and the weights remain withheld under the 2026-09-07 decision.
 Nothing in v0.2 reopens it.
@@ -131,6 +136,8 @@ assertions pass. The test set grew 102 → 142 events, so intervals tighten.
 Per-seed files in `results/v03_groupdisjoint/`; AUGRC and the corrected all-N
 rate in `selective_metrics.json`.
 
+**Label set for this kappa (H-YARDSTICK).** The v0.3 kappas above were measured against the **v0.3 Qwen tier-2 judge labels** (the split fix changed which rows are held out, not which label set the rows carry). On that yardstick they fail the pre-registered wk1 gate (weighted kappa >= 0.70); the same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860).
+
 ### We fixed the metric we said was broken
 
 v0.2 disclosed **H-ABSTBLIND**: `dangerous_underclassification_rate_all` gates its
@@ -160,9 +167,27 @@ two reasons stated plainly: their task spans 8 levels and ours 5, and **our test
 labels are themselves only 31%-consistent**, so a low MAE partly measures
 agreement with noisy targets rather than accuracy. Treat it as context, not a win.
 
+Two corrections to that paragraph, both from the 2026-10-12 benchmark-framing pass
+(`docs/BENCHMARK_FRAMING.md`, `hf/HAZARD_LOG.md` H-BENCH). First, the MAE quoted
+here (0.655–0.761, per-seed values in `runs/v03/selective_metrics.json`) is an
+**all-142-events, abstention-bypassed** figure, as are the exact-match and MAE
+rows in the v0.5 and v0.7 tables below — a basis that was never stated and that
+differs from the covered-events basis of the kappa rows beside them. Second, two
+reasons understate it: the full list of reasons the two benchmarks are not the
+same measurement has **ten** entries, including clinician-verified versus VLM
+consensus labels, circularity between our labeller and our training labels, an
+abstention mechanism the external pipeline does not have, a test split that is
+64.8% L7 (a constant "L7" predictor already scores 64.81% exact on it, above
+their 61.74%), and 108 versus 115 events. On the all-events basis with
+abstentions scored as misses we are at 66.67–70.37%, which is **below** their
+GPT-4.1 figure. The correct conclusion is that this comparison is uninformative
+in both directions, not that it favours either side.
+
 ### Gates, and a challenge we are disclosing rather than hiding
 
 The wk1 gate stays **κ ≥ 0.70**, unchanged. It fires on every v0.3 seed.
+
+**Label set for this gate result (H-YARDSTICK).** "Fires on every v0.3 seed" is measured against the **v0.3 Qwen tier-2 judge labels**. The v0.4/v0.5 numbers were measured against the **v0.5 consensus** and also fail the wk1>=0.70 gate on it; the same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860). A kappa in this card is not interpretable without the label set it was measured against — see H-YARDSTICK in `HAZARD_LOG.md`.
 
 We are aware this gate is contested for our task type: Delgado & Tibau (2019),
 "Why Cohen's Kappa should be avoided as a performance measure in ordinal
@@ -230,11 +255,14 @@ the clean test set below:
 | coverage | 0.732 – 0.845 |
 | under-classification, all-N | 0.162 – 0.296 |
 
+**Label set for this kappa (H-YARDSTICK).** The kappa in this table was measured against the **v0.5 consensus** label set, and on that yardstick it fails the pre-registered wk1 gate (weighted kappa >= 0.70; best seed 0.566). The same models measured against the **v0.7 full-coverage consensus** pass it — v0.7 scores 0.838–0.860 (5 seeds, held-out n=108, `results/v07_release/v07_seed*_metrics.json`). Nothing about the models changed between those two columns; only the yardstick did.
+
 Against the **identical 108 events**, the model trained on the old Qwen tier-2
 labels scores exact 0.370–0.454, kappa 0.315–0.399, MAE 0.907–1.019. Consensus
 labels are worth roughly **+0.12 kappa and −0.19 levels of MAE** on the same
 ground truth. That is a real improvement, not the scoring artefact an earlier
-comparison of ours suggested.
+comparison of ours suggested. (Label set for both kappas: the v0.5 consensus;
+both fail wk1>=0.70 on it — see the H-YARDSTICK note above.)
 
 ### Finding 2 — 22.2% of the corpus was never usable (152 of 684 events)
 
@@ -285,6 +313,8 @@ worse, because the removals fall disproportionately on the hard middle levels
 | consensus labels, 400 train rows (**released**) | 0.444–0.546 | 0.540–0.566 | 0.722–0.778 |
 | consensus labels, 314 train rows (cleaned corpus) | 0.426–0.500 | 0.498–0.547 | 0.778–0.870 |
 
+**Label set for the kappa column (H-YARDSTICK):** both rows were measured against the **v0.5 consensus** label set and both fail the pre-registered wk1 gate (weighted kappa >= 0.70) on it. The same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860).
+
 We release the 400-row model and publish the cleaned-corpus run beside it rather
 than quietly dropping it. The direction of the next data effort is therefore
 **not** "delete more" — it is "acquire more mid-level labels", which is what the
@@ -298,6 +328,8 @@ best 0.566. The calibration gate is not met. The weights stay withheld under the
 *Pattern Recognition* 105:107192
 (https://www.sciencedirect.com/science/article/abs/pii/S0167865518313413); we
 disclose the objection rather than re-register the gate after seeing results.
+
+**Label set for this gate result (H-YARDSTICK).** "Best 0.566" is measured against the **v0.5 consensus** label set, so this FAIL is a property of that yardstick: the same models measured against the **v0.7 full-coverage consensus** pass wk1 (v0.7: 0.838-0.860, 5 seeds, held-out n=108). The withholding decision is unchanged either way — it rests on the dangerous under-classification and calibration failures, not on the kappa alone — but a reader must not carry "0.566 < 0.70" away as a statement about the models.
 
 ### Still no ground truth
 
@@ -330,23 +362,112 @@ therefore partly an artefact of measuring against a label set we ourselves had
 built and then improved. A reviewer is entitled to discount every performance
 claim we have made to date, including this one.
 
+*Read that table with H-YARDSTICK (`HAZARD_LOG.md`): the gate outcome above is a
+property of the label set, not of the model. The left column (v0.5 consensus)
+fails wk1>=0.70 on 0/5 seeds for every model; the right column (v0.7
+full-coverage consensus) passes on 5/5. Both columns are the same checkpoints.*
+
 ### v0.7 on its own labels, stated with the caveat attached
 
+Held-out test split: **108 events** of 532 rows (314 train / 110 val / 108 test),
+all web-harvested, level distribution L3 10 / L4 11 / L5 7 / L6 10 / **L7 70**.
+Coverage is 78.7 – 85.2%, so 85 – 92 of the 108 events carry a prediction and
+16 – 23 are abstentions. Every row below now states its denominator and its
+decode rule. Reproduce with
+`docker exec -w /work/lanes/an05_external iddsi-train python -I tools/benchmark_framing.py`;
+outputs `lane_runs/an05_external/benchmark_framing.json`, which also asserts that
+the recomputed kappa and coverage match each run's published `metrics.json`
+(max abs diff 0.0 over 5 seeds).
+**Label set for every kappa below (H-YARDSTICK): the v0.7 full-coverage consensus**, 5 seeds, held-out n=108, `results/v07_release/v07_seed*_metrics.json`. On this yardstick wk1 passes. The v0.4/v0.5 numbers were measured against the v0.5 consensus and fail the wk1>=0.70 gate; the same models measured against the v0.7 full-coverage consensus pass (v0.7: 0.838-0.860). The v0.7-vs-v0.7 comparison is the circular one and is discounted accordingly.
 | metric | v0.7, 5 seeds, held-out n=108 |
 |---|---|
 | weighted kappa, covered (the wk1 quantity) | **0.838 – 0.860** |
 | weighted kappa, all rows | 0.793 – 0.825 |
-| exact match | **0.694 – 0.741** |
-| MAE in IDDSI levels | **0.380 – 0.444** |
+| **exact match, covered events, CORAL decode** | **80.90 – 84.88%** |
+| **MAE in IDDSI levels, covered events, CORAL decode** | **0.244 – 0.292** |
+| exact match, all 108 events, abstentions scored as misses | 0.667 – 0.704 |
+| MAE in IDDSI levels, all 108 events, abstention bypassed | 0.380 – 0.444 |
+| exact match, all 108 events, CORAL decode, abstention bypassed | 0.694 – 0.741 |
+| exact match, covered, macro (unweighted per-class) | 0.375 – 0.480 |
 | under-classification, all-N | 0.093 – 0.130 |
+| **baseline: always answer L7** (the majority test class, 70/108) | **0.648 exact, MAE 0.898** |
+| baseline: draw a label from the empirical test prior | 0.452 exact |
 
-For context, the strongest published single-image result uses **clinically
-verified** labels (115 images, 8 levels) and reports 61.74% exact match and MAE
-0.809 — https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full
-(He, Mung, Kam & Chan, *Frontiers in Nutrition*, 2026-06-29). Our numbers are
-better than that on both. **That comparison should be discounted, not celebrated:**
-our labels and our model share a source, so an unknown share of the agreement is
-circular, and ours are machine labels, not clinician-verified.
+Two rows need reading against the baselines, not against each other. Against
+always-L7 on the same 108 events our exact match is only **1.9 – 12.0 points
+higher depending on the denominator** — 8.2 – 12.0 points on the covered basis
+against the matched covered-subset baseline of 70.65 – 76.47%, and only 1.9 – 5.6
+points on the all-events basis with abstentions scored as misses. On MAE the
+signal is real: our covered MAE is **0.356 – 0.412 of** the matched constant
+predictor's (0.600 – 0.761 levels), about 60% lower. Per-class exact match on
+covered events is 100% on L7, 77.8 – 90.0% on L3, 0 – 50.0% on L4, and **0.0% on
+L5 and L6 in every one of the five seeds**. This is an L7 detector with a
+partial L3 detector, not a 5-level classifier. Flipping the 22 of 108 test labels
+whose two labellers disagreed to the other labeller's vote moves exact match to
+79.78 – 87.06% and MAE to 0.188 – 0.326 (`lane_runs/an05_external/label_noise_band.json`) — about
+±3 points of our headline is a property of the yardstick, not the model.
+
+**A correction to what this card printed before.** The v0.7 exact-match and MAE
+rows in the previous revision (0.694 – 0.741 and 0.380 – 0.444) were computed
+with the abstention mechanism bypassed: all 108 events forced to a CORAL level,
+including the 16 – 23 the model itself called `unclear`. That is a different
+quantity from the covered-events kappa printed three rows above it, and it was
+placed next to an external number without saying so. All four candidate rules
+were tested against the old printed ranges; only "CORAL over all 108 events,
+abstention bypassed" reproduces both
+(`benchmark_framing.json → summary.decode_variant_audit`). Both bases are now
+printed, labelled.
+
+### Where this sits against published work — and why the comparison is uninformative
+
+The strongest published single-image result uses **clinically verified** labels
+(115 images, 8 levels, IDDSI 0–7) and reports 61.74% exact match (its chosen Qwen
+pipeline), 70.43% (GPT-4.1), MAE 0.809, FNR 9.2% —
+https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1829703/full
+(He, Mung, Kam & Chan, *Frontiers in Nutrition*, 2026-06-29). We did not open
+that paper and cannot re-derive any of its numbers: no CEIV-115 images, labels,
+or per-image outputs exist in this workspace, and the repo itself notes that CEIV
+publishes examples rather than the machine-readable corpus
+(`paper/sections/related_work.md:97`). Those figures are restated from our own
+citation, not measured here.
+
+**We make no claim of being better, equal, or worse than it.** On the covered
+basis we print 80.90 – 84.88% exact and 0.244 – 0.292 MAE against their 61.74%
+and 0.809; on the all-events basis with abstentions scored as misses we print
+66.67 – 70.37%, which is *below* their GPT-4.1 figure. The full list of reasons
+the two are not the same measurement is in `docs/BENCHMARK_FRAMING.md`; the
+load-bearing ones:
+
+1. **Label authority.** Theirs are clinician-verified physical tests; ours are
+   VLM consensus (108/108 of the test split). Our MAE measures agreement with a
+   machine-built yardstick, not error against physical truth. Two Qwen judges
+   agree on 31.0% of the same images (n_pairs = 575, `hf/HAZARD_LOG.md` H-NOISE);
+   v0.7 cross-family agreement on the doubled sample is 74.5% (251/337,
+   `results/v07_release/coverage_meta.json`). A yardstick that is itself ~75%
+   consistent cannot certify an 83.5% exact match.
+2. **Circularity.** 102 of the 108 test rows carry a judgement from `step5`, one
+   of the labellers whose votes define the consensus label, and our model is
+   trained on those labels. The self-agreement share is unknown and unmeasured.
+3. **Class count.** Theirs spans IDDSI 0–7 (8 levels, liquids included); ours
+   L3–L7 (5 levels, no liquids). Exact match gets harder as the class count
+   grows, and MAE's attainable range grows with it (max |error| 7 vs 4).
+4. **Denominator and abstention semantics.** Their 115 images are all scored; our
+   covered basis drops the 16 – 23 events the model itself selected as
+   low-confidence, which biases it upward against an always-answers baseline.
+5. **Class balance.** 70/108 = 64.8% of our test split is L7, so a constant "L7"
+   predictor scores 64.81% — already above their 61.74%. Their class distribution
+   is not stated anywhere in this repo, so no baseline-normalised comparison is
+   possible without inventing it.
+6. **Provenance.** All 108 of our test events are web-harvested CC-licence
+   candidates; theirs is clinician-verified.
+7. **Model class.** They swept 14 prompted general-purpose VLMs; ours is a
+   SigLIP-2 CORAL head fine-tuned and threshold-calibrated on this corpus.
+8. **Sample size.** 115 vs 108, and our covered subset is 85 – 92 events; the
+   pooled 83.52% carries a bootstrap 95% CI of [79.86, 86.96], which says nothing
+   about the label-noise band or the class-balance effect above.
+9. **Unverifiable anchor.** None of their numbers can be checked or
+   denominator-audited from here.
+10. **Our own provenance was wrong until this run** (see the correction above).
 
 The one thing that is not circular: **v0.4 and v0.5 never saw the v0.7 labels,
 and they score 0.736–0.808 and 0.704–0.795 against them.** Models trained on
@@ -393,11 +514,15 @@ level = #{k : P(y>k) > 0.5}
 
 Weighted kappa 0.42 flat in both, measured against noise.
 
+**Label set for this kappa (H-YARDSTICK).** The 0.42 is measured against the early **Qwen tier-2 judge labels** (the pre-consensus label set of that run), not against any consensus label set, and it fails the wk1>=0.70 gate on that yardstick. The same models measured against the **v0.7 full-coverage consensus** pass it (v0.7: 0.838-0.860).
+
 ## Pre-registered gates and which fired
 
 - wk1: weighted kappa >=0.70, else kill photo-classification.
 - wk2: external macro-F1 >=0.75 plus dangerous under-classification <=5% at <=30% abstention.
 - Observed dangerous under-classification is 33%.
+
+**Label set for the wk1 gate (H-YARDSTICK).** wk1 is a single unconditional number, but the kappa it is applied to is only meaningful with its label set attached. The v0.4/v0.5 numbers were measured against the **v0.5 consensus** and fail the wk1>=0.70 gate; the same models measured against the **v0.7 full-coverage consensus** pass (v0.7: 0.838-0.860). The gate is not weakened and not re-registered — the annotation states which yardstick produced each verdict.
 
 The model fails all of them. The wk1 kill rule FIRES. Photo-classification is killed as a product capability. This is why only code and results ship.
 
