@@ -1,9 +1,25 @@
-PREP — Place 200 g takeaway sweet and sour pork (pieces as served, sauce included) directly onto the capture surface. Do not blend. Do not sieve. Do not add water or thickener. This is a reference specimen; piece integrity and visible sauce coating are required. Record total specimen mass on the scale; pieces should retain their battered coating and glossy sauce.
+1. PREP
 
-IDDSI TEST — Fork pressure test: press fork tines fully into a piece against the plate. The piece must NOT deform, smear, split, or flatten to less than half its original height under firm thumb pressure; it must remain a distinct solid piece. Spoon tilt test: attempt to pour/spoon a piece; it must not flow, drip, or run off the tilted spoon — pieces stay or slide whole. Fork drip test: lift a piece on fork tines; no continuous drip stream falls from fork between lifts. All three pass criteria must be met to confirm L7 Regular.
+Bought form (BASE_FOOD_LIST BF52): takeaway sweet and sour pork — battered pork pieces in sweet-and-sour sauce, bought as a takeaway order. Allergens: gluten (wheat batter), egg (batter wash); confirm against the menu/pack label at portioning and record any extra in prep.notes.
 
-VISUAL QC — (1) Distinct, individual battered pieces visible, not a blended mass. (2) Glossy red-orange sauce coats pieces but does not pool into a homogeneous puree. (3) Pieces hold shape when nudged with fork tines; coating remains attached.
+Weigh 200 g of the takeaway onto the capture tray — pieces exactly as served, sauce included. Record the actual mass to 0.1 g. Do NOT blend, sieve, chop, dice, or add water or thickener: L7 is the food as bought and normally served. Pieces must keep their battered coating and glossy sauce. Wipe tray and fork before the take.
 
-SHOTS — Stills: sweet_and_sour_pork_L7_take1.jpg hero (45°, ruler + 15 mm checkerboard in frame); sweet_and_sour_pork_L7_take1.jpg top-down (checkerboard only); sweet_and_sour_pork_L7_take1.jpg fork-press close-up mid-press. Clips: sweet_and_sour_pork_L7_take1.mp4 fork-press and spoon-tilt (8–12 s); sweet_and_sour_pork_L7_take1.mp4 IDDSI test film.
+2. IDDSI TEST
 
-FAIL MODES — (1) Pieces crush flat or smear under fork → not L7; re-make is not permitted — re-source a different specimen or fresh takeaway batch. (2) Sauce runs/drips continuously off fork → liquid component too thin; re-source. (3) Pieces stuck together as one mass → blend or processing occurred; re-source. No re-blending permitted for L7.
+5.1 Fork pressure — ACTIVE, the only deciding test at L7. Place the largest piece on the tray and press the bowl of the fork down onto it with the thumb until the thumbnail blanches white. Pass: the piece keeps its shape — it may dent or split along the batter, but it must NOT squash flat to a paste, smear, or extrude through the tine gaps, and it must still require real chewing. In the same take, hold the piece against the 100 mm ruler: every piece must measure >= 15 mm on its longest edge. Record both outcomes on camera.
+
+5.2 Spoon tilt — skip: 5.2 applies at L3, L4 and L5 only. An L7 piece is a solid that must not pour, so a tilt take has no pass window at this level.
+
+5.3 Fork drip — skip: 5.3 applies at L3 and L4 only. Nothing in an L7 specimen should drip through the tines, so there is nothing to measure.
+
+5.4 Syringe flow — skip: required for every L3 specimen only; a solid battered piece cannot be drawn into a 10 ml syringe.
+
+3. VISUAL QC
+
+(1) Distinct battered pieces, individually visible — never a blended or stuck-together mass. (2) Glossy red-orange sauce clings to the pieces and does not pool as a separate free-liquid layer in the tray. (3) Every piece measures >= 15 mm on its longest edge against the 100 mm ruler. (4) Coating stays attached when a piece is nudged with the fork tines.
+
+4. FAIL MODES
+
+(1) Piece squashes flat, smears, or extrudes through the tines under the blanching press → softer than L7. Re-source a firmer piece from the same order or a fresh takeaway batch and re-shoot the full set. Do NOT chop, mash, blend or sieve it — that produces L6/L5/L4 material and moves the specimen away from L7. (2) Any piece under 15 mm on its longest edge → too small for L7 (that is L6 material): re-source a portion with whole pieces >= 15 mm and never capture the undersize pieces as L7. (3) Breading fallen off, pieces fused into one mass, or sauce pooled as free liquid → the portion is not the takeaway as served: re-source from a fresh order; no re-frying, re-coating, or added water or thickener. (4) A piece that resists the fork and demands real chewing is PASSING, not failing — never soften or process it to make the test easier.
+
+SHOTS — 3 stills + 2 clips: sweet_and_sour_pork_L7_take1.jpg — 45° hero, 100 mm ruler + 15 mm checkerboard in frame, 3–4 pieces visible. sweet_and_sour_pork_L7_take2.jpg — top-down, checkerboard only, full 200 g portion. sweet_and_sour_pork_L7_take3.jpg — fork-press close-up, tines mid-press into the largest piece, ruler in frame for the >= 15 mm read. sweet_and_sour_pork_L7_take1.mp4 — 8–12 s unbroken fork-pressure take. sweet_and_sour_pork_L7_take2.mp4 — 8–12 s full IDDSI test film (fork pressure + ruler read).
