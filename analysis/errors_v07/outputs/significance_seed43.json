@@ -1,0 +1,73 @@
+{
+ "source_corpus": {
+  "worst_group": "harvest_d1b",
+  "worst_n": 29,
+  "worst_wrong_level": 6,
+  "worst_rate": 0.2069,
+  "rest_wrong_level": 10,
+  "rest_n": 79,
+  "rest_rate": 0.1266,
+  "fisher_two_sided_p": 0.3607,
+  "denominator": "108 test events; 'wrong level' = decided and != true level"
+ },
+ "provider": {
+  "worst_group": "openverse",
+  "worst_n": 28,
+  "worst_wrong_level": 6,
+  "worst_rate": 0.2143,
+  "rest_wrong_level": 10,
+  "rest_n": 80,
+  "rest_rate": 0.125,
+  "fisher_two_sided_p": 0.3525,
+  "denominator": "108 test events; 'wrong level' = decided and != true level"
+ },
+ "harvest_visual_bucket_weak_rule": {
+  "worst_group": "visible_pieces_about_15mm_l6_candidate",
+  "worst_n": 29,
+  "worst_wrong_level": 8,
+  "worst_rate": 0.2759,
+  "rest_wrong_level": 8,
+  "rest_n": 79,
+  "rest_rate": 0.1013,
+  "fisher_two_sided_p": 0.0332,
+  "denominator": "108 test events; 'wrong level' = decided and != true level"
+ },
+ "label_agreement": {
+  "worst_group": "1/2",
+  "worst_n": 22,
+  "worst_wrong_level": 9,
+  "worst_rate": 0.4091,
+  "rest_wrong_level": 7,
+  "rest_n": 86,
+  "rest_rate": 0.0814,
+  "fisher_two_sided_p": 0.0006,
+  "denominator": "108 test events; 'wrong level' = decided and != true level"
+ },
+ "food_family_heuristic": {
+  "worst_group": "smooth_dessert_pudding",
+  "worst_n": 2,
+  "worst_wrong_level": 1,
+  "worst_rate": 0.5,
+  "rest_wrong_level": 4,
+  "rest_n": 40,
+  "rest_rate": 0.1,
+  "fisher_two_sided_p": 0.2265,
+  "denominator": "108 test events; 'wrong level' = decided and != true level"
+ },
+ "over_under_asymmetry": {
+  "over": 12,
+  "under": 4,
+  "binom_sign_test_p": 0.0768,
+  "denominator": "16 wrong-level decisions among 92 decided events (seed 43)"
+ },
+ "weak_rule_l6_bucket_vs_level": {
+  "l6_bucket_n": 29,
+  "l6_bucket_true_levels": {
+   "7": 18,
+   "5": 6,
+   "6": 4,
+   "4": 1
+  },
+  "note": "the harvest L6 bucket is not purely level-6 events"
+ }
+}

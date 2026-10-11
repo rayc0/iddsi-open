@@ -1,0 +1,355 @@
+{
+ "17": {
+  "decided": 89,
+  "wrong_level": 17,
+  "over": 12,
+  "under": 5,
+  "mean_signed_error": 0.1124,
+  "adjacent_slips": 11,
+  "top_confusions": [
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L4"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   }
+  ],
+  "true_L4_pred_L7": 1,
+  "true_L5_pred_L7": 1,
+  "true_L7_pred_L4": 0
+ },
+ "29": {
+  "decided": 86,
+  "wrong_level": 13,
+  "over": 10,
+  "under": 3,
+  "mean_signed_error": 0.1279,
+  "adjacent_slips": 8,
+  "top_confusions": [
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   }
+  ],
+  "true_L4_pred_L7": 1,
+  "true_L5_pred_L7": 1,
+  "true_L7_pred_L4": 0
+ },
+ "43": {
+  "decided": 92,
+  "wrong_level": 16,
+  "over": 12,
+  "under": 4,
+  "mean_signed_error": 0.1304,
+  "adjacent_slips": 9,
+  "top_confusions": [
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   }
+  ],
+  "true_L4_pred_L7": 1,
+  "true_L5_pred_L7": 2,
+  "true_L7_pred_L4": 0
+ },
+ "71": {
+  "decided": 85,
+  "wrong_level": 13,
+  "over": 10,
+  "under": 3,
+  "mean_signed_error": 0.1294,
+  "adjacent_slips": 8,
+  "top_confusions": [
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   }
+  ],
+  "true_L4_pred_L7": 1,
+  "true_L5_pred_L7": 1,
+  "true_L7_pred_L4": 0
+ },
+ "101": {
+  "decided": 85,
+  "wrong_level": 13,
+  "over": 10,
+  "under": 3,
+  "mean_signed_error": 0.1294,
+  "adjacent_slips": 8,
+  "top_confusions": [
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L3",
+    "pred": "L7"
+   },
+   {
+    "true": "L5",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L7"
+   },
+   {
+    "true": "L4",
+    "pred": "L3"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   },
+   {
+    "true": "L6",
+    "pred": "L7"
+   }
+  ],
+  "true_L4_pred_L7": 1,
+  "true_L5_pred_L7": 1,
+  "true_L7_pred_L4": 0
+ }
+}

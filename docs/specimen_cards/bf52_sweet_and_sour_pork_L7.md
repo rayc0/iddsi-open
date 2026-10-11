@@ -18,8 +18,9 @@ Weigh 200 g of the takeaway onto the capture tray — pieces exactly as served, 
 
 (1) Distinct battered pieces, individually visible — never a blended or stuck-together mass. (2) Glossy red-orange sauce clings to the pieces and does not pool as a separate free-liquid layer in the tray. (3) Every piece measures >= 15 mm on its longest edge against the 100 mm ruler. (4) Coating stays attached when a piece is nudged with the fork tines.
 
-4. FAIL MODES
+4. SHOTS
+3 stills + 2 clips. sweet_and_sour_pork_L7_take1.jpg — 45° hero, 100 mm ruler + 15 mm checkerboard in frame, 3–4 pieces visible. sweet_and_sour_pork_L7_take2.jpg — top-down, checkerboard only, full 200 g portion. sweet_and_sour_pork_L7_take3.jpg — fork-press close-up, tines mid-press into the largest piece, ruler in frame for the >= 15 mm read. sweet_and_sour_pork_L7_take1.mp4 — 8–12 s unbroken fork-pressure take. sweet_and_sour_pork_L7_take2.mp4 — 8–12 s full IDDSI test film, one unbroken take carrying both the fork pressure and the >= 15 mm ruler read, so the size evidence sits in the test film and not only in a still.
+
+5. FAIL MODES
 
 (1) Piece squashes flat, smears, or extrudes through the tines under the blanching press → softer than L7. Re-source a firmer piece from the same order or a fresh takeaway batch and re-shoot the full set. Do NOT chop, mash, blend or sieve it — that produces L6/L5/L4 material and moves the specimen away from L7. (2) Any piece under 15 mm on its longest edge → too small for L7 (that is L6 material): re-source a portion with whole pieces >= 15 mm and never capture the undersize pieces as L7. (3) Breading fallen off, pieces fused into one mass, or sauce pooled as free liquid → the portion is not the takeaway as served: re-source from a fresh order; no re-frying, re-coating, or added water or thickener. (4) A piece that resists the fork and demands real chewing is PASSING, not failing — never soften or process it to make the test easier.
-
-SHOTS — 3 stills + 2 clips: sweet_and_sour_pork_L7_take1.jpg — 45° hero, 100 mm ruler + 15 mm checkerboard in frame, 3–4 pieces visible. sweet_and_sour_pork_L7_take2.jpg — top-down, checkerboard only, full 200 g portion. sweet_and_sour_pork_L7_take3.jpg — fork-press close-up, tines mid-press into the largest piece, ruler in frame for the >= 15 mm read. sweet_and_sour_pork_L7_take1.mp4 — 8–12 s unbroken fork-pressure take. sweet_and_sour_pork_L7_take2.mp4 — 8–12 s full IDDSI test film (fork pressure + ruler read).

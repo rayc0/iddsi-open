@@ -1,0 +1,300 @@
+{
+ "source_corpus": [
+  {
+   "axis": "source_corpus",
+   "group": "harvest_d1",
+   "n": 68,
+   "correct": 52,
+   "wrong_level": 8,
+   "under": 2,
+   "over": 6,
+   "abstain": 8,
+   "error_rate_wrong_level_of_n": 0.1176,
+   "non_decision_rate_of_n": 0.1176
+  },
+  {
+   "axis": "source_corpus",
+   "group": "harvest_d1b",
+   "n": 29,
+   "correct": 15,
+   "wrong_level": 6,
+   "under": 2,
+   "over": 4,
+   "abstain": 8,
+   "error_rate_wrong_level_of_n": 0.2069,
+   "non_decision_rate_of_n": 0.2759
+  },
+  {
+   "axis": "source_corpus",
+   "group": "realweak_pilot",
+   "n": 11,
+   "correct": 9,
+   "wrong_level": 2,
+   "under": 0,
+   "over": 2,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.1818,
+   "non_decision_rate_of_n": 0.0
+  }
+ ],
+ "provider": [
+  {
+   "axis": "provider",
+   "group": "open-images",
+   "n": 68,
+   "correct": 52,
+   "wrong_level": 8,
+   "under": 2,
+   "over": 6,
+   "abstain": 8,
+   "error_rate_wrong_level_of_n": 0.1176,
+   "non_decision_rate_of_n": 0.1176
+  },
+  {
+   "axis": "provider",
+   "group": "openverse",
+   "n": 28,
+   "correct": 14,
+   "wrong_level": 6,
+   "under": 2,
+   "over": 4,
+   "abstain": 8,
+   "error_rate_wrong_level_of_n": 0.2143,
+   "non_decision_rate_of_n": 0.2857
+  },
+  {
+   "axis": "provider",
+   "group": "nutrition5k",
+   "n": 11,
+   "correct": 9,
+   "wrong_level": 2,
+   "under": 0,
+   "over": 2,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.1818,
+   "non_decision_rate_of_n": 0.0
+  },
+  {
+   "axis": "provider",
+   "group": "wikimedia",
+   "n": 1,
+   "correct": 1,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.0
+  }
+ ],
+ "harvest_visual_bucket_weak_rule": [
+  {
+   "axis": "weak_rule",
+   "group": "other_or_unmeasurable_l7_visual_bucket",
+   "n": 55,
+   "correct": 41,
+   "wrong_level": 7,
+   "under": 1,
+   "over": 6,
+   "abstain": 7,
+   "error_rate_wrong_level_of_n": 0.1273,
+   "non_decision_rate_of_n": 0.1273
+  },
+  {
+   "axis": "weak_rule",
+   "group": "visible_pieces_about_15mm_l6_candidate",
+   "n": 29,
+   "correct": 17,
+   "wrong_level": 8,
+   "under": 2,
+   "over": 6,
+   "abstain": 4,
+   "error_rate_wrong_level_of_n": 0.2759,
+   "non_decision_rate_of_n": 0.1379
+  },
+  {
+   "axis": "weak_rule",
+   "group": "uniform_smooth_l4_candidate",
+   "n": 10,
+   "correct": 8,
+   "wrong_level": 1,
+   "under": 1,
+   "over": 0,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.1,
+   "non_decision_rate_of_n": 0.1
+  },
+  {
+   "axis": "weak_rule",
+   "group": "visible_liquid_flow_at_most_l3",
+   "n": 8,
+   "correct": 5,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 3,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.375
+  },
+  {
+   "axis": "weak_rule",
+   "group": "visible_particles_le_4mm_l5_candidate",
+   "n": 6,
+   "correct": 5,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.1667
+  }
+ ],
+ "label_agreement": [
+  {
+   "axis": "agreement",
+   "group": "2/2",
+   "n": 47,
+   "correct": 43,
+   "wrong_level": 3,
+   "under": 0,
+   "over": 3,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.0638,
+   "non_decision_rate_of_n": 0.0213
+  },
+  {
+   "axis": "agreement",
+   "group": "1/1",
+   "n": 39,
+   "correct": 26,
+   "wrong_level": 4,
+   "under": 0,
+   "over": 4,
+   "abstain": 9,
+   "error_rate_wrong_level_of_n": 0.1026,
+   "non_decision_rate_of_n": 0.2308
+  },
+  {
+   "axis": "agreement",
+   "group": "1/2",
+   "n": 22,
+   "correct": 7,
+   "wrong_level": 9,
+   "under": 4,
+   "over": 5,
+   "abstain": 6,
+   "error_rate_wrong_level_of_n": 0.4091,
+   "non_decision_rate_of_n": 0.2727
+  }
+ ],
+ "food_family_heuristic": [
+  {
+   "axis": "food_family",
+   "group": "uninformative_title",
+   "n": 46,
+   "correct": 33,
+   "wrong_level": 7,
+   "under": 1,
+   "over": 6,
+   "abstain": 6,
+   "error_rate_wrong_level_of_n": 0.1522,
+   "non_decision_rate_of_n": 0.1304
+  },
+  {
+   "axis": "food_family",
+   "group": "ambiguous_multi_family",
+   "n": 20,
+   "correct": 11,
+   "wrong_level": 4,
+   "under": 2,
+   "over": 2,
+   "abstain": 5,
+   "error_rate_wrong_level_of_n": 0.2,
+   "non_decision_rate_of_n": 0.25
+  },
+  {
+   "axis": "food_family",
+   "group": "starch_dish",
+   "n": 12,
+   "correct": 9,
+   "wrong_level": 2,
+   "under": 0,
+   "over": 2,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.1667,
+   "non_decision_rate_of_n": 0.0833
+  },
+  {
+   "axis": "food_family",
+   "group": "meat_fish_egg",
+   "n": 8,
+   "correct": 7,
+   "wrong_level": 1,
+   "under": 0,
+   "over": 1,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.125,
+   "non_decision_rate_of_n": 0.0
+  },
+  {
+   "axis": "food_family",
+   "group": "candy_baked_sweet",
+   "n": 7,
+   "correct": 5,
+   "wrong_level": 1,
+   "under": 1,
+   "over": 0,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.1429,
+   "non_decision_rate_of_n": 0.1429
+  },
+  {
+   "axis": "food_family",
+   "group": "salad_vegetable_fruit",
+   "n": 5,
+   "correct": 5,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.0
+  },
+  {
+   "axis": "food_family",
+   "group": "beverage",
+   "n": 5,
+   "correct": 5,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 0,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.0
+  },
+  {
+   "axis": "food_family",
+   "group": "soup_congee_porridge",
+   "n": 3,
+   "correct": 1,
+   "wrong_level": 0,
+   "under": 0,
+   "over": 0,
+   "abstain": 2,
+   "error_rate_wrong_level_of_n": 0.0,
+   "non_decision_rate_of_n": 0.6667
+  },
+  {
+   "axis": "food_family",
+   "group": "smooth_dessert_pudding",
+   "n": 2,
+   "correct": 0,
+   "wrong_level": 1,
+   "under": 0,
+   "over": 1,
+   "abstain": 1,
+   "error_rate_wrong_level_of_n": 0.5,
+   "non_decision_rate_of_n": 0.5
+  }
+ ]
+}

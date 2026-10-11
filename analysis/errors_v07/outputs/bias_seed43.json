@@ -1,0 +1,76 @@
+{
+ "seed": 43,
+ "denominator": "decided test events (confidence >= threshold)",
+ "decided": 92,
+ "abstained": 16,
+ "correct": 76,
+ "over_predicted": 12,
+ "under_predicted": 4,
+ "mean_signed_error": 0.1304,
+ "median_signed_error": 0.0,
+ "mean_abs_error": 0.2826,
+ "under_prediction_rate_of_decided": 0.0435,
+ "under_prediction_fnr_of_decided": 0.0615,
+ "under_predictable_denominator": 65,
+ "under_events_all_test": 4,
+ "under_events_all_test_rate": 0.037,
+ "over_minus_under": 8,
+ "per_level_signed_bias": {
+  "L3": {
+   "support": 10,
+   "decided": 10,
+   "abstained": 0,
+   "mean_signed_error_decided": 0.4,
+   "over": 1,
+   "under": 0,
+   "correct": 9
+  },
+  "L4": {
+   "support": 11,
+   "decided": 4,
+   "abstained": 7,
+   "mean_signed_error_decided": 0.5,
+   "over": 1,
+   "under": 1,
+   "correct": 2
+  },
+  "L5": {
+   "support": 7,
+   "decided": 5,
+   "abstained": 2,
+   "mean_signed_error_decided": -0.4,
+   "over": 2,
+   "under": 3,
+   "correct": 0
+  },
+  "L6": {
+   "support": 10,
+   "decided": 8,
+   "abstained": 2,
+   "mean_signed_error_decided": 1.0,
+   "over": 8,
+   "under": 0,
+   "correct": 0
+  },
+  "L7": {
+   "support": 70,
+   "decided": 65,
+   "abstained": 5,
+   "mean_signed_error_decided": 0.0,
+   "over": 0,
+   "under": 0,
+   "correct": 65
+  }
+ },
+ "signed_error_histogram": {
+  "-4": 0,
+  "-3": 0,
+  "-2": 3,
+  "-1": 1,
+  "0": 76,
+  "1": 8,
+  "2": 2,
+  "3": 1,
+  "4": 1
+ }
+}

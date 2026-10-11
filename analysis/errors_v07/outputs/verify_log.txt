@@ -1,0 +1,122 @@
+PASS  best seed: got=43 want=43
+PASS  seed43 macro_f1: got=0.3949309489682161 want=0.3949309489682161
+PASS  seed17 macro_f1: got=0.3594155844155844 want=0.3594155844155844
+PASS  seed101 macro_f1: got=0.33986013986013985 want=0.33986013986013985
+PASS  seed29 macro_f1: got=0.33169129720853857 want=0.33169129720853857
+PASS  seed71 macro_f1: got=0.3193103448275862 want=0.3193103448275862
+PASS  all seeds met calibration gate: got=True want=True
+PASS  all 5 seeds reproduce published confusion matrix: got=True want=True
+PASS  6x6 row totals: got=[10, 11, 7, 10, 70, 0] want=[10, 11, 7, 10, 70, 0]
+PASS  6x6 col totals: got=[13, 2, 0, 0, 77, 16] want=[13, 2, 0, 0, 77, 16]
+PASS  L6->L7 cell: got=8 want=8
+PASS  L5->L3 cell: got=3 want=3
+PASS  L4->L3 cell: got=1 want=1
+PASS  L5->L7 cell: got=2 want=2
+PASS  L4->L7 cell: got=1 want=1
+PASS  L3->L7 cell: got=1 want=1
+PASS  L4 abstain: got=7 want=7
+PASS  L7 abstain: got=5 want=5
+PASS  total n: got=108 want=108
+PASS  L6-L7 adjacent total: got=8 want=8
+PASS  L6-L7 rate up per true L6: got=0.8 want=0.8
+PASS  L3-L4 adjacent total: got=1 want=1
+PASS  L4-L5 adjacent total: got=0 want=0
+PASS  L5-L6 adjacent total: got=0 want=0
+PASS  adjacent slips: got=9 want=9
+PASS  wrong level decisions: got=16 want=16
+PASS  decided: got=92 want=92
+PASS  gap2: got=5 want=5
+PASS  gap3plus: got=2 want=2
+PASS  over: got=12 want=12
+PASS  under: got=4 want=4
+PASS  correct: got=76 want=76
+PASS  abstained: got=16 want=16
+PASS  mean signed error: got=0.1304 want=0.1304
+PASS  under rate all test: got=0.037 want=0.037
+PASS  under fnr of decided: got=0.0615 want=0.0615
+PASS  under denominator: got=65 want=65
+PASS  hist +1: got=8 want=8
+PASS  hist +2: got=2 want=2
+PASS  hist +3: got=1 want=1
+PASS  hist +4: got=1 want=1
+PASS  hist -1: got=1 want=1
+PASS  hist -2: got=3 want=3
+PASS  L6 signed bias: got=1.0 want=1.0
+PASS  L5 signed bias: got=-0.4 want=-0.4
+PASS  agreement 1/2 rate: got=0.4091 want=0.4091
+PASS  agreement 1/2 fisher p: got=0.0006 want=0.0006
+PASS  agreement 1/2 n: got=22 want=22
+PASS  agreement 1/2 wrong: got=9 want=9
+PASS  weak_rule L6 rate: got=0.2759 want=0.2759
+PASS  weak_rule L6 fisher p: got=0.0332 want=0.0332
+PASS  corpus fisher p: got=0.3607 want=0.3607
+PASS  provider fisher p: got=0.3525 want=0.3525
+PASS  food family fisher p: got=0.2265 want=0.2265
+PASS  over/under binom p: got=0.0768 want=0.0768
+PASS  levels never emitted (seed43): got=['L5', 'L6'] want=['L5', 'L6']
+PASS  levels never emitted (seed17): got=True want=True
+PASS  levels never emitted (seed29): got=True want=True
+PASS  levels never emitted (seed71): got=True want=True
+PASS  levels never emitted (seed101): got=True want=True
+PASS  emitted L3 count: got=13 want=13
+PASS  emitted L4 count: got=2 want=2
+PASS  emitted L7 count: got=77 want=77
+PASS  argmax never tops L6 (seed43): got=['L4', 'L6'] want=['L4', 'L6']
+PASS  abstain n: got=16 want=16
+PASS  L4 abstain rate: got=0.6364 want=0.6364
+PASS  L3 abstain rate: got=0.0 want=0.0
+PASS  argmax would-be under: got=7 want=7
+PASS  L6 bucket n: got=29 want=29
+PASS  L6 bucket actually L6: got=0.1379 want=0.1379
+PASS  L6 bucket labelled L7: got=18 want=18
+PASS  L6 bucket labelled L5: got=6 want=6
+PASS  wrong_level_rate point: got=0.1481 want=0.1481
+PASS  wrong_level_rate lo: got=0.0833 want=0.0833
+PASS  wrong_level_rate hi: got=0.213 want=0.213
+PASS  under_rate_all lo: got=0.0093 want=0.0093
+PASS  under_rate_all hi: got=0.0741 want=0.0741
+PASS  L6_to_L7 lo: got=0.0278 want=0.0278
+PASS  L6_to_L7 hi: got=0.1296 want=0.1296
+PASS  macro f1 match: got=True want=True
+PASS  kappa match: got=True want=True
+PASS  recall L3: got=0.9 want=0.9
+PASS  recall L4: got=0.5 want=0.5
+PASS  recall L5: got=0.0 want=0.0
+PASS  recall L6: got=0.0 want=0.0
+PASS  recall L7: got=1.0 want=1.0
+PASS  precision L3: got=0.6923 want=0.6923
+PASS  precision L4: got=1.0 want=1.0
+PASS  precision L7: got=0.8442 want=0.8442
+PASS  distinct emitted: got=['L3', 'L4', 'L7'] want=['L3', 'L4', 'L7']
+PASS  uninformative_title errors: got=7 want=7
+PASS  uninformative_title share of 16: got=0.4375 want=0.4375
+PASS  starch_dish errors: got=2 want=2
+PASS  starch_dish n: got=12 want=12
+PASS  meat_fish_egg errors: got=1 want=1
+PASS  candy_baked_sweet errors: got=1 want=1
+PASS  harvest_d1 rate: got=0.1176 want=0.1176
+PASS  harvest_d1b rate: got=0.2069 want=0.2069
+PASS  realweak_pilot rate: got=0.1818 want=0.1818
+PASS  open-images rate: got=0.1176 want=0.1176
+PASS  openverse rate: got=0.2143 want=0.2143
+PASS  nutrition5k rate: got=0.1818 want=0.1818
+PASS  wikimedia n: got=1 want=1
+PASS  L6 bucket wrong: got=8 want=8
+PASS  1/2 n: got=22 want=22
+PASS  1/2 wrong: got=9 want=9
+PASS  2/2 n: got=47 want=47
+PASS  1/1 n: got=39 want=39
+PASS  seed17 top confusion is L6->L7: got=('L6', 'L7') want=('L6', 'L7')
+PASS  seed17 over > under: got=True want=True
+PASS  seed29 top confusion is L6->L7: got=('L6', 'L7') want=('L6', 'L7')
+PASS  seed29 over > under: got=True want=True
+PASS  seed43 top confusion is L6->L7: got=('L6', 'L7') want=('L6', 'L7')
+PASS  seed43 over > under: got=True want=True
+PASS  seed71 top confusion is L6->L7: got=('L6', 'L7') want=('L6', 'L7')
+PASS  seed71 over > under: got=True want=True
+PASS  seed101 top confusion is L6->L7: got=('L6', 'L7') want=('L6', 'L7')
+PASS  seed101 over > under: got=True want=True
+PASS  min cross-seed MSE: got=0.112 want=0.112
+PASS  max cross-seed MSE: got=0.13 want=0.13
+
+ALL CHECKS PASSED
