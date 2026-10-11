@@ -1,0 +1,91 @@
+name: publish-hf
+
+# Publishes the IDDSI-Open release to Hugging Face WITHOUT any VPN on the Mac or
+# the DGX. The runner is outside the CN network, so it reaches huggingface.co
+# directly; neither the Mac nor the box ever needs a tunnel for this.
+#
+# The staged tree is produced by ops/stage_release.sh, which hard-refuses to
+# include weights or the harvested dataset (the 2026-09-07 locked release shape:
+# code + eval results + flow-test grader + the measured negative finding).
+
+on:
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: "Commit message for the Hub revision"
+        required: false
+        default: "publish release from GitHub Actions"
+      repo:
+        description: "Hub repo id"
+        required: false
+        default: "lingualeap/iddsi-open-siglip2-v0"
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Stage the release (refuses weights/dataset by design)
+        run: bash ops/stage_release.sh
+
+      - name: Verify no weight or dataset bytes are staged
+        run: |
+          if find _release_staging/v0 \( -name '*.pt' -o -name '*.safetensors' -o -name '*.bin' -o -name '*.npz' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) | grep -q .; then
+            echo "::error::weight/media file present in staging — refusing to publish"
+            find _release_staging/v0 \( -name '*.pt' -o -name '*.safetensors' -o -name '*.bin' -o -name '*.npz' -o -name '*.jpg' -o -name '*.png' \)
+            exit 1
+          fi
+          echo "staging is clean: $(find _release_staging/v0 -type f | wc -l) files, no weights/media"
+
+      - name: Publish to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO: ${{ inputs.repo || 'lingualeap/iddsi-open-siglip2-v0' }}
+          HF_MSG: ${{ inputs.revision || 'publish release from GitHub Actions' }}
+        run: |
+          python -m pip install -q --upgrade huggingface_hub
+          python - <<'PY'
+          import os, sys
+          from huggingface_hub import HfApi
+
+          token = os.environ["HF_TOKEN"]
+          repo = os.environ["HF_REPO"]
+          msg = os.environ["HF_MSG"]
+          api = HfApi(token=token)
+
+          who = api.whoami()["name"]
+          print(f"authenticated as {who}; publishing to {repo}")
+
+          # 1. the staged release tree (code + eval + the negative finding)
+          api.upload_folder(
+              folder_path="_release_staging/v0",
+              repo_id=repo,
+              repo_type="model",
+              commit_message=msg,
+          )
+
+          # 2. the honest release card as the repo README
+          card = "hf/model_README.md"
+          if os.path.exists(card):
+              api.upload_file(
+                  path_or_fileobj=card,
+                  path_in_repo="README.md",
+                  repo_id=repo,
+                  repo_type="model",
+                  commit_message=f"{msg} (release card)",
+              )
+          else:
+              print("WARNING: hf/model_README.md missing — card not updated", file=sys.stderr)
+
+          print("published:", repo)
+          PY
