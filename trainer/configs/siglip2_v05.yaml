@@ -30,13 +30,19 @@ data:
   # signal. It is NOT evidence that consensus is more CORRECT. Without a
   # physically-measured anchor we cannot tell whether Qwen carries a family bias
   # or the two new families share one.
-  # v0.5 additionally REMOVES the unusable ~30% of the corpus. A labelability
-  # sweep judged all 684 events with two independent model families, which agree
-  # 96.7% on "is there food" and 85.5% on "is it levellable" -- a binary verdict
-  # that is far more reliable than the 5-level label ever was (74.7% best
-  # cross-family, 30.9% within-Qwen). 152 events (29.8%) fail at least one test
-  # (empty vessels, diagrams, no discernible food mass) and are dropped: 532 rows
-  # remain, split 314/110/108 inherited verbatim from v0.3.
+  # v0.5 additionally REMOVES the unusable 22.2% of the corpus (152 of 684
+  # events). A labelability sweep judged the corpus with two independent model
+  # families -- Step-5 on 683 of the 684 events, MiniMax-M3.1f on 512, both
+  # families on 510 -- which agree 96.7% on "is there food" (493/510) and 85.5%
+  # on "is it levellable" (436/510), a binary verdict that is far more reliable
+  # than the 5-level label ever was (74.7% best cross-family, 30.9% within-Qwen).
+  # 152 events fail at least one test (empty vessels, diagrams, no discernible
+  # food mass) and are dropped: 684 - 152 = 532 rows remain, split 314/110/108
+  # inherited verbatim from v0.3.
+  # NOTE the two percentages for the same 152 events: 152/684 = 22.2% is the
+  # share of the whole corpus (the figure to quote, and the one that matches the
+  # rows actually removed); 152/510 = 29.8% is a conditional rate over the 510
+  # both-judged events only. Reproduce both with tools/denominator_audit.py.
   # Removals hit the middle levels hardest (L4 96->66, L5 75->65, L7 400->305),
   # consistent with undecidable photos being mid-level ones.
   manifest: /work/data/manifest_v05_clean.jsonl

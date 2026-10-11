@@ -236,14 +236,19 @@ labels are worth roughly **+0.12 kappa and −0.19 levels of MAE** on the same
 ground truth. That is a real improvement, not the scoring artefact an earlier
 comparison of ours suggested.
 
-### Finding 2 — ~30% of the corpus was never usable
+### Finding 2 — 22.2% of the corpus was never usable (152 of 684 events)
 
-A labelability sweep judged all 684 events with both families:
+A labelability sweep judged the corpus with two independent model families. They
+did **not** judge the same events: Step-5 returned a verdict on 683 of the 684
+events, MiniMax-M3.1f on 512, and **510** events carry a verdict from both. So
+every rate below names the denominator it was computed over:
 
 ```
-cross-family agreement, IS-THERE-FOOD   96.7%   (493/510)
-cross-family agreement, LEVELLABLE      85.5%
-unusable on either test                 152 of 684 = 29.8%
+                                    denominator   value
+IS-THERE-FOOD agreement             493/510       96.7%
+LEVELLABLE agreement                436/510       85.5%
+unusable, share of whole corpus     152/684       22.2%
+unusable, share of both-judged      152/510       29.8%
 ```
 
 The binary judgement is answered almost perfectly by independent families; the
@@ -252,13 +257,26 @@ food mass — are unusable, and **every number published up to v0.4 was measured
 with them in the test set**. All v0.5 numbers above are on the **cleaned** test
 set of 108 events (`results/v05_release/unusable_event_ids.txt`).
 
+**Which of the two unusable percentages to quote.** The corpus-wide 22.2% is the
+one that survives contact with the data: all 152 ids are present in the 684-event
+pre-clean manifests (`data/manifest_v04_consensus.jsonl`) and none survive in the
+532-row cleaned manifest (`data/manifest_v07_weighted.jsonl`), i.e. 684 − 152 =
+532 rows were actually removed. The 29.8% figure is a *conditional* rate over the
+510 both-judged events, and it is only valid if all 152 unusable events fall
+inside that 510 — the aggregate sweep output does not record which ones do, and
+its own counts (683 + 512 − 510 = 685) cannot all be subsets of the same 684
+events. **Quote 152/684 = 22.2% for any claim about the corpus; quote 152/510 =
+29.8% only for a claim explicitly conditioned on the both-judged subset, and say
+so.** Reproduce both with `python3 tools/denominator_audit.py`.
+
 Note what this says about label quality: the questions we *can* verify are
 answered reliably; the 5-level question is not. That is the honest shape of the
 problem.
 
 ### Finding 3 — cleaning the corpus costs performance
 
-Training on the cleaned 532 rather than 684 is more defensible and measurably
+Removing the 152 unusable events takes the corpus from 684 to 532 rows. Training
+on that cleaned 532 rather than the full 684 is more defensible and measurably
 worse, because the removals fall disproportionately on the hard middle levels
 (L4 96→66, L5 75→65, L7 400→305):
 
@@ -354,7 +372,8 @@ recipe byte-identical to every prior version.
 
 No number here is a claim about real-world accuracy. Two independent model
 families agree on an IDDSI level from a photograph about three times in four, the
-"is there food" question is reliable (96.7% cross-family) while the level is not,
+"is there food" question is reliable (96.7% cross-family, 493/510 events both
+families judged) while the level is not,
 and **the physically-tested protocol — 300 specimens, ~10 hours, already fully
 specified — remains the only route to ground truth and has never been run.** Until
 it is, every gate result here is conditional on a yardstick we built ourselves.

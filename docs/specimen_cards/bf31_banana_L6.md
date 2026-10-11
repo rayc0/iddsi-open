@@ -1,14 +1,20 @@
-1. PREP
-Weigh 200 g ripe banana flesh on the scale. With a fork, mash on a board until no lumps exceed 8 mm. Pass the mash once through the 4 mm sieve using the back of a spoon; discard retained fibre. Spread the sieved mash, roll flat to 8 mm thickness with a straight edge, then cut with a knife and ruler into slices and cubes measuring exactly 8 x 8 x 8 mm and 15 x 15 x 8 mm pieces. Target pieces must not exceed 15 mm in any dimension per the per-level note. Hold finished pieces on a plate under a damp paper towel until capture. No blender, no thickener, no added liquid.
+PREP
+Weigh 200 g ripe banana flesh on the scale and record the mass. Peel, then cut the flesh by hand into slices and pieces measuring 8-15 mm on the longest edge, checked against the 100 mm ruler; aim for 12 mm plus or minus 2 mm. No mashing, no sieving and no blender: banana at L6 is cut fruit, and any step that takes the flesh below 8 mm — mashing it, pressing it through a 4 mm mesh, or re-forming sieved puree into cubes — produces L5 or L4 particles wearing an L6 label. Do not add thickener; L6 is solid pieces, not a thickened liquid. Do not add water or any other liquid. Hold the pieces cut-face up on a plate under an inverted bowl or a dry paper towel to slow browning — nothing damp, nothing that wets the cut faces — until capture. Target specimen 200 g, filmed within 10 min of cutting.
 
-2. IDDSI TEST
-Fork-pressure test: place one 15 mm cube under the fork tines; press with the thumb on the fork until the thumbnail blanches white. Pass criterion: the piece squashes, deforms, and does not return to its original shape; it does not spring back. Spoon-tilt test: load five pieces on a spoon and tilt to 45 degrees; pass criterion is no pieces slide off or fall. Fork-drip test is not required at L6.
+IDDSI TEST
+Applicable tests at L6, per docs/CAPTURE_PROTOCOL.md section 5: the fork-pressure test only. The spoon-tilt, fork-drip and 10 ml / 10 s syringe flow tests do not apply at L6 and must not be run, filmed or recorded as L6 evidence.
 
-3. VISUAL QC
-Pieces hold a clean-cut edge without smearing. Colour is uniform pale yellow with no browned flecks. Mash reads smooth and moist, not dry or gummy, when touched with a fork tip.
+Fork-pressure test with the L6 sizing check in the same take: hold two or three pieces against the 100 mm ruler so the measurement is legible on camera, then place one of those measured 8-15 mm pieces under the fork tines and press with the thumb until the thumbnail blanches white. Pass = the piece squashes and deforms under that pressure and does not recover its shape when the fork is lifted, and every piece in frame measures 8-15 mm on its longest edge. A piece that springs back is too firm for L6 and fails. A piece that smears or slumps before the fork touches it is too soft and fails.
 
-4. SHOTS
-Stills: hero 45-degree angle with 100 mm ruler and 15 mm checkerboard in frame; top-down with checkerboard centred; fork-press close-up mid-press showing thumbnail blanching. Clips: 8-12 s fork-press and spoon-tilt sequence; full IDDSI test film. Files: banana_L6_take1.jpg, banana_L6_take2.jpg, banana_L6_take3.jpg, banana_L6_take1.mp4, banana_L6_take2.mp4.
+The piece pressed must be one of the cut pieces measured in the same take, with its own cut faces visible — never a cube re-formed from mashed or sieved flesh, which measures 15 mm on the outside and is L5 inside.
 
-5. FAIL MODES
-Pieces above 15 mm: re-cut and re-weigh. Mash too wet and slumps on the spoon tilt: pat dry on absorbent paper, re-cut. Mash too firm and resists fork pressure: re-mash with 5 ml water per 100 g, re-sieve, re-cut. Record any remake in the log.
+VISUAL QC
+Discrete cut slices with clean-cut faces and intact, not ragged, edges, every piece 8-15 mm on the longest edge against the 100 mm ruler; no piece below 8 mm. The cut face shows the fruit's own soft structure — not a smooth puree, and not a pressed-together or re-formed surface. Colour uniform pale yellow with no browned flecks and no white fibrous threads. The pieces hold their shape when lifted on a fork and no weeping juice pools on the plate or the fork. A pile that reads as mash, slumps when lifted, or shows no cut faces is L5 or L4 and fails L6.
+
+SHOTS
+Still 1, banana_L6_take1.jpg: 45-degree hero, several pieces with their cut faces toward the camera, 100 mm ruler and 15 mm checkerboard in frame. Still 2, banana_L6_take2.jpg: top-down on the checkerboard with several pieces against the 100 mm ruler. Still 3, banana_L6_take3.jpg: fork-press close-up mid-press on one measured piece, thumbnail blanching visible.
+Clip 1, banana_L6_take1.mp4: 8-12 s fork-press on one measured piece, showing the squash and the non-recovery.
+Clip 2, banana_L6_take2.mp4: full L6 test film — ruler sizing of two or three pieces, then the fork press on one of those same pieces. No spoon-tilt and no fork-drip footage: neither is an L6 test.
+
+FAIL MODES
+Pieces above 15 mm — re-cut smaller and re-measure on the ruler. Pieces below 8 mm — the batch has fragmented; re-cut from a firmer section, do not capture. A piece springs back under the fork — too firm for L6; re-test a riper section, and if no section of the fruit passes, re-make with a riper banana rather than re-labelling a piece that will not squash. Never rescue a firm piece by mashing it, sieving it or re-cutting it into a cube: that converts the specimen to L5 or L4, so a card passed that way is a false label. Pieces weep juice on the plate — too ripe; lift the juice off and re-check. If it re-accumulates within 2 min the fruit is overripe for L6: re-make the batch as L5 (fork-mash to 4 mm with the sieve as gauge; the L5 test set is the 4 mm sieve gauge, spoon tilt, and fork pressure as a supporting check) and file it against the L5 card — never file it as L6. Record any remake in the log.

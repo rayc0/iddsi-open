@@ -12,7 +12,7 @@ Fork drip is NOT in the L5 set — do not apply it. No syringe test at L5.
 
 3. VISUAL QC
 
-On the fork: soft, lumpy, glossy curds, no pooled liquid in the cup of the tines. On the spoon: holds a mounded heap, surface slightly wet not watery, no milky runoff at the rim.
+On the fork: soft, lumpy curds with a slight sheen, no pooled liquid in the cup of the tines. On the spoon: holds a mounded heap, surface slightly wet not watery, no milky runoff at the rim.
 
 4. SHOTS
 
@@ -25,6 +25,6 @@ Files: baked_egg_custard_L5_take1.jpg / .mp4.
 
 5. FAIL MODES
 
-Glossy purée with no visible curds (from blending, or from pressing the mash through the sieve): this is not L5 — it is L4 material. Re-make by hand-mash and use the sieve as a gauge only; do not re-blend and do not press the mash through the sieve. L5 is reachable for this food only by hand-mashing plus gauging.
+Smooth, glossy purée with no visible curds (from blending, or from pressing the mash through the sieve): a slight sheen on lumpy curds is fine — visible curds are the L5 requirement — but a curd-free glossy purée is not L5, it is L4 material. Re-make by hand-mash and use the sieve as a gauge only; do not re-blend and do not press the mash through the sieve. L5 is reachable for this food only by hand-mashing plus gauging.
 Too wet: milky liquid pools and pours off the spoon → drain on a sieve or fine strainer for 60 s WITHOUT pressing, discard the run-off, re-test.
 Dry, or curds >4 mm retained on the gauge → add 5 ml water, mash 30 s more, re-gauge; if curds are still >4 mm after a second attempt the custard is under-set — re-bake or start over.

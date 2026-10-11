@@ -157,20 +157,33 @@ This log is not a medical-device risk-management file. No severity, probability,
   agreement measurements on this task need an order of magnitude more data
   before they can be quoted, in either direction. The claims that survive the
   small sample are the ones about *coarse* judgement (is there food: 96.7%
-  cross-family) rather than fine ordinal judgement.
+  cross-family, 493/510 events both families judged) rather than fine ordinal
+  judgement.
 - Residual risk: none from this entry — it makes no claim of its own. The live
   risk is the opposite one: that the 74.7% cross-family figure is read as
   evidence of correctness. It is evidence of consistency only. See H-QWENBIAS.
 
-## H-UNUSABLE — ~30% of the corpus was never labelable, and every earlier number was measured with it
+## H-UNUSABLE — 22.2% of the corpus (152 of 684 events) was never labelable, and every earlier number was measured with it
 
-- Hazard: a labelability sweep judged all 684 events with two independent model
-  families. They agree **96.7% on "is there food"** and **85.5% on "is it
-  levellable"**, but **152 events (29.8%)** fail at least one test -- empty
-  vessels, diagrams, no discernible food mass. Those 152 sat in the held-out
-  split of v0.1 through v0.4, so every published metric was computed partly
-  against images that cannot carry an IDDSI level at all. Source:
-  `results/v05_release/unusable_event_ids.txt` and `labelability_sweep.json`.
+- Hazard: a labelability sweep judged the corpus with two independent model
+  families. They did **not** judge the same events: Step-5 returned a verdict on
+  683 of the 684 events, MiniMax-M3.1f on 512, and **510** events carry a verdict
+  from both. Over those 510 both-judged events the families agree **96.7% on
+  "is there food" (493/510)** and **85.5% on "is it levellable" (436/510)**, but
+  **152 events fail at least one test** -- empty vessels, diagrams, no
+  discernible food mass. Those 152 are **22.2% of the 684-event corpus**
+  (152/684) and **29.8% of the 510 both-judged events** (152/510). The
+  corpus-wide figure is the one to quote: all 152 ids are present in the
+  684-event pre-clean manifests and none survive in the 532-row cleaned manifest
+  (684 - 152 = 532), so 152/684 is the rate that matches what was actually
+  removed. The 29.8% figure is a conditional rate over a subset the aggregate
+  sweep output never enumerates, and its own counts (683 + 512 - 510 = 685)
+  cannot all be subsets of the same 684 events -- it must not be presented as a
+  corpus rate. Those 152 sat in the held-out split of v0.1 through v0.4, so every
+  published metric was computed partly against images that cannot carry an IDDSI
+  level at all. Source: `results/v05_release/unusable_event_ids.txt` and
+  `labelability_sweep.json`; reproduce every figure above with
+  `python3 tools/denominator_audit.py`.
 - How found: by running the sweep with 32 step-5-preview lanes and 5 MiniMax
   vision workers over the whole corpus on the DGX, not by a lane verdict. The
   asymmetry is the finding: the *binary* judgement is near-perfectly reliable
@@ -178,13 +191,14 @@ This log is not a medical-device risk-management file. No severity, probability,
   cross-family, 30.9% within-Qwen). We can verify what is in the frame; we cannot
   reliably verify what level it is.
 - Fix: v0.5 reports every metric on the **cleaned** 108-event test set. The
-  152 unusable events are listed and excluded.
+  152 unusable events are listed in `results/v05_release/unusable_event_ids.txt`
+  and excluded, taking the corpus from 684 to 532 rows.
 - Residual risk: removing them also removes training signal, because the
   removals fall on the hard middle levels (L4 96->66, L5 75->65, L7 400->305).
-  A model trained on the cleaned 532 scores *worse* than the released model on
-  the identical test set (exact 0.426-0.500 vs 0.444-0.546, kappa 0.498-0.547 vs
-  0.540-0.566). We publish both runs. The next data effort is therefore **more
-  mid-level labels, not more deletions**.
+  A model trained on the cleaned 532 (684 - 152 rows) scores *worse* than the
+  released model on the identical 108-event test set (exact 0.426-0.500 vs
+  0.444-0.546, kappa 0.498-0.547 vs 0.540-0.566). We publish both runs. The next
+  data effort is therefore **more mid-level labels, not more deletions**.
 
 ## H-QWENBIAS — two independent labellers agree with each other far better than with Qwen
 

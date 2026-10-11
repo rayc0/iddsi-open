@@ -140,13 +140,123 @@ Calibration procedure (first 5 foods, BF01–BF05):
    with the filmed flow test every time, since each food absorbs liquid
    differently.
 
-## Coverage summary
+## Coverage summary — the 267-of-300 accounting
 
-- 60 base foods, 6 categories of 10. Foods with at least one N/A cell are
-  counted in the completion report (see the self-check); every N/A names its
-  reason in the row above.
-- Expected specimen yield is below 300 (N/A cells are skipped, FAIL rows are
-  kept as fails): the release notes state the achieved count per level, and
-  the re-test subsample (>= 30 specimens) is drawn from achieved passes.
+The plan is 60 base foods x 5 levels (L3–L7) = **300 cells**. The capture run
+parsed **267 specimen cards** (`docs/specimen_cards/`, 267 `bf*_L*.md` files plus
+`INDEX.md`). So the yield is **267 of 300 cells**, and the 33-cell difference is
+**not a shortfall and not a loss**: it is the 33 cells this list itself marks
+N/A.
+
+**Disposition of the 33: dropped by design — none deferred, none duplicated.**
+Every one of the 33 absent cells is a cell the row above already marks N/A with
+a stated reason. An N/A cell is skipped, never forced, never substituted and
+never re-filed under another level, so nothing was carried forward to a later
+session (deferred) and nothing was re-used from another food or level
+(duplicated). Every claim below is measured, not assumed.
+
+Reproduce with `python3 tools/audit/audit_cell_accounting.py --markdown`
+(report: `tools/audit/cell_accounting.json`; pinned by
+`tools/tests/test_cell_accounting.py`).
+
+| Planned | Parsed | Absent | Absent cells with an N/A reason | Unexplained |
+|---|---|---|---|---|
+| 300 | 267 | 33 | 33 | 0 |
+
+| Integrity check | Result |
+|---|---|
+| food rows parsed (BF01–BF60, no numbering gaps, no duplicate rows) | 60 |
+| cards written for a cell the list marks N/A | 0 |
+| cards outside the planned 300-cell grid | 0 |
+| duplicate (food, level) card filenames | 0 |
+| byte-identical card files | 0 of 267 |
+| foods with all five cards | 42 of 60 |
+
+Read the zero rows as the guardrails they are: no card exists for a cell this
+list refuses, no card exists for a cell this list never planned, and no two
+cards are the same specimen written twice. If any of those four numbers stops
+being zero, the 267 figure is no longer the honest yield of this list and the
+accounting above must be re-run before it is quoted.
+
+### Where the 33 sit, by level
+
+| Level | Absent cells | Share of the 33 |
+|---|---|---|
+| L3 | 1 | 3% |
+| L4 | 2 | 6% |
+| L5 | 5 | 15% |
+| L6 | 9 | 27% |
+| L7 | 16 | 48% |
+
+Nearly half the absences (16 of 33) are L7. That is the expected shape, not an
+accident of the list: a food bought already processed (a paste, a gel, a set
+custard, a thin soy milk, minced pork) has no "food as bought and normally
+served" whole form to plate, so its regular-form cell is the first one that
+cannot be made honestly. L3 loses only one cell (BF60) because almost anything
+can be thinned to the flow window — BF60 is the exception and its reason is
+stated in the row.
+
+### Where the 33 sit, by reason class
+
+| Reason class (the level the row cannot reach) | Cells |
+|---|---|
+| L7 — no whole/regular form as bought and served | BF02, BF05, BF12, BF14, BF16, BF41, BF42, BF43, BF44, BF45, BF46, BF47, BF48, BF49, BF50, BF54 |
+| L6 — cannot form soft bite-size pieces <= 15 mm | BF02, BF05, BF41, BF42, BF45, BF46, BF47, BF49, BF50 |
+| L5 — no discrete particles <= 4 mm to mince | BF41, BF42, BF45, BF46, BF50 |
+| L4 — cannot hold shape without a separate thin liquid | BF38, BF42 |
+| L3 — cannot meet the L3 flow window honestly | BF60 |
+
+The clustering is a property of the bought *form*, not of the food. The three
+ready-to-eat pastes (BF45, BF46, BF50) and the spoonable yogurt (BF41) each lose
+the same three cells (L5, L6, L7) for the same physical reason — a homogeneous
+mass has no particles to mince, no pieces to cut and no whole form to plate —
+and the thin liquid base (BF42) loses those three plus L4. The three set
+desserts (BF43, BF44, BF48) lose L7 each. No food appears twice in this list
+and no level is claimed twice for one food.
+
+### Where the 33 sit, by food
+
+18 of the 60 foods carry at least one N/A cell; the other 42 parse all five
+cards.
+
+| Food | Cells absent | Cards parsed |
+|---|---|---|
+| BF02 Plain congee 白粥 | L6, L7 | 3 |
+| BF05 Cooked instant oats 燕麥粥 | L6, L7 | 3 |
+| BF12 Steamed minced pork patty 蒸肉餅 | L7 | 4 |
+| BF14 Steamed egg custard 蒸水蛋 | L7 | 4 |
+| BF16 Silken tofu 滑豆腐 | L7 | 4 |
+| BF38 Watermelon 西瓜 | L4 | 4 |
+| BF41 Plain yogurt 原味乳酪 | L5, L6, L7 | 2 |
+| BF42 Unsweetened soy milk 無糖豆漿 | L4, L5, L6, L7 | 1 |
+| BF43 Baked egg custard 燉蛋 | L7 | 4 |
+| BF44 Mango pudding 芒果布甸 | L7 | 4 |
+| BF45 Black sesame paste 芝麻糊 | L5, L6, L7 | 2 |
+| BF46 Smooth red bean paste 紅豆沙 | L5, L6, L7 | 2 |
+| BF47 Tofu fa (tofu pudding) 豆腐花 | L6, L7 | 3 |
+| BF48 Coconut jelly 椰汁糕 | L7 | 4 |
+| BF49 Double-skin milk 雙皮奶 | L6, L7 | 3 |
+| BF50 Peanut paste 花生糊 | L5, L6, L7 | 2 |
+| BF54 Salted-egg steamed pork patty 鹹蛋蒸肉餅 | L7 | 4 |
+| BF60 Lor mai gai (glutinous rice chicken) 糯米雞 | L3 | 4 |
+
+BF42 (unsweetened soy milk) is the extreme case: one card (L3, reached only by
+adding weighed thickener), because a thin liquid base has no piece form, no
+particle form and no shape-holding form. BF60 is the only food whose L3 is
+N/A.
+
+### What 267 means for the rest of the pack
+
+- **Expected specimen yield is 267, not 300** (N/A cells are skipped, FAIL rows
+  are kept as fails). The release notes state the achieved count per level
+  against this denominator; the re-test subsample (>= 30 specimens) is drawn
+  from achieved passes. 30 of 267 is 11.2%, so the >= 10% coverage rule in
+  `docs/CAPTURE_PROTOCOL.md` section 9 is still met with the same floor of 30 —
+  the floor is unchanged, only its denominator is now stated correctly.
+- `docs/CAPTURE_PROTOCOL.md` section 1 quotes "60 base foods x 5 levels = 300
+  specimens" as the *planned cell count*. 267 is the achievable yield once the
+  33 N/A cells above are dropped. Both numbers are correct for what they count;
+  neither should be quoted without its other half.
 - Allergen tags present on every row; the operator confirms against the pack
   label and logs any extra in `prep.notes`.
+

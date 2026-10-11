@@ -1,0 +1,221 @@
+{
+  "inputs": {
+    "food_list": "docs/BASE_FOOD_LIST.md",
+    "cards_dir": "docs/specimen_cards"
+  },
+  "planned_cells": 300,
+  "food_rows_parsed": 60,
+  "food_rows_duplicated": [],
+  "food_numbering_gaps": [],
+  "cards_on_disk": 267,
+  "card_filename_anomalies": [],
+  "non_card_files_in_dir": [
+    "INDEX.md"
+  ],
+  "absent_cells": 33,
+  "absent_cells_explained_by_na": 33,
+  "absent_cells_unexplained": 0,
+  "absent_cell_list": [
+    {
+      "id": "BF02",
+      "level": 6,
+      "na_note": "N/A — no discrete pieces to size"
+    },
+    {
+      "id": "BF02",
+      "level": 7,
+      "na_note": "N/A — porridge has no whole/regular form"
+    },
+    {
+      "id": "BF05",
+      "level": 6,
+      "na_note": "N/A — cannot cut defined bite-size pieces"
+    },
+    {
+      "id": "BF05",
+      "level": 7,
+      "na_note": "N/A — cooked oats have no whole/regular form"
+    },
+    {
+      "id": "BF12",
+      "level": 7,
+      "na_note": "N/A — bought and served minced; no whole form"
+    },
+    {
+      "id": "BF14",
+      "level": 7,
+      "na_note": "N/A — set custard has no whole/regular form"
+    },
+    {
+      "id": "BF16",
+      "level": 7,
+      "na_note": "N/A — too soft to serve as a regular whole item"
+    },
+    {
+      "id": "BF38",
+      "level": 4,
+      "na_note": "N/A — puree separates into thin liquid on standing; cannot hold without separate thin liquid"
+    },
+    {
+      "id": "BF41",
+      "level": 5,
+      "na_note": "N/A — homogeneous; no discrete particles to mince"
+    },
+    {
+      "id": "BF41",
+      "level": 6,
+      "na_note": "N/A — cannot form bite-size pieces"
+    },
+    {
+      "id": "BF41",
+      "level": 7,
+      "na_note": "N/A — spoonable; no whole/regular form"
+    },
+    {
+      "id": "BF42",
+      "level": 4,
+      "na_note": "N/A — thin liquid base; does not hold shape"
+    },
+    {
+      "id": "BF42",
+      "level": 5,
+      "na_note": "N/A — thin liquid base"
+    },
+    {
+      "id": "BF42",
+      "level": 6,
+      "na_note": "N/A — thin liquid base"
+    },
+    {
+      "id": "BF42",
+      "level": 7,
+      "na_note": "N/A — thin liquid base; no piece or shape-holding form"
+    },
+    {
+      "id": "BF43",
+      "level": 7,
+      "na_note": "N/A — set custard has no whole/regular form"
+    },
+    {
+      "id": "BF44",
+      "level": 7,
+      "na_note": "N/A — gel set has no whole/regular form"
+    },
+    {
+      "id": "BF45",
+      "level": 5,
+      "na_note": "N/A — homogeneous; no particles to mince"
+    },
+    {
+      "id": "BF45",
+      "level": 6,
+      "na_note": "N/A — paste cannot form pieces"
+    },
+    {
+      "id": "BF45",
+      "level": 7,
+      "na_note": "N/A — paste has no whole/regular form"
+    },
+    {
+      "id": "BF46",
+      "level": 5,
+      "na_note": "N/A — homogeneous; no particles to mince"
+    },
+    {
+      "id": "BF46",
+      "level": 6,
+      "na_note": "N/A — paste cannot form pieces"
+    },
+    {
+      "id": "BF46",
+      "level": 7,
+      "na_note": "N/A — paste has no whole/regular form"
+    },
+    {
+      "id": "BF47",
+      "level": 6,
+      "na_note": "N/A — breaks into irregular curds; cannot cut defined pieces"
+    },
+    {
+      "id": "BF47",
+      "level": 7,
+      "na_note": "N/A — too soft for a whole/regular form"
+    },
+    {
+      "id": "BF48",
+      "level": 7,
+      "na_note": "N/A — gel set has no whole/regular form"
+    },
+    {
+      "id": "BF49",
+      "level": 6,
+      "na_note": "N/A — too soft to hold cut edges"
+    },
+    {
+      "id": "BF49",
+      "level": 7,
+      "na_note": "N/A — soft set has no whole/regular form"
+    },
+    {
+      "id": "BF50",
+      "level": 5,
+      "na_note": "N/A — homogeneous; no particles to mince"
+    },
+    {
+      "id": "BF50",
+      "level": 6,
+      "na_note": "N/A — paste cannot form pieces"
+    },
+    {
+      "id": "BF50",
+      "level": 7,
+      "na_note": "N/A — paste has no whole/regular form"
+    },
+    {
+      "id": "BF54",
+      "level": 7,
+      "na_note": "N/A — bought and served minced; no whole form"
+    },
+    {
+      "id": "BF60",
+      "level": 3,
+      "na_note": "N/A — glutinous-rice starch blends into a cohesive gluey mass; thinned samples do not drip through fork tines as flow and cannot meet the L3 flow window honestly"
+    }
+  ],
+  "unexplained_cell_list": [],
+  "cards_present_for_na_cells": [],
+  "duplicate_card_filenames": [],
+  "byte_identical_card_groups": [],
+  "foods_with_all_five_cards": 42,
+  "foods_with_absent_cells": 18,
+  "cells_mentioning_na_without_leading_na": [],
+  "unexpected_cards": [],
+  "absent_cells_per_food": {
+    "BF02": 2,
+    "BF05": 2,
+    "BF12": 1,
+    "BF14": 1,
+    "BF16": 1,
+    "BF38": 1,
+    "BF41": 3,
+    "BF42": 4,
+    "BF43": 1,
+    "BF44": 1,
+    "BF45": 3,
+    "BF46": 3,
+    "BF47": 2,
+    "BF48": 1,
+    "BF49": 2,
+    "BF50": 3,
+    "BF54": 1,
+    "BF60": 1
+  },
+  "absent_cells_per_level": {
+    "3": 1,
+    "4": 2,
+    "5": 5,
+    "6": 9,
+    "7": 16
+  },
+  "index_md_claim": "# Specimen operator cards — 60 base foods × 5 levels (267 cards)"
+}
