@@ -1,86 +1,77 @@
-# Verification note — the "all three pass against v0.7" claim does not hold
+# Verification note — `bias_matrix.json` does not contain the metric the claim rests on
 
-Recorded 2026-10-12 by the base terminal (claude-stepstep131) during convo 0146,
-while independently re-checking the project's central claim against source files.
-This is a VERIFICATION finding, not a new experiment. The lane `an01_yardstick`
-was dispatched to re-derive the same thing; treat its result as the cross-check.
+**Status: CORRECTED 2026-10-12.** An earlier version of this note concluded that
+the H-YARDSTICK claim "all three pass against the v0.7 consensus" was false. That
+conclusion was **wrong** and is retracted below. Lane `an01_yardstick`
+independently re-derived the numbers from the per-event prediction files and
+reproduced the published ranges to 2.2e-16. What survives — and it is the more
+useful finding — is a defect in the *evidence file*, not in the claim.
 
-## What the pack (convo 0146) claims
+## The claim is CONFIRMED
 
-> Against the v0.5 consensus all three model versions FAIL the wk1 kappa>=0.70
-> gate (0/5 seeds each). Against the v0.7 full-coverage consensus all three
-> PASS — v0.4 kappa 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860
-> (`results/v07_release/bias_matrix.json`).
+Quadratic weighted kappa on **covered rows** (the gate metric, `wk1`), recomputed
+from `test_predictions.npz` with the CORAL decode and QWK re-implemented from
+definition (no sklearn, no `trainer/eval/metrics.py`), 5 seeds each:
 
-## What the source files actually say
+| yardstick | v0.4 wk1 | v0.5 wk1 | v0.7 wk1 | verdict |
+|---|---|---|---|---|
+| v0.5 consensus | 0.5404–0.5995 (0/5) | 0.5371–0.6137 (0/5) | 0.4913–0.5547 (0/5) | all FAIL |
+| v0.7 full-coverage consensus | 0.7364–0.8077 (5/5) | **0.7036–0.7953 (5/5)** | 0.8375–0.8604 (5/5) | all PASS |
 
-`results/v07_release/bias_matrix.json` — one number per model x yardstick:
+These match the published ranges (v0.4 0.736–0.808, v0.5 0.704–0.795, v0.7
+0.838–0.860) digit for digit. Control: the script reproduces each run's own
+published wk1 with max abs diff 2.220e-16 over 15 runs. Denominators: 108 test
+events common to all three models (v0.4's own v0.5-column denominator is its
+142-event held-out split; the verdict is unchanged on the common 108).
 
-| model | vs v0.5 consensus | vs v0.7 full-coverage consensus |
-|---|---|---|
-| v0.3 (Qwen tier-2) | 0.360 | 0.173 |
-| v0.4 (partial consensus) | 0.554 | **0.7046** |
-| v0.5 (cleaned consensus) | 0.519 | **0.6713** |
-| v0.7 (full-coverage consensus) | 0.487 | **0.8127** |
+## What was wrong with the first version of this note
 
-`results/v07_release/v07_seed*_metrics.json` — per-seed, n=108 test events, the
-kappa field is named **`weighted_kappa_covered`** and `coverage` is 0.787-0.852:
+It read `results/v07_release/bias_matrix.json`, took its v0.7-labels column at
+face value as the gate metric, saw v0.5 at 0.671, and concluded the claim was
+false. `bias_matrix.json` is **not** the gate metric. It holds the **mean kappa
+over ALL rows, abstentions included**:
 
-| seed | coverage | weighted_kappa_covered |
-|---|---|---|
-| 17 | 0.824 | 0.8498 |
-| 29 | 0.796 | 0.8504 |
-| 43 | 0.852 | 0.8507 |
-| 71 | 0.787 | 0.8375 |
-| 101 | 0.787 | 0.8604 |
+| model | yardstick | published | mean wk1 (gate) | mean kappa, all rows | identified as | as the 0.70 gate |
+|---|---|---|---|---|---|---|
+| v0.4 | v0.5 consensus | 0.553996 | 0.585230 | **0.553996** | all-rows kappa | FAIL |
+| v0.4 | v0.7 consensus | 0.704578 | 0.758291 | **0.704578** | all-rows kappa | PASS |
+| v0.5 | v0.5 consensus | 0.518891 | 0.568278 | **0.518891** | all-rows kappa | FAIL |
+| v0.5 | v0.7 consensus | 0.671259 | 0.738350 | **0.671259** | all-rows kappa | FAIL |
+| v0.7 | v0.5 consensus | 0.487183 | 0.517894 | **0.487183** | all-rows kappa | FAIL |
+| v0.7 | v0.7 consensus | 0.812725 | 0.849764 | **0.812725** | all-rows kappa | PASS |
 
-`results/v05_release/cleaned_seed*_metrics.json` — same fields, n=108:
+So the sentence attached to `bias_matrix.json` is **supported by a metric that no
+committed JSON contains for v0.4 or v0.5**. The evidence file and the claim
+disagree, and the claim is the one that is right.
 
-| seed | coverage | weighted_kappa_covered |
-|---|---|---|
-| 17 | 0.769 | 0.5673 |
-| 29 | 0.778 | 0.5698 |
-| 43 | 0.713 | 0.6137 |
-| 71 | 0.694 | 0.5535 |
-| 101 | 0.806 | 0.5371 |
+## The three real defects that do remain
 
-## The three discrepancies
+1. **`bias_matrix.json` is mislabelled as the evidence for a wk1 claim.** It is
+   the all-rows kappa. Either the file is renamed/annotated, or the wk1 matrix is
+   committed alongside it. `an01_yardstick`'s recomputation is the only place the
+   wk1 numbers for v0.4/v0.5 currently exist.
 
-1. **v0.5 does not pass on either yardstick.** Against the v0.7 labels the bias
-   matrix gives 0.6713 (<0.70). Its own per-seed covered kappa is 0.537-0.614.
-   The quoted "v0.5 0.704-0.795" matches neither file. The claim "all three
-   PASS" is therefore wrong: only v0.4 (0.7046) and v0.7 (0.8127) clear 0.70 on
-   the v0.7 yardstick.
+2. **H-YARDSTICK's residual-risk sentence mixes two metrics in one breath.** Its
+   "the three models agree more with the v0.7 labels (0.70-0.86) than with the
+   v0.5 ones (0.48-0.57)" compares *wk1 against v0.7 labels* with *all-rows kappa
+   against v0.5 labels*. On one metric alone the direction survives (wk1:
+   0.70–0.86 vs 0.49–0.61; all rows: 0.65–0.83 vs 0.48–0.57), but the two ranges
+   are not the same quantity and must not be quoted in one sentence.
 
-2. **The quoted ranges are coverage-filtered, the gate is not.** The per-seed
-   numbers are `weighted_kappa_covered`, computed on the ~80% of the 108 test
-   events the model chose to answer. This is hazard **H-KAPPACOV** ("coverage-
-   filtered kappa reported against an unconditional gate"), already recorded in
-   `hf/HAZARD_LOG.md`. The v0.7 range 0.838-0.860 is the covered kappa; the same
-   model's unconditional number in the bias matrix is 0.8127.
+3. **The two yardsticks are not independent of the models.** On the 108 common
+   events, 63 labels (58.3%) are identical between v0.5 and v0.7 and 45 (41.7%)
+   changed; the flip lives almost entirely in the changed-label subset (v0.5 seed
+   43: wk1 0.9121 on unchanged labels vs 0.5428 on changed ones). The v0.5 and
+   v0.7 labels were produced by the *same four labeller families* (mm31, q2b, q8b,
+   step5), so the yardsticks share provenance with the thing being measured. This
+   is the circularity H-YARDSTICK already discloses; it is not closed by this
+   audit.
 
-3. **n = 108, not the 532 cleaned events.** Every figure above is on the 108-event
-   held-out split. Any statement that implies a larger denominator is wrong.
+## Method note (why the first version was wrong)
 
-## Why it matters
-
-The release card and the paper quote these numbers, and the decision about
-whether anything can ship is conditional on the gate. A claim of "all three
-pass" that is really "two pass, on a filtered subset" is the same failure mode
-the project has already recorded twice (H-KAPPACOV, H-YARDSTICK).
-
-## What is still true
-
-The H-YARDSTICK *direction* is real and reproducible: the same predictions score
-very differently against the two label sets (v0.7: 0.487 vs 0.813; v0.5: 0.519
-vs 0.671; v0.4: 0.554 vs 0.705). The yardstick does change the outcome. What is
-wrong is the specific "all three pass" summary and the unattributed ranges.
-
-## Recommended corrections
-
-- Every kappa in the card, the paper and the README must name the yardstick AND
-  say whether it is covered or unconditional, with n.
-- Restate the headline as: against the v0.7 full-coverage consensus, v0.4 and
-  v0.7 clear wk1>=0.70 on the covered subset; v0.3 and v0.5 do not.
-- Lane `rl03_yardstick_caveat` was dispatched to add the yardstick caveat; it
-  must also carry this H-KAPPACOV correction.
+The error was reading a JSON's values as the metric named in the prose that cites
+it, without checking which quantity the file holds. The fix that caught it was a
+full independent re-derivation from the per-event predictions — the same
+discipline `hf/HAZARD_LOG.md` records for the three earlier validation errors in
+this project. Any number quoted from an aggregate file should be re-derived from
+the per-event data before it is used to overturn a claim.
