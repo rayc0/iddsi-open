@@ -5,7 +5,10 @@
 # out the rest of the fleet. Paths under /work/... are CONTAINER paths and are
 # only ever used inside the docker exec; host paths are used by this script.
 set -u
-HOST_ROOT=/home/tun/iddsi
+# The workspace root is supplied by the caller (IDDSI_LANE_ROOT); nothing about
+# any particular machine is baked in, so this script runs on any host.
+: "${IDDSI_LANE_ROOT:?set IDDSI_LANE_ROOT to the workspace root}"
+HOST_ROOT="$IDDSI_LANE_ROOT"
 LOG="$HOST_ROOT/lane_runs/exp01_lr/sweep_driver.log"
 mkdir -p "$HOST_ROOT/lane_runs/exp01_lr"
 

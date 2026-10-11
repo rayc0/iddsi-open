@@ -29,9 +29,11 @@ TOLERANCE = 1e-12
 def main() -> None:
     here = Path(__file__).resolve().parent.parent
     mine = json.loads((here / "results/yardstick_audit/per_seed.json").read_text())
-    theirs = json.loads(
-        (Path("/home/tun/iddsi/lane_runs/an01_yardstick/sklearn_check.json")).read_text()
-    )
+    theirs = json.loads(Path(sys.argv[1]).read_text()) if len(sys.argv) > 1 else None
+    if theirs is None:
+        raise SystemExit(
+            "usage: yardstick_audit_compare.py <path-to-sklearn_check.json>"
+        )
 
     index = {
         (row["version"], row["seed"], row["yardstick"]): row["wk1_kappa_covered"]

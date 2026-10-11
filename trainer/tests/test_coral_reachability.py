@@ -18,7 +18,7 @@ decode rule alone does not deliver:
    of through argmax.
 
 Measured on the shipped runs before the fix (all five v0.7 seeds,
-``/work/runs/v07/*/best.pt`` + ``test_predictions.npz`` +
+``runs/v07/*/best.pt`` + ``test_predictions.npz`` +
 ``calibration.json``): interior decodes 20/22/22/18/23 per seed, interior
 decodes accepted 0/3/0/2/0.  The declared under-classification gate reported
 ``target_met: true`` for all five seeds at thresholds of 0.5189 / 0.2327 /
@@ -28,6 +28,7 @@ decodes accepted 0/3/0/2/0.  The declared under-classification gate reported
 
 from __future__ import annotations
 
+import os
 import numpy as np
 import pytest
 import torch

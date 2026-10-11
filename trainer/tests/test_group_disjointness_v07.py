@@ -34,17 +34,31 @@ import pytest
 
 from train.data import load_manifest, validate_manifest
 
+
+def _root() -> Path:
+    """Workspace root from the environment; the data dirs are not shipped."""
+    env = os.environ.get("IDDSI_ROOT")
+    if env:
+        return Path(env)
+    here = Path.cwd()
+    for cand in (here, here.parent, here.parent.parent):
+        if (cand / "data/manifest_v07_weighted.jsonl").exists():
+            return cand
+    pytest.skip("v0.7 data not present — set IDDSI_ROOT", allow_module_level=True)
+
+
+
 _LANE_ROOT = Path(__file__).resolve().parents[2]  # .../lanes/an04_groups
 _DATA_ROOT = _LANE_ROOT.parent.parent / "data"    # .../iddsi/data
 MANIFEST_CANDIDATES = [
     os.environ.get("IDDSI_V07_MANIFEST"),
-    "/work/data/manifest_v07_weighted.jsonl",
+    "data/manifest_v07_weighted.jsonl",
     str(_DATA_ROOT / "manifest_v07_weighted.jsonl"),
 ]
 CORPUS_EVENTS = [
-    "/work/data/harvest_d1/events.jsonl",
-    "/work/data/harvest_d1b/events.jsonl",
-    "/work/data/realweak_pilot/events.jsonl",
+    "data/harvest_d1/events.jsonl",
+    "data/harvest_d1b/events.jsonl",
+    "data/realweak_pilot/events.jsonl",
 ]
 # v0.3's dedup criterion, reused verbatim so the test measures the same thing
 # the split was built with (regroup_dedup.py: dHash<=6 AND pHash<=8).

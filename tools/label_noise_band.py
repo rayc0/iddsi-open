@@ -25,9 +25,13 @@ import numpy as np
 SEEDS = [17, 29, 43, 71, 101]
 LEVELS = np.array([3, 4, 5, 6, 7], dtype=np.int64)
 
-ROOT = next((p for p in (Path("/work"), Path("/home/tun/iddsi")) if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
+# The workspace root comes from the environment (or the current directory), so no
+# host path is baked into the shipped tool.
+_candidates = [Path(os.environ["IDDSI_ROOT"])] if os.environ.get("IDDSI_ROOT") else []
+_candidates += [Path.cwd(), Path.cwd().parent]
+ROOT = next((p for p in _candidates if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
 if ROOT is None:
-    raise SystemExit("cannot locate the v0.7 manifest")
+    raise SystemExit("cannot locate the v0.7 manifest — set IDDSI_ROOT")
 MANIFEST = ROOT / "data/manifest_v07_weighted.jsonl"
 RUNS = ROOT / "runs/v07"
 OUTDIR = ROOT / "lane_runs/an05_external"

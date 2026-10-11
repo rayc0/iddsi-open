@@ -7,6 +7,7 @@ nothing else.
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import numpy as np
@@ -17,16 +18,14 @@ from PIL import Image
 from train.augment import AugmentSettings, PhotometricAugment, from_mapping
 from train.data import build_transform
 
-LOCAL_MODEL = next(
-    (
-        candidate
-        for candidate in (
-            Path("/work/models_local/siglip2-base-patch16-224"),
-            Path("/home/tun/iddsi/models_local/siglip2-base-patch16-224"),
-        )
-        if candidate.exists()
-    ),
-    None,
+# The local SigLIP-2 checkout is located through the environment, so no host
+# path is baked into the shipped test. Set IDDSI_LOCAL_MODEL to a checkout to run
+# these tests; otherwise they skip.
+LOCAL_MODEL = (
+    Path(os.environ["IDDSI_LOCAL_MODEL"])
+    if os.environ.get("IDDSI_LOCAL_MODEL")
+    and Path(os.environ["IDDSI_LOCAL_MODEL"]).exists()
+    else None
 )
 
 

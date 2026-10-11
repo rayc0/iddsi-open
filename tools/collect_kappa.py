@@ -15,8 +15,8 @@ import json
 import sys
 from pathlib import Path
 
-REPO = Path("/home/tun/iddsi/lanes/exp05_loss")
-RUNS = Path("/home/tun/iddsi/lane_runs/exp05_loss/loss_shaping")
+REPO = Path(sys.argv[1] if len(sys.argv) > 1 else os.environ.get("IDDSI_EXPERIMENT_REPO", "."))
+RUNS = Path(sys.argv[2] if len(sys.argv) > 2 else os.environ.get("IDDSI_EXPERIMENT_RUNS", "runs"))
 SEEDS = [17, 101]
 
 

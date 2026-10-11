@@ -9,8 +9,10 @@ Endpoint selection is explicit and recorded, never silent:
 1. an explicit ``endpoint=`` argument;
 2. ``IDDSI_HF_ENDPOINT`` (project-specific, wins over the generic variable);
 3. ``HF_ENDPOINT`` (the generic huggingface_hub variable);
-4. auto-probe ``https://huggingface.co`` — the real endpoint, used outside CN;
-5. auto-probe ``https://hf-mirror.com`` — the CN mirror, used on this DGX box;
+4. auto-probe the canonical endpoint;
+5. auto-probe a regional mirror, but only when one is configured through
+   ``IDDSI_HF_MIRROR`` — no mirror is named in this file, because the release
+   must not depend on or advertise any particular host;
 6. otherwise raise :class:`HubUnavailable`. There is no silent local fallback.
 
 Every fetch writes a receipt that names the endpoint that actually served the
@@ -45,7 +47,10 @@ RELEASE_REPO = "lingualeap/iddsi-open-siglip2-v0"
 DEFAULT_REVISION = "v0.7"
 
 REAL_ENDPOINT = "https://huggingface.co"
-MIRROR_ENDPOINT = "https://hf-mirror.com"
+# A regional mirror is OPTIONAL and is never named here: set IDDSI_HF_MIRROR to
+# one if your network cannot reach the canonical endpoint. An unset value simply
+# means the mirror probe is skipped.
+MIRROR_ENDPOINT = os.environ.get("IDDSI_HF_MIRROR", "")
 
 ENV_ENDPOINT = "IDDSI_HF_ENDPOINT"
 ENV_REPO = "IDDSI_HUB_REPO"
@@ -206,7 +211,7 @@ def resolve_endpoint(
     if _probe(REAL_ENDPOINT, repo, timeout):
         return Endpoint(REAL_ENDPOINT, "probe:real-endpoint-reachable")
     if _probe(MIRROR_ENDPOINT, repo, timeout):
-        return Endpoint(MIRROR_ENDPOINT, "probe:hf-mirror-reachable")
+        return Endpoint(MIRROR_ENDPOINT, "probe:mirror-reachable")
     raise HubUnavailable(
         "no Hugging Face endpoint is reachable from this host. Tried "
         f"{REAL_ENDPOINT} (the real endpoint, used outside CN) and "

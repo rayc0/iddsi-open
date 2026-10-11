@@ -14,14 +14,15 @@
 set -euo pipefail
 
 ARM="${1:?usage: run_arm.sh <ls005|ls010|beta099>}"
-HOST_REPO=/home/tun/iddsi
+: "${IDDSI_LANE_ROOT:?set IDDSI_LANE_ROOT}"
+HOST_REPO="$IDDSI_LANE_ROOT"
 IMAGE=exp05-loss-gpu:latest
-LOG=/home/tun/iddsi/lane_runs/exp05_loss/logs/${ARM}.log
+LOG="$HOST_REPO/lane_runs/exp05_loss/logs/${ARM}.log"
 
 mkdir -p "$(dirname "$LOG")"
 echo "$(date -u +%FT%TZ) launching arm=$ARM" | tee -a "$LOG"
 
-bash /home/tun/iddsi/lane_gpu.sh docker run --rm --gpus all \
+bash "$HOST_REPO/lane_gpu.sh" docker run --rm --gpus all \
   --ipc=host --shm-size=16g \
   -v "$HOST_REPO":/work \
   -w /work/lanes/exp05_loss/trainer \

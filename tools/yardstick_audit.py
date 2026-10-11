@@ -20,6 +20,7 @@ Usage:
     python3 tools/yardstick_audit.py --out-dir results/yardstick_audit
 """
 
+import os
 from __future__ import annotations
 
 import argparse
@@ -122,8 +123,8 @@ SEEDS = ("17", "29", "43", "71", "101")
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--runs-root", default="/home/tun/iddsi/runs")
-    parser.add_argument("--data-dir", default="/home/tun/iddsi/data")
+    parser.add_argument("--runs-root", default=os.environ.get("IDDSI_RUNS_ROOT", "runs"))
+    parser.add_argument("--data-dir", default=os.environ.get("IDDSI_DATA_DIR", "data"))
     parser.add_argument("--out-dir", default="results/yardstick_audit")
     args = parser.parse_args()
 

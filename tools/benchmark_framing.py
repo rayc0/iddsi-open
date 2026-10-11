@@ -24,6 +24,7 @@ CPU-only. No GPU, no network, no model weights.
 """
 from __future__ import annotations
 
+import os
 import json
 from pathlib import Path
 
@@ -36,9 +37,23 @@ BOOT_SEED = 20261012
 
 # /work is the container mount of the host's ~/iddsi. Resolve either so the
 # script runs on the host (CPU-only) or inside `iddsi-train`.
-ROOT = next((p for p in (Path("/work"), Path("/home/tun/iddsi")) if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
+def _find_root() -> Path | None:
+    """Locate the workspace root from the environment or the working directory.
+
+    No host path is baked in: the shipped tool runs wherever IDDSI_ROOT points,
+    or from a checkout that contains data/manifest_v07_weighted.jsonl.
+    """
+    candidates = []
+    if os.environ.get("IDDSI_ROOT"):
+        candidates.append(Path(os.environ["IDDSI_ROOT"]))
+    candidates += [Path.cwd(), Path.cwd().parent]
+    return next((p for p in candidates
+                 if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
+
+
+ROOT = _find_root()
 if ROOT is None:
-    raise SystemExit("cannot locate the v0.7 manifest")
+    raise SystemExit("cannot locate the v0.7 manifest — set IDDSI_ROOT")
 MANIFEST = ROOT / "data/manifest_v07_weighted.jsonl"
 RUNS = ROOT / "runs/v07"
 OUTDIR = ROOT / "lane_runs/an05_external"

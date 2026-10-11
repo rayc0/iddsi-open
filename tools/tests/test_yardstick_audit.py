@@ -115,7 +115,7 @@ def test_anchors_reproduce_published_gate_metric():
     pipeline, this fails. Skipped when the run tree is not present (the
     prediction files live outside the repo, under ``runs/``).
     """
-    runs_root = Path(os.environ.get("IDDSI_RUNS_ROOT", "/home/tun/iddsi/runs"))
+    runs_root = Path(os.environ.get("IDDSI_RUNS_ROOT", str(Path.cwd() / "runs")))
     if not runs_root.is_dir():
         print(f"    (skipped: {runs_root} not present)")
         return

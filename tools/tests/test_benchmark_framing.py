@@ -11,6 +11,7 @@ CPU only, no GPU.
 """
 from __future__ import annotations
 
+import os
 import json
 import subprocess
 import sys
@@ -18,7 +19,9 @@ from pathlib import Path
 
 import pytest
 
-ROOT = next((p for p in (Path("/work"), Path("/home/tun/iddsi")) if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
+_candidates = [Path(os.environ["IDDSI_ROOT"])] if os.environ.get("IDDSI_ROOT") else []
+_candidates += [Path.cwd(), Path.cwd().parent, Path(__file__).resolve().parents[2]]
+ROOT = next((p for p in _candidates if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
 pytestmark = pytest.mark.skipif(ROOT is None, reason="v0.7 manifest not reachable")
 
 HERE = Path(__file__).resolve().parent
