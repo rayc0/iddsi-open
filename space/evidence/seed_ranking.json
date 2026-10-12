@@ -1,0 +1,57 @@
+{
+ "selection_rule": "highest macro_f1_with_abstentions among seeds whose validation calibration target (under-FNR<=0.05, abstention<=0.30) was met; all 5 seeds met it",
+ "n_test_events": 108,
+ "table": [
+  {
+   "seed": 17,
+   "macro_f1_with_abstentions": 0.3594155844155844,
+   "weighted_kappa_covered": 0.849789029535865,
+   "coverage": 0.8240740740740741,
+   "abstention_rate": 0.17592592592592593,
+   "under_fnr_covered": 0.056179775280898875,
+   "ece_all": 0.023962818588625447,
+   "calibration_target_met": true
+  },
+  {
+   "seed": 29,
+   "macro_f1_with_abstentions": 0.33169129720853857,
+   "weighted_kappa_covered": 0.8503596009589358,
+   "coverage": 0.7962962962962963,
+   "abstention_rate": 0.20370370370370372,
+   "under_fnr_covered": 0.03488372093023256,
+   "ece_all": 0.07742704951142851,
+   "calibration_target_met": true
+  },
+  {
+   "seed": 43,
+   "macro_f1_with_abstentions": 0.3949309489682161,
+   "weighted_kappa_covered": 0.8507211538461539,
+   "coverage": 0.8518518518518519,
+   "abstention_rate": 0.14814814814814814,
+   "under_fnr_covered": 0.043478260869565216,
+   "ece_all": 0.030128688692225677,
+   "calibration_target_met": true
+  },
+  {
+   "seed": 71,
+   "macro_f1_with_abstentions": 0.3193103448275862,
+   "weighted_kappa_covered": 0.8375451263537906,
+   "coverage": 0.7870370370370371,
+   "abstention_rate": 0.2129629629629629,
+   "under_fnr_covered": 0.03529411764705882,
+   "ece_all": 0.044699745352190644,
+   "calibration_target_met": true
+  },
+  {
+   "seed": 101,
+   "macro_f1_with_abstentions": 0.33986013986013985,
+   "weighted_kappa_covered": 0.86040655450531,
+   "coverage": 0.7870370370370371,
+   "abstention_rate": 0.2129629629629629,
+   "under_fnr_covered": 0.03529411764705882,
+   "ece_all": 0.06441430496569592,
+   "calibration_target_met": true
+  }
+ ],
+ "best_seed": 43
+}

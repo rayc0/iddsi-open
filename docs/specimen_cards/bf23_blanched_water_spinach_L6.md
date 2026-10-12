@@ -9,10 +9,10 @@ On the fork: pieces are uniformly dark green, glossy, and visibly wet but not dr
 
 SHOTS
 1. blanched_water_spinach_L6_take1.jpg — 45° hero, 100 mm ruler and 15 mm checkerboard in frame.
-2. blanched_water_spinach_L6_take1.jpg — top-down, checkerboard beneath specimen.
-3. blanched_water_spinach_L6_take1.jpg — fork-press close-up, mid-press, thumbnail blanch visible.
+2. blanched_water_spinach_L6_take2.jpg — top-down, checkerboard beneath specimen.
+3. blanched_water_spinach_L6_take3.jpg — fork-press close-up, mid-press, thumbnail blanch visible.
 4. blanched_water_spinach_L6_take1.mp4 — 8–12 s fork-press / spoon-tilt clip.
-5. blanched_water_spinach_L6_take1.mp4 — full IDDSI test film.
+5. blanched_water_spinach_L6_take2.mp4 — full IDDSI test film.
 
 FAIL MODES
 Fibrous stem cores included (does not squash cleanly under fork). Pieces exceed 15 mm after cutting (re-trim before plating). Pieces spring back after pressure (re-blanch 60 s, re-cut). Re-make rule: discard batch, return to PREP, re-cut from tender leaves only.

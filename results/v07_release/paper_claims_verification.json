@@ -1,0 +1,706 @@
+{
+ "numbers": {
+  "sources": {
+   "per_seed_yardstick": "results/yardstick_audit/per_seed.json",
+   "bias_matrix": "results/v07_release/bias_matrix.json",
+   "v07_seed_metrics": "results/v07_release/v07_seed*_metrics.json",
+   "v01_decode_fix": "results/fix1_siglip2_coral_seed17/metrics.json",
+   "structural_seed43": "analysis/errors_v07/outputs/structural_seed43.json",
+   "inter_judge": "results/regen_20260916/inter_judge_20260916.json",
+   "labelability_sweep": "results/v05_release/labelability_sweep.json",
+   "unusable_ids": "results/v05_release/unusable_event_ids.txt",
+   "metric_code": "trainer/eval/metrics.py"
+  },
+  "v01_decode_fix": {
+   "n_held_out": 109,
+   "label_set": "Qwen tier-2 judge labels (v0.1 CORAL decode-fix run)",
+   "macro_f1_with_abstentions": 0.35780803895557994,
+   "weighted_kappa_covered": 0.4226804123711341,
+   "kappa_population": "covered events only (abstentions dropped from numerator and denominator)",
+   "dangerous_underclassification_fnr_covered": 0.3333333333333333,
+   "dangerous_underclassification_rate_all": 0.29357798165137616,
+   "coverage": 0.8807339449541285,
+   "abstention_rate": 0.11926605504587151,
+   "ece_all": 0.0906259136378478
+  },
+  "inter_judge": {
+   "n_pairs": 575,
+   "exact_agreement": 0.3096,
+   "kappa_unweighted": 0.1062,
+   "kappa_quadratic": 0.2766,
+   "population": "all 575 pairs both judges labelled; no coverage filter (neither judge abstains)",
+   "label_set": "agreement between Qwen3-VL-2B tier-1 and Qwen3-VL-8B tier-2, the two judges who produced the label set"
+  },
+  "v07_per_seed": [
+   {
+    "seed": 17,
+    "n_test_events": 108,
+    "coverage": 0.8240740740740741,
+    "n_covered": 89,
+    "n_abstained": 19,
+    "weighted_kappa_covered": 0.849789029535865,
+    "macro_f1_with_abstentions": 0.3594155844155844,
+    "dangerous_underclassification_fnr_covered": 0.056179775280898875,
+    "ece_all": 0.023962818588625447,
+    "test_level_distribution": {
+     "L3": 10,
+     "L4": 11,
+     "L5": 7,
+     "L6": 10,
+     "L7": 70
+    },
+    "decided_by_true_level": {
+     "L3": 9,
+     "L4": 5,
+     "L5": 4,
+     "L6": 8,
+     "L7": 63
+    },
+    "n_decided": 89,
+    "exact_match_covered": 0.8089887640449438,
+    "exact_match_allN_abstain_as_miss": 0.6666666666666666,
+    "always_L7_baseline": 0.6481481481481481,
+    "per_level_recall_decided": {
+     "L3": 0.7777777777777778,
+     "L4": 0.4,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 1.0
+    },
+    "per_level_recall_all_rows": {
+     "L3": 0.7,
+     "L4": 0.18181818181818182,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 0.9
+    },
+    "per_level_precision_decided": {
+     "L3": 0.5833333333333334,
+     "L4": 0.6666666666666666,
+     "L5": null,
+     "L6": null,
+     "L7": 0.8513513513513513
+    },
+    "levels_never_emitted_as_decisions": [
+     "L5",
+     "L6"
+    ]
+   },
+   {
+    "seed": 29,
+    "n_test_events": 108,
+    "coverage": 0.7962962962962963,
+    "n_covered": 86,
+    "n_abstained": 22,
+    "weighted_kappa_covered": 0.8503596009589358,
+    "macro_f1_with_abstentions": 0.33169129720853857,
+    "dangerous_underclassification_fnr_covered": 0.03488372093023256,
+    "ece_all": 0.07742704951142851,
+    "test_level_distribution": {
+     "L3": 10,
+     "L4": 11,
+     "L5": 7,
+     "L6": 10,
+     "L7": 70
+    },
+    "decided_by_true_level": {
+     "L3": 9,
+     "L4": 2,
+     "L5": 3,
+     "L6": 7,
+     "L7": 65
+    },
+    "n_decided": 86,
+    "exact_match_covered": 0.8488372093023255,
+    "exact_match_allN_abstain_as_miss": 0.6759259259259259,
+    "always_L7_baseline": 0.6481481481481481,
+    "per_level_recall_decided": {
+     "L3": 0.8888888888888888,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 1.0
+    },
+    "per_level_recall_all_rows": {
+     "L3": 0.8,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 0.9285714285714286
+    },
+    "per_level_precision_decided": {
+     "L3": 0.7272727272727273,
+     "L4": null,
+     "L5": null,
+     "L6": null,
+     "L7": 0.8666666666666667
+    },
+    "levels_never_emitted_as_decisions": [
+     "L4",
+     "L5",
+     "L6"
+    ]
+   },
+   {
+    "seed": 43,
+    "n_test_events": 108,
+    "coverage": 0.8518518518518519,
+    "n_covered": 92,
+    "n_abstained": 16,
+    "weighted_kappa_covered": 0.8507211538461539,
+    "macro_f1_with_abstentions": 0.3949309489682161,
+    "dangerous_underclassification_fnr_covered": 0.043478260869565216,
+    "ece_all": 0.030128688692225677,
+    "test_level_distribution": {
+     "L3": 10,
+     "L4": 11,
+     "L5": 7,
+     "L6": 10,
+     "L7": 70
+    },
+    "decided_by_true_level": {
+     "L3": 10,
+     "L4": 4,
+     "L5": 5,
+     "L6": 8,
+     "L7": 65
+    },
+    "n_decided": 92,
+    "exact_match_covered": 0.8260869565217391,
+    "exact_match_allN_abstain_as_miss": 0.7037037037037037,
+    "always_L7_baseline": 0.6481481481481481,
+    "per_level_recall_decided": {
+     "L3": 0.9,
+     "L4": 0.5,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 1.0
+    },
+    "per_level_recall_all_rows": {
+     "L3": 0.9,
+     "L4": 0.18181818181818182,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 0.9285714285714286
+    },
+    "per_level_precision_decided": {
+     "L3": 0.6923076923076923,
+     "L4": 1.0,
+     "L5": null,
+     "L6": null,
+     "L7": 0.8441558441558441
+    },
+    "levels_never_emitted_as_decisions": [
+     "L5",
+     "L6"
+    ]
+   },
+   {
+    "seed": 71,
+    "n_test_events": 108,
+    "coverage": 0.7870370370370371,
+    "n_covered": 85,
+    "n_abstained": 23,
+    "weighted_kappa_covered": 0.8375451263537906,
+    "macro_f1_with_abstentions": 0.3193103448275862,
+    "dangerous_underclassification_fnr_covered": 0.03529411764705882,
+    "ece_all": 0.044699745352190644,
+    "test_level_distribution": {
+     "L3": 10,
+     "L4": 11,
+     "L5": 7,
+     "L6": 10,
+     "L7": 70
+    },
+    "decided_by_true_level": {
+     "L3": 8,
+     "L4": 2,
+     "L5": 3,
+     "L6": 7,
+     "L7": 65
+    },
+    "n_decided": 85,
+    "exact_match_covered": 0.8470588235294118,
+    "exact_match_allN_abstain_as_miss": 0.6666666666666666,
+    "always_L7_baseline": 0.6481481481481481,
+    "per_level_recall_decided": {
+     "L3": 0.875,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 1.0
+    },
+    "per_level_recall_all_rows": {
+     "L3": 0.7,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 0.9285714285714286
+    },
+    "per_level_precision_decided": {
+     "L3": 0.7,
+     "L4": null,
+     "L5": null,
+     "L6": null,
+     "L7": 0.8666666666666667
+    },
+    "levels_never_emitted_as_decisions": [
+     "L4",
+     "L5",
+     "L6"
+    ]
+   },
+   {
+    "seed": 101,
+    "n_test_events": 108,
+    "coverage": 0.7870370370370371,
+    "n_covered": 85,
+    "n_abstained": 23,
+    "weighted_kappa_covered": 0.86040655450531,
+    "macro_f1_with_abstentions": 0.33986013986013985,
+    "dangerous_underclassification_fnr_covered": 0.03529411764705882,
+    "ece_all": 0.06441430496569592,
+    "test_level_distribution": {
+     "L3": 10,
+     "L4": 11,
+     "L5": 7,
+     "L6": 10,
+     "L7": 70
+    },
+    "decided_by_true_level": {
+     "L3": 10,
+     "L4": 2,
+     "L5": 3,
+     "L6": 7,
+     "L7": 63
+    },
+    "n_decided": 85,
+    "exact_match_covered": 0.8470588235294118,
+    "exact_match_allN_abstain_as_miss": 0.6666666666666666,
+    "always_L7_baseline": 0.6481481481481481,
+    "per_level_recall_decided": {
+     "L3": 0.9,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 1.0
+    },
+    "per_level_recall_all_rows": {
+     "L3": 0.9,
+     "L4": 0.0,
+     "L5": 0.0,
+     "L6": 0.0,
+     "L7": 0.9
+    },
+    "per_level_precision_decided": {
+     "L3": 0.75,
+     "L4": null,
+     "L5": null,
+     "L6": null,
+     "L7": 0.863013698630137
+    },
+    "levels_never_emitted_as_decisions": [
+     "L4",
+     "L5",
+     "L6"
+    ]
+   }
+  ],
+  "v07_summary": {
+   "n_test_events": 108,
+   "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+   ],
+   "label_set": "v0.7 full-coverage consensus",
+   "weighted_kappa_covered_range": [
+    0.8375,
+    0.8604
+   ],
+   "macro_f1_with_abstentions_range": [
+    0.3193,
+    0.3949
+   ],
+   "coverage_range": [
+    0.787,
+    0.8519
+   ],
+   "n_covered_range": [
+    85,
+    92
+   ],
+   "n_abstained_range": [
+    16,
+    23
+   ],
+   "exact_match_covered_range": [
+    0.809,
+    0.8488
+   ],
+   "exact_match_allN_abstain_as_miss_range": [
+    0.6667,
+    0.7037
+   ],
+   "always_L7_baseline_seed43": 0.6481481481481481,
+   "L5_never_emitted_in_all_5_seeds": true,
+   "L6_never_emitted_in_all_5_seeds": true,
+   "levels_never_emitted_by_seed": {
+    "17": [
+     "L5",
+     "L6"
+    ],
+    "29": [
+     "L4",
+     "L5",
+     "L6"
+    ],
+    "43": [
+     "L5",
+     "L6"
+    ],
+    "71": [
+     "L4",
+     "L5",
+     "L6"
+    ],
+    "101": [
+     "L4",
+     "L5",
+     "L6"
+    ]
+   }
+  },
+  "cross_yardstick": {
+   "v0.4 | v0.5 consensus": {
+    "n_events": 142,
+    "n_covered_range": [
+     104,
+     120
+    ],
+    "coverage_range": [
+     0.7324,
+     0.8451
+    ],
+    "wk1_covered_range": [
+     0.5404,
+     0.5995
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.5074,
+     0.5532
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.4 | v0.7 full-coverage consensus": {
+    "n_events": 108,
+    "n_covered_range": [
+     84,
+     93
+    ],
+    "coverage_range": [
+     0.7778,
+     0.8611
+    ],
+    "wk1_covered_range": [
+     0.7364,
+     0.8077
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.6873,
+     0.7204
+    ],
+    "all_rows_seeds_over_0.70": 3
+   },
+   "v0.4 | v0.5 consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     84,
+     93
+    ],
+    "coverage_range": [
+     0.7778,
+     0.8611
+    ],
+    "wk1_covered_range": [
+     0.5733,
+     0.6053
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.54,
+     0.5662
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.4 | v0.7 full-coverage consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     84,
+     93
+    ],
+    "coverage_range": [
+     0.7778,
+     0.8611
+    ],
+    "wk1_covered_range": [
+     0.7364,
+     0.8077
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.6873,
+     0.7204
+    ],
+    "all_rows_seeds_over_0.70": 3
+   },
+   "v0.5 | v0.5 consensus": {
+    "n_events": 108,
+    "n_covered_range": [
+     75,
+     87
+    ],
+    "coverage_range": [
+     0.6944,
+     0.8056
+    ],
+    "wk1_covered_range": [
+     0.5371,
+     0.6137
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.4984,
+     0.5469
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.5 | v0.7 full-coverage consensus": {
+    "n_events": 108,
+    "n_covered_range": [
+     75,
+     87
+    ],
+    "coverage_range": [
+     0.6944,
+     0.8056
+    ],
+    "wk1_covered_range": [
+     0.7036,
+     0.7953
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.6468,
+     0.7261
+    ],
+    "all_rows_seeds_over_0.70": 1
+   },
+   "v0.5 | v0.5 consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     75,
+     87
+    ],
+    "coverage_range": [
+     0.6944,
+     0.8056
+    ],
+    "wk1_covered_range": [
+     0.5371,
+     0.6137
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.4984,
+     0.5469
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.5 | v0.7 full-coverage consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     75,
+     87
+    ],
+    "coverage_range": [
+     0.6944,
+     0.8056
+    ],
+    "wk1_covered_range": [
+     0.7036,
+     0.7953
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.6468,
+     0.7261
+    ],
+    "all_rows_seeds_over_0.70": 1
+   },
+   "v0.7 | v0.5 consensus": {
+    "n_events": 108,
+    "n_covered_range": [
+     85,
+     92
+    ],
+    "coverage_range": [
+     0.787,
+     0.8519
+    ],
+    "wk1_covered_range": [
+     0.4913,
+     0.5547
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.4753,
+     0.5057
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.7 | v0.7 full-coverage consensus": {
+    "n_events": 108,
+    "n_covered_range": [
+     85,
+     92
+    ],
+    "coverage_range": [
+     0.787,
+     0.8519
+    ],
+    "wk1_covered_range": [
+     0.8375,
+     0.8604
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.7927,
+     0.8253
+    ],
+    "all_rows_seeds_over_0.70": 5
+   },
+   "v0.7 | v0.5 consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     85,
+     92
+    ],
+    "coverage_range": [
+     0.787,
+     0.8519
+    ],
+    "wk1_covered_range": [
+     0.4913,
+     0.5547
+    ],
+    "wk1_covered_seeds_over_0.70": 0,
+    "all_rows_range": [
+     0.4753,
+     0.5057
+    ],
+    "all_rows_seeds_over_0.70": 0
+   },
+   "v0.7 | v0.7 full-coverage consensus (108-event common split)": {
+    "n_events": 108,
+    "n_covered_range": [
+     85,
+     92
+    ],
+    "coverage_range": [
+     0.787,
+     0.8519
+    ],
+    "wk1_covered_range": [
+     0.8375,
+     0.8604
+    ],
+    "wk1_covered_seeds_over_0.70": 5,
+    "all_rows_range": [
+     0.7927,
+     0.8253
+    ],
+    "all_rows_seeds_over_0.70": 5
+   }
+  },
+  "bias_matrix_identified": {
+   "v0.3 (trained: Qwen tier-2) | v0.5 consensus": {
+    "value": 0.3602269127679655,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.3 (trained: Qwen tier-2) | v0.7 consensus (full coverage)": {
+    "value": 0.17344521021166864,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.4 (trained: partial consensus) | v0.5 consensus": {
+    "value": 0.5539955518893709,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.4 (trained: partial consensus) | v0.7 consensus (full coverage)": {
+    "value": 0.7045783785502729,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.5 (trained: cleaned consensus) | v0.5 consensus": {
+    "value": 0.5188912565999125,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.5 (trained: cleaned consensus) | v0.7 consensus (full coverage)": {
+    "value": 0.6712585329292282,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.7 (trained: full-coverage consensus) | v0.5 consensus": {
+    "value": 0.4871828762900834,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   },
+   "v0.7 (trained: full-coverage consensus) | v0.7 consensus (full coverage)": {
+    "value": 0.8127250349118708,
+    "identified_as": "mean over 5 seeds of quadratic weighted kappa over ALL held-out rows, abstentions included in the denominator"
+   }
+  },
+  "all_three_pass_is_metric_dependent": {
+   "metric": "wk1 = quadratic weighted kappa on covered rows",
+   "v05_wk1_covered_range": [
+    0.7036,
+    0.7953
+   ],
+   "v05_all_rows_range": [
+    0.6468,
+    0.7261
+   ],
+   "v05_all_rows_mean": 0.671259,
+   "v05_all_rows_seeds_over_0.70": 1,
+   "reading": "on wk1 (covered) all three models clear 0.70 in 5/5 seeds each; on the all-rows kappa v0.5 does not, so the pass verdict depends on the metric as well as on the yardstick"
+  },
+  "corpus_denominators": {
+   "unusable_events": 152,
+   "whole_corpus": "152/684",
+   "whole_corpus_pct": 22.2,
+   "both_judged_subset": "152/510",
+   "both_judged_subset_pct": 29.8,
+   "is_there_food_agreement": "493/510",
+   "levellable_agreement": "436/510",
+   "corpus_after_cleaning": "684 - 152 = 532",
+   "sweep_union_check": 685,
+   "sweep_union_note": "step 683 + mm 512 - both 510 = 685 > 684, so 'both = 510' is not a clean subset of the corpus and 29.8% may not be quoted as a corpus rate"
+  }
+ },
+ "lint": {
+  "rules": [
+   "R1 kappa names yardstick+population",
+   "R2 152/684 and 152/510",
+   "R3 three-model pass names its metric",
+   "R4 L5/L6 decode collapse reported with a denominator"
+  ],
+  "files_checked": [
+   "paper/paper.md",
+   "paper/sections/limitations.md",
+   "paper/sections/related_work.md"
+  ],
+  "problems": []
+ },
+ "verdict": "PASS"
+}

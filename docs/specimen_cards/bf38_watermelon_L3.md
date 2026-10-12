@@ -3,12 +3,12 @@ Weigh 250 g seedless watermelon flesh. Blend on high 45-60 s until smooth liquid
 
 2. IDDSI TEST
 - Fork drip: lift fork; puree drips slowly in a continuous thin stream, not a steady pour, not in lumps.
-- Fork pressure: puree flattens and spreads against the plate under fork tines, does not hold shape, leaves a clear fork-tine pattern.
+- Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 - Spoon tilt: spoon tilted to ~45 degrees; puree flows off in a single slow ribbon, not a dollop, not runny.
 - IDDSI flow test (10 ml syringe, 10 s): 8-10 ml remaining in syringe. <8 ml = too thin; >10 ml = too thick. Re-make.
 
 3. VISUAL QC
-Glossy, uniform pink with no red pulp specks; coats the spoon back evenly without pooling fast; drips from fork tines leave a brief tail that snaps off within 1 second.
+Glossy, uniform pink with no red pulp specks; coats the spoon back evenly without pooling fast; drips from fork tines leave a brief tail that snaps off within 1 second. By-eye check only (not a section 5.1 test at L3): puree flattens and spreads against the plate under fork tines, does not hold shape, leaves a clear fork-tine pattern.
 
 4. SHOTS
 Still 1: 45-degree hero on A4 kit, ruler + 15 mm checkerboard in frame, specimen pooled to one side. Still 2: top-down centred, checkerboard only. Still 3: fork-press close-up mid-press, tines partially buried, puree oozing between tines.

@@ -9,9 +9,6 @@
   <meta name="keywords" content="IDDSI, dysphagia, texture-modified-food, food-texture-classification, computer-vision, open-dataset, flow-test" />
   <title>IDDSI-Open v0: Code, Eval Results, and Smartphone Flow-Test Video Grader - Photo Classification Killed at Its Pre-registered Gates; Dataset and Weights Withheld</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
     html {
       color: #1a1a1a;
       background-color: #fdfdfd;
@@ -66,10 +63,6 @@
     img {
       max-width: 100%;
     }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
     h1, h2, h3, h4, h5, h6 {
       margin-top: 1.4em;
     }
@@ -105,7 +98,6 @@
       margin-bottom: 0.5em;
     }
     code {
-      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -125,8 +117,8 @@
      overflow: visible;
     }
     hr {
+      background-color: #1a1a1a;
       border: none;
-      border-top: 1px solid #1a1a1a;
       height: 1px;
       margin: 1em 0;
     }
@@ -169,6 +161,7 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -225,44 +218,58 @@ events exactly 2 would ship cleanly (592 rows carry unverified
 open-images/openverse licences, 7 are CC BY-SA against the BY-NC-SA main
 release, 109 have unresolved redistribution status). The weights are
 withheld because the photo-classification head failed its pre-registered
-gates - wk1 weighted kappa &gt;= 0.70 (measured 0.42), wk2 macro-F1
-&gt;= 0.75 (measured 0.358) with dangerous under-classification at 33%
-against a &lt;= 5% gate - so the wk1 kill rule fired and
-photo-classification is dead as a product capability. Label set for that
-kappa (H-YARDSTICK): the 0.42 was measured against the Qwen tier-2 judge
-labels, and the v0.4/v0.5 numbers were measured against the v0.5 consensus;
-on both of those label sets the models fail the wk1&gt;=0.70 gate. The same
-models measured against the v0.7 full-coverage consensus pass it (v0.7:
-0.838-0.860). The headline
+gates - wk1 quadratic weighted kappa on covered rows &gt;= 0.70
+(measured 0.4227, held-out n = 109, 96 of 109 events covered, label set:
+the Qwen tier-2 judge labels), wk2 macro-F1 &gt;= 0.75 (measured 0.358)
+with dangerous under-classification at 33% against a &lt;= 5% gate - so
+the wk1 kill rule fired and photo-classification is dead as a product
+capability. Label set and population for that kappa (H-YARDSTICK,
+H-YARDEVID): the 0.4227 was measured against the Qwen tier-2 judge
+labels over covered rows only, and the v0.4/v0.5 numbers were measured
+against the v0.5 consensus; on both of those label sets the models fail
+the wk1&gt;=0.70 gate. The same three checkpoints measured against the
+v0.7 full-coverage consensus clear that same covered-rows metric in 5/5
+seeds each (v0.4 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860;
+held-out n = 108 events, coverage 78.7-85.2% so 85-92 of 108 events
+carry a decision). The pass verdict is metric-dependent: on the all-rows
+kappa, which keeps abstentions in the denominator, the v0.5 model
+averages 0.671 and clears 0.70 on only 1 of 5 seeds. The headline
 negative finding: two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on
 only <strong>31.0%</strong> of the same images (n_pairs = 575, full
 tier-2 sample, regen 2026-09-16; Cohen’s kappa unweighted 0.1062,
-quadratic-weighted 0.2766 - still essentially chance for 5 classes),
-with a systematic directional bias toward under-predicting difficulty
-(Section 3.3) - because middle IDDSI levels (L4/L5/L6) need absolute
-size/flow information a scale-free web photo does not carry; every
-label-derived metric is therefore measured against noise. Label set for
-those inter-judge kappas (H-YARDSTICK): they are agreement between the two
-VLM judges who produced the label set, so they characterise the yardstick
-itself rather than a model scored against one. A CORAL
-ordinal-decode bug that made interior levels unreachable was found and
-fixed (held-out n = 109: macro-F1 0.088 -&gt; 0.358, coverage 0.70 -&gt;
-0.88, ECE 0.138 -&gt; 0.091, temperature 2.83 -&gt; 0.93; weighted kappa
-flat at 0.42). The flow-test grader works: MAE 0.065 ml on a 100-video
-bench (L0-L4). Planned next step, not done: physically-tested desk
-specimens (60 base foods x 5 levels = 300, single-operator,
-protocol-following, test-filmed, with a filmed re-test subsample for
-intra-rater reliability). This is a research preview. Research
-demonstration for culinary education. Estimates visual similarity to
-IDDSI descriptors; does not perform official IDDSI tests, assess
-swallowing, determine suitability for any person, or decide whether food
-is safe to consume. The ambition was “the first publicly downloadable
-IDDSI-specific smartphone-food dataset and fine-tuned model released
-under explicit reuse licences, with physically tested Chinese/Cantonese
-soft-meal labels”; v0 does NOT meet it, and the ONE claim that stands is
-“the first open-source smartphone grader for the 10 ml IDDSI Flow Test”.
-We claim neither clinical validity nor any ability to determine
-swallowing safety from a photograph.</p>
+quadratic-weighted 0.2766 - still essentially chance for 5 classes, both
+computed over all 575 judged pairs with no coverage filter because
+neither judge abstains), with a systematic directional bias toward
+under-predicting difficulty (Section 3.3) - because middle IDDSI levels
+(L4/L5/L6) need absolute size/flow information a scale-free web photo
+does not carry; every label-derived metric is therefore measured against
+noise. Label set for those inter-judge kappas (H-YARDSTICK): they are
+agreement between the two VLM judges who produced the label set, so they
+characterise the yardstick itself rather than a model scored against
+one. A CORAL ordinal-decode bug that made interior levels unreachable
+was found and fixed (held-out n = 109: macro-F1 0.088 -&gt; 0.358,
+coverage 0.70 -&gt; 0.88, ECE 0.138 -&gt; 0.091, temperature 2.83 -&gt;
+0.93; quadratic weighted kappa on covered rows flat at 0.4227). The v0.7
+evaluation (held-out n = 108 of the 532-row cleaned corpus, 5 seeds)
+reaches quadratic weighted kappa on covered rows 0.838-0.860 and exact
+level match on covered events 80.9-84.9%, but <strong>L5 and L6 are
+never emitted as a decision in any of the five seeds</strong>, so the
+head is an L7 detector with a partial L3 detector rather than a
+five-level classifier (Sections 3.6 and 6). The flow-test grader works:
+MAE 0.065 ml on a 100-video bench (L0-L4). Planned next step, not done:
+physically-tested desk specimens (60 base foods x 5 levels = 300,
+single-operator, protocol-following, test-filmed, with a filmed re-test
+subsample for intra-rater reliability). This is a research preview.
+Research demonstration for culinary education. Estimates visual
+similarity to IDDSI descriptors; does not perform official IDDSI tests,
+assess swallowing, determine suitability for any person, or decide
+whether food is safe to consume. The ambition was “the first publicly
+downloadable IDDSI-specific smartphone-food dataset and fine-tuned model
+released under explicit reuse licences, with physically tested
+Chinese/Cantonese soft-meal labels”; v0 does NOT meet it, and the ONE
+claim that stands is “the first open-source smartphone grader for the 10
+ml IDDSI Flow Test”. We claim neither clinical validity nor any ability
+to determine swallowing safety from a photograph.</p>
 </div>
 </header>
 <nav id="TOC" role="doc-toc">
@@ -287,6 +294,9 @@ id="toc-deterministic-flow-test-grader">3.4 Deterministic Flow Test
 grader</a></li>
 <li><a href="#evaluation-plan" id="toc-evaluation-plan">3.5 Evaluation
 plan</a></li>
+<li><a href="#the-v0.7-evaluation-stated-with-its-denominators"
+id="toc-the-v0.7-evaluation-stated-with-its-denominators">3.6 The v0.7
+evaluation, stated with its denominators</a></li>
 </ul></li>
 <li><a href="#generator-failure-case-study"
 id="toc-generator-failure-case-study">4. Generator failure case
@@ -304,12 +314,19 @@ card hf/model_README.md is the authority): classifier and flow-grader result
 cells now report the locked v0 numbers (CORAL decode fix, pre-registered
 gates, 31.0% exact inter-judge agreement on n=575 with kappa unweighted
 0.1062 / quadratic 0.2766, under-prediction finding, flow MAE 0.065 ml on the
-100-video bench). Label set for those inter-judge kappas (H-YARDSTICK): they are
+100-video bench). Population for those inter-judge kappas: all 575 judged
+pairs, no coverage filter, because neither judge abstains. Label set for
+those inter-judge kappas (H-YARDSTICK): they are
 agreement between the two VLM judges who produced the label set, so they
 characterise the yardstick itself; the model kappas in this note were measured
-against the Qwen tier-2 judge labels and the v0.4/v0.5 numbers against the v0.5
-consensus (both fail wk1&gt;=0.70), while the same models measured against the
-v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
+against the Qwen tier-2 judge labels over covered rows (0.4227, held-out
+n = 109) and the v0.4/v0.5 numbers against the v0.5
+consensus (both fail wk1>=0.70), while the same models measured against the
+v0.7 full-coverage consensus clear that same covered-rows metric in 5/5 seeds
+each (v0.4 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860, held-out n = 108)
+- and on the all-rows kappa the v0.5 model does not clear it (mean 0.671,
+1 of 5 seeds), so the pass verdict is metric-dependent as well as
+yardstick-dependent (H-YARDEVID).
 RD-SLP inter-rater baseline, subgroup analyses, and
 bootstrap CIs were not measured in v0. The 0/24 generator-QA pilot is the
 sole reported development-pilot outcome. Frozen boundary wording comes from
@@ -360,16 +377,21 @@ licence grounds (of 587 unique events exactly 2 would ship cleanly; 592
 rows carry unverified open-images/openverse licences, 7 are CC BY-SA
 against the BY-NC-SA main release, 109 have unresolved redistribution
 status) and the model weights are withheld because the
-photo-classification head failed its pre-registered gates (wk1 weighted
-kappa &gt;= 0.70 measured 0.42; wk2 macro-F1 &gt;= 0.75 measured 0.358,
-with dangerous under-classification at 33% against a &lt;= 5% gate; the
-wk1 kill rule fired and photo-classification is dead as a product
-capability). Label set for that kappa (H-YARDSTICK): the 0.42 was measured
-against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured
-against the v0.5 consensus; the models fail the wk1&gt;=0.70 gate on both of
-those label sets. The same models measured against the v0.7 full-coverage
-consensus pass it (v0.7: 0.838-0.860). The ONE claim that stands is ‘the first open-source
-smartphone grader for the 10 ml IDDSI Flow Test’.”</p>
+photo-classification head failed its pre-registered gates (wk1 quadratic
+weighted kappa on covered rows &gt;= 0.70 measured 0.4227 on held-out n
+= 109 against the Qwen tier-2 judge labels; wk2 macro-F1 &gt;= 0.75
+measured 0.358, with dangerous under-classification at 33% against a
+&lt;= 5% gate; the wk1 kill rule fired and photo-classification is dead
+as a product capability). Label set and population for that kappa
+(H-YARDSTICK, H-YARDEVID): covered rows only, 96 of 109 events. The
+v0.4/v0.5 numbers were measured against the v0.5 consensus and also fail
+wk1&gt;=0.70; the same three checkpoints measured against the v0.7
+full-coverage consensus clear that same covered-rows metric in 5/5 seeds
+each (v0.4 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860, held-out n =
+108), while on the all-rows kappa the v0.5 model averages 0.671 and
+clears 0.70 on only 1 of 5 seeds - the pass verdict is a property of the
+metric as well as of the yardstick. The ONE claim that stands is ‘the
+first open-source smartphone grader for the 10 ml IDDSI Flow Test’.”</p>
 </blockquote>
 <p>We never claim: first IDDSI AI; first image classifier; first
 dataset/benchmark; clinically validated; diagnostic; medical-grade; or
@@ -383,8 +405,9 @@ r5_prior.md):</p>
 motion sensing to classify three IDDSI liquid levels - 96.5% controlled
 accuracy, but only &gt;81% under extreme conditions <span
 class="citation" data-cites="viscocam">(<a href="#ref-viscocam"
-role="doc-biblioref"><em><span>ViscoCam</span></em> 2021</a>)</span>.
-Exposes neither dataset nor weights.</li>
+role="doc-biblioref"><span>“<span>ViscoCam</span>: Smartphone-Based
+Drink Viscosity Control Assistant”</span> 2021</a>)</span>. Exposes
+neither dataset nor weights.</li>
 <li><strong>OptiTexture (HKUST).</strong> Combines RGB with a &lt;$20
 light-scattering sensor: 91.96% on 112 L3-L6 samples; its vision-only
 baseline was 69.64% <span class="citation" data-cites="optitexture">(<a
@@ -394,20 +417,21 @@ Exposes neither dataset nor weights.</li>
 Qwen pipeline achieved only 61.74% exact match on CEIV-115; open VLMs
 missed every liquid hazard <span class="citation"
 data-cites="eduhk_frontiers">(<a href="#ref-eduhk_frontiers"
-role="doc-biblioref"><span>“TODO”</span> 2026</a>)</span>. CEIV
-publishes examples, not the full machine-readable corpus.</li>
+role="doc-biblioref"><span>“TODO: Exact Article Title”</span>
+2026</a>)</span>. CEIV publishes examples, not the full machine-readable
+corpus.</li>
 <li><strong>Automated photogrammetric syringe test (2019).</strong>
 Automated video/photogrammetric measurement of the official syringe test
 appeared in 2019 <span class="citation" data-cites="syringe2019">(<a
-href="#ref-syringe2019" role="doc-biblioref"><em>TODO</em>
-2019</a>)</span>. (This is why we claim “first open-source smartphone
-grader for the 10 ml/10-second IDDSI Flow Test,” not “first video
-grader.”)</li>
+href="#ref-syringe2019" role="doc-biblioref"><span>“TODO: Exact Article
+Title”</span> 2019</a>)</span>. (This is why we claim “first open-source
+smartphone grader for the 10 ml/10-second IDDSI Flow Test,” not “first
+video grader.”)</li>
 <li><strong>Safe Plate (Australia, proprietary).</strong> Advertises
 photo-and-video IDDSI verification <span class="citation"
 data-cites="safeplate">(<a href="#ref-safeplate"
-role="doc-biblioref"><em><span>Safe Plate</span></em>, n.d.</a>)</span>.
-Proprietary; no published dataset or weights.</li>
+role="doc-biblioref"><span>“<span>Safe Plate</span>,”</span>
+n.d.</a>)</span>. Proprietary; no published dataset or weights.</li>
 </ul>
 <p>Also relevant context from r5_prior.md: the official IDDSI
 iOS/Android app is a descriptor/test-reference library, not a
@@ -516,6 +540,31 @@ BY-NC-SA main release, and 109 have unresolved redistribution status.
 Code ships under Apache-2.0; model weights are withheld on safety-gate
 grounds (Section 3.3). The project is not the official IDDSI website and
 is not IDDSI-endorsed.</p>
+<p><strong>Corpus denominators, stated separately because they are not
+interchangeable (H-UNUSABLE).</strong> A labelability sweep judged the
+corpus with two independent model families that did <strong>not</strong>
+judge the same events: Step-5 returned a verdict on 683 of the 684
+events, MiniMax-M3.1f on 512, and <strong>510</strong> events carry a
+verdict from both. <strong>152 events fail at least one labelability
+test</strong> - empty vessels, diagrams, no discernible food mass. That
+single count has two denominators. <strong>152/684 = 22.2%</strong> of
+the whole pre-clean corpus is the rate to quote for any claim about the
+corpus: all 152 ids are present in the 684-event pre-clean manifests and
+none survives in the cleaned manifest (684 - 152 = 532). <strong>152/510
+= 29.8%</strong> is a conditional rate over the both-judged subset,
+which the aggregate sweep output never enumerates, and the aggregate is
+not self-consistent (683 + 512 - 510 = 685, against a corpus of 684), so
+29.8% must not be presented as a corpus rate. On the 510 both-judged
+events the two families agree 96.7% (493/510) on “is there food” and
+85.5% (436/510) on “is it levellable” - the binary judgement is reliable
+across families, the five-level judgement is not. Reproduce every figure
+in this paragraph with
+<code>python3 tools/denominator_audit.py</code>.</p>
+<p>The v0.7 held-out test split is <strong>108 of the 532</strong>
+cleaned rows (314 train / 110 val / 108 test), all web-harvested, with a
+test-level distribution of L3 10 / L4 11 / L5 7 / L6 10 / <strong>L7
+70</strong> - so the majority test class is L7 at 70/108 and any
+comparison against a baseline must say so.</p>
 <h2 id="level-compatibility-model">3.3 Level-compatibility model</h2>
 <p>The primary still-image path uses
 <code>google/siglip2-base-patch16-224</code> as the encoder and a
@@ -544,28 +593,51 @@ unreachable: argmax over sigmoid-difference class masses could never
 fire for interior classes (proven numerically from the checkpoint). It
 was fixed with the ordinal rank rule
 <code>level = #{k : P(y&gt;k) &gt; 0.5}</code>. Held-out results (n =
-109): macro-F1 0.088 -&gt; 0.358, coverage 0.70 -&gt; 0.88, ECE 0.138
--&gt; 0.091, temperature 2.83 -&gt; 0.93; weighted kappa flat at 0.42.
-The pre-registered gates all failed: wk1 weighted kappa &gt;= 0.70
-(measured 0.42 - the kill rule FIRES, so photo-classification is dead as
-a product capability); wk2 macro-F1 &gt;= 0.75 (measured 0.358) with
-dangerous under-classification &lt;= 5% (measured 33%). The ceiling
-finding (regen 2026-09-16 on n_pairs = 575, full tier-2 sample): two VLM
-judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only <strong>31.0%</strong>
-of the same images (Cohen’s kappa unweighted 0.1062, quadratic-weighted
-0.2766) - still essentially chance for 5 classes - because middle IDDSI
-levels (L4/L5/L6) need absolute size/flow information a scale-free web
-photo does not carry. Every label-derived metric above is therefore
-measured against noise.</p>
-<p><strong>Label set for every kappa above (H-YARDSTICK).</strong> The 0.42
-was measured against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers
-were measured against the v0.5 consensus; the models fail the
-wk1&gt;=0.70 gate on both of those label sets. The same models measured
-against the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860). The
-inter-judge kappas 0.1062 / 0.2766 are agreement between the two VLM judges
-who produced the label set, so they characterise the yardstick itself rather
-than a model scored against one. The wk2 33% failure does not depend on the
-yardstick and stands on every reading.</p>
+109, 96 of 109 events covered, label set: the Qwen tier-2 judge labels
+of that run): macro-F1 0.088 -&gt; 0.358, coverage 0.70 -&gt; 0.88, ECE
+0.138 -&gt; 0.091, temperature 2.83 -&gt; 0.93; quadratic weighted kappa
+on covered rows flat at 0.4227 before and after the fix. The
+pre-registered gates all failed: wk1 quadratic weighted kappa on covered
+rows &gt;= 0.70 (measured 0.4227 on held-out n = 109, Qwen tier-2 judge
+labels - the kill rule FIRES, so photo-classification is dead as a
+product capability); wk2 macro-F1 &gt;= 0.75 (measured 0.358) with
+dangerous under-classification &lt;= 5% (measured 33%, and 33% is the
+covered figure: the abstention-blind <code>_all</code> variant reads
+29.4% on the same run and is the flattering direction, see H-ABSTBLIND).
+The ceiling finding (regen 2026-09-16 on n_pairs = 575, full tier-2
+sample): two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only
+<strong>31.0%</strong> of the same images (Cohen’s kappa unweighted
+0.1062, quadratic-weighted 0.2766, both over all 575 judged pairs with
+no coverage filter - still essentially chance for 5 classes) - because
+middle IDDSI levels (L4/L5/L6) need absolute size/flow information a
+scale-free web photo does not carry. Every label-derived metric above is
+therefore measured against noise.</p>
+<p><strong>Label set and population for every kappa above (H-YARDSTICK,
+H-YARDEVID).</strong> The 0.4227 is quadratic weighted kappa over
+covered rows only, measured against the Qwen tier-2 judge labels on
+held-out n = 109; every abstention is dropped from both numerator and
+denominator before the kappa is taken (H-KAPPACOV), so it is a selective
+kappa and is not the unconditional quantity the wk1 threshold is written
+against. The v0.4/v0.5 numbers were measured against the v0.5 consensus
+and fail the wk1 &gt;= 0.70 gate on it. The same three checkpoints
+measured against the v0.7 full-coverage consensus clear that same
+covered-rows metric in 5/5 seeds each - v0.4 0.7364-0.8077, v0.5
+0.7036-0.7953, v0.7 0.8375-0.8604 on held-out n = 108 (v0.4’s own
+v0.5-column denominator is its 142-event split; its verdict is unchanged
+on the 108 events common to all three models). <strong>The pass verdict
+is metric-dependent, not only yardstick-dependent</strong>: on the
+all-rows kappa, which keeps abstentions in the denominator, the same
+cells are v0.4 0.687-0.720 (3 of 5 seeds at or above 0.70), v0.5
+0.647-0.726 (mean 0.671, 1 of 5 seeds) and v0.7 0.793-0.825 (5 of 5).
+<code>results/v07_release/bias_matrix.json</code> holds that all-rows
+quantity, not the gate metric, and <code>head_to_head2.json</code> is
+scored against the v0.5 labels; the covered-rows table for v0.4 and v0.5
+is <code>results/yardstick_audit/per_seed.json</code>. The inter-judge
+kappas 0.1062 / 0.2766 are agreement between the two VLM judges who
+produced the label set, over all 575 judged pairs with no coverage
+filter because neither judge abstains; they characterise the yardstick
+itself rather than a model scored against one. The wk2 33% failure does
+not depend on the yardstick and stands on every reading.</p>
 <p><strong>Under-prediction finding (new in v0.1, not in v0.0).</strong>
 The regen cross-tab on the full tier-2 sample (n = 575) reveals a
 systematic pattern the preliminary 22.6% figure did not state: tier-1
@@ -605,10 +677,10 @@ smartphone grader for the 10 ml/10-second IDDSI Flow Test,” not the
 first video grader, because automated photogrammetric measurement of the
 syringe test appeared in 2019 <span class="citation"
 data-cites="syringe2019">(<a href="#ref-syringe2019"
-role="doc-biblioref"><em>TODO</em> 2019</a>)</span>. End-to-end
-performance (v0, the working deliverable): MAE 0.065 ml on a 100-video
-bench, grading L0-L4. A still photograph is never used to grade liquid
-flow.</p>
+role="doc-biblioref"><span>“TODO: Exact Article Title”</span>
+2019</a>)</span>. End-to-end performance (v0, the working deliverable):
+MAE 0.065 ml on a 100-video bench, grading L0-L4. A still photograph is
+never used to grade liquid flow.</p>
 <h2 id="evaluation-plan">3.5 Evaluation plan</h2>
 <p>Only <code>source="real"</code>, protocol-complete, adjudicated
 events in the locked <code>external_test</code> split contribute to the
@@ -618,16 +690,18 @@ split is enforced at recipe, batch, and kitchen level. Calibration and
 abstention thresholds are frozen on validation data before external-test
 evaluation.</p>
 <p>For the L3-L7 model, the v0 report contains macro-F1 with abstentions
-counted as misses; quadratic-weighted kappa on covered events (which must be
-read with its label set attached, and with its coverage - H-KAPPACOV and
-H-YARDSTICK both apply to that number); coverage
-and abstention rate; dangerous-direction under-classification (a
-prediction below the physical-test level); expected calibration error
-and temperature; and the CORAL-decode before/after comparison (Section
-3.3). RD-versus-SLP raw agreement before adjudication would form the
-human inter-rater baseline but was not measured in v0; prespecified
-subgroup analyses and stratified bootstrap 95% confidence intervals are
-likewise not reported in v0.</p>
+counted as misses; quadratic-weighted kappa on covered events, always
+with its label set, its n, its coverage and the fact that it is
+coverage-filtered attached (H-KAPPACOV, H-YARDSTICK and H-YARDEVID all
+apply to that number, and the all-rows kappa on the same events is a
+different, lower quantity); coverage and abstention rate;
+dangerous-direction under-classification (a prediction below the
+physical-test level); expected calibration error and temperature; and
+the CORAL-decode before/after comparison (Section 3.3). RD-versus-SLP
+raw agreement before adjudication would form the human inter-rater
+baseline but was not measured in v0; prespecified subgroup analyses and
+stratified bootstrap 95% confidence intervals are likewise not reported
+in v0.</p>
 <p>The Flow Test evaluation compares estimated residual volume with the
 recorded physical reading, reports mL mean absolute error and L0-L4
 agreement away from the predefined 1/4/8 mL boundaries, and separately
@@ -637,83 +711,175 @@ prespecified in the runboard; failing a gate keeps the system at
 research-preview status rather than changing the metric or test set. In
 v0 the wk1 gate failed and the kill rule fired (Section 3.3):
 photo-classification is dead as a product capability, and only code,
-results, and the flow-test grader ship.</p>
+results, and the flow-test grader ship. Section 3.6 reports the v0.7
+evaluation on the same terms.</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>Observed metric (v0 / v0.1 regen)</th>
 <th>Value</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>CORAL fix, held-out n = 109: macro-F1</td>
 <td>0.088 -&gt; 0.358</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Coverage</td>
-<td>0.70 -&gt; 0.88</td>
+<td>0.70 -&gt; 0.88 (96 of 109 events covered after the fix)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>ECE</td>
 <td>0.138 -&gt; 0.091</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Temperature</td>
 <td>2.83 -&gt; 0.93</td>
 </tr>
-<tr>
-<td>Weighted kappa (covered events)</td>
-<td>0.42 (flat before/after fix; label set: Qwen tier-2 judge labels - see
-H-YARDSTICK)</td>
+<tr class="odd">
+<td>Quadratic weighted kappa, covered rows (n = 109, 96 covered)</td>
+<td>0.4227 (flat before/after fix; label set: Qwen tier-2 judge labels -
+see H-YARDSTICK, H-KAPPACOV)</td>
 </tr>
-<tr>
-<td>Dangerous under-classification rate</td>
-<td>33% (gate: &lt;= 5% - FAILED)</td>
+<tr class="even">
+<td>Dangerous under-classification, covered rows (n = 109)</td>
+<td>33% (gate: &lt;= 5% - FAILED); the abstention-blind all-N variant
+reads 29.4% on the same run (H-ABSTBLIND)</td>
 </tr>
-<tr>
-<td>wk1 gate (weighted kappa &gt;= 0.70)</td>
-<td>FAILED on the Qwen tier-2 judge labels; the same models PASS on the v0.7
-full-coverage consensus (v0.7: 0.838-0.860)</td>
+<tr class="odd">
+<td>wk1 gate (quadratic weighted kappa on covered rows &gt;= 0.70)</td>
+<td>FAILED on the Qwen tier-2 judge labels (0.4227, n = 109) and on the
+v0.5 consensus (v0.4 0.540-0.600, v0.5 0.537-0.614, v0.7 0.491-0.555;
+0/5 seeds each); the same three checkpoints clear it on the v0.7
+full-coverage consensus, 5/5 seeds each, on covered rows (v0.4
+0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860; held-out n = 108) - but
+NOT on the all-rows kappa, where v0.5 averages 0.671 with 1 of 5 seeds
+at or above 0.70 (H-YARDEVID)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>wk2 gate (macro-F1 &gt;= 0.75)</td>
 <td>FAILED (measured 0.358)</td>
 </tr>
-<tr>
-<td>Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B, n=575, v0.1
-regen)</td>
-<td>31.0% exact; kappa unweighted 0.1062, quadratic 0.2766 (agreement between
-the two judges who produced the label set - the yardstick itself, not a model
-scored against one)</td>
+<tr class="odd">
+<td>Inter-judge agreement (Qwen3-VL-2B vs Qwen3-VL-8B, all 575 judged
+pairs, no coverage filter, v0.1 regen)</td>
+<td>31.0% exact; kappa unweighted 0.1062, quadratic 0.2766 (agreement
+between the two judges who produced the label set - the yardstick
+itself, not a model scored against one)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Under-prediction bias (v0.1 regen)</td>
 <td>tier-1 systematically under-predicts L4-L6 toward L7; dangerous
 direction</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Flow residual-volume MAE (100-video bench, L0-L4)</td>
 <td>0.065 ml</td>
 </tr>
-<tr>
+<tr class="even">
 <td>RD-SLP inter-rater baseline</td>
 <td>not measured in v0</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Stratified-bootstrap 95% CIs</td>
 <td>not reported in v0</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Prespecified subgroups</td>
 <td>not reported in v0</td>
 </tr>
 </tbody>
 </table>
+<h2 id="the-v0.7-evaluation-stated-with-its-denominators">3.6 The v0.7
+evaluation, stated with its denominators</h2>
+<p>The v0.7 model is the SigLIP-2 CORAL head trained on the four-family
+full-coverage consensus labels over the cleaned 532-row corpus. Its
+held-out test split is <strong>108 events</strong> of 532 rows (314
+train / 110 val / 108 test), all web-harvested, level distribution L3 10
+/ L4 11 / L5 7 / L6 10 / <strong>L7 70</strong>. Five seeds; every
+figure below is the five-seed range. Label set for every kappa below
+(H-YARDSTICK): <strong>the v0.7 full-coverage consensus</strong> - the
+circular comparison, discounted accordingly. Population is stated per
+row because the covered subset and all 108 events are different
+populations and the gap between them is the model’s own abstention
+(H-KAPPACOV, H-YARDEVID). Reproduce with
+<code>python3 -P tools/verify_paper_claims.py</code>, which recomputes
+every number in this section from
+<code>results/v07_release/v07_seed*_metrics.json</code>.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>metric (v0.7, 5 seeds, held-out n = 108, label set: v0.7
+full-coverage consensus)</th>
+<th>range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>quadratic weighted kappa, <strong>covered rows</strong> (the wk1
+gate quantity)</td>
+<td>0.838 - 0.860</td>
+</tr>
+<tr class="even">
+<td>quadratic weighted kappa, <strong>all 108 rows</strong>, abstentions
+in the denominator</td>
+<td>0.793 - 0.825</td>
+</tr>
+<tr class="odd">
+<td>coverage (events carrying a decision)</td>
+<td>78.7 - 85.2% (85 - 92 of 108)</td>
+</tr>
+<tr class="even">
+<td>abstention rate</td>
+<td>14.8 - 21.3% (16 - 23 of 108)</td>
+</tr>
+<tr class="odd">
+<td>exact level match, covered events</td>
+<td>80.9 - 84.9%</td>
+</tr>
+<tr class="even">
+<td>exact level match, all 108 events, abstentions scored as misses</td>
+<td>66.7 - 70.4%</td>
+</tr>
+<tr class="odd">
+<td>macro-F1 with abstentions counted as misses</td>
+<td>0.319 - 0.395</td>
+</tr>
+<tr class="even">
+<td>dangerous under-classification, covered rows</td>
+<td>3.5 - 5.6%</td>
+</tr>
+<tr class="odd">
+<td>baseline: always answer L7 (the majority test class, 70/108)</td>
+<td>64.8% exact</td>
+</tr>
+</tbody>
+</table>
+<p>The two exact-match rows must be read against the baseline, not
+against each other: on the covered basis the model beats always-L7 by
+16.1 - 20.1 points, and on the all-events basis with abstentions scored
+as misses by only 1.9 - 5.6 points. The 108-event test set is 64.8% L7,
+so a kappa or an exact match on it is dominated by one class - and the
+label set for every kappa in this section is the v0.7 full-coverage
+consensus (H-YARDSTICK), which is the circular comparison.</p>
+<p><strong>Decode collapse on the middle levels.</strong> Per-level
+recall on decided events, seed 43 (92 decisions of 108 events), is L3
+0.90, L4 0.50, <strong>L5 0.00, L6 0.00</strong>, L7 1.00; per-level
+precision on decided events is <em>undefined</em> for L5 and L6 because
+neither level is ever predicted. <strong>L5 and L6 are never emitted as
+a decision in any of the five seeds</strong>: seed 43 emits L3 13, L4 2
+and L7 77 of its 92 decisions, and seeds 29, 71 and 101 emit no L4
+either. This is the L7 catch-all sink measured on the current head, and
+it is carried as a limitation in Section 6.</p>
 <h1 id="generator-failure-case-study">4. Generator failure case
 study</h1>
 <p>The first overnight synthetic-pipeline pilot on 1 September 2026
@@ -791,22 +957,63 @@ pipeline development only; they must not be cited as ground truth
 audited 0/24 pilot and its three failure modes are documented in Section
 4. The prompt remedy has not yet been evaluated; its effect is TBD.</li>
 <li><strong>Photo classification killed at its gates.</strong> The head
-failed every pre-registered gate (wk1 weighted kappa &gt;= 0.70 measured
-0.42 - kill rule fired; wk2 macro-F1 &gt;= 0.75 measured 0.358,
-dangerous under-classification 33% against a &lt;= 5% gate), and kappa
-0.42 is measured against label noise: two VLM judges agree on only
-<strong>31.0%</strong> of the same images (n=575, kappa unweighted
-0.1062, quadratic-weighted 0.2766 - still essentially chance for 5
-classes), and tier-1 systematically under-predicts difficulty (Section
-3.3). Weights are withheld; photo-classification is dead as a product
-capability. Label set for these kappas (H-YARDSTICK): the model’s 0.42 was
-measured against the Qwen tier-2 judge labels and the v0.4/v0.5 numbers
-against the v0.5 consensus; the models fail the wk1&gt;=0.70 gate on both of
-those label sets. The same models measured against the v0.7 full-coverage
-consensus pass it (v0.7: 0.838-0.860). The 0.1062 / 0.2766 inter-judge
-kappas are agreement between the two judges who produced the label set, so
-they characterise the yardstick itself rather than a model scored against
+failed every pre-registered gate (wk1 quadratic weighted kappa on
+covered rows &gt;= 0.70 measured 0.4227 on held-out n = 109, 96 of 109
+events covered, against the Qwen tier-2 judge labels - kill rule fired;
+wk2 macro-F1 &gt;= 0.75 measured 0.358, dangerous under-classification
+33% against a &lt;= 5% gate), and that kappa is measured against label
+noise: two VLM judges agree on only <strong>31.0%</strong> of the same
+images (all 575 judged pairs, kappa unweighted 0.1062,
+quadratic-weighted 0.2766 - still essentially chance for 5 classes), and
+tier-1 systematically under-predicts difficulty (Section 3.3). Weights
+are withheld; photo-classification is dead as a product capability.
+Label set and population for these kappas (H-YARDSTICK, H-YARDEVID): the
+0.4227 is a covered-rows kappa against the Qwen tier-2 judge labels, and
+the v0.4/v0.5 numbers are covered-rows kappas against the v0.5
+consensus; the models fail the wk1&gt;=0.70 gate on both of those label
+sets. The same three checkpoints measured against the v0.7 full-coverage
+consensus clear that same covered-rows metric in 5/5 seeds each (v0.4
+0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860; held-out n = 108), but
+on the all-rows kappa the v0.5 model averages 0.671 and clears 0.70 on
+only 1 of 5 seeds, so “all three pass” is true of the covered-rows
+metric and false of the all-rows metric. The 0.1062 / 0.2766 inter-judge
+kappas are agreement between the two judges who produced the label set,
+over all 575 judged pairs with no coverage filter, so they characterise
+the yardstick itself rather than a model scored against one.</li>
+<li><strong>Decode collapse: L5 and L6 are never emitted as a
+decision.</strong> On the v0.7 held-out split (108 events, 5 seeds),
+per-level recall on decided events is L3 0.90, L4 0.50, <strong>L5 0.00,
+L6 0.00</strong>, L7 1.00 at seed 43 (92 decisions of 108 events), and
+L5 and L6 are never emitted as a decision in <strong>any</strong> of the
+five seeds - seeds 29, 71 and 101 emit no L4 either. Per-level precision
+is undefined for L5 and L6 because the level is never predicted. The
+head is therefore an L7 detector with a partial L3 detector, not a
+five-level classifier, and a reported kappa or exact match on this test
+set is dominated by the L7 class (70 of 108 events; the always-L7
+baseline scores 64.8% exact, against 80.9-84.9% for the model on covered
+events and only 66.7-70.4% on all 108 events with abstentions scored as
+misses). Section 3.6 carries the numbers.</li>
+<li><strong>Every kappa is conditional on its yardstick and on its
+population.</strong> The same three checkpoints fail wk1 against the
+v0.5 consensus and pass it against the v0.7 full-coverage consensus
+(H-YARDSTICK), and the same cells pass on the covered-rows metric while
+the v0.5 model fails on the all-rows metric (H-YARDEVID).
+<code>results/v07_release/bias_matrix.json</code> holds the all-rows
+kappa, not the gate metric. No non-circular yardstick exists: the label
+sets were produced by the same labeller families as the models, so a
+reviewer should discount every performance claim here, including this
 one.</li>
+<li><strong>Corpus denominator: 152 of 684 events were never
+labelable.</strong> The labelability sweep removed 152 events -
+<strong>152/684 = 22.2%</strong> of the whole pre-clean corpus, which is
+the rate to quote for any claim about the corpus (all 152 ids are
+present in the 684-event pre-clean manifests and none survives in the
+cleaned 532-row manifest, 684 - 152 = 532). <strong>152/510 =
+29.8%</strong> is a conditional rate over the both-judged subset and
+must not be quoted as a corpus rate: the aggregate is not
+self-consistent (683 + 512 - 510 = 685 against a corpus of 684). The
+removals fall on the hard middle levels, so the cleaned corpus is a
+harder problem, not an easier one.</li>
 <li><strong>Population and cuisine coverage:</strong> unverified in v0.
 The planned remedy is physically-tested desk specimens (60 base foods x
 5 levels = 300, single-operator, protocol-following, test-filmed, with a
@@ -818,10 +1025,12 @@ L0-L4), not “first video grader” (2019 photogrammetric syringe
 measurement predates it).</li>
 <li><strong>What v0 reports and what it does not.</strong> Classifier
 results (CORAL fix, gates, 31.0% ceiling finding + kappa +
-under-prediction) and the flow-grader bench are reported in Sections
-3.3-3.5. The RD-SLP inter-rater baseline, subgroup analyses, and
-bootstrap CIs were not measured in v0. The 0/24 generator-QA pilot is
-not a model, dataset, or flow-grader evaluation.</li>
+under-prediction, the v0.7 evaluation and the L5/L6 decode collapse) and
+the flow-grader bench are reported in Sections 3.3-3.6, each with its
+label set and its population named (H-YARDSTICK, H-YARDEVID). The RD-SLP
+inter-rater baseline, subgroup analyses, and bootstrap CIs were not
+measured in v0. The 0/24 generator-QA pilot is not a model, dataset, or
+flow-grader evaluation.</li>
 </ul>
 <h1 id="conclusion">7. Conclusion</h1>
 <p>IDDSI-Open v0 ships code, eval results, and an open-source smartphone
@@ -829,57 +1038,64 @@ grader for the 10 mL / 10 s IDDSI Flow Test (MAE 0.065 ml on the
 100-video bench, L0-L4) - claiming only the narrow first stated in
 Section 1 (“the first open-source smartphone grader for the 10 ml IDDSI
 Flow Test”) and never clinical validity - plus a measured negative
-finding: photo-classification failed its pre-registered gates (weighted
-kappa 0.42 against a &gt;= 0.70 gate; macro-F1 0.358 against a &gt;=
-0.75 gate; dangerous under-classification 33% against a &lt;= 5% gate)
-measured against <strong>31.0%</strong> inter-judge label noise on n=575
-(kappa unweighted 0.1062, quadratic-weighted 0.2766, with a systematic
-tier-1 under-prediction bias - Section 3.3), so the model weights and
-the harvested dataset are withheld and photo-classification is dead as a
-product capability. Label set for these kappas (H-YARDSTICK): the
-model’s 0.42 was measured against the Qwen tier-2 judge labels and the
-v0.4/v0.5 numbers against the v0.5 consensus; the models fail the
-wk1&gt;=0.70 gate on both of those label sets, and the same models measured
-against the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
-Held-out results, failure cases, and test videos
-accompany the repository. Planned next step, not done: physically-tested
-desk specimens (60 base foods x 5 levels = 300, single-operator,
+finding: photo-classification failed its pre-registered gates (quadratic
+weighted kappa on covered rows 0.4227 against a &gt;= 0.70 gate;
+macro-F1 0.358 against a &gt;= 0.75 gate; dangerous under-classification
+33% against a &lt;= 5% gate) measured against <strong>31.0%</strong>
+inter-judge label noise on all 575 judged pairs (kappa unweighted
+0.1062, quadratic-weighted 0.2766, with a systematic tier-1
+under-prediction bias - Section 3.3), so the model weights and the
+harvested dataset are withheld and photo-classification is dead as a
+product capability. Label set and population for these kappas
+(H-YARDSTICK, H-YARDEVID): the 0.4227 is a covered-rows kappa against
+the Qwen tier-2 judge labels (held-out n = 109), the v0.4/v0.5 numbers
+are covered-rows kappas against the v0.5 consensus, and the models fail
+the wk1&gt;=0.70 gate on both of those label sets. The same three
+checkpoints measured against the v0.7 full-coverage consensus clear that
+same covered-rows metric in 5/5 seeds each (v0.4 0.736-0.808, v0.5
+0.704-0.795, v0.7 0.838-0.860, held-out n = 108); on the all-rows kappa
+the v0.5 model averages 0.671 with 1 of 5 seeds at or above 0.70, so the
+pass verdict is a property of the metric as well as of the yardstick.
+The v0.7 head also collapses its decode onto L7: L5 and L6 are never
+emitted as a decision in any of the five seeds (Section 3.6, Section 6).
+Held-out results, failure cases, and test videos accompany the
+repository. Planned next step, not done: physically-tested desk
+specimens (60 base foods x 5 levels = 300, single-operator,
 protocol-following, test-filmed, with a filmed re-test subsample for
 intra-rater reliability). Numeric conclusions: as reported in Sections
-3.3-3.5.</p>
+3.3-3.6.</p>
 <h1 id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent"
 role="list">
 <div id="ref-iddsi_framework" class="csl-entry" role="listitem">
-IDDSI. 2019. <em>The <span>International Dysphagia Diet Standardisation
-Initiative</span> Framework: Detailed Definitions and Test Methods for
-Texture-Modified Foods and Liquids</em>. <a
+IDDSI. 2019. <span>“The <span>International Dysphagia Diet
+Standardisation Initiative</span> Framework: Detailed Definitions and
+Test Methods for Texture-Modified Foods and Liquids.”</span> <a
 href="https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf"
-class="uri">Https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf</a>.
+class="uri">https://www.iddsi.org/images/Publications-Resources/DetailedDefnTestMethods/English/V2TestingMethodsEnglish31july2019.pdf</a>.
 </div>
 <div id="ref-safeplate" class="csl-entry" role="listitem">
-<em><span>Safe Plate</span></em>. n.d. <a
+<span>“<span>Safe Plate</span>.”</span> n.d. <a
 href="https://www.safeplate.au/"
-class="uri">Https://www.safeplate.au/</a>.
+class="uri">https://www.safeplate.au/</a>.
 </div>
 <div id="ref-optitexture" class="csl-entry" role="listitem">
-TODO. TODO. <em><span>OptiTexture</span>: A Low-Cost Optical Deep
-Learning Solution for Objective Texture Assessment</em>. <a
+TODO. TODO. <span>“<span>OptiTexture</span>: A Low-Cost Optical Deep
+Learning Solution for Objective Texture Assessment.”</span> <a
 href="https://dl.acm.org/doi/10.1145/3810209"
-class="uri">Https://dl.acm.org/doi/10.1145/3810209</a>.
+class="uri">https://dl.acm.org/doi/10.1145/3810209</a>.
 </div>
 <div id="ref-syringe2019" class="csl-entry" role="listitem">
-<em>TODO: Exact Article Title</em>. 2019.
+<span>“TODO: Exact Article Title.”</span> 2019.
 </div>
 <div id="ref-eduhk_frontiers" class="csl-entry" role="listitem">
-<span>“TODO: Exact Article Title.”</span> 2026. <em>Frontiers in
-Nutrition</em>.
+———. 2026. <em>Frontiers in Nutrition</em>.
 </div>
 <div id="ref-viscocam" class="csl-entry" role="listitem">
-<em><span>ViscoCam</span>: Smartphone-Based Drink Viscosity Control
-Assistant</em>. 2021. <a
+<span>“<span>ViscoCam</span>: Smartphone-Based Drink Viscosity Control
+Assistant.”</span> 2021. <a
 href="https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/"
-class="uri">Https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/</a>.
+class="uri">https://research.polyu.edu.hk/en/publications/viscocam-smartphone-based-drink-viscosity-control-assistant-for-d/</a>.
 </div>
 </div>
 </body>

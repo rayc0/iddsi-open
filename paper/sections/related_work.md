@@ -1,7 +1,16 @@
 <!--
 W36 section file. Standalone expansion of paper.md Section 2 ("Related work").
 Every factual claim and number below traces to r5_prior.md / r5_sol.md /
-r5_feas.md (frozen project sources). Citation keys refer to
+r5_feas.md (frozen project sources). Population and label set for every kappa
+quoted here: the 0.23-0.36 figures are the published physical-test
+literature's own inter-rater agreement over every pair both human raters
+scored, with no coverage filter; the 0.1062 / 0.2766 figures are agreement
+between the two VLM judges who produced this project's label set, over all 575
+judged pairs with no coverage filter, so they characterise the yardstick
+itself rather than a model scored against one; the 0.4227 model kappa is
+quadratic weighted kappa over covered rows (96 of 109 held-out events) against
+the Qwen tier-2 judge labels (H-YARDSTICK, H-KAPPACOV, H-YARDEVID).
+Citation keys refer to
 ../references.bib. W22 owns paper.md; this file is not yet included by it.
 -->
 
@@ -24,7 +33,11 @@ of only 0.23-0.36 [@iddsi_reliability]. This cuts both ways for machine
 grading: it motivates objective measurement, but it also means that any
 "ground truth" label collected from a single rater carries substantial noise,
 and that human inter-rater agreement must be reported alongside model results
-(r5_feas.md, evaluation plan).
+(r5_feas.md, evaluation plan). Label set and population for that kappa
+(H-YARDSTICK): human raters scoring the official IDDSI physical tests - a
+different label set from any model label set in this project, and not a model
+scored against one - over every pair both raters scored, with no coverage
+filter because a human rater does not abstain.
 
 ## Automated measurement of the IDDSI syringe test (2019)
 
@@ -58,11 +71,19 @@ downloadable IDDSI-specific dataset or trained weights under an explicit
 reuse licence. The v0.1 negative finding reframes this bracket from below: two
 VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only **31.0%** of the same
 images (n_pairs = 575, full tier-2 sample, regen 2026-09-16; Cohen's kappa
-unweighted 0.1062, quadratic-weighted 0.2766 - still essentially chance for 5
+unweighted 0.1062, quadratic-weighted 0.2766, both computed over all 575
+judged pairs with no coverage filter because neither judge abstains - still
+essentially chance for 5
 classes) with a systematic tier-1 under-prediction bias toward the safe end,
 because middle IDDSI levels (L4/L5/L6) need absolute size/flow information a
 scale-free web photo does not carry, so label-derived accuracy numbers on such
-photos are measured against noise.
+photos are measured against noise. Label set for those two kappas
+(H-YARDSTICK): they are agreement between the two VLM judges who produced the
+label set, so they characterise the yardstick itself rather than a model
+scored against one. The v0.7 head shows what that noise costs at inference:
+on its held-out split of 108 events it never emits L5 or L6 as a decision in
+any of five seeds, so it functions as an L7 detector with a partial L3
+detector rather than a five-level classifier.
 
 ## Meal-screening systems and product-side tools
 
@@ -99,7 +120,14 @@ Frontiers 2026 61.74%, Safe Plate AU):
    dataset is unpublishable on licence grounds: of 587 unique events exactly
    2 would ship cleanly (592 rows carry unverified open-images/openverse
    licences, 7 are CC BY-SA against the BY-NC-SA main release, 109 have
-   unresolved redistribution status). Withholding is the stated v0 decision.
+   unresolved redistribution status). A labelability sweep removed a further
+   152 events from the corpus: **152/684 = 22.2%** of the whole pre-clean
+   corpus, the rate to quote for any claim about the corpus (all 152 ids are
+   present in the 684-event pre-clean manifests and none survives in the
+   cleaned 532-row manifest, 684 - 152 = 532), against **152/510 = 29.8%** of
+   the both-judged subset, a conditional rate the aggregate sweep never
+   enumerates and which must not be quoted as a corpus rate (683 + 512 - 510
+   = 685, against a corpus of 684). Withholding is the stated v0 decision.
 2. **Synthetic-first pipeline development.** A four-provenance-class design
    (synthetic / real-weak / real-crowd / real-tested) that uses synthetic and
    weakly labelled media for pipeline development and pretraining while
@@ -124,8 +152,18 @@ card `hf/model_README.md` is the authority):**
 > open-images/openverse licences, 7 are CC BY-SA against the BY-NC-SA main
 > release, 109 have unresolved redistribution status) and the model weights
 > are withheld because the photo-classification head failed its
-> pre-registered gates (wk1 weighted kappa >= 0.70 measured 0.42; wk2
+> pre-registered gates (wk1 quadratic weighted kappa on covered rows >= 0.70
+> measured 0.4227 on held-out n = 109, 96 of 109 events covered, against the
+> Qwen tier-2 judge labels; wk2
 > macro-F1 >= 0.75 measured 0.358, with dangerous under-classification at 33%
 > against a <= 5% gate; the wk1 kill rule fired and photo-classification is
-> dead as a product capability). The ONE claim that stands is 'the first
+> dead as a product capability). Label set and population for that kappa
+> (H-YARDSTICK, H-YARDEVID): covered rows only, 96 of 109 events. The
+> v0.4/v0.5 numbers are covered-rows kappas against the v0.5 consensus and
+> also fail wk1>=0.70; the same three checkpoints measured against the v0.7
+> full-coverage consensus clear that same covered-rows metric in 5/5 seeds each
+> (v0.4 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860, held-out n = 108),
+> while on the all-rows kappa the v0.5 model averages 0.671 and clears 0.70 on
+> only 1 of 5 seeds - the pass verdict is a property of the metric as well as
+> of the yardstick. The ONE claim that stands is 'the first
 > open-source smartphone grader for the 10 ml IDDSI Flow Test'."

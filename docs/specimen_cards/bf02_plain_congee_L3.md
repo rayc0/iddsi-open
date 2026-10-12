@@ -4,11 +4,11 @@ Weigh 250 g takeaway or chilled plain congee into the blender jar. Add 50 ml wat
 
 2. IDDSI TEST
 
-Fork drip: lift a fork from the specimen; the liquid drips slowly in continuous thin streams through the tines. Pass if drips fall steadily but not in a single sheet. Fork pressure: pressing the fork tines into 5 ml on a flat plate leaves a clear print that does not fill back in within 5 s. Pass if the print holds. Spoon tilt: a heaped spoon tilted to 45 degrees slides off in 2-4 s, not instantly and not in one lump. Pass at 2-4 s. Syringe flow: fill the IDDSI 10 ml syringe to 10 ml, release, wait 10 s; pass if 8-10 ml remains in the barrel.
+Fork drip: lift a fork from the specimen; the liquid drips slowly in continuous thin streams through the tines. Pass if drips fall steadily but not in a single sheet. Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Spoon tilt: a heaped spoon tilted to 45 degrees slides off in 2-4 s, not instantly and not in one lump. Pass at 2-4 s. Syringe flow: fill the IDDSI 10 ml syringe to 10 ml, release, wait 10 s; pass if 8-10 ml remains in the barrel.
 
 3. VISUAL QC
 
-On the fork: glossy, fully smooth, no grains or rice skins catching the tines. On the spoon: coats the bowl in an even layer with no bare streaks. In the jug: flows like warm honey when tipped; pours in a continuous ribbon that stacks briefly before settling.
+On the fork: glossy, fully smooth, no grains or rice skins catching the tines. On the spoon: coats the bowl in an even layer with no bare streaks. In the jug: flows like warm honey when tipped; pours in a continuous ribbon that stacks briefly before settling. By-eye check only (not a section 5.1 test at L3): pressing the fork tines into 5 ml on a flat plate leaves a clear print that does not fill back in within 5 s; pass if the print holds.
 
 4. SHOTS
 

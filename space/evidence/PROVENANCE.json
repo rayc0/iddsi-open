@@ -1,0 +1,158 @@
+{
+ "_built_by": "space/tools/build_evidence_bundle.py",
+ "_repo_root": "/work/lanes2/rel02_space",
+ "_data_root": "/work/data",
+ "files": {
+  "confusion_seed43.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/confusion_seed43.json",
+   "bytes": 1571,
+   "sha256": "c2176b962aefb492d5037dfcea9d84e07c9aae4ec2cae741a0eaad47e9d8aae7"
+  },
+  "structural_seed43.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/structural_seed43.json",
+   "bytes": 3843,
+   "sha256": "9ccd54050c50e9b1808f6efefefbcdd6078ca139955d2fd7ecf64e144c745c44"
+  },
+  "adjacent_pairs_seed43.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/adjacent_pairs_seed43.json",
+   "bytes": 1287,
+   "sha256": "1c2b5c359f385d472be99b4e51d7664b6ff71d9ce3bfd9ca7bc91cc3bb4d60f2"
+  },
+  "bias_seed43.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/bias_seed43.json",
+   "bytes": 1397,
+   "sha256": "93138adb5a2bad251348b64fcde5384bbfdd8bc3a9bf671f6cfb625de61f3950"
+  },
+  "seed_ranking.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/seed_ranking.json",
+   "bytes": 1815,
+   "sha256": "4d322d0647706f0ed947ba2369120e64ec8a8fc89e62a3ea8748c71a8b260e9d"
+  },
+  "analysis_summary.json": {
+   "kind": "copied verbatim",
+   "source": "analysis/errors_v07/outputs/summary.json",
+   "bytes": 1758,
+   "sha256": "dc674d4a15649869a6d51704ace5031625327a61869c6820890c43624d2f28c1"
+  },
+  "v07_seed17_metrics.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed17_metrics.json",
+   "bytes": 10531,
+   "sha256": "8fd7cf90461549564012c39795da163858953e5d38fac5afeda20e5453c7c2ca"
+  },
+  "v07_seed29_metrics.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed29_metrics.json",
+   "bytes": 10466,
+   "sha256": "4146874e41abb31b5465e5de2789d143920bf6aedd1037cabf24a57703c7e979"
+  },
+  "v07_seed43_metrics.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed43_metrics.json",
+   "bytes": 10620,
+   "sha256": "177ba8ee8b8cff08413b680bc985d896eec439e6c001c9cb03e04bc425a2f993"
+  },
+  "v07_seed71_metrics.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed71_metrics.json",
+   "bytes": 10438,
+   "sha256": "3bbe6a9d3368a0df09f183364e9a99bcfde016c41914d8bef0ac59e73e80937d"
+  },
+  "v07_seed101_metrics.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed101_metrics.json",
+   "bytes": 10483,
+   "sha256": "2bd4e7c42b8f8307b45b13fbe1396f961b93b53c26679ae042074af24938e5c8"
+  },
+  "v07_seed43_calibration.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/v07_seed43_calibration.json",
+   "bytes": 380,
+   "sha256": "f28d0ef50fd03c9f067579d73932f2f51db86953d9faaa8803a14834e99a612b"
+  },
+  "bias_matrix.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/bias_matrix.json",
+   "bytes": 560,
+   "sha256": "1a71557f178a647f8cd02c7f12fc0cd6851da0e7dc0699028cf18d2a01f5297c"
+  },
+  "coverage_meta.json": {
+   "kind": "copied verbatim",
+   "source": "results/v07_release/coverage_meta.json",
+   "bytes": 149,
+   "sha256": "6592ba9248fcd758038a2e2706f7d82e4afefde7a08036709ba946ce1a58eca2"
+  },
+  "yardstick_summary.json": {
+   "kind": "copied verbatim",
+   "source": "results/yardstick_audit/summary.json",
+   "bytes": 2722,
+   "sha256": "8e412cab979a65414654a5d2d121a35eb364ac13bcfb92b46a28b50a1034b632"
+  },
+  "yardstick_flip_decomposition.json": {
+   "kind": "copied verbatim",
+   "source": "results/yardstick_audit/flip_decomposition.json",
+   "bytes": 3702,
+   "sha256": "ca3749cf7862cd2cb5b06f69ebf56b847231e1195d114f553864a51914f51cae"
+  },
+  "yardstick_bias_matrix_identification.json": {
+   "kind": "copied verbatim",
+   "source": "results/yardstick_audit/bias_matrix_identification.json",
+   "bytes": 2412,
+   "sha256": "1767839c5ee8b0e9d8b54cdfd084b8a3ac3bac3bb9095c0e906ee04fd6c0aec4"
+  },
+  "dedup_report.json": {
+   "kind": "copied verbatim",
+   "source": "results/v03_groupdisjoint/dedup_report.json",
+   "bytes": 6801,
+   "sha256": "2075a2d18b27411490b7d14ed3b7c0c6c90ecb4772951550d1dee6d683a2226f"
+  },
+  "labelability_sweep.json": {
+   "kind": "copied verbatim",
+   "source": "results/v05_release/labelability_sweep.json",
+   "bytes": 200,
+   "sha256": "0b1e8080176763cfc002de8d8e86a014eb8ac0864fd13c23dedf8997571cb3ff"
+  },
+  "inter_judge_20260916.json": {
+   "kind": "copied verbatim",
+   "source": "results/regen_20260916/inter_judge_20260916.json",
+   "bytes": 105,
+   "sha256": "be6c0aaf0a83279a74a30c29cc62a76c3dff723d6dfd501acd1f50171415b682"
+  },
+  "yardstick_per_seed_slim.json": {
+   "kind": "copied with a recorded reduction",
+   "source": "results/yardstick_audit/per_seed.json",
+   "reduction": "per_event arrays dropped (60 runs x ~108 per-event records); all scalar fields of all 60 runs kept unchanged",
+   "bytes": 23780,
+   "sha256": "1022e62bd8581b6e673afdae0555d47f19bc5926c8ca3e879f3f411149a02735"
+  },
+  "HAZARD_LOG.md": {
+   "kind": "copied byte-for-byte",
+   "source": "hf/HAZARD_LOG.md",
+   "bytes": 40446,
+   "sha256": "f3265096cd9381d741ed427af8e1565a855ae93f3f3afe96267eef25267e7658"
+  },
+  "model_README.md": {
+   "kind": "copied byte-for-byte",
+   "source": "hf/model_README.md",
+   "bytes": 38140,
+   "sha256": "3be29d38edc91782e0d83282c32e1e30b6fae9ffa4ebc7a29ca93efff13ed333"
+  },
+  "corpus_hygiene_measured.json": {
+   "kind": "measured by this script",
+   "source": "space/tools/build_evidence_bundle.py::measure_corpus_hygiene",
+   "inputs": {
+    "realweak_pilot": "/work/data/realweak_pilot/attribution.jsonl",
+    "harvest_d1": "/work/data/harvest_d1/attribution.jsonl",
+    "harvest_d1b": "/work/data/harvest_d1b/attribution.jsonl",
+    "manifest_v07_weighted.jsonl": "/work/data/manifest_v07_weighted.jsonl"
+   },
+   "bytes": 3030,
+   "sha256": "a418df2b45a97c956169fcd7607c04561a5d12f76ac34f4da9347c145f8e1e1d"
+  }
+ }
+}

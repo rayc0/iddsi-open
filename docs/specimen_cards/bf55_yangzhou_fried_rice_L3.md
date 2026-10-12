@@ -2,10 +2,10 @@ PREP
 Weigh 200 g Yangzhou fried rice into blender bowl. Add 100 ml cool water. Blend 45 s on high, stopping to scrape once. Sieve through 4 mm mesh; discard retained solids. Return filtrate to blender, add 120 ml water, blend 10 s to homogenise. Weigh the slurry. Add thickener at 4 g per 100 ml of slurry as the calibration starting point; record actual mass used. Stir 30 s, rest 2 min, stir again 15 s. Re-weigh final specimen and record.
 
 IDDSI TEST
-Fork drip: tilt fork; slurry drips in slow, continuous dollops, not a stream. Spoon tilt: spoonful sits in a mound, slides off slowly when spoon tilted to 30 degrees. Fork pressure (no thumb): tines leave a clear, soft imprint but do not cut clean through. Syringe flow: fill 10 ml, release; 8-10 ml remains in the barrel after 10 s.
+Fork drip: tilt fork; slurry drips in slow, continuous dollops, not a stream. Spoon tilt: spoonful sits in a mound, slides off slowly when spoon tilted to 30 degrees. Fork pressure (no thumb): not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Syringe flow: fill 10 ml, release; 8-10 ml remains in the barrel after 10 s.
 
 VISUAL QC
-Surface is glossy with no separated oil sheen. No visible rice grains, peas, or egg flecks. Coats the spoon back in an even, opaque layer that holds its shape for 2-3 s before sliding.
+Surface is glossy with no separated oil sheen. No visible rice grains, peas, or egg flecks. Coats the spoon back in an even, opaque layer that holds its shape for 2-3 s before sliding. By-eye check only (not a section 5.1 test at L3): tines leave a clear, soft imprint but do not cut clean through.
 
 SHOTS
 yangzhou_fried_rice_L3_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame, specimen in white bowl.

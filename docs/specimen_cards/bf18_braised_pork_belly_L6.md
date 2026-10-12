@@ -1,11 +1,10 @@
 1. PREP
 Start with 400 g braised pork belly, both lean and fat present. Dice to ≤15 mm pieces on the cutting board using the 100 mm ruler to gauge. Mix lean and fat evenly into each piece. Do not blend — the L6 spec requires intact soft pieces, not a puree. Do not sieve. Do not add water or thickener; L6 is the as-eaten texture. If the pack arrives in large slabs, dice before portioning the 400 g. Weigh the diced 400 g on the digital scale into the capture dish.
 
-2. IDDSI TEST
-Fork-pressure test is the primary L6 check. Press the fork tines flat onto a single piece sitting on a plate. The piece must squash, the thumbnail pressed under the fork must blanch white, and the piece must not return to its original shape when the fork is lifted. Repeat on three pieces, mixing lean and fat samples. Spoon tilt: a piece lifted on the spoon and tilted should hold its shape and not drip or fall. Fork drip: lifting a piece on the fork should show no continuous drip through the tines. Pass only if all three pieces squash and do not recover.
+2. IDDSI TESTFork-pressure test is the primary L6 check. Press the fork tines flat onto a single piece sitting on a plate. The piece must squash, the thumbnail pressed under the fork must blanch white, and the piece must not return to its original shape when the fork is lifted. Repeat on three pieces, mixing lean and fat samples. Spoon tilt: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence. Fork drip: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence.
 
 3. VISUAL QC
-Pieces are glossy brown with visible alternating lean and fat layers, edges clearly diced not torn. Each piece sits as a distinct cube on the fork tines, not mashed. Surface sheen from the braise is intact, no separate liquid pooling at the bottom of the dish.
+Pieces are glossy brown with visible alternating lean and fat layers, edges clearly diced not torn. Each piece sits as a distinct cube on the fork tines, not mashed. Surface sheen from the braise is intact, no separate liquid pooling at the bottom of the dish. By-eye check only (not a section 5.2 test at L6): a piece lifted on the spoon and tilted should hold its shape and not drip or fall. By-eye check only (not a section 5.3 test at L6): lifting a piece on the fork should show no continuous drip through the tines; pass only if all three pieces squash and do not recover.
 
 4. SHOTS
 braised_pork_belly_L6_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame, dish centred.

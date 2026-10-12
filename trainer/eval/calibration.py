@@ -4,7 +4,12 @@ from typing import Any
 
 import numpy as np
 
-from train.model import coral_decode, coral_interior_mass_ceiling, coral_logits_to_probs
+from train.model import (
+    _check_decode_rule,
+    coral_decode,
+    coral_interior_mass_ceiling,
+    coral_logits_to_probs,
+)
 
 
 def softmax(values: np.ndarray) -> np.ndarray:
@@ -39,6 +44,7 @@ def calibrate_abstention_threshold(
     labels: np.ndarray,
     target_under_fnr: float,
     max_abstention: float,
+    decode: str = "rank",
 ) -> dict[str, Any]:
     """Choose the highest-coverage validation threshold satisfying the declared risk gate.
 
@@ -65,19 +71,51 @@ def calibrate_abstention_threshold(
     over the same candidates and ``target_met`` still reports the outcome.  It
     only removes the region where the gate can be "satisfied" by deleting the
     interior levels from the output entirely.
+
+    Tie-break direction
+    -------------------
+    Among candidates that tie on coverage the most CONSERVATIVE one is kept -- the
+    highest threshold.  ``0.0`` and ``min(confidence)`` both give coverage 1.0,
+    and the previous ``-record["threshold"]`` key picked ``0.0`` between them: a
+    threshold the abstention gate can never fire, reported as
+    ``target_met: true`` with the reason "highest coverage satisfying the
+    configured validation under-classification gate".  The sibling branch of this
+    same function already uses the conservative idiom (``-coverage`` inside a
+    ``min`` to prefer higher coverage), so the two halves now agree.  Measured on
+    a collapsed v0.7 seed-43 calibration matrix (60 confident L7 rows, 40
+    confident L3 rows, under-classification 0.0), the old key returned 0.0 at
+    coverage 1.0; the corrected key returns 0.949493 at the same coverage.
+
+    Ceiling availability
+    --------------------
+    The cap is a property of the head's learned cut-points, not of which rows
+    happen to land in the validation split, so it is computed and reported
+    whenever the matrix is a CORAL reconstruction.  ``coral_interior_mass_ceiling``
+    recovers it even from a tail-only matrix, so a fully collapsed model -- every
+    validation row in the L3 or L7 tail, which is the regime the guard exists for
+    -- still reports it.  The CLIP still only applies when the split contains an
+    interior decode: clipping a tail-only split would delete every candidate
+    above the cap and leave 0.0 as the only reachable threshold, which is the
+    vacuous gate the tie-break fix above removes.  In that regime the cap is
+    therefore disclosed rather than enforced, and the ``WARNING`` below -- which
+    the clip had made unreachable -- fires so the reason string cannot read as a
+    healthy gate while sitting above the cap.
     """
+    decode = _check_decode_rule(decode)
     probabilities = np.asarray(probabilities, dtype=np.float64)
     labels = np.asarray(labels, dtype=np.int64)
     if probabilities.ndim != 2 or len(probabilities) != len(labels) or not len(labels):
         raise ValueError("probabilities must be a non-empty [N, C] matrix matching labels")
-    predictions, confidences = coral_decode(probabilities)
+    predictions, confidences = coral_decode(probabilities, decode)
     num_classes = probabilities.shape[1]
     interior = (predictions >= 1) & (predictions <= num_classes - 2)
     interior_decoded = int(interior.sum())
-    ceiling = coral_interior_mass_ceiling(probabilities) if interior_decoded else None
+    # Reported unconditionally (see "Ceiling availability"); enforced only when
+    # there is an interior decode in this split to protect.
+    ceiling = coral_interior_mass_ceiling(probabilities)
     min_coverage = 1.0 - max_abstention
     candidates = np.unique(np.concatenate(([0.0], confidences, [np.nextafter(confidences.max(), np.inf)])))
-    if ceiling is not None:
+    if ceiling is not None and interior_decoded:
         reachable = candidates[candidates <= ceiling + 1e-12]
         if reachable.size:
             candidates = reachable
@@ -97,7 +135,11 @@ def calibrate_abstention_threshold(
     eligible = [record for record in records if record["coverage"] + 1e-12 >= min_coverage]
     feasible = [record for record in eligible if record["under_fnr"] <= target_under_fnr]
     if feasible:
-        chosen = max(feasible, key=lambda record: (record["coverage"], -record["threshold"]))
+        # Highest coverage, then the HIGHEST threshold among the ties: a lower
+        # threshold buys no extra coverage on this matrix and filters nothing on
+        # any other.  0.0 is a candidate, so the old `-threshold` key could hand
+        # back a gate that can never fire.
+        chosen = max(feasible, key=lambda record: (record["coverage"], record["threshold"]))
         reason = "highest coverage satisfying the configured validation under-classification gate"
         target_met = True
     else:
@@ -117,6 +159,7 @@ def calibrate_abstention_threshold(
         "interior_levels_reachable": bool(
             interior_decoded and (confidences[interior] >= chosen["threshold"]).any()
         ),
+        "decode_rule": decode,
     }
 
 

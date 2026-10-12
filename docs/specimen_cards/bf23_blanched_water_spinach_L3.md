@@ -3,12 +3,12 @@ Weigh 200 g blanched water spinach (drained). Blend on high 45-60 s until smooth
 
 2. IDDSI TEST
 Fork drip: lift fork from cup; purée flows in a continuous slow ribbon and drips through the tines within 5-10 s — passes if it drips, fails if it pours in a stream or sits.
-Fork pressure: press fork tines into 1 cm of purée; tines leave a clear imprint that does not level out; surface holds the mark.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 Spoon tilt: tilt a heaped spoon to about 30°; purée slides off slowly in one dollop, not a pour, not a stack.
 Syringe flow (L3 confirmation): fill the 10 ml IDDSI syringe, release for 10 s; pass = 8-10 ml remains in the barrel.
 
 3. VISUAL QC
-On the fork: glossy green, even colour, no leaf flecks or fibres, smooth ribbon between tines. On the spoon: one cohesive mound that slides as a single lump. No watery halo around the specimen.
+On the fork: glossy green, even colour, no leaf flecks or fibres, smooth ribbon between tines. On the spoon: one cohesive mound that slides as a single lump. No watery halo around the specimen. By-eye check only (not a section 5.1 test at L3): press fork tines into 1 cm of purée; tines leave a clear imprint that does not level out; surface holds the mark.
 
 4. SHOTS
 Still 1: 45° hero, ruler (mm side up) and checkerboard in frame, specimen in a cup beside. Still 2: top-down, checkerboard filling the frame, cup centred. Still 3: fork-press close-up, tines half-pressed, mid-action.

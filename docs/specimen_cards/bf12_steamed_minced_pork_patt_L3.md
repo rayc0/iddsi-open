@@ -4,11 +4,11 @@ Weigh 200 g steamed minced pork patty on the digital scale. Tip into consumer bl
 
 2. IDDSI TEST
 
-Fork drip: hold fork horizontal 50 mm above plate; paste should drip in slow, отдельный drips, not a stream. Fork pressure: tines leave a clear, holding imprint when pressed; paste does not recover. Spoon tilt: a teaspoonful sits in a cohesive mound, slides off slowly when tilted 30 degrees, not runny. Syringe flow: fill 10 ml, release; 8–10 ml remains at 10 s. All four must pass.
+Fork drip: hold fork horizontal 50 mm above plate; paste should drip in slow, отдельный drips, not a stream. Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Spoon tilt: a teaspoonful sits in a cohesive mound, slides off slowly when tilted 30 degrees, not runny. Syringe flow: fill 10 ml, release; 8–10 ml remains at 10 s. All four must pass.
 
 3. VISUAL QC
 
-On fork: glossy, uniform, no meat fibre or fat specks, clings in a thick ribbon. On spoon: holds shape, slow slide, no separation of liquid. Surface matte-smooth, single colour, no air pockets.
+On fork: glossy, uniform, no meat fibre or fat specks, clings in a thick ribbon. On spoon: holds shape, slow slide, no separation of liquid. Surface matte-smooth, single colour, no air pockets. By-eye check only (not a section 5.1 test at L3): tines leave a clear, holding imprint when pressed; paste does not recover.
 
 4. SHOTS
 

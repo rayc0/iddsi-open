@@ -9,10 +9,10 @@ Uniform deep orange, no fibre streaks or dark specks; matte-sheen surface, not g
 
 4. SHOTS
 steamed_sweet_potato_L4_take1.jpg — 45° hero, ruler + checkerboard in frame.
-steamed_sweet_potato_L4_take1.jpg — top-down, checkerboard only.
-steamed_sweet_potato_L4_take1.jpg — fork-press close-up, mid-press.
+steamed_sweet_potato_L4_take2.jpg — top-down, checkerboard only.
+steamed_sweet_potato_L4_take3.jpg — fork-press close-up, mid-press.
 steamed_sweet_potato_L4_take1.mp4 — 8-12 s fork-press and spoon-tilt.
-steamed_sweet_potato_L4_take1.mp4 — full IDDSI test film.
+steamed_sweet_potato_L4_take2.mp4 — full IDDSI test film.
 
 5. FAIL MODES
 Weeping thin liquid onto the plate — under-blended or over-watered; re-blend 10 s, sieve again. Puree runs through the fork tines — too thin; add 0.3 g thickener per 100 ml, re-test. Lumpy with visible fibre — under-sieved; re-sieve or blend longer.

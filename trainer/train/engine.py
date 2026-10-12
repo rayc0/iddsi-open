@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 import math
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import torch
 import yaml
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, WeightedRandomSampler
 
 from eval.calibration import calibrate_abstention_threshold, fit_coral_temperature
 from eval.metrics import evaluate_predictions
@@ -28,12 +29,39 @@ def _forward(model: OrdinalImageModel, batch: dict[str, Any], device: torch.devi
     return model(**inputs)
 
 
-def _loader(dataset: ManifestImageDataset, cfg: dict[str, Any], shuffle: bool, seed: int) -> DataLoader:
+def _balanced_sampler(dataset: ManifestImageDataset, seed: int) -> WeightedRandomSampler:
+    """Draw every level with equal probability, oversampling rare levels.
+
+    Per-sample weight ``1 / count[level]`` makes the level mass ``count * 1 /
+    count = 1`` for every level, so each of the five levels is drawn with
+    probability 1/5 per draw.  With ``num_samples = len(dataset)`` one epoch is
+    the same length as an unweighted epoch but sees each level about
+    ``len(dataset) / 5`` times instead of ``count[level]``.
+    """
+    counts = Counter(dataset.labels)
+    if not counts:
+        raise ValueError("balanced sampler requires a non-empty training split")
+    # A gap in the level range would silently equalise over fewer levels than
+    # the head predicts, so the run would look balanced and not be.
+    expected = set(range(max(counts) + 1))
+    if set(counts) != expected:
+        missing = sorted(expected - set(counts))
+        raise ValueError(f"balanced sampler requires every level in 0..{max(counts)}; missing {missing}")
+    weights = [1.0 / counts[label] for label in dataset.labels]
+    generator = torch.Generator().manual_seed(seed)
+    return WeightedRandomSampler(
+        weights, num_samples=len(dataset), replacement=True, generator=generator
+    )
+
+
+def _loader(dataset: ManifestImageDataset, cfg: dict[str, Any], shuffle: bool, seed: int,
+            sampler: WeightedRandomSampler | None = None) -> DataLoader:
     generator = torch.Generator().manual_seed(seed)
     return DataLoader(
         dataset,
         batch_size=int(cfg["data"]["batch_size"]),
-        shuffle=shuffle,
+        shuffle=(shuffle and sampler is None),
+        sampler=sampler,
         num_workers=int(cfg["data"]["num_workers"]),
         pin_memory=str(cfg["training"]["device"]).startswith("cuda"),
         generator=generator,
@@ -132,12 +160,58 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
         "val": _loader(val_data, cfg, False, seed),
         "test": _loader(test_data, cfg, False, seed),
     }
+    # Level re-weighting of the training set, if requested.  It touches the
+    # train loader only: val and test are built from the same unshuffled
+    # datasets whatever this says, so the splits the reported metrics are
+    # computed on are never re-weighted.
+    train_sampler = None
+    sampler_record: dict[str, Any] = {"sampler": str(cfg["data"].get("sampler", "natural"))}
+    if sampler_record["sampler"] == "balanced":
+        train_sampler = _balanced_sampler(train_data, seed)
+        loaders["train"] = _loader(train_data, cfg, True, seed, sampler=train_sampler)
+        counts = Counter(train_data.labels)
+        drawn = Counter(train_data.labels[index] for index in train_sampler)
+        sampler_record.update(
+            {
+                "natural_level_counts": {f"L{int(level) + 3}": int(counts[level]) for level in sorted(counts)},
+                "replacement": True,
+                "num_samples_per_epoch": int(len(train_data)),
+                "expected_draws_per_epoch": {
+                    f"L{int(level) + 3}": float(len(train_data) / len(counts)) for level in sorted(counts)
+                },
+                "realised_first_epoch_draws": {
+                    f"L{int(level) + 3}": int(drawn[level]) for level in sorted(counts)
+                },
+                "distinct_examples_available": {
+                    f"L{int(level) + 3}": int(counts[level]) for level in sorted(counts)
+                },
+            }
+        )
+    write_json(output_dir / "train_sampler.json", sampler_record)
 
     model = OrdinalImageModel(
         model_cfg["kind"], model_cfg["name"], float(model_cfg["dropout"]), bool(model_cfg["pretrained"])
     ).to(device)
+    class_weights = effective_number_weights(
+        train_data.labels, float(cfg["training"]["class_balance_beta"])
+    )
+    write_json(
+        output_dir / "class_balance.json",
+        {
+            "beta": float(cfg["training"]["class_balance_beta"]),
+            "train_level_counts": {
+                f"L{int(level) + 3}": int(train_data.labels.count(level))
+                for level in sorted(set(train_data.labels))
+            },
+            "class_weights": {
+                f"L{int(level) + 3}": float(class_weights[level])
+                for level in sorted(set(train_data.labels))
+            },
+            "max_over_min_weight_ratio": float(class_weights.max() / class_weights.min()),
+        },
+    )
     loss_fn = ClassBalancedCoralLoss(
-        effective_number_weights(train_data.labels, float(cfg["training"]["class_balance_beta"])),
+        class_weights,
         float(cfg["training"].get("label_smoothing", 0.0)),
     ).to(device)
     amp = bool(cfg["training"]["amp"]) and device.type == "cuda"
@@ -173,7 +247,7 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
                 )
     checkpoint = torch.load(best_path, map_location=device, weights_only=True)
     model.load_state_dict(checkpoint["state_dict"])
-    val_probs, val_logits, val_labels, _ = _predict(model, loaders["val"], device)
+    val_probs, val_logits, val_labels, val_event_ids = _predict(model, loaders["val"], device)
     calibration_cfg = cfg["calibration"]
     temperature, calibrated_val_nll = fit_coral_temperature(
         val_logits, val_labels,
@@ -183,11 +257,44 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
     calibrated_val_probs = coral_logits_to_probs(
         torch.from_numpy(val_logits / temperature)
     ).numpy()
+    decode_rule = str(cfg.get("evaluation", {}).get("decode", "rank"))
     threshold_data = calibrate_abstention_threshold(
         calibrated_val_probs, val_labels,
         float(calibration_cfg["target_under_fnr"]), float(calibration_cfg["max_abstention"]),
+        decode_rule,
     )
     calibration = {"temperature": temperature, "validation_nll": calibrated_val_nll, **threshold_data}
+    threshold = float(threshold_data["threshold"])
+
+    # Validation metrics, scored with the temperature and threshold that were
+    # both fitted on this same validation split.  This is the ONLY split any
+    # rule in this run was chosen on; the test numbers below are the held-out
+    # read of a policy fixed here.  Reported because the per-level recall a
+    # reader needs to judge an interior-level collapse lives on validation
+    # (L5/L6 support is 6/9 there) and the test split is 7/10 — both small,
+    # so both are published rather than only the flattering one.
+    val_result = evaluate_predictions(
+        calibrated_val_probs, val_labels, threshold,
+        bootstrap_samples=int(cfg.get("evaluation", {}).get("bootstrap_samples", 1000)),
+        bootstrap_seed=int(cfg.get("evaluation", {}).get("bootstrap_seed", 2026)),
+    )
+    val_result["split"] = "val"
+    val_result["level_support"] = {
+        f"L{int(level) + 3}": int((val_labels == level).sum()) for level in range(5)
+    }
+    np.savez_compressed(
+        output_dir / "val_predictions.npz",
+        probabilities=calibrated_val_probs,
+        labels=val_labels,
+        event_ids=np.asarray(val_event_ids),
+    )
+    write_json(output_dir / "val_metrics.json", val_result)
+    calibration = {
+        "temperature": temperature,
+        "validation_nll": calibrated_val_nll,
+        "decode_rule": decode_rule,
+        **threshold_data,
+    }
 
     test_probs, test_logits, test_labels, test_event_ids = _predict(model, loaders["test"], device)
     calibrated_test_probs = coral_logits_to_probs(
@@ -199,10 +306,20 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
         labels=test_labels,
         event_ids=np.asarray(test_event_ids),
     )
+    # The validation predictions the abstention threshold was selected on, kept
+    # so the val-only threshold choice is auditable after the fact. Without them
+    # a reader cannot check that the threshold was picked on validation data and
+    # never on the held-out split.
+    np.savez_compressed(
+        output_dir / "val_predictions.npz",
+        probabilities=calibrated_val_probs,
+        labels=val_labels,
+        event_ids=np.asarray(val_event_ids),
+    )
     threshold = float(threshold_data["threshold"])
     structured_outputs = []
     for event_id, probabilities in zip(test_event_ids, calibrated_test_probs):
-        decoded, decoded_confidence = coral_decode(probabilities[None, :])
+        decoded, decoded_confidence = coral_decode(probabilities[None, :], decode_rule)
         prediction = int(decoded[0])
         confidence = float(decoded_confidence[0])
         output: dict[str, Any] = {
@@ -225,7 +342,12 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
         calibrated_test_probs, test_labels, threshold,
         bootstrap_samples=int(cfg.get("evaluation", {}).get("bootstrap_samples", 1000)),
         bootstrap_seed=int(cfg.get("evaluation", {}).get("bootstrap_seed", 2026)),
+        decode=decode_rule,
     )
+    result["split"] = "test"
+    result["level_support"] = {
+        f"L{int(level) + 3}": int((test_labels == level).sum()) for level in range(5)
+    }
     write_json(output_dir / "history.json", history)
     write_json(output_dir / "calibration.json", calibration)
     write_json(output_dir / "metrics.json", result)
@@ -236,6 +358,13 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
     return {
         "seed": seed, "output_dir": str(output_dir), "best_epoch": int(checkpoint["epoch"]),
         "calibration_target_met": bool(calibration["target_met"]), "metrics": result["metrics"],
+        "val_metrics": val_result["metrics"],
+        "val_per_level_recall": val_result["per_level_recall"],
+        "val_decoded_level_counts_pre_abstention": val_result["decoded_level_counts_pre_abstention"],
+        "test_per_level_recall": result["per_level_recall"],
+        "test_decoded_level_counts_pre_abstention": result["decoded_level_counts_pre_abstention"],
+        "test_argmax_level_counts": result["argmax_level_counts"],
+        "val_argmax_level_counts": val_result["argmax_level_counts"],
     }
 
 

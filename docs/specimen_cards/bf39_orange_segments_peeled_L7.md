@@ -4,11 +4,11 @@ Remove any pith, seeds, or membrane; keep segments whole. Do NOT blend, sieve, o
 
 2. IDDSI TEST
 
-Fork pressure test: press the tines of the fork fully into one segment on a flat plate with enough force to blanch the fingernail. The segment must NOT deform, mash, or break apart; it must return to its original shape when the fork is withdrawn. Spoon tilt test: place a segment on a spoon and tilt to 90 degrees. The segment must NOT slide, drip, or run off. Fork drip test: lift a segment on fork tines and hold for 5 seconds — no liquid must drip through the tines. Syringe flow test is N/A at L7.
+Fork pressure test: press the tines of the fork fully into one segment on a flat plate with enough force to blanch the fingernail. The segment must NOT deform, mash, or break apart; it must return to its original shape when the fork is withdrawn. Spoon tilt test: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. The segment must NOT slide, drip, or run off. Fork drip test: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence. Syringe flow test is N/A at L7.
 
 3. VISUAL QC
 
-Segment holds a defined curved, glossy orange shape with visible juice vesicles on the surface. No white pith, membrane, or seed attached. No liquid pooling on the plate beneath the specimen.
+Segment holds a defined curved, glossy orange shape with visible juice vesicles on the surface. No white pith, membrane, or seed attached. No liquid pooling on the plate beneath the specimen. By-eye check only (not a section 5.2 test at L7): place a segment on a spoon and tilt to 90 degrees. By-eye check only (not a section 5.3 test at L7): lift a segment on fork tines and hold for 5 seconds — no liquid must drip through the tines.
 
 4. SHOTS
 

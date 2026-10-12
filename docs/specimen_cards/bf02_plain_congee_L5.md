@@ -1,14 +1,14 @@
 1. PREP
-Weigh 200 g of thick congee onto the digital scale. Do not blend — thick congee with soft grains must be read for particle size, not pulverised. Press the congee through a 4 mm sieve with the back of a fork; discard what stays on the mesh. Re-weigh the sieved portion. Add thickener at 0 g per 100 ml as the calibration starting point — record the actual grams used. Stir with the fork until streaks disappear. The per-level note requires soft grains ≤4 mm; sieving achieves this. No water added. Stop if the congee weeps thin liquid — that is a fail, remake from a drier pack.
+Weigh 200 g of thick congee onto the digital scale. Do not blend — thick congee with soft grains must be read for particle size, not pulverised. Gauge the congee against the 4 mm sieve instead of screening it (protocol sections 2 and 6 step 4): scoop a sample onto the mesh and confirm the particles fall through the 4 mm openings under their own weight or one light tap of the fork back. Do not press the batch through — that screens it to a smooth purée, which is L4, not L5. Re-chop anything held back on the mesh with the knife rather than forcing it through. Re-weigh the portion. Add thickener at 0 g per 100 ml as the calibration starting point — record the actual grams used. Stir with the fork until streaks disappear. The per-level note requires soft grains ≤4 mm; the gauge check confirms this. No water added. Stop if the congee weeps thin liquid — that is a fail, remake from a drier pack.
 
 2. IDDSI TEST
 Fork pressure test: place a 15 mm mound on the plate, press the fork tines until the thumbnail blanches white. The mound must squash, the surface must not spring back, and the grains must stay ≤4 mm. Pass = squash with no recovery.
 Spoon tilt test: load 4 ml on the spoon, tilt to 90°. The congee must hold its shape and slide off slowly as a cohesive mass, not pour.
-Fork drip test: lift fork from the bowl — the congee should sit in the mound, not drip through the tines.
+Fork drip test: not applicable at L5 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L5 evidence.
 The L3 10 ml/10 s syringe flow test does not apply at L5; do not run it.
 
 3. VISUAL QC
-On the fork: moist sheen, soft rice grains visible, no free liquid pooling in the tine gaps. On the spoon: holds a rounded mound, surface matte not glossy, grains ≤4 mm. No separate thin liquid on the plate.
+On the fork: moist sheen, soft rice grains visible, no free liquid pooling in the tine gaps. On the spoon: holds a rounded mound, surface matte not glossy, grains ≤4 mm. No separate thin liquid on the plate. By-eye check only (not a section 5.3 test at L5): lift fork from the bowl — the congee should sit in the mound, not drip through the tines.
 
 4. SHOTS
 Shoot on the A4 kit with 15 mm checkerboard and 100 mm ruler.

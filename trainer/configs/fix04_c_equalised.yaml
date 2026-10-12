@@ -1,0 +1,56 @@
+# v0.7 recipe, UNCHANGED except the single knob named in `training` below.
+# Same manifest, same image size, same batch size, same two-phase schedule
+# (60 epochs frozen head at lr 1e-3, then 15 epochs unfreezing the last two
+# blocks at lr 2e-5), same weight decay, same calibration targets.  The split
+# is inherited verbatim from the v0.7 manifest and is not touched.
+#
+# Lane fix04_classbalance (2026-10-12): does the L5/L6 collapse respond to
+# class balance?  Train split is L3 28 / L4 37 / L5 13 / L6 35 / L7 201 of 314
+# rows, so L7 is 64% of the training data.
+#
+# ARM fix04_c_equalised: train set re-weighted to equalise levels.
+#
+experiment:
+  name: fix04_c_equalised
+  output_dir: /work/lane_runs/fix04_classbalance/c_equalised
+  seeds: [17]
+
+data:
+  manifest: /work/data/manifest_v07_weighted.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id
+  synthetic: false
+  sampler: balanced   # train set re-weighted to equalise levels
+
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  # ARM VARIABLE: class_balance_beta = 0.999
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  gradient_clip_norm: 1.0
+  class_balance_beta: 0.999
+  phases:
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026

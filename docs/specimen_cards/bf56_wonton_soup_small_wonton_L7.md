@@ -5,14 +5,14 @@ Cook the wonton soup per pack instructions — boil 500 ml water, add 200 g froz
 2. IDDSI TEST
 
 - Fork pressure test: press fork tines into one wonton with normal thumb pressure. Wonton skin should resist, compress slightly, then spring back. Pass = no full squish-through, shape recovers when fork lifts. Soup itself is liquid — that is expected at L7; the L7 claim applies to the wonton solids.
-- Spoon tilt test: scoop one wonton plus 5 ml broth, tilt spoon at 90 degrees. Wonton stays on spoon; broth pours. Pass = solid component does not slide off.
-- Fork drip test: lift fork with broth only. Broth drips continuously in a thin stream. Pass = continuous drip confirms liquid soup component, consistent with L7 food-in-liquid.
+- Spoon tilt test: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. Wonton stays on spoon; broth pours. Pass = solid component does not slide off.
+- Fork drip test: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence. Broth drips continuously in a thin stream. Pass = continuous drip confirms liquid soup component, consistent with L7 food-in-liquid.
 
 3. VISUAL QC
 
 - Wonton skin smooth and intact, no tears or starch bloom.
 - Broth clear to lightly cloudy, golden, no lumps.
-- Wontons hold a rounded dumpling shape, not collapsed or split.
+- Wontons hold a rounded dumpling shape, not collapsed or split. By-eye check only (not a section 5.2 test at L7): scoop one wonton plus 5 ml broth, tilt spoon at 90 degrees. By-eye check only (not a section 5.3 test at L7): lift fork with broth only.
 
 4. SHOTS
 

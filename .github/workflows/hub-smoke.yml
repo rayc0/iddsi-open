@@ -1,0 +1,148 @@
+name: hub-smoke
+
+# The CI half of the "how to consume this" path: pull the released artifacts
+# from the Hub and run the documented consumption steps against them, so a
+# green run means the release is still consumable as documented.
+#
+# Two endpoint legs, because the release is consumed from two different places:
+#   real  — outside CN, where https://huggingface.co answers (a GitHub-hosted
+#           runner). The leg leaves IDDSI_HF_ENDPOINT empty, so the documented
+#           auto-resolution order applies: explicit flag, IDDSI_HF_ENDPOINT,
+#           HF_ENDPOINT, probe huggingface.co, probe hf-mirror.com.
+#   mirror — https://hf-mirror.com, the CN endpoint this project's own box uses.
+#
+# A third job then requires the two legs to have served byte-identical
+# artifacts: if a mirror ever answers from a stale cache, the smoke test must
+# not pass on both legs.
+#
+# Nothing here downloads a classifier. The release publishes no model weights
+# (wk1 kill rule, dangerous under-classification 33%); the smoke test asserts
+# that, so a future release that starts publishing weights fails until the docs
+# are updated.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly, off the hour so the fleet does not all fire at :00.
+    - cron: "23 5 * * 1"
+  push:
+    paths:
+      - ".github/workflows/hub-smoke.yml"
+      - "tools/consume_release.py"
+      - "trainer/eval/hub_source.py"
+      - "trainer/eval/cli.py"
+      - "trainer/tests/test_hub_consume.py"
+      - "crowd/inference.py"
+      - "configs/consume/**"
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the trainer with test + hub extras
+        run: python -m pip install -q -e "trainer[test,hub]"
+      # Offline: endpoint precedence, receipt honesty, the expect: assertions.
+      - name: Hub-consumption unit tests (no network)
+        run: python -m pytest -q trainer/tests/test_hub_consume.py crowd/tests
+
+  smoke:
+    needs: unit
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - endpoint_name: real
+            endpoint: ""
+          - endpoint_name: mirror
+            endpoint: "https://hf-mirror.com"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install the trainer with the hub extra
+        run: python -m pip install -q -e "trainer[hub]"
+
+      # A per-run cache dir, so the leg cannot pass on cache hits alone.
+      - name: Consume the release from the Hub (${{ matrix.endpoint_name }} endpoint)
+        env:
+          IDDSI_HF_ENDPOINT: ${{ matrix.endpoint }}
+          IDDSI_HUB_CACHE: ${{ runner.temp }}/hf-cache-${{ matrix.endpoint_name }}
+        run: |
+          python tools/consume_release.py \
+            --config configs/consume/hub_release.yaml \
+            --step smoke \
+            --output-dir out
+
+      - name: Show what was consumed
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          for name in ("eval/hub_receipt.json", "capture/consume_summary.json"):
+              path = pathlib.Path("out") / name
+              if path.exists():
+                  print(f"--- {name} ---")
+                  print(json.dumps(json.loads(path.read_text()), indent=2)[:2000])
+          failures = pathlib.Path("out/smoke_failures.json")
+          if failures.exists():
+              print("--- smoke_failures.json ---")
+              print(failures.read_text())
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hub-smoke-${{ matrix.endpoint_name }}
+          path: out/
+          if-no-files-found: error
+
+  endpoints-agree:
+    needs: smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Both endpoints must serve byte-identical artifacts
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+
+          root = pathlib.Path("artifacts")
+          legs = {}
+          for receipt in sorted(root.glob("hub-smoke-*/eval/hub_receipt.json")):
+              leg = receipt.parts[-4].removeprefix("hub-smoke-")
+              legs[leg] = json.loads(receipt.read_text())
+          if len(legs) < 2:
+              print(f"expected two endpoint legs, found {sorted(legs)}")
+              sys.exit(1)
+
+          by_name = {}
+          for leg, receipt in legs.items():
+              for item in receipt["files"]:
+                  by_name.setdefault(item["filename"], {})[leg] = item["sha256"]
+              print(
+                  f"{leg}: endpoint={receipt['endpoint']} "
+                  f"provenance={receipt['endpoint_provenance']} "
+                  f"commit={receipt['resolved_commit']} "
+                  f"all_from_cache={receipt['all_from_cache']}"
+              )
+
+          mismatched = {
+              name: hashes
+              for name, hashes in by_name.items()
+              if len(set(hashes.values())) != 1
+          }
+          for name, hashes in sorted(mismatched.items()):
+              print(f"MISMATCH {name}: {hashes}")
+          if mismatched:
+              sys.exit(1)
+          print(f"both endpoints served identical bytes for {len(by_name)} artifact(s)")
+          PY

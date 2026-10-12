@@ -57,6 +57,36 @@ def tracked_text_files() -> list[Path]:
     ]
 
 
+def logical_lines(path: Path, lines: list[str]) -> list[str]:
+    """Collapse HTML tables so one table is one logical line.
+
+    pandoc's HTML output puts each cell on its own line, so a results table
+    whose caption names the label set would otherwise read as a row of
+    unannotated kappa sites. Joining the lines inside <table>...</table> keeps
+    the audit honest about tables without loosening it anywhere else: prose,
+    headings and list items are returned unchanged.
+    """
+    if path.suffix.lower() != ".html":
+        return lines
+    out: list[str] = []
+    buf: list[str] = []
+    depth = 0
+    for line in lines:
+        opens = line.count("<table")
+        closes = line.count("</table>")
+        if depth or opens:
+            buf.append(line)
+            depth += opens - closes
+            if depth <= 0:
+                out.append(" ".join(buf))
+                buf = []
+                depth = 0
+            continue
+        out.append(line)
+    out.extend(buf)
+    return out
+
+
 def main() -> int:
     unannotated: list[tuple[Path, int, str]] = []
     annotated_files: set[Path] = set()
@@ -68,7 +98,9 @@ def main() -> int:
             print(f"SEALED, not read: {rel}")
             continue
         try:
-            lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+            lines = logical_lines(
+                path, path.read_text(encoding="utf-8", errors="replace").splitlines()
+            )
         except OSError as exc:
             print(f"unreadable: {rel} ({exc})", file=sys.stderr)
             continue

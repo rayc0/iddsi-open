@@ -11,7 +11,6 @@ CPU only, no GPU.
 """
 from __future__ import annotations
 
-import os
 import json
 import subprocess
 import sys
@@ -19,9 +18,11 @@ from pathlib import Path
 
 import pytest
 
-_candidates = [Path(os.environ["IDDSI_ROOT"])] if os.environ.get("IDDSI_ROOT") else []
-_candidates += [Path.cwd(), Path.cwd().parent, Path(__file__).resolve().parents[2]]
-ROOT = next((p for p in _candidates if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
+# The shared tree (data/, runs/, lane_runs/) is discovered from the clone's own
+# location via tools/paths.py rather than from a hardcoded absolute path.
+from paths import find_root
+
+ROOT = find_root()
 pytestmark = pytest.mark.skipif(ROOT is None, reason="v0.7 manifest not reachable")
 
 HERE = Path(__file__).resolve().parent

@@ -18,20 +18,21 @@ Output: <root>/lane_runs/an05_external/label_noise_band.json   (CPU-only)
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
 
+# Runnable both as `python -I tools/label_noise_band.py` (isolated, so the script
+# dir is not on sys.path) and as an importable `tools.label_noise_band`.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from paths import require_root  # noqa: E402
+
 SEEDS = [17, 29, 43, 71, 101]
 LEVELS = np.array([3, 4, 5, 6, 7], dtype=np.int64)
 
-# The workspace root comes from the environment (or the current directory), so no
-# host path is baked into the shipped tool.
-_candidates = [Path(os.environ["IDDSI_ROOT"])] if os.environ.get("IDDSI_ROOT") else []
-_candidates += [Path.cwd(), Path.cwd().parent]
-ROOT = next((p for p in _candidates if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
-if ROOT is None:
-    raise SystemExit("cannot locate the v0.7 manifest — set IDDSI_ROOT")
+ROOT = require_root()
 MANIFEST = ROOT / "data/manifest_v07_weighted.jsonl"
 RUNS = ROOT / "runs/v07"
 OUTDIR = ROOT / "lane_runs/an05_external"

@@ -1,0 +1,214 @@
+{
+ "emitted_level_census": {
+  "17": {
+   "decided_n": 89,
+   "emitted_level_counts": {
+    "L3": 12,
+    "L4": 3,
+    "L7": 74
+   },
+   "levels_never_emitted": [
+    "L5",
+    "L6"
+   ],
+   "argmax_counts_all_108": {
+    "L3": 19,
+    "L5": 5,
+    "L7": 84
+   },
+   "argmax_levels_never_top": [
+    "L4",
+    "L6"
+   ]
+  },
+  "29": {
+   "decided_n": 86,
+   "emitted_level_counts": {
+    "L3": 11,
+    "L7": 75
+   },
+   "levels_never_emitted": [
+    "L4",
+    "L5",
+    "L6"
+   ],
+   "argmax_counts_all_108": {
+    "L3": 19,
+    "L5": 3,
+    "L7": 86
+   },
+   "argmax_levels_never_top": [
+    "L4",
+    "L6"
+   ]
+  },
+  "43": {
+   "decided_n": 92,
+   "emitted_level_counts": {
+    "L3": 13,
+    "L4": 2,
+    "L7": 77
+   },
+   "levels_never_emitted": [
+    "L5",
+    "L6"
+   ],
+   "argmax_counts_all_108": {
+    "L3": 20,
+    "L5": 3,
+    "L7": 85
+   },
+   "argmax_levels_never_top": [
+    "L4",
+    "L6"
+   ]
+  },
+  "71": {
+   "decided_n": 85,
+   "emitted_level_counts": {
+    "L3": 10,
+    "L7": 75
+   },
+   "levels_never_emitted": [
+    "L4",
+    "L5",
+    "L6"
+   ],
+   "argmax_counts_all_108": {
+    "L3": 20,
+    "L5": 2,
+    "L7": 86
+   },
+   "argmax_levels_never_top": [
+    "L4",
+    "L6"
+   ]
+  },
+  "101": {
+   "decided_n": 85,
+   "emitted_level_counts": {
+    "L3": 12,
+    "L7": 73
+   },
+   "levels_never_emitted": [
+    "L4",
+    "L5",
+    "L6"
+   ],
+   "argmax_counts_all_108": {
+    "L3": 21,
+    "L5": 1,
+    "L7": 86
+   },
+   "argmax_levels_never_top": [
+    "L4",
+    "L6"
+   ]
+  }
+ },
+ "abstention_analysis_seed43": {
+  "abstained_n": 16,
+  "abstained_by_true_level": {
+   "L3": 0,
+   "L4": 7,
+   "L5": 2,
+   "L6": 2,
+   "L7": 5
+  },
+  "abstention_rate_by_true_level": {
+   "L3": 0.0,
+   "L4": 0.6364,
+   "L5": 0.2857,
+   "L6": 0.2,
+   "L7": 0.0714
+  },
+  "argmax_would_have_landed_on": {
+   "L3": 5,
+   "L5": 3,
+   "L7": 8
+  },
+  "argmax_would_have_been_correct": 3,
+  "argmax_would_have_been_under": 7,
+  "argmax_would_have_been_over": 6,
+  "note": "argmax shown only to characterise what the model was torn about; the shipped decision path is CORAL rank decode + abstention, never argmax"
+ },
+ "harvest_l6_bucket_seed43": {
+  "n": 29,
+  "consensus_label_distribution": {
+   "L3": 0,
+   "L4": 1,
+   "L5": 6,
+   "L6": 4,
+   "L7": 18
+  },
+  "share_actually_labelled_L6": 0.1379,
+  "true_to_pred_counts": {
+   "true_L4_pred_L5": 1,
+   "true_L5_pred_L3": 2,
+   "true_L5_pred_L5": 1,
+   "true_L5_pred_L6": 1,
+   "true_L5_pred_L7": 2,
+   "true_L6_pred_L7": 4,
+   "true_L7_pred_L6": 1,
+   "true_L7_pred_L7": 17
+  },
+  "wrong_level_decisions": 8,
+  "abstained": 4
+ },
+ "bootstrap_ci_seed43": {
+  "method": "4000 non-stratified resamples of the 108 test events, seed 20261012",
+  "denominator": "all 108 test events (rates are per test event, not per decision)",
+  "wrong_level_rate": {
+   "point": 0.1481,
+   "lo": 0.0833,
+   "hi": 0.213
+  },
+  "over_rate": {
+   "point": 0.1111,
+   "lo": 0.0556,
+   "hi": 0.1667
+  },
+  "under_rate_all": {
+   "point": 0.037,
+   "lo": 0.0093,
+   "hi": 0.0741
+  },
+  "adjacent_slip_rate": {
+   "point": 0.0833,
+   "lo": 0.037,
+   "hi": 0.1389
+  },
+  "L6_to_L7_rate": {
+   "point": 0.0741,
+   "lo": 0.0278,
+   "hi": 0.1296
+  }
+ },
+ "headline_metric_reproduction_seed43": {
+  "macro_f1_with_abstentions_recomputed": 0.394931,
+  "macro_f1_with_abstentions_published": 0.394931,
+  "match": true,
+  "weighted_kappa_covered_recomputed": 0.850721,
+  "weighted_kappa_covered_published": 0.850721,
+  "kappa_match": true,
+  "per_level_recall_decided": {
+   "L3": 0.9,
+   "L4": 0.5,
+   "L5": 0.0,
+   "L6": 0.0,
+   "L7": 1.0
+  },
+  "per_level_precision_decided": {
+   "L3": 0.6923,
+   "L4": 1.0,
+   "L5": "undefined: level never emitted as a decision",
+   "L6": "undefined: level never emitted as a decision",
+   "L7": 0.8442
+  },
+  "distinct_levels_emitted_as_decisions": [
+   "L3",
+   "L4",
+   "L7"
+  ]
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "images_hashed": 684,
+ "exact_byte_duplicate_groups": 0,
+ "near_duplicate_pairs": 55,
+ "near_duplicate_examples": [
+  {
+   "dhash_distance": 2,
+   "a": "RW_nutrition5k_4d5503b4965dfe1def20",
+   "b": "RW_nutrition5k_ab211b5f22b1f6dfb2ff"
+  },
+  {
+   "dhash_distance": 2,
+   "a": "RW_nutrition5k_db1859e7e37ec9f4260a",
+   "b": "RW_nutrition5k_2c317e161cec8deeb467"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_1a26949a254eb21e6e13",
+   "b": "RW_nutrition5k_f4350f9fd34d6a2b1b42"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_2c317e161cec8deeb467",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_3bac101ae67ed39d66a6",
+   "b": "RW_nutrition5k_aa49550d450f6c7101b8"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_aa49550d450f6c7101b8",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_2c317e161cec8deeb467"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_aa49550d450f6c7101b8"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_b24f696abed596d45fd6",
+   "b": "RW_nutrition5k_96af42ef8d9757464bf3"
+  },
+  {
+   "dhash_distance": 3,
+   "a": "RW_nutrition5k_c239fdc42b92b926fcc6",
+   "b": "RW_nutrition5k_0e8b618e1918e7e452e9"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_2beca53e9bea383169c3",
+   "b": "RW_nutrition5k_774db3d424137ecdfddf"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_2beca53e9bea383169c3",
+   "b": "RW_nutrition5k_c5f06b083caa9b7dcfa9"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_2c317e161cec8deeb467",
+   "b": "RW_nutrition5k_1a26949a254eb21e6e13"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_3bac101ae67ed39d66a6",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_ab211b5f22b1f6dfb2ff",
+   "b": "RW_nutrition5k_5e083e216f5c7a54cfe8"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_b9120648da1a36268db2",
+   "b": "RW_nutrition5k_03e65528269af937ab87"
+  },
+  {
+   "dhash_distance": 4,
+   "a": "RW_nutrition5k_c239fdc42b92b926fcc6",
+   "b": "RW_nutrition5k_e28ff2dbb01f39834df1"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_21c278e404eae176493a",
+   "b": "RW_nutrition5k_a9b0c5e228e1d9a1c03e"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_270681b68852149795f2",
+   "b": "RW_nutrition5k_80d75bf60aa78fac36f9"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_3bac101ae67ed39d66a6",
+   "b": "RW_nutrition5k_1a26949a254eb21e6e13"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_4d5503b4965dfe1def20",
+   "b": "RW_nutrition5k_a9aa97ebb7c4b7e1078c"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_5e083e216f5c7a54cfe8",
+   "b": "RW_nutrition5k_a9b0c5e228e1d9a1c03e"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_96af42ef8d9757464bf3",
+   "b": "RW_nutrition5k_e21e23cd9ae5722bf7db"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_aa49550d450f6c7101b8",
+   "b": "RW_nutrition5k_f4350f9fd34d6a2b1b42"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_ab211b5f22b1f6dfb2ff",
+   "b": "RW_nutrition5k_a9aa97ebb7c4b7e1078c"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_1a26949a254eb21e6e13"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_c5f06b083caa9b7dcfa9",
+   "b": "RW_nutrition5k_8e68a80fd452f62af95f"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_d37a410296d9d73bb875",
+   "b": "RW_nutrition5k_1a26949a254eb21e6e13"
+  },
+  {
+   "dhash_distance": 5,
+   "a": "RW_nutrition5k_db1859e7e37ec9f4260a",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_05ad66cb33f5fb927c4d",
+   "b": "RW_nutrition5k_f794630ec6c2fe0bfe89"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_0dcf9f436aaf944686c7",
+   "b": "RW_nutrition5k_3bac101ae67ed39d66a6"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_0dcf9f436aaf944686c7",
+   "b": "RW_nutrition5k_cfb81709dd3d59336560"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_0dcf9f436aaf944686c7",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_21c278e404eae176493a",
+   "b": "RW_nutrition5k_526a5ba0d3c0b359942c"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_4d5503b4965dfe1def20",
+   "b": "RW_nutrition5k_5e083e216f5c7a54cfe8"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_774db3d424137ecdfddf",
+   "b": "RW_nutrition5k_c5f06b083caa9b7dcfa9"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_96af42ef8d9757464bf3",
+   "b": "RW_nutrition5k_71ec076de30d48f92e15"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_9ca9564df5b1480977ca",
+   "b": "RW_nutrition5k_6cd059414b7717d0d728"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_0dcf9f436aaf944686c7"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_3bac101ae67ed39d66a6"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_cfb81709dd3d59336560"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_d37a410296d9d73bb875"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_ae25b1be0933dea8908e",
+   "b": "RW_nutrition5k_f4350f9fd34d6a2b1b42"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_b24f696abed596d45fd6",
+   "b": "RW_nutrition5k_e21e23cd9ae5722bf7db"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_b9120648da1a36268db2",
+   "b": "RW_nutrition5k_0e309bfdd06ac5ce9606"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_b9120648da1a36268db2",
+   "b": "RW_nutrition5k_c239fdc42b92b926fcc6"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_c239fdc42b92b926fcc6",
+   "b": "RW_nutrition5k_0e309bfdd06ac5ce9606"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_c239fdc42b92b926fcc6",
+   "b": "RW_nutrition5k_48c6904007c80f8801eb"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_d37a410296d9d73bb875",
+   "b": "RW_nutrition5k_f4350f9fd34d6a2b1b42"
+  },
+  {
+   "dhash_distance": 6,
+   "a": "RW_nutrition5k_da44eb400dff75daef67",
+   "b": "RW_nutrition5k_80d75bf60aa78fac36f9"
+  }
+ ],
+ "group_size_histogram": {
+  "1": 643,
+  "2": 2,
+  "4": 2,
+  "9": 1,
+  "10": 2
+ },
+ "groups_with_more_than_one_member": 7,
+ "groups_spanning_multiple_splits_in_v02": 4,
+ "leaky_groups_sample": {
+  "g0021": [
+   "test",
+   "train",
+   "val"
+  ],
+  "g0060": [
+   "test",
+   "train"
+  ],
+  "g0014": [
+   "test",
+   "train",
+   "val"
+  ],
+  "g0010": [
+   "test",
+   "train"
+  ]
+ }
+}

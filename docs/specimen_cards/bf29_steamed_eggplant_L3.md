@@ -2,10 +2,10 @@ PREP
 Weigh 200 g steamed eggplant. Add 80 ml water. Blend 60 s on high. Pass through the 4 mm sieve; discard retained skins/seeds — re-blend is impossible if residue exceeds ~10% of mass, re-steam a fresh piece. Weigh puree, then add thickener at 1.5 g per 100 ml of puree as the calibration starting point; the actual grams used are recorded. Stir 30 s, rest 90 s, stir 10 s. Pour — must flow but drip slowly through fork tines.
 
 IDDSI TEST
-Fork drip: when fork is lifted, puree drips continuously through tines in ≤10 s, not a single sheet. Fork pressure: a thumbnail-sized portion spread on a flat spoon blanches the spoon fully white when pressed with the fork base. Spoon tilt: a 5 ml scoop on a spoon tilts 30° and slides off without holding shape. Syringe flow: fill the IDDSI 10 ml syringe, cap, hold 10 s; 8–10 ml must remain. All four must pass.
+Fork drip: when fork is lifted, puree drips continuously through tines in ≤10 s, not a single sheet. Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Spoon tilt: a 5 ml scoop on a spoon tilts 30° and slides off without holding shape. Syringe flow: fill the IDDSI 10 ml syringe, cap, hold 10 s; 8–10 ml must remain. All four must pass.
 
 VISUAL QC
-Glossy, smooth, uniform mauve-grey film coating the spoon; no flecks, fibres, or seed specks. Coats the back of the spoon evenly without running. Falls from the fork in a slow, continuous, ribbon-like drip, not drops and not a sheet.
+Glossy, smooth, uniform mauve-grey film coating the spoon; no flecks, fibres, or seed specks. Coats the back of the spoon evenly without running. Falls from the fork in a slow, continuous, ribbon-like drip, not drops and not a sheet. By-eye check only (not a section 5.1 test at L3): a thumbnail-sized portion spread on a flat spoon blanches the spoon fully white when pressed with the fork base.
 
 SHOTS
 1) steamed_eggplant_L3_take1.jpg — 45° hero, ruler and 15 mm checkerboard visible at frame edge.

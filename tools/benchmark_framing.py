@@ -24,36 +24,27 @@ CPU-only. No GPU, no network, no model weights.
 """
 from __future__ import annotations
 
-import os
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
+
+# Runnable both as `python -I tools/benchmark_framing.py` (isolated, so the script
+# dir is not on sys.path) and as an importable `tools.benchmark_framing`.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from paths import require_root  # noqa: E402
 
 SEEDS = [17, 29, 43, 71, 101]
 LEVELS = np.array([3, 4, 5, 6, 7], dtype=np.int64)
 BOOT = 10000
 BOOT_SEED = 20261012
 
-# /work is the container mount of the host's ~/iddsi. Resolve either so the
-# script runs on the host (CPU-only) or inside `iddsi-train`.
-def _find_root() -> Path | None:
-    """Locate the workspace root from the environment or the working directory.
-
-    No host path is baked in: the shipped tool runs wherever IDDSI_ROOT points,
-    or from a checkout that contains data/manifest_v07_weighted.jsonl.
-    """
-    candidates = []
-    if os.environ.get("IDDSI_ROOT"):
-        candidates.append(Path(os.environ["IDDSI_ROOT"]))
-    candidates += [Path.cwd(), Path.cwd().parent]
-    return next((p for p in candidates
-                 if (p / "data/manifest_v07_weighted.jsonl").exists()), None)
-
-
-ROOT = _find_root()
-if ROOT is None:
-    raise SystemExit("cannot locate the v0.7 manifest — set IDDSI_ROOT")
+# The shared tree is discovered from the environment / the clone's own location
+# (tools/paths.py) rather than from a hardcoded absolute path, so the script runs
+# on the host (CPU-only) or inside `iddsi-train` without naming either.
+ROOT = require_root()
 MANIFEST = ROOT / "data/manifest_v07_weighted.jsonl"
 RUNS = ROOT / "runs/v07"
 OUTDIR = ROOT / "lane_runs/an05_external"

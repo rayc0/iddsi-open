@@ -2,10 +2,10 @@
 Weigh 200 g fresh pear. Steam until fork-tip enters with no resistance (~6 min). Cool 60 s. Cube to ≤15 mm on the board; trim any seed-side fibers. Confirm each piece against the 100 mm ruler. Do NOT blend and do NOT sieve — L6 requires discrete soft pieces, not a puree. Do NOT add thickener; thickener is irrelevant at L6. Reserve 50 g of steam water only if a piece looks dry, then drain.
 
 2. IDDSI TEST
-Fork-pressure test: place one piece flat on a plate, press the fork tines down with the pad of the thumb until thumbnail blanches white. Pass: the piece squashes, cracks, and does not recover its shape. Spoon-tilt test (optional sanity): a soft piece on a spoon does not slide off when tilted to 45°. Fork-drip test is N/A at L6 (no puree flow). Syringe flow test is N/A at L6.
+Fork-pressure test: place one piece flat on a plate, press the fork tines down with the pad of the thumb until thumbnail blanches white. Pass: the piece squashes, cracks, and does not recover its shape. Spoon-tilt test (optional sanity): not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence. Fork-drip test is N/A at L6 (no puree flow). Syringe flow test is N/A at L6.
 
 3. VISUAL QC
-Pieces are glossy, moist, and translucent at the edges. Color is uniform off-white, no browned skins. Each piece holds a clean cube shape with rounded, not ragged, corners. Surface sheen signals steam doneness, not dryness.
+Pieces are glossy, moist, and translucent at the edges. Color is uniform off-white, no browned skins. Each piece holds a clean cube shape with rounded, not ragged, corners. Surface sheen signals steam doneness, not dryness. By-eye check only (not a section 5.2 test at L6): a soft piece on a spoon does not slide off when tilted to 45°.
 
 4. SHOTS
 Capture in the A4 kit, ruler and 15 mm checkerboard visible.

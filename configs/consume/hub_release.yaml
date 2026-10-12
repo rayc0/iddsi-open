@@ -1,0 +1,73 @@
+# configs/consume/hub_release.yaml — "how to consume this" (the documented path).
+#
+# One YAML, read by every consumption path in the release:
+#   (a) the capture/eval pipeline   -> python tools/consume_release.py --step capture|eval
+#   (b) the CI smoke test           -> python tools/consume_release.py --step smoke
+#   (c) the Gradio capture app      -> CROWD_MODEL_SOURCE=hub:results/.../resolved_config.yaml
+#
+# Nothing here downloads a classifier: the release publishes NO model weights
+# (wk1 kill rule, dangerous under-classification 33%). What it publishes is
+# code + eval results + the flow-test grader + the measured negative finding,
+# so those are the artifacts this config pulls. Full prose: hf/HOW_TO_CONSUME.md.
+
+hub:
+  repo: lingualeap/iddsi-open-siglip2-v0
+  # Pin a release tag. `main` carries unreleased launch-prep commits, so a
+  # reproducible consumption must never float on it. Override at run time with
+  # IDDSI_HUB_REVISION (env) or --hub-revision (flag).
+  revision: v0.7
+  # "" = resolve at run time, in this order:
+  #   explicit --hub-endpoint, then IDDSI_HF_ENDPOINT, then HF_ENDPOINT,
+  #   then a reachability probe of https://huggingface.co (the real endpoint,
+  #   used outside CN), then of https://hf-mirror.com (the CN mirror, used on
+  #   this DGX box). If neither answers, the run FAILS. There is no silent
+  #   local fallback — a "consumed the release" claim must come from bytes
+  #   that actually came off a Hub endpoint.
+  endpoint: ""
+  # "" = the huggingface_hub default cache (~/.cache/huggingface on a dev box,
+  # $HF_HOME in a container). Set it to keep a lane's cache inside its own
+  # output directory.
+  cache_dir: ""
+  # true = re-download even when the cache already holds the file, so the named
+  # endpoint provably served the bytes. Required for the smoke test: a receipt
+  # built from cache hits names an endpoint that never answered (hazard
+  # H-HUBCACHE in hf/HAZARD_LOG.md). The artifacts here total ~17 KB, so
+  # forcing a fresh fetch costs nothing.
+  require_network: true
+
+artifacts:
+  # (a) the capture/eval pipeline. Every value is a `hub:` reference:
+  #     hub:<rfilename>                        (repo+revision from `hub:` above)
+  #     hub:<repo>@<revision>:<rfilename>      (explicit, unambiguous)
+  predictions: hub:results/fix1_siglip2_coral_seed17/test_predictions.npz
+  threshold: hub:results/fix1_siglip2_coral_seed17/metrics.json
+  # The capture app's model source: the released architecture config. It is NOT
+  # a checkpoint — the release ships no weights — so the app uses it to record
+  # provenance and to state honestly why the estimate is a placeholder.
+  model_source: hub:results/fix1_siglip2_coral_seed17/resolved_config.yaml
+  calibration: hub:results/fix1_siglip2_coral_seed17/calibration.json
+
+eval:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026
+
+# What `--step smoke` asserts after pulling. Every number here was measured by
+# running this exact path against the Hub (see hf/HOW_TO_CONSUME.md §5); the
+# tolerance is 1e-3, i.e. the four decimals the release card quotes.
+# Denominators, so the check cannot pass on a different population:
+#   n = 109 held-out events (the fix1 seed-17 held-out split, as shipped in
+#       results/fix1_siglip2_coral_seed17/), NOT the 108-event v0.7 cross-model
+#       comparison set and not the 684-event manifest.
+#   weighted_kappa_covered and dangerous_*_fnr_covered are computed on the
+#       COVERED (non-abstained) events only; *_rate_all is over all rows.
+#       coverage = 1 - abstention_rate.
+expect:
+  n: 109
+  macro_f1_with_abstentions: 0.3578
+  weighted_kappa_covered: 0.4227
+  dangerous_underclassification_fnr_covered: 0.3333
+  dangerous_underclassification_rate_all: 0.2936
+  coverage: 0.8807
+  abstention_rate: 0.1193
+  ece_all: 0.0906
+  ece_covered: 0.0856

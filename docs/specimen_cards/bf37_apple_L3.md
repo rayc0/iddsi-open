@@ -6,7 +6,7 @@ Steam 200 g fresh apple flesh until fork-tender. Tip into blender, add 80 ml wat
 
 Fork drip: lifts on fork tines, then drips in a slow continuous stream within 10 s. Pass if flow is steady, not a fast pour, not a stack that holds shape.
 
-Fork pressure: white shows through purée under thumb pressure on the back of the fork. Pass if surface blanches but mass stays cohesive.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 
 Spoon tilt: spoon held at 45°, specimen slides off slowly as a cohesive dollop. Pass if it leaves in one slow pour, not in chunks, not in a drip trail.
 
@@ -14,7 +14,7 @@ Syringe flow test (L3 requirement): fill 10 ml syringe, cut nozzle to 10 mm, rel
 
 3. VISUAL QC
 
-Surface is glossy and even, no visible fibre or foam. Coats the spoon back without running clear. Drips from fork tines form a continuous thread, not discrete drops.
+Surface is glossy and even, no visible fibre or foam. Coats the spoon back without running clear. Drips from fork tines form a continuous thread, not discrete drops. By-eye check only (not a section 5.1 test at L3): white shows through purée under thumb pressure on the back of the fork; pass if surface blanches but mass stays cohesive.
 
 4. SHOTS
 

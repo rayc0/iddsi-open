@@ -274,6 +274,14 @@ def run_seed(cfg: dict[str, Any], seed: int) -> dict[str, Any]:
         bootstrap_samples=int(cfg.get("evaluation", {}).get("bootstrap_samples", 1000)),
         bootstrap_seed=int(cfg.get("evaluation", {}).get("bootstrap_seed", 2026)),
     )
+    # Kept in lockstep with train/engine.py: this driver is a fork of the
+    # shipped engine and the equivalence test compares its artefacts to the
+    # engine's byte for byte, so any annotation the engine adds must appear
+    # here too or the comparison fails for a reason that is not the schedule.
+    result["split"] = "test"
+    result["level_support"] = {
+        f"L{int(level) + 3}": int((test_labels == level).sum()) for level in range(5)
+    }
     write_json(output_dir / "history.json", history)
     write_json(output_dir / "schedule_trace.json", schedule_trace)
     write_json(output_dir / "calibration.json", calibration)

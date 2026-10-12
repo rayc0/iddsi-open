@@ -1,13 +1,12 @@
 1. PREP
 Weigh 200 g of steamed egg custard on the scale. Cut the set custard into cubes ≤ 15 mm with the fork or a knife against the 15 mm checkerboard. Do NOT blend — pureeing destroys the piece identity required for L6. Do NOT sieve. Do NOT add thickener. Do NOT add water; the custard already holds its moisture. Record the starting mass.
 
-2. IDDSI TEST
-Fork pressure test: place one cube under the fork tines. Press with the thumb until the thumbnail blanches white, holding 1 second. Pass criterion: the cube squashes, deforms, and does not spring back to shape.
-Spoon tilt: scoop one cube onto the spoon and tilt 45 degrees over the capture mat. Pass criterion: the piece sits full on the spoon, does not slide off, does not drip liquid.
-Fork drip: lift a cube on the fork and hold 5 seconds above the mat. Pass criterion: the piece holds on the fork with no drip and no fall.
+2. IDDSI TESTFork pressure test: place one cube under the fork tines. Press with the thumb until the thumbnail blanches white, holding 1 second. Pass criterion: the cube squashes, deforms, and does not spring back to shape.
+Spoon tilt: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence.
+Fork drip: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence.
 
 3. VISUAL QC
-Cube edges are clean and ≤ 15 mm against the checkerboard. Surface is pale yellow, smooth, and glossy with no pooled water on the mat. When pressed, the cube visibly flattens under the thumbnail and stays flattened.
+Cube edges are clean and ≤ 15 mm against the checkerboard. Surface is pale yellow, smooth, and glossy with no pooled water on the mat. When pressed, the cube visibly flattens under the thumbnail and stays flattened. By-eye check only (not a section 5.2 test at L6): scoop one cube onto the spoon and tilt 45 degrees over the capture mat; pass criterion: the piece sits full on the spoon, does not slide off, does not drip liquid. By-eye check only (not a section 5.3 test at L6): lift a cube on the fork and hold 5 seconds above the mat; pass criterion: the piece holds on the fork with no drip and no fall.
 
 4. SHOTS
 Shoot onto the A4 capture mat with the 100 mm ruler and 15 mm checkerboard in frame.

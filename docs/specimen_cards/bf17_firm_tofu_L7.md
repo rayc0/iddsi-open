@@ -6,14 +6,14 @@ PREP
 
 IDDSI TEST
 - Fork pressure: press the square tines of a standard fork fully into the slice until the tines bend. The slice must NOT break apart, mash, crumble, or pass through the tine gaps. Pass = specimen remains as one cohesive piece under full thumb pressure.
-- Spoon tilt: tilt a standard spoon 45°. The slice must NOT slide, drip liquid, or fall off. Pass = specimen stays on the spoon.
-- Fork drip: lift fork with slice clear of the plate for 10 s. Pass = no drips, no liquid runs.
+- Spoon tilt: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. The slice must NOT slide, drip liquid, or fall off. Pass = specimen stays on the spoon.
+- Fork drip: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence.
 - Syringe flow test: NOT applicable (L7 only). State "N/A" on sheet.
 
 VISUAL QC
 - Slice holds a clean, sharp rectangular edge with no crumbling at corners.
 - Surface shows smooth, intact skin with no split layers or weeping liquid pooling on the plate.
-- Block retains original pale ivory colour; no translucent mushy zones at cut faces.
+- Block retains original pale ivory colour; no translucent mushy zones at cut faces. By-eye check only (not a section 5.2 test at L7): tilt a standard spoon 45°. By-eye check only (not a section 5.3 test at L7): lift fork with slice clear of the plate for 10 s; pass = no drips, no liquid runs.
 
 SHOTS
 - firm_tofu_L7_take1.jpg — 45° hero, ruler and 15 mm checkerboard in frame.

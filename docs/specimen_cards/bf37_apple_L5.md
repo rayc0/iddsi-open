@@ -3,12 +3,12 @@ Start with 250 g fresh apple, peeled, cored, cut into 2 cm cubes. Steam 8–10 m
 
 2. IDDSI TEST
 Fork pressure test: press the fork tines into a heaped teaspoon of specimen on a flat plate with normal thumb pressure (~5 kg feel). Pass criterion: specimen squashes, spreads, and does not spring back; tine indent stays.
-Fork drip test: lift a loaded fork. Pass criterion: no thin liquid drips through tines; only soft pieces may drop, and they hold shape on the plate.
+Fork drip test: not applicable at L5 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L5 evidence.
 Spoon tilt test: tilt a heaped teaspoon 45°. Pass criterion: specimen sits cohesive, falls off in one soft clump, slides slowly, leaves residue — no runny pour.
 Syringe test: not required at L5.
 
 3. VISUAL QC
-On the spoon: lumpy, minced texture with visible soft particles all roughly ≤4 mm, uniform pale apple colour, slight gloss from natural juice, no pooling liquid at the rim. Fork tines should leave a clean impression with edges that don't crumble dry or run wet.
+On the spoon: lumpy, minced texture with visible soft particles all roughly ≤4 mm, uniform pale apple colour, slight gloss from natural juice, no pooling liquid at the rim. Fork tines should leave a clean impression with edges that don't crumble dry or run wet. By-eye check only (not a section 5.3 test at L5): lift a loaded fork; pass criterion: no thin liquid drips through tines; only soft pieces may drop, and they hold shape on the plate.
 
 4. SHOTS
 apple_L5_take1.jpg — 45° hero, specimen on white plate, 100 mm ruler + 15 mm checkerboard in frame, fork resting.

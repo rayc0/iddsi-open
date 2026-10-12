@@ -2,10 +2,10 @@ PREP
 Weigh 150 g steamed firm tofu. Crumble into blender jar, add 100 ml cool water, blend 45-60 s until smooth. Press through the 4 mm sieve; discard any residue that does not pass. Weigh the sieved puree. Add thickener at 1.5 g per 100 ml of puree as the calibration starting point; whisk in, rest 90 s, stir, re-weigh. Record actual grams used. Target consistency: pours slowly, drips through fork tines in a thick continuous ribbon. Adjust with extra thickener (0.25 g increments) or water (5 ml) and re-test.
 
 IDDSI TEST
-Fork drip: lift fork from a 50 mm depth; puree drips through tines in slow, continuous drops, not a steady stream. Spoon tilt: 10 ml on a spoon holds shape, slides slowly when tilted to ~45 degrees. Fork pressure: a visible dent forms under fork tines with light pressure, puree does not recover, no lumps. Syringe flow test (L3 requirement): fill 10 ml syringe, cut to 10 ml mark, release; 8-10 ml remains in syringe after 10 s. Pass = drip through fork tines, no flow from spoon, dent under fork, 8-10 ml retained in syringe.
+Fork drip: lift fork from a 50 mm depth; puree drips through tines in slow, continuous drops, not a steady stream. Spoon tilt: 10 ml on a spoon holds shape, slides slowly when tilted to ~45 degrees. Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Syringe flow test (L3 requirement): fill 10 ml syringe, cut to 10 ml mark, release; 8-10 ml remains in syringe after 10 s. Pass = drip through fork tines, no flow from spoon, dent under fork, 8-10 ml retained in syringe.
 
 VISUAL QC
-Surface on spoon is glossy, smooth, no grain or curds. Ribbon falling from fork holds its line for ~2 cm before merging. Color is uniform off-white, no translucent tofu fragments.
+Surface on spoon is glossy, smooth, no grain or curds. Ribbon falling from fork holds its line for ~2 cm before merging. Color is uniform off-white, no translucent tofu fragments. By-eye check only (not a section 5.1 test at L3): a visible dent forms under fork tines with light pressure, puree does not recover, no lumps.
 
 SHOTS
 Shoot on A4 kit, ruler + checkerboard visible.

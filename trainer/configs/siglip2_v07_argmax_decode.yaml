@@ -1,0 +1,62 @@
+experiment:
+  name: siglip2_v07_argmax_decode
+  output_dir: /work/lane_runs/fix03_retrain/runs
+  # Two of the five v0.7 release seeds, so every number below is directly
+  # comparable with the v0.7 baseline on the SAME held-out events and the SAME
+  # seed. 43 was the best v0.7 seed on macro_f1_with_abstentions; 17 is the
+  # first release seed.
+  seeds: [17, 43]
+
+data:
+  # v0.7 recipe, UNCHANGED. Consensus derived from FULL labeller coverage: 337
+  # of 532 cleaned events carry two genuine independent judgements (251
+  # unanimous, 86 split), 195 still carry one and are kept at weight 1. Split
+  # inherited verbatim from v0.3 (group-disjoint, asserted).
+  #
+  # Measured on /work/data/manifest_v07_weighted.jsonl by this lane:
+  #   train 314 (L3 28, L4 37, L5 13, L6 35, L7 201)
+  #   val   110 (L3 14, L4  8, L5  6, L6  9, L7 73)   <- L5/L6 support = 15
+  #   test  108 (L3 10, L4 11, L5  7, L6 10, L7 70)   <- L5/L6 support = 17
+  manifest: /work/data/manifest_v07_weighted.jsonl
+  image_size: 224
+  batch_size: 32
+  num_workers: 8
+  group_field: group_id      # 501 groups over 532 rows, asserted group-disjoint
+  synthetic: false
+
+model:
+  kind: siglip2
+  name: /work/models_local/siglip2-base-patch16-224
+  pretrained: true
+  dropout: 0.1
+
+training:
+  # v0.7 recipe, UNCHANGED.
+  device: cuda
+  amp: true
+  weight_decay: 0.01
+  class_balance_beta: 0.999
+  gradient_clip_norm: 1.0
+  phases:
+    - name: frozen_encoder_head
+      epochs: 60
+      lr: 0.001
+      unfreeze_last_blocks: 0
+    - name: unfreeze_last_two_blocks
+      epochs: 15
+      lr: 0.00002
+      unfreeze_last_blocks: 2
+
+calibration:
+  target_under_fnr: 0.05
+  max_abstention: 0.30
+
+evaluation:
+  bootstrap_samples: 1000
+  bootstrap_seed: 2026
+  # THE ONLY CHANGE FROM v0.7: candidate (c) argmax. The v0.7 release used the
+  # H-CORAL ordinal rank rule. lane_out2/fix01_decode.md does not exist (the
+  # directory is empty), so no wave-2 recommendation is available and this run
+  # takes candidate (c). `train.model.coral_decode_argmax` documents why argmax
+  # cannot express an interior level at the cut-point spacing the head learns.
+  decode: argmax

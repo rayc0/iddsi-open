@@ -1,0 +1,59 @@
+{
+ "seed": 43,
+ "adjacent_pairs": [
+  {
+   "pair": "L3-L4",
+   "true_L3_pred_L4": 0,
+   "true_L4_pred_L3": 1,
+   "adjacent_total": 1,
+   "rate_up_per_true_L3": 0.0,
+   "rate_down_per_true_L4": 0.0909,
+   "true_L3_support": 10,
+   "true_L4_support": 11,
+   "all_errors_from_L3": 1,
+   "all_errors_from_L4": 2
+  },
+  {
+   "pair": "L4-L5",
+   "true_L4_pred_L5": 0,
+   "true_L5_pred_L4": 0,
+   "adjacent_total": 0,
+   "rate_up_per_true_L4": 0.0,
+   "rate_down_per_true_L5": 0.0,
+   "true_L4_support": 11,
+   "true_L5_support": 7,
+   "all_errors_from_L4": 2,
+   "all_errors_from_L5": 5
+  },
+  {
+   "pair": "L5-L6",
+   "true_L5_pred_L6": 0,
+   "true_L6_pred_L5": 0,
+   "adjacent_total": 0,
+   "rate_up_per_true_L5": 0.0,
+   "rate_down_per_true_L6": 0.0,
+   "true_L5_support": 7,
+   "true_L6_support": 10,
+   "all_errors_from_L5": 5,
+   "all_errors_from_L6": 8
+  },
+  {
+   "pair": "L6-L7",
+   "true_L6_pred_L7": 8,
+   "true_L7_pred_L6": 0,
+   "adjacent_total": 8,
+   "rate_up_per_true_L6": 0.8,
+   "rate_down_per_true_L7": 0.0,
+   "true_L6_support": 10,
+   "true_L7_support": 70,
+   "all_errors_from_L6": 8,
+   "all_errors_from_L7": 0
+  }
+ ],
+ "decided_events": 92,
+ "wrong_level_decisions": 16,
+ "adjacent_slip_errors": 9,
+ "gap2_errors": 5,
+ "gap3plus_errors": 2,
+ "non_adjacent_errors": 7
+}

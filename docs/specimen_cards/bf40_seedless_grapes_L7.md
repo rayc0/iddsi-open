@@ -3,21 +3,21 @@ Use grapes as purchased. Select 8-10 whole seedless grapes, ~150 g total. Rinse,
 
 IDDSI TEST
 1. Fork pressure: press tines into the side of a grape until thumbnail blanches white. The grape must split, fragment, or burst — it must NOT return to its original shape when pressure is released. Pass = clear rupture under fork.
-2. Fork drip: lift the ruptured grape on the fork; no continuous drip or flow off the tines. Pass = grape stays on fork, nothing drips.
-3. Spoon tilt: place a whole grape on a spoon and tilt to ~45°. It must remain on the spoon. Pass = grape sits firmly, does not slide or roll off.
+2. Fork drip: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence.
+3. Spoon tilt: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. It must remain on the spoon. Pass = grape sits firmly, does not slide or roll off.
 No L3 syringe test applies at L7.
 
 VISUAL QC
 - Skin smooth, taut, intact bloom, no splits or leaks.
 - Shape round to oval, uniform colour, no juice pooling under fruit on the board.
-- When pressed on fork, grape visibly bursts and releases a single wet bolus — not a flowing liquid trail.
+- When pressed on fork, grape visibly bursts and releases a single wet bolus — not a flowing liquid trail. By-eye check only (not a section 5.3 test at L7): lift the ruptured grape on the fork; no continuous drip or flow off the tines; pass = grape stays on fork, nothing drips. By-eye check only (not a section 5.2 test at L7): place a whole grape on a spoon and tilt to ~45°.
 
 SHOTS
 - seedless_grapes_L7_take1.jpg — 45° hero, ruler + checkerboard visible, 5-6 grapes fanned.
-- seedless_grapes_L7_take1.jpg — top-down, checkerboard centred, ruler along one edge.
-- seedless_grapes_L7_take1.jpg — fork-press close-up mid-press, tines deforming skin, juice just emerging.
+- seedless_grapes_L7_take2.jpg — top-down, checkerboard centred, ruler along one edge.
+- seedless_grapes_L7_take3.jpg — fork-press close-up mid-press, tines deforming skin, juice just emerging.
 - seedless_grapes_L7_take1.mp4 — 8-12 s fork-press and spoon-tilt, continuous take.
-- seedless_grapes_L7_take1.mp4 — full IDDSI test film: fork pressure, fork drip, spoon tilt, in order.
+- seedless_grapes_L7_take2.mp4 — full IDDSI test film: fork pressure, fork drip, spoon tilt, in order.
 
 FAIL MODES
 - Skin splits before pressure applied (over-ripe, bruised) → re-make with a fresh batch from pack.

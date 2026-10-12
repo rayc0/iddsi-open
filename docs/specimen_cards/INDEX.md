@@ -4,6 +4,13 @@ Generated 2026-09-16 (MiniMax-M3 pool on the DGX, zero failures) from `../BASE_F
 Each card: PREP (quantities, calibration-and-record thickener) · IDDSI TEST + pass criteria · VISUAL QC · SHOTS · FAIL MODES.
 N/A cells (33) are omitted by design. Naming: bf<NN>_<food>_L<level>.md.
 
+Section headers `ops/build_capture_protocol.py` accepts: a bare name on its own
+line (`SHOTS`), a number plus a bare name (`4. SHOTS`), or either of those
+followed by ` - ` / ` — ` / `:` and the prose on the same line. A header in any
+other shape is reported as an orphan header rather than absorbed — that is how
+bf52_sweet_and_sour_pork_L7 lost its entire media list, silently, before
+2026-10-12.
+
 - [bf01_steamed_white_rice_L3](bf01_steamed_white_rice_L3.md)
 - [bf01_steamed_white_rice_L4](bf01_steamed_white_rice_L4.md)
 - [bf01_steamed_white_rice_L5](bf01_steamed_white_rice_L5.md)

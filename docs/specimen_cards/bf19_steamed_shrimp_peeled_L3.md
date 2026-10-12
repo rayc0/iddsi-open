@@ -4,11 +4,11 @@ Weigh 150 g steamed peeled shrimp on the scale. Add to blender with 80 ml cool w
 
 2. IDDSI TEST
 
-Fork pressure: pressing the fork against a white plate leaves a clear pattern; the groove does not close. Spoon tilt: the specimen slides slowly off a tilted spoon, not a runny pour. Fork drip: drips slowly in continuous blobs through the tines, not a steady stream. Syringe flow test: fill to 10 ml, release; after 10 seconds, 8-10 ml remains in the syringe. All four must pass.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Spoon tilt: the specimen slides slowly off a tilted spoon, not a runny pour. Fork drip: drips slowly in continuous blobs through the tines, not a steady stream. Syringe flow test: fill to 10 ml, release; after 10 seconds, 8-10 ml remains in the syringe. All four must pass.
 
 3. VISUAL QC
 
-Surface is smooth, glossy, and uniform pink-white with no visible shrimp chunks or fiber specks. Coats the spoon back in an even layer without dripping off the edge. Holds a soft mound on a flat plate for 2-3 seconds before slowly spreading.
+Surface is smooth, glossy, and uniform pink-white with no visible shrimp chunks or fiber specks. Coats the spoon back in an even layer without dripping off the edge. Holds a soft mound on a flat plate for 2-3 seconds before slowly spreading. By-eye check only (not a section 5.1 test at L3): pressing the fork against a white plate leaves a clear pattern; the groove does not close.
 
 4. SHOTS
 

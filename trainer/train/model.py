@@ -9,6 +9,44 @@ from torch.nn import functional as F
 
 LEVELS = (3, 4, 5, 6, 7)
 
+#: The decode rules :func:`coral_decode` can apply.  ``"rank"`` is the shipped
+#: H-CORAL fix and the default; ``"argmax"`` is the pre-H-CORAL categorical
+#: argmax, kept selectable so the two can be measured on identical weights
+#: instead of argued about.
+DECODE_RULES = ("rank", "argmax")
+
+
+def _check_decode_rule(rule: str) -> str:
+    if rule not in DECODE_RULES:
+        raise ValueError(f"decode rule must be one of {DECODE_RULES}; got {rule!r}")
+    return rule
+
+
+def coral_decode_argmax(probabilities: "np.ndarray") -> tuple["np.ndarray", "np.ndarray"]:
+    """Decode by argmax over the reconstructed categorical distribution.
+
+    This is the decode H-CORAL replaced.  It is kept as a selectable rule
+    because it is the only way to measure the difference on identical weights:
+    ``coral_logits_to_probs`` builds interior classes as differences of
+    adjacent sigmoids, so their mass is capped at ``tanh(gap / 4)`` while the
+    two tail classes are unbounded (see :func:`coral_interior_mass_ceiling`).
+    With the cut-point spacing the head actually learns (~0.91 on the five v0.7
+    release seeds) that cap is ~0.22, so argmax returns an interior level only
+    when BOTH tails fall below it — which the calibrated v0.7 probabilities
+    never do.  Measured on the five v0.7 release seeds' held-out predictions,
+    argmax emits 0 interior levels in all five while the rank rule emits
+    18-23.
+
+    Returns ``(level_index, confidence)`` where confidence is the argmax mass.
+    """
+    probs = np.asarray(probabilities, dtype=np.float64)
+    if probs.ndim != 2:
+        raise ValueError("probabilities must be a [N, C] matrix")
+    probs = probs / probs.sum(axis=1, keepdims=True).clip(1e-12)
+    predictions = probs.argmax(axis=1).astype(np.int64)
+    confidence = probs[np.arange(len(predictions)), predictions]
+    return predictions, confidence
+
 
 def coral_logits_to_probs(logits: torch.Tensor) -> torch.Tensor:
     """Convert monotone P(y > k) logits into probabilities for L3..L7."""
@@ -20,27 +58,29 @@ def coral_logits_to_probs(logits: torch.Tensor) -> torch.Tensor:
     return probs / probs.sum(dim=1, keepdim=True).clamp_min(1e-12)
 
 
-def coral_decode(probabilities: "np.ndarray") -> tuple["np.ndarray", "np.ndarray"]:
-    """Decode CORAL probabilities by the ordinal RANK rule.
+def coral_decode(
+    probabilities: "np.ndarray", rule: str = "rank"
+) -> tuple["np.ndarray", "np.ndarray"]:
+    """Decode CORAL probabilities into ``(level_index, confidence)``.
 
-    The level index is ``#{k : P(y > k) > 0.5}`` (Cao, Mirjalili & Raschka),
-    NOT ``argmax`` over the reconstructed categorical distribution.
+    ``rule`` selects the decode.  The default, ``"rank"``, is the ordinal rank
+    rule ``level = #{k : P(y > k) > 0.5}`` (Cao, Mirjalili & Raschka) and is
+    what the release ships.  ``"argmax"`` selects
+    :func:`coral_decode_argmax`, the pre-H-CORAL categorical argmax, and exists
+    only so the two decodes can be compared on identical weights.
 
-    Why this matters: :func:`coral_logits_to_probs` builds interior classes as
-    *differences of adjacent sigmoids*, so P(interior) is bounded by roughly
-    ``tanh(gap / 4)`` while the two tail classes keep their full mass. With the
-    default cut-point spacing (~0.69) every interior class is capped near 0.17
-    while both tails reach ~0.26, so ``argmax`` provably can never return an
-    interior level for ANY input. The first trained run emitted only L3, L7 and
-    abstain because of this, on balanced L4-L7 data with no L3 at all.
-
-    Returns ``(level_index, confidence)`` where confidence is the probability
-    mass on the decoded level.
+    The rank rule is the default and the argmax alternative is NOT a
+    replacement for it: see the module docstring notes on
+    :func:`coral_decode_argmax` for why argmax cannot express an interior level
+    at the cut-point spacing the head learns.
     """
     probs = np.asarray(probabilities, dtype=np.float64)
     if probs.ndim != 2:
         raise ValueError("probabilities must be a [N, C] matrix")
+    rule = _check_decode_rule(rule)
     probs = probs / probs.sum(axis=1, keepdims=True).clip(1e-12)
+    if rule == "argmax":
+        return coral_decode_argmax(probs)
     # P(y > k) for k = 0 .. C-2, recovered from the categorical form.
     survival = 1.0 - np.cumsum(probs, axis=1)[:, :-1]
     predictions = (survival > 0.5).sum(axis=1).astype(np.int64)

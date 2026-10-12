@@ -1,0 +1,11 @@
+{
+ "step_events": 683,
+ "mm_events": 512,
+ "both": 510,
+ "step_food_no": 94,
+ "step_unlevellable": 150,
+ "mm_food_no": 58,
+ "mm_unlevellable": 123,
+ "cross_food_agree": 493,
+ "cross_lev_agree": 436
+}

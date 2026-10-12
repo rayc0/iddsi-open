@@ -30,10 +30,16 @@ _SWEEP = _REPO_ROOT / "results/v05_release/labelability_sweep.json"
 _IDS = _REPO_ROOT / "results/v05_release/unusable_event_ids.txt"
 
 # Every document in this repo that quotes a figure from the labelability sweep.
+# paper/ was added by lane rel06_paper (2026-10-12): the technical note quoted
+# neither denominator, so the corpus-hygiene figures were absent from the one
+# document a reviewer reads first.
 _DOCS = [
     _REPO_ROOT / "hf/model_README.md",
     _REPO_ROOT / "hf/HAZARD_LOG.md",
     _REPO_ROOT / "trainer/configs/siglip2_v05.yaml",
+    _REPO_ROOT / "paper/paper.md",
+    _REPO_ROOT / "paper/sections/limitations.md",
+    _REPO_ROOT / "paper/sections/related_work.md",
 ]
 
 # percentage -> the denominators it may legitimately be paired with

@@ -9,10 +9,10 @@ Surface is glossy and uniform with no visible oil pools or tofu flecks. Color is
 
 4. SHOTS
 Still 1: mapo_tofu_L4_take1.jpg, 45-degree hero shot, ruler and checkerboard in frame beside the specimen plate.
-Still 2: mapo_tofu_L4_take1.jpg, top-down with checkerboard centered under a forkful.
-Still 3: mapo_tofu_L4_take1.jpg, fork-press close-up at mid-compression.
+Still 2: mapo_tofu_L4_take2.jpg, top-down with checkerboard centered under a forkful.
+Still 3: mapo_tofu_L4_take3.jpg, fork-press close-up at mid-compression.
 Clip 1: mapo_tofu_L4_take1.mp4, 8-12 seconds, fork-press and spoon-tilt sequence.
-Clip 2: mapo_tofu_L4_take1.mp4, IDDSI test film showing all three tests.
+Clip 2: mapo_tofu_L4_take2.mp4, IDDSI test film showing all three tests.
 
 5. FAIL MODES
 Puree is too thin and flows through fork tines: add thickener in 0.5 g per 100 ml increments and retest. Visible oil or thin liquid pools on the surface: re-blend with an extra 15 seconds and sieve again. Grainy texture from unblended tofu curds: re-blend 30 seconds and re-sieve. Any failure means re-make from the 250 g starting weight; do not patch.

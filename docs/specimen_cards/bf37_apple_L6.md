@@ -1,11 +1,10 @@
 1. PREP
 Weigh 300 g fresh apple, peeled, cored, cut into 20 mm cubes. Steam 8-10 minutes until fork enters with no resistance. Drain, spread on tray 2 minutes. Test one cube with fork-pressure: thumbnail blanches white, cube squashes and does not recover, piece breaks apart easily — if not, steam 2 more minutes. Dice by hand into pieces ≤ 15 mm on the 4 mm sieve card (no cube passes through the 15 mm square). Do not blend. No thickener, no water added. Steam only; do not boil to mush.
 
-2. IDDSI TEST
-Fork pressure (L6 test): press the fork tines against one piece on a flat plate until thumbnail blanches white. PASS: piece squashes, breaks, does not return to original shape. Spoon tilt: place 5-7 pieces on a spoon, tilt to 90 degrees against the plate. PASS: all pieces slide or fall off together; none holds its shape as a sticky bolus. Fork drip: lift 3 pieces on fork tines, hold horizontal 5 seconds. PASS: no liquid drips from the pieces. (No syringe test — L6, not L3.)
+2. IDDSI TESTFork pressure (L6 test): press the fork tines against one piece on a flat plate until thumbnail blanches white. PASS: piece squashes, breaks, does not return to original shape. Spoon tilt: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence. Fork drip: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence. (No syringe test — L6, not L3.)
 
 3. VISUAL QC
-Pieces are pale cream-yellow, matte, slightly translucent at edges, no dry core, no free liquid pooling on the plate. Edges are soft, not sharp; a light press with the back of a spoon leaves a clear dent. Pieces hold their cube shape on the fork but break cleanly with one nip — not stringy, not fibrous.
+Pieces are pale cream-yellow, matte, slightly translucent at edges, no dry core, no free liquid pooling on the plate. Edges are soft, not sharp; a light press with the back of a spoon leaves a clear dent. Pieces hold their cube shape on the fork but break cleanly with one nip — not stringy, not fibrous. By-eye check only (not a section 5.2 test at L6): place 5-7 pieces on a spoon, tilt to 90 degrees against the plate; pASS: all pieces slide or fall off together; none holds its shape as a sticky bolus. By-eye check only (not a section 5.3 test at L6): lift 3 pieces on fork tines, hold horizontal 5 seconds; pASS: no liquid drips from the pieces.
 
 4. SHOTS
 Still 1: hero 45-degree, ruler + checkerboard in frame, 5-7 pieces fanned on white plate.

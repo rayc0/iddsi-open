@@ -18,15 +18,19 @@ from PIL import Image
 from train.augment import AugmentSettings, PhotometricAugment, from_mapping
 from train.data import build_transform
 
-# The local SigLIP-2 checkout is located through the environment, so no host
-# path is baked into the shipped test. Set IDDSI_LOCAL_MODEL to a checkout to run
-# these tests; otherwise they skip.
-LOCAL_MODEL = (
-    Path(os.environ["IDDSI_LOCAL_MODEL"])
-    if os.environ.get("IDDSI_LOCAL_MODEL")
-    and Path(os.environ["IDDSI_LOCAL_MODEL"]).exists()
-    else None
-)
+# The shared SigLIP-2 base checkpoint lives in the shared tree's models_local/,
+# a few levels above this lane clone. Search for it rather than naming an
+# absolute host path (the release leak scan BLOCKs on those).
+def _local_model_dir() -> Path | None:
+    here = Path(__file__).resolve()
+    candidates = [
+        *( [Path(os.environ["IDDSI_MODEL_DIR"])] if os.environ.get("IDDSI_MODEL_DIR") else [] ),
+        *(p / "models_local" / "siglip2-base-patch16-224" for p in here.parents[:6]),
+    ]
+    return next((c for c in candidates if c.is_dir()), None)
+
+
+LOCAL_MODEL = _local_model_dir()
 
 
 def _photo(size: int = 240, seed: int = 0) -> Image.Image:

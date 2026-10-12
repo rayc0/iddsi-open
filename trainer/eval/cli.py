@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 
@@ -38,7 +39,8 @@ def _add_hub_arguments(parser: argparse.ArgumentParser) -> None:
         help=(
             "Hub endpoint for hub: references. Default order: IDDSI_HF_ENDPOINT, "
             "HF_ENDPOINT, then a reachability probe of huggingface.co followed "
-            f"by {hub_source.MIRROR_ENDPOINT} (the CN mirror)"
+            f"by the mirror named by {hub_source.ENV_MIRROR} when that variable "
+            "is set"
         ),
     )
     parser.add_argument(
@@ -46,6 +48,86 @@ def _add_hub_arguments(parser: argparse.ArgumentParser) -> None:
         default=None,
         help=f"HF cache directory for hub: references (default: IDDSI_HUB_CACHE or the huggingface_hub default)",
     )
+
+
+def run_eval(
+    *,
+    predictions: str,
+    threshold: str,
+    output_dir: str | Path,
+    bootstrap_samples: int = 1000,
+    bootstrap_seed: int = 2026,
+    human_ratings: str | None = None,
+    synthetic: bool = False,
+    hub: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Evaluate predictions, resolving ``hub:`` references through the Hub.
+
+    This is the one implementation of the eval path; ``main`` is only an
+    argument parser around it, and the CI smoke test
+    (``tools/consume_release.py --step smoke``) calls this same function so a
+    green smoke test means the documented command was run, not a lookalike.
+
+    Returns a summary dict with the output paths, the evaluated metrics, and
+    the Hub receipt (``None`` when nothing came from the Hub).
+    """
+    hub_kwargs = dict(hub or {})
+    predictions_path, predictions_receipt = hub_source.resolve_local(
+        predictions, kind="predictions", **hub_kwargs
+    )
+    threshold_path, threshold_receipt = hub_source.resolve_local(
+        threshold, kind="threshold", **hub_kwargs
+    )
+    receipt = hub_source.merge_receipts([predictions_receipt, threshold_receipt])
+    if receipt is not None:
+        print(receipt.summary_line())
+
+    # A threshold may be given as a number, as a metrics JSON carrying a
+    # "threshold" key, or as a hub: reference to such a JSON.
+    raw_threshold = threshold
+    try:
+        threshold_value = float(raw_threshold)
+    except ValueError:
+        threshold_value = hub_source.threshold_from_file(threshold_path)
+
+    arrays = np.load(predictions_path, allow_pickle=False)
+    result = evaluate_predictions(
+        arrays["probabilities"], arrays["labels"], threshold_value,
+        bootstrap_samples=bootstrap_samples, bootstrap_seed=bootstrap_seed,
+    )
+    human = (
+        human_inter_rater_baseline(
+            load_human_ratings(human_ratings),
+            arrays["event_ids"].tolist() if "event_ids" in arrays else None,
+            arrays["labels"] if "event_ids" in arrays else None,
+        )
+        if human_ratings else None
+    )
+    output = Path(output_dir)
+    output.mkdir(parents=True, exist_ok=True)
+    write_json(output / "metrics.json", result)
+    write_markdown_report(
+        output / "report.md",
+        result,
+        title="IDDSI-Open held-out evaluation",
+        synthetic=synthetic,
+        human=human,
+        hub=receipt.to_dict() if receipt is not None else None,
+    )
+    if receipt is not None:
+        hub_source.write_receipt(output / "hub_receipt.json", receipt)
+    summary = {
+        "report": str(output / "report.md"),
+        "metrics": str(output / "metrics.json"),
+        "hub_receipt": str(output / "hub_receipt.json") if receipt is not None else None,
+        "result": result,
+    }
+    print(json.dumps({
+        "report": summary["report"],
+        "metrics": summary["metrics"],
+        **({"hub_receipt": summary["hub_receipt"]} if receipt is not None else {}),
+    }))
+    return summary
 
 
 def main() -> None:
@@ -60,61 +142,21 @@ def main() -> None:
     _add_hub_arguments(parser)
     args = parser.parse_args()
 
-    hub_kwargs = {
-        "repo": args.hub_repo,
-        "revision": args.hub_revision,
-        "endpoint": args.hub_endpoint,
-        "cache_dir": args.hub_cache_dir,
-    }
-    predictions_path, predictions_receipt = hub_source.resolve_local(
-        args.predictions, kind="predictions", **hub_kwargs
-    )
-    threshold_path, threshold_receipt = hub_source.resolve_local(
-        args.threshold, kind="threshold", **hub_kwargs
-    )
-    receipt = hub_source.merge_receipts([predictions_receipt, threshold_receipt])
-    if receipt is not None:
-        print(receipt.summary_line())
-
-    # A threshold may be given as a number, as a metrics JSON carrying a
-    # "threshold" key, or as a hub: reference to such a JSON.
-    raw_threshold = args.threshold
-    try:
-        threshold = float(raw_threshold)
-    except ValueError:
-        threshold = hub_source.threshold_from_file(threshold_path)
-
-    arrays = np.load(predictions_path, allow_pickle=False)
-    result = evaluate_predictions(
-        arrays["probabilities"], arrays["labels"], threshold,
-        bootstrap_samples=args.bootstrap_samples, bootstrap_seed=args.bootstrap_seed,
-    )
-    human = (
-        human_inter_rater_baseline(
-            load_human_ratings(args.human_ratings),
-            arrays["event_ids"].tolist() if "event_ids" in arrays else None,
-            arrays["labels"] if "event_ids" in arrays else None,
-        )
-        if args.human_ratings else None
-    )
-    output = Path(args.output_dir)
-    output.mkdir(parents=True, exist_ok=True)
-    write_json(output / "metrics.json", result)
-    write_markdown_report(
-        output / "report.md",
-        result,
-        title="IDDSI-Open held-out evaluation",
+    run_eval(
+        predictions=args.predictions,
+        threshold=args.threshold,
+        output_dir=args.output_dir,
+        bootstrap_samples=args.bootstrap_samples,
+        bootstrap_seed=args.bootstrap_seed,
+        human_ratings=args.human_ratings,
         synthetic=args.synthetic,
-        human=human,
-        hub=receipt.to_dict() if receipt is not None else None,
+        hub={
+            "repo": args.hub_repo,
+            "revision": args.hub_revision,
+            "endpoint": args.hub_endpoint,
+            "cache_dir": args.hub_cache_dir,
+        },
     )
-    if receipt is not None:
-        hub_source.write_receipt(output / "hub_receipt.json", receipt)
-    print(json.dumps({
-        "report": str(output / "report.md"),
-        "metrics": str(output / "metrics.json"),
-        **({"hub_receipt": str(output / "hub_receipt.json")} if receipt is not None else {}),
-    }))
 
 
 if __name__ == "__main__":

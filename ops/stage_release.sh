@@ -19,15 +19,50 @@ for d in harvest trainer flowtest synth dataschema crowd tools docs hf paper res
     --exclude '*.pt' --exclude '*.npz' "$d" "$DEST/"
 done
 rm -f "$DEST/docs/RUNBOOK.md" "$DEST/docs/ARCHITECTURE.md"
-# results keep their json/md/yaml (eval evidence) — the exclusion above only drops media/weights
-for f in results/fix1_siglip2_coral_seed17/*.npz; do
-  # test_predictions.npz is eval evidence (arrays only, no images) — restore it
-  [ -f "$f" ] && rsync -a "$f" "$DEST/results/fix1_siglip2_coral_seed17/"
+
+# --- 2026-10-12 leak-scan remediation (lane rel03_leakscan) -------------------
+# Three more exclusion classes, each one a measured BLOCK/REVIEW hit from
+# ops/scan_release_leaks.sh over the previous staged tree. Nothing here is
+# deleted from the repository; these files stay on the box where they are used.
+
+# (1) WITHHELD DATASET BYTES. results/v04_groupdisjoint_consensus_manifest.jsonl
+#     is the 684-row training manifest: per-event image paths, split assignment,
+#     group_id, the consensus level, and all four labeller votes. The release
+#     card withholds the harvested image DATASET, and this file is that dataset
+#     minus the pixels -- shipping it would publish the label set and the exact
+#     train/test assignment. Remove this one known file; any OTHER *.jsonl that
+#     appears makes staging refuse outright below rather than being dropped
+#     silently, so a future manifest cannot ship unnoticed.
+rm -f "$DEST/results/v04_groupdisjoint_consensus_manifest.jsonl"
+
+# (2) BOX-OPS LANE DRIVERS living outside ops/. They hardcode the DGX host root,
+#     private lane checkout paths, container names and the GPU slot gate, and
+#     they cannot run from any other clone. Same category as ops/, which the
+#     header above already excludes for the same reason. They stay in the repo
+#     (the box still runs them); only the published bytes drop them.
+for f in tools/collect_kappa.py tools/run_arm.sh trainer/tools/run_lr_sweep.sh; do
+  rm -f "$DEST/$f"
 done
+
+# (3) WEIGHT/ARCHIVE REFUSAL. The publish workflow (.github/workflows/publish-hf.yml)
+#     refuses *.npz in the staged tree, and the rsync above already excludes it, so
+#     the old "restore test_predictions.npz" step contradicted both and would have
+#     shipped a refused file the moment one existed. It is removed rather than
+#     kept: this strengthens the gate, it does not weaken it.
+# results keep their json/md/yaml (eval evidence) — the exclusion above only drops media/weights
 
 # refuse outright if any weight/archive slipped in
 if find "$DEST" -name '*.pt' -o -name '*.safetensors' -o -name '*.bin' | grep -q .; then
   echo "🚫 weight file in staging — aborting"; exit 1
+fi
+
+# refuse outright if any dataset manifest slipped in (the dataset is WITHHELD).
+# Fail-closed: a manifest that is not the one known-withheld file above stops the
+# release instead of being quietly removed.
+if find "$DEST" -name '*.jsonl' | grep -q .; then
+  echo "🚫 dataset manifest (*.jsonl) in staging — aborting:"
+  find "$DEST" -name '*.jsonl'
+  exit 1
 fi
 
 # manifest of the staged bytes (this is what the leak scan + the publish gate cover)

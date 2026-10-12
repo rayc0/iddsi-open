@@ -18,6 +18,10 @@ dependencies = [
 
 [project.optional-dependencies]
 models = ["transformers>=4.57", "timm>=1.0"]
+# The Hub-consumption path (trainer/eval/hub_source.py, tools/consume_release.py,
+# .github/workflows/hub-smoke.yml). Kept optional so a training-only install
+# does not pull the Hub client; every "how to consume this" command needs it.
+hub = ["huggingface_hub>=0.24"]
 test = ["pytest>=8"]
 
 [tool.setuptools.packages.find]

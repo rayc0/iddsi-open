@@ -3,10 +3,9 @@
 Take 200 g steamed sweet potato wedge as it comes from the steamer — no peeling, no cutting smaller than the served wedge, no blending, no sieving, no water, no thickener. Place the wedge intact on the plate. Record the actual mass on the scale and the actual piece dimensions against the 100 mm ruler. The per-level note requires "wedge as steamed"; do not mash, chop, or process. If a single wedge is smaller than 30 mm at its widest, flag it and substitute a larger wedge from the same batch.
 
 2. IDDSI TEST
-
 Fork pressure: press the fork tines fully into the wedge until the tines bend or the wedge breaks cleanly under thumb pressure. Pass = wedge breaks, splinters, or deforms with effort; the fork does NOT sink freely.
 
-Fork drip: lift the wedge on the fork and hold over the plate for 5 seconds. Pass = no continuous drip, no slumping, no strands falling.
+Fork drip: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence.
 
 Spoon tilt: not applicable as a primary L7 test for a rigid wedge; if any soft interior squeezes out, it must hold on the spoon without flowing.
 
@@ -14,7 +13,7 @@ No flow test, no drip test beyond the above — L7 is established by hardness, n
 
 3. VISUAL QC
 
-Wedge holds its original steamed shape with intact edges; skin-on or skin-off surface intact, not collapsed. Surface is matte-moist, not wet or glossy with free liquid. Fork tines leave a clear indent, not a clean cut-through.
+Wedge holds its original steamed shape with intact edges; skin-on or skin-off surface intact, not collapsed. Surface is matte-moist, not wet or glossy with free liquid. Fork tines leave a clear indent, not a clean cut-through. By-eye check only (not a section 5.3 test at L7): lift the wedge on the fork and hold over the plate for 5 seconds; pass = no continuous drip, no slumping, no strands falling.
 
 4. SHOTS
 

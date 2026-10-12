@@ -1,0 +1,135 @@
+PASS  seed 17: n_val == 110
+PASS  seed 17: val support L3/L4/L5/L6/L7 == 14/8/6/9/73
+PASS  seed 29: n_val == 110
+PASS  seed 29: val support L3/L4/L5/L6/L7 == 14/8/6/9/73
+PASS  seed 43: n_val == 110
+PASS  seed 43: val support L3/L4/L5/L6/L7 == 14/8/6/9/73
+PASS  seed 71: n_val == 110
+PASS  seed 71: val support L3/L4/L5/L6/L7 == 14/8/6/9/73
+PASS  seed 101: n_val == 110
+PASS  seed 101: val support L3/L4/L5/L6/L7 == 14/8/6/9/73
+PASS  report states 110 validation events
+PASS  report states L5 support 6
+PASS  report states L6 support 9
+PASS  report states the test split is never loaded
+PASS  seed 17: census matches the npz
+PASS  seed 17: L5 decoded pre-abstention > 0
+PASS  seed 17: L6 decoded pre-abstention > 0
+PASS  seed 17: interior_decodes_total == L4+L5+L6
+PASS  seed 29: census matches the npz
+PASS  seed 29: L5 decoded pre-abstention > 0
+PASS  seed 29: L6 decoded pre-abstention > 0
+PASS  seed 29: interior_decodes_total == L4+L5+L6
+PASS  seed 43: census matches the npz
+PASS  seed 43: L5 decoded pre-abstention > 0
+PASS  seed 43: L6 decoded pre-abstention > 0
+PASS  seed 43: interior_decodes_total == L4+L5+L6
+PASS  seed 71: census matches the npz
+PASS  seed 71: L5 decoded pre-abstention > 0
+PASS  seed 71: L6 decoded pre-abstention > 0
+PASS  seed 71: interior_decodes_total == L4+L5+L6
+PASS  seed 101: census matches the npz
+PASS  seed 101: L5 decoded pre-abstention > 0
+PASS  seed 101: L6 decoded pre-abstention > 0
+PASS  seed 101: interior_decodes_total == L4+L5+L6
+PASS  seed 17: zero true-L5 val events decode as L5
+PASS  seed 17: six true-L5 val events
+PASS  seed 29: zero true-L5 val events decode as L5
+PASS  seed 29: six true-L5 val events
+PASS  seed 43: zero true-L5 val events decode as L5
+PASS  seed 43: six true-L5 val events
+PASS  seed 71: zero true-L5 val events decode as L5
+PASS  seed 71: six true-L5 val events
+PASS  seed 101: zero true-L5 val events decode as L5
+PASS  seed 101: six true-L5 val events
+PASS  seed 17: shipped threshold exceeds the interior mass ceiling
+PASS  seed 29: shipped threshold exceeds the interior mass ceiling
+PASS  seed 43: shipped threshold exceeds the interior mass ceiling
+PASS  seed 71: shipped threshold exceeds the interior mass ceiling
+PASS  seed 101: shipped threshold exceeds the interior mass ceiling
+PASS  seeds 29 and 101 accept zero interior decodes at the shipped threshold
+PASS  seeds 29 and 101 shipped thresholds are > 2x their ceiling
+PASS  seed 17: some threshold emits both L5 and L6
+PASS  seed 17: reachability boundary coverage >= shipped coverage
+PASS  seed 17: boundary covered FNR is above the 0.05 gate unless seed 43
+PASS  seed 29: some threshold emits both L5 and L6
+PASS  seed 29: reachability boundary coverage >= shipped coverage
+PASS  seed 29: boundary covered FNR is above the 0.05 gate unless seed 43
+PASS  seed 43: some threshold emits both L5 and L6
+PASS  seed 43: reachability boundary coverage >= shipped coverage
+PASS  seed 43: boundary covered FNR is above the 0.05 gate unless seed 43
+PASS  seed 71: some threshold emits both L5 and L6
+PASS  seed 71: reachability boundary coverage >= shipped coverage
+PASS  seed 71: boundary covered FNR is above the 0.05 gate unless seed 43
+PASS  seed 101: some threshold emits both L5 and L6
+PASS  seed 101: reachability boundary coverage >= shipped coverage
+PASS  seed 101: boundary covered FNR is above the 0.05 gate unless seed 43
+PASS  threshold 0 gives coverage 1.0 for every seed
+PASS  threshold 0 emits L5 and L6 for every seed
+PASS  seed 17: L5 hit set == {0} across the whole grid
+PASS  seed 29: L5 hit set == {0} across the whole grid
+PASS  seed 43: L5 hit set == {0} across the whole grid
+PASS  seed 71: L5 hit set == {0} across the whole grid
+PASS  seed 101: L5 hit set == {0} across the whole grid
+PASS  seed 17: cheapest covered FNR among L5/L6-emitting rows matches the report
+PASS  seed 29: cheapest covered FNR among L5/L6-emitting rows matches the report
+PASS  seed 43: cheapest covered FNR among L5/L6-emitting rows matches the report
+PASS  seed 71: cheapest covered FNR among L5/L6-emitting rows matches the report
+PASS  seed 101: cheapest covered FNR among L5/L6-emitting rows matches the report
+PASS  only seed 43 has a gate-meeting interior-emitting threshold
+PASS  seed 17: decode is temperature-invariant
+PASS  seed 29: decode is temperature-invariant
+PASS  seed 43: decode is temperature-invariant
+PASS  seed 71: decode is temperature-invariant
+PASS  seed 101: decode is temperature-invariant
+PASS  cut-point logits are bit-identical to the GPU reference
+PASS  decoded levels identical to the GPU reference
+PASS  labels identical to the GPU reference
+PASS  seed 17: recomputed coverage at the shipped threshold is 0.7727
+PASS  seed 17: shipped calibration.json coverage is 0.7727
+PASS  seed 29: recomputed coverage at the shipped threshold is 0.7636
+PASS  seed 29: shipped calibration.json coverage is 0.7727
+PASS  seed 43: recomputed coverage at the shipped threshold is 0.7909
+PASS  seed 43: shipped calibration.json coverage is 0.8000
+PASS  seed 71: recomputed coverage at the shipped threshold is 0.8000
+PASS  seed 71: shipped calibration.json coverage is 0.8000
+PASS  seed 101: recomputed coverage at the shipped threshold is 0.7545
+PASS  seed 101: shipped calibration.json coverage is 0.7545
+PASS  seed 17: clipped selector moves the threshold to 0.230243
+PASS  seed 17: clipped selector reports target_met false
+PASS  seed 29: clipped selector moves the threshold to 0.222890
+PASS  seed 29: clipped selector reports target_met false
+PASS  seed 43: clipped selector moves the threshold to 0.237198
+PASS  seed 43: clipped selector reports target_met false
+PASS  seed 71: clipped selector moves the threshold to 0.222451
+PASS  seed 71: clipped selector reports target_met false
+PASS  seed 101: clipped selector moves the threshold to 0.223129
+PASS  seed 101: clipped selector reports target_met false
+PASS  seed 17: candidate grid is sorted and unique
+PASS  seed 17: grid starts at 0 and ends above every confidence
+PASS  seed 17: lowest threshold accepts everything
+PASS  seed 17: highest threshold accepts nothing
+PASS  seed 29: candidate grid is sorted and unique
+PASS  seed 29: grid starts at 0 and ends above every confidence
+PASS  seed 29: lowest threshold accepts everything
+PASS  seed 29: highest threshold accepts nothing
+PASS  seed 43: candidate grid is sorted and unique
+PASS  seed 43: grid starts at 0 and ends above every confidence
+PASS  seed 43: lowest threshold accepts everything
+PASS  seed 43: highest threshold accepts nothing
+PASS  seed 71: candidate grid is sorted and unique
+PASS  seed 71: grid starts at 0 and ends above every confidence
+PASS  seed 71: lowest threshold accepts everything
+PASS  seed 71: highest threshold accepts nothing
+PASS  seed 101: candidate grid is sorted and unique
+PASS  seed 101: grid starts at 0 and ends above every confidence
+PASS  seed 101: lowest threshold accepts everything
+PASS  seed 101: highest threshold accepts nothing
+PASS  report contains '## Answer, in one line'
+PASS  report contains 'Yes for reachability, no for recall'
+PASS  report contains 'not one of the six'
+PASS  report contains 'Research demonstration for culinary education'
+PASS  report contains 'does not perform official IDDSI tests'
+PASS  report contains 'never replaces'
+
+133/133 checks passed

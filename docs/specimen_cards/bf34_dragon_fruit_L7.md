@@ -3,11 +3,11 @@ Place 200 g fresh ripe dragon fruit on the A4 capture mat. Per the per-level not
 
 IDDSI TEST
 Fork pressure: press the tines firmly onto a round until the thumbnail blanches white. The piece must not squish, flatten, smear, or fall apart under full pressure. Pass = shape and structure visibly retained.
-Spoon tilt: lift a round on a spoon and tilt to a steep angle, then invert. Pass = the round sits on the spoon, does not pour, does not slide or drip off, and remains in one piece.
+Spoon tilt: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence.
 No fork drip test needed at L7. No syringe flow test at L7.
 
 VISUAL QC
-On the fork: clean cut edges, vivid magenta flesh with small black seeds evenly distributed, no juice pooling on the mat, flesh holds the fork tine shape without sagging. On the spoon: round sits as a coherent disc, surface matte-to-slightly-glossy, no free liquid film under the piece.
+On the fork: clean cut edges, vivid magenta flesh with small black seeds evenly distributed, no juice pooling on the mat, flesh holds the fork tine shape without sagging. On the spoon: round sits as a coherent disc, surface matte-to-slightly-glossy, no free liquid film under the piece. By-eye check only (not a section 5.2 test at L7): lift a round on a spoon and tilt to a steep angle, then invert; pass = the round sits on the spoon, does not pour, does not slide or drip off, and remains in one piece.
 
 SHOTS
 dragon_fruit_L7_take1.jpg — 45-degree hero, whole round + ruler + checkerboard in frame.

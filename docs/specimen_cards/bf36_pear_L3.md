@@ -3,12 +3,12 @@ Weigh 200 g of fresh pear, peeled and cored. Steam until soft, 8–10 min. Trans
 
 IDDSI TEST
 Fork drip: lift fork 4–5 cm; liquid drips slowly in a continuous thin stream, not in drops.
-Fork pressure: tines leave clear, persistent lines on the surface when pressed lightly.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 Spoon tilt: spoon held at 30°; specimen flows off in a steady ribbon, not a lump, not a pour.
 Syringe flow test: fill the 10 ml syringe, cut the tip as specified; after 10 s, 8–10 ml remains. Pass = 8–10 ml retained.
 
 VISUAL QC
-On the fork: thin even coating, drips in a slow continuous thread. On the spoon: smooth, glossy, no lumps or fibres, holds a soft mound that slumps when tilted. No free liquid pooling on the plate.
+On the fork: thin even coating, drips in a slow continuous thread. On the spoon: smooth, glossy, no lumps or fibres, holds a soft mound that slumps when tilted. No free liquid pooling on the plate. By-eye check only (not a section 5.1 test at L3): tines leave clear, persistent lines on the surface when pressed lightly.
 
 SHOTS
 pear_L3_take1.jpg — 45° hero, 100 mm ruler and 15 mm checkerboard in frame.

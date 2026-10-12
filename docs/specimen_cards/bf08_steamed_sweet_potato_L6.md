@@ -2,10 +2,10 @@ PREP
 Take 200 g peeled steamed sweet potato. Cut into cubes that fit a 15 mm checkerboard square — none may exceed 15 mm on any side. Do not blend; do not sieve; do not add thickener or liquid. L6 requires discrete bite-sized pieces, so any pureeing step would destroy the specimen. Keep pieces covered so they do not form a dry skin before capture.
 
 IDDSI TEST
-Fork-pressure test: press the fork tines firmly against one cube until thumbnail blanches white. The piece must squash, not spring back, and stay squashed. Spoon tilt is not required for L6. Fork drip test: lift a piece on the fork; no liquid should run through or drip from the tines. No syringe flow test applies at L6.
+Fork-pressure test: press the fork tines firmly against one cube until thumbnail blanches white. The piece must squash, not spring back, and stay squashed. Spoon tilt is not required for L6. Fork drip test: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence. No syringe flow test applies at L6.
 
 VISUAL QC
-On the fork the cube should hold a clean cube shape with rounded, slightly fibrous edges and an even orange color. No surface gloss from added liquid, no crumbs, no pieces larger than the 15 mm checkerboard square.
+On the fork the cube should hold a clean cube shape with rounded, slightly fibrous edges and an even orange color. No surface gloss from added liquid, no crumbs, no pieces larger than the 15 mm checkerboard square. By-eye check only (not a section 5.3 test at L6): lift a piece on the fork; no liquid should run through or drip from the tines.
 
 SHOTS
 1. steamed_sweet_potato_L6_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame beside the pile.

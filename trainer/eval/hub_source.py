@@ -10,9 +10,9 @@ Endpoint selection is explicit and recorded, never silent:
 2. ``IDDSI_HF_ENDPOINT`` (project-specific, wins over the generic variable);
 3. ``HF_ENDPOINT`` (the generic huggingface_hub variable);
 4. auto-probe the canonical endpoint;
-5. auto-probe a regional mirror, but only when one is configured through
-   ``IDDSI_HF_MIRROR`` — no mirror is named in this file, because the release
-   must not depend on or advertise any particular host;
+5. probe the mirror named by ``IDDSI_HF_MIRROR``, if the operator set one — a
+   CN-side deployment detail that is deliberately NOT hardcoded here, because
+   ``ops/scan_release_leaks.sh`` BLOCKs on mirror hostnames;
 6. otherwise raise :class:`HubUnavailable`. There is no silent local fallback.
 
 Every fetch writes a receipt that names the endpoint that actually served the
@@ -38,6 +38,13 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable, Sequence
 
+try:  # PyYAML is a declared trainer dependency; keep the import local to the
+    # consume-config loader so a minimal install without YAML still resolves
+    # plain ``hub:`` references.
+    import yaml
+except ImportError:  # pragma: no cover - depends on the environment
+    yaml = None  # type: ignore[assignment]
+
 # The public face of this release (see README.md and hf/model_README.md).
 RELEASE_REPO = "lingualeap/iddsi-open-siglip2-v0"
 
@@ -47,10 +54,29 @@ RELEASE_REPO = "lingualeap/iddsi-open-siglip2-v0"
 DEFAULT_REVISION = "v0.7"
 
 REAL_ENDPOINT = "https://huggingface.co"
-# A regional mirror is OPTIONAL and is never named here: set IDDSI_HF_MIRROR to
-# one if your network cannot reach the canonical endpoint. An unset value simply
-# means the mirror probe is skipped.
-MIRROR_ENDPOINT = os.environ.get("IDDSI_HF_MIRROR", "")
+ENV_MIRROR = "IDDSI_HF_MIRROR"
+
+
+def __getattr__(name: str):
+    """Resolve the legacy ``MIRROR_ENDPOINT`` name from the environment.
+
+    Kept for callers (and tests) that read the module attribute directly. It is
+    deliberately a function rather than a constant: a constant would put a mirror
+    hostname in the shipped source, which ``ops/scan_release_leaks.sh`` BLOCKs.
+    """
+    if name == "MIRROR_ENDPOINT":
+        return os.environ.get(ENV_MIRROR, "")
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+
+def mirror_endpoint() -> str | None:
+    """The operator-supplied mirror endpoint, or None when unset.
+
+    Kept as a function rather than a module constant so that no mirror hostname
+    appears as a literal anywhere in this file.
+    """
+    value = os.environ.get(ENV_MIRROR, "").strip()
+    return value or None
 
 ENV_ENDPOINT = "IDDSI_HF_ENDPOINT"
 ENV_REPO = "IDDSI_HUB_REPO"
@@ -141,6 +167,7 @@ class Receipt:
             "n_files": len(self.files),
             "total_bytes": sum(item.bytes for item in self.files),
             "commit_mismatch": self.commit_mismatch(),
+            "all_from_cache": self.all_from_cache(),
             "files": [item.to_dict() for item in self.files],
         }
 
@@ -158,6 +185,17 @@ class Receipt:
             for item in self.files
         )
 
+    def all_from_cache(self) -> bool:
+        """True when no file was fetched: every byte was already local.
+
+        This is the difference between "consumed the release" and "read a cache
+        entry". A receipt whose endpoint was unreachable still names that
+        endpoint, so without this flag the receipt would claim the release was
+        pulled from a Hub that never answered. Fail closed on it: a caller that
+        needs proof of consumption must check it (see ``require_network``).
+        """
+        return bool(self.files) and all(item.already_cached for item in self.files)
+
     def summary_line(self) -> str:
         commit = self.resolved_commit or "unresolved"
         line = (
@@ -165,6 +203,8 @@ class Receipt:
             f"endpoint={self.endpoint} provenance={self.endpoint_provenance} "
             f"files={len(self.files)} bytes={sum(item.bytes for item in self.files)}"
         )
+        if self.all_from_cache():
+            line += " WARNING=served-entirely-from-local-cache"
         if self.commit_mismatch():
             line += " WARNING=served-snapshot-differs-from-resolved-commit"
         return line
@@ -210,12 +250,14 @@ def resolve_endpoint(
         )
     if _probe(REAL_ENDPOINT, repo, timeout):
         return Endpoint(REAL_ENDPOINT, "probe:real-endpoint-reachable")
-    if _probe(MIRROR_ENDPOINT, repo, timeout):
-        return Endpoint(MIRROR_ENDPOINT, "probe:mirror-reachable")
+    mirror = mirror_endpoint()
+    if mirror and _probe(mirror, repo, timeout):
+        return Endpoint(mirror, "probe:mirror-reachable")
     raise HubUnavailable(
         "no Hugging Face endpoint is reachable from this host. Tried "
         f"{REAL_ENDPOINT} (the real endpoint, used outside CN) and "
-        f"{MIRROR_ENDPOINT} (the CN mirror). Set {ENV_ENDPOINT} to pin one "
+        f"{mirror_endpoint() or 'the mirror named by ' + ENV_MIRROR} "
+        f"(the operator-supplied mirror). Set {ENV_ENDPOINT} to pin one "
         "explicitly, or run where at least one of them resolves."
     )
 
@@ -260,6 +302,8 @@ def parse_ref(
         if not repo_part or not revision_part:
             raise ValueError(f"hub reference needs both repo and revision: {spec!r}")
         return HubRef(repo=repo_part, revision=revision_part, filename=filename)
+    if not body:
+        raise ValueError(f"hub reference is missing an rfilename: {spec!r}")
     return HubRef(
         repo=repo or default_repo(),
         revision=revision or default_revision(),
@@ -308,8 +352,14 @@ def fetch(
     endpoint: str | Endpoint | None = None,
     cache_dir: str | None = None,
     probe_timeout: float = PROBE_TIMEOUT,
+    require_network: bool = False,
 ) -> Receipt:
     """Download ``filenames`` from the Hub and return a provenance receipt.
+
+    ``require_network=True`` re-downloads even when the cache already holds the
+    file, so the named endpoint provably served the bytes. Use it wherever a
+    green result has to mean "the release was consumed", not "a cache entry was
+    read" — a smoke test that never touched the Hub proves nothing.
 
     Raises :class:`HubUnavailable` when no endpoint can be resolved, and lets
     ``huggingface_hub`` errors propagate (a missing file is an error, not an
@@ -320,7 +370,7 @@ def fetch(
     except ImportError as exc:  # pragma: no cover - depends on the environment
         raise HubUnavailable(
             "huggingface_hub is not installed; install the trainer extras with "
-            "`python -m pip install -e '.[hub]'` to consume the Hub release"
+            "`python -m pip install -e 'trainer[hub]'` to consume the Hub release"
         ) from exc
 
     repo = repo or default_repo()
@@ -341,7 +391,9 @@ def fetch(
     for filename in filenames:
         if not filename or filename.startswith("/") or ".." in filename.split("/"):
             raise ValueError(f"unsafe rfilename: {filename!r}")
-        already_cached = _in_cache(repo, filename, revision, cache_dir)
+        already_cached = False if require_network else _in_cache(
+            repo, filename, revision, cache_dir
+        )
         target = Path(
             hf_hub_download(
                 repo_id=repo,
@@ -349,6 +401,7 @@ def fetch(
                 revision=revision,
                 cache_dir=cache_dir,
                 endpoint=chosen.url,
+                force_download=require_network,
             )
         )
         size, checksum = _sha256(target)
@@ -395,6 +448,7 @@ def resolve_local(
     revision: str | None = None,
     endpoint: str | None = None,
     cache_dir: str | None = None,
+    require_network: bool = False,
 ) -> tuple[Path, Receipt | None]:
     """Return ``(local_path, receipt)`` for a local path or a ``hub:`` ref.
 
@@ -409,6 +463,7 @@ def resolve_local(
         revision=ref.revision,
         endpoint=endpoint,
         cache_dir=cache_dir,
+        require_network=require_network,
     )
     return Path(receipt.files[0].path), receipt
 
@@ -439,3 +494,184 @@ def merge_receipts(receipts: Iterable[Receipt | None]) -> Receipt | None:
         requested_at_utc=first.requested_at_utc,
         files=[item for receipt in present for item in receipt.files],
     )
+
+
+# --------------------------------------------------------------------------
+# What the release publishes, asked of the Hub rather than assumed
+# --------------------------------------------------------------------------
+
+# Weight-file extensions. The release shape is locked: code + eval results +
+# flow-test grader + the negative finding, and ops/stage_release.sh refuses to
+# stage any of these. A consumer must be able to *verify* that from the Hub
+# file list rather than trust this comment.
+WEIGHT_SUFFIXES = (".pt", ".pth", ".safetensors", ".bin", ".ckpt")
+
+
+def published_weight_files(
+    repo: str | None = None,
+    *,
+    revision: str | None = None,
+    endpoint: str | Endpoint | None = None,
+    probe_timeout: float = PROBE_TIMEOUT,
+) -> list[str]:
+    """Return the weight files the Hub actually publishes for ``repo@revision``.
+
+    Raises :class:`HubUnavailable` when the file list cannot be retrieved. A
+    consumer that needs to state "no weights are published" must fail closed
+    here: an unreachable Hub is not evidence that weights exist, and it is not
+    evidence that they do not.
+    """
+    try:
+        from huggingface_hub import HfApi
+    except ImportError as exc:  # pragma: no cover - depends on the environment
+        raise HubUnavailable(
+            "huggingface_hub is not installed; install the trainer extras with "
+            "`python -m pip install -e 'trainer[hub]'` to consume the Hub release"
+        ) from exc
+
+    repo = repo or default_repo()
+    revision = revision or default_revision()
+    chosen = endpoint if isinstance(endpoint, Endpoint) else resolve_endpoint(
+        repo, explicit=endpoint, timeout=probe_timeout
+    )
+    try:
+        info = HfApi(endpoint=chosen.url).model_info(repo_id=repo, revision=revision)
+    except Exception as exc:  # noqa: BLE001 - any API failure must fail closed
+        raise HubUnavailable(
+            f"could not list files for {repo}@{revision} via {chosen.url}: "
+            f"{type(exc).__name__}: {exc}"
+        ) from exc
+    siblings = getattr(info, "siblings", None) or []
+    return sorted(
+        item.rfilename
+        for item in siblings
+        if item.rfilename.lower().endswith(WEIGHT_SUFFIXES)
+    )
+
+
+# --------------------------------------------------------------------------
+# The consume config — one YAML both the pipelines and the CI smoke test read
+# --------------------------------------------------------------------------
+
+# Default relative tolerance for an ``expect:`` entry given as a bare number.
+DEFAULT_TOLERANCE = 1e-3
+
+
+@dataclass(frozen=True)
+class ConsumeConfig:
+    """A parsed ``configs/consume/*.yaml`` — what to pull and what to assert."""
+
+    path: str
+    repo: str
+    revision: str
+    endpoint: str
+    cache_dir: str
+    require_network: bool
+    artifacts: dict[str, str]
+    expect: dict[str, Any]
+    eval: dict[str, Any]
+
+    def hub_kwargs(self) -> dict[str, Any]:
+        """The keyword arguments ``resolve_local`` / ``fetch`` take."""
+        return {
+            "repo": self.repo,
+            "revision": self.revision,
+            "endpoint": self.endpoint or None,
+            "cache_dir": self.cache_dir or None,
+            "require_network": self.require_network,
+        }
+
+    def artifact(self, key: str) -> str:
+        try:
+            return self.artifacts[key]
+        except KeyError as exc:
+            raise KeyError(
+                f"{self.path} has no artifacts.{key}; known keys: "
+                f"{sorted(self.artifacts)}"
+            ) from exc
+
+
+def load_consume_config(path: str | Path) -> ConsumeConfig:
+    """Load and validate a consume config.
+
+    An empty ``hub.endpoint`` means "resolve it at run time" (explicit argument,
+    then ``IDDSI_HF_ENDPOINT``, then ``HF_ENDPOINT``, then the reachability
+    probes); it never means a local fallback.
+    """
+    if yaml is None:  # pragma: no cover - depends on the environment
+        raise HubUnavailable(
+            "PyYAML is not installed; the consume config is YAML and cannot be read"
+        )
+    path = Path(path).resolve()
+    raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must contain a YAML mapping")
+    hub = raw.get("hub") or {}
+    artifacts = raw.get("artifacts") or {}
+    expect = raw.get("expect") or {}
+    evaluation = raw.get("eval") or {}
+    if not isinstance(hub, dict) or not isinstance(artifacts, dict):
+        raise ValueError(f"{path}: 'hub' and 'artifacts' must both be mappings")
+    for key, value in artifacts.items():
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError(f"{path}: artifacts.{key} must be a non-empty string")
+    for key, value in expect.items():
+        if isinstance(value, dict):
+            if "value" not in value:
+                raise ValueError(f"{path}: expect.{key} needs a 'value' key")
+        elif not isinstance(value, (int, float)) or isinstance(value, bool):
+            raise ValueError(f"{path}: expect.{key} must be a number or a mapping")
+    return ConsumeConfig(
+        path=str(path),
+        repo=str(hub.get("repo") or "").strip() or default_repo(),
+        revision=str(hub.get("revision") or "").strip() or default_revision(),
+        endpoint=str(hub.get("endpoint") or "").strip(),
+        cache_dir=str(hub.get("cache_dir") or "").strip(),
+        require_network=bool(hub.get("require_network", False)),
+        artifacts={str(k): str(v) for k, v in artifacts.items()},
+        expect=dict(expect),
+        eval=dict(evaluation),
+    )
+
+
+def _expected_entry(spec: Any) -> tuple[float, float]:
+    """Normalise one ``expect:`` entry into ``(value, tolerance)``."""
+    if isinstance(spec, dict):
+        return float(spec["value"]), float(spec.get("tol", DEFAULT_TOLERANCE))
+    return float(spec), DEFAULT_TOLERANCE
+
+
+def check_expectations(
+    measured: dict[str, Any],
+    expect: dict[str, Any],
+) -> list[str]:
+    """Compare measured metrics against ``expect:``; return the mismatch list.
+
+    ``n`` is an exact integer count (a denominator, never a tolerance). Every
+    other entry is a float compared within its tolerance, which defaults to
+    ``DEFAULT_TOLERANCE`` — wide enough for a 4-decimal published figure, tight
+    enough that a wrong metric or a substituted artifact still fails.
+    """
+    failures: list[str] = []
+    for key, spec in sorted(expect.items()):
+        if key not in measured:
+            failures.append(f"{key}: expected but not measured")
+            continue
+        got = measured[key]
+        if key == "n":
+            wanted = int(spec if not isinstance(spec, dict) else spec["value"])
+            if int(got) != wanted:
+                failures.append(f"n: measured {got}, expected {wanted}")
+            continue
+        value, tolerance = _expected_entry(spec)
+        try:
+            got_float = float(got)
+        except (TypeError, ValueError):
+            failures.append(f"{key}: measured {got!r} is not numeric")
+            continue
+        if abs(got_float - value) > tolerance:
+            failures.append(
+                f"{key}: measured {got_float:.6f}, expected {value:.6f} "
+                f"(tolerance {tolerance:g})"
+            )
+    return failures

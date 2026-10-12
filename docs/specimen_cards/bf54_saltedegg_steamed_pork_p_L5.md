@@ -1,11 +1,10 @@
 1. PREP
 Weigh 150 g fresh steamed minced pork with its juices onto the plate. Using a fork, mash and chop the patty against the plate until the meat breaks down and any chunks are ≤4 mm; pull and fold repeatedly for 60-90 seconds. Do not blend — blending will emulsify the fats and the fork-pressure signature will read as L6, not L5. Do not sieve the meat itself; press the released juices back in. No thickener is added — L5 does not require it, and adding thickener will push the specimen toward L4. No extra water or liquid is added. If the patty has a visible intact salted-egg yolk portion, chop that separately to ≤4 mm and fold back in; if the yolk resists mashing (rubbery), record "yolk resists ≤4 mm" and stop — the per-level note demands ≤4 mm with juices, and an unbreakable chunk disqualifies the specimen.
 
-2. IDDSI TEST
-Fork pressure: press the fork tines fully into the specimen on the plate; the specimen must squash, change shape, and not spring back when the fork is removed. Spoon tilt: tilt a teaspoon of specimen 30 degrees; the mass must hold together and not slide, pour, or drip. Fork drip: lift a forkful 5 cm above the plate; no thin liquid must run through or drip off the tines. All three must pass. The 10 ml/10 s syringe flow test does not apply to L5.
+2. IDDSI TESTFork pressure: press the fork tines fully into the specimen on the plate; the specimen must squash, change shape, and not spring back when the fork is removed. Spoon tilt: tilt a teaspoon of specimen 30 degrees; the mass must hold together and not slide, pour, or drip. Fork drip: not applicable at L5 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L5 evidence. All three must pass. The 10 ml/10 s syringe flow test does not apply to L5.
 
 3. VISUAL QC
-On the fork: a cohesive lump that holds its shape between tines, glossy surface from the juices, no free liquid pooling below. On the spoon: a mound that does not level itself when tilted. On the plate: meat granules clearly visible at ≤4 mm, no intact yolk dome, no thin broth ring around the patty.
+On the fork: a cohesive lump that holds its shape between tines, glossy surface from the juices, no free liquid pooling below. On the spoon: a mound that does not level itself when tilted. On the plate: meat granules clearly visible at ≤4 mm, no intact yolk dome, no thin broth ring around the patty. By-eye check only (not a section 5.3 test at L5): lift a forkful 5 cm above the plate; no thin liquid must run through or drip off the tines.
 
 4. SHOTS
 saltedegg_steamed_pork_p_L5_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame, specimen centered on white plate.

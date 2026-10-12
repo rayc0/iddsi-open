@@ -4,18 +4,18 @@ Weigh 200 g steamed peeled shrimp on the scale. Confirm each piece is already �
 2. IDDSI TEST
 Fork-pressure test (L6): press the fork tines fully into a shrimp piece until the thumbnail blanches white, then release. Pass: the piece squashes and does not recover its shape.
 Fork-drip test (applies only if any liquid pools): tilt the fork. Pass: very little drip runs through the tines, none falls off in a steady stream.
-Spoon-tilt test: if the piece sits in liquid on the spoon, tilt. Pass: cohesive, does not flow off freely.
+Spoon-tilt test: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence.
 No syringe flow test — that is for L3 only.
 
 3. VISUAL QC
-On the fork, a correct piece is opaque pink-white, moist but not weeping, and holds a soft rounded shape. On the plate, pieces look intact, none reduced to paste, no free liquid pooling beyond a thin sheen.
+On the fork, a correct piece is opaque pink-white, moist but not weeping, and holds a soft rounded shape. On the plate, pieces look intact, none reduced to paste, no free liquid pooling beyond a thin sheen. By-eye check only (not a section 5.2 test at L6): if the piece sits in liquid on the spoon, tilt; pass: cohesive, does not flow off freely.
 
 4. SHOTS
 still_1 steamed_shrimp_peeled_L6_take1.jpg — 45° hero, ruler and 15 mm checkerboard in frame.
-still_2 steamed_shrimp_peeled_L6_take1.jpg — top-down on checkerboard, multiple pieces spread.
-still_3 steamed_shrimp_peeled_L6_take1.jpg — fork-press close-up, thumbnail blanching mid-press.
+still_2 steamed_shrimp_peeled_L6_take2.jpg — top-down on checkerboard, multiple pieces spread.
+still_3 steamed_shrimp_peeled_L6_take3.jpg — fork-press close-up, thumbnail blanching mid-press.
 clip_1 steamed_shrimp_peeled_L6_take1.mp4 — 8–12 s, fork-press plus spoon-tilt in one continuous take.
-clip_2 steamed_shrimp_peeled_L6_take1.mp4 — full IDDSI test film, audio off, hands and specimen centred.
+clip_2 steamed_shrimp_peeled_L6_take2.mp4 — full IDDSI test film, audio off, hands and specimen centred.
 
 5. FAIL MODES
 Firm or rubbery texture after steaming: re-steam 1–2 minutes and re-test; if still firm, note as failed and re-make.

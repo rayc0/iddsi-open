@@ -20,14 +20,21 @@ Usage:
     python3 tools/yardstick_audit.py --out-dir results/yardstick_audit
 """
 
-import os
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import sys
 from pathlib import Path
 
 import numpy as np
+
+# Runnable both as `python3 tools/yardstick_audit.py` and as an importable
+# `tools.yardstick_audit`; the latter needs `tools/` on sys.path explicitly.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from paths import find_root  # noqa: E402
 
 # Level index -> IDDSI level. The npz files store class indices 0..4.
 LEVELS = (3, 4, 5, 6, 7)
@@ -121,10 +128,29 @@ RUN_GLOBS = {
 SEEDS = ("17", "29", "43", "71", "101")
 
 
+def _default_dir(flag: str, env: str, subdir: str) -> str:
+    """A default that names no host path: env var, else the discovered tree."""
+    value = os.environ.get(env, "").strip()
+    if value:
+        return value
+    root = find_root()
+    return str(root / subdir) if root is not None else subdir
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--runs-root", default=os.environ.get("IDDSI_RUNS_ROOT", "runs"))
-    parser.add_argument("--data-dir", default=os.environ.get("IDDSI_DATA_DIR", "data"))
+    parser.add_argument(
+        "--runs-root",
+        default=_default_dir("runs-root", "IDDSI_RUNS_ROOT", "runs"),
+        help="directory holding the per-run prediction files (default: "
+        "IDDSI_RUNS_ROOT or <shared tree>/runs)",
+    )
+    parser.add_argument(
+        "--data-dir",
+        default=_default_dir("data-dir", "IDDSI_DATA_DIR", "data"),
+        help="directory holding the v0.5/v0.7 manifests (default: "
+        "IDDSI_DATA_DIR or <shared tree>/data)",
+    )
     parser.add_argument("--out-dir", default="results/yardstick_audit")
     args = parser.parse_args()
 

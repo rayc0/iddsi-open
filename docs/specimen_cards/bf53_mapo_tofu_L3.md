@@ -2,10 +2,10 @@ PREP
 Weigh 250 g mapo tofu (sauce + curds) into blender. Blend 45 s on high, scraping halfway. Pass through 4 mm sieve; discard coarse solids (perian, scallion skins, charred bits). Stir in thickener at 0.8 g per 100 ml of puree as the calibration starting point; record actual grams on the bench sheet. If still too runny after 1 min rest, add 0.2 g increments up to 1.2 g/100 ml. Target flow leaves 8–10 ml in syringe at 10 s. Record thickener mass used.
 
 IDDSI TEST
-Fork drip: hold fork horizontally above bowl; liquid drips slowly through tines in a continuous but sluggish stream. Pass = steady slow drip, no pour, no drop sitting on the tine. Fork pressure: press fork tines flat into specimen until blanch shows; sample holds shape, does not return to liquid, fills tine spaces. Pass = clean impression, no separation. Spoon tilt: tilt a heaped spoon 30°; specimen slides slowly but does not run off. Pass = slow slump, stays on spoon. IDDSI flow test: fill 10 ml syringe, release 10 s; pass = 8–10 ml remaining.
+Fork drip: hold fork horizontally above bowl; liquid drips slowly through tines in a continuous but sluggish stream. Pass = steady slow drip, no pour, no drop sitting on the tine. Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence. Spoon tilt: tilt a heaped spoon 30°; specimen slides slowly but does not run off. Pass = slow slump, stays on spoon. IDDSI flow test: fill 10 ml syringe, release 10 s; pass = 8–10 ml remaining.
 
 VISUAL QC
-Matte, uniform rust-red surface; no oil pooling, no visible tofu cubes, no chili flake specks. Coats spoon back without dripping when lifted. Fork tines leave a clean, defined track when dragged.
+Matte, uniform rust-red surface; no oil pooling, no visible tofu cubes, no chili flake specks. Coats spoon back without dripping when lifted. Fork tines leave a clean, defined track when dragged. By-eye check only (not a section 5.1 test at L3): press fork tines flat into specimen until blanch shows; sample holds shape, does not return to liquid, fills tine spaces; pass = clean impression, no separation.
 
 SHOTS
 mapo_tofu_L3_take1.jpg — 45° hero, ruler and 15 mm checkerboard in frame, ruler end at specimen edge.

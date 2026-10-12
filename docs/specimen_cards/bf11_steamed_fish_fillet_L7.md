@@ -6,13 +6,13 @@ Take one steamed fish fillet as it comes out of the steamer. Record starting mas
 
 Fork pressure test: press the tines of a standard metal fork fully into the thickest part of the fillet. The fillet must resist the press; the fork should NOT cut all the way through cleanly with light thumb pressure. White flakes separating from the muscle along natural layers are acceptable; the piece should hold its shape and not smear between thumb and fork.
 
-Spoon tilt test: lift a forkful and tip it over a white plate. The piece must slide off in one mass or sit firmly on the spoon — no continuous drip, no flow, no sauce-like pour.
+Spoon tilt test: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. The piece must slide off in one mass or sit firmly on the spoon — no continuous drip, no flow, no sauce-like pour.
 
-Fork drip test: hold a loaded fork over the plate for 5 seconds. Zero drip. A single droplet of surface moisture is acceptable; steady dripping is not.
+Fork drip test: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence. Zero drip. A single droplet of surface moisture is acceptable; steady dripping is not.
 
 3. VISUAL QC
 
-Fillet holds an intact, recognisable shape on the plate. Visible natural flake lines along the muscle, no pooling liquid around it. Fork lifts a defined portion, not a smear.
+Fillet holds an intact, recognisable shape on the plate. Visible natural flake lines along the muscle, no pooling liquid around it. Fork lifts a defined portion, not a smear. By-eye check only (not a section 5.2 test at L7): lift a forkful and tip it over a white plate. By-eye check only (not a section 5.3 test at L7): hold a loaded fork over the plate for 5 seconds.
 
 4. SHOTS
 

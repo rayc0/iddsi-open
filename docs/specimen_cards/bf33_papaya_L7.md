@@ -2,10 +2,10 @@ PREP
 Start with 200 g fresh ripe papaya, peeled and seeded. Per the per-level note, cut into slices as normally served — no blending, no sieving, no thickener. No water or liquid added. The fruit's natural moisture is expected at L7; the operator records actual juice release onto the capture surface. Specimen must be at room temperature (20–24 °C) for testing.
 
 IDDSI TEST
-L7 is proven by behaviour, not flow. Fork pressure: the prongs must be able to pierce the slice and lift it cleanly with the fruit holding its shape — no squashing through the tines. Spoon tilt: a slice rests on an inverted spoon without sliding off under gravity. Fork drip: no liquid pours through the tines or drips continuously; a small amount of natural juice on the fork is acceptable, but no flow. No syringe test applies at L7.
+L7 is proven by behaviour, not flow. Fork pressure: the prongs must be able to pierce the slice and lift it cleanly with the fruit holding its shape — no squashing through the tines. Spoon tilt: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. Fork drip: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence. No syringe test applies at L7.
 
 VISUAL QC
-Slice holds a clean cut edge, not collapsed or fibrous-strewn. Colour is uniform ripe orange-red with no bruising. On the fork the slice sits flat across the tines without sagging between them.
+Slice holds a clean cut edge, not collapsed or fibrous-strewn. Colour is uniform ripe orange-red with no bruising. On the fork the slice sits flat across the tines without sagging between them. By-eye check only (not a section 5.2 test at L7): a slice rests on an inverted spoon without sliding off under gravity. By-eye check only (not a section 5.3 test at L7): no liquid pours through the tines or drips continuously; a small amount of natural juice on the fork is acceptable, but no flow.
 
 SHOTS
 papaya_L7_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame, slice centred. papaya_L7_take1_top.jpg — top-down, checkerboard under the slice. papaya_L7_take1_press.jpg — fork-press close-up mid-press, showing the slice under the tines. Clip 1: papaya_L7_take1.mp4, 8–12 s, fork-press and spoon-tilt sequence. Clip 2: papaya_L7_take1_test.mp4, the full IDDSI L7 test pass.

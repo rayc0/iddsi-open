@@ -1,11 +1,10 @@
 1. PREP
 Weigh 200 g of mapo tofu straight from the takeaway or chilled pack onto the digital scale. Record the actual mass. Do NOT blend. Do NOT sieve. Do NOT add thickener or water. Transfer the whole contents, sauce and all, into the capture dish. The specimen is whole food as normally served; reference specimen.
 
-2. IDDSI TEST
-Fork pressure: press the four tines flat onto the specimen with normal thumb pressure. The food must NOT fully flow through the tine gaps and must NOT change from its original shape into a thinner liquid; the mass should compress but hold. Spoon tilt: rest a spoonful on the spoon, then tilt until the spoon is nearly vertical; the specimen must sit on the spoon without sliding off or dripping continuously. Fork drip: lift the fork from the dish; the specimen must not drip in a continuous stream through the tines. All three must pass for L7 Regular.
+2. IDDSI TESTFork pressure: press the four tines flat onto the specimen with normal thumb pressure. The food must NOT fully flow through the tine gaps and must NOT change from its original shape into a thinner liquid; the mass should compress but hold. Spoon tilt: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. Fork drip: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence. All three must pass for L7 Regular.
 
 3. VISUAL QC
-Coarse visible tofu cubes roughly 10-20 mm, distinct mince particles, glossy red-brown oil-slick sauce clinging to solids rather than pooling free, no watery layer separating from the solids on the dish.
+Coarse visible tofu cubes roughly 10-20 mm, distinct mince particles, glossy red-brown oil-slick sauce clinging to solids rather than pooling free, no watery layer separating from the solids on the dish. By-eye check only (not a section 5.2 test at L7): rest a spoonful on the spoon, then tilt until the spoon is nearly vertical; the specimen must sit on the spoon without sliding off or dripping continuously. By-eye check only (not a section 5.3 test at L7): lift the fork from the dish; the specimen must not drip in a continuous stream through the tines.
 
 4. SHOTS
 mapo_tofu_L7_take1.jpg — 45-degree hero, ruler and 15 mm checkerboard in frame. mapo_tofu_L7_take2.jpg — top-down, checkerboard only. mapo_tofu_L7_take3.jpg — fork-press close-up mid-press. mapo_tofu_L7_take1.mp4 — 8-12 s fork-press and spoon-tilt. mapo_tofu_L7_take2.mp4 — full IDDSI test film, fork drip then spoon tilt.

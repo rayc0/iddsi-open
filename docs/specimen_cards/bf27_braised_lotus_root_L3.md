@@ -3,12 +3,12 @@ Weigh 200 g braised lotus root. Add to blender with 100 ml cool water; blend 45 
 
 2. IDDSI TEST
 Fork drip test: spoon a small mound onto the fork tines; the specimen should drip slowly through the gaps in 1-2 drips, not pour and not sit as a solid lump.
-Fork pressure test: press fork tines into the specimen on a plate; the tines leave a clear, persistent impression but the specimen does not recover shape. Pass.
+Fork pressure test: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 Spoon tilt test: tilt a heaped spoon; the specimen flows off in a slow ribbon that leaves a thin coating on the spoon. Pass.
 Syringe flow test: fill the 10 ml IDDSI syringe to the 10 ml mark, release for 10 s; pass when 8-10 ml remains in the syringe (i.e., 0-2 ml flows out).
 
 3. VISUAL QC
-On the fork: smooth pale beige coating that drips in a slow continuous thread, no visible fibrous strands. On the spoon at rest: a glossy pool that slowly levels but does not run flat instantly, no lumps, no separation of liquid ring around the edge.
+On the fork: smooth pale beige coating that drips in a slow continuous thread, no visible fibrous strands. On the spoon at rest: a glossy pool that slowly levels but does not run flat instantly, no lumps, no separation of liquid ring around the edge. By-eye check only (not a section 5.1 test at L3): press fork tines into the specimen on a plate; the tines leave a clear, persistent impression but the specimen does not recover shape; pass.
 
 4. SHOTS
 Capture three stills: (a) 45-degree hero of the specimen in a shallow bowl with 100 mm ruler and 15 mm checkerboard in frame; (b) top-down with checkerboard underneath the bowl; (c) fork-press close-up mid-press, tines sunk halfway into the specimen.

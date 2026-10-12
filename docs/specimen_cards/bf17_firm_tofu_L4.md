@@ -9,10 +9,10 @@ Glossy, smooth, uniform off-white surface; no lumps, grains, or tofu flecks. Hol
 
 4. SHOTS
 firm_tofu_L4_take1.jpg — 45-degree hero, ruler and checkerboard in frame, specimen mounded on a spoon.
-firm_tofu_L4_take1.jpg — top-down, checkerboard visible, spoon and fork resting beside the specimen.
-firm_tofu_L4_take1.jpg — fork-press close-up mid-press.
+firm_tofu_L4_take2.jpg — top-down, checkerboard visible, spoon and fork resting beside the specimen.
+firm_tofu_L4_take3.jpg — fork-press close-up mid-press.
 firm_tofu_L4_take1.mp4 — 8-12 s clip: fork-press then spoon-tilt.
-firm_tofu_L4_take1.mp4 — IDDSI test film: full fork drip, spoon tilt, fork pressure sequence.
+firm_tofu_L4_take2.mp4 — IDDSI test film: full fork drip, spoon tilt, fork pressure sequence.
 
 5. FAIL MODES
 Too runny: puree flows through fork tines or off the spoon — add 0.25 g/100 ml thickener, rest, re-test. Too stiff: cracks or tears when pressed — blend in 5-10 ml water and re-test. Grainy or streaky: sieve was skipped or under-blended — re-sieve and re-test; do not photograph until pass.

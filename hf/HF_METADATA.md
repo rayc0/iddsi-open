@@ -9,13 +9,17 @@ Everything here is **legitimate discoverability only**: correct metadata, honest
 accurate prose. No download inflation, no fake engagement, no keyword stuffing that
 misrepresents what the model does.
 
+Lane `rel01_modelcard`, 2026-10-12, nonce `6f9e400bf8dc`. The card is 826 lines /
+~51.7k characters; `hf/verify_card_claims.py` passes on it **10/10 search phrases,
+17/17 disclaimer markers, 16/16 hazard entries, 67/67 claim checks** (see §7).
+
 ---
 
 ## 1. The front matter — paste this verbatim at the top of the Hub README
 
 The Hub repo README **is** `hf/model_README.md`. The first 27 lines of that file are the
-front matter; they must be the very first thing in the file, with no blank line before
-the opening `---`.
+front matter; they are the very first thing in the file, with no blank line before the
+opening `---` (verified: line 1 and line 27 are both `---`).
 
 ```yaml
 ---
@@ -48,7 +52,9 @@ tags:
 ```
 
 `hf/verify_card_claims.py` parses the front matter out of `hf/model_README.md` and
-asserts it is byte-identical to the block above; a mismatch fails the run.
+asserts it is byte-identical to the block above; a mismatch fails the run. Field order
+does not matter to the parser, but keep it as written so the file's line numbers stay
+meaningful.
 
 ### Field-by-field
 
@@ -135,26 +141,32 @@ drift.
 These are phrases a person would actually type — into the Hub search box, or into a
 search engine. Each is confirmed present in `hf/model_README.md` by
 `hf/verify_card_claims.py`, which normalises case and treats hyphens and em-dashes as
-spaces before matching, and reports the line numbers it matched on.
+spaces before matching, and reports the line numbers it matched on. The bar is **at
+least 2 occurrences** — once in real prose and once in the signpost list — so no phrase
+is carried by the signpost block alone.
 
-| # | search phrase | where it lands in the card |
-|---|---|---|
-| 1 | `iddsi texture level` | H1 title, the opening paragraph, the "What this model does" section, and the domain-vocabulary list |
-| 2 | `food texture classification` | "What this model does" — the sentence framing the project's question |
-| 3 | `food image classification model` | the one-line summary immediately under the safety banner |
-| 4 | `texture modified diet` | "What this model does" — where the IDDSI scale is introduced; and the domain-vocabulary list |
-| 5 | `dysphagia food texture` | "Intended use and domain" — where the origin of the scale is explained |
-| 6 | `siglip2 food` | the one-line summary, and the "Model description" table |
-| 7 | `ordinal classification` | "Model description" (why CORAL, not softmax), the tag list, and the limitations |
-| 8 | `thickened liquid` | "The flow-test grader" — the L0–L4 end of the scale |
-| 9 | `culinary education` | the safety banner, "Intended use and domain", "Out of scope", and the tag list |
-| 10 | `iddsi level from a photograph` | "Bias, risks and limitations" — the irreducible-noise finding; and the signpost list in "Why you may have found this card" |
+| # | search phrase | occurrences | lines | where it lands in the card |
+|---|---|---|---|---|
+| 1 | `iddsi texture level` | 13 | 16, 29, 46, 83, 91, 126, 809 | H1 title (29), the safety banner's audience line (46), "What this model does" where the scale is introduced (83) and where the question is posed (91), the `iddsi-texture-levels` tag in the front matter (16), the signpost list (126), and the BibTeX citation (809) |
+| 2 | `food texture classification` | 2 | 94, 126 | "What this model does" — the sentence framing the project's question (94); and the signpost list (126) |
+| 3 | `food image classification model` | 2 | 50, 127 | the one-line summary immediately under the safety banner (50); and the signpost list (127) |
+| 4 | `texture modified diet` | 5 | 18, 83, 95, 127, 185 | "What this model does" — where the IDDSI scale is introduced (83) and where the framing question lands (95); the `texture-modified-diet` tag (18); the domain-vocabulary list (185); and the signpost list (127) |
+| 5 | `dysphagia food texture` | 3 | 128, 186, 190 | "Intended use and domain" — where the origin of the scale is explained (190); the domain-vocabulary list (186); and the signpost list (128) |
+| 6 | `siglip2 food` | 2 | 54, 128 | the one-line summary (54); and the signpost list (128) |
+| 7 | `ordinal classification` | 4 | 19, 128, 144, 550 | "Model description" — the task row of the architecture table (144); the Delgado & Tibau objection in the limitations (550); the `ordinal-classification` tag (19); and the signpost list (128) |
+| 8 | `thickened liquid` | 4 | 87, 129, 187, 682 | "What this model does" — the L0–L4 end of the scale (87); the domain-vocabulary list (187); "The flow-test grader" (682); and the signpost list (129) |
+| 9 | `culinary education` | 6 | 24, 47, 129, 178, 188, 799 | the safety banner (47), "Intended use and domain" (178), the domain-vocabulary list (188), "Never-claims" (799), the `culinary-education` tag (24), and the signpost list (129) |
+| 10 | `iddsi level from a photograph` | 3 | 129, 511–512, 669 | "Bias, risks and limitations" — the irreducible-noise finding, where the phrase is split across a line break at 511–512 (lines 511–512); the same sentence repeated in "Training data" under the coverage-closure paragraph (669); and the signpost list (129) |
 
-Each phrase also appears in the **body prose**, not only in the signpost list, so the
-card reads naturally to a human and is not a keyword block. The verifier reports both
-the matched surface form and the line numbers; run output:
-`lane_runs/hf01_card_seo/search_phrase_audit.json` and
-`lane_runs/hf01_card_seo/card_claims_verification.md`.
+Each phrase appears at least once in the **body prose** and at least once in the
+signpost list, so the card reads naturally to a human and is not a keyword block. Several
+phrases additionally match a hyphenated **tag** in the front matter (`iddsi-texture-levels`,
+`texture-modified-diet`, `ordinal-classification`, `culinary-education`), because the
+verifier normalises hyphens to spaces — the Hub indexes those tags for filtering, which
+is the same surface from the other direction. The verifier reports both the matched
+surface form and the line numbers; run output:
+`lane_runs/rel01_modelcard/search_phrase_audit.json` and
+`lane_runs/rel01_modelcard/card_claims_verification.md`.
 
 ### Phrases that are covered by tags but not written into the card
 
@@ -184,13 +196,14 @@ Recorded so a reviewer can check the boundary rather than take it on trust.
   in the card, plus the two pre-registered gates, the abstention-never-a-verdict rule,
   the not-IDDSI-endorsed statement, the SaMD/out-of-scope statement, the
   research-plus-culinary-education scope, the 31.0% label-noise ceiling, and the prior-art
-  never-claim. Any absence fails the run.
+  never-claim. Any absence fails the run. This pass **added** one hazard entry
+  (**H-BENCH**, §6) rather than removing any.
 - **Every number is measured and sourced.** `hf/verify_card_claims.py` re-derives the
   headline ranges from the primary artefacts (per-seed metrics JSON, the stored
   `test_predictions.npz` per seed, the v0.7 consensus manifest, the inter-judge
-  cross-tab, the flow-test bench summary) rather than trusting prose. Two figures from
+  cross-tab, the flow-test bench summary) rather than trusting prose. Three figures from
   earlier internal drafts were **removed** from the card because no file in the
-  repository backs them; the card's provenance section says so.
+  repository backs them; the card's provenance section says so (§6).
 
 ---
 
@@ -222,7 +235,63 @@ the same thing, because the table is what gets scraped.
 
 ---
 
-## 6. How to apply this to the Hub repo
+## 6. What this lane changed, and the three numbers it removed
+
+`hf/model_README.md` was restructured for discoverability: a search-shaped H1, a
+repo/licence/base-model line, a safety banner as the first blockquote above the fold, a
+table of contents, "What this model does", "Why you may have found this card", "Model
+description", "Intended use and domain" with an explicit domain-vocabulary list, and a
+single cross-yardstick results section. The front matter went from 4 tags to the 19
+above, and gained `library_name` and `base_model`.
+
+The restructuring **preserved** everything the wave-1d pass had corrected, and repaired
+four things that had been lost or were wrong:
+
+1. **The benchmark-framing correction was missing.** The discoverability draft predated
+   the 2026-10-12 benchmark-framing pass and had reverted to the two-reason
+   "that comparison flatters us" paragraph. The card now carries the ten-point
+   non-comparability list, the covered/all-events/abstain-as-miss/argmax/macro bases
+   printed side by side with their decode rules named, the always-L7 baselines, the
+   label-noise band, and the explicit "uninformative in both directions" conclusion.
+   The hazard entry that documents this (**H-BENCH**) was declared in
+   `docs/BENCHMARK_FRAMING.md` §6 and cited by the card, but **was never written** — a
+   dangling cross-reference in a log whose purpose is that every claim be checkable. It
+   is now written into `hf/HAZARD_LOG.md`, with every figure re-measured from the named
+   artefact.
+2. **A denominator error was fixed.** The draft printed *"152 of 684 events (29.8%) were
+   unusable"*. 152/684 = **22.2%**; 29.8% is 152/510, a conditional rate over the
+   both-judged subset. The card now states both, names each denominator, and gives the
+   rule for which to quote — the rule the previous card had already written down and the
+   draft had then broken.
+3. **A mixed-denominator table was replaced.** The previous v0.5 results table quoted
+   coverage 0.732 – 0.845 from the **n=142** per-seed metrics
+   (`results/v05_release/consensus_seed*_metrics.json`) beside exact-match and MAE rows
+   taken from the **n=108** `head_to_head2.json` — two denominators in one table. The
+   cross-yardstick tables are now single-artefact per column, and each states its n and
+   its label set.
+4. **The v0.2 abstention finding was restored** with its per-seed range corrected:
+   28 – 36 dangerous under-calls over 102 test events, of which the model *answers*
+   wrongly on only 2 – 8, because abstention intercepts 75.0 – 93.9% of its own
+   dangerous calls (`results/v02_judgelabels/honest_metrics.json`). The previous card
+   said "roughly 85%"; the measured per-seed range is 75.0 – 93.9%, mean 81.3%.
+
+**Three numbers were removed because no artefact in the repository backs them**, per the
+house rule that every claim be reproducible from a named file. The card's provenance
+section lists them explicitly rather than dropping them silently:
+
+- the per-corpus harvest tallies as a total of 713 (superseded by manifest-verifiable
+  counts);
+- the v0.1 manifest's 704 labelled rows / 20 duplicate `event_id` values (the v0.1
+  manifest is not in the repository);
+- the 30-image pilot's *"100% of disagreements with Qwen-8B were exactly ±1 IDDSI level
+  (19 of 19)"* and *"78.6% of items had at least two of three labellers agreeing"*.
+  These appear in **no** artefact in the repo — not in `results/regen_20260916/`, not in
+  `results/v05_release/`, and not in the H-LABELCEIL hazard entry. The pilot's 40.0% /
+  42.9% agreement figures *are* carried, because H-LABELCEIL states them.
+
+---
+
+## 7. How to apply this to the Hub repo
 
 **Option A — the card is the source of truth (recommended).** `hf/model_README.md` is
 already the complete README including front matter. Copy it to the repo root as
@@ -252,19 +321,25 @@ chips are derived from the YAML `tags:` list, so they need no separate UI step.
 
 ---
 
-## 7. Verification
+## 8. Verification
 
 ```bash
-docker exec -w /work/lanes/hf01_card_seo iddsi-train \
-  python hf/verify_card_claims.py --out /work/lane_runs/hf01_card_seo
+docker exec -w /work/lanes2/rel01_modelcard -e LANE_RUNS=/work/lane_runs/rel01_modelcard \
+  iddsi-train python hf/verify_card_claims.py
 ```
 
 The run exits non-zero if any of the ten search phrases is missing from the card, if any
-disclaimer/gate/hazard marker is missing, or if a headline range cannot be re-derived
-from the artefact it is attributed to. Outputs:
+disclaimer/gate/hazard marker is missing, if a headline range cannot be re-derived from
+the artefact it is attributed to, or if the card's front matter drifts from the block in
+§1. Outputs:
 
-- `lane_runs/hf01_card_seo/card_claims_verification.json` — per-claim measured vs
+- `lane_runs/rel01_modelcard/card_claims_verification.json` — per-claim measured vs
   quoted values, with the source artefact named for each.
-- `lane_runs/hf01_card_seo/card_claims_verification.md` — the same as a table.
-- `lane_runs/hf01_card_seo/search_phrase_audit.json` — phrase → matched surface form
+- `lane_runs/rel01_modelcard/card_claims_verification.md` — the same as a table.
+- `lane_runs/rel01_modelcard/search_phrase_audit.json` — phrase → matched surface form
   and line numbers.
+- `lane_runs/rel01_modelcard/hazard_coverage_audit.json` — hazard id → referenced lines
+  in the card.
+
+Latest run: **OK — 10/10 search phrases present, 17/17 disclaimer markers present,
+16/16 hazard entries referenced, 67/67 claim checks passed.**

@@ -3,12 +3,12 @@ Weigh 200 g of braised winter melon with skin and seeds removed, cut as served. 
 
 2. IDDSI TEST
 Fork pressure test: press a fork onto a chunk until the thumbnail blanches white, then release. The chunk must not fully flatten, smear, or push between the tines; it must return toward its original shape or hold a clear dent.
-Spoon tilt test: lift a chunk on a spoon and tilt to a steep angle. It must not slide or drip off under its own weight.
+Spoon tilt test: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence. It must not slide or drip off under its own weight.
 Fork drip test is not applicable at L7; the chunk must not drip through the tines.
 If any chunk squashes flat like puree, the specimen fails L7.
 
 3. VISUAL QC
-Chunks keep their cube or wedge outline, not smeared or fibrous. Surface is glossy from the braising glaze, not watery or soupy. A fork lifts a discrete piece, not a slumping mass.
+Chunks keep their cube or wedge outline, not smeared or fibrous. Surface is glossy from the braising glaze, not watery or soupy. A fork lifts a discrete piece, not a slumping mass. By-eye check only (not a section 5.2 test at L7): lift a chunk on a spoon and tilt to a steep angle.
 
 4. SHOTS
 braised_winter_melon_L7_take1.jpg: 45-degree hero, 100 mm ruler and 15 mm checkerboard in frame.

@@ -4,7 +4,7 @@
 ``tools/yardstick_audit.py`` on the host: quadratic weighted kappa implemented
 from its definition in numpy, CORAL rank decode re-implemented.
 
-``/work/lane_runs/an01_yardstick/sklearn_check.json`` is produced by
+``<shared tree>/lane_runs/an01_yardstick/sklearn_check.json`` is produced by
 ``tools/yardstick_audit_sklearn_check.py`` inside the trainer container: the
 project's own ``eval.metrics._point_metrics`` (i.e.
 ``sklearn.metrics.cohen_kappa_score(weights="quadratic")``) and the project's own
@@ -19,21 +19,42 @@ yardstick. Exits non-zero if they do not.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
+
+# Runnable both as `python3 tools/yardstick_audit_compare.py` and as an importable
+# `tools.yardstick_audit_compare`; the latter needs `tools/` on sys.path explicitly.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from paths import find_root  # noqa: E402
 
 GATE = 0.70
 TOLERANCE = 1e-12
 
 
+def _sklearn_check_path() -> Path:
+    """Where the container-side recomputation wrote its JSON.
+
+    Defaults to ``<shared tree>/lane_runs/an01_yardstick/`` (the lane that ran
+    it) but is overridable, so no absolute host path is baked in.
+    """
+    env = os.environ.get("IDDSI_SKLEARN_CHECK", "").strip()
+    if env:
+        return Path(env)
+    root = find_root()
+    if root is None:
+        raise SystemExit(
+            "cannot locate the shared IDDSI-Open tree to find "
+            "lane_runs/an01_yardstick/sklearn_check.json; set IDDSI_SKLEARN_CHECK"
+        )
+    return root / "lane_runs" / "an01_yardstick" / "sklearn_check.json"
+
+
 def main() -> None:
     here = Path(__file__).resolve().parent.parent
     mine = json.loads((here / "results/yardstick_audit/per_seed.json").read_text())
-    theirs = json.loads(Path(sys.argv[1]).read_text()) if len(sys.argv) > 1 else None
-    if theirs is None:
-        raise SystemExit(
-            "usage: yardstick_audit_compare.py <path-to-sklearn_check.json>"
-        )
+    theirs = json.loads(_sklearn_check_path().read_text())
 
     index = {
         (row["version"], row["seed"], row["yardstick"]): row["wk1_kappa_covered"]

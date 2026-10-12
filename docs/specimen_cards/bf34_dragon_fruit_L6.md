@@ -2,10 +2,10 @@ PREP
 Start with 150 g fresh ripe dragon fruit flesh, scooped from skin, no black seeds knocked loose. Cut into cubes against a 15 mm checkerboard grid; reject any cube >15 mm. Do NOT blend — the per-level note requires dice, not puree. Do NOT sieve. Do NOT add thickener or water. Working yield: ~140 g usable dice; discard ~10 g trim and seed-loss.
 
 IDDSI TEST
-Fork-pressure test: press thumbnail into one cube on the fork tines. Pass = thumbnail blanches white, the cube squashes flat, and it does NOT spring back when pressure is released. Spoon-tilt test: place three cubes on a spoon and tilt to 45°. Pass = cubes sit on the spoon without sliding off or falling; small moisture is acceptable. Fork-drip test: lift loaded fork vertically. Pass = no liquid runs or drips from the cubes. (No syringe test — L3 only.)
+Fork-pressure test: press thumbnail into one cube on the fork tines. Pass = thumbnail blanches white, the cube squashes flat, and it does NOT spring back when pressure is released. Spoon-tilt test: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence. Fork-drip test: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence. (No syringe test — L3 only.)
 
 VISUAL QC
-Look for: (1) cubes measure ≤15 mm on every edge against the ruler; (2) flesh colour is uniform pink/magenta with visible black seed dots, no bruising or translucency; (3) cube holds its shape when lifted on the fork — if it slumps or smears, it is too wet/overripe and must be re-made with a firmer fruit.
+Look for: (1) cubes measure ≤15 mm on every edge against the ruler; (2) flesh colour is uniform pink/magenta with visible black seed dots, no bruising or translucency; (3) cube holds its shape when lifted on the fork — if it slumps or smears, it is too wet/overripe and must be re-made with a firmer fruit. By-eye check only (not a section 5.2 test at L6): place three cubes on a spoon and tilt to 45°; pass = cubes sit on the spoon without sliding off or falling; small moisture is acceptable. By-eye check only (not a section 5.3 test at L6): lift loaded fork vertically; pass = no liquid runs or drips from the cubes.
 
 SHOTS
 dragon_fruit_L6_take1.jpg — 45° hero: ruler + 15 mm checkerboard in frame, 3–4 cubes fanned.

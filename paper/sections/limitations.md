@@ -7,13 +7,25 @@ Updated v0.1 (2026-09-16 regen; honest release card hf/model_README.md is the
 authority): classifier results (CORAL fix, gates, 31.0% exact agreement on
 n=575 with kappa unweighted 0.1062 / quadratic 0.2766, under-prediction
 finding) and the flow-grader bench (MAE 0.065 ml, 100 videos) are reported;
-RD-SLP baseline, subgroups, and CIs were not measured in v0. Label set for
+RD-SLP baseline, subgroups, and CIs were not measured in v0. Population for
+those inter-judge kappas: all 575 judged pairs, no coverage filter, because
+neither judge abstains. Label set for
 those kappas (H-YARDSTICK): 0.1062 / 0.2766 is agreement between the two VLM
 judges who produced the label set, so it characterises the yardstick itself;
-the model kappas in this file were measured against the Qwen tier-2 judge
-labels, and the v0.4/v0.5 numbers against the v0.5 consensus (both fail
-wk1>=0.70), while the same models measured against the v0.7 full-coverage
-consensus pass it (v0.7: 0.838-0.860). Citation keys
+the model kappas in this file are quadratic weighted kappas over covered rows
+measured against the Qwen tier-2 judge labels (0.4227, held-out n = 109, 96 of
+109 covered), and the v0.4/v0.5 numbers are covered-rows kappas against the
+v0.5 consensus (both fail wk1>=0.70). The same three checkpoints measured
+against the v0.7 full-coverage consensus clear that same covered-rows metric
+in 5/5 seeds each (v0.4 0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860;
+held-out n = 108) - and on the all-rows kappa the v0.5 model averages 0.671
+with 1 of 5 seeds at or above 0.70, so the pass verdict is metric-dependent as
+well as yardstick-dependent (H-YARDEVID). Corpus denominators (H-UNUSABLE):
+152/684 = 22.2% of the whole pre-clean corpus is the rate to quote; 152/510 =
+29.8% is a conditional rate over the both-judged subset and must not be
+quoted as a corpus rate. v0.7 decode collapse: L5 and L6 are never emitted as
+a decision in any of the five seeds.
+Citation keys
 refer to ../references.bib. W22 owns paper.md; this file is not yet
 included by it.
 -->
@@ -34,7 +46,8 @@ physical tests have weak human inter-rater agreement (kappa 0.23-0.36 for
 spoon-tilt/fork-pressure characteristics [@iddsi_reliability]; label set for
 that kappa (H-YARDSTICK): human raters scoring the official IDDSI physical
 tests, a different label set from any model label set in this project, and not
-a model scored against one), so
+a model scored against one; population: every pair both raters scored, with no
+coverage filter because a human rater does not abstain), so
 single-rater "ground truth" labels are themselves noisy.
 
 ## Known dangerous zone: L4/L5/L6 confusions
@@ -46,23 +59,31 @@ The project's evaluation plan therefore reports dangerous-direction FNR
 a first-class metric - v0 measured 33% against a <= 5% gate (FAILED) - and
 the system abstains rather than guess. The v0.1 classifier numbers, measured
 against label noise: a CORAL ordinal-decode bug made interior levels
-unreachable and was fixed (held-out n = 109: macro-F1 0.088 -> 0.358,
-coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature 2.83 -> 0.93;
-weighted kappa flat at 0.42); wk1 weighted kappa >= 0.70 measured 0.42, so
+unreachable and was fixed (held-out n = 109, 96 of 109 covered: macro-F1
+0.088 -> 0.358, coverage 0.70 -> 0.88, ECE 0.138 -> 0.091, temperature
+2.83 -> 0.93; quadratic weighted kappa on covered rows flat at 0.4227); wk1
+quadratic weighted kappa on covered rows >= 0.70 measured 0.4227, so
 the kill rule fired and photo-classification is dead as a product capability.
-Label set for these kappas (H-YARDSTICK): the model's 0.42 was measured
-against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers were measured
-against the v0.5 consensus; the models fail the wk1>=0.70 gate on both of those
-label sets, and the same models measured against the v0.7 full-coverage
-consensus pass it (v0.7: 0.838-0.860). The 0.1062 / 0.2766 figures below are
-agreement between the two VLM judges who produced the label set, so they
+Label set and population for these kappas (H-YARDSTICK, H-YARDEVID): the
+0.4227 is a covered-rows kappa (96 of 109 events) against the Qwen tier-2
+judge labels, and the v0.4/v0.5 numbers are covered-rows kappas against the
+v0.5 consensus; the models fail the wk1>=0.70 gate on both of those label
+sets. The same three checkpoints measured against the v0.7 full-coverage
+consensus clear that same covered-rows metric in 5/5 seeds each (v0.4
+0.736-0.808, v0.5 0.704-0.795, v0.7 0.838-0.860; held-out n = 108, coverage
+78.7-85.2%), but on the all-rows kappa the v0.5 model averages 0.671 and
+clears 0.70 on only 1 of 5 seeds, so the pass verdict is a property of the
+metric as well as of the yardstick. The 0.1062 / 0.2766 figures below are
+agreement between the two VLM judges who produced the label set, over all 575
+judged pairs with no coverage filter, so they
 characterise the yardstick itself rather than a model scored against one. The
 0.23-0.36 figures in the previous paragraph are the published physical-test
 literature's own inter-rater agreement on a different label set again, not this
 project's model.
 The ceiling finding (regen 2026-09-16, n_pairs = 575, full tier-2 sample):
 two VLM judges (Qwen3-VL-2B vs Qwen3-VL-8B) agree on only **31.0%** of the
-same images (Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766 -
+same images (Cohen's kappa unweighted 0.1062, quadratic-weighted 0.2766, both
+over all 575 judged pairs with no coverage filter -
 still essentially chance for 5 classes), with a systematic tier-1
 under-prediction bias dragging interior classes toward L7 (the dangerous
 direction). Middle levels need absolute size/flow information a scale-free
@@ -147,7 +168,19 @@ cybersecurity/privacy, human-factors work, and post-market processes
 
 The tested-label corpus is Hong Kong Chinese/Cantonese soft meals;
 generalization to other cuisines, kitchens, phones, and populations is
-unverified in v0. The planned remedy is physically-tested desk specimens (60
+unverified in v0. The corpus itself is smaller than it looks: the labelability
+sweep removed **152 of the 684 pre-clean events (152/684 = 22.2%** of the whole
+corpus, the rate to quote for any claim about the corpus - all 152 ids are
+present in the 684-event pre-clean manifests and none survives in the cleaned
+532-row manifest, 684 - 152 = 532). The same count over the both-judged subset
+is **152/510 = 29.8%**, a conditional rate over a subset the aggregate sweep
+output never enumerates, and the aggregate is not self-consistent (683 + 512 -
+510 = 685 against a corpus of 684), so 29.8% must not be quoted as a corpus
+rate. The removals fall on the hard middle levels, so the cleaned corpus is a
+harder problem rather than an easier one, and the v0.7 held-out test split is
+**108 of the 532** cleaned rows with a level distribution of L3 10 / L4 11 /
+L5 7 / L6 10 / **L7 70**.
+The planned remedy is physically-tested desk specimens (60
 base foods x 5 levels = 300, single-operator, protocol-following,
 test-filmed, with a filmed re-test subsample for intra-rater reliability) -
 planned, not done. The flow grader claims only the 10 mL / 10 s smartphone
@@ -160,21 +193,64 @@ quality gates - abstention works - and on the v0 100-video bench the grader
 achieves MAE 0.065 ml, grading L0-L4. A still photograph is never used to
 grade liquid flow.
 
+## Decode collapse: L5 and L6 are never emitted as a decision
+
+The CORAL decode bug that made the interior levels unreachable was fixed, and
+the shipped model still does not use three of its five levels. On the v0.7
+held-out split (**108 events, 5 seeds**, label set: the v0.7 full-coverage
+consensus), per-level recall on decided events at seed 43 (92 decisions of
+108 events) is L3 0.90, L4 0.50, **L5 0.00, L6 0.00**, L7 1.00, and per-level
+precision on decided events is *undefined* for L5 and L6 because neither level
+is ever predicted. **L5 and L6 are never emitted as a decision in any of the
+five seeds**; seed 43 emits L3 13, L4 2 and L7 77 of its 92 decisions, and
+seeds 29, 71 and 101 emit no L4 either. This is the L7 catch-all sink measured
+on the current head: it is an L7 detector with a partial L3 detector, not a
+five-level classifier, and it is the same dangerous direction the wk2 gate
+catches - a middle level that cannot be named is a middle level that will be
+reported as regular food. Because the test split is 64.8% L7 (70 of 108), a
+headline kappa or exact match on it is dominated by one class: the always-L7
+baseline scores 64.8% exact against the model's 80.9-84.9% on covered events,
+and only 66.7-70.4% on all 108 events with abstentions scored as misses.
+Reproduce with `python3 -P tools/verify_paper_claims.py`.
+
+## Every kappa is conditional on its yardstick and on its population
+
+Two independent conditionals apply to every kappa in this note, and they
+compound. The **yardstick**: the same three checkpoints fail wk1 >= 0.70
+against the v0.5 consensus (0/5 seeds each) and clear it against the v0.7
+full-coverage consensus (5/5 seeds each) - nothing about the models changed
+between those columns (H-YARDSTICK). The **population**: the covered-rows
+metric and the all-rows metric give different verdicts on the same cells - on
+the v0.7 labels the v0.5 model averages 0.671 over all rows and clears 0.70 on
+only 1 of 5 seeds, while its covered-rows range is 0.704-0.795 (H-YARDEVID).
+`results/v07_release/bias_matrix.json` holds the all-rows kappa, not the gate
+metric; `results/yardstick_audit/per_seed.json` holds the covered-rows table.
+No non-circular yardstick exists, because the label sets were produced by the
+same labeller families as the models, so every performance claim here should
+be discounted equally.
+
 ## What v0 reports and what it does not
 
 This is a research-preview technical note. v0.1 reports the classifier
 results (CORAL decode fix: macro-F1 0.088 -> 0.358, coverage 0.70 -> 0.88,
-ECE 0.138 -> 0.091, temperature 2.83 -> 0.93, n = 109; weighted kappa 0.42;
-dangerous under-classification 33%; wk1/wk2 gates failed, kill rule fired),
-the **31.0%** inter-judge ceiling finding (n=575, kappa unweighted 0.1062,
+ECE 0.138 -> 0.091, temperature 2.83 -> 0.93, n = 109 with 96 of 109 covered;
+quadratic weighted kappa on covered rows 0.4227;
+dangerous under-classification 33% on covered rows; wk1/wk2 gates failed, kill rule fired),
+the **31.0%** inter-judge ceiling finding (all 575 judged pairs, kappa unweighted 0.1062,
 quadratic-weighted 0.2766, plus the new under-prediction finding), and the
-flow-grader bench (MAE 0.065 ml, 100 videos, L0-L4). Label set for those kappas
-(H-YARDSTICK): the model's 0.42 was measured against the Qwen tier-2 judge
-labels, and the v0.4/v0.5 numbers were measured against the v0.5 consensus; the
-models fail the wk1>=0.70 gate on both of those label sets, and the same models
-measured against the v0.7 full-coverage consensus pass it (v0.7: 0.838-0.860).
+flow-grader bench (MAE 0.065 ml, 100 videos, L0-L4). Label set and population
+for those kappas (H-YARDSTICK, H-YARDEVID): the 0.4227 is a covered-rows kappa
+against the Qwen tier-2 judge labels, and the v0.4/v0.5 numbers are
+covered-rows kappas against the v0.5 consensus; the
+models fail the wk1>=0.70 gate on both of those label sets, and the same three
+checkpoints measured against the v0.7 full-coverage consensus clear that same
+covered-rows metric in 5/5 seeds each (v0.4 0.736-0.808, v0.5 0.704-0.795,
+v0.7 0.838-0.860; held-out n = 108) - while on the all-rows kappa the v0.5
+model averages 0.671 with 1 of 5 seeds at or above 0.70, so "all three pass"
+holds on the covered-rows metric and not on the all-rows metric.
 The 0.1062 / 0.2766 figures are agreement between the two VLM judges who
-produced the label set, so they characterise the yardstick itself rather than a
+produced the label set, over all 575 judged pairs with no coverage filter, so
+they characterise the yardstick itself rather than a
 model scored against one. The RD-SLP inter-rater
 baseline, subgroup analyses, and stratified-bootstrap 95% CIs were not
 measured in v0. v0 ships code, eval results, and the flow-test grader only:

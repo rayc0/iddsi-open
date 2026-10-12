@@ -18,6 +18,11 @@ DEFAULTS: dict[str, Any] = {
         "split_field": "split",
         "group_field": "group_id",
         "synthetic": False,
+        # "natural" keeps the shipped behaviour: a plain shuffled loader over
+        # the training rows as they appear in the manifest.  "balanced" draws
+        # every level with equal probability (with replacement), which changes
+        # how often each level is seen per epoch and nothing else.
+        "sampler": "natural",
     },
     "model": {
         "kind": "siglip2",
@@ -43,6 +48,12 @@ DEFAULTS: dict[str, Any] = {
         "temperature_max": 4.0,
         "temperature_steps": 81,
     },
+    # `decode` selects the CORAL decode rule. "rank" (default) is the shipped
+    # H-CORAL ordinal rank rule; "argmax" is the pre-H-CORAL categorical
+    # argmax, selectable so the two can be measured on identical weights.
+    # See train.model.coral_decode_argmax for why argmax cannot express an
+    # interior level at the cut-point spacing the head learns.
+    "evaluation": {"decode": "rank", "bootstrap_samples": 1000, "bootstrap_seed": 2026},
 }
 
 
@@ -76,6 +87,8 @@ def load_config(path: str | Path) -> dict[str, Any]:
 def validate_config(cfg: dict[str, Any]) -> None:
     if cfg["model"]["kind"] not in {"siglip2", "resnet18", "tiny_cnn"}:
         raise ValueError("model.kind must be siglip2, resnet18, or tiny_cnn")
+    if cfg["data"].get("sampler", "natural") not in {"natural", "balanced"}:
+        raise ValueError("data.sampler must be 'natural' or 'balanced'")
     seeds = cfg["experiment"].get("seeds", [])
     if not seeds or not all(isinstance(seed, int) for seed in seeds):
         raise ValueError("experiment.seeds must contain at least one integer")
@@ -88,4 +101,6 @@ def validate_config(cfg: dict[str, Any]) -> None:
         raise ValueError("target_under_fnr must be in [0, 1]")
     if not 0 <= float(cfg["calibration"]["max_abstention"]) < 1:
         raise ValueError("max_abstention must be in [0, 1)")
+    if cfg.get("evaluation", {}).get("decode", "rank") not in {"rank", "argmax"}:
+        raise ValueError("evaluation.decode must be 'rank' or 'argmax'")
 

@@ -1,0 +1,128 @@
+{
+ "_measured_by": "space/tools/build_evidence_bundle.py::measure_corpus_hygiene",
+ "_inputs": {
+  "realweak_pilot": "/work/data/realweak_pilot/attribution.jsonl",
+  "harvest_d1": "/work/data/harvest_d1/attribution.jsonl",
+  "harvest_d1b": "/work/data/harvest_d1b/attribution.jsonl",
+  "manifest_v07_weighted.jsonl": "/work/data/manifest_v07_weighted.jsonl"
+ },
+ "harvest_rows_per_set": {
+  "realweak_pilot": 129,
+  "harvest_d1": 400,
+  "harvest_d1b": 184
+ },
+ "harvest_rows_total": 713,
+ "unique_event_ids": 684,
+ "duplicate_event_id_rows": 29,
+ "provider_counts": {
+  "wikimedia": 12,
+  "nutrition5k": 109,
+  "open-images": 412,
+  "openverse": 180
+ },
+ "licence_counts": {
+  "CC BY-SA 2.5": 3,
+  "CC BY 4.0": 109,
+  "CC BY-SA 4.0": 3,
+  "CC0": 1,
+  "CC BY 2.0": 580,
+  "CC BY-SA 3.0": 1,
+  "CC BY-SA 2.0": 3,
+  "CC0 1.0": 13
+ },
+ "unverified_open_images_openverse_rows": 592,
+ "unverified_by_provider": {
+  "open-images": 412,
+  "openverse": 180
+ },
+ "sharealike_rows": 10,
+ "sharealike_by_provider": {
+  "wikimedia": 10
+ },
+ "rows_with_incomplete_attribution": 0,
+ "release_clean_rows": 111,
+ "release_clean_unique_events": 99,
+ "release_clean_by_provider": {
+  "nutrition5k": 109,
+  "wikimedia": 2
+ },
+ "release_clean_by_licence": {
+  "CC BY 4.0": 109,
+  "CC0": 1,
+  "CC BY 2.0": 1
+ },
+ "v07_manifest_rows": 532,
+ "v07_manifest_unique_events": 532,
+ "v07_manifest_unique_groups": 501,
+ "v07_split_counts": {
+  "train": 314,
+  "test": 108,
+  "val": 110
+ },
+ "v07_level_counts": {
+  "L3": 52,
+  "L4": 56,
+  "L5": 26,
+  "L6": 54,
+  "L7": 344
+ },
+ "v07_source_corpus_counts": {
+  "harvest_d1": 307,
+  "harvest_d1b": 132,
+  "realweak_pilot": 93
+ },
+ "v07_n_labellers_counts": {
+  "2": 337,
+  "1": 195
+ },
+ "v07_agreement_counts": {
+  "1/2": 86,
+  "1/1": 195,
+  "2/2": 251
+ },
+ "v07_events_with_two_judgements": 337,
+ "v07_events_unanimous": 251,
+ "v07_events_split": 86,
+ "v07_events_single_judgement": 195,
+ "v07_unanimous_fraction_of_double": 0.744807121661721,
+ "v07_test_n": 108,
+ "v07_test_level_counts": {
+  "L3": 10,
+  "L4": 11,
+  "L5": 7,
+  "L6": 10,
+  "L7": 70
+ },
+ "v07_test_source_corpus_counts": {
+  "harvest_d1": 68,
+  "harvest_d1b": 29,
+  "realweak_pilot": 11
+ },
+ "v07_train_n": 314,
+ "v07_val_n": 110,
+ "v07_multi_member_groups": 6,
+ "v07_groups_spanning_multiple_splits": 0,
+ "v07_events_in_multiple_splits": 0,
+ "v07_group_overlap_train_test": 0,
+ "v07_group_overlap_train_val": 0,
+ "v07_group_overlap_val_test": 0,
+ "labelability_sweep_raw": {
+  "step_events": 683,
+  "mm_events": 512,
+  "both": 510,
+  "step_food_no": 94,
+  "step_unlevellable": 150,
+  "mm_food_no": 58,
+  "mm_unlevellable": 123,
+  "cross_food_agree": 493,
+  "cross_lev_agree": 436
+ },
+ "sweep_events_both_families": 510,
+ "cross_family_is_there_food_agreement": 0.9666666666666667,
+ "cross_family_levellable_agreement": 0.8549019607843137,
+ "dedup_images_hashed": 684,
+ "dedup_exact_byte_duplicate_groups": 0,
+ "dedup_near_duplicate_pairs": 55,
+ "dedup_groups_with_more_than_one_member": 7,
+ "dedup_groups_spanning_multiple_splits_in_v02": 4
+}

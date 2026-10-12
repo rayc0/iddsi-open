@@ -3,12 +3,12 @@ Place the fresh chilled thigh on a plate, steam until the core reaches 75 °C an
 
 IDDSI TEST
 1) Fork pressure test: press the tines of a standard fork fully into the meat. The specimen must NOT separate, mash, or ooze through the tine gaps; the fork must lift the piece cleanly with no liquid pooling beneath.
-2) Spoon tilt test: place the thigh piece on a spoon and tilt to 45°; it must NOT slide, drip, or flow off.
-3) Fork drip test: lift the specimen on the fork to ~15 cm above the plate for 5 seconds; no drip should fall.
+2) Spoon tilt test: not applicable at L7 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L7 evidence.
+3) Fork drip test: not applicable at L7 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L7 evidence.
 All three must pass. No syringe test applies at L7.
 
 VISUAL QC
-Firm, opaque white-meat surface with intact skin and visible muscle fibre direction. Holds its anatomical shape when lifted — no slumping. No juice puddle forming on the plate within 30 seconds of plating.
+Firm, opaque white-meat surface with intact skin and visible muscle fibre direction. Holds its anatomical shape when lifted — no slumping. No juice puddle forming on the plate within 30 seconds of plating. By-eye check only (not a section 5.2 test at L7): place the thigh piece on a spoon and tilt to 45°; it must NOT slide, drip, or flow off. By-eye check only (not a section 5.3 test at L7): lift the specimen on the fork to ~15 cm above the plate for 5 seconds; no drip should fall.
 
 SHOTS
 Still 1 — 45° hero, ruler (100 mm) and 15 mm checkerboard in frame, whole thigh centred: steamed_chicken_thigh_L7_take1.jpg

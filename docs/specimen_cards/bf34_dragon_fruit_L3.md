@@ -3,12 +3,12 @@ Weigh 200 g ripe dragon fruit flesh (no skin). Add 80 ml water. Blend 25 s on hi
 
 2. IDDSI TEST
 Fork drip: hold fork over bowl for 10 s; drips slowly and continuously through tines — passes if it does not pour in a single stream and does not sit as a lump.
-Fork pressure: press fork tines into specimen on a plate for 5 s; surface m dents clearly, no full separation, specimen does not spring back.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 Spoon tilt: tilt a loaded spoon; specimen slides off slowly in one cohesive dollop, leaves a thin even coating.
 Syringe flow: fill 10 ml IDDSI syringe, release, wait 10 s; leaves 8-10 ml in the syringe. All four must pass.
 
 3. VISUAL QC
-Even magenta-pink, no skin flecks or fibre. Smooth glossy surface that mounds then slowly levels on the spoon. Coats the spoon back without running off the rim.
+Even magenta-pink, no skin flecks or fibre. Smooth glossy surface that mounds then slowly levels on the spoon. Coats the spoon back without running off the rim. By-eye check only (not a section 5.1 test at L3): press fork tines into specimen on a plate for 5 s; surface m dents clearly, no full separation, specimen does not spring back.
 
 4. SHOTS
 dragon_fruit_L3_take1_hero.jpg — 45° hero, ruler and 15 mm checkerboard in frame, specimen loaded on spoon.

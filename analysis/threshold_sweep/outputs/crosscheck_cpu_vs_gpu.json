@@ -1,0 +1,41 @@
+{
+  "reference_npz": "/work/lane_runs/an03_calibration/val_predictions_seed43.npz",
+  "reference_npz_sha256": "6988394cea0f238b26e20ed9f7e685df6512e3cc98e5104b40f1e053de0f2764",
+  "mine_npz": "/work/lane_runs/fix02_threshold/val_predictions_seed43_cpu.npz",
+  "mine_npz_sha256": "e2f875ed17ae705608d9de8c28d292013328f32e2209a80bc06dabcbcc782e20",
+  "reference_files": [
+    "probabilities",
+    "cutpoint_logits",
+    "labels",
+    "event_ids",
+    "seed",
+    "epoch",
+    "checkpoint_val_nll",
+    "split"
+  ],
+  "n": 110,
+  "labels_identical": true,
+  "event_ids_identical": true,
+  "max_abs_prob_difference": 0.1399255394935608,
+  "mean_abs_prob_difference": 0.040962020716979165,
+  "max_abs_logit_difference": 0.0,
+  "max_abs_confidence_difference": 0.13992553662773388,
+  "n_decoded_level_disagreements": 0,
+  "decoded_level_counts_reference": {
+    "L3": 8,
+    "L4": 11,
+    "L5": 5,
+    "L6": 12,
+    "L7": 74
+  },
+  "decoded_level_counts_mine": {
+    "L3": 8,
+    "L4": 11,
+    "L5": 5,
+    "L6": 12,
+    "L7": 74
+  },
+  "min_decode_margin_reference": 0.007254901760458621,
+  "min_decode_margin_mine": 0.004466116428375244,
+  "reference_temperature_field": null
+}

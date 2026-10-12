@@ -4,8 +4,7 @@
 
 3. VISUAL QC — On the spoon: matte jet-black, glossy but not pooling, one slow drip forming and falling. On the fork: 4-5 thin continuous strands at 1-2 per second, no run-off between prongs. No grainy specks, no separated oil sheen, no lumps catching on sieve residue.
 
-4. SHOTS — Pre-set white paper, ruler lower-left, 15 mm checkerboard upper-right, scale zeroed. (1) black_sesame_paste_L3_take1.jpg, 45-degree hero, 30 cm distance, ruler and checkerboard in frame. (2) black_sesame_paste_L3_take1.jpg, top-down, checkerboard centered, spoon pool 3 cm diameter. (3) black_sesame_paste_L3_take1.jpg, fork-drip close-up, fork held vertical, slow strands at the tines. (4) black_sesame_paste_L3_take1.mp4, 10 s, fork drip then spoon tilt. (5) black_sesame_paste_L3_take1.mp4, 12 s, IDDSI syringe test stopwatch visible.
-
+4. SHOTS — Pre-set white paper, ruler lower-left, 15 mm checkerboard upper-right, scale zeroed. (1) black_sesame_paste_L3_take1.jpg, 45-degree hero, 30 cm distance, ruler and checkerboard in frame. (2) black_sesame_paste_L3_take2.jpg, top-down, checkerboard centered, spoon pool 3 cm diameter. (3) black_sesame_paste_L3_take3.jpg, fork-drip close-up, fork held vertical, slow strands at the tines. (4) black_sesame_paste_L3_take1.mp4, 10 s, fork drip then spoon tilt. (5) black_sesame_paste_L3_take2.mp4, 12 s, IDDSI syringe test stopwatch visible.
 5. FAIL MODES — Too runny: threads off fork in a continuous stream and syringe reads under 7 ml; re-thicken in 0.2 g per 100 ml steps, max three attempts, then discard batch. Too thick: drops do not fall or syringe holds over 10 ml; whisk in 5 ml water, rest 60 s, retest, max twice. Gritty after sieving: residue over 8 g or visible specks on spoon; re-blend 20 s with extra 10 ml water and re-sieve once.
 
 ---

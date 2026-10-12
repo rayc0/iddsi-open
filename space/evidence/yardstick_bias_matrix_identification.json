@@ -1,0 +1,80 @@
+[
+ {
+  "model": "v0.4",
+  "yardstick": "v0.5 consensus",
+  "published_bias_matrix_value": 0.5539955518893709,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.5852299248436832,
+   "mean kappa over ALL rows, abstentions included": 0.5539955518893709
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": false
+ },
+ {
+  "model": "v0.4",
+  "yardstick": "v0.7 consensus (full coverage)",
+  "published_bias_matrix_value": 0.7045783785502729,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.7582912175928009,
+   "mean kappa over ALL rows, abstentions included": 0.7045783785502729
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": true
+ },
+ {
+  "model": "v0.5",
+  "yardstick": "v0.5 consensus",
+  "published_bias_matrix_value": 0.5188912565999125,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.5682779356247385,
+   "mean kappa over ALL rows, abstentions included": 0.5188912565999124
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": false
+ },
+ {
+  "model": "v0.5",
+  "yardstick": "v0.7 consensus (full coverage)",
+  "published_bias_matrix_value": 0.6712585329292282,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.7383503617764697,
+   "mean kappa over ALL rows, abstentions included": 0.6712585329292283
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": false
+ },
+ {
+  "model": "v0.7",
+  "yardstick": "v0.5 consensus",
+  "published_bias_matrix_value": 0.4871828762900834,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.5178942003033394,
+   "mean kappa over ALL rows, abstentions included": 0.4871828762900834
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": false
+ },
+ {
+  "model": "v0.7",
+  "yardstick": "v0.7 consensus (full coverage)",
+  "published_bias_matrix_value": 0.8127250349118708,
+  "candidates": {
+   "mean wk1 (kappa on covered rows) = the gate metric": 0.849764293040011,
+   "mean kappa over ALL rows, abstentions included": 0.8127250349118705
+  },
+  "matches": [
+   "mean kappa over ALL rows, abstentions included"
+  ],
+  "as_gate_would_it_pass_0.70": true
+ }
+]

@@ -2,10 +2,10 @@
 Start with 200 g fresh peeled orange segments on the digital scale. Pull the segments apart by hand and discard any pith, seeds, or hard membrane. Coarsely chop on a board using a chef's knife until pieces are visually no larger than ~10 mm; the per-level note allows chop ≤4 mm with juice retained, so chop finer, working through until every piece is ≤4 mm. Do NOT blend: blending destroys the fibrous segment structure and produces a puree that fails L5. Do NOT sieve. Do NOT add thickener; L5 must hold its own juice. Keep all released juice in the bowl and fold it back through the chopped mass with a fork so the surface glistens but no thin liquid pools. Target final specimen mass 180–200 g.
 
 2. IDDSI TEST
-Fork-pressure test (primary for L5): press the fork tines into the specimen on a flat plate until the thumbnail blanches white. The mass must squash, change shape, and not spring back; crumbs between tines are acceptable. Spoon-tilt test: a small mound on a spoon must hold its shape when the spoon is tilted to 45°, then slide off in one piece when fully inverted. Fork-drip test: lifting the fork, no thin orange liquid should run off separately — only the moist mass should travel with the fork. Pass = all three.
+Fork-pressure test (primary for L5): press the fork tines into the specimen on a flat plate until the thumbnail blanches white. The mass must squash, change shape, and not spring back; crumbs between tines are acceptable. Spoon-tilt test: a small mound on a spoon must hold its shape when the spoon is tilted to 45°, then slide off in one piece when fully inverted. Fork-drip test: not applicable at L5 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L5 evidence.
 
 3. VISUAL QC
-On the fork: discrete moist particles ≤4 mm, none fibrous or whole-segment shaped; surface glistens, no puddle of juice on the plate. Colour uniform pale orange; no visible white pith strands. On the spoon: holds a rounded mound without slumping.
+On the fork: discrete moist particles ≤4 mm, none fibrous or whole-segment shaped; surface glistens, no puddle of juice on the plate. Colour uniform pale orange; no visible white pith strands. On the spoon: holds a rounded mound without slumping. By-eye check only (not a section 5.3 test at L5): lifting the fork, no thin orange liquid should run off separately — only the moist mass should travel with the fork; pass = all three.
 
 4. SHOTS
 - orange_segments_peeled_L5_take1.jpg — 45° hero, ruler and 15 mm checkerboard in frame, specimen mounded beside them.

@@ -1,14 +1,13 @@
 1. PREP
 Cut 250 g seedless watermelon flesh into 25 mm slabs, discard rind. Pulse in consumer blender 4 s, stop, scrape, pulse 3 s more — stop at coarse chop with visible chunks, do not purée. Press through the 4 mm sieve with the back of a spoon; discard pulp and excess juice that drains through. Dice the sieve-retained solids to ≤15 mm cubes (≤15 mm in every dimension). Measure 200 g of diced pieces into the capture bowl. No thickener, no added liquid — L6 calibration point is the as-cut, as-diced specimen.
 
-2. IDDSI TEST
-Fork-pressure: press fork tines fully into one piece against a white plate. Pass criterion — thumbnail blanches white on the fork tine, the piece squashes flat, and it does not spring back when the fork lifts.
-Fork-drip: lift five pieces on fork tines, hold 5 s above plate. Pass criterion — no juice drips off the fork.
-Spoon-tilt: load five pieces on spoon, tilt to 90°. Pass criterion — pieces sit on the spoon without sliding or falling.
+2. IDDSI TESTFork-pressure: press fork tines fully into one piece against a white plate. Pass criterion — thumbnail blanches white on the fork tine, the piece squashes flat, and it does not spring back when the fork lifts.
+Fork-drip: not applicable at L6 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L6 evidence.
+Spoon-tilt: not applicable at L6 (5.2 covers L3/L4/L5 only) and is not run, filmed or recorded as L6 evidence.
 No L3 syringe test applies.
 
 3. VISUAL QC
-On the fork: discrete cubes with sharp 15 mm edges, bright red, moist but not pooling liquid. On the spoon at 90°: pieces hold position, a thin juice sheen — no puddle on the plate. On the plate after fork-press: flat red smear, no intact cube remains.
+On the fork: discrete cubes with sharp 15 mm edges, bright red, moist but not pooling liquid. On the spoon at 90°: pieces hold position, a thin juice sheen — no puddle on the plate. On the plate after fork-press: flat red smear, no intact cube remains. By-eye check only (not a section 5.3 test at L6): lift five pieces on fork tines, hold 5 s above plate; pass criterion — no juice drips off the fork. By-eye check only (not a section 5.2 test at L6): load five pieces on spoon, tilt to 90°; pass criterion — pieces sit on the spoon without sliding or falling.
 
 4. SHOTS
 watermelon_L6_take1.jpg — 45° hero, ruler and checkerboard in frame, five pieces fanned on fork.

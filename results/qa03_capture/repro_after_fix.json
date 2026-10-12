@@ -1,0 +1,247 @@
+{
+  "code_commit": "90008cb56c0a4ef3e3c2d5cb31b44f91e2c6a16c",
+  "repo": "<lane checkout>",
+  "corpus_total": 267,
+  "per_level": {
+    "L3": 59,
+    "L4": 58,
+    "L5": 55,
+    "L6": 51,
+    "L7": 44
+  },
+  "levels_asking_flow": [
+    3
+  ],
+  "flow_specimen_share_pct": 22.1,
+  "l3_window_ml": [
+    8.0,
+    10.0
+  ],
+  "runs": {
+    "l3_reading_9ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "9.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "9",
+      "overrides": null
+    },
+    "l3_reading_8ml_lower_bound": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "8.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "8",
+      "overrides": null
+    },
+    "l3_reading_10ml_upper_bound": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "10.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "10",
+      "overrides": null
+    },
+    "l3_reading_9ml_with_unit": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "9.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "9 ml",
+      "overrides": null
+    },
+    "l3_reading_7ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 0,
+      "recorded_fail": 59,
+      "flow_values_recorded": [
+        "7.0"
+      ],
+      "expected": "fail",
+      "scripted_flow": "7",
+      "overrides": null
+    },
+    "l3_reading_7p9ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 0,
+      "recorded_fail": 59,
+      "flow_values_recorded": [
+        "7.9"
+      ],
+      "expected": "fail",
+      "scripted_flow": "7.9",
+      "overrides": null
+    },
+    "l3_reading_10p1ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 0,
+      "recorded_fail": 59,
+      "flow_values_recorded": [
+        "10.1"
+      ],
+      "expected": "fail",
+      "scripted_flow": "10.1",
+      "overrides": null
+    },
+    "l3_reading_11ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 0,
+      "recorded_fail": 59,
+      "flow_values_recorded": [
+        "11.0"
+      ],
+      "expected": "fail",
+      "scripted_flow": "11",
+      "overrides": null
+    },
+    "l3_reading_reprompt_then_9ml": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "9.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "not a number",
+      "overrides": null
+    },
+    "l3_good_flow_but_fork_drip_fails": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 0,
+      "recorded_fail": 59,
+      "flow_values_recorded": [
+        "9.0"
+      ],
+      "expected": "fail",
+      "scripted_flow": "9",
+      "overrides": {
+        "fork_drip": "fail"
+      }
+    },
+    "l3_good_flow_but_spoon_tilt_na": {
+      "specimens_in_scope": 59,
+      "records_written": 59,
+      "recorded_pass": 59,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "9.0"
+      ],
+      "expected": "pass",
+      "scripted_flow": "9",
+      "overrides": {
+        "spoon_tilt": "na"
+      }
+    },
+    "l4_all_pass_control": {
+      "specimens_in_scope": 58,
+      "records_written": 58,
+      "recorded_pass": 58,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "pass",
+      "scripted_flow": null,
+      "overrides": null
+    },
+    "l5_all_pass_control": {
+      "specimens_in_scope": 55,
+      "records_written": 55,
+      "recorded_pass": 55,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "pass",
+      "scripted_flow": null,
+      "overrides": null
+    },
+    "l6_all_pass_control": {
+      "specimens_in_scope": 51,
+      "records_written": 51,
+      "recorded_pass": 51,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "pass",
+      "scripted_flow": null,
+      "overrides": null
+    },
+    "l7_all_pass_control": {
+      "specimens_in_scope": 44,
+      "records_written": 44,
+      "recorded_pass": 44,
+      "recorded_fail": 0,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "pass",
+      "scripted_flow": null,
+      "overrides": null
+    },
+    "l4_all_fail_control": {
+      "specimens_in_scope": 58,
+      "records_written": 58,
+      "recorded_pass": 0,
+      "recorded_fail": 58,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "fail",
+      "scripted_flow": null,
+      "overrides": null
+    },
+    "l4_fork_pressure_only_fail": {
+      "specimens_in_scope": 58,
+      "records_written": 58,
+      "recorded_pass": 0,
+      "recorded_fail": 58,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "fail",
+      "scripted_flow": null,
+      "overrides": {
+        "fork_pressure": "fail"
+      }
+    },
+    "l7_fork_pressure_only_fail": {
+      "specimens_in_scope": 44,
+      "records_written": 44,
+      "recorded_pass": 0,
+      "recorded_fail": 44,
+      "flow_values_recorded": [
+        "null"
+      ],
+      "expected": "fail",
+      "scripted_flow": null,
+      "overrides": {
+        "fork_pressure": "fail"
+      }
+    }
+  },
+  "problems": []
+}

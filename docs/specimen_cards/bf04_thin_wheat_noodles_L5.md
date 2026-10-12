@@ -1,13 +1,12 @@
 1. PREP
 Weigh 200 g cooked thin wheat noodles onto the plate. Chop across the bundle with a fork until strands measure ≤4 mm. Add 60 ml warm broth per the per-level note and mash with the fork until cohesive and moist; no separate thin liquid should pool. Do not blend — noodles become a paste and lose L5 texture. Do not add thickener. If strands stay longer than 4 mm after chopping, do not proceed; re-chop. Record final mass.
 
-2. IDDSI TEST
-Fork pressure: press fork tines into the specimen until the thumbnail blanches white. Specimen must squash, not spring back, and must not recover its shape when the fork lifts.
+2. IDDSI TESTFork pressure: press fork tines into the specimen until the thumbnail blanches white. Specimen must squash, not spring back, and must not recover its shape when the fork lifts.
 Spoon tilt: scoop 4 ml onto a spoon and tilt 45°. Specimen must hold together and fall off in one mass, not drip, not slide.
-Fork drip: lift a forkful 5 cm above the plate; no thin liquid must run off continuously. Reject if drips form a steady stream.
+Fork drip: not applicable at L5 (5.3 covers L3/L4 only) and is not run, filmed or recorded as L5 evidence.
 
 3. VISUAL QC
-Visible particles no larger than a 4 mm checkerboard square. Surface glistens but no free broth in the plate well. Fork tines leave a clean impression that stays.
+Visible particles no larger than a 4 mm checkerboard square. Surface glistens but no free broth in the plate well. Fork tines leave a clean impression that stays. By-eye check only (not a section 5.3 test at L5): lift a forkful 5 cm above the plate; no thin liquid must run off continuously; reject if drips form a steady stream.
 
 4. SHOTS
 thin_wheat_noodles_L5_take1.jpg — 45° hero, 100 mm ruler and 15 mm checkerboard in frame.

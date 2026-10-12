@@ -1,0 +1,31 @@
+==============================================================================
+qa03_capture reproduction — ops/capture.py pass/fail accounting
+==============================================================================
+code                     : 90008cb56c0a4ef3e3c2d5cb31b44f91e2c6a16c
+corpus                   : 267 specimens, by level {'L3': 59, 'L4': 58, 'L5': 55, 'L6': 51, 'L7': 44}
+levels asking flow_ml_remaining : [3]  (59 specimens = 22.1% of the corpus)
+L3 window under test     : 8-10 ml remaining at t=10s
+
+[ok ] l3_reading_9ml                         L3 flow='9'            pass  59 / fail   0  (want  59 pass)
+[ok ] l3_reading_8ml_lower_bound             L3 flow='8'            pass  59 / fail   0  (want  59 pass)
+[ok ] l3_reading_10ml_upper_bound            L3 flow='10'           pass  59 / fail   0  (want  59 pass)
+[ok ] l3_reading_9ml_with_unit               L3 flow='9 ml'         pass  59 / fail   0  (want  59 pass)
+[ok ] l3_reading_7ml                         L3 flow='7'            pass   0 / fail  59  (want   0 pass)
+[ok ] l3_reading_7p9ml                       L3 flow='7.9'          pass   0 / fail  59  (want   0 pass)
+[ok ] l3_reading_10p1ml                      L3 flow='10.1'         pass   0 / fail  59  (want   0 pass)
+[ok ] l3_reading_11ml                        L3 flow='11'           pass   0 / fail  59  (want   0 pass)
+[ok ] l3_reading_reprompt_then_9ml           L3 flow='not a number' pass  59 / fail   0  (want  59 pass)
+[ok ] l3_good_flow_but_fork_drip_fails       L3 flow='9'            pass   0 / fail  59  (want   0 pass)
+[ok ] l3_good_flow_but_spoon_tilt_na         L3 flow='9'            pass  59 / fail   0  (want  59 pass)
+[ok ] l4_all_pass_control                    L4 flow=None           pass  58 / fail   0  (want  58 pass)
+[ok ] l5_all_pass_control                    L5 flow=None           pass  55 / fail   0  (want  55 pass)
+[ok ] l6_all_pass_control                    L6 flow=None           pass  51 / fail   0  (want  51 pass)
+[ok ] l7_all_pass_control                    L7 flow=None           pass  44 / fail   0  (want  44 pass)
+[ok ] l4_all_fail_control                    L4 flow=None           pass   0 / fail  58  (want   0 pass)
+[ok ] l4_fork_pressure_only_fail             L4 flow=None           pass   0 / fail  58  (want   0 pass)
+[ok ] l7_fork_pressure_only_fail             L7 flow=None           pass   0 / fail  44  (want   0 pass)
+
+==============================================================================
+NO PROBLEM — every scenario recorded the verdict the card rule requires.
+records scratch dir: /tmp/qa03_capture_muuyvgu5
+evidence written: results/qa03_capture/repro_after_fix.json

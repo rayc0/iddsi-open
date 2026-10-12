@@ -1,0 +1,473 @@
+{
+ "n": 108,
+ "threshold": 0.5189002752304077,
+ "metrics": {
+  "macro_f1_with_abstentions": 0.33986013986013985,
+  "weighted_kappa_covered": 0.86040655450531,
+  "dangerous_underclassification_fnr_covered": 0.03529411764705882,
+  "dangerous_underclassification_rate_all": 0.027777777777777776,
+  "coverage": 0.7870370370370371,
+  "abstention_rate": 0.2129629629629629,
+  "ece_all": 0.06441430496569592,
+  "ece_covered": 0.06947006995854382
+ },
+ "confidence_intervals_95": {
+  "macro_f1_with_abstentions": [
+   0.3027737131589871,
+   0.3682615786040443
+  ],
+  "weighted_kappa_covered": [
+   0.7242837574877502,
+   0.9449767177140093
+  ],
+  "dangerous_underclassification_fnr_covered": [
+   0.0,
+   0.07228915662650602
+  ],
+  "dangerous_underclassification_rate_all": [
+   0.0,
+   0.05555555555555555
+  ],
+  "coverage": [
+   0.7222222222222222,
+   0.8518518518518519
+  ],
+  "abstention_rate": [
+   0.14814814814814814,
+   0.2777777777777778
+  ],
+  "ece_all": [
+   0.03874912037337357,
+   0.14144477902645744
+  ],
+  "ece_covered": [
+   0.03995860984267493,
+   0.14816593915857
+  ]
+ },
+ "confusion_matrix": [
+  [
+   9,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   1,
+   9
+  ],
+  [
+   2,
+   0,
+   0,
+   0,
+   1,
+   4
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   7,
+   3
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   63,
+   7
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ ],
+ "confusion_rows": [
+  "true_L3",
+  "true_L4",
+  "true_L5",
+  "true_L6",
+  "true_L7",
+  "true_unclear"
+ ],
+ "confusion_columns": [
+  "pred_L3",
+  "pred_L4",
+  "pred_L5",
+  "pred_L6",
+  "pred_L7",
+  "pred_unclear"
+ ],
+ "risk_coverage_curve": [
+  {
+   "threshold": 0.2134069800376892,
+   "coverage": 1.0,
+   "accepted": 108,
+   "error_risk": 0.26851851851851855,
+   "underclassification_risk": 0.12037037037037036
+  },
+  {
+   "threshold": 0.21695552945137023,
+   "coverage": 0.9722222222222222,
+   "accepted": 105,
+   "error_risk": 0.2571428571428571,
+   "underclassification_risk": 0.11428571428571428
+  },
+  {
+   "threshold": 0.21756835103034974,
+   "coverage": 0.9537037037037037,
+   "accepted": 103,
+   "error_risk": 0.24271844660194175,
+   "underclassification_risk": 0.0970873786407767
+  },
+  {
+   "threshold": 0.2184269404411316,
+   "coverage": 0.9351851851851852,
+   "accepted": 101,
+   "error_risk": 0.22772277227722773,
+   "underclassification_risk": 0.07920792079207921
+  },
+  {
+   "threshold": 0.22114856004714967,
+   "coverage": 0.9166666666666666,
+   "accepted": 99,
+   "error_risk": 0.2222222222222222,
+   "underclassification_risk": 0.08080808080808081
+  },
+  {
+   "threshold": 0.2225675880908966,
+   "coverage": 0.8981481481481481,
+   "accepted": 97,
+   "error_risk": 0.20618556701030927,
+   "underclassification_risk": 0.07216494845360824
+  },
+  {
+   "threshold": 0.22319424629211426,
+   "coverage": 0.8796296296296297,
+   "accepted": 95,
+   "error_risk": 0.21052631578947367,
+   "underclassification_risk": 0.07368421052631578
+  },
+  {
+   "threshold": 0.22351433753967284,
+   "coverage": 0.8611111111111112,
+   "accepted": 93,
+   "error_risk": 0.1935483870967742,
+   "underclassification_risk": 0.07526881720430108
+  },
+  {
+   "threshold": 0.2281916069984436,
+   "coverage": 0.8333333333333334,
+   "accepted": 90,
+   "error_risk": 0.16666666666666666,
+   "underclassification_risk": 0.05555555555555555
+  },
+  {
+   "threshold": 0.30056283016056096,
+   "coverage": 0.8148148148148148,
+   "accepted": 88,
+   "error_risk": 0.17045454545454544,
+   "underclassification_risk": 0.056818181818181816
+  },
+  {
+   "threshold": 0.507796753821629,
+   "coverage": 0.7962962962962963,
+   "accepted": 86,
+   "error_risk": 0.16279069767441862,
+   "underclassification_risk": 0.046511627906976744
+  },
+  {
+   "threshold": 0.5366309189796448,
+   "coverage": 0.7777777777777778,
+   "accepted": 84,
+   "error_risk": 0.14285714285714285,
+   "underclassification_risk": 0.03571428571428571
+  },
+  {
+   "threshold": 0.5707520019244786,
+   "coverage": 0.7592592592592593,
+   "accepted": 82,
+   "error_risk": 0.14634146341463414,
+   "underclassification_risk": 0.036585365853658534
+  },
+  {
+   "threshold": 0.5953948672698696,
+   "coverage": 0.7407407407407407,
+   "accepted": 80,
+   "error_risk": 0.15,
+   "underclassification_risk": 0.0375
+  },
+  {
+   "threshold": 0.6125922298431397,
+   "coverage": 0.7222222222222222,
+   "accepted": 78,
+   "error_risk": 0.15384615384615385,
+   "underclassification_risk": 0.038461538461538464
+  },
+  {
+   "threshold": 0.628070650519072,
+   "coverage": 0.6944444444444444,
+   "accepted": 75,
+   "error_risk": 0.16,
+   "underclassification_risk": 0.04
+  },
+  {
+   "threshold": 0.6625391793251038,
+   "coverage": 0.6759259259259259,
+   "accepted": 73,
+   "error_risk": 0.1506849315068493,
+   "underclassification_risk": 0.0410958904109589
+  },
+  {
+   "threshold": 0.676031025648117,
+   "coverage": 0.6574074074074074,
+   "accepted": 71,
+   "error_risk": 0.15492957746478872,
+   "underclassification_risk": 0.04225352112676056
+  },
+  {
+   "threshold": 0.6951176118850707,
+   "coverage": 0.6388888888888888,
+   "accepted": 69,
+   "error_risk": 0.14492753623188406,
+   "underclassification_risk": 0.043478260869565216
+  },
+  {
+   "threshold": 0.711075075145759,
+   "coverage": 0.6203703703703703,
+   "accepted": 67,
+   "error_risk": 0.11940298507462686,
+   "underclassification_risk": 0.014925373134328358
+  },
+  {
+   "threshold": 0.7243400925991555,
+   "coverage": 0.6018518518518519,
+   "accepted": 65,
+   "error_risk": 0.12307692307692308,
+   "underclassification_risk": 0.015384615384615385
+  },
+  {
+   "threshold": 0.7445290086660389,
+   "coverage": 0.5833333333333334,
+   "accepted": 63,
+   "error_risk": 0.1111111111111111,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.7564761734008789,
+   "coverage": 0.5555555555555556,
+   "accepted": 60,
+   "error_risk": 0.1,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.7933425164222717,
+   "coverage": 0.5370370370370371,
+   "accepted": 58,
+   "error_risk": 0.10344827586206896,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8057945251464844,
+   "coverage": 0.5185185185185185,
+   "accepted": 56,
+   "error_risk": 0.08928571428571429,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8079739809036255,
+   "coverage": 0.5,
+   "accepted": 54,
+   "error_risk": 0.07407407407407407,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8111484670639038,
+   "coverage": 0.48148148148148145,
+   "accepted": 52,
+   "error_risk": 0.07692307692307693,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8164068600752128,
+   "coverage": 0.46296296296296297,
+   "accepted": 50,
+   "error_risk": 0.08,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8269312548637391,
+   "coverage": 0.4444444444444444,
+   "accepted": 48,
+   "error_risk": 0.08333333333333333,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.831321918964386,
+   "coverage": 0.4166666666666667,
+   "accepted": 45,
+   "error_risk": 0.08888888888888889,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8369990468025208,
+   "coverage": 0.39814814814814814,
+   "accepted": 43,
+   "error_risk": 0.09302325581395349,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8502558445930481,
+   "coverage": 0.37962962962962965,
+   "accepted": 41,
+   "error_risk": 0.07317073170731707,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8645470786094666,
+   "coverage": 0.3611111111111111,
+   "accepted": 39,
+   "error_risk": 0.07692307692307693,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8791810309886933,
+   "coverage": 0.3425925925925926,
+   "accepted": 37,
+   "error_risk": 0.05405405405405406,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8920215940475464,
+   "coverage": 0.32407407407407407,
+   "accepted": 35,
+   "error_risk": 0.02857142857142857,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.8949584722518921,
+   "coverage": 0.3055555555555556,
+   "accepted": 33,
+   "error_risk": 0.030303030303030304,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9020736527442932,
+   "coverage": 0.2777777777777778,
+   "accepted": 30,
+   "error_risk": 0.03333333333333333,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9128373730182647,
+   "coverage": 0.25925925925925924,
+   "accepted": 28,
+   "error_risk": 0.03571428571428571,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.92116046667099,
+   "coverage": 0.24074074074074073,
+   "accepted": 26,
+   "error_risk": 0.038461538461538464,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9255152428150177,
+   "coverage": 0.2222222222222222,
+   "accepted": 24,
+   "error_risk": 0.041666666666666664,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9279079914093018,
+   "coverage": 0.2037037037037037,
+   "accepted": 22,
+   "error_risk": 0.045454545454545456,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.929603853225708,
+   "coverage": 0.18518518518518517,
+   "accepted": 20,
+   "error_risk": 0.05,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9315827226638794,
+   "coverage": 0.16666666666666666,
+   "accepted": 18,
+   "error_risk": 0.05555555555555555,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.939439685344696,
+   "coverage": 0.1388888888888889,
+   "accepted": 15,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.943589141368866,
+   "coverage": 0.12037037037037036,
+   "accepted": 13,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9479913771152496,
+   "coverage": 0.10185185185185185,
+   "accepted": 11,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9529147815704345,
+   "coverage": 0.08333333333333333,
+   "accepted": 9,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9595295095443725,
+   "coverage": 0.06481481481481481,
+   "accepted": 7,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9655467186795631,
+   "coverage": 0.046296296296296294,
+   "accepted": 5,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9721258616447449,
+   "coverage": 0.027777777777777776,
+   "accepted": 3,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  },
+  {
+   "threshold": 0.9862567782402039,
+   "coverage": 0.009259259259259259,
+   "accepted": 1,
+   "error_risk": 0.0,
+   "underclassification_risk": 0.0
+  }
+ ]
+}

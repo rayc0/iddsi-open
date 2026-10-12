@@ -2,13 +2,13 @@
 Weigh 250 g chilled unsweetened soy milk into the blender cup. Blend 20 s to homogenise the chilled pack (proteins settle). Pass through the 4 mm sieve into a clean cup; discard residue. Weigh the sieved milk and pour back into the blender cup. Add thickener at 2.0 g per 100 ml as the calibration starting point for L3 soy milk; record the actual grams used and the final batch weight on the data sheet. Blend 15 s, rest 60 s, blend 5 s. Do not add water or ice — dilution drops the spec out of L3. If 2.0 g/100 ml lands outside the flow window, adjust in 0.2 g/100 ml steps and re-test.
 
 2. IDDSI TEST
-Fork pressure: press fork tines into 10 ml of specimen on a flat plate; surface blebs under the tines, no white liquid pools, fork lifts with a cohesive mound. Pass if it spreads <4 mm under the fork and holds shape.
+Fork pressure: not applicable at L3 (5.1 covers L4/L6/L7 (supporting check at L5) only) and is not run, filmed or recorded as L3 evidence.
 Spoon tilt: fill a 5 ml spoon, tilt to 90°; specimen pours off in a thick continuous ribbon, not a run.
 Fork drip: dip fork, raise 10 cm; drips fall slowly in a thick continuous dollop, not a steady stream.
 Syringe flow: fill the 10 ml IDDSI syringe, start timer at 10 s; pass if 8–10 ml remains in the barrel.
 
 3. VISUAL QC
-Glossy off-white, smooth, no lumps, no skin, coats the spoon back without running. Holds a soft mound after the fork press with a clean dent, not a puddle.
+Glossy off-white, smooth, no lumps, no skin, coats the spoon back without running. Holds a soft mound after the fork press with a clean dent, not a puddle. By-eye check only (not a section 5.1 test at L3): press fork tines into 10 ml of specimen on a flat plate; surface blebs under the tines, no white liquid pools, fork lifts with a cohesive mound; pass if it spreads <4 mm under the fork and holds shape.
 
 4. SHOTS
 unsweetened_soy_milk_L3_take1_hero.jpg — 45° angle, specimen in white bowl, ruler and 15 mm checkerboard in frame, scale readout visible.

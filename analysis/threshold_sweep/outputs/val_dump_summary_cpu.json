@@ -1,0 +1,189 @@
+{
+  "provenance": {
+    "lane": "fix02_threshold",
+    "trainer_dir": "/work/lanes2/fix02_threshold/trainer",
+    "eval.metrics": "/work/lanes2/fix02_threshold/trainer/eval/metrics.py sha256=f5cf2934893a491e5336f8775b222a5f18e93fa7c9ae1a0b6ce097718e64c158",
+    "eval.calibration": "/work/lanes2/fix02_threshold/trainer/eval/calibration.py sha256=f5544f6ff7df28369e47e5f4b72d43264bee9a2f5904044a819cd2c0de092281",
+    "train.model": "/work/lanes2/fix02_threshold/trainer/train/model.py sha256=25e61bd3ba8e341d1ccd23cf28c875c048c9c4554672387622097758a616610b",
+    "train.engine": "/work/lanes2/fix02_threshold/trainer/train/engine.py sha256=186c192a11e4c62a3cac45b43e75767aa44c58af6cb9995cb77193524510bf49",
+    "note": "sys.path is pinned to this lane's trainer clone; the container's editable install of another lane's clone is shadowed."
+  },
+  "device_override": "cpu",
+  "seeds": [
+    {
+      "seed": 17,
+      "device_used": "cpu",
+      "amp_used": false,
+      "run_dir": "/work/runs/v07/siglip2_v07_fullcoverage_seed17",
+      "n_val": 110,
+      "val_level_support": {
+        "L3": 14,
+        "L4": 8,
+        "L5": 6,
+        "L6": 9,
+        "L7": 73
+      },
+      "shipped_temperature": 1.6817928305074292,
+      "refit_temperature": 1.6817928305074292,
+      "temperature_abs_delta": 0.0,
+      "shipped_threshold": 0.23267292976379395,
+      "reselect_threshold": 0.2302432656288147,
+      "threshold_abs_delta": 0.002429664134979248,
+      "shipped_target_met": true,
+      "reselect_target_met": false,
+      "calibrated_val_nll_refit": 0.7790472184265207,
+      "calibrated_val_nll_shipped": 0.7791166424150796,
+      "decoded_level_counts_pre_abstention": {
+        "L3": 7,
+        "L4": 12,
+        "L5": 5,
+        "L6": 15,
+        "L7": 71
+      },
+      "confidence_min": 0.22056037187576294,
+      "confidence_max": 0.9919402003288269,
+      "npz": "/work/lane_runs/fix02_threshold/val_predictions_seed17_cpu.npz",
+      "npz_sha256": "f9588a52dc391df523071b8348bd935095b2e498e3a0e1eb9c47a8cc9877cda2"
+    },
+    {
+      "seed": 29,
+      "device_used": "cpu",
+      "amp_used": false,
+      "run_dir": "/work/runs/v07/siglip2_v07_fullcoverage_seed29",
+      "n_val": 110,
+      "val_level_support": {
+        "L3": 14,
+        "L4": 8,
+        "L5": 6,
+        "L6": 9,
+        "L7": 73
+      },
+      "shipped_temperature": 1.7411011265922485,
+      "refit_temperature": 1.7411011265922485,
+      "temperature_abs_delta": 0.0,
+      "shipped_threshold": 0.5091602206230164,
+      "reselect_threshold": 0.22289007902145386,
+      "threshold_abs_delta": 0.2862701416015625,
+      "shipped_target_met": true,
+      "reselect_target_met": false,
+      "calibrated_val_nll_refit": 0.7768013339908568,
+      "calibrated_val_nll_shipped": 0.7768614398807187,
+      "decoded_level_counts_pre_abstention": {
+        "L3": 9,
+        "L4": 9,
+        "L5": 4,
+        "L6": 12,
+        "L7": 76
+      },
+      "confidence_min": 0.21309837698936462,
+      "confidence_max": 0.9894145727157593,
+      "npz": "/work/lane_runs/fix02_threshold/val_predictions_seed29_cpu.npz",
+      "npz_sha256": "46813413ee2543d3c67c3c2476259b0fcef731d222bdfbff1b0ab0dbfee6e42a"
+    },
+    {
+      "seed": 43,
+      "device_used": "cpu",
+      "amp_used": false,
+      "run_dir": "/work/runs/v07/siglip2_v07_fullcoverage_seed43",
+      "n_val": 110,
+      "val_level_support": {
+        "L3": 14,
+        "L4": 8,
+        "L5": 6,
+        "L6": 9,
+        "L7": 73
+      },
+      "shipped_temperature": 1.6245047927124712,
+      "refit_temperature": 1.6245047927124712,
+      "temperature_abs_delta": 0.0,
+      "shipped_threshold": 0.23942667245864868,
+      "reselect_threshold": 0.2371976375579834,
+      "threshold_abs_delta": 0.002229034900665283,
+      "shipped_target_met": true,
+      "reselect_target_met": false,
+      "calibrated_val_nll_refit": 0.7776208187106582,
+      "calibrated_val_nll_shipped": 0.777713351916708,
+      "decoded_level_counts_pre_abstention": {
+        "L3": 8,
+        "L4": 11,
+        "L5": 5,
+        "L6": 12,
+        "L7": 74
+      },
+      "confidence_min": 0.22929462790489197,
+      "confidence_max": 0.9931787252426147,
+      "npz": "/work/lane_runs/fix02_threshold/val_predictions_seed43_cpu.npz",
+      "npz_sha256": "e2f875ed17ae705608d9de8c28d292013328f32e2209a80bc06dabcbcc782e20"
+    },
+    {
+      "seed": 71,
+      "device_used": "cpu",
+      "amp_used": false,
+      "run_dir": "/work/runs/v07/siglip2_v07_fullcoverage_seed71",
+      "n_val": 110,
+      "val_level_support": {
+        "L3": 14,
+        "L4": 8,
+        "L5": 6,
+        "L6": 9,
+        "L7": 73
+      },
+      "shipped_temperature": 1.7411011265922485,
+      "refit_temperature": 1.7411011265922485,
+      "temperature_abs_delta": 0.0,
+      "shipped_threshold": 0.22856405377388,
+      "reselect_threshold": 0.22245103120803833,
+      "threshold_abs_delta": 0.006113022565841675,
+      "shipped_target_met": true,
+      "reselect_target_met": false,
+      "calibrated_val_nll_refit": 0.7826610553530633,
+      "calibrated_val_nll_shipped": 0.7826908633171126,
+      "decoded_level_counts_pre_abstention": {
+        "L3": 9,
+        "L4": 9,
+        "L5": 4,
+        "L6": 11,
+        "L7": 77
+      },
+      "confidence_min": 0.21398252248764038,
+      "confidence_max": 0.990949809551239,
+      "npz": "/work/lane_runs/fix02_threshold/val_predictions_seed71_cpu.npz",
+      "npz_sha256": "160c57e695b8f881e235f0af101f621749151fd2c18c91553ae79894a135d6f9"
+    },
+    {
+      "seed": 101,
+      "device_used": "cpu",
+      "amp_used": false,
+      "run_dir": "/work/runs/v07/siglip2_v07_fullcoverage_seed101",
+      "n_val": 110,
+      "val_level_support": {
+        "L3": 14,
+        "L4": 8,
+        "L5": 6,
+        "L6": 9,
+        "L7": 73
+      },
+      "shipped_temperature": 1.7411011265922485,
+      "refit_temperature": 1.7411011265922485,
+      "temperature_abs_delta": 0.0,
+      "shipped_threshold": 0.5189002752304077,
+      "reselect_threshold": 0.22312909364700317,
+      "threshold_abs_delta": 0.29577118158340454,
+      "shipped_target_met": true,
+      "reselect_target_met": false,
+      "calibrated_val_nll_refit": 0.7806754157193494,
+      "calibrated_val_nll_shipped": 0.780752783748437,
+      "decoded_level_counts_pre_abstention": {
+        "L3": 10,
+        "L4": 10,
+        "L5": 4,
+        "L6": 12,
+        "L7": 74
+      },
+      "confidence_min": 0.2159501016139984,
+      "confidence_max": 0.9924055933952332,
+      "npz": "/work/lane_runs/fix02_threshold/val_predictions_seed101_cpu.npz",
+      "npz_sha256": "efa3ed74ccbf363d834645e9031bbacf4f0844723ad49dc440cbfb2358accf56"
+    }
+  ]
+}
