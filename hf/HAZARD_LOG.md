@@ -291,6 +291,51 @@ Measured status on the v0.7 manifest (2026-10-12, `HGROUP_VERIFICATION.md`, numb
   file holds a different metric than the hazard's own sentence is the same class
   of defect as H-KAPPACOV: the number and the claim drift apart quietly.
 
+## H-L5L6CEIL — the L5/L6 collapse is a label-and-support ceiling, not a bug
+
+- Hazard: per-level recall on the v0.7 held-out split (n=108) is L3 0.90, L4 0.50,
+  **L5 0.00, L6 0.00**, L7 1.00 on all five seeds, and argmax never tops L4 or L6
+  either. Macro-F1 is capped by two zero-recall classes, so the published
+  `weighted_kappa_covered` of 0.838-0.860 is in practice a THREE-class result.
+  The tempting reading — that the CORAL decode or the abstention threshold is
+  dropping two levels — is wrong, and acting on it would be the same failure mode
+  as H-KAPPACOV and H-YARDSTICK.
+- Ruled out, by measurement, all on the validation split (110 events, 5 seeds):
+  eight decode rules (`lane_runs/d01_decode/decode_rule_comparison_val.json`) —
+  the shipped CORAL rank decode emits L5 4-5x and L6 11-15x per seed but gets no
+  L5 right and ~31% of L6; argmax collapses L4/L5/L6 and predicts L7 99.7% of the
+  time; the top-2 band buys L6 recall 0.778 by predicting L6 86/110 times and
+  dropping L7 recall to 0.005; out-of-fold per-level cut-points are the only
+  balanced rule (L5 0.167, L6 0.133) and are the best candidate, not a fix. A full
+  threshold sweep (`lane_runs/d02_threshold/`) found no setting that makes L5/L6
+  reachable. Equalising the training levels gave kappa 0.766-0.781 at full
+  coverage, WORSE than baseline. A retrain with an alternative decode
+  (`lane_runs/d03_retrain/`) still produced L5 recall 0/7 and L6 recall 0/10, with
+  8 of 10 true-L6 events routed to L7. A 2x cosine schedule gave kappa 0.830.
+- Cause: `data/manifest_v07_weighted.jsonl`, 532 rows (314 train / 110 val / 108
+  test). Train support is L3 28, L4 37, **L5 13 (4.1%)**, L6 35, L7 201 (64.0%).
+  Manifest-wide label dispute (agreement `1/2`) is L3 10%, L4 23%, **L5 46%
+  (12/26)**, **L6 54% (29/54)**, L7 8%. The two levels the model never predicts
+  are the two with the least training support and the most contested labels.
+  Corroborated by the agreement filter (`lane_runs/x09_labelnoise/REPORT.md`):
+  scoring only the 86 undisputed events lifts kappa 0.8498 -> 0.8899 (mean of 5
+  seeds) but **L5 and L6 recall stays 0.00 on every subset and every seed**.
+- Consequence: no architecture change can be evaluated for L5/L6 against this
+  test set, because it holds 7 L5 and 10 L6 events with contested labels. An "L5
+  recall improved" claim from this split is noise. Kappa gains that leave L5/L6 at
+  zero are gains in predicting L7 and must not be quoted as model improvements.
+  The only legitimate routes to real L5/L6 performance are physically tested
+  L5/L6 specimens (which is what the sealed evaluation set is for) or publishing
+  the model honestly as a detector for the levels the data supports, with
+  abstention everywhere else.
+- Fix: none applied. This entry is a diagnosis, not a repair. Reproduce with
+  `python3 ~/support.py` and `python3 ~/summ_d01.py` on the box; full write-up in
+  `hf/H-L5L6CEIL.md`.
+- Residual risk: the same as H-LABELCEIL and H-QWENBIAS — the ceiling is physical
+  and cannot be engineered away. No severity, probability or acceptability finding
+  is made here (`hf/HAZARD_LOG.md:5`). No figure in any prior entry changes sign,
+  no gate is weakened, and the weights stay withheld.
+
 ## Retained boundary hazards
 
 - H-PHOTO: a still photograph treated as a physical measurement. Control: release scope states plainly that middle levels (L4/L5/L6) require absolute size and flow information a photograph doesn't carry. Physical-test confirmation stays external to the release.
@@ -307,3 +352,5 @@ v0.3 (2026-10-11): four hazards added. H-LEAK records that the v0.2 split was me
 
 v0.7 group-disjointness audit (2026-10-12): H-GROUP's literal claim is measured on the shipped v0.7 manifest and HOLDS — 501 groups over 532 rows, no `group_id` in more than one split, `event_id` unique, and no near-duplicate image pair (dHash ≤ 6 AND pHash ≤ 8, recomputed from 532 JPEGs over 141,246 pairs), byte duplicate, source page, Nutrition5k dish id or recipe id crosses a split boundary. The hazard is not closed: 495 of 501 groups are singletons, so the configured control still separates almost nothing, and 6 food names sit on both sides of the split with 6 same-level cross-split pairs (2 test-vs-train), because the group key is the near-duplicate connected component rather than the dish. Three manifest defects are newly recorded and none silenced: `group_size` stale for 3 groups / 18 rows, 12 duplicated event rows in `realweak_pilot/events.jsonl` (one conflicting on `level_weak`), and a recorded `phash` that is not reproducible from the stored JPEGs (4 of 532 exact). A gate now runs the check: `trainer/tests/test_group_disjointness_v07.py`, 6 tests, 43 passing in the trainer suite. No figure changes sign, no gate is weakened, and the weights stay withheld.
 v0.4-audit (2026-10-12, lane an01_yardstick, nonce c9c3968f18cb): H-YARDSTICK independently re-derived from the per-event prediction files and CONFIRMED on both halves — against the v0.5 consensus all three models fail wk1 (v0.4 0.5404-0.5995 on its own 142-event split, 0.5733-0.6053 on the 108 events common to all three; v0.5 0.5371-0.6137; v0.7 0.4913-0.5547; 0/5 seeds each), and against the v0.7 full-coverage consensus all three pass (v0.4 0.7364-0.8077, v0.5 0.7036-0.7953, v0.7 0.8375-0.8604; 5/5 seeds each). The published ranges reproduce to the digit. One hazard added, H-YARDEVID, recording that the file H-YARDSTICK cites as its evidence (`results/v07_release/bias_matrix.json`) holds kappa over all rows including abstentions rather than the gate metric wk1, and that `head_to_head2.json` is scored against the v0.5 labels rather than the v0.7 ones; it also records that H-YARDSTICK's residual-risk sentence quotes wk1 on one side and all-rows kappa on the other. No figure in any prior entry changes sign, no gate is weakened, and the weights stay withheld. Reproduction: `tools/yardstick_audit.py`, `tools/yardstick_audit_sklearn_check.py`, `tools/yardstick_audit_compare.py`, `tools/tests/test_yardstick_audit.py`, outputs in `results/yardstick_audit/`.
+
+v0.8 diagnosis (2026-10-12): H-L5L6CEIL added. The L5/L6 recall collapse is measured to be a label-and-support ceiling, not a decode or threshold defect: L5 has 13 training examples (4.1% of train) with 46% of its labels disputed, L6 35 with 54% disputed, against L7's 201 (64.0%) at 8%. Eight decode rules, a full threshold sweep, class equalisation, an alternative-decode retrain and a 2x schedule were all measured and none makes L5/L6 both reachable and correct. The wk1 gate outcome is unchanged, no prior figure changes sign, and the weights stay withheld.
