@@ -116,12 +116,24 @@ jobs:
           import json, pathlib, sys
 
           root = pathlib.Path("artifacts")
+          # Find every receipt wherever the download put it, and read the leg name
+          # off the path component that carries it. Deriving it from a fixed depth
+          # broke as soon as the artifact layout changed.
           legs = {}
-          for receipt in sorted(root.glob("hub-smoke-*/eval/hub_receipt.json")):
-              leg = receipt.parts[-4].removeprefix("hub-smoke-")
+          for receipt in sorted(root.rglob("hub_receipt.json")):
+              leg = next((part[len("hub-smoke-"):] for part in receipt.parts
+                          if part.startswith("hub-smoke-")), None)
+              if leg is None:
+                  print(f"WARNING: no leg name in {receipt}")
+                  continue
               legs[leg] = json.loads(receipt.read_text())
+          print(f"receipts found: {sorted(legs)}")
           if len(legs) < 2:
               print(f"expected two endpoint legs, found {sorted(legs)}")
+              print("files under artifacts/:")
+              for f in sorted(root.rglob('*')):
+                  if f.is_file():
+                      print("   ", f)
               sys.exit(1)
 
           by_name = {}
